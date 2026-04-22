@@ -1,0 +1,32 @@
+# Sistema Raul 2026 — .gitignore
+# Ver FOLDER-ARCHITECTURE.md §10.2 para política completa.
+
+# Inboxes — buzones operativos, no se versionan
+/01-inbox/01-owner-to-raul/
+/01-inbox/02-deliverables-to-owner/
+/01-inbox/03-raw-sources/
+
+# Archive — histórico, se respalda aparte
+/05-archive/
+
+# Binarios pesados por defecto
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+# Excepciones: specs que viven como PDF sí se versionan
+!/02-knowledge-base/**/specs/**/*.pdf
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
