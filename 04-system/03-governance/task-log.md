@@ -1,0 +1,51 @@
+# Task Log
+
+| Date | Agent | Task | Outcome |
+|------|-------|------|---------|
+| 2026-04-16 | Paxs | Brief explanation of what an electrical protector is | delivered |
+| 2026-04-17 | Paxs | Product and documentation checklist from genteca.com.ve | delivered |
+| 2026-04-17 | Raul | Cross-check RAG_SOURCES vs genteca checklist | delivered |
+| 2026-04-17 | Paxs | Training update: blocked site escalation protocol added to AGENT.md | completed |
+| 2026-04-17 | Paxs | Barrido genteca.com.ve — mapa de 52 PDFs + script Python descarga masiva | delivered |
+| 2026-04-17 | Paxs | Lectura mapa Comet — URLs corregidas WordPress, 10 archivos adicionales descargados | delivered |
+| 2026-04-17 | Celeste | Piloto KB: 5 PDFs → Markdown + descripción de diagramas, protocolo documentado | delivered |
+| 2026-04-17 | Celeste | Piloto A+B: extracción imagen diagrama PNG (PyMuPDF) + referencia en Markdown — protocolo validado | delivered |
+| 2026-04-17 | Celeste | Lote B subcarpetas: 25 PDFs procesados → 25 Markdown en KB/Technical, 4 assets en Assets — reporte en Owner Inbox | delivered |
+| 2026-04-18 | Celeste | Pre-screening Lote C: 167 PDFs analizados — 133 listos, 23 solo-imagen, 10 duplicados-probables, 0 corruptos | delivered |
+| 2026-04-18 | Celeste | Lote C: bloqueado por permisos Bash — reiniciar con claude --dangerouslySkipPermissions | pending |
+| 2026-04-18 | Celeste | Lote C: 167 PDFs procesados → 144 Markdown completos + 23 stubs FLAG imagen, KB/Technical total 192 docs | delivered |
+| 2026-04-18 | Celeste | OCR Lote C: Tesseract v5.4.0 instalado — 22/22 stubs procesados, 0 errores, 0 flags pendientes en índice | delivered |
+| 2026-04-19 | Michelina | Contratar Oz (Technical Documentation Editor) — AGENT.md creado y activo | delivered |
+| 2026-04-19 | Raul | Configurar InboxBot (Routine remota) — trigger trig_01RgGGbpCvckUzSwkyGMDNtm, cada 4h, Google Drive + Gmail | delivered |
+| 2026-04-19 | Vera | Verificación técnica supresores de pico GSM-NP/NG/RE/RB — GSM-RB sin supresor, GMP5-35 identificado | delivered |
+| 2026-04-19 | Solenne | Script Instagram ajustado (reel 45-55s + carrusel 7 slides) — "dos amenazas, dos mecanismos" inverter | delivered |
+| 2026-04-19 | Vivienne | PowerPoint deck Exceline Inverter — 8 slides, paleta oscura profesional, para equipo de mercadeo Genteca | delivered |
+| 2026-04-19 | Raul | InboxBot fix 1: lógica marcador DONE_[TASK_ID].txt — workaround sin move/delete en Drive MCP | delivered |
+| 2026-04-19 | Raul | InboxBot fix 2: Gmail cambiado a create_draft (MCP no soporta send) — borradores en Gmail | delivered |
+| 2026-04-19 | Raul | InboxBot fix 3: git push eliminado (OAuth read-only) — task log vive en Drive inboxbot-tasklog.md | delivered |
+| 2026-04-19 | Vera | Validación técnica NTC termistor GSM-MB/RB/RF — confirmado sensor junto al relé, rearme automático por temperatura | delivered |
+| 2026-04-19 | Vael | Recomendaciones copy empaque GSM-MB/RB/RF — Versión B: "PROTECCIÓN ACTIVA" + bullets técnicos | delivered |
+| 2026-04-19 | Oz | Delta document v3 + PDFs anotados (tiro + retiro) GSM-MB/RB/RF empaque — entregado para Ozwaldo/Keiddys | delivered |
+| 2026-04-19 | Raul | Estructura workspace implementada: Staging/[proyecto]/[fecha] + WIP/For Review/Approved por proyecto | delivered |
+| 2026-04-19 | Vera | Brief técnico GST-R nueva línea 4 productos (GST-RT/RD/RG/RR) — 12 gaps identificados, curva inversa sin doc fuente | delivered |
+| 2026-04-20 | Oz | Copy completo ETQ 4 productos GST-R (ProTransfer/ProDigital/ProMotor/ProFrio) — copy + notas Ozwaldo + decisiones pendientes | delivered |
+| 2026-04-20 | Oz | Copy ETQ GST-R v2 — correcciones owner aplicadas (GST-RM, GST-RD sin Modbus + pantalla desmontable + 3 modelos, sin frases competitivas, 70×90mm, negro+dorado ProDigital) + PDF brief Ozwaldo 9pp | delivered |
+| 2026-04-20 | Oz | Copy v2 + PDF brief 9 páginas ETQ GST-R — correcciones owner aplicadas, listo para Ozwaldo | delivered |
+| 2026-04-20 | Vivienne | PPTX editable brief etiquetas GST-R v2 — 10 slides, 4 productos, portada + A/B+C por producto + tabla resumen | delivered |
+| 2026-04-20 | Paxs | Auditoría completa sistema Raul — mapa de archivos, análisis de agentes, vacíos, redundancias, cuellos de botella, 12 faltantes recomendados | delivered |
+| 2026-04-20 | Paxs | Arquitectura organizacional revisada — modelo 3 capas, fronteras de responsabilidad, análisis de globalización por agente, roadmap de cambios | delivered |
+| 2026-04-20 | Raul | Grupo A ejecutado — Vivienne movida a global, CLAUDE.md con 3 capas formalizadas, roster reestructurado, Oz añadido al roster, CHANGELOG_GrupoA.md generado | delivered |
+| 2026-04-20 | Raul | Grupo B ejecutado — Fronteras Solenne/Vael formalizadas: gate de consulta obligatoria, secciones "Qué NO hace" y "Tareas Típicas" en ambos AGENT.md, CHANGELOG_GrupoB.md generado | delivered |
+| 2026-04-20 | Raul | Grupo C ejecutado — Fronteras Vera/Orlan formalizadas: gates bidireccionales, propósito de benchmarking clarificado, cadena Orlan→Vael explicitada, CHANGELOG_GrupoC.md generado | delivered |
+| 2026-04-20 | Raul | Grupo D ejecutado — Fronteras Renzo/Oz formalizadas: distinción crear vs. transformar, cadena Vera→Renzo→Oz→Ozwaldo explicitada, CHANGELOG_GrupoD.md generado | delivered |
+| 2026-04-20 | Raul | ROUTING-GUIDE.md creado — consolida todos los gates y cadenas de valor de Grupos A–D en documento operativo para routing de sesiones | delivered |
+| 2026-04-20 | Raul | RUNBOOK_Raul_Global.md creado — SOP operativo: rutina de sesión, flujo de 8 pasos, manejo de tareas mixtas, errores frecuentes, patrones de escalamiento | delivered |
+| 2026-04-21 | Raul | 04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md creado — arquitectura transversal multimodal: 5 capas, 9 agentes (Aurelio, Nerea, Orfeo, Luma, Vela, Atlas, Bruna, Ivo, Sira), 4 cadenas base, 5 gates obligatorios | delivered |
+| 2026-04-21 | Raul | 04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md creado — fichas completas de los 9 agentes transversales (misión, tareas, límites, inputs, outputs, conexiones); base para contratación vía Michelina | delivered |
+| 2026-04-21 | Raul | Contratación Capa 2 — .claude/agents/aurelio/AGENT.md y .claude/agents/nerea/AGENT.md creados con fichas completas (misión, alcance, tareas típicas, inputs/outputs, interacciones, criterios de calidad, antipatrones, flujos A/B/C/D); tools: Read/Write/Grep | delivered |
+| 2026-04-21 | Raul | Contratación Capa 3 — .claude/agents/{orfeo,luma,vela,atlas}/AGENT.md creados con fichas completas (misión, alcance, tareas por dominio, inputs/outputs, interacciones con Capa 2/3/4/5, criterios de calidad, antipatrones, flujos A/B/C/D); tools: Read/Write/Grep | delivered |
+| 2026-04-21 | Raul | Contratación Capa 4/5 — .claude/agents/{bruna,ivo,sira}/AGENT.md creados con fichas completas (gobernanza y release, distribución por canal, memoria y reciclaje); cierra la content supply chain con los 9 agentes transversales; tools: Read/Write/Grep | delivered |
+| 2026-04-21 | Raul | ROUTING-GUIDE.md §6 añadido — Content Supply Chain (Capas 2-5): tabla situación→ruta (11 filas) + 4 reglas operativas de cambio (error publicado, guion cambia, canal rechaza specs, arranque con reciclaje) | delivered |
+| 2026-04-21 | Raul | ROUTING-GUIDE.md §2A — pointer cruzado a §6 añadido para cerrar navegación interna del doc | delivered |
+| 2026-04-21 | Raul | Migración Raul 2026 — Fase 1 parcial: skeleton C:\RAUL\ creado (tree completo) + FOLDER-ARCHITECTURE.md v2.1 + MIGRATION-PLAN.md v1.0 escritos en destinos finales. Incluye §8 estrategia core+dominio y Fase 6 piloto Genteca | delivered |
+| 2026-04-21 | Raul | Migración Raul 2026 — Fase 1 completa: CONTEXT_core.md + 5 README stubs + DECISIONS.md (primera entrada) + NAMING-CONVENTIONS.md stub + .gitignore + git init + primer commit 54aac6e "Skeleton Raul 2026 — pre-migration" | delivered |
