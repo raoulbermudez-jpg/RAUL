@@ -1,0 +1,119 @@
+---
+title: "MOTORES Y MÁQUINAS"
+type: Technical
+source: "GSM-MB-RB-RF_GLA_T_.pdf"
+product_code: "GSM-MB/RB/RF"
+product_line: "Exceline Profesional"
+document_type: "hoja-especificaciones"
+date_processed: "2026-04-18"
+---
+
+# MOTORES Y MÁQUINAS
+
+MOTORES Y MÁQUINAS
+MONOFÁSICAS
+LA ÚNICA PROTECCIÓN
+CONFIABLE EN VENEZUELA
+Más Información
+Actuación instantánea contra párpadeos
+Protección
+térmica
+Bornera para cables hasta AWG 8
+PROTECTOR DE VOLTAJE PARA
+BORNERA
+220 V~
+120 V~
+HASTA 48.000 BTU
+HASTA 18.000 BTU
+MOTORES Y MÁQUINAS
+MONOFÁSICAS
+154
+NUEVO
+AHORA CON
+PROTECCIÓN TÉRMICA
+SUPERVISOR: Anly Salazar
+REALIZADO EN PROGRAMA: ADOBE Illustrator
+DISEÑADOR: Oswaldo Gutiérrez
+FECHA: 27/03/2026
+COLOR(ES): Pantone
+PRODUCTO:
+GSM-MB
+TAMAÑO:
+Width: 154mm  /  High: 222,4mm
+DOCUMENTO:
+GSM-MB_GLA_T_V10
+VERSION:
+V10
+NEUTRAL BLACK C    151C    COOL GRAY 9C
+222,4
+
+SUPERVISOR: Anly Salazar
+REALIZADO EN PROGRAMA: ADOBE Illustrator
+DISEÑADOR: Oswaldo Gutiérrez
+FECHA: 27/03/2026
+COLOR(ES):
+PRODUCTO:
+GSM-RB
+TAMAÑO:
+Width: 154mm  /  High: 222,4mm
+DOCUMENTO:
+GSM-RB_GLA_T_V9
+VERSION:
+V9
+2925C    151C    COOL GRAY 9C
+Más Información
+AIRES ACONDICIONADOS
+Y REFRIGERACIÓN
+PROTECTOR DE VOLTAJE PARA
+A L T A  C A R G A
+BORNERA
+220 V~
+120 V~
+HASTA 48.000 BTU
+HASTA 18.000 BTU
+LA ÚNICA PROTECCIÓN
+CONFIABLE EN VENEZUELA
+154
+222,4
+Actuación instantánea contra párpadeos
+Bornera para cables hasta AWG 8
+Protección
+térmica
+NUEVO
+AHORA CON
+PROTECCIÓN TÉRMICA
+
+Más Información
+PROTECTOR DE VOLTAJE PARA
+COMPRESORES
+MONOFÁSICOS
+BORNERA
+220 V~
+120 V~
+HASTA 48.000 BTU
+HASTA 18.000 BTU
+154
+222,4
+LA ÚNICA PROTECCIÓN
+CONFIABLE EN VENEZUELA
+NUEVO
+AHORA CON
+PROTECCIÓN TÉRMICA
+Actuación instantánea contra párpadeos
+Bornera para cables hasta AWG 8
+Protección
+térmica
+SUPERVISOR: Anly Salazar
+REALIZADO EN PROGRAMA: ADOBE Illustrator
+DISEÑADOR: Oswaldo Gutiérrez
+FECHA: 27/03/2026
+COLOR(ES):
+PRODUCTO:
+GSM-RF
+TAMAÑO:
+Width: 154mm  /  High: 222,4mm
+DOCUMENTO:
+GSM-RF_GLA_T_V13
+VERSION:
+V13
+348C    151C    COOL GRAY 9C     COOL GRAY 5C
