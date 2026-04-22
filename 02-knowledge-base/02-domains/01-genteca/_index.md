@@ -1,6 +1,6 @@
 # Genteca — Dominio
 
-**Alcance:** Genteca es empresa venezolana fabricante y distribuidora de dispositivos de protección eléctrica para el mercado latinoamericano. Es el dominio con mayor actividad del sistema Raul.
+**Alcance:** Genteca es empresa venezolana fabricante y distribuidora de dispositivos de protección eléctrica para el mercado latinoamericano. Es el dominio con mayor actividad del sistema /RAUL/.
 
 **Website:** www.genteca.com.ve
 
@@ -40,7 +40,7 @@
 
 - **Etiquetas y empaque:** campañas de actualización visual de línea (ej. GST-R, GSM-MB/RB/RF) — viven en `/RAUL/03-projects/genteca/<proyecto>/`.
 - **Briefs técnicos y comparativas:** entregables de Vera (selección de productos, gaps, standards IEC/NEMA).
-- **Market intelligence:** benchmarking de competidores (ABB, Eaton, Schneider, Siemens), tendencias HMI, radar de lanzamientos — entregables de Orlan.
+- **Market intelligence:** benchmarking de competidores (ABB, Eaton, Schneider, Siemens y competidores locales definidos explícitamente por el Owner), tendencias HMI, radar de lanzamientos — entregables de Orlan. Ver también `wiki/market/`.
 - **Content B2B:** LinkedIn, blog, email, case studies — entregables de Solenne.
 - **Branding y campañas:** messaging, tono, launch kits — entregables de Vael.
 
