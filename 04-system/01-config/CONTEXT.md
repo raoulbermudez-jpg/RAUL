@@ -1,6 +1,11 @@
 # Contexto del Proyecto — Raul Workspace
 
-> **Nota:** Contexto ampliado complementario a `CLAUDE.md`. Este documento contiene historia, background detallado y ejemplos. Algunas secciones de infraestructura describen aún el estado pre-migración (pre-2026-04-21); la arquitectura vigente vive en `FOLDER-ARCHITECTURE.md` y se completará aquí durante la fase 5 de post-cleanup.
+> **⚠ COMPANION DOC — LEGACY PRE-MIGRACIÓN (congelado 2026-04-25)**
+> Este archivo describe la infraestructura y flujos del sistema **anterior a 2026-04-21** (`C:\WorkspaceIA\...`, estructura WIP/ForReview/Approved, InboxBot viejo).
+> **Ya no se auto-carga** en sesiones — el `@CONTEXT.md` fue removido de `CLAUDE.md`.
+> Consultar solo como referencia histórica. El contexto activo vive en `CONTEXT_core.md`.
+
+---
 
 ## Quién es el dueño
 
