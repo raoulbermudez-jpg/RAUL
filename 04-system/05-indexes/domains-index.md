@@ -98,19 +98,6 @@ Regla operativa:
 - No iniciar Fase 3 de estos dominios sin luz verde explícita del Owner.
 - No crear índices extensos, subcarpetas o proyectos nuevos salvo instrucción directa.
 
-## Nota sobre numeración
-
-Actualmente existe una decisión pendiente sobre la numeración de dominios.
-
-Situación:
-
-- En la práctica se creó `02-plenus-metabolica/`.
-- En una versión previa de la arquitectura, Plenus aparecía como `03-plenus-metabolica/`, con `02-finca-ganaderia/` antes.
-
-Hasta que el Owner lo formalice en `DECISIONS.md`, debe asumirse que:
-
-- la numeración puede reflejar prioridad de activación,
-- y no necesariamente el orden histórico original de planificación.
 
 ## Relación con otros índices del sistema
 
