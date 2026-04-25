@@ -39,6 +39,25 @@ Este documento registra decisiones que afectan la estructura, el proceso o las p
 
 **Estado:** Fase 1 en ejecución. Skeleton `C:\RAUL\` creado; `FOLDER-ARCHITECTURE.md` v2.1, `MIGRATION-PLAN.md` v1.0, `CONTEXT_core.md`, stubs README, `NAMING-CONVENTIONS.md` stub, `.gitignore`, `DECISIONS.md` (este archivo) y primer commit creados como parte de Fase 1.
 
+## 2026-04-24 — Numeración oficial de dominios en 02-knowledge-base/02-domains
+
+Se fija la numeración oficial actual de dominios de la siguiente forma:
+
+- `01-genteca`
+- `02-plenus-metabolica`
+- `03-finca-ganaderia`
+- `04-teca-teak4food`
+- `05-marca-personal-raoul`
+- `99-other-domains`
+
+Criterio:
+- La numeración refleja prioridad de activación y orden operativo del sistema, no necesariamente el orden histórico en que los dominios fueron concebidos.
+- A partir de esta decisión, la documentación estructural y los índices del sistema deben alinearse con esta numeración.
+
+Notas:
+- `02-plenus-metabolica` queda formalizado como nombre y posición oficiales.
+- Cualquier referencia previa a `03-plenus-metabolica` en documentación estructural debe considerarse obsoleta y actualizarse.
+
 ---
 
 (próximas entradas debajo, en orden cronológico)

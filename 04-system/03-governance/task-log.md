@@ -1,5 +1,9 @@
 # Task Log
 
+Este task-log.md es el log canónico de delegaciones y resultados del sistema /RAUL/.
+A partir de la fecha 2026‑04‑22, todos los registros nuevos deben escribirse aquí.
+El log anterior en C:\WorkspaceIA\PROJECTS\Claude code\Team\task-log.md queda congelado como histórico.
+
 | Date | Agent | Task | Outcome |
 |------|-------|------|---------|
 | 2026-04-16 | Paxs | Brief explanation of what an electrical protector is | delivered |

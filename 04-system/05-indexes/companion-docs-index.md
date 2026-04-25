@@ -56,6 +56,11 @@ Ese sufijo cumple tres funciones:
   - Snapshot de contexto para retomar el trabajo en un hilo nuevo.
   - Resume el estado del sistema, commits relevantes, dominios activos y pendientes.
 
+  Nota de naming:
+  - Además de llevar el sufijo `PERPLEXITY`, estos archivos pueden usar un espacio antes del sufijo por legibilidad humana.
+  - Esta es una excepción explícita a la convención general de naming sin espacios.
+  - La excepción aplica solo a archivos companion y no convierte estos documentos en archivos core.
+
 ### Índices / continuidad
 
 - `04-system/05-indexes/session-log_2026-04-22 PERPLEXITY.md`

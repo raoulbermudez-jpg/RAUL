@@ -16,6 +16,24 @@ Este documento definirá las convenciones de nombres del sistema. Como stub inic
   - `-` (guion) para legibilidad dentro del slug.
   - `_` (underscore) para separar fecha/slug/versión.
 - **Sin acentos** en nombres de carpeta y slug; sí permitidos dentro del contenido Markdown.
+## Excepciones de naming
+
+Regla general:
+- Los nombres de carpetas no llevan espacios.
+- Los nombres de archivos operativos del sistema tampoco deben llevar espacios por defecto.
+
+Excepción explícita:
+- Los archivos companion con sufijo `PERPLEXITY` pueden llevar un espacio antes del sufijo para mejorar legibilidad humana.
+
+Ejemplos válidos:
+- `CONTEXT_session-2026-04-22 PERPLEXITY.md`
+- `KB-SYSTEM-GUIDE PERPLEXITY.md`
+- `core-sources-index PERPLEXITY.md`
+
+Aclaraciones:
+- Esta excepción aplica solo a archivos companion, no a carpetas.
+- El sufijo `PERPLEXITY` sirve para indicar origen, distinguir documentos de apoyo y evitar confusión con archivos core del sistema.
+- Si un documento deja de ser companion y se promueve a core, debe retirarse el sufijo `PERPLEXITY` y volver a la convención general de naming.
 
 ---
 

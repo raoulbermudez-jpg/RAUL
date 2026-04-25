@@ -82,42 +82,49 @@ Función: memoria acumulativa de Raul. Aquí vive el conocimiento estable (wiki)
     02-local-first-philosophy.md
     03-llm-usage-patterns.md
   02-domains/
-    01-genteca/
-      _index.md
-      wiki/                    ← artículos de conocimiento del dominio
-        01-fundamentos-tecnicos.md
-        02-proteccion-motores.md
-        ...
-        market/                ← market intelligence específico de Genteca (provisional)
-      specs/                   ← hojas de especificación, catálogos, datasheets de producto
-        _index-specs.md
-        <documentos de producto>
-      assets/                  ← fotos, packaging, diagramas eléctricos, fichas visuales
-        products/
-        packaging/
-        diagrams/
-        uncoded/
-    02-finca-ganaderia/
-      _index.md
-      wiki/
-      specs/                   ← solo si aplica
-      assets/                  ← fotos de finca, material agro, etc.
-    03-plenus-metabolica/      ← Raoul's Products: alimentos funcionales, salud metabólica, longevidad
-      _index.md
-      wiki/
-      specs/
-      assets/                  ← mockups empaques, etiquetas, creatividades Plenus
-    04-teca-teak4food/         ← marca Teak4Food (NO alimentos funcionales)
-      _index.md
-      wiki/
-      specs/
-      assets/                  ← fotos de finca, branding Teak4Food, material comercial agro
-    05-marca-personal-raoul/   ← marca personal Raoul (distinta de Plenus)
-      _index.md
-      wiki/
-      assets/                  ← fotos personales, branding personal, materiales de charla
-    99-other-domains/
-      _index.md
+    01-genteca
+    index.md
+    wiki/                 artículos de conocimiento del dominio
+      01-fundamentos-tecnicos.md
+      02-proteccion-motores.md
+      ...
+    market/               market intelligence específico de Genteca (provisional)
+    specs/                hojas de especificación, catálogos, datasheets de producto
+      index-specs.md
+    assets/               fotos, packaging, diagramas eléctricos, fichas visuales
+      products/
+      packaging/
+      diagrams/
+      uncoded/
+
+    02-plenus-metabolica    Raoul’s Products, alimentos funcionales, salud metabólica, longevidad
+    index.md
+    wiki/
+    specs/
+    assets/               mockups, empaques, etiquetas, creatividades Plenus
+
+    03-finca-ganaderia
+    index.md
+    wiki/
+    specs/                solo si aplica
+    assets/               fotos de finca, material agro, etc.
+
+    04-teca-teak4food       marca Teak4Food, NO alimentos funcionales
+    index.md
+    wiki/
+    specs/
+    assets/               fotos de finca, branding Teak4Food, material comercial agro
+
+    05-marca-personal-raoul marca personal de Raoul, distinta de Plenus
+    index.md
+    wiki/
+    assets/               fotos personales, branding personal, materiales de charla
+
+    99-other-domains
+    index.md
+
+    Nota: la numeración de dominios refleja prioridad de activación y orden operativo del sistema, no necesariamente el orden histórico de diseño de cada dominio.
+
   03-cross-cutting/            ← temas transversales que no encajan en un dominio
     01-ai-systems-and-agents.md
     02-marketing-tecnico.md
@@ -131,6 +138,7 @@ Función: memoria acumulativa de Raul. Aquí vive el conocimiento estable (wiki)
   05-glossary-and-tables/
     glossary-tecnico.md
     reference-tables.md
+
 ```
 
 **Distinción `wiki/` vs `specs/` vs `assets/` (clave):**
