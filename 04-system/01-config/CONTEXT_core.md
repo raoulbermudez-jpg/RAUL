@@ -12,9 +12,9 @@ Estructura raíz (`C:\RAUL\`):
 - `02-knowledge-base/` — LLM Wiki compilada.
   - `01-foundations/`: metodología, filosofía local-first, patrones de uso de LLM.
   - `02-domains/`: conocimiento organizado por dominio:
-    - `01-genteca/`
-    - `02-finca-ganaderia/`
-    - `03-plenus-metabolica/` (Raoul’s Products, alimentos funcionales, salud metabólica, longevidad saludable)
+    - - `01-genteca/`
+    - `02-plenus-metabolica/` (Raoul’s Products, alimentos funcionales, salud metabólica, longevidad saludable)
+    - `03-finca-ganaderia/`
     - `04-teca-teak4food/`
     - `05-marca-personal-raoul/`
     - `99-other-domains/`
@@ -39,6 +39,14 @@ Principios clave:
 - **App-less**: el sistema de archivos es la “base de datos”. No se depende de herramientas tipo Notion/Obsidian como verdad principal.
 - **Contexto por dominio**: para tareas específicas de un dominio, se puede complementar este contexto core con archivos `CLAUDE_<dominio>.md` / `CONTEXT_<dominio>.md` y con los `.md` relevantes de la wiki de ese dominio.
 - **Economía de tokens**: usar este contexto core como base, y añadir solo el contexto de dominio y documentos estrictamente necesarios para cada tarea.
+- **Mapa operativo explícito**: para orientarse rápido, usar los índices en `04-system/05-indexes/`:
+  - `domains-index.md` para ver dominios activos y su estado.
+  - `projects-index.md` para ver proyectos activos y su etapa.
+  - `research-index.md` para líneas de investigación abiertas.
+- **Gobernanza y migración**: los cambios estructurales y de infraestructura (migración a C:\RAUL, Fase 4 Drive + InboxBot, etc.) se registran en:
+  - `04-system/03-governance/DECISIONS.md`
+  - `04-system/03-governance/MIGRATION-PLAN.md`
+  - `04-system/03-governance/task-log.md`
 
 ### Archivos core vs companion (PERPLEXITY)
 
