@@ -1,4 +1,4 @@
-# CLAUDE-CODE-RULES — Proyecto C:\WorkspaceIA\PROJECTS\Claude code
+# CLAUDE-CODE-RULES — Proyecto C:\Raul
 
 **Versión:** 1.0  
 **Última actualización:** 2026-04-20  

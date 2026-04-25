@@ -58,3 +58,34 @@ El log anterior en C:\WorkspaceIA\PROJECTS\Claude code\Team\task-log.md queda co
 - Estado migración: RAUL consolidado en C:\RAUL, repo nuevo en GitHub (main) con gobernanza y .gitignore canónico alineados con FOLDER-ARCHITECTURE v2.1.
 - Fase 4: diseño completado en MIGRATION-PLAN (prerequisito explícito de portar inboxbot.py y configuración objetivo de Drive Desktop documentada).
 - InboxBot: script aún vive en el repo histórico; pendiente crítico Fase 4 = copiar `inboxbot.py` a `04-system/04-tools-and-scripts/scripts/` y actualizar rutas a RAUL + G:\Mi unidad\RAUL\01-inbox\... antes de reconfigurar Drive Desktop y el trigger.
+
+2026-04-25 — Raul
+- Migración RAUL: fases 1–3 ejecutadas (skeleton, system, KB Genteca + estructura Plenus, proyectos Genteca migrados).
+- Gobernanza: README, CONTEXT_core, domains-index, projects-index, companion-docs-index y MIGRATION-PLAN actualizados; .gitignore canónico activo.
+- Estado actual: RAUL en C:\RAUL y repo GitHub (main) son el entorno operativo principal. Repo histórico queda en práctica como referencia/archivo hasta ejecutar Fase 4 (InboxBot + Drive + archivado físico).
+
+### 2026-04-25 — Migración agentes core (Paxs, Michelina, Vivienne)
+
+**Contexto:** Consolidar el sistema de agentes en RAUL y dejar el repo histórico como referencia, no como entorno operativo.
+
+**Acciones:**
+- Copiados los AGENT.md legacy de:
+  - `paxs`, `michelina`, `vivienne`
+  desde `C:\Users\User\.claude\agents\` a:
+  - `C:\RAUL\.claude\agents\paxs\AGENT.md`
+  - `C:\RAUL\.claude\agents\michelina\AGENT.md`
+  - `C:\RAUL\.claude\agents\vivienne\AGENT.md`
+- Creados los agentes conceptuales correspondientes como fuente de verdad vendor-neutral en:
+  - `C:\RAUL\04-system\02-agents\conceptual\paxs.md`
+  - `C:\RAUL\04-system\02-agents\conceptual\michelina.md`
+  - `C:\RAUL\04-system\02-agents\conceptual\vivienne.md`
+- Ajustada la jerarquía de encabezados en los conceptuales:
+  - H1: versión conceptual del rol.
+  - H2: título operativo original (Paxs, Michelina, Vivienne).
+  - Se mantiene intacto el cuerpo de instrucciones de cada agente.
+
+**Resultado:**
+- Paxs, Michelina y Vivienne quedan plenamente integrados en RAUL:
+  - runtime listo para Claude Code bajo `.claude\agents\...`
+  - definición conceptual alineada con el resto del equipo en `04-system\02-agents\conceptual\`.
+- A partir de ahora, cualquier ajuste de estos agentes se hace primero en los archivos conceptuales de RAUL y luego se refleja en sus AGENT.md derivados.
