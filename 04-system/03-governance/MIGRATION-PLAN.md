@@ -192,6 +192,8 @@ Antes de arrancar fase 1:
 
 **Objetivo:** mover el flujo remoto del Owner (Drive, InboxBot) a la nueva estructura. **Ventana de inestabilidad operativa remota: 24-48h hasta validación completa.**
 
+**Prerequisito:** Antes de ejecutar esta fase, portar el script `inboxbot.py` desde el entorno histórico (`C:\WorkspaceIA\PROJECTS\Claude code\...`) a `C:\RAUL\04-system\04-tools-and-scripts\scripts\inboxbot.py`, manteniendo la misma lógica pero actualizando rutas según este plan y la sección 10.3–10.4 de `FOLDER-ARCHITECTURE.md`.
+
 **Acciones — en orden estricto:**
 
 1. **Avisar al Owner** que el flujo remoto estará en mantenimiento durante las próximas X horas. No subir briefs al Team Inbox viejo durante la ventana.
@@ -205,6 +207,16 @@ Antes de arrancar fase 1:
    - Detener sync actual.
    - Re-mapear `G:\Mi unidad\RAUL\` = `C:\RAUL\01-inbox\` + `C:\RAUL\02-knowledge-base\` (según §10.3 de la arquitectura).
    - Validar sync bidireccional funciona.
+   
+   **Configuración objetivo de Drive Desktop (Fase 4)**
+
+- Modo "Mi unidad" (My Drive): stream o mirror según preferencia de espacio en disco (no afecta la lógica de RAUL).
+- Directorios locales sincronizados desde "Este equipo" hacia Google Drive:
+  - `C:\RAUL\01-inbox\01-owner-to-raul`  <->  `Mi unidad\RAUL\01-inbox\01-owner-to-raul`
+  - `C:\RAUL\01-inbox\02-deliverables-to-owner`  <->  `Mi unidad\RAUL\01-inbox\02-deliverables-to-owner`
+  - `C:\RAUL\02-knowledge-base`  <->  `Mi unidad\RAUL\02-knowledge-base`
+
+Esta configuración debe aplicarse en Drive for desktop en la misma ventana de trabajo en que se porte `inboxbot.py` y se re‑cree el trigger, para que el cut-over sea atómico y fácil de revertir si algo falla.
 
 4. **Re-crear InboxBot trigger:**
    - Eliminar (o pausar) trigger `trig_01RgGGbpCvckUzSwkyGMDNtm`.

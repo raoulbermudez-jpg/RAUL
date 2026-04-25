@@ -53,3 +53,8 @@ El log anterior en C:\WorkspaceIA\PROJECTS\Claude code\Team\task-log.md queda co
 | 2026-04-21 | Raul | ROUTING-GUIDE.md §2A — pointer cruzado a §6 añadido para cerrar navegación interna del doc | delivered |
 | 2026-04-21 | Raul | Migración Raul 2026 — Fase 1 parcial: skeleton C:\RAUL\ creado (tree completo) + FOLDER-ARCHITECTURE.md v2.1 + MIGRATION-PLAN.md v1.0 escritos en destinos finales. Incluye §8 estrategia core+dominio y Fase 6 piloto Genteca | delivered |
 | 2026-04-21 | Raul | Migración Raul 2026 — Fase 1 completa: CONTEXT_core.md + 5 README stubs + DECISIONS.md (primera entrada) + NAMING-CONVENTIONS.md stub + .gitignore + git init + primer commit 54aac6e "Skeleton Raul 2026 — pre-migration" | delivered |
+
+2026-04-25 — Raul
+- Estado migración: RAUL consolidado en C:\RAUL, repo nuevo en GitHub (main) con gobernanza y .gitignore canónico alineados con FOLDER-ARCHITECTURE v2.1.
+- Fase 4: diseño completado en MIGRATION-PLAN (prerequisito explícito de portar inboxbot.py y configuración objetivo de Drive Desktop documentada).
+- InboxBot: script aún vive en el repo histórico; pendiente crítico Fase 4 = copiar `inboxbot.py` a `04-system/04-tools-and-scripts/scripts/` y actualizar rutas a RAUL + G:\Mi unidad\RAUL\01-inbox\... antes de reconfigurar Drive Desktop y el trigger.
