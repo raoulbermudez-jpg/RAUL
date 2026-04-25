@@ -1,32 +1,121 @@
-# Sistema Raul 2026 — .gitignore
-# Ver FOLDER-ARCHITECTURE.md §10.2 para política completa.
+# ===========================
+# RAUL - Gitignore canónico
+# ===========================
+# Política:
+# - Versionar sólo el "cerebro" del sistema: reglas, KB en texto, scripts y código.
+# - Mantener fuera del repo: buzones operativos, raw sources, binarios pesados y archivo histórico.
+# - Facilitar backups externos (05-archive) y mirrors (Drive) sin contaminar Git.
 
-# Inboxes — buzones operativos, no se versionan
-/01-inbox/01-owner-to-raul/
-/01-inbox/02-deliverables-to-owner/
-/01-inbox/03-raw-sources/
+# ---------------------------
+# 1) Buzones operativos / Inbox
+# ---------------------------
+# 01-inbox es hub de IO. Todo su contenido corriente se trata como operativo, no como estado del sistema.
 
-# Archive — histórico, se respalda aparte
-/05-archive/
+01-inbox/01-owner-to-raul/
+01-inbox/02-deliverables-to-owner/
+01-inbox/03-raw-sources/
 
-# Binarios pesados por defecto
+# Permitimos sólo documentación de estructura si algún día hubiera README.md
+# (no hace falta regla extra: README.md nuevo se añadirá explícitamente con git add si lo necesitas).
+
+# ---------------------------
+# 2) Archivo histórico
+# ---------------------------
+# 05-archive se respalda aparte (NAS, disco externo, etc.) y no se versiona en Git.
+
+05-archive/
+
+# ---------------------------
+# 3) Binarios pesados globales
+# ---------------------------
+# Regla general para evitar que entren PDFs, PPTX, imágenes pesadas, vídeo, audio, etc.
+# Se aplican en todo el árbol (03-projects, 02-knowledge-base/assets, etc.).
+
 *.pdf
 *.pptx
+*.ppt
+*.doc
 *.docx
+*.xls
 *.xlsx
+*.xlsm
+*.csv
+*.ods
+
 *.png
 *.jpg
 *.jpeg
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.webp
+*.svgz
+
 *.mp4
 *.mov
-*.wav
+*.m4v
+*.avi
+*.mkv
+*.wmv
+
 *.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
 
-# Excepciones: specs que viven como PDF sí se versionan
-!/02-knowledge-base/**/specs/**/*.pdf
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
 
-# Sistema operativo / editores
+# ---------------------------
+# 4) Excepción para specs en PDF
+# ---------------------------
+# Si alguna hoja técnica/specificación se decide mantener en PDF dentro de 02-knowledge-base/specs,
+# esta regla permite añadirla explícitamente con git add.
+
+!02-knowledge-base/**/specs/*.pdf
+
+# ---------------------------
+# 5) Archivos temporales y de editor
+# ---------------------------
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
 Thumbs.db
-*.swp
+ehthumbs.db
+Desktop.ini
+
+# VSCode / IDEs
 .vscode/
+.idea/
+*.code-workspace
+
+# Python / entorno
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# Logs y temporales genéricos
+*.log
+*.tmp
+*.temp
+*~
+.~lock.*
+
+# ---------------------------
+# 6) Otros directorios auxiliares
+# ---------------------------
+# Si en el futuro usas algún directorio de build o caché, se listaría aquí.
+# Por ahora RAUL es local-first sin builds, así que no añadimos más.
