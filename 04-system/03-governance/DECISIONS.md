@@ -60,4 +60,22 @@ Notas:
 
 ---
 
+## 2026-04-25 — Política agentes globales vs. locales
+
+**Decisión:** Los agentes Michelina, Paxs y Vivienne se mantienen en **ambas ubicaciones** (global `C:\Users\User\.claude\agents\` y local `C:\Raul\.claude\agents\`), con la copia local como **fuente autoritativa** y los archivos conceptuales en `04-system/02-agents/conceptual/` como **SSOT vendor-neutral**.
+
+**Contexto y motivación:**
+- Los tres agentes existían solo en global antes de la migración. Se copiaron al repo local para que el sistema /RAUL/ sea autocontenido y versionable.
+- La copia global es legado; se mantiene para no romper otros proyectos abiertos desde `C:\Users\User\`.
+- La copia local en `/RAUL/.claude/agents/` es la que opera en sesiones abiertas desde `C:\Raul`.
+
+**Regla operativa:**
+- Cualquier modificación a Michelina, Paxs o Vivienne se hace primero en `04-system/02-agents/conceptual/<agente>.md` (SSOT), luego se refleja en `C:\Raul\.claude\agents\<agente>\AGENT.md` (derivado local).
+- La copia global (`C:\Users\User\.claude\agents\`) **no se actualiza automáticamente** — es responsabilidad del Owner sincronizarla manualmente si usa esos agentes desde otros proyectos.
+- Si en el futuro se decide eliminar la copia global, registrar la decisión aquí.
+
+**Estado:** Vigente desde 2026-04-25.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

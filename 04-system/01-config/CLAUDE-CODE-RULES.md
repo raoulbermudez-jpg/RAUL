@@ -71,7 +71,7 @@ Si en el futuro se modifica `.claude/settings.local.json`, debe mantenerse aline
 ## 5. Uso práctico de estas reglas
 
 - En sesiones normales, Claude puede:
-  - Leer y navegar el conocimiento del sistema (Team/, .claude/, RAG_SOURCES) sin fricción.
+  - Leer y navegar el conocimiento del sistema (04-system/, .claude/, 02-knowledge-base/) sin fricción.
   - Editar y crear documentación, prompts y archivos internos sin pedir permiso todo el tiempo.
 - Cada vez que Claude proponga ejecutar un comando que entra en la zona de `ask`:
   - Debe explicitar el comando completo.
