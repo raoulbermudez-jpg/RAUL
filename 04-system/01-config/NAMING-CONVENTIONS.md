@@ -1,10 +1,10 @@
 # NAMING-CONVENTIONS.md
 ## Estándares de nombres para carpetas y archivos — Sistema Raul 2026
 
-**Versión:** 0.1 (stub inicial)
-**Estado:** por desarrollar durante operación real
+**Versión:** 1.0
+**Última actualización:** 2026-04-25
 
-Este documento definirá las convenciones de nombres del sistema. Como stub inicial, se listan los principios acordados y los patrones ya en uso. El detalle fino se completará a medida que aparezcan casos reales y se tomen decisiones registradas en `DECISIONS.md`.
+Este documento define las convenciones de nombres del sistema. Los patrones aquí registrados están en uso activo; los pendientes de definición están marcados explícitamente en §3.
 
 ---
 
@@ -76,28 +76,49 @@ Aclaraciones:
 - Conceptual (SSOT): `/RAUL/04-system/02-agents/conceptual/<nombre>.md` — minúsculas.
 - Derivado Claude Code: `/RAUL/.claude/agents/<nombre>/AGENT.md` — mismo nombre minúscula + archivo llamado `AGENT.md`.
 
-### 2.8 Assets
+### 2.8 Specs de producto (KB)
+
+- Formato: `YYYY-MM-DD_<tipo-doc>_<slug-producto>.md`
+- Tipo de documento: `hoja-especificaciones`, `catalogo`, `guia-programacion`, `manual`, `ficha-tecnica`.
+- Slug producto: nombre de marca + código + descripción breve, todo minúsculas y guiones.
+- Ejemplos:
+  - `2026-04-17_hoja-especificaciones_exceline-gsm-asbs-protector-aa-consola.md`
+  - `2026-04-17_catalogo_exceline-profesional-breakers.md`
+  - `2026-04-17_guia-programacion_exceline-gtc-b1c-programador-horario.md`
+
+### 2.9 Assets
 
 - Dentro del dominio correspondiente, subcarpetas por tipo: `products/`, `packaging/`, `diagrams/`, `uncoded/`.
 - Nombres de archivos visuales: incluir código de producto cuando aplique (ej. `GSM-MB-RB-RF_frontal.png`, `GST-R_etiqueta_v2.pdf`).
 
-### 2.9 Índices
+### 2.10 Índices
 
-- `_index.md` para índices generales de carpeta.
+- `_index.md` para índices generales de carpeta (siempre comienza con underscore para distinguirlos de artículos).
 - `_index-<tipo>.md` para índices especializados (ej. `_index-specs.md`).
+
+### 2.11 Archivos de governance y log
+
+- Log de tareas: `task-log.md` — tabla plana con columnas Fecha / Agente / Tarea / Outcome.
+- Log de decisiones: `DECISIONS.md` — entradas cronológicas con formato definido en el propio archivo.
+
+### 2.12 Versiones dentro de proyectos
+
+- Sufijo `_v<N>` para versiones iterativas de un mismo entregable (ej. `GSM-RF_empaque_delta_v3.md`).
+- No usar fechas como versionado de archivos dentro de proyectos (la fecha va en el log o README, no en el nombre del archivo).
 
 ---
 
 ## 3. Por definir (pendientes)
 
-- Política exacta sobre acentos dentro de nombres de archivo (hoy: evitarlos).
 - Longitud máxima recomendada de slugs de proyecto.
-- Convención exacta para versiones dentro de un proyecto (v1, v2, v3 vs fecha vs rev-YYYY-MM-DD).
-- Patrón para archivos temporales o borradores (¿prefijo `_draft_`? ¿subcarpeta `drafts/`?).
-- Convención de capitalización para siglas en slugs (GST-R vs gst-r).
+- Patrón para archivos temporales o borradores dentro de proyectos (¿prefijo `_draft_`? ¿subcarpeta `drafts/`?).
+- Convención de capitalización para siglas en slugs de proyectos (GST-R vs gst-r en folder names).
+- Política de nombres en `03-cross-cutting/` cuando un tema crece más allá de un solo artículo (subdirectorio vs. múltiples artículos planos).
 
 Cada uno de estos puntos se resolverá caso a caso y se registrará en `DECISIONS.md` cuando surja el primer precedente.
 
 ---
 
-Este documento es un stub vivo y se expandirá con la operación real del sistema.
+## Notas de versión
+
+- **v1.0 — 2026-04-25** — stub elevado a versión completa con todos los patrones activos documentados.

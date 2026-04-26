@@ -64,6 +64,12 @@ El log anterior en C:\WorkspaceIA\PROJECTS\Claude code\Team\task-log.md queda co
 - Gobernanza: README, CONTEXT_core, domains-index, projects-index, companion-docs-index y MIGRATION-PLAN actualizados; .gitignore canónico activo.
 - Estado actual: RAUL en C:\RAUL y repo GitHub (main) son el entorno operativo principal. Repo histórico queda en práctica como referencia/archivo hasta ejecutar Fase 4 (InboxBot + Drive + archivado físico).
 
+| 2026-04-22 | Raul | Migración Fase 2 — system migrado a 04-system/, agentes a .claude/+conceptual/, Celeste fix (rutas y _index-specs.md), CLAUDE.md trimmed (→@CONTEXT_core.md), CONTEXT.md frozen legacy | delivered |
+| 2026-04-22 | Raul | Migración Fase 3 — KB Genteca (192 specs) + wiki/market stubs + domain skeletons (02-05, 99) + proyectos activos (GST-R, GSM-MB-RB-RF) + agentes Michelina/Paxs/Vivienne local + conceptuales | delivered |
+| 2026-04-25 | Raul | Auditoría estructural + cierre de brechas Tier 2 — LLM-GUIDELINES.md, RISK-POLICY.md, SECURITY-AND-ACCESS.md creados; DECISIONS.md actualizado (política agentes globales/locales) | delivered |
+| 2026-04-25 | Raul | Cierre de brechas Tier 3 — templates (project/sop/report), 01-foundations stubs (3), 03-cross-cutting indexes (4), 04-sops _index, 05-glossary-and-tables (glossary-tecnico + reference-tables) | delivered |
+| 2026-04-25 | Raul | Cierre brechas Fase 3.5 — KB _index maestro, cross-cutting/assets, Genteca assets subdirs, glossary renombrado, FOLDER-ARCHITECTURE.md actualizado, NAMING-CONVENTIONS.md v1.0, CLAUDE_core.md + CLAUDE_genteca.md + CONTEXT_genteca.md (Fase 6 piloto), scripts migración archivados | delivered |
+
 ### 2026-04-25 — Migración agentes core (Paxs, Michelina, Vivienne)
 
 **Contexto:** Consolidar el sistema de agentes en RAUL y dejar el repo histórico como referencia, no como entorno operativo.

@@ -126,11 +126,16 @@ Función: memoria acumulativa de Raul. Aquí vive el conocimiento estable (wiki)
     Nota: la numeración de dominios refleja prioridad de activación y orden operativo del sistema, no necesariamente el orden histórico de diseño de cada dominio.
 
   03-cross-cutting/            ← temas transversales que no encajan en un dominio
-    01-ai-systems-and-agents.md
-    02-marketing-tecnico.md
-    03-microbiota-y-fermentos.md
-    04-salud-metabolica.md
-    assets/                    ← íconos genéricos, plantillas comunes, material realmente transversal
+    ai-systems/               ← IA, PKAs, LLMs, arquitecturas de conocimiento
+      _index.md
+    marketing-tecnico/        ← marketing B2B para producto técnico complejo
+      _index.md
+    microbiota/               ← microbiota intestinal, ciencia base (multi-dominio)
+      _index.md
+    salud-metabolica/         ← mecanismos metabólicos, evidencia general (multi-dominio)
+      _index.md
+    assets/                   ← íconos genéricos, plantillas comunes, material realmente transversal
+      _index.md
   04-sops-and-playbooks/       ← SOPs generales NO específicos de content supply chain
     01-investigacion-tecnica-SOP.md
     02-evaluacion-papers-SOP.md
@@ -238,11 +243,13 @@ Función: cerebro del sistema Raul. Define cómo se trabaja, no el trabajo en s�
     NAMING-CONVENTIONS.md   ← estándares de nombres (carpetas/archivos)
     FOLDER-ARCHITECTURE.md  ← ESTE documento
     CLAUDE-CODE-RULES.md    ← reglas de operación de Claude Code en este repo
+    CLAUDE_core.md          ← núcleo compacto vendor-neutral (cualquier LLM)
+    CONTEXT_core.md         ← contexto breve general (auto-cargado por CLAUDE.md)
+    CLAUDE_genteca.md       ← reglas específicas dominio Genteca
+    CONTEXT_genteca.md      ← contexto dominio Genteca (productos, marcas, stakeholders)
     # (futuros — ver §8)
-    CLAUDE_core.md          ← núcleo compacto para cargar siempre
-    CONTEXT_core.md         ← contexto breve general
-    CLAUDE_<domain>.md      ← reglas específicas por dominio
-    CONTEXT_<domain>.md     ← contexto específico por dominio
+    CLAUDE_<domain>.md      ← reglas específicas por dominio (patrón replicable)
+    CONTEXT_<domain>.md     ← contexto específico por dominio (patrón replicable)
   02-agents/
     conceptual/             ← FUENTE DE VERDAD (vendor-neutral)
       aurelio.md
