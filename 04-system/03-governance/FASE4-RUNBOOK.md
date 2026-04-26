@@ -1,21 +1,48 @@
 # Fase 4 — Runbook de ejecución
-## Reconfiguración de Drive Desktop + InboxBot
+## Reconfiguración de InboxBot (OneDrive)
 
-**Versión:** 1.0
+**Versión:** 1.1
 **Fecha de preparación:** 2026-04-25
+**Última revisión:** 2026-04-26 — migrado de Google Drive a OneDrive (1TB disponible, sin costo adicional)
 **Ejecutor:** Owner (Raoul Bermúdez) — esta fase requiere acciones manuales
-**Tiempo estimado:** 2-3 horas en bloque continuo
+**Tiempo estimado:** 30–60 min
 **Ventana de inestabilidad:** hasta 24h mientras el trigger InboxBot se re-sincroniza con la nueva ruta
+
+---
+
+## Decisión de arquitectura
+
+El inbox usa **OneDrive** (Microsoft, 1TB) en lugar de Google Drive (200GB).
+
+| | Google Drive | OneDrive (elegido) |
+|---|---|---|
+| Espacio disponible | 200 GB (95 GB usados) | 1 TB |
+| Costo extra | Posiblemente sí | No |
+| Path local | `G:\Mi unidad\...` (streaming) | `C:\Users\User\OneDrive\...` (local) |
+| App móvil | Drive | OneDrive |
+
+Google Drive queda en modo **streaming** (G: como unidad virtual, sin backup de PC).
+
+---
+
+## Paths definitivos
+
+| Propósito | Path local | Cloud |
+|---|---|---|
+| InboxBot lee (briefs del Owner) | `C:\Users\User\OneDrive\RAUL\01-inbox\01-owner-to-raul\` | OneDrive web / app móvil |
+| Raul deposita entregables | `C:\Users\User\OneDrive\RAUL\01-inbox\02-deliverables-to-owner\` | OneDrive web / app móvil |
 
 ---
 
 ## Prerequisitos antes de ejecutar
 
-- [ ] Sistema /RAUL/ en estado estable (Fases 1-3 completas ✅)
+- [x] Sistema /RAUL/ en estado estable (Fases 1-3 completas ✅)
+- [x] Carpetas OneDrive creadas (`01-owner-to-raul\` y `02-deliverables-to-owner\`) ✅
+- [x] Google Drive Desktop en modo streaming, sin backup de PC ✅
 - [ ] No hay briefs activos en el inbox viejo que no se hayan procesado
-- [ ] Tienes acceso a Google Drive Desktop en este equipo
 - [ ] Tienes acceso a la plataforma de automatizaciones (Routines, donde vive el trigger InboxBot)
-- [ ] Avisa a cualquier colaborador que usará el inbox que habrá mantenimiento por X horas
+
+**Paso 2 verificado 2026-04-26:** README visible en PC y en app OneDrive móvil ✅
 
 ---
 
@@ -30,60 +57,45 @@ Antes de reconfigurar, asegúrate de que no se pierda nada:
 
 ---
 
-## Paso 2 — Reconfigurar Google Drive Desktop
+## Paso 2 — Verificar sincronización OneDrive
 
-**Objetivo:** que las carpetas correctas de `/RAUL/` se sincronicen con tu Google Drive.
+Las carpetas ya existen en `C:\Users\User\OneDrive\RAUL\`. Verificar que OneDrive Desktop las está sincronizando:
 
-**Configuración objetivo:**
-
-| Carpeta local | Carpeta en Drive |
-|---------------|-----------------|
-| `C:\RAUL\01-inbox\01-owner-to-raul\` | `Mi unidad\RAUL\01-inbox\01-owner-to-raul\` |
-| `C:\RAUL\01-inbox\02-deliverables-to-owner\` | `Mi unidad\RAUL\01-inbox\02-deliverables-to-owner\` |
-| `C:\RAUL\02-knowledge-base\` | `Mi unidad\RAUL\02-knowledge-base\` |
-
-**Lo que NO debe sincronizarse a Drive:**
-- `C:\RAUL\04-system\` (vive en git, no necesita Drive)
-- `C:\RAUL\03-projects\` (local + git)
-- `C:\RAUL\05-archive\` (backup separado)
-
-**Pasos en Google Drive Desktop:**
-1. Abrir Google Drive Desktop → Preferencias → Mis carpetas.
-2. Eliminar las carpetas viejas que estaban sincronizadas (rutas del sistema anterior).
-3. Agregar las tres carpetas listadas arriba.
-4. Verificar que la sincronización comienza correctamente (íconos de sync en el explorador).
-5. Esperar a que el sync inicial complete antes de continuar.
+1. Abre el Explorador de archivos → navega a `C:\Users\User\OneDrive\RAUL\01-inbox\`
+2. Verifica que los íconos de las carpetas muestran la nube o la palomita de OneDrive (sync activo)
+3. Desde tu móvil (app OneDrive), navega a `RAUL/01-inbox/01-owner-to-raul/` — deberías ver el `README.md`
+4. Si no aparece, abre OneDrive Desktop → verifica que no está en pausa
 
 ---
 
-## Paso 3 — Actualizar el trigger InboxBot
+## Paso 3 — Reconfigurar el trigger InboxBot ✅ (2026-04-26)
 
-El trigger actual (`trig_01RgGGbpCvckUzSwkyGMDNtm`) apunta a rutas del sistema anterior.
+El InboxBot fue rediseñado como agente agnóstico en:
+`C:\RAUL\.claude\agents\inboxbot\AGENT.md`
 
-**Opción A — Editar el trigger existente (recomendado si es posible):**
-1. Abrir la plataforma de automatizaciones (Routines / Make / equivalente donde está configurado).
-2. Localizar el trigger `trig_01RgGGbpCvckUzSwkyGMDNtm`.
-3. Actualizar la ruta de lectura: `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\`
-4. Verificar que los marcadores `DONE_*.txt` y la lógica de drafts de Gmail siguen funcionando.
-5. Guardar.
+El trigger viejo (`trig_01RgGGbpCvckUzSwkyGMDNtm`) apuntaba a rutas de Google Drive muertas.
+El nuevo agente usa el filesystem local de OneDrive — sin dependencia de Drive MCP.
 
-**Opción B — Recrear el trigger:**
-1. Pausar o eliminar `trig_01RgGGbpCvckUzSwkyGMDNtm`.
-2. Crear nuevo trigger con:
-   - Lectura: `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\`
-   - Marcadores DONE_: en la misma carpeta
-   - Gmail: create_draft (no send directo)
-   - Frecuencia: cada 4h (o la que prefieras)
-3. Anotar el nuevo trigger ID y registrarlo en `DECISIONS.md`.
+**Para actualizar o recrear el trigger en Routines (Claude Code Desktop):**
+1. Pausar o eliminar el trigger `trig_01RgGGbpCvckUzSwkyGMDNtm`
+2. Crear nueva Routine con este prompt exacto:
+   ```
+   Ejecuta InboxBot. Lee y sigue al pie de la letra C:\RAUL\.claude\agents\inboxbot\AGENT.md
+   ```
+3. Frecuencia: cada 4 horas (o manual)
+4. Anotar el nuevo trigger ID en `DECISIONS.md`
+
+**Para otros LLMs:** cargar `AGENT.md` como system prompt y ejecutar.
 
 ---
 
 ## Paso 4 — Test end-to-end
 
-1. Subir un archivo de prueba a `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` desde el móvil o Drive web.
-2. Esperar un ciclo del InboxBot (hasta 4h, o forzarlo manualmente si la plataforma lo permite).
-3. Verificar que se genera un draft en Gmail con la tarea procesada.
-4. Verificar que el Owner puede ver el contenido de `01-inbox\02-deliverables-to-owner\` desde el móvil/Drive.
+1. Desde el móvil (app OneDrive), sube un archivo de prueba a `RAUL/01-inbox/01-owner-to-raul/`
+2. Verifica en el PC que aparece en `C:\Users\User\OneDrive\RAUL\01-inbox\01-owner-to-raul\`
+3. Esperar un ciclo del InboxBot (hasta 4h, o forzarlo manualmente si la plataforma lo permite)
+4. Verificar que se genera un draft en Gmail con la tarea procesada
+5. Verificar que el Owner puede ver entregables en `RAUL/01-inbox/02-deliverables-to-owner/` desde el móvil
 
 ---
 
@@ -101,24 +113,24 @@ Una vez que el test del paso 4 sea exitoso:
 
 Una vez completado todo:
 
-1. Agregar entrada en `DECISIONS.md`: "Fase 4 completada — InboxBot y Drive reconfiguraron con rutas /RAUL/. Nuevo trigger ID: [XXXXXXXXX]."
-2. Agregar entrada en `task-log.md`: `| 2026-XX-XX | Raul | Fase 4 — Drive Desktop reconfigurado + trigger InboxBot actualizado | delivered |`
+1. Agregar entrada en `DECISIONS.md`: "Fase 4 completada — InboxBot reconfigurado con OneDrive. Nuevo trigger ID: [XXXXXXXXX]."
+2. Agregar entrada en `task-log.md`: `| 2026-XX-XX | Raul | Fase 4 — InboxBot actualizado a OneDrive | delivered |`
 3. Actualizar `MIGRATION-PLAN.md` marcando Fase 4 como completada.
 
 ---
 
 ## Rollback (si algo sale mal)
 
-Si la reconfiguración de Drive o el trigger falla:
-1. Restaurar las rutas anteriores en Drive Desktop.
-2. Reactivar el trigger viejo `trig_01RgGGbpCvckUzSwkyGMDNtm` con sus rutas originales.
-3. El repo `/RAUL/` no se toca — el rollback es solo de Drive + trigger.
-4. Reportar el error y decidir cuándo reintentar.
+Si el trigger falla con OneDrive:
+1. Reactivar el trigger viejo `trig_01RgGGbpCvckUzSwkyGMDNtm` con sus rutas originales.
+2. Las carpetas de OneDrive no se tocan — el rollback es solo del trigger.
+3. Reportar el error y decidir cuándo reintentar.
 
 ---
 
 ## Notas
 
-- `03-raw-sources/` **no** se sincroniza con Drive (raw sources son locales por diseño).
-- `04-system/` y `03-projects/` tampoco van a Drive — se acceden por git.
-- Este runbook puede ejecutarse en partes: pasos 1-2 en una sesión, paso 3-4 en otra.
+- `03-raw-sources/` permanece en `C:\RAUL\01-inbox\03-raw-sources\` — local únicamente, no va a OneDrive ni a Drive.
+- `C:\RAUL\` completo está en git — no necesita sincronización cloud adicional.
+- Google Drive Desktop queda en modo streaming (G:) sin backup de PC — no interferirá.
+- OneDrive maneja el inbox. Git maneja el sistema.
