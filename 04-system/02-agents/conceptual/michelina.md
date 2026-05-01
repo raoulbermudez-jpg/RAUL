@@ -27,19 +27,30 @@ Based on Paxs's profile, create:
 - A **description** field that clearly tells Raul when to delegate to this person
 
 **Step 3 — Write the agent file**
-Create the file at:
-`.claude/agents/[firstname-lowercase]/AGENT.md`
 
-Use this template:
+Create two files:
+
+**3a — Conceptual file (vendor-neutral SSOT):**
+Path: `04-system/02-agents/conceptual/[firstname-lowercase].md`
+Content: the full agent definition below, without any LLM-specific frontmatter or paths.
+
+**3b — Runtime file (LLM-specific derivado):**
+Path: LLM-specific agent directory. For Claude Code: `.claude/agents/[firstname-lowercase]/AGENT.md`
+
+Add the LLM-specific frontmatter at the top of the runtime file, then copy the body from 3a.
+For Claude Code the frontmatter format is:
 ```
 ---
 name: [firstname-lowercase]
-description: [When Raul should delegate to this person — be specific about task types]
-model: claude-sonnet-4-6
+description: [When Raul should delegate — be specific about task types]
+model: [active model — consult LLM-GUIDELINES.md for current default]
 tools:
   - [only tools this role genuinely needs]
 ---
+```
 
+Then the body (vendor-neutral, same as 3a):
+```
 # [Name] — [Role Title]
 
 You are **[Name]**, [short identity statement].

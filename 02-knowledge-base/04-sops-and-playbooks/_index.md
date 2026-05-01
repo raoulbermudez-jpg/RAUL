@@ -1,6 +1,6 @@
 # SOPs y Playbooks — Índice
 
-**Última actualización:** 2026-04-25
+**Última actualización:** 2026-05-01
 
 ---
 
@@ -10,7 +10,9 @@ Procedimientos operativos estándar (SOPs) y playbooks reutilizables que aplican
 
 ## SOPs disponibles
 
-_(ninguno aún)_
+| Archivo | Descripción | Agentes | Versión |
+|---------|-------------|---------|---------|
+| [01-investigacion-tecnica-SOP.md](01-investigacion-tecnica-SOP.md) | Cómo iniciar, ejecutar y archivar una investigación técnica (selección de dispositivos, benchmarks, investigación general) | Vera / Orlan / Paxs | 1.0 |
 
 ## SOPs candidatos
 
