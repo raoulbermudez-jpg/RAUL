@@ -28,13 +28,33 @@ The team operates in three formal layers. Raul knows every agent in every layer 
 
 These agents serve **all** of Raoul's domains — Genteca, Finca, Plenus, and future projects. They require no domain-specific knowledge to do their work well.
 
+#### 2a — Conocimiento, investigación y presentaciones
+
 | Name | Role | When to engage |
 |------|------|----------------|
 | **Michelina** ⭐ | Head of HR | Hiring new team members for any domain; refining existing agent prompts |
 | **Paxs** ⭐ | Senior Researcher | Deep research on any topic; role profiling for new hires |
 | **Vivienne** ⭐ | Presentation Designer | Executive decks, pitch decks, data visualization — domain-agnostic; works across all projects |
 
+#### 2b — Content Supply Chain ⭐ (pipeline de producción de contenido)
+
+These agents form the end-to-end content production pipeline. They are transversal — they serve all domains. They activate when the task involves content strategy, scripting, multimodal production, approval, or distribution.
+
+| Name | CSC Layer | Role | When to engage |
+|------|-----------|------|----------------|
+| **Aurelio** ⭐ | Estrategia | Content Strategist | First gate — campañas, lanzamientos, planes multi-formato. Define QUÉ, A QUIÉN y CUÁNDO |
+| **Nerea** ⭐ | Estrategia | Script & Narrative Architect | Después de Aurelio — guiones, hooks, copy por pieza y formato |
+| **Orfeo** ⭐ | Producción | Audio & Conversation Producer | Contenido multi-voz, podcasts, conversaciones estilo studio |
+| **Luma** ⭐ | Producción | Video & Motion Producer | Video: shorts, reels, largo, motion graphics |
+| **Vela** ⭐ | Producción | Narration & Voiceover | Narración de voz única, voiceover para video o presentación |
+| **Atlas** ⭐ | Producción | Static Visual Producer | Carruseles, infografías, miniaturas, POP, material impreso |
+| **Bruna** ⭐ | Gobernanza | Brand & Risk Governance | Gate obligatorio antes de cualquier publicación pública — sin Bruna, nada sale |
+| **Ivo** ⭐ | Distribución | Distribution & Channel Strategist | Canal, fecha, metadata, publicación — solo recibe lo que Bruna aprobó |
+| **Sira** ⭐ | Memoria | Archive, Version & Recycling | Versiona, cataloga, propone reciclaje de activos entre campañas |
+
 *(⭐ = global agent, available in every project. Path: `C:\Users\User\.claude\agents\`)*
+
+**Cadenas pre-definidas y detalle de interacciones → [`04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md`](../02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md)**
 
 ### Capa 3 — Especialistas de Dominio: Genteca
 
@@ -54,10 +74,16 @@ These agents are anchored to the **Genteca** domain. They consult Genteca's KB, 
 
 ### Routing Rules
 
-- **Domain-neutral task** (a deck, deep research, hiring): use a Capa 2 agent.
+- **Domain-neutral task** (deep research, hiring, executive deck): use a Capa 2a agent.
 - **Genteca-specific task**: use a Capa 3 agent.
 - **Cross-domain task** (e.g., investor deck mixing Genteca + Finca data): Raul decomposes into sub-tasks per domain, collects outputs, then routes to Vivienne for the final deck.
 - **No agent covers the need**: call Michelina — never skip this step.
+
+**Routing para Content Supply Chain (Capa 2b):**
+- **Pieza única, formato conocido, no requiere campaña** (ej. un post de LinkedIn sobre un producto): entrar directo en Nerea con el brief → Atlas/Solenne para producción → Bruna → Ivo.
+- **Campaña o lanzamiento multi-formato** (ej. video + carrusel + audio): Aurelio primero → Nerea → producción en paralelo → Bruna → Ivo → Sira.
+- **Publicación de cualquier pieza hacia afuera**: SIEMPRE pasa por Bruna antes de Ivo. Sin excepción.
+- **Solenne vs. Nerea**: Solenne es escritora B2B Genteca-específica (blog, LinkedIn, email, product copy). Nerea es la arquitecta de guiones y narrativa para producción multimodal (video, audio, carrusel). Si el output final es texto publicable directamente → Solenne. Si el output alimenta a Orfeo/Luma/Vela/Atlas → Nerea.
 
 ## Hiring New Team Members
 

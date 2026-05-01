@@ -3,11 +3,18 @@ gsm_empaque_redlines_v4.py
 Genera PDFs redline de tiro y retiro para empaque GSM-MB/RB/RF
 con anotaciones delta v4 (NTC + Inverter).
 Raoul Bermudez — 2026-04-30
+
+Modo de renderizado: paginas fuente rasterizadas a RASTER_DPI como JPEG,
+anotaciones vectoriales encima. Produce archivos ~100-130 KB aptos para
+subir a Google Drive via MCP (limite base64 ~192 KB).
 """
 
 import fitz
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
+
+RASTER_DPI = 50     # DPI de rasterizacion de paginas fuente
+JPEG_QUALITY = 50   # Calidad JPEG para paginas fuente (50 = buena legibilidad, bajo peso)
 
 # ---------------------------------------------------------------------------
 # Rutas
@@ -394,6 +401,13 @@ def add_gsm_re_note_page(doc, is_tiro):
         y += 16
 
 
+def rasterize_src_page(src_page):
+    """Renderiza una pagina fuente como JPEG a RASTER_DPI. Retorna bytes."""
+    mat = fitz.Matrix(RASTER_DPI / 72, RASTER_DPI / 72)
+    pix = src_page.get_pixmap(matrix=mat, colorspace=fitz.csRGB)
+    return pix.tobytes("jpeg", jpg_quality=JPEG_QUALITY)
+
+
 def generate_tiro():
     src = fitz.open(TIRO_SRC)
     out = fitz.open()
@@ -402,8 +416,11 @@ def generate_tiro():
     has_inverter = [False, True, True]  # MB no tiene, RB y RF ya tienen badge inverter
 
     for i in range(len(src)):
-        out.insert_pdf(src, from_page=i, to_page=i)
-        page = out[-1]
+        sp = src[i]
+        W, H = sp.rect.width, sp.rect.height
+        img_bytes = rasterize_src_page(sp)
+        page = out.new_page(width=W, height=H)
+        page.insert_image(fitz.Rect(0, 0, W, H), stream=img_bytes)
         annotate_tiro_page(page, models[i], has_inverter[i])
 
     add_gsm_re_note_page(out, is_tiro=True)
@@ -420,8 +437,11 @@ def generate_retiro():
     models = ["GSM-MB", "GSM-RB", "GSM-RF"]
 
     for i in range(len(src)):
-        out.insert_pdf(src, from_page=i, to_page=i)
-        page = out[-1]
+        sp = src[i]
+        W, H = sp.rect.width, sp.rect.height
+        img_bytes = rasterize_src_page(sp)
+        page = out.new_page(width=W, height=H)
+        page.insert_image(fitz.Rect(0, 0, W, H), stream=img_bytes)
         annotate_retiro_page(page, models[i])
 
     add_gsm_re_note_page(out, is_tiro=False)

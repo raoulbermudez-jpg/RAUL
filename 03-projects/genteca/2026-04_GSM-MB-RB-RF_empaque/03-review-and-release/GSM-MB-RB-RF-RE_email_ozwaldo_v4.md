@@ -31,12 +31,14 @@ Además, a partir de esta versión el scope incluye cuatro modelos: GSM-MB, GSM-
   [GSM-MB-RB-RF-RE_empaque_delta_v4_NTC-inverter.md](https://drive.google.com/file/d/1qNxfukAFF3P1ODEE1JddnieYv-AJdtcm/view)
 
 - **Redline TIRO (frente) — 4 páginas, un modelo por página:**
-  [GSM-MB-RB-RF-RE_GLA_T_redline_v4.pdf] — [LINK PENDIENTE — ver nota abajo]
+  [GSM-MB-RB-RF-RE_GLA_T_redline_v4.pdf] — ⚠️ INSERTAR LINK DRIVE antes de enviar
 
 - **Redline RETIRO (reverso) — 4 páginas, un modelo por página:**
-  [GSM-MB-RB-RF-RE_GLA_R_redline_v4.pdf] — [LINK PENDIENTE — ver nota abajo]
+  [GSM-MB-RB-RF-RE_GLA_R_redline_v4.pdf] — ⚠️ INSERTAR LINK DRIVE antes de enviar
 
 > *Los redlines PDF muestran exactamente qué zona cambiar (rojo), qué agregar (naranja) y qué mantener (verde) sobre los artes actuales. Son el documento principal de trabajo para la implementación.*
+
+> **Nota interna (borrar antes de enviar):** Los PDFs están en `01-inbox/02-deliverables-to-owner/` y sincronizarán a Drive en minutos. Para obtener los links: abrir Drive → carpeta RAUL/01-inbox/02-deliverables-to-owner → clic derecho en cada PDF → "Copiar link". Reemplazar los ⚠️ arriba con los links antes de enviar.
 
 ---
 

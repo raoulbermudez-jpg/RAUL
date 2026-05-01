@@ -5,9 +5,18 @@
 | Agent | Capa | Dominio | Rol principal | Tipo |
 |-------|------|---------|--------------|------|
 | **Raul** | 1 — Orquestación | Global | Chief of Staff / Orchestrator | Orquestador |
-| **Michelina** | 2 — Global | Global | Head of HR | Estratega |
-| **Paxs** | 2 — Global | Global | Senior Researcher | Ejecutor |
-| **Vivienne** | 2 — Global | Global | Presentation Designer | Ejecutor |
+| **Michelina** | 2a — Global | Global | Head of HR | Estratega |
+| **Paxs** | 2a — Global | Global | Senior Researcher | Ejecutor |
+| **Vivienne** | 2a — Global | Global | Presentation Designer | Ejecutor |
+| **Aurelio** | 2b — CSC Estrategia | Global | Content Strategist | Estratega |
+| **Nerea** | 2b — CSC Estrategia | Global | Script & Narrative Architect | Ejecutor |
+| **Orfeo** | 2b — CSC Producción | Global | Audio & Conversation Producer | Ejecutor |
+| **Luma** | 2b — CSC Producción | Global | Video & Motion Producer | Ejecutor |
+| **Vela** | 2b — CSC Producción | Global | Narration & Voiceover | Ejecutor |
+| **Atlas** | 2b — CSC Producción | Global | Static Visual Producer | Ejecutor |
+| **Bruna** | 2b — CSC Gobernanza | Global | Brand & Risk Governance | Gobernanza |
+| **Ivo** | 2b — CSC Distribución | Global | Distribution & Channel Strategist | Ejecutor |
+| **Sira** | 2b — CSC Memoria | Global | Archive, Version & Recycling | Ejecutor |
 | **Vera** | 3 — Genteca | Genteca | Technical Researcher | Ejecutor |
 | **Orlan** | 3 — Genteca | Genteca | Market Intelligence Analyst | Ejecutor |
 | **Solenne** | 3 — Genteca | Genteca | B2B Content Creator | Ejecutor |
@@ -118,4 +127,15 @@ Does NOT: investigación técnica general ni selección de productos (eso es Ver
 
 ---
 
-*Roster last updated: 2026-04-20 — 11 members (4 global including Raul, 7 Genteca specialists)*
+---
+
+## CAPA 2b — Content Supply Chain ⭐ *(Transversal · todos los dominios)*
+
+Los bios detallados de cada agente CSC viven en sus archivos `conceptual/<nombre>.md`. El documento canónico de la cadena es:
+`04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md`
+
+Regla de routing resumida: Aurelio → Nerea → [Orfeo|Luma|Vela|Atlas] → Bruna → Ivo → Sira. Bruna es gate obligatorio. Ver ARCHITECTURE para cadenas pre-definidas A/B/C/D.
+
+---
+
+*Roster last updated: 2026-05-01 — 20 members (Raul + 3 global 2a + 9 CSC 2b + 7 Genteca 3)*
