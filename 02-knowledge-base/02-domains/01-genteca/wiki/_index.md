@@ -4,6 +4,9 @@
 
 ## Subcarpetas
 
+- `brand/` — Identidad de marca y estrategia digital de Exceline / Genius. **Poblado 2026-04-30.**
+  - `01-identidad-de-marca.md` — logos, Pantones, tipografías, atributos, esloganes, usos, fotografía.
+  - `02-estrategia-digital-y-audiencias.md` — diagnóstico IG, benchmarking, audiencias, posicionamiento, pilares, framework digital, campaña AA/Refr.
 - `market/` — Market intelligence específico de Genteca (competidores, HMI, tendencias, benchmarking). Provisional bajo el dominio; se reevaluará promover a `03-cross-cutting/02-marketing-tecnico.md` si crece el marketing transversal (ver `FOLDER-ARCHITECTURE.md` §9).
 
 ## Qué va aquí (cuando se pueble)

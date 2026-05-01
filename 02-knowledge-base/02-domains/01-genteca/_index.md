@@ -19,8 +19,9 @@
 ```text
 01-genteca/
   _index.md              ← este documento
-  wiki/                  ← artículos compilados (fundamentos, patrones, lecciones) — pendiente de poblar
+  wiki/                  ← artículos compilados (fundamentos, patrones, lecciones)
     _index.md
+    brand/               ← identidad de marca y estrategia digital — poblado 2026-04-30
     market/              ← market intelligence específico de Genteca (provisional bajo dominio)
       _index.md
   specs/                 ← hojas de especificación, catálogos, manuales, datasheets

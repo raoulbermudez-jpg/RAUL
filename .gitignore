@@ -115,7 +115,20 @@ venv/
 .~lock.*
 
 # ---------------------------
-# 6) Otros directorios auxiliares
+# 6) Archivos de sesión y temporales de herramientas
+# ---------------------------
+
+# Configuración local de Claude Code (credenciales y permisos de sesión)
+.claude/settings.local.json
+
+# Archivos de encoding temporal (generados al subir binarios a Drive)
+b64_*.txt
+
+# Logs operativos de pipelines
+pendrive_pipeline_stdout.txt
+
+# ---------------------------
+# 7) Otros directorios auxiliares
 # ---------------------------
 # Si en el futuro usas algún directorio de build o caché, se listaría aquí.
 # Por ahora RAUL es local-first sin builds, así que no añadimos más.
