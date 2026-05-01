@@ -143,3 +143,277 @@ Every task produces two deliverables:
 ```
 
 **3. Task log entry** — After delivery, remind Raul to log the task in `04-system/03-governance/task-log.md`.
+
+---
+
+## Brief Templates para Ozwaldo (Diseñador Gráfico)
+
+When Raul asks Oz to prepare a brief for Ozwaldo, use the matching template below. Fill every mandatory field before sending. Missing fields = extra correction rounds.
+
+**Rule:** Never send a brief to Ozwaldo with empty mandatory fields. If a field is unknown, escalate to Raul before sending — never guess or approximate.
+
+---
+
+### Checklist de entrega (aplica a TODOS los tipos de brief)
+
+Verificar que Raul ha provisto todo esto antes de generar el brief:
+
+- [ ] Código de producto confirmado (exacto — sin variaciones ortográficas)
+- [ ] Dimensiones confirmadas en mm (no estimaciones ni "igual que el anterior")
+- [ ] Colores Pantone confirmados (no "verde parecido al del GST")
+- [ ] Specs técnicas validadas por Jhoswer o Martín (no borradores)
+- [ ] Documento de referencia disponible (etiqueta/HDE anterior en KB o adjunto explícito)
+- [ ] Deadline con fecha real (no "lo antes posible")
+- [ ] Canal de revisión definido: ¿Oz revisa el borrador de Ozwaldo antes que Raul, o va directo a Raul?
+
+Si algún ítem está incompleto, Oz debe señalarlo antes de redactar el brief.
+
+---
+
+### Template 1 — Brief Etiqueta Frontal
+
+```markdown
+# Brief Etiqueta Frontal — [CÓDIGO DE PRODUCTO]
+**Fecha:** YYYY-MM-DD
+**Solicitado por:** Raoul Bermudez
+**Para:** Ozwaldo (ogutierrez@genteca.com.ve)
+**Deadline:** DD-MMM-YYYY
+
+## Dimensiones
+- Ancho: ___ mm
+- Alto: ___ mm
+- Sangrado: ___ mm (si aplica)
+
+## Referencia base
+- Archivo anterior: [nombre de archivo o "nuevo — sin referencia"]
+- Ubicación: [C:\RAUL\... o Drive path]
+
+## Colores Pantone
+- Color primario: Pantone ___
+- Color secundario: Pantone ___
+- Fondo: [color / blanco / transparente]
+
+## Logo(s) a incluir
+- [ ] Exceline Profesional (versión: ___)
+- [ ] Genteca (versión: ___)
+- [ ] NTC — Protección Térmica (sí / no)
+- [ ] Otro: ___
+
+## Jerarquía de badges (orden descendente de importancia visual)
+1. [badge más prominente — texto exacto + posición sugerida]
+2. [segundo badge]
+3. [tercer badge]
+4. (agregar los que correspondan)
+
+## Voltajes a mostrar
+- Rango de voltaje: ___ V a ___ V
+- Formato requerido: [ej. "110V–240V" / "110/220V" / "Multivoltaje"]
+- Voltajes venezolanos específicos a destacar: [sí / no — cuáles]
+
+## Código(s) de modelo
+- Código exacto: ___
+- Mostrar variantes en misma etiqueta: [sí / no — cuáles]
+
+## Diferenciadores a destacar
+- [diferenciador 1 — texto exacto o paráfrasis aceptable]
+- [diferenciador 2]
+
+## Texto obligatorio
+- País de fabricación: ___
+- Avisos legales: ___
+- Otros textos fijos: ___
+
+## Formato de entrega
+- [ ] PDF imprimible (CMYK)
+- [ ] AI / EPS (editable)
+- [ ] Ambos
+
+## Notas adicionales para Ozwaldo
+[Cualquier instrucción específica que no caiga en los campos anteriores]
+```
+
+---
+
+### Template 2 — Brief Etiqueta Lateral
+
+```markdown
+# Brief Etiqueta Lateral — [CÓDIGO DE PRODUCTO]
+**Fecha:** YYYY-MM-DD
+**Solicitado por:** Raoul Bermudez
+**Para:** Ozwaldo (ogutierrez@genteca.com.ve)
+**Deadline:** DD-MMM-YYYY
+
+## Dimensiones
+- Ancho: ___ mm
+- Alto: ___ mm
+- Sangrado: ___ mm
+
+## Referencia base
+- Archivo anterior: [nombre o "nuevo"]
+- Ubicación: ___
+
+## Especificaciones técnicas a incluir (valores confirmados por I&D)
+| Parámetro | Valor |
+|---|---|
+| Voltaje de operación | ___ V |
+| Corriente nominal | ___ A |
+| Potencia máxima | ___ W / VA |
+| Frecuencia | ___ Hz |
+| Temperatura de operación | ___°C a ___°C |
+| [otros parámetros] | ___ |
+
+## Funciones de protección a listar
+- [protección 1]
+- [protección 2]
+- (completar según producto)
+
+## Normativas a mencionar
+- [ ] IEC ___ (especificar número)
+- [ ] COVENIN ___
+- [ ] UL ___
+- [ ] Ninguna por ahora
+
+## Código de barras / QR
+- [ ] No incluir
+- [ ] Código de barras — número: ___
+- [ ] QR — URL destino: ___
+
+## Texto obligatorio
+- País de fabricación: ___
+- Advertencias de seguridad: ___
+- Batch code / lote: [campo en blanco para impresión posterior / fijo]
+
+## Formato de entrega
+- [ ] PDF imprimible (CMYK)
+- [ ] AI / EPS
+- [ ] Ambos
+
+## Notas adicionales para Ozwaldo
+___
+```
+
+---
+
+### Template 3 — Brief HDE (Hoja de Especificaciones)
+
+```markdown
+# Brief HDE — [CÓDIGO DE PRODUCTO]
+**Fecha:** YYYY-MM-DD
+**Solicitado por:** Raoul Bermudez
+**Para:** Ozwaldo (ogutierrez@genteca.com.ve)
+**Deadline:** DD-MMM-YYYY
+
+## Documento base
+- [ ] Actualización de HDE existente — archivo: ___
+- [ ] HDE nueva (sin documento anterior)
+
+## Fuente de especificaciones técnicas
+- Documento: [spec sheet en KB / brief de I&D / otro]
+- Revisado por: [Jhoswer / Martín / Vera]
+- Estado: [confirmado / pendiente de validación técnica]
+
+## Tabla de especificaciones (valores confirmados)
+| Parámetro | Valor | Unidad |
+|---|---|---|
+| ___ | ___ | ___ |
+
+## Características / funcionalidades (bullets)
+- [característica 1]
+- [característica 2]
+
+## Diagrama de conexión
+- [ ] No incluir
+- [ ] Usar diagrama existente — archivo: ___
+- [ ] Diagrama nuevo — descripción: ___
+
+## Imágenes del producto
+- [ ] Foto disponible — archivo: ___
+- [ ] Render 3D disponible — archivo: ___
+- [ ] Dejar espacio para imagen (a proveer después)
+
+## Audiencia primaria
+- [ ] Técnicos de campo / instaladores
+- [ ] Distribuidores
+- [ ] Usuarios finales
+
+## Extensión
+- Páginas: [1 página / 2 páginas / sin límite]
+- Idioma: [español / inglés / bilingüe]
+
+## Notas técnicas especiales
+[Trip class, curvas IDMT, advertencias de instalación, etc. — solo si aplica]
+
+## Notas adicionales para Ozwaldo
+___
+```
+
+---
+
+### Template 4 — Brief Guía Rápida
+
+```markdown
+# Brief Guía Rápida — [CÓDIGO DE PRODUCTO]
+**Fecha:** YYYY-MM-DD
+**Solicitado por:** Raoul Bermudez
+**Para:** Ozwaldo (ogutierrez@genteca.com.ve)
+**Deadline:** DD-MMM-YYYY
+
+## Audiencia objetivo
+- [ ] Instalador eléctrico
+- [ ] Técnico de refrigeración / HVAC
+- [ ] Usuario final no técnico
+
+## Formato físico
+- Tamaño del papel: [A4 / carta / ___]
+- Plegable: [sí — tipo: ___ / no]
+- Páginas: ___
+
+## Pasos de instalación
+(Máximo 8 pasos. Texto exacto o borrador — Oz refina la redacción.)
+
+1. [paso 1]
+2. [paso 2]
+3. [...]
+
+## Imagen requerida por paso
+| Paso | Descripción de la imagen |
+|---|---|
+| 1 | ___ |
+| 2 | ___ |
+
+## Advertencias críticas (ANTES o DURANTE instalación)
+- [advertencia 1 — texto exacto o descripción]
+- [advertencia 2]
+
+## Diagrama de cableado
+- [ ] No incluir
+- [ ] Usar diagrama existente — archivo: ___
+- [ ] Diagrama nuevo — descripción de la conexión: ___
+
+## QR / código de acceso
+- [ ] No incluir
+- [ ] QR — URL destino: ___ [video / PDF / página web]
+
+## Idioma(s)
+- [ ] Solo español
+- [ ] Bilingüe español / inglés
+
+## Revisado por (contenido técnico)
+- Nombre: ___
+- Fecha de validación: ___
+
+## Notas adicionales para Ozwaldo
+___
+```
+
+---
+
+## Cómo usar estos templates
+
+1. Raul entrega una solicitud a Oz (ej. "brief etiqueta frontal GST-RG")
+2. Oz verifica el checklist de entrega — señala cualquier campo faltante antes de continuar
+3. Oz rellena el template con la información provista + datos del KB (specs, dimensiones de productos existentes)
+4. Oz entrega el brief completo a Raul para aprobación antes de enviarlo a Ozwaldo
+5. Raul aprueba → Oz envía a Ozwaldo (CC: Raul, BCC: según reglas de comunicación externa Genteca)
+
+**El objetivo:** pasar de 4+ rondas de corrección a 1-2 máximo, eliminando ambigüedad desde el brief inicial.
