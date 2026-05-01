@@ -1,8 +1,8 @@
 # FOLDER-ARCHITECTURE.md
 ## Sistema Raul 2026 — Local-first · Vendor-neutral · Multi-LLM
 
-**Versión:** 2.1
-**Última actualización:** 2026-04-21
+**Versión:** 2.2
+**Última actualización:** 2026-05-01
 **Decisión registrada en:** `04-system/03-governance/DECISIONS.md`
 
 Este documento define la arquitectura de carpetas del sistema Raul.
@@ -77,6 +77,12 @@ Función: memoria acumulativa de Raul. Aquí vive el conocimiento estable (wiki)
 ```text
 /RAUL/02-knowledge-base/
   _index.md
+  00-raul-intelligence/         ← aprendizajes del sistema en producción (ver §3.1)
+    _index.md                   ← índice de carga; Raul siempre lo lee primero
+    estilo-y-voz.md
+    patrones-de-delegacion.md
+    preferencias-del-owner.md
+    aprendizajes-<dominio>.md   ← uno por dominio activo (ej. aprendizajes-genteca.md)
   01-foundations/
     01-methodology.md
     02-local-first-philosophy.md
@@ -145,6 +151,24 @@ Función: memoria acumulativa de Raul. Aquí vive el conocimiento estable (wiki)
     reference-tables.md
 
 ```
+
+### §3.1 — `00-raul-intelligence/` (aprendizajes del sistema en producción)
+
+Esta carpeta emergió en la práctica como la capa de memoria editorial del sistema — distinta del conocimiento de dominio (wiki) y de las especificaciones de producto (specs). Contiene lo que el sistema aprende sobre Raoul, sobre cómo delegar, y sobre los dominios a través del trabajo real.
+
+| Archivo | Qué contiene | Quién escribe | Cuándo actualizar |
+|---|---|---|---|
+| `_index.md` | Mapa de los archivos — Raul lo lee siempre al inicio | Raul | Al crear un archivo nuevo en esta carpeta |
+| `estilo-y-voz.md` | Cómo escribe y comunica Raoul; lo que aprueba sin pedir cambios | Raul (después de sesiones) | Cuando el Owner corrige el tono o valida un estilo nuevo |
+| `patrones-de-delegacion.md` | Qué agente funciona para qué tipo de tarea; errores de routing corregidos | Raul | Cuando un routing falla o un agente sorprende positivamente |
+| `preferencias-del-owner.md` | Decisiones tomadas, correcciones hechas, prioridades implícitas reveladas | Raul | En sesiones de alto impacto o cuando el Owner hace una corrección significativa |
+| `aprendizajes-<dominio>.md` | Especificidades de un dominio aprendidas en producción (más allá de la KB formal) | Raul / especialistas | Cuando surja contexto que no está en wiki ni specs pero que aplica a ese dominio |
+
+**Protocolo de escritura:** Raul actualiza estos archivos al terminar una sesión significativa — es editorial, no automático. El criterio es: ¿cambiaría el routing o el output de esta tarea si tuviéramos este aprendizaje desde el principio? Si sí, se registra.
+
+**Protocolo de carga:** Raul carga `_index.md` siempre, luego carga solo los archivos relevantes a la tarea (típico: 1–3 archivos, ~1500 tokens).
+
+---
 
 **Distinción `wiki/` vs `specs/` vs `assets/` (clave):**
 
