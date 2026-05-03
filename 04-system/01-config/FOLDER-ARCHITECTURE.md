@@ -487,23 +487,30 @@ Ejemplo `.gitignore` inicial:
 
 ### 10.3 Google Drive mirror
 
-- **Mirroreadas a Drive:**
-  - `/RAUL/01-inbox/01-owner-to-raul/`
-  - `/RAUL/01-inbox/02-deliverables-to-owner/`
+**Decisión vigente (2026-05-01):** Google Drive es la nube canónica del repo /RAUL/ — mirror del repo y único canal remoto Owner ↔ colaboradores ↔ InboxBot. OneDrive **no** se usa como canal de Raul.
+
+- **Mirroreadas a Google Drive (`G:\Mi unidad\RAUL\`):**
+  - `/RAUL/01-inbox/01-owner-to-raul/` (canal entrada Owner)
+  - `/RAUL/01-inbox/02-deliverables-to-owner/` (canal salida Owner)
+  - `/RAUL/01-inbox/colaboradores/` (cuando se active workflow de colaboradores)
   - `/RAUL/02-knowledge-base/` (para consulta remota)
 - **NO mirroreadas:**
   - `/RAUL/04-system/` (vive en git, no necesita Drive).
   - `/RAUL/03-projects/` (local + git; si el Owner necesita acceso puntual, se exporta entregable específico a `01-inbox/02-deliverables-to-owner/`).
   - `/RAUL/05-archive/` (backup aparte).
 
-Configuración concreta de Drive Desktop: mapear solo las carpetas listadas arriba.
+Configuración concreta de Drive Desktop: mapear las carpetas listadas como **bidireccionales** (Computer Folder), no streaming-only.
+
+**Backup adicional pendiente:** la KB (`/RAUL/02-knowledge-base/`) puede respaldarse en OneDrive como copia secundaria. Hoy `C:\Raul\` no está dentro de ninguna carpeta sincronizada por OneDrive — requiere decisión de implementación (ver §10.5 backup).
 
 ### 10.4 InboxBot
 
-- El trigger actual `trig_01RgGGbpCvckUzSwkyGMDNtm` apunta a rutas antiguas. Se **re-crea** con nuevos paths:
-  - Lectura: `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\`
-  - Escritura (drafts Gmail, marcadores DONE_): sin cambio conceptual.
-- Detalle de reconfiguración en `MIGRATION-PLAN.md` fase 4.
+InboxBot es un **agente Claude** (no script Python), invocado por un Remote Trigger periódico (recomendado: cada 4h). Su ficha runtime vive en `.claude/agents/inboxbot/AGENT.md` y la conceptual en `04-system/02-agents/conceptual/inboxbot.md`.
+
+- **Lectura:** `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` + subdirectorios `G:\Mi unidad\RAUL\colaboradores\<nombre>\inbox\`
+- **Escritura:** marcadores `DONE_[TASK_ID].txt` en carpeta de origen + entrega en `02-deliverables-to-owner\` o `colaboradores\<nombre>\outbox\` + draft de Gmail
+- **Trigger ID activo:** registrar en `DECISIONS.md` cualquier re-creación.
+- Detalle operativo en `MIGRATION-PLAN.md` fase 4 y en la AGENT.md del agente.
 
 ### 10.5 Backup
 

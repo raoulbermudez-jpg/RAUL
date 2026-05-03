@@ -192,7 +192,14 @@ Antes de arrancar fase 1:
 
 **Objetivo:** mover el flujo remoto del Owner (Drive, InboxBot) a la nueva estructura. **Ventana de inestabilidad operativa remota: 24-48h hasta validación completa.**
 
-**Prerequisito:** Antes de ejecutar esta fase, portar el script `inboxbot.py` desde el entorno histórico (`C:\WorkspaceIA\PROJECTS\Claude code\...`) a `C:\RAUL\04-system\04-tools-and-scripts\scripts\inboxbot.py`, manteniendo la misma lógica pero actualizando rutas según este plan y la sección 10.3–10.4 de `FOLDER-ARCHITECTURE.md`.
+**Prerequisito (revisado 2026-05-01):** la implementación de InboxBot **no es un script Python**. Es un **agente Claude** invocado por Remote Trigger periódico. El script `inboxbot.py` legacy en el entorno histórico (`C:\WorkspaceIA\PROJECTS\Claude code\...`) **no se porta**. El runtime activo es:
+
+- Conceptual (vendor-neutral SSOT): `04-system/02-agents/conceptual/inboxbot.md`
+- Runtime (Claude Code): `.claude/agents/inboxbot/AGENT.md`
+- Trigger: Claude Code Routine (Remote Trigger), frecuencia cada 4h
+- Rutas activas: ver sección 10.3–10.4 de `FOLDER-ARCHITECTURE.md` (Google Drive como canal canónico)
+
+Si en el futuro se opera con un segundo LLM, se generará un derivado paralelo (ej. `inboxbot.py` o equivalente) desde el conceptual SSOT — nunca al revés.
 
 **Acciones — en orden estricto:**
 

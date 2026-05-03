@@ -50,9 +50,11 @@ Ese sufijo cumple tres funciones:
 
 ## Archivos companion actuales
 
+**Ubicación canónica:** desde 2026-05-01, todos los companion docs viven en `04-system/06-companion-docs/`.
+
 ### Config / contexto
 
-- `04-system/01-config/CONTEXT_session-2026-04-22 PERPLEXITY.md`
+- `04-system/06-companion-docs/CONTEXT_session-2026-04-22 PERPLEXITY.md`
   - Snapshot de contexto para retomar el trabajo en un hilo nuevo.
   - Resume el estado del sistema, commits relevantes, dominios activos y pendientes.
 
@@ -63,17 +65,17 @@ Ese sufijo cumple tres funciones:
 
 ### Índices / continuidad
 
-- `04-system/05-indexes/session-log_2026-04-22 PERPLEXITY.md`
+- `04-system/06-companion-docs/session-log_2026-04-22 PERPLEXITY.md`
   - Resumen cronológico de la sesión de trabajo.
   - Sirve como memoria operativa de qué se revisó, qué se aprobó y qué quedó pendiente.
 
-- `04-system/05-indexes/core-sources-index PERPLEXITY.md`
+- `04-system/06-companion-docs/core-sources-index PERPLEXITY.md`
   - Biblioteca de archivos y fuentes internas importantes del sistema.
   - Sirve como mapa de consulta rápida.
 
 ### Método / guía reusable
 
-- `04-system/04-tools-and-scripts/KB-SYSTEM-GUIDE PERPLEXITY.md`
+- `04-system/06-companion-docs/KB-SYSTEM-GUIDE PERPLEXITY.md`
   - Guía reutilizable para construir sistemas tipo `/RAUL/`.
   - Puede servir luego como base para onboarding, capacitación o curso.
 

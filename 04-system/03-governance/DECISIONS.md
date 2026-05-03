@@ -116,4 +116,114 @@ Notas:
 
 ---
 
+## 2026-05-01 — Auditoría de agnosticidad: limpieza de vestigios y consolidación de Drive
+
+**Decisión:** ejecutar 8 acciones de saneamiento para reforzar la promesa "local-first, vendor-neutral, multi-LLM, agnóstico a APIs externas".
+
+**Acciones ejecutadas:**
+
+1. **Google Drive como nube canónica.** Resuelto conflicto OneDrive vs. Google Drive. Google Drive (`G:\Mi unidad\RAUL\`) es el único canal remoto del repo (mirror + Owner ↔ colaboradores ↔ InboxBot). OneDrive queda fuera del ámbito de Raul (uso personal del Owner). FOLDER-ARCHITECTURE §10.3, MIGRATION-PLAN §4 y `.claude/agents/inboxbot/AGENT.md` actualizados. KB en OneDrive: pendiente de implementación si el Owner decide backup secundario.
+2. **Tarea pendiente OneDrive eliminada** (`Estrategia Integral de Comunicación Targets Exceline Profesional.txt`).
+3. **Vestigios eliminados de Google Drive:** `Mi unidad\WorkspaceIA\` (15.6 MB) y `Mi unidad\WorkspaceIA Backup\` (255 MB). Total 270 MB liberados.
+4. **Copias globales de agentes eliminadas.** Michelina, Paxs y Vivienne dejan de existir en `C:\Users\User\.claude\agents\`. Quedan únicamente en `C:\Raul\.claude\agents\` (runtime) y `04-system/02-agents/conceptual/` (SSOT). Refuerza la regla "RAUL es autocontenido". Si en el futuro se requiere usarlos desde otro proyecto fuera de C:\Raul, se copian entonces — no antes.
+5. **`michelina.md` conceptual saneado.** Removidas referencias específicas a Claude Code y al campo `model:`. La instrucción de generar derivados runtime delega ahora a `LLM-GUIDELINES.md` para mantener la SSOT 100% libre de runtime.
+6. **InboxBot clarificado como agente Claude (no Python).** Runtime activo = `.claude/agents/inboxbot/AGENT.md` + Remote Trigger cada 4h. El script `inboxbot.py` legacy NO se porta. MIGRATION-PLAN §4 actualizado.
+7. **`04-system/06-companion-docs/` creado.** 4 archivos PERPLEXITY consolidados allí: `CONTEXT_session-2026-04-22`, `KB-SYSTEM-GUIDE`, `core-sources-index`, `session-log_2026-04-22`. `companion-docs-index.md` actualizado con las nuevas rutas.
+8. **`CONTEXT.md` legacy banner verificado** (ya existente desde 2026-04-25, sin acción adicional necesaria).
+
+**Implicaciones:**
+
+- El árbol `04-system/` gana una sexta carpeta numerada: `06-companion-docs/`. La promoción a 7+ requeriría revisar `FOLDER-ARCHITECTURE.md` §5.
+- Los 3 agentes globales históricamente accesibles desde cualquier proyecto Claude pierden esa propiedad. Decisión consciente: el repo /RAUL/ es la única fuente. Si el Owner necesita Vivienne en otro proyecto, copia desde el repo.
+- Cualquier referencia futura al modelo Claude o a Claude Code en `04-system/02-agents/conceptual/` debe extraerse a `LLM-GUIDELINES.md`.
+- Pendiente menor: validar que ningún otro conceptual (verificado solo `michelina.md` y `inboxbot.md`) tenga fugas runtime.
+
+**Estado:** completo. Próxima sesión: el Owner traerá sugerencias adicionales para análisis y reestructuración.
+
+---
+
+## 2026-05-01 — Lock de taxonomía nominal de agentes (6 clases canónicas)
+
+**Decisión:** adoptar una taxonomía nominal de 6 clases para clasificar
+todos los agentes del sistema /RAUL/, reemplazando la nomenclatura previa
+de capas (`Capa 1`, `Capa 2`, `Capa 2a`, `Capa 2b`, `Capa 3`).
+
+Las 6 clases canónicas son:
+
+- `orchestration`
+- `governance`
+- `global-service`
+- `domain-specialist`
+- `content-supply-chain`
+- `execution-utility`
+
+Convención de nomenclatura: nombres en minúsculas, separadas por guion (no
+espacio), para consistencia en tablas, frontmatter, footers de conceptual
+y operaciones de grep.
+
+**Contexto y motivación:**
+
+- La nomenclatura "Capa 1 / 2a / 2b / 3" funciona estructuralmente pero es
+  opaca para un humano que clona el repo desde GitHub: requiere lectura
+  cruzada de varios documentos para entender qué hace cada capa.
+- La promesa "vendor-neutral, multi-LLM, fácil de operar también con
+  Gemini/Perplexity" exige que la clasificación sea autodescriptiva.
+- La transición a Modelo A (conceptual SSOT grueso + runtime delgado)
+  requiere que cada conceptual indique en su footer la clase del agente; un
+  nombre nominal es más legible que una etiqueta de capa.
+- La clase `content-supply-chain` se nombra explícitamente así (no
+  `content-pipeline`) para alinearse con la arquitectura existente
+  documentada en
+  `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md`.
+
+**Alternativas consideradas:**
+
+- **Mantener nomenclatura de capas** (`Capa 1` / `2a` / `2b` / `3`).
+  Rechazado: opaca para clonadores externos del repo, no
+  autodescriptiva, no escalable a múltiples runtimes.
+- **5 clases sin `content-supply-chain` separada** (CSC distribuida entre
+  `governance` para Bruna y `global-service` para los demás). Rechazado:
+  rompe la lectura del pipeline coreografiado de CSC y diluye la
+  diferencia entre servicios on-demand (Paxs, Vivienne) y pasos de
+  pipeline (Aurelio, Nerea, etc.).
+- **7+ clases con sub-clases dentro de CSC** (estrategia / producción /
+  distribución / memoria como clases separadas). Rechazado: complejidad
+  innecesaria; CSC ya define internamente esas posiciones en
+  `ARCHITECTURE_Content-Supply-Chain.md`.
+
+**Implicaciones:**
+
+- Se materializa `04-system/02-agents/_taxonomy.md` con la definición
+  formal de cada clase, criterios de membresía y reglas de gestión
+  (creación, eliminación y movimiento de agentes entre clases).
+- `_roster.md` se mueve de `conceptual/_roster.md` a
+  `02-agents/_roster.md` y se reescribe usando las 6 clases nominales.
+- Cada conceptual de agente lleva en su footer la clase nominal según esta
+  taxonomía (ej. `*orchestration. Singleton.*`).
+- Bruna mantiene **doble pertenencia documentada** a `governance` (rol
+  funcional) y `content-supply-chain` (posición en pipeline). Es la única
+  doble-pertenencia permitida bajo esta taxonomía.
+- Documentos a actualizar como parte del Paso 8 de la migración Modelo A:
+  `CLAUDE.md`, `FOLDER-ARCHITECTURE.md`,
+  `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md`,
+  `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md`.
+- Cualquier futura clase requiere entrada nueva en este DECISIONS.md
+  según las reglas de gestión de `_taxonomy.md`.
+
+**Mapeo de la nomenclatura previa a la nueva:**
+
+| Capa previa | Clase nominal |
+|---|---|
+| Capa 1 — Orquestación | `orchestration` |
+| Capa 2 / 2a — Servicios Globales | `global-service` (Paxs, Vivienne) o `governance` (Michelina) según función |
+| Capa 2b — Content Supply Chain | `content-supply-chain` |
+| Capa 3 — Especialistas de Dominio | `domain-specialist` |
+| (sin clase explícita) — Bruna | `governance` (+ `content-supply-chain` por posición) |
+| (sin clase explícita) — InboxBot | `execution-utility` |
+
+**Estado:** vigente desde 2026-05-01. Habilita el Paso 1 de la migración
+Modelo A en `04-system/02-agents/`.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
