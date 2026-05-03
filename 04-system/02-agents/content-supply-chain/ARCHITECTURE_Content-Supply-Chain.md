@@ -1,7 +1,7 @@
 # ARCHITECTURE — Content Supply Chain Multimodal (Sistema Raul)
 
-**Versión:** 1.0
-**Última actualización:** 2026-04-21
+**Versión:** 1.1
+**Última actualización:** 2026-05-03
 **Alcance:** Arquitectura transversal — aplica a todos los dominios (Genteca, Finca, Plenus, futuros).
 
 ---
@@ -14,7 +14,7 @@ La cadena opera en 5 capas. Cada capa tiene función propia y no invade el scope
 |------|--------|---------|---------|
 | 1 | **Orquestación** | Entry point único. Clasifica, enruta, registra. Nunca ejecuta. | Raul |
 | 2 | **Estrategia de contenido** | Traduce objetivo de negocio en plan: audiencia, mensaje, formato, cadencia. Define el QUÉ y el POR QUÉ. | Aurelio, Nerea |
-| 3 | **Producción multimodal** | Ejecuta las piezas — video, audio, visual estático, narración. Es el CÓMO. | Orfeo, Luma, Vela, Atlas |
+| 3 | **Producción multimodal** | Ejecuta las piezas — visual estático, video, audio (single y multi-voz), motion graphics. Es el CÓMO. | Atlas, Luma, Vela, Orfeo |
 | 4 | **Gobernanza de marca y riesgo** | Revisión obligatoria antes de publicar. Marca, tono, riesgo legal/comercial, precisión. | Bruna |
 | 5 | **Distribución, reciclaje y memoria** | Publica, versiona, archiva, recicla. Mantiene memoria de activos. | Ivo, Sira |
 
@@ -26,9 +26,9 @@ La cadena opera en 5 capas. Cada capa tiene función propia y no invade el scope
 |--------|--------|----------|-------------|--------|---------|
 | **Aurelio** | Content Strategist | Define estrategia por campaña/lanzamiento: audiencia, mensaje central, mix de formatos, cadencia | No escribe guiones; no produce piezas; no aprueba salida pública | Brief del Owner, insumos de dominio (Vera/Orlan/Paxs), messaging de Vael | Plan de contenido: objetivos, audiencia, formatos, calendario tentativo |
 | **Nerea** | Script & Narrative Architect | Convierte el plan de Aurelio en guiones, hooks, estructura narrativa y copy base | No define estrategia; no produce audio/video; no aprueba | Plan de Aurelio, messaging de Vael, insumos técnicos | Guiones completos, hooks, copy base por pieza |
-| **Orfeo** | Audio & Conversation Producer | Produce audio y contenido multi-voz: podcasts, conversaciones tipo studio, segmentos con diálogo. Define la **estructura de turnos** (quién habla cuándo, duración de intervenciones, transiciones) en piezas multi-host | No produce video ni visuales estáticos; no edita guion | Guion de Nerea, messaging | Audio estructurado, estructura de turnos multi-host, track list |
-| **Luma** | Video & Motion Producer | Produce piezas de video: shorts, reels, largo, motion graphics | No escribe guion; no aprueba publicación | Guion de Nerea, visuales de Atlas, audio de Orfeo/Vela | Video final por formato (largo, short, reel, motion) |
-| **Vela** | Narration & Voiceover Producer | Produce voz narrada para presentaciones, explicaciones, audio-guías — voz única, tono consistente. Aplica **guías de pronunciación y pausas coherentes con la voz de marca** | No hace audio conversacional multi-host (Orfeo); no edita guion | Guion de Nerea, especificaciones de tono, guía de pronunciación de marca | Track de narración listo para integrar en video o audio |
+| **Vela** | Voiceover & Audio Production Lead (VE-1..VE-5) | **Único productor de audio del CSC**: produce voiceover single-voice y conversaciones de una o dos voces (diálogo / podcast corto) ejecutando NE-4 con turnos etiquetados (Voz A, Voz B). Aplica guías de pronunciación, pausas y notas de tono por voz | No inventa diálogos multi-voz; no reasigna turnos; no produce video ni visuales | Guion de Nerea (NE-1 / NE-4 single o multi-voz), copy de Solenne, VA-X, BR-X | VE-1 Voiceover Execution Script (etiquetas hablante en multi-voz), VE-2 Timing & Pacing Map, VE-3 Audio Direction Notes, VE-4 Voice Bundle, VE-5 Handoff a Luma e Ivo |
+| **Luma** | Video Production Lead (LU-1..LU-5) | Produce piezas de video: shorts, reels, largo. Integra guion + audio + visuales estáticos + motion graphics | No escribe guion; no produce audio (Vela); no produce visuales estáticos (Atlas) ni motion (Orfeo); no aprueba publicación | NE-1 / NE-2 de Nerea, audio de Vela (single o multi-voz), visuales de Atlas, motion de Orfeo | LU-1 Video Spec, LU-2 Cut List, LU-3 Multi-Format Adaption, LU-4 Caption & On-Screen Text, LU-5 Handoff a Ivo |
+| **Orfeo** | Motion Graphics & Visual Systems Production Lead (OR-1..OR-5) | Convierte sistemas visuales y layouts estáticos en motion graphics, overlays, transiciones, composiciones animadas y assets reutilizables para integrar en video | No produce audio (Vela); no produce visuales estáticos base (Atlas); no edita video final (Luma); no inventa contenido | NE-X de Nerea, SO-X de Solenne, VA-X, BR-X, AT-X de Atlas, visual system de Oz | OR-1 Motion System Spec, OR-2 Animated Asset Pack, OR-3 Scene Motion Map, OR-4 Format Adaptation Plan, OR-5 Handoff a Luma / Ivo |
 | **Atlas** | Static Visual Producer | Produce piezas visuales estáticas: carruseles, infografías, slides-as-image, POP, impreso | No hace video ni audio; no diseña decks ejecutivos (Vivienne) | Guion de Nerea, assets de marca, insumos de dominio | Carruseles, infografías, artes POP, material impreso |
 | **Bruna** | Brand & Risk Governance | Revisa cada pieza antes de salida pública: consistencia de marca, riesgo legal/comercial, tono, precisión | No produce contenido; no define estrategia | Pieza final de producción, brand manual, messaging | Aprobación, rechazo con razones, o lista de cambios obligatorios |
 | **Ivo** | Distribution & Channel Strategist | Decide dónde, cuándo y cómo se publica. Gestiona calendario y canales | No produce contenido; no aprueba pieza | Pieza aprobada por Bruna, plan de Aurelio, calendario | Plan de publicación por canal + fecha, briefs de canal |
@@ -54,8 +54,8 @@ Nerea                  →  guion largo (YouTube) + guion short + copy carrusel 
 [producción en paralelo]
 ├── Luma    →  video largo + short
 ├── Atlas   →  carrusel + miniatura YouTube
-├── Orfeo   →  audio conversacional (si aplica)
-└── Vela    →  narración (si aplica)
+├── Vela    →  audio (single-voice o multi-voz desde NE-4 etiquetado)
+└── Orfeo   →  motion graphics / overlays (si aplica)
     ↓
 Bruna                  →  revisión de cada pieza
     ↓
@@ -64,24 +64,29 @@ Ivo                    →  plan de publicación por canal
 Sira                   →  archivo + versionado
 ```
 
-### Cadena B — Conversación estilo Studio / podcast multi-host
+### Cadena B — Conversación estilo Studio / podcast de una o dos voces
 
 ```
 Dominio (Vera / Orlan / Paxs)  →  briefing técnico / perspectivas
     ↓
 Aurelio                        →  plan: ángulo, audiencia, duración, host-mix
     ↓
-Nerea                          →  guion de conversación: hilo narrativo + bloques por host
+Nerea                          →  NE-4 multi-voz con turnos etiquetados
+                                  (Voz A, Voz B, etc.) + bloques temáticos
     ↓
-Orfeo (OBLIGATORIO)            →  produce la conversación multi-host
+Solenne                        →  SO-X copy editorial / on-screen / captions
     ↓
-(opcional) Luma                →  video-cast si aplica
+Vela (OBLIGATORIO)             →  ejecuta audio multi-voz desde NE-4
+                                  etiquetado (ver Gate 3)
+    ↓
+(opcional) Luma                →  video-cast si aplica (puede integrar
+                                  motion de Orfeo si la pieza lo requiere)
     ↓
 Bruna                          →  revisión (riesgo en opiniones / claims técnicos)
     ↓
-Ivo                            →  distribución
+Ivo                            →  distribución (IV-1..IV-5)
     ↓
-Sira                           →  archivo
+Sira                           →  archivo + reciclaje vía AU-5
 ```
 
 ### Cadena C — POP / retail / apoyo comercial
@@ -112,11 +117,13 @@ Owner / dominio       →  brief del tema + insumos
 Aurelio               →  plan narrativo: audiencia, duración, arco
     ↓
 Nerea                 →  guion de narración + estructura del deck
+                        (NE-1 narrado o NE-4 single/multi-voz según pieza)
     ↓
-Orfeo (OBLIGATORIO)   →  si hay conversación o voz múltiple
 Vivienne              →  deck base (estructura visual)
-Atlas                 →  refuerzo visual de slides clave
-Vela                  →  narración voz-única (si no es multi-host)
+Atlas                 →  refuerzo visual de slides clave (estático)
+Orfeo                 →  motion graphics / overlays si la pieza lo requiere
+Vela                  →  audio: voz-única o multi-voz (una o dos voces)
+                        ejecutando NE-4 etiquetado
 Luma                  →  integración video-narración si aplica
     ↓
 Bruna                 →  revisión
@@ -140,21 +147,21 @@ Puntos de control que Raul **no puede saltar**, incluso bajo presión de tiempo.
 
 **Cómo aplicar:** Si el Owner pide directamente "hazme un video/post/audio", Raul primero envía a Aurelio con el brief — aunque sea un plan corto de 5 líneas.
 
-### Gate 2 — Nerea antes de Luma / Atlas / Orfeo / Vela cuando hay guion
+### Gate 2 — Nerea antes de Atlas / Luma / Vela / Orfeo cuando hay guion
 
 **Regla:** Ningún agente de producción arranca sin guion/copy finalizado por Nerea.
 
 **Por qué:** Producir sin guion estable genera piezas inconsistentes, múltiples versiones y re-grabaciones costosas.
 
-**Cómo aplicar:** Luma/Atlas/Orfeo/Vela reciben guion completo antes de ejecutar. Si el guion cambia a mitad, se detiene y se re-baseline.
+**Cómo aplicar:** Atlas/Luma/Vela/Orfeo reciben guion completo antes de ejecutar. Si el guion cambia a mitad, se detiene y se re-baseline.
 
-### Gate 3 — Orfeo obligatorio para piezas multi-host o presentaciones narradas complejas
+### Gate 3 — Vela obligatorio para audio multi-voz (una o dos voces)
 
-**Regla:** Cualquier contenido con más de una voz, o presentación narrada con diálogo, pasa por Orfeo.
+**Regla:** Cualquier contenido con audio (voz única o conversación de hasta dos voces) pasa por Vela. Para multi-voz, Vela ejecuta NE-4 con turnos **etiquetados** (Voz A, Voz B) entregado por Nerea.
 
-**Por qué:** Orfeo es el único con scope de coordinar voces múltiples, estructura de turnos y timing entre hablantes. Vela sólo maneja voz única.
+**Por qué:** Vela es el único productor de audio del CSC. Centralizar voz única + multi-voz en Vela garantiza coherencia de pronunciación, voz de marca y trazabilidad de claims/caveats. Ningún otro agente del CSC produce audio.
 
-**Cómo aplicar:** Al activar Cadena B o Cadena D con conversación, Orfeo entra primero. Vela sólo si la pieza final es voz única sin diálogo.
+**Cómo aplicar:** Al activar Cadena B o cualquier pieza con audio multi-voz, Nerea entrega NE-4 con turnos etiquetados; Vela ejecuta sin reasignar turnos ni inventar diálogos. Si la ejecución revela fricción (densidad verbal, caveat que no encaja), Vela escala a Nerea + Solenne; no improvisa.
 
 ### Gate 4 — Bruna antes de cualquier salida pública
 

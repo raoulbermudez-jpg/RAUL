@@ -124,7 +124,8 @@ Ozwaldo (humano)
 Vael
   ↓ produce campaign brief y messaging framework para el lanzamiento
 Solenne
-  ↓ escribe posts LinkedIn, emails, scripts con el framework de Vael
+  ↓ produce SO-1/SO-3: copy pack y textos técnicos amigables (posts LinkedIn, emails,
+    body web/landing, captions, copy de empaque) a partir del framework de Vael
 ```
 
 | Eslabón | Entrega |
@@ -134,7 +135,7 @@ Solenne
 | Oz | PDF anotado redline + delta Markdown para Ozwaldo |
 | Ozwaldo | Spec sheet / manual / empaque diseñado |
 | Vael | Campaign brief + messaging framework por audiencia |
-| Solenne | Piezas de contenido publicables (LinkedIn, email, script) |
+| Solenne | SO-1/SO-3: copy pack y textos técnicos amigables listos para producción CSC |
 
 ---
 
@@ -148,14 +149,14 @@ Orlan
 Vael
   ↓ produce campaign brief y messaging framework usando el brief de Orlan como input
 Solenne
-  ↓ escribe las piezas de contenido aplicando el framework de Vael
+  ↓ produce SO-1 (copy pack por campaña) aplicando el framework de Vael
 ```
 
 | Eslabón | Entrega |
 |---------|---------|
 | Orlan | Competitive snapshot + benchmarking table + Orlan's Call estratégico |
 | Vael | Campaign brief + positioning statement + tone adaptado por audiencia |
-| Solenne | Posts, emails, scripts, caso de estudio — listos para publicar |
+| Solenne | SO-1: copy pack (posts, emails, casos, textos web) listo para producción/publicación |
 
 ---
 
@@ -214,7 +215,7 @@ Raul verifica: ¿existe framework de Vael para este producto/audiencia/canal?
   ↓ Sí → directo a Solenne
   ↓ No → Vael primero (ver Gate 1)
 Solenne
-  ↓ escribe la pieza aplicando el framework
+  ↓ produce la pieza de copy correspondiente (instancia de SO-1 o SO-3) aplicando el framework de Vael
 ```
 
 ---
@@ -294,13 +295,64 @@ Solenne
 
 ## 6. Content Supply Chain (Capas 2–5)
 
+### 6.0 Macro-pipeline oficial CSC
+
+Toda producción de contenido en /RAUL/ pasa por un pipeline
+extendido. Las cadenas concretas (Cadena 1..5 en §3 y la tabla
+"situación → ruta" más abajo en este §6) son instancias parciales
+de este flujo:
+
+```
+Vera → Orlan → Vael → Bruna → Aurelio → (Nerea / Solenne)
+       → Atlas / Luma / Vela / Orfeo → Ivo → Sira
+```
+
+| Eslabón | Rol en el pipeline | Outputs |
+|---|---|---|
+| **Vera** | Verdad técnica (specs, límites de uso, condiciones de validez). | briefs técnicos, fichas validadas |
+| **Orlan** | Verdad de mercado (segmentos, JTBD, competencia, claim feasibility). | OL-1..OL-5 |
+| **Vael** | Arquitectura de mensaje (pilares, RTBs, message maps, guardrails). | VA-1..VA-5 |
+| **Bruna** | Gobernanza de claims (qué se puede decir, cómo, dónde, con qué caveats). | BR-1..BR-5 |
+| **Aurelio** | Estrategia de contenido (campañas, mix de formatos, calendario, capacidad, reciclaje). | AU-1..AU-5 |
+| **Nerea** | Narrativa audiovisual / multi-pieza (guiones y mapa narrativo). | NE-1..NE-5 |
+| **Solenne** | Copy editorial Genteca (todo texto editorial del dominio). | SO-1..SO-5 |
+| **Atlas / Luma / Vela / Orfeo** | Producción de piezas finales (visual / video / voz / audio). | piezas publicables |
+| **Ivo** | Publicación / programación / distribución por canal. | logs de publicación |
+| **Sira** | Memoria / catálogo de piezas y guiones; reciclaje. | índices, recomendaciones |
+
+**Bruna gatea en cuatro fases distintas del pipeline:** sobre VA-X
+(arquitectura), AU-X (plan), NE-X (guion) y SO-X (copy). Ver
+`conceptual/bruna.md` §6.4-bis para detalle por fase.
+
+**Frontera Solenne ↔ Nerea (operativa):**
+- Pieza editorial individual (post LinkedIn suelto, email, header,
+  body landing simple, descripción de producto, copy de empaque,
+  caption, ficha amigable, **carrusel editorial estándar**) →
+  **Solenne (SO-1 / SO-2)**.
+- Pieza audiovisual (long-form video, reel, podcast, audio guiado)
+  o pieza dentro de **serie con arco narrativo macro multi-pieza**
+  (incluye carrusel narrativo capítulo) → **Nerea (NE-X)**, con
+  SO-4 de Solenne como input de body editorial cuando aplica.
+
+### 6.0-bis Routing por tipo de encargo del Owner
+
+| Tipo de encargo | Ruta canónica | Notas / Gates |
+|---|---|---|
+| **Campaña nueva / plan de contenido** | Owner → Raul → **Aurelio** (AU-1 / AU-3) → Solenne (SO-X) y/o Nerea (NE-X) → Atlas / Luma / Vela / Orfeo → Ivo → Sira. | Aurelio define campañas, objetivos, audiencias (refs Vael / Orlan), mensajes (refs VA-X), formatos con ruta de producción declarada por pieza, capacidad estimada, reciclaje (AU-5). Si hay claims ⚠ en VA-5: Aurelio marca dependencia de gate Bruna en AU-X; Bruna decide vía BR-2 antes de bajar a Nerea / Solenne. |
+| **Pieza editorial suelta Genteca** (post, email, carrusel editorial individual, copy de empaque, ficha amigable) | Owner → Raul → **Solenne** (SO-1 / SO-2). | Solenne consulta VA-X / BR-X vigentes. Aurelio entra solo si se decide escalar a campaña estructurada. Si el claim es sensible y no tiene BR-2: gate Bruna sobre SO-X antes de cerrar. |
+| **Pieza audiovisual con arco / serie multi-pieza** | Si es parte de campaña → Owner → Raul → **Aurelio** (AU-3) → **Nerea** (NE-X) → Luma / Vela / Orfeo motion. Si es táctica aislada con narrativa compleja → Owner → Raul → **Nerea** (NE-X) con AU-3 mínimo + referencia explícita a VA-X / BR-X. | Nerea no escribe sin AU-X. Para body editorial Genteca: SO-4 de Solenne como input. Para multi-voz: NE-4 con turnos etiquetados (Voz A, Voz B); productor único: Vela. |
+| **Carrusel** | Editorial individual (LinkedIn suelto sin arco macro) → **Solenne (SO-1)**. Capítulo de serie con arco narrativo macro → **Nerea (NE-3)** + Solenne (SO-4 body slide-by-slide). | Definido por presencia o ausencia de arco narrativo macro multi-pieza en AU-X. |
+| **Pieza única urgente con framework existente** | Owner → Raul → Aurelio (AU-4 mínimo) → Solenne (SO-1) o Nerea (NE-2). | Aurelio verifica VA-X y OL-X recientes; si stale o claim sensible sin BR-2, bloquea y escala. |
+| **Refresh post-cambio aguas arriba** | Disparado por Vera (spec) / Orlan (mercado) / Vael (VA-X) / Bruna (BR-2) / Aurelio (AU-X) / Solenne (SO-4). | Cada agente aguas abajo audita sus outputs vigentes y emite vN+1 según corresponda. Sira ayuda a localizar piezas publicadas afectadas para BR-4. |
+| **Incidente sobre claim publicado** | Owner / mercado → Raul → **Bruna** (triage rápido + BR-4 remediation) → Solenne / Nerea / Ivo según piezas afectadas. | Ver `conceptual/bruna.md` §6.7. |
+
 Cuando trabajes con contenido (texto, audio, video, visuales) usa esta tabla como primer mapa de "situación → ruta". Las cadenas A/B/C/D siguen siendo la referencia estructural; aquí solo resolvemos a quién pedir qué.
 
 | Situación | Ruta principal |
 |-----------|----------------|
 | 1. Necesito definir **por qué** hacemos una pieza y para quién | Aurelio (estrategia, objetivos, audiencia) → luego Nerea (guion/copy) |
 | 2. Tengo claro el objetivo, pero falta **guion/copy ejecutable** | Nerea (guion/copy); si cita datos técnicos, valida con Vera/Orlan/Paxs antes de pasar a producción |
-| 3. La pieza requiere **audio multi-voz / conversación** | Nerea ya entregó guion → Orfeo (estructura de turnos + producción audio multi-host) |
+| 3. La pieza requiere **audio multi-voz / conversación** | Nerea entrega NE-4 con turnos etiquetados (Voz A, Voz B) → **Vela** (ejecuta audio single-voice o multi-voz desde NE-4) |
 | 4. La pieza requiere **voz narrada voz única** | Nerea ya entregó guion → Vela (narración + pronunciación + pausas) |
 | 5. La pieza requiere **video / motion / video-cast** | Guion y audio listos → Luma (montaje, motion, exports por canal) |
 | 6. La pieza requiere **visuales estáticos** (carrusel, infografía, POP…) | Guion/copy y brand kit listos → Atlas (piezas visuales estáticas, sin motion) |
@@ -337,3 +389,35 @@ Cuando trabajes con contenido (texto, audio, video, visuales) usa esta tabla com
    - Antes de brifar a Nerea, Aurelio consulta a Sira por piezas reciclables.
    - Sira propone candidatos y clips.
    - Aurelio decide qué reciclar y en qué formatos e incorpora eso en el brief.
+
+### 6.x Reglas operativas de frontera (Aurelio / Nerea / Solenne / Bruna)
+
+**Nunca ir directo de Raul / Owner a Atlas / Luma / Vela / Orfeo
+cuando:**
+- Hay copy editorial → debe entrar **Solenne** (Genteca; o domain-specialist
+  equivalente).
+- Hay arco narrativo o serie multi-pieza → debe entrar **Nerea** (NE-X
+  con AU-3 previo).
+- Hay mezcla de formatos / múltiples piezas / cadencia / capacidad → debe
+  entrar **Aurelio** (AU-1 / AU-2 / AU-3).
+
+**Nunca saltar Vael / Bruna cuando:**
+- Hay claims técnicos o de mercado marcados ⚠ / ❌ en VA-5.
+- Hay comparativos directos con competencia, garantías absolutas o
+  temas regulatorios (RISK-POLICY).
+- Hay claim presente en VA-X que aún no tiene BR-2 vigente.
+
+**Frontera Solenne ↔ Nerea (regla operativa única):**
+- Carrusel editorial individual (LinkedIn suelto, sin arco multi-pieza)
+  → **Solenne (SO-1)**.
+- Carrusel narrativo capítulo de serie con arco macro
+  → **Nerea (NE-3)** para estructura + **Solenne (SO-4)** para
+  texto slide-by-slide.
+
+**Validez del gate por fase:**
+- NE-X sin AU-X vigente → inválido. Bruna devuelve, Aurelio cierra
+  plan primero.
+- AU-X con claim ⚠ sin dependencia de gate Bruna declarada → inválido.
+  Bruna pide reescritura del plan.
+- BR-2 sin referencia clara y verificable a VA-X / AU-X / (NE-X o SO-X
+  cuando aplica) → no se considera aprobación válida.
