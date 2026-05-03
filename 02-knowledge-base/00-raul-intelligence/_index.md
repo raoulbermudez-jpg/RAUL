@@ -19,13 +19,19 @@
 | `preferencias-del-owner.md` | Decisiones que Raoul ha tomado, correcciones que ha hecho, lo que aprueba sin pedir cambios | Tarea de alto riesgo, decisión con alternativas, o output de alto impacto |
 | `aprendizajes-genteca.md` | Especificidades del dominio Genteca aprendidas en producción (más allá de lo que dice el KB) | Cualquier tarea del dominio Genteca |
 
+## Subcarpetas
+
+| Carpeta | Descripción | Cargar cuando... |
+|---|---|---|
+| `methodology/` | Hoja de Ruta /RAUL/: metodología destilada para construir PKA personales modulares. Documento vivo, versionado, publicable. Apéndice privado en `_private/` (gitignored) | Tarea estratégica de norte: planeación de fases, decisiones arquitecturales, justificación de patrones, onboarding de nuevo colaborador al sistema |
+
 ---
 
 ## Cómo actualizar este índice
 
-Si creas un archivo nuevo en esta carpeta, añade una fila a la tabla de arriba antes de cerrar la tarea.
+Si creas un archivo o subcarpeta nueva en esta carpeta, añade una fila a la tabla correspondiente antes de cerrar la tarea.
 
 ---
 
-**Última actualización:** 2026-04-26
-**Entradas totales:** 4 archivos activos
+**Última actualización:** 2026-05-04
+**Entradas totales:** 4 archivos activos + 1 subcarpeta (`methodology/`)
