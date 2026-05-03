@@ -128,7 +128,15 @@ b64_*.txt
 pendrive_pipeline_stdout.txt
 
 # ---------------------------
-# 7) Otros directorios auxiliares
+# 7) Apéndices privados de metodología
+# ---------------------------
+# Detalles operativos sensibles (contactos, casos, frustraciones) que viven
+# junto a documentos metodológicos publicables pero NO deben entrar al repo.
+
+**/methodology/_private/
+
+# ---------------------------
+# 8) Otros directorios auxiliares
 # ---------------------------
 # Si en el futuro usas algún directorio de build o caché, se listaría aquí.
 # Por ahora RAUL es local-first sin builds, así que no añadimos más.
