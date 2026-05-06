@@ -1591,3 +1591,450 @@ Hasta la decision de Canudas, ninguna de las dos variantes pasa a produccion de 
 *Gate emitido: 2026-05-06*
 *Estado v2.2: APROBADO CON CAVEAT. Dos condiciones suspensivas de produccion abiertas: SAPI VE (con abogado marcario) + decision de Canudas.*
 *Proxima accion requerida: Kike presenta a Canudas. Si Canudas elige v2.2: Owner contrata abogado marcario para SAPI VE. Vera P-5 se confirma antes de arte final.*
+
+---
+
+# §11 — Gate variante V3 "beneficio del beneficio" (3 sub-opciones)
+
+**Tipo de gate:** Gate de variante semantica nueva. Las tres sub-opciones se presentan a la Junta como menu de registro tonal — no como finalistas mutuamente excluyentes desde el riesgo de claims. Las decisiones BR-2 de este §11 son independientes entre si: una puede aprobarse sin que las demas sean rechazadas.
+
+**Trigger:** Instruccion del Owner post-Junta 2026-05-06. Jesus Maria (miembro Junta Directiva) propone eje semantico del "beneficio del beneficio": la consecuencia ultima del NTC cuando el ITM falla o esta mal seleccionado — proteccion de la instalacion electrica como capa de respaldo y ultimo escudo. Vael evaluo 6 opciones en VA-5 §Refresh 2026-05-06b y entrego finalista unica (Op. F, score 5,50) y finalista de respaldo (Op. B, score 4,85). Owner instruye presentar 3 sub-opciones a la Junta para que evaluen el registro tonal en forma robusta, no solo la finalista de Vael.
+
+**Insumos consultados:**
+- Vael_VA-5_naming-funcion-termica_v1.md §Refresh 2026-05-06b — evaluacion de 6 opciones V3 (completa: criterios, tabla, ranking, recomendacion finalista, compatibilidad con retiro)
+- Bruna_gate_empaque_v1 §2 (Claim H rechazado sin alternativa, Claim G aprobado off-empaque) — frontera critica
+- Bruna_gate_empaque_v1 §3.4 / §7.1 / §8.3 / §8.4 — cuerpo invariable del retiro vigente
+- Bruna_gate_empaque_v1 §10 — gate de cierre V2 ("Escudo Termico NTC*" aprobado con caveat)
+- BR-5 transversal (Precedentes #1, #2, #4, #5) — criterios de superlativos, exclusion, garantia de resultado, emocionalidad sin sensacionalismo
+
+**Alcance:** Las 3 sub-opciones corresponden a:
+- **V3a:** "Respaldo termico ante el breaker*" (Op. F de Vael — finalista #1)
+- **V3b:** "Respaldo termico ante fallas del termomagnetico*" (variante formal de V3a; sin anglicismo)
+- **V3c:** "Ultima linea de defensa electrica*" (Op. B de Vael — finalista de respaldo)
+
+**Nota previa sobre el Claim H (la frontera inamovible de este gate):** El Claim H fue rechazado sin alternativa en §2 y esa decision no tiene excepciones. V3 existe precisamente porque su argumento puede formularse sin cruzar esa frontera — el beneficio ultimo es la proteccion de la instalacion electrica (cableado, bornes, el protector mismo) ante corrientes excesivas cuando el ITM falla o esta mal calibrado, NO la proteccion del motor, compresor o equipo conectado. Cualquier formulacion que sin objeto explicito permita leer "este producto protege mi equipo conectado" es rechazada sin caveat posible.
+
+---
+
+## §11.1 — Sub-opcion V3a: "Respaldo termico ante el breaker*"
+
+**Texto exacto del badge (tiro):** Respaldo termico ante el breaker*
+
+**Origen:** Finalista #1 de Vael VA-5 §Refresh 2026-05-06b (Op. F, score 5,50). Aportacion editorial de Vael — no tenia antecedente previo en el universo de candidatos del Owner. Argumento central: es la unica de las 6 opciones que codifica el argumento literal de Jesus Maria en el tiro sin salto interpretativo. La cadena causal esta completa en 5 palabras.
+
+**Antecedente de gate:** Claim G aprobado off-empaque en §2 de este documento:
+> "El Sensor NTC actua como una capa adicional de proteccion termica que respalda al interruptor termomagnetico de la instalacion."
+
+V3a es la condensacion de ese texto en un badge de 5 palabras. La relacion logica es directa: lo que el Claim G describe en una oracion, V3a lo sintetiza en el tiro. La migracion de off-empaque a tiro del empaque es el punto que este gate resuelve.
+
+### §11.1.1 — Riesgo Claim H
+
+**Evaluacion:** BAJO.
+
+"Respaldo termico ante el breaker" no afirma proteccion del equipo conectado. El objeto implicito del respaldo es el breaker / interruptor termomagnetico — no el motor, el compresor, ni ningun electrodomestico. La frase describe la posicion del sistema en la cadena de protecciones: hay un breaker; este dispositivo es un respaldo termico de ese breaker cuando el breaker no es suficiente. El comprador que lee "respaldo ante el breaker" no infiere naturalmente "proteccion de mi equipo conectado" — infiere "proteccion del circuito cuando el breaker falla."
+
+**Frontera de extension prohibida:** Ningun texto derivado de este badge puede afirmar consecuencias sobre el equipo conectado. Ejemplos prohibidos sin gate adicional:
+- "Respaldo termico ante el breaker — protege tus equipos"
+- "Respaldo termico ante el breaker cuando el breaker no es suficiente para salvar tu motor"
+
+El cuerpo invariable del retiro §8.3 opera como el guardrail que precisa el alcance real: "Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada."
+
+**Sobre la migracion off-empaque a tiro:** El Claim G fue aprobado solo off-empaque en §2 con el argumento de que en el empaque "introduce al breaker termomagnetico como actor externo que el consumidor residencial no comprende en ese contexto, complejiza el mensaje y puede generar la pregunta contraria ('entonces el NTC no es suficiente?')." Esa decision sigue siendo valida como criterio general. Sin embargo, el contexto de V3 es diferente: V3 es precisamente el eje semantico donde el breaker NO ES el actor a ocultar sino el actor a nombrar — el beneficio del beneficio es que esta tecnologia actua cuando el breaker falla. Nombrar al breaker en V3 no complejiza: es el argumento. La prohibicion off-empaque del Claim G fue de proteccion de arquitectura de mensaje (V1/V2 no son el lugar para el argumento del respaldo al breaker); V3a es el lugar correcto para ese argumento. Bruna levanta la restriccion de canal para V3a: el argumento del respaldo al breaker puede migrar al tiro en el contexto especifico de V3.
+
+**Conclusion Claim H V3a:** Riesgo bajo. Aprobable.
+
+### §11.1.2 — Emocionalidad / loss aversion controlada
+
+**Activacion de loss aversion:** Legitima y sustentada en hecho tecnico real.
+
+El argumento de Jesus Maria es tecnico: los breakers en Venezuela estan frecuentemente mal seleccionados, desgastados o sin mantenimiento. Cuando el ITM falla o actua tarde, la corriente excesiva sigue circulando. El NTC es la capa que detecta el calentamiento resultante y desconecta. Eso es un hecho verificado por Vera §1.3 y §1.4.
+
+"Respaldo termico ante el breaker" activa la idea de que el breaker puede no ser suficiente — lo cual en el mercado electrico venezolano es una experiencia cotidiana del instalador tecnico y del consumidor residencial con fallas electricas frecuentes. La activacion emocional proviene de un hecho tecnico real (la posibilidad de falla del ITM), no de una amenaza fabricada.
+
+**Calibracion segun BR-5 Precedente sobre emocionalidad:** El precedente aplicable (criterio sobre superlativos en mercados opacos — BR-5 §1 y §4) establece que la emocionalidad sin sustento factual es rechazable. En V3a, el sustento factual es explicito: el NTC actua cuando el breaker no alcanza. La activacion emocional es proporcional al hecho tecnico. No es sensacionalismo: no afirma que el breaker siempre falla, no afirma que sin este protector habria catastrofe, no promete resultado de proteccion del equipo. Afirma que hay un respaldo disponible si el breaker no es suficiente.
+
+**Sobre "breaker" como anglicismo:** Este es el flag de Vael que el Owner instruyo que Bruna evaluara. Evaluacion: "breaker" es un prestamo lingüistico naturalizado en el registro electrico venezolano. Es el termino que usan electricistas, ferreteros, instaladores y consumidores residenciales en Venezuela para referirse al interruptor termomagnetico. El brand wiki "sin anglicismos innecesarios" no prohíbe prestamos lingüisticos naturalizados — prohíbe anglicismos innecesarios, es decir, anglicismos que tienen un equivalente español igualmente claro y sin coste de comprension. En este caso, "breaker" y "termomagnetico" NO son equivalentes en registros de audiencia: "breaker" funciona para el consumidor residencial y para el instalador; "termomagnetico" funciona para el instalador tecnico pero tiene menor penetracion en el consumidor residencial. La eleccion entre "breaker" y "termomagnetico" es una decision de registro de audiencia, no de anglicismo prohibido. Bruna evalua: "breaker" es aceptable en el tiro del empaque con el sustento de que es termino naturalizado en el vocabulario electrico venezolano. Si el Owner mantiene la instruccion de evitar anglicismos incluso naturalizados, V3b resuelve esa restriccion. La decision sobre el anglicismo es del Owner; Bruna no lo bloquea.
+
+**Conclusion emocionalidad V3a:** Activacion legitima. No sensacionalismo. Aceptable bajo BR-5.
+
+### §11.1.3 — Compatibilidad con cuerpo invariable §8.3 y headers propuestos
+
+**Cuerpo del caveat:** El cuerpo invariable de §8.3 es compatible sin modificacion. La frase "Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion" es el refuerzo semantico exacto que V3a necesita — el retiro confirma la posicion del sistema en la cadena (respaldo, no reemplazo). La coherencia es maxima.
+
+**Version recomendada del retiro:** Version A (neutro funcional), segun recomendacion de Vael §R6b-6 confirmada por Bruna. La Version B (con NTC) es segunda opcion si el Owner quiere nombrar el componente. La Version C (con Escudo Termico) no es recomendada: introduce confusión de naming con V2 en un claim de V3.
+
+**Header literal del bullet retiro CARACTERISTICAS:**
+
+> Respaldo termico ante el breaker:
+
+**Texto literal del caveat de retiro completo (Version A — header + cuerpo invariable §8.3):**
+
+> **Respaldo termico ante el breaker:** sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Nota operativa:** Si el Owner prefiere Version B (con NTC como identificador tecnico en el header), el header seria:
+
+> Respaldo termico ante el breaker (sensor NTC):
+
+seguido del mismo cuerpo invariable. El parentetico "(sensor NTC)" identifica el componente sin convertirlo en el concepto principal — coherente con el eje semantico de V3.
+
+### §11.1.4 — Decision BR-2
+
+**Decision: APROBADO CON CAVEAT**
+
+**Condicion 1 (caveat de retiro obligatorio):** El cuerpo invariable de §8.3 debe acompañar el badge en el retiro. Header literal: "Respaldo termico ante el breaker:". Sin este texto en el retiro, el badge no se considera aprobado.
+
+**Condicion 2 (extension prohibida):** Ningun texto adicional en el mismo artefacto puede afirmar consecuencias sobre el equipo conectado derivadas de este badge. El badge aprueba el argumento del respaldo al breaker; no aprueba ningun claim de proteccion de la carga.
+
+**Condicion 3 (decision Owner sobre anglicismo "breaker"):** El uso de "breaker" en el tiro requiere confirmacion explicita del Owner de que el prestamo lingüistico naturalizado es aceptable en este contexto de empaque. Si el Owner requiere el equivalente en español formal, V3b es la alternativa directa con el mismo gate. Bruna no bloquea el anglicismo; declara la decision como del Owner.
+
+**Rationale:** V3a es la condensacion del Claim G aprobado off-empaque (§2), que ya tiene antecedente de gate favorable con riesgo tecnico bajo. La migracion al tiro es valida en el contexto especifico de V3 porque el argumento del breaker es el eje semantico de V3, no un elemento secundario que complejiza el mensaje. El riesgo de Claim H es bajo porque el objeto del respaldo es el breaker (el ITM), no el equipo conectado. La emocionalidad es legitima y proporcional al hecho tecnico. El cuerpo del retiro §8.3 ya contiene el guardrail necesario.
+
+**Clausula RISK-POLICY aplicada:** §3 — no afirmar datos falseables. "Respaldo termico ante el breaker" describe una funcion real verificada por Vera §1.3 y por el Claim G ya aprobado. No hay dato falseable en el badge.
+
+**Evidencia consultada:** Vael VA-5 §Refresh 2026-05-06b Op. F; Bruna gate_empaque_v1 §2 Claim G y Claim H; Vera_brief_tecnico_v1 §1.3 y §1.4; BR-5 Precedentes #1 y #4.
+
+---
+
+## §11.2 — Sub-opcion V3b: "Respaldo termico ante fallas del termomagnetico*"
+
+**Texto exacto del badge (tiro):** Respaldo termico ante fallas del termomagnetico*
+
+**Origen:** Variante en español formal de V3a. No tenia entrada propia en el ranking de Vael — Vael la menciona como caveat de presentacion de Op. F ("si el Owner activa la politica de anglicismos, la version de respaldo es 'Respaldo termico ante el termomagnético*'"). El Owner instruyo a Bruna evaluarla como sub-opcion independiente para presentar a la Junta en un registro tecnico-formal diferenciado.
+
+**Diferencias respecto a V3a:**
+- Reemplaza "el breaker" (coloquial / anglicismo naturalizado) por "fallas del termomagnetico" (español tecnico formal)
+- Añade "fallas del" — lo que precisa que el respaldo se activa ante una condicion de falla del ITM, no ante cualquier operacion del ITM
+- Cuatro palabras adicionales (7 palabras totales vs. 5 de V3a)
+
+### §11.2.1 — Riesgo Claim H
+
+**Evaluacion:** BAJO — identico a V3a.
+
+La sustitucion de "el breaker" por "fallas del termomagnetico" no cambia el objeto del respaldo ni abre interpretaciones de proteccion del equipo conectado. "Respaldo termico ante fallas del termomagnetico" es, si acaso, mas preciso que V3a porque especifica el contexto de activacion ("ante fallas") — lo que aclara que el sistema no actua siempre que hay un breaker presente, sino cuando ese breaker falla o es insuficiente. Esa precision reduce, no aumenta, el riesgo de interpretacion incorrecta.
+
+**Frontera de extension prohibida:** identica a V3a. Ninguna afirmacion sobre el equipo conectado puede derivarse del badge sin gate adicional.
+
+**Conclusion Claim H V3b:** Riesgo bajo. Aprobable.
+
+### §11.2.2 — Emocionalidad / loss aversion controlada
+
+**Activacion de loss aversion:** Legitima. Mismo fact tecnico que V3a.
+
+La diferencia es de intensidad: "fallas del termomagnetico" es un registro tecnico que el instalador decodifica inmediatamente y con precision ("falla del ITM" = evento especifico de su practica profesional). El consumidor residencial puede decodificar "fallas del termomagnetico" como una amenaza real, aunque con menor inmediatez que "el breaker" (termino mas coloquial). El loss aversion se activa pero con menor intensidad emocional que V3a para el consumidor residencial promedio.
+
+**Para el instalador tecnico:** V3b puede ser marginalmente mas convincente que V3a precisamente porque el registro formal ("termomagnetico") es el vocabulario de su profesion en documentos tecnicos y en el dialogo con clientes profesionales. El instalador que vende a un administrador de edificio o a un cliente corporativo puede preferir usar el termino tecnico.
+
+**Sobre la politica de anglicismos:** V3b resuelve completamente la restriccion de anglicismos del Owner. "Termomagnetico" es la denominacion tecnica estandar en español para el interruptor termico y magnetico. No hay ambigüedad regulatoria ni de registro de marca en el termino.
+
+**Calibracion segun BR-5:** Identica a V3a. La activacion emocional es proporcional al hecho tecnico real. No es sensacionalismo.
+
+**Conclusion emocionalidad V3b:** Activacion legitima, de intensidad media-alta (ligeramente menor que V3a para consumidor residencial; equivalente o mayor para instalador tecnico formal). Aceptable bajo BR-5.
+
+### §11.2.3 — Compatibilidad con cuerpo invariable §8.3 y headers propuestos
+
+**Cuerpo del caveat:** El cuerpo invariable de §8.3 es compatible sin modificacion. La coherencia es identica a V3a: el retiro menciona "no reemplaza al interruptor termomagnetico de la instalacion" — el badge del tiro dice exactamente que el sistema actua ante fallas de ese mismo dispositivo. Coherencia perfecta.
+
+**Version recomendada del retiro:** Version A (neutro funcional). Mismas razones que V3a.
+
+**Header literal del bullet retiro CARACTERISTICAS:**
+
+> Respaldo termico ante fallas del termomagnetico:
+
+**Texto literal del caveat de retiro completo (Version A):**
+
+> **Respaldo termico ante fallas del termomagnetico:** sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Nota de longitud para Oz y Atlas:** V3b tiene 7 palabras en el badge vs. 5 de V3a. En el blister de Alternativa B, la jerarquia visual del badge de velocidad ("El mas rapido ante parpadeos (< 0,03 s)") debe seguir siendo dominante. Oz y Atlas deben confirmar que 7 palabras caben sin comprimir esa jerarquia. Si el espacio es critico, V3a (5 palabras) es la alternativa directa.
+
+### §11.2.4 — Decision BR-2
+
+**Decision: APROBADO CON CAVEAT**
+
+**Condicion 1 (caveat de retiro obligatorio):** Identica a V3a. Header literal: "Respaldo termico ante fallas del termomagnetico:". Cuerpo invariable §8.3 sin modificacion.
+
+**Condicion 2 (extension prohibida):** Identica a V3a. Sin afirmaciones sobre el equipo conectado derivadas del badge.
+
+**Condicion 3 (confirmacion de espacio de diseno):** 7 palabras en el badge requieren confirmacion de Oz / Atlas de que no compiten visualmente con el badge de velocidad.
+
+**Rationale:** V3b es un claim tecnicamente honesto, con riesgo Claim H bajo (menor aun que V3a por la precision de "fallas del"), sin anglicismos, con activacion emocional legitima y con coherencia perfecta con el cuerpo del retiro §8.3. Es la variante de menor exposicion a cualquier objecion sobre el registro lingüistico. Su unico costo es la longitud (7 palabras) y la ligeramente menor intensidad emocional para el consumidor residencial respecto a V3a.
+
+**Clausula RISK-POLICY aplicada:** §3 — no afirmar datos falseables. Identico a V3a.
+
+**Evidencia consultada:** Vael VA-5 §Refresh 2026-05-06b (Op. F y caveat de presentacion sobre anglicismo); Bruna gate_empaque_v1 §2 Claim G y Claim H; Vera_brief_tecnico_v1 §1.3.
+
+---
+
+## §11.3 — Sub-opcion V3c: "Ultima linea de defensa electrica*"
+
+**Texto exacto del badge (tiro):** Ultima linea de defensa electrica*
+
+**Origen:** Finalista de respaldo de Vael VA-5 §Refresh 2026-05-06b (Op. B, score 4,85 — empate tecnico con Op. E). Vael la incluye como segunda opcion para el Owner si la prioridad es la activacion emocional maxima del consumidor final sobre la legibilidad tecnica del instalador. Flag de Vael: "defensa de que" queda implicito — riesgo Claim H medio.
+
+**Contexto del origen:** La expresion "ultima linea de defensa" aparecio en el research de Perplexity aplicada al equipo conectado ("Sistema de Respaldo Termico: La ultima linea de defensa para tu aire acondicionado") — lo que cruza el Claim H directamente. Vael la redirige a "la instalacion electrica" como objeto de defensa. Esa redireccion es el punto critico que este gate evalua.
+
+### §11.3.1 — Riesgo Claim H
+
+**Evaluacion:** MEDIO. Aprobable con caveat reforzado — no rechazable, pero requiere condicion explicita adicional.
+
+**El analisis del objeto de "defensa":** "Ultima linea de defensa electrica" sin objeto explicito del sustantivo "defensa" genera ambigüedad semantica en el tiro:
+- Lectura A (instalador tecnico, contexto electrico profesional): "defensa electrica" = defensa del sistema electrico de la instalacion (cableado, bornes, el protector). Esta lectura es la que Vael propone y la que no cruza el Claim H.
+- Lectura B (consumidor residencial sin contexto tecnico, especialmente el que tuvo una falla que daño un electrodomestico): "defensa electrica" = defensa de mis equipos electricos / de mis electrodomesticos. Esta lectura SI cruza el Claim H porque el consumidor puede interpretar que el badge promete proteccion de la carga conectada.
+
+El adjetivo "electrica" no resuelve la ambigüedad: tanto la instalacion como los equipos conectados son parte del sistema electrico del hogar. Un consumidor que perdio un televisor o un compresor en una falla electrica leeran "defensa electrica" como "defensa de mis equipos electricos" — no como "defensa del cableado y del protector."
+
+**La diferencia critica con V3a/V3b:** En V3a y V3b, el objeto del respaldo esta explicito: "ante el breaker" / "ante fallas del termomagnetico". El lector sabe que el respaldo es ante un dispositivo especifico de la instalacion, no ante amenazas generales a sus equipos. En V3c, el objeto de "defensa" no esta explicito — la metafora "ultima linea" opera emocionalmente sin anclar el objeto de defensa. Esa diferencia es la que crea el riesgo Claim H medio que Vael flago correctamente.
+
+**La mitigacion posible:** El cuerpo del retiro §8.3 mitiga la interpretacion incorrecta en quien lee el retiro. Pero en el tiro solo — que es lo que el 80% del comprador promedio en el punto de venta experimenta — la ambigüedad subsiste. Para V3c, el caveat reforzado incluye una condicion de proximidad visual obligatoria: si el badge aparece en el tiro, debe haber en el mismo tiro un texto aclaratorio de no mas de 5 palabras que ancle el objeto de "defensa" a la instalacion electrica (no al equipo). Esa linea aclaratoria no es parte del badge — es un elemento de diseno del tiro que Atlas y Oz deben incorporar.
+
+**Si la condicion de proximidad visual no puede implementarse por restriccion de espacio de diseno:** V3c se convierte en claim SOLO OFF-EMPAQUE (argumentario de ventas, QR, materiales internos) — identica restriccion al Claim G original. El badge no puede aparecer en el tiro del empaque sin esa condicion de diseño satisfecha.
+
+**Conclusion Claim H V3c:** Riesgo medio. Aprobable bajo condicion de proximidad visual en el tiro. Sin esa condicion: aprobado solo off-empaque.
+
+### §11.3.2 — Emocionalidad / loss aversion controlada
+
+**Activacion de loss aversion:** Maxima del conjunto V3. Y esa es precisamente su fortaleza y su tension.
+
+"Ultima linea de defensa" es la metafora de mayor carga emocional del set V3. El adjetivo "ultima" activa la idea de que no hay nada despues — si esto falla, no hay mas proteccion. Para el consumidor que ha experimentado fallas electricas en Venezuela (apagones, variaciones de voltaje, cortocircuitos, incendios de cableado), "ultima linea" es visceralmente real.
+
+**La tension con BR-5:** El precedente de superlativos en BR-5 exige que la emocionalidad este sustentada en hecho factual. "Ultima" como superlativo de posicion es factualmente soportado — el NTC es efectivamente la ultima capa de proteccion termica del sistema antes de que la corriente excesiva dañe el cableado o el protector. El retiro §8.3 confirma esta posicion ("no reemplaza al interruptor termomagnetico de la instalacion" — es una capa adicional, no la primaria, lo que implica que es posterior en la cadena). Hasta ahi, el superlativo es defendible.
+
+El riesgo de sensacionalismo no es en el superlativo "ultima" sino en el objeto implicito de la "defensa". Si el consumidor lee "ultima linea de defensa" como "lo ultimo que se interpone entre la corriente destructiva y MIS EQUIPOS", entonces la activacion emocional deja de ser proporcional al hecho tecnico y se convierte en una sobrepromesa de resultado — que es exactamente la zona del Claim H. La emocionalidad sin el anclaje del objeto de defensa es potencialmente sensacionalista para el segmento de consumidores que tienen expectativas de proteccion de sus equipos.
+
+**Calibracion:** la activacion emocional de V3c es legitima cuando el comprador entiende que la "defensa" es de la instalacion electrica. La activacion emocional de V3c cruza el umbral cuando el comprador infiere que la "defensa" es de sus equipos conectados. El badge por si solo no garantiza cual de las dos lecturas prevalece en el punto de venta.
+
+**Conclusion emocionalidad V3c:** Alta activacion emocional, legitima si el objeto de "defensa" queda anclado. Potencialmente sobrepromesa si el objeto queda implicito sin texto aclaratorio. La condicion de proximidad visual del §11.3.1 es el mecanismo de control.
+
+### §11.3.3 — Compatibilidad con cuerpo invariable §8.3 y headers propuestos
+
+**Cuerpo del caveat:** El cuerpo invariable de §8.3 es compatible. La frase "Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion" establece la posicion del sistema en la cadena y contextualiza la "ultima linea" de forma correcta. Sin embargo — y este es un punto critico para Solenne y Atlas — el cuerpo del retiro solo cumple esta funcion aclaratoria si el comprador lo lee. Para el comprador que no lee el retiro, el tiro con "Ultima linea de defensa electrica" sin texto aclaratorio queda con riesgo Claim H medio activo.
+
+**Version recomendada del retiro:** Version A (neutro funcional). La Version A es la mas coherente con la metafora de "ultima linea de defensa" porque el cuerpo funcional describe la posicion del sistema (respaldo termico, no reemplazo del ITM) sin distraer con el nombre del componente. La Version C (con Escudo Termico) introduce confusion de naming con V2.
+
+**Header literal del bullet retiro CARACTERISTICAS:**
+
+> Ultima linea de defensa electrica:
+
+**Texto literal del caveat de retiro completo (Version A):**
+
+> **Ultima linea de defensa electrica:** sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Condicion de proximidad visual (condicion de diseno — obligatoria para uso en tiro del empaque):**
+
+El badge "Ultima linea de defensa electrica*" debe ir acompañado en el tiro del empaque de un texto de anclaje de no mas de 5 palabras que identifique el objeto de la defensa como la instalacion electrica (no el equipo conectado). Propuesta de texto de anclaje:
+
+> De tu instalacion electrica
+
+Este texto va inmediatamente debajo o junto al badge, en un tamano de tipografia menor (subtexto del badge). El conjunto queda:
+
+> **Ultima linea de defensa electrica*** (badge principal)
+> *De tu instalacion electrica* (subtexto de anclaje)
+
+Con ese subtexto, la lectura del consumidor queda anclada al objeto correcto y el riesgo Claim H se reduce a bajo. Sin el subtexto, el badge es rechazado para el tiro del empaque (pero aprobado off-empaque).
+
+**Nota para Atlas y Oz:** La condicion de proximidad visual es una condicion de diseno, no un elemento de copy. El texto de anclaje propuesto por Bruna es el texto que deben integrar en el mockup. Si por restriccion de espacio el subtexto no puede implementarse en el tiro, notificar a Bruna antes de avanzar: sin ese texto, el badge de V3c no tiene sello para el tiro.
+
+### §11.3.4 — Decision BR-2
+
+**Decision: APROBADO CON CAVEAT (condicion de proximidad visual en tiro) — APROBADO OFF-EMPAQUE sin condicion adicional**
+
+**Condicion 1 (caveat de retiro obligatorio):** Cuerpo invariable §8.3 con header "Ultima linea de defensa electrica:". Sin este texto en el retiro, el badge no se considera aprobado.
+
+**Condicion 2 (proximidad visual — obligatoria para uso en tiro del empaque):** El badge en el tiro del empaque requiere el subtexto de anclaje "De tu instalacion electrica" inmediatamente adyacente. Sin ese subtexto, el badge del tiro no se considera aprobado para el empaque fisico. Si el espacio de diseno no permite el subtexto, el badge queda aprobado solo off-empaque (argumentario de ventas, QR, materiales internos).
+
+**Condicion 3 (extension prohibida):** Ninguna frase adicional puede afirmar que la "defensa" incluye al equipo conectado. Ejemplos prohibidos: "Ultima linea de defensa electrica para tus equipos"; "Ultima linea de defensa electrica — protege tu compresor."
+
+**Rationale:** V3c tiene la mayor activacion emocional del conjunto y cumple el argumento de Jesus Maria de forma directa e impactante — "ultima linea" es la imagen mas poderosa para el consumidor residencial que ha vivido fallas electricas graves. Sin embargo, la ambigüedad del objeto de "defensa" sin el subtexto de anclaje genera un riesgo Claim H medio que no puede ignorarse. La solucion no es rechazar el badge sino anclar el objeto de defensa en el tiro mediante el subtexto. Con ese anclaje, el riesgo Claim H cae a bajo y el badge es aprobable. Sin el anclaje, el badge en el tiro del empaque es un riesgo medio no mitigado — lo que en la politica de Bruna requiere restriccion de canal (off-empaque unicamente, como el Claim G original). La decision de proximidad visual es de diseno, no de claims conceptual: Bruna puede emitir el gate conceptual como aprobado con condicion; la condicion de diseno la resuelven Atlas y Oz.
+
+**Clausula RISK-POLICY aplicada:** §3 — no afirmar datos falseables; §4 — reversibilidad: si el empaque se imprime con "Ultima linea de defensa electrica" sin subtexto de anclaje y un consumidor reclama que el badge prometia proteccion de sus equipos, el costo de correccion es alto. La condicion de proximidad visual es una medida de reversibilidad preventiva.
+
+**Evidencia consultada:** Vael VA-5 §Refresh 2026-05-06b Op. B; Bruna gate_empaque_v1 §2 Claim H (rationale de rechazo — lectura del consumidor sin distincion de objeto); Vera_brief_tecnico_v1 §1.4; BR-5 Precedente #4 (garantia de resultado).
+
+---
+
+## §11.4 — Tabla comparativa final V3a / V3b / V3c
+
+| Eje de evaluacion | V3a: "Respaldo termico ante el breaker*" | V3b: "Respaldo termico ante fallas del termomagnetico*" | V3c: "Ultima linea de defensa electrica*" |
+|---|---|---|---|
+| **Riesgo Claim H** | Bajo — objeto del respaldo es el breaker (ITM), no el equipo | Bajo — "fallas del termomagnetico" precisa aun mas el contexto; menor riesgo que V3a | Medio — "defensa electrica" sin objeto explicito; mitigable con subtexto de anclaje en tiro |
+| **Activacion emocional** | Alta (tecnico) / Media-alta (consumidor) — "el breaker puede fallar" es experiencia cotidiana en VE | Media-alta (tecnico tecnico-formal) / Media (consumidor) — "termomagnetico" reduce levemente la activacion en consumidor residencial | Alta (consumidor) / Alta (tecnico) — "ultima linea" es la imagen de mayor carga emocional del set |
+| **Diferenciacion V1/V2** | Maxima — ninguna de V1/V2 nombra al breaker; eje semantico completamente nuevo | Maxima — idem V3a | Maxima — "ultima linea" + posicion en cadena es eje semantico que V1/V2 no tienen |
+| **Registro linguistico** | Coloquial-tecnico — "breaker" es prestamo naturalizado en jerga electrica venezolana | Formal-tecnico — "termomagnetico" es denominacion estandar; sin anglicismos | Emocional-metaforico — "ultima linea de defensa" es metafora universal de alto impacto |
+| **Audiencia primaria** | Mixta (instalador + consumidor informado) | Instalador tecnico formal / consumidor de perfil exigente | Consumidor final (loss aversion intensa) + instalador (argumento de reputacion) |
+| **Longitud del badge** | 5 palabras | 7 palabras | 5 palabras |
+| **Condicion de diseño adicional** | Ninguna | Confirmacion de espacio (7 palabras) | Subtexto de anclaje obligatorio en tiro: "De tu instalacion electrica" |
+| **Versión retiro recomendada** | Version A (neutro funcional) | Version A (neutro funcional) | Version A (neutro funcional) |
+| **Decision BR-2** | APROBADO CON CAVEAT | APROBADO CON CAVEAT | APROBADO CON CAVEAT (con condicion de proximidad visual en tiro) |
+
+---
+
+## §11.5 — Recomendacion combinada
+
+### Menor riesgo combinado: V3b — "Respaldo termico ante fallas del termomagnetico*"
+
+V3b acumula el menor riesgo combinado (Claim H, linguistico, diseño):
+- Riesgo Claim H: bajo — el objeto del respaldo esta explicito y el calificador "fallas del" precisa el contexto de activacion mejor que V3a
+- Sin anglicismo — resuelve la restriccion del Owner sin condicion suspensiva sobre "breaker"
+- Coherencia con retiro §8.3: perfecta — el retiro menciona el "interruptor termomagnetico" usando exactamente el vocabulario del badge
+- Sin condicion de diseño de proximidad visual como V3c
+
+El unico costo es la longitud (7 palabras) y la ligeramente menor intensidad emocional para el consumidor residencial respecto a V3a. Para la audiencia instalador tecnico formal, V3b puede ser la formulacion mas convincente del set.
+
+### Mayor riesgo combinado: V3c — "Ultima linea de defensa electrica*"
+
+V3c tiene el mayor riesgo individual del trio debido al riesgo Claim H medio por ambigüedad del objeto de "defensa". Ese riesgo es mitigable pero requiere una condicion de diseño adicional (subtexto de anclaje) que introduce dependencia operativa de Atlas / Oz. Si la condicion no puede cumplirse en el tiro, el badge cae a off-empaque unicamente.
+
+### Las 3 son ejecutables: la Junta elige el registro tonal
+
+Las tres sub-opciones son aprobables. No hay ninguna que deba descartarse como "evaluada y no viable." La Junta puede seleccionar en funcion del registro tonal que considere mas alineado con la estrategia de comunicacion de Exceline:
+
+- **La Junta prioriza conexion coloquial y el argumento del instalador cotidiano:** V3a. El "breaker" es el mundo del instalador y del consumidor con experiencia electrica en Venezuela. Maximo equilibrio entre activacion emocional y riesgo bajo.
+- **La Junta prioriza el registro formal y la ausencia de anglicismos para documentos y materiales profesionales:** V3b. La formulacion mas defendible en cualquier contexto de revision formal (cliente corporativo, ente regulatorio, abogado marcario).
+- **La Junta prioriza la maxima activacion emocional del consumidor final como diferenciador de punto de venta:** V3c. La imagen de "ultima linea" es la mas poderosa del set. Requiere coordinacion de diseno adicional (subtexto de anclaje) pero es ejecutable.
+
+**Las tres son complementarias, no mutuamente excluyentes a largo plazo:** V3a/V3b pueden coexistir segun el canal (V3a en empaque de consumo masivo, V3b en materiales de especificacion tecnica). V3c puede funcionar en el argumentario de ventas off-empaque sin necesidad del subtexto de anclaje (en ese contexto el vendedor provee el contexto verbal). La Junta elige el registro para el empaque fisico; el Owner puede asignar los otros registros a otros artefactos.
+
+### Sub-opcion hibrida: "Respaldo termico ante fallas electricas graves*"
+
+Durante el analisis, Bruna identifica una opcion hibrida que no fue propuesta por Vael como badge de V3 para este gate pero que combina atributos de V3a y V3c:
+
+**Texto:** "Respaldo termico ante fallas electricas graves*"
+
+Esta opcion nombra la amenaza ("fallas electricas graves") sin depender del "breaker" ni del "termomagnetico", activa la dimension de amenaza sin la ambigüedad del objeto de "defensa" de V3c, y es igualmente apta para el consumidor residencial y el instalador. El riesgo Claim H es bajo: "fallas electricas" ancla la proteccion al sistema electrico (no al equipo conectado). La activacion emocional es media-alta (comparable a V3a pero menor que V3c).
+
+Bruna eleva esta opcion al Owner como candidata adicional por si la Junta considera que ninguna de las tres sub-opciones principales captura exactamente el registro deseado. Si el Owner quiere incluirla en la presentacion a la Junta, Bruna da gate provisional APROBADO CON CAVEAT bajo las mismas condiciones que V3a (cuerpo invariable §8.3, extension prohibida, sin condicion de diseno adicional). Score estimado en el ranking de Vael: ~4,75 (equivalente a Op. C que obtuvo ese score en el ranking ponderado). No alcanza la finalista principal (V3a/V3b) pero es ejecutable.
+
+---
+
+## §11.6 — Opciones V3 evaluadas y descartadas del proceso (referencia documental)
+
+Las siguientes opciones del universo de 6 de Vael §Refresh 2026-05-06b fueron evaluadas por Vael pero no forman parte de las 3 sub-opciones instruidas por el Owner para presentacion a la Junta. Se documentan aqui como referencia del proceso, con la razon por la que no avanzan a este gate.
+
+| Opcion Vael | Texto | Por que no avanza a la Junta |
+|---|---|---|
+| Op. A | "Capa adicional de proteccion electrica*" | Falla anti-pleonasmo critico: el cuerpo del retiro §8.3 ya usa la expresion "capa adicional de proteccion termica". Migrar esa frase al tiro es circularidad, no diferenciacion de V3. Score 3,15 — el mas bajo del set. |
+| Op. D | "Escudo electrico de respaldo*" | Diferenciacion parcial de V2 ("Escudo Termico NTC*"): el consumidor puede confundir "Escudo electrico" con "Escudo Termico" — son variaciones del mismo concepto de marca para quien no tiene el contexto completo. Score 3,85. |
+| Op. E | "Proteccion ante corrientes destructivas*" | Riesgo Claim H medio-alto: "proteccion ante corrientes destructivas" sin objeto explicito puede ser leido como proteccion del equipo conectado ante corrientes que lo destruirian. Aunque el activacion emocional es alta (score 4,85 empate con Op. B), el riesgo Claim H es el mas alto del set junto a su empate — Bruna lo descarta para la presentacion a la Junta. Disponible como argumento off-empaque con caveat explicito del objeto de defensa. |
+
+Estas tres opciones son **evaluadas y descartadas del proceso de gate de empaque** — disponibles como referencia documental del proceso pero NO van a la Junta para seleccion de badge de empaque.
+
+---
+
+## §11.7 — Headers literales para Solenne y Atlas (sub-opciones aprobadas)
+
+### V3a — Aprobada con caveat
+
+**Texto exacto del badge tiro:**
+> Respaldo termico ante el breaker*
+
+(Con asterisco obligatorio. Sin TM. El Owner debe confirmar el anglicismo "breaker" como aceptable.)
+
+**Texto exacto del header del bullet retiro CARACTERISTICAS:**
+> Respaldo termico ante el breaker:
+
+**Texto exacto del header del caveat de retiro:**
+> Respaldo termico ante el breaker:
+
+**Cuerpo del caveat:** Version A (neutro funcional). Texto literal completo del cuerpo (sin modificacion del §8.3):
+> sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Version B del header (si Owner confirma NTC en el retiro):**
+> Respaldo termico ante el breaker (sensor NTC):
+seguido del mismo cuerpo invariable.
+
+---
+
+### V3b — Aprobada con caveat
+
+**Texto exacto del badge tiro:**
+> Respaldo termico ante fallas del termomagnetico*
+
+(Con asterisco obligatorio. Sin TM. Sin anglicismo. Verificar espacio de diseno con Oz / Atlas.)
+
+**Texto exacto del header del bullet retiro CARACTERISTICAS:**
+> Respaldo termico ante fallas del termomagnetico:
+
+**Texto exacto del header del caveat de retiro:**
+> Respaldo termico ante fallas del termomagnetico:
+
+**Cuerpo del caveat:** Version A (neutro funcional). Texto literal del cuerpo: idem V3a — cuerpo invariable §8.3 sin modificacion.
+
+---
+
+### V3c — Aprobada con caveat (condicion de proximidad visual)
+
+**Texto exacto del badge tiro:**
+> Ultima linea de defensa electrica*
+
+(Con asterisco obligatorio. Sin TM. REQUIERE subtexto de anclaje adyacente en el tiro del empaque.)
+
+**Texto exacto del subtexto de anclaje obligatorio (para tiro del empaque):**
+> De tu instalacion electrica
+
+(En tipografia menor adyacente al badge. Sin este subtexto, el badge no tiene sello para el tiro del empaque — aprobado solo off-empaque.)
+
+**Texto exacto del header del bullet retiro CARACTERISTICAS:**
+> Ultima linea de defensa electrica:
+
+**Texto exacto del header del caveat de retiro:**
+> Ultima linea de defensa electrica:
+
+**Cuerpo del caveat:** Version A (neutro funcional). Texto literal del cuerpo: idem V3a — cuerpo invariable §8.3 sin modificacion.
+
+---
+
+## §11.8 — BR-2 Genteca — Entradas de gate §11
+
+**Dominio:** Genteca
+**Proyecto:** 2026-04_GSM-MB-RB-RF_empaque
+**Fecha de decision:** 2026-05-06
+**Documento de gate:** Bruna_gate_empaque_v1 §11
+**Gatekeeping trigger:** Instruccion del Owner de gate de 3 sub-opciones de V3 "beneficio del beneficio" para presentacion a la Junta Directiva. Trigger conceptual: propuesta de Jesus Maria (miembro Junta Directiva).
+
+| Sub-opcion gateada | Texto exacto del tiro | Decision | Condicion principal | Clausula RISK-POLICY | Precedente |
+|---|---|---|---|---|---|
+| V3a | Respaldo termico ante el breaker* | APROBADO CON CAVEAT | Caveat retiro §8.3 obligatorio; confirmacion Owner anglicismo "breaker"; sin extension sobre equipo conectado | §3 — no afirmar datos falseables | Claim G aprobado off-empaque §2 — antecedente directo |
+| V3b | Respaldo termico ante fallas del termomagnetico* | APROBADO CON CAVEAT | Caveat retiro §8.3 obligatorio; confirmacion espacio de diseño Oz/Atlas (7 palabras); sin extension sobre equipo conectado | §3 | Claim G aprobado off-empaque §2 — variante formal |
+| V3c | Ultima linea de defensa electrica* | APROBADO CON CAVEAT | Caveat retiro §8.3 obligatorio; subtexto de anclaje "De tu instalacion electrica" obligatorio en tiro del empaque; sin extension sobre equipo conectado; si subtexto no cabe: solo off-empaque | §3 + §4 (reversibilidad) | BR-5 Precedente #4 (garantia de resultado — frontera vigilada) |
+
+**Evidencia consultada para este gate:**
+- Vael_VA-5_naming-funcion-termica_v1.md §Refresh 2026-05-06b (evaluacion de 6 opciones, ranking, finalistas, compatibilidad con retiro)
+- Bruna_gate_empaque_v1 §2 Claim G (aprobado off-empaque — antecedente directo de V3a/V3b) y Claim H (rechazado sin alternativa — frontera inamovible)
+- Bruna_gate_empaque_v1 §8.3 / §8.4 (cuerpo invariable del retiro vigente)
+- BR-5 transversal Precedentes #1, #2, #4 (superlativos, exclusion, garantia de resultado)
+- RISK-POLICY.md v1.0 §3 y §4
+
+---
+
+## §11.9 — Condiciones suspensivas y proximos pasos
+
+### Condiciones que aplican a las tres sub-opciones antes de produccion de imprenta
+
+**Condicion compartida 1 — Vera P-5 (mecanismo NTC continuo vs. fusible unico):** Pendiente heredada de §8.1. Impacto en V3: bajo. Ninguna de las tres sub-opciones usa el adjetivo "activa" ni promete recurrencia de actuacion. Si Vera confirma fusible de corte unico, el cuerpo del retiro §8.3 puede requerir ajuste menor (no es condicion bloqueante del gate conceptual ni de la presentacion a la Junta).
+
+**Condicion compartida 2 — Decision de la Junta sobre cual sub-opcion avanza:** Las tres estan gateadas. La Junta selecciona la variante (o confirma que avanza off-empaque como argumentario). Hasta esa decision, ninguna pasa a produccion de arte final.
+
+**Condicion especifica V3a — Confirmacion Owner sobre "breaker":** Si el Owner requiere español formal, V3b es el reemplazo directo sin gate adicional.
+
+**Condicion especifica V3b — Confirmacion de espacio de diseño:** Oz y Atlas verifican que 7 palabras caben en el tiro sin comprimir la jerarquia visual del badge de velocidad.
+
+**Condicion especifica V3c — Subtexto de anclaje en tiro:** Atlas y Oz implementan "De tu instalacion electrica" como subtexto adyacente al badge. Sin ese subtexto, el badge no tiene sello para el tiro del empaque.
+
+### Notificaciones de cascada post-decision de la Junta
+
+**Para Solenne (SO-1 delta):** No actuar hasta que la Junta seleccione la sub-opcion. Cuando la decision llegue: el texto del badge, el header del retiro y el cuerpo invariable estan todos en §11.7 — la integracion es directa. Si la Junta selecciona V3c: coordinar con Atlas la implementacion del subtexto de anclaje antes de integrar en el copy del retiro.
+
+**Para Atlas (mockups):** Preparar 3 mockups paralelos de tiro con V3a / V3b / V3c para presentacion a la Junta. Para V3c: el mockup debe incluir el subtexto "De tu instalacion electrica" adyacente al badge — esa es la condicion de diseño que la Junta debe evaluar.
+
+**Para Aurelio (AU-1):** Si V3 avanza como argumento de empaque, el memo de AU-1 puede requerir una nota sobre la tercera variante. El Owner evalua si es necesario un AU-1 v3 o si la comunicacion de V3 a la Junta se integra en el mismo flujo de la decision en sesion.
+
+**Para Vael (informacion):** V3a y V3b son aprobadas. V3c es aprobada con condicion de diseño. La recomendacion finalista de Vael (Op. F = V3a) se confirma como la de menor riesgo combinado entre las aprobadas con empaque fisico sin condicion de diseño adicional.
+
+**Para Oz (redline arte):** No actuar hasta decision de la Junta. Cuando el Owner instruya: el asterisco en el tiro es obligatorio en las tres sub-opciones. El texto del retiro usa el header de la sub-opcion seleccionada + el cuerpo invariable de §8.3. Para V3c: incluir el subtexto de anclaje en el tiro antes de qualquier implementacion.
+
+---
+
+*Gate emitido: 2026-05-06*
+*Estado V3: V3a APROBADO CON CAVEAT — V3b APROBADO CON CAVEAT — V3c APROBADO CON CAVEAT (condicion de proximidad visual en tiro del empaque).*
+*Sub-opcion de menor riesgo combinado: V3b. Sub-opcion de mayor riesgo combinado: V3c.*
+*Las 3 son presentables a la Junta. La Junta selecciona el registro tonal.*
+*Proxima accion requerida: Owner presenta el menu de 3 sub-opciones a la Junta con mockups de Atlas. Decision de Junta determina cual sub-opcion avanza a produccion de arte final. Confirmacion Owner sobre anglicismo "breaker" requerida si la Junta selecciona V3a.*

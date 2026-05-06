@@ -933,3 +933,389 @@ El Owner instruyó que los anglicismos son aceptados temporalmente pero SIEMPRE 
 
 *Refresh emitido por Vael — 2026-05-06. Domain-specialist. Genteca.*
 *Variante B-CON-NTC (v2.2): propuesta, no aprobada. Gate de Bruna requerido en todas las opciones. Op. 5 tiene flag de Claim H prioritario. v2.1 vigente hasta decisión de Canudas. Riesgo IP: pendiente Orlan §Refresh.*
+
+---
+
+# §Refresh 2026-05-06b — Variante V3: claim del "beneficio del beneficio"
+
+**Documento:** Vael_VA-5_naming-funcion-termica_v1 §Refresh 2026-05-06b
+**Fecha:** 2026-05-06
+**Trigger:** Jesús María (miembro de la Junta Directiva) plantea una tercera vía estratégica durante o después de la presentación V1+V2 lado a lado. Su argumento: independientemente de si se nombra el sensor NTC o se usa el concepto "Escudo Térmico", lo importante para el comprador final es el beneficio último de la cadena causal — que cuando el interruptor termomagnético (breaker) falla o está mal seleccionado, esta tecnología actúa como última capa de defensa ante corrientes excesivas que dañan equipos, instalaciones y hogares/comercios.
+**Status de V1 y V2:** Vigentes. V1 ("Autoprotección térmica activa*") aprobada por Bruna §8. V2 ("Escudo Térmico NTC*") cerrada por Kike (decisión 2026-05-06, gate Bruna §10). V3 es eje semántico nuevo — no compite con V1/V2 en el mismo registro; compite en el eje del beneficio último. Los tres escenarios coexisten hasta decisión del Owner.
+**Para:** Bruna (gate de la opción finalista), Owner (decisión sobre avance y versión de retiro), Aurelio (si V3 avanza, notificar para evaluar impacto en AU-1).
+
+---
+
+## §R6b-1 — Criterios específicos de V3
+
+Los criterios de V1 y del §Refresh 2026-05-06 trataban sobre la decisión de revelar o no el componente (NTC) y el nivel de abstracción técnica del naming de función. Esos criterios NO aplican a V3 porque V3 no gira en torno al componente ni a su función directa. V3 trata sobre el beneficio último en la cadena causal: qué pasa cuando el sistema actúa como respaldo del breaker ante fallas catastróficas.
+
+| # | Criterio V3 | Diferencia respecto a V1/V2 |
+|---|---|---|
+| 1 | Frase corta tipo claim para tiro (≤ 5 palabras preferido). No una explicación larga ni un descriptor técnico del componente. | CAMBIA: V1/V2 nombraban función o componente; V3 nombra el beneficio último de la cadena. |
+| 2 | Comunica el "beneficio del beneficio": la consecuencia terminal de tener el sensor NTC cuando el breaker no actúa a tiempo — protección de la instalación y del entorno ante corrientes excesivas o destructivas. | CAMBIA: el eje semántico se desplaza de "qué hace el sensor" a "qué protege al final de la cadena". |
+| 3 | Activa emocionalidad (loss aversion) sin cruzar el Claim H rechazado por Bruna. Frontera crítica: "respaldo eléctrico ante corrientes destructivas" es defendible (describe el comportamiento del sistema respecto al cableado e instalación); "protege tu hogar / tus equipos / tu electrodoméstico" cruza el Claim H (promesa de protección de la carga que Vera §1.4 y Bruna §2 rechazan sin excepción). | NO CAMBIA en el fondo: el Claim H es inamovible en todos los escenarios. Pero en V3 la presión sobre esa frontera es mayor porque el eje emocional de Jesús María apunta justo al borde del Claim H. La vigilancia debe ser explícita. |
+| 4 | Audiencia doble: consumidor final (loss aversion — miedo a incendio, daño de equipos, pérdida de bienes) + técnico instalador (protección de su reputación profesional ante fallas graves que ocurran en instalaciones que él certificó o recomendó). Lenguaje accesible para ambos en el tiro. | CAMBIA: V1/V2 hablaban principalmente al técnico en el tiro; V3 tiene un punto de entrada emocional más claro para el consumidor final. |
+| 5 | Compatible con el cuerpo invariable del retiro §8.3 (Bruna — texto sin temperaturas numéricas, descripción funcional establecida). El cuerpo no cambia; solo el header cambia según el badge. | IGUAL que V1/V2. El cuerpo §8.3 es el guardrail operativo inamovible. |
+| 6 | Diferencia clara de V1 ("Autoprotección térmica activa*") y V2 ("Escudo Térmico NTC*"). V3 no debe ser una variación de esas fórmulas — si lo es, es redundante. El eje semántico de V3 es el respaldo ante fallas del breaker / corrientes destructivas; ese eje no está presente explícitamente en V1 ni V2. | CAMBIA: anti-pleonasmo respecto a V1/V2 es condición de validez de V3. Si un claim de V3 puede confundirse con V1 o V2, no es V3. |
+| 7 | Compatible con caveat de retiro que puede mencionar NTC, mencionar Escudo Térmico, o ser neutro funcional — el Owner está abierto. Las tres versiones del header del retiro se evalúan en §R6b-6. | CAMBIA: en V1/V2 el header del retiro estaba más determinado por el badge del tiro; en V3 el Owner tiene más libertad de configuración. |
+| 8 | Anti-pleonasmo de información: el claim debe agregar información sobre el beneficio que V1 y V2 no comunican explícitamente. V1 dice "qué hace el protector consigo mismo". V2 dice "con qué componente lo hace y cómo se llama eso". V3 debe decir "qué pasa al final de la cadena cuando el breaker falla". Esa información es adicional y diferente. | NUEVO criterio para V3 — no aplica en V1/V2. |
+
+---
+
+## §R6b-2 — Evaluación de 6 opciones de V3
+
+---
+
+### Opción A — "Capa adicional de protección eléctrica*" ⚠
+
+**Texto exacto para tiro:** Capa adicional de protección eléctrica*
+
+**Evaluación por criterios V3:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Frase corta (≤ 5 palabras) | Sí | 5 palabras. |
+| 2 — Beneficio del beneficio | Parcial | "Capa adicional" comunica el respaldo al breaker (Claim G aprobado off-empaque por Bruna §2). "Protección eléctrica" es genérico — no especifica ante qué tipo de falla. El beneficio terminal no está completo sin el contexto de "ante fallas del breaker." |
+| 3 — Activación emocional sin Claim H | Bajo riesgo Claim H | "Protección eléctrica" sin objeto explícito no promete protección del equipo conectado. El riesgo de Claim H es bajo. Activación emocional, sin embargo, también es baja — la frase es descriptiva, no evocativa. |
+| 4 — Audiencia doble | Media | El técnico entiende la lógica de "capa adicional" (vocabulario de protecciones eléctricas). El consumidor residencial puede entenderlo pero no activarse emocionalmente. |
+| 5 — Compatible §8.3 | Sí | Cuerpo invariable aplica. |
+| 6 — Diferencia de V1/V2 | Parcial | V1 ya dice "capa adicional de protección térmica" en el cuerpo del retiro. Si ese lenguaje migra al tiro, es repetición del retiro, no diferenciación de V1. Riesgo de pleonasmo semántico alto. |
+| 7 — Compatible con versiones de retiro | Sí | Cualquiera de las 3 versiones de retiro funciona. |
+| 8 — Anti-pleonasmo respecto a V1/V2 | No cumple | El cuerpo del retiro §8.3 ya usa exactamente la expresión "capa adicional de protección térmica". Migrar esa frase al tiro no agrega información nueva — la hace redundante con su propio asterisco. **Fallo crítico de este criterio.** |
+
+**Pros:**
+- Riesgo Claim H bajo. Frase técnicamente honesta.
+- Compatible con el Claim G (aprobado off-empaque por Bruna §2) — el argumento del respaldo al breaker ya tiene antecedente en el sistema.
+
+**Contras:**
+- Anti-pleonasmo: falla. La frase ya existe en el cuerpo del retiro §8.3. Subirla al tiro es circularidad, no diferenciación.
+- Activación emocional: baja. No evoca pérdida, no nombra la amenaza. El loss aversion que Jesús María señala como motor de V3 no se activa.
+- "Eléctrica" vs. "Térmica" de V1: la diferencia es mínima para el consumidor sin contexto técnico.
+
+**Riesgo Claim H:** Bajo. La frase no promete protección del equipo conectado.
+**Activación emocional:** Baja. Descriptiva, no evocativa.
+**Compatibilidad con retiro (A/B/C):** Sí, con cualquier versión.
+**Defensa anti-copia china:** Ninguna. Frase genérica no registrable.
+
+---
+
+### Opción B — "Última línea de defensa eléctrica*" ⚠
+
+**Texto exacto para tiro:** Última línea de defensa eléctrica*
+
+**Contexto:** La expresión "última línea de defensa" apareció en el research de Perplexity ("Sistema de Respaldo Térmico: La última línea de defensa para tu aire acondicionado"). Perplexity la aplicó al equipo conectado — lo que activa el Claim H. Vael la redirige a la instalación eléctrica, no al equipo.
+
+**Evaluación por criterios V3:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Frase corta (≤ 5 palabras) | Sí | 5 palabras. |
+| 2 — Beneficio del beneficio | Sí | "Última línea" comunica exactamente el argumento de Jesús María: cuando todo lo demás falla (breaker mal calibrado, breaker lento), esta tecnología es lo que queda. Es el beneficio terminal de la cadena. |
+| 3 — Activación emocional sin Claim H | Zona de vigilancia | "Defensa eléctrica" sin objeto explícito podría interpretarse como defensa del equipo conectado (Claim H). La palabra "eléctrica" ancla la defensa al sistema eléctrico de la instalación — no al motor ni al compresor. Riesgo Claim H: medio. Requiere gate de Bruna para confirmar que "defensa eléctrica" sin objeto explícito no activa la interpretación de protección del equipo. |
+| 4 — Audiencia doble | Alta | "Última línea de defensa" es una metáfora universal — funciona para el consumidor (pérdida, miedo a fallas graves) y para el técnico (vocabulario de capas de protección: el NTC como backstop del sistema). |
+| 5 — Compatible §8.3 | Sí | Cuerpo invariable aplica. |
+| 6 — Diferencia de V1/V2 | Sí | V1 habla de autoprotección (el protector se protege a sí mismo). V2 habla de escudo térmico. "Última línea de defensa" habla de posición en la cadena de protecciones — eje semántico nuevo. |
+| 7 — Compatible con versiones de retiro | Sí | Cualquiera de las 3 versiones de retiro funciona. La Versión A (neutro funcional) o la Versión B (con NTC) son más coherentes con la metáfora de defensa. |
+| 8 — Anti-pleonasmo respecto a V1/V2 | Sí | La posición jerárquica en la cadena de protecciones ("última línea") no aparece en el tiro de V1 ni V2. Es información nueva: no solo "hay protección adicional" sino "es el último recurso". |
+
+**Pros:**
+- Activación emocional: alta. "Última línea" activa loss aversion — la idea de que sin esto no hay nada más. El comprador que tuvo una falla eléctrica grave entiende visceralmente.
+- Diferenciación clara de V1/V2: eje semántico distinto.
+- Para el técnico instalador: "última línea de defensa" es el argumento de reputación — recomienda Exceline porque sabe que si el breaker falla, todavía hay algo.
+- Anti-pleonasmo: cumple.
+
+**Contras:**
+- Zona de vigilancia Claim H: sin objeto explícito de "defensa", un lector puede inferir que defiende el equipo conectado. El asterisco mitiga pero no elimina esa interpretación en el tiro solo.
+- Perplexity ya usó "última línea de defensa para tu aire acondicionado" — esa formulación cruza el Claim H. Vael la podó; pero si Solenne u Oz extienden el badge con la frase completa de Perplexity sin gate, el claim quedaría en zona roja.
+- "Última" es superlativo de posición: requiere que sea factualmente verdad que no hay capa de protección después de ésta. El cuerpo del retiro §8.3 confirma que sí es última capa ("no reemplaza al interruptor termomagnético de la instalación" — el NTC actúa después del breaker o cuando éste no es suficiente). El superlativo es defendible.
+
+**Riesgo Claim H:** Medio. Requiere gate de Bruna específico sobre si "defensa eléctrica" sin objeto explícito cruza la línea.
+**Activación emocional:** Alta.
+**Compatibilidad con retiro (A/B/C):** Sí, con cualquier versión. Retiro A o B más coherentes.
+**Defensa anti-copia china:** Baja-media. "Última línea de defensa eléctrica" es una metáfora funcional sin componente de naming propietario.
+
+---
+
+### Opción C — "Respaldo ante fallas eléctricas graves*" ⚠
+
+**Texto exacto para tiro:** Respaldo ante fallas eléctricas graves*
+
+**Evaluación por criterios V3:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Frase corta (≤ 5 palabras) | Sí | 5 palabras. |
+| 2 — Beneficio del beneficio | Sí | "Respaldo" comunica el argumento del Claim G (aprobado off-empaque: "actúa como capa adicional que respalda al interruptor termomagnético"). "Fallas eléctricas graves" nombra la amenaza explícitamente. La cadena causal está completa: hay algo que falla → este sistema responde. |
+| 3 — Activación emocional sin Claim H | Bajo riesgo Claim H | "Respaldo ante fallas" no promete protección del equipo — dice que el sistema actúa cuando hay fallas en la instalación. "Graves" es el adjetivo que activa la dimensión de amenaza sin caer en "protege tu equipo". |
+| 4 — Audiencia doble | Media-alta | El técnico entiende "respaldo" en contexto de protecciones escalonadas. El consumidor entiende "fallas eléctricas graves" como amenaza real. La activación emocional es moderada: "respaldo" es más tranquilizador que urgente. |
+| 5 — Compatible §8.3 | Sí | Cuerpo invariable aplica. |
+| 6 — Diferencia de V1/V2 | Sí | Ni V1 ni V2 usan "respaldo" ni "fallas graves" en el tiro. El eje del fallo del breaker es nuevo. |
+| 7 — Compatible con versiones de retiro | Sí | Cualquiera de las 3 versiones funciona. La Versión A (neutro funcional) es la más coherente con "respaldo". |
+| 8 — Anti-pleonasmo respecto a V1/V2 | Sí | "Respaldo" implica que hay algo más que puede fallar antes — el breaker. Esa relación de subordinación no está en el tiro de V1/V2. |
+
+**Pros:**
+- Riesgo Claim H bajo: "fallas eléctricas" ancla la protección al sistema eléctrico, no al equipo. Es la opción con menor tensión respecto al límite de Bruna.
+- Coherencia con Claim G: el argumento del respaldo al breaker ya tiene un antecedente aprobado off-empaque por Bruna (§2). V3 con esta formulación es la migración más directa de ese claim del off-empaque al tiro.
+- Para el técnico: "respaldo" es vocabulario de su profesión. Entiende la lógica de protecciones escalonadas sin necesidad de explicación.
+
+**Contras:**
+- Activación emocional: moderada. "Respaldo ante fallas" es tranquilizador pero no urgente. No activa el loss aversion con la misma intensidad que "última línea" o "corrientes destructivas".
+- "Graves" como adjetivo es relativo: ¿quién define qué es una falla eléctrica "grave"? En el tiro sin contexto, el consumidor puede leer "fallas graves" como cualquier falla mayor (incluyendo sobrevoltajes o cortes de luz) que este protector ya maneja por otros medios.
+- Menor diferenciación de marca: "respaldo ante fallas" es una descripción funcional que cualquier fabricante con cualquier mecanismo de protección escalonada podría reclamar.
+
+**Riesgo Claim H:** Bajo. La frase no promete protección del equipo conectado.
+**Activación emocional:** Media.
+**Compatibilidad con retiro (A/B/C):** Sí, con cualquier versión. Retiro A más natural.
+**Defensa anti-copia china:** Ninguna. Frase genérica no diferenciadora.
+
+---
+
+### Opción D — "Escudo eléctrico de respaldo*" ⚠
+
+**Texto exacto para tiro:** Escudo eléctrico de respaldo*
+
+**Contexto:** Variante que retiene la metáfora "Escudo" de V2 pero la desplaza del eje térmico (Escudo Térmico) al eje eléctrico, y le agrega "de respaldo" para comunicar la posición en la cadena de protecciones. Esto diferencia de V2 en el eje semántico sin abandonar la metáfora visual.
+
+**Evaluación por criterios V3:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Frase corta (≤ 5 palabras) | Sí | 4 palabras. |
+| 2 — Beneficio del beneficio | Parcial | "De respaldo" comunica la posición en la cadena. "Eléctrico" ancla la protección al sistema eléctrico. Pero el beneficio terminal (qué pasa cuando el breaker falla) sigue siendo implícito — el comprador debe inferir la cadena causal. |
+| 3 — Activación emocional sin Claim H | Bajo riesgo Claim H | "Escudo eléctrico" sin objeto explícito no promete protección del equipo. Riesgo Claim H: bajo. Activación emocional: media — "escudo" genera la imagen de barrera pero "eléctrico" es más abstracto que "corrientes destructivas". |
+| 4 — Audiencia doble | Media | "Escudo" funciona para ambas audiencias. "De respaldo" añade la capa técnica para el instalador. Pero la combinación "eléctrico de respaldo" puede percibirse como tecnificada para el consumidor residencial. |
+| 5 — Compatible §8.3 | Sí | Cuerpo invariable aplica. |
+| 6 — Diferencia de V1/V2 | Parcial | V2 usa "Escudo Térmico". Esta opción usa "Escudo eléctrico". La diferencia es el eje (térmico → eléctrico) y el añadido "de respaldo". Para el consumidor sin contexto técnico, "Escudo Térmico NTC*" y "Escudo eléctrico de respaldo*" pueden percibirse como variaciones del mismo concepto, no como propuestas distintas. Diferenciación de V2 es parcial. |
+| 7 — Compatible con versiones de retiro | Sí | Cualquiera de las 3 versiones funciona. |
+| 8 — Anti-pleonasmo respecto a V1/V2 | Parcial | "De respaldo" es información nueva. "Escudo eléctrico" se superpone semánticamente con "Escudo Térmico" de V2. No es pleonasmo exacto, pero es un eje semántico adyacente, no nuevo. |
+
+**Pros:**
+- Continuidad visual con la metáfora "Escudo" que V2 ya estableció — si V3 se presenta en contexto donde V2 es conocida, la continuidad puede ser una ventaja de familiaridad.
+- "De respaldo" agrega la dimensión de posición en la cadena sin necesitar una frase larga.
+- Riesgo Claim H: bajo.
+
+**Contras:**
+- Diferenciación de V2: parcial. Si ambas versiones coexisten en el mismo empaque en diferentes momentos, la distinción entre "Escudo Térmico NTC*" y "Escudo eléctrico de respaldo*" puede confundir en lugar de clarificar.
+- V3 existe para un eje semántico diferente al de V2 — usar la misma metáfora de "Escudo" debilita esa diferencia de eje.
+- Activación emocional: media. Menos urgente que "última línea" o "corrientes destructivas".
+
+**Riesgo Claim H:** Bajo.
+**Activación emocional:** Media.
+**Compatibilidad con retiro (A/B/C):** Sí, con cualquier versión.
+**Defensa anti-copia china:** Ninguna adicional. Si "Escudo Térmico" ya fue evaluado como término descriptivo de dos palabras (Orlan Refresh 2026-05-06 — riesgo IP por uso en dos palabras separadas), "Escudo eléctrico" tiene el mismo problema.
+
+---
+
+### Opción E — "Protección ante corrientes destructivas*" ⚠
+
+**Texto exacto para tiro:** Protección ante corrientes destructivas*
+
+**Contexto:** Jesús María usó literalmente el término "corrientes excesivas, destructivas" en su argumento. Esta opción lo toma en forma directa.
+
+**Evaluación por criterios V3:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Frase corta (≤ 5 palabras) | Sí | 4 palabras. |
+| 2 — Beneficio del beneficio | Sí | "Corrientes destructivas" nombra la amenaza terminal — no el sobrecalentamiento del relé, sino la corriente que destruye cableado, bornes, equipos. El beneficio de estar protegido ante eso es exactamente el argumento de Jesús María. |
+| 3 — Activación emocional sin Claim H | Zona de vigilancia | "Protección ante corrientes destructivas" sin calificador de objeto puede interpretarse como protección del equipo conectado ante corrientes que lo destruirían (Claim H). La palabra "destructivas" apunta al resultado final — destrucción — que el lector puede asociar tanto a la instalación como al equipo. Riesgo Claim H: medio-alto. Requiere gate específico de Bruna. |
+| 4 — Audiencia doble | Alta | "Corrientes destructivas" es lenguaje que activa tanto al consumidor (imagen de daño, pérdida, incendio) como al técnico (conoce qué hace una corriente de cortocircuito a los conductores). Es la opción con mayor resonancia simultánea para ambas audiencias. |
+| 5 — Compatible §8.3 | Sí | Cuerpo invariable aplica. Pero el cuerpo §8.3 habla de "sobrecorrientes" y "conexiones deficientes" — no de "corrientes destructivas". El header del retiro si usara "corrientes destructivas" elevaría el tono respecto al cuerpo. |
+| 6 — Diferencia de V1/V2 | Sí | Ni V1 ni V2 usan "destructivas" ni hablan de corrientes en el tiro. Eje semántico completamente nuevo. |
+| 7 — Compatible con versiones de retiro | Con ajuste | "Corrientes destructivas" en el tiro requiere que el retiro explique qué son esas corrientes. La Versión B (con NTC) o la Versión A (neutro funcional) son más capaces de sostener esa explicación que la Versión C (con Escudo Térmico). |
+| 8 — Anti-pleonasmo respecto a V1/V2 | Sí | La amenaza nombrada ("corrientes destructivas") no aparece en V1/V2. Información nueva y diferenciante. |
+
+**Pros:**
+- Activación emocional: alta. "Destructivas" es el adjetivo más poderoso del set — activa el miedo a la pérdida sin rodeos.
+- Diferenciación: máxima respecto a V1/V2. Eje completamente diferente.
+- Para el técnico instalador: "corrientes destructivas" es técnicamente preciso — describe el fenómeno que ocurre en un cortocircuito o en una sobrecarga severa sin breaker calibrado.
+- Argumento de reputación del instalador: si el breaker falla y la corriente destructiva pasa, el técnico que recomendó Exceline queda protegido porque el protector tenía esa capa adicional.
+
+**Contras:**
+- Riesgo Claim H: medio-alto. "Protección ante corrientes destructivas" sin objeto explícito puede ser leído como promesa de protección del equipo conectado ante ese tipo de corriente. El asterisco mitiga pero no elimina la interpretación en el tiro solo. Gate de Bruna obligatorio antes de cualquier avance.
+- "Destructivas" puede generar alarma desproporcionada en el punto de venta. BR-5 (superlativos en mercados opacos): el adjetivo "destructivas" es factualmente soportado (las corrientes de cortocircuito destruyen conductores e instalaciones), pero el tono puede percibirse como sensacionalismo que Bruna querrá evaluar.
+- El cuerpo del retiro §8.3 usa "sobrecorrientes" — la discrepancia de vocabulario entre tiro ("destructivas") y cuerpo del retiro ("excesivas" / "sobrecorrientes") puede crear disonancia de lectura.
+
+**Riesgo Claim H:** Medio-alto. Flag para gate Bruna obligatorio y prioritario.
+**Activación emocional:** Alta.
+**Compatibilidad con retiro (A/B/C):** Sí, pero requiere coherencia de vocabulario. Retiro B más robusto para sostener el claim.
+**Defensa anti-copia china:** Ninguna. Frase funcional genérica.
+
+---
+
+### Opción F — "Respaldo térmico ante el breaker*" (aportación editorial Vael) ✅ propuesta
+
+**Texto exacto para tiro:** Respaldo térmico ante el breaker*
+
+**Contexto:** Aportación creativa de Vael. La hipótesis: en lugar de evitar mencionar el breaker (como hacen V1 y V2), nombrar explícitamente la relación de respaldo. El argumento de Jesús María es que el beneficio del beneficio es precisamente que esta tecnología actúa CUANDO EL BREAKER NO ES SUFICIENTE. Nombrarlo en el tiro hace explícita esa posición en la cadena — algo que ninguna de las otras opciones hace directamente. El técnico instalador reconoce el breaker (su herramienta cotidiana); el consumidor entiende que el breaker puede fallar. Ambos entienden "respaldo".
+
+**Evaluación por criterios V3:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Frase corta (≤ 5 palabras) | Sí | 5 palabras. |
+| 2 — Beneficio del beneficio | Sí, con claridad máxima | Esta es la única opción del set que nombra explícitamente la relación: el respaldo es "ante el breaker" — lo que significa que actúa cuando el breaker no alcanza. La cadena causal del argumento de Jesús María está completa en 5 palabras. |
+| 3 — Activación emocional sin Claim H | Bajo riesgo Claim H | "Respaldo térmico ante el breaker" no promete protección del equipo. Dice que el sistema es un respaldo de tipo térmico respecto al breaker termomagnético. Sin objeto de protección explícito del equipo conectado, el Claim H no se activa. Riesgo Claim H: bajo. |
+| 4 — Audiencia doble | Alta para técnico, alta para consumidor informado | El técnico instalador reconoce "el breaker" de inmediato — es el elemento central de su trabajo diario. El consumidor residencial con alguna experiencia de fallas eléctricas entiende que el breaker puede no ser suficiente. Para el consumidor sin ningún contexto eléctrico, "breaker" puede ser un término opaco — pero el retiro lo clarifica. |
+| 5 — Compatible §8.3 | Sí | El cuerpo del retiro §8.3 ya menciona "no reemplaza al interruptor termomagnético de la instalación" — esa frase es coherente con el claim del tiro. El header del retiro cambiaría a "Respaldo térmico ante el breaker:". |
+| 6 — Diferencia de V1/V2 | Sí, máxima | V1 habla de autoprotección del protector. V2 habla del escudo térmico. Ninguna nombra el breaker. Esta opción hace al breaker el punto de referencia explícito — eje semántico completamente nuevo. |
+| 7 — Compatible con versiones de retiro | Sí | La Versión A (neutro funcional) es la más coherente: "sistema de protección térmica del protector y del cableado, que actúa como capa de respaldo cuando el interruptor termomagnético no es suficiente." La Versión B (con NTC) también funciona. |
+| 8 — Anti-pleonasmo respecto a V1/V2 | Sí, máximo | Nombrar el breaker como referencia explícita en el tiro es información que V1/V2 no comunican. El comprador aprende no solo que hay protección adicional (V1), no solo cómo se llama (V2), sino en qué posición está en la cadena de protecciones (V3-F). |
+
+**Pros:**
+- La única opción del set que nombra explícitamente la relación con el interruptor termomagnético en el tiro. El argumento de Jesús María está codificado en el claim con máxima precisión.
+- Riesgo Claim H: bajo. "Respaldo térmico ante el breaker" no promete protección del equipo — promete que el sistema actúa como una capa detrás del breaker.
+- Para el técnico instalador: "respaldo ante el breaker" es el argumento de reputación exacto. Cuando el instalador calibra mal el breaker o el breaker tiene un defecto, este protector tiene una capa adicional. El técnico que recomienda Exceline protege su credibilidad.
+- Coherencia con Claim G (aprobado off-empaque por Bruna §2): "El Sensor NTC actúa como una capa adicional de protección térmica que respalda al interruptor termomagnético de la instalación." El claim del tiro de Opción F es la versión condensada de ese texto ya aprobado para off-empaque.
+- Anti-pleonasmo: máximo.
+- Compatible con el cuerpo del retiro §8.3 sin ajuste: "no reemplaza al interruptor termomagnético" ya establece esa relación.
+
+**Contras:**
+- "Breaker" es un anglicismo. La instrucción del Owner es que los anglicismos son aceptados temporalmente con alternativa española o combinación bilingüe. Versión sin anglicismo: "Respaldo térmico ante el termomagnético*" — 5 palabras, más técnica para el consumidor residencial. Alternativa bilingüe: "Respaldo térmico ante el breaker / termomagnético*" — 7 palabras, demasiado largo para el tiro. Vael recomienda "Respaldo térmico ante el breaker*" como versión principal (el anglicismo "breaker" está ampliamente castellanizado en Venezuela) con el caveat del Owner sobre angliicismos.
+- "Térmico" puede confundirse semánticamente con V1 (que también usó "térmica") para un comprador que ve ambas en distintos momentos. La distinción clave es "respaldo ante el breaker" vs. "autoprotección" — pero el adjetivo "térmico" es compartido.
+- Para el consumidor sin contexto eléctrico, "breaker" puede ser opaco — aunque es uno de los términos técnicos más difundidos en el vocabulario cotidiano venezolano.
+
+**Riesgo Claim H:** Bajo. La frase no promete protección del equipo conectado.
+**Activación emocional:** Alta para técnico. Media-alta para consumidor (requiere que entienda que el breaker puede fallar — lo que la mayoría experimenta en Venezuela con redes eléctricas inestables).
+**Compatibilidad con retiro (A/B/C):** Sí. Retiro A (neutro funcional) es el más coherente y el recomendado para esta opción.
+**Defensa anti-copia china:** Media. "Respaldo térmico ante el breaker" no es registrable como nombre de marca, pero la especificidad del argumento (la relación con el breaker) es más difícil de replicar sin el componente real que una frase funcional genérica.
+
+---
+
+## §R6b-3 — Tabla resumen comparativa
+
+| # | Texto tiro | Palabras | Lenguaje | Riesgo Claim H | Activación emocional | Diferenciación V1/V2 | Apropiación de marca | Riesgo gate Bruna |
+|---|---|---|---|---|---|---|---|---|
+| A | Capa adicional de protección eléctrica* | 5 | Funcional descriptivo | Bajo | Baja | Parcial (pleonasmo retiro) | Ninguna | Bajo, pero falla anti-pleonasmo |
+| B | Última línea de defensa eléctrica* | 5 | Metáfora + posición | Medio | Alta | Sí | Ninguna | Medio (gate objeto defensa) |
+| C | Respaldo ante fallas eléctricas graves* | 5 | Funcional + amenaza | Bajo | Media | Sí | Ninguna | Bajo |
+| D | Escudo eléctrico de respaldo* | 4 | Metáfora + posición | Bajo | Media | Parcial (adyacente a V2) | Ninguna | Bajo, pero diferenciación parcial de V2 |
+| E | Protección ante corrientes destructivas* | 4 | Funcional + amenaza intensa | Medio-alto | Alta | Sí, máxima | Ninguna | Medio-alto (flag Claim H) |
+| F | Respaldo térmico ante el breaker* | 5 | Relacional + técnico | Bajo | Alta (técnico) / Media-alta (consumidor) | Sí, máxima | Ninguna | Bajo |
+
+---
+
+## §R6b-4 — Ranking por impacto estimado
+
+Ejes de ponderación para V3 (diferente de los ejes del §Refresh 2026-05-06, porque V3 se sostiene en un eje distinto):
+
+| Eje | Peso asignado |
+|---|---|
+| Activación emocional (loss aversion) | 30% |
+| Diferenciación clara de V1/V2 | 25% |
+| Riesgo gate Bruna controlado | 25% |
+| Comprensión audiencia mixta (técnico + consumidor) | 20% |
+
+Puntuaciones de 1 a 6 por eje. Riesgo Bruna: puntuación inversa (1 = más arriesgado, 6 = más limpio).
+
+| # | Opción | Activación emocional (30%) | Diferenciación V1/V2 (25%) | Riesgo Bruna (25%) | Comprensión audiencia (20%) | Score ponderado |
+|---|---|---|---|---|---|---|
+| F | Respaldo térmico ante el breaker* | 5 | 6 | 6 | 5 | **5,50** |
+| B | Última línea de defensa eléctrica* | 6 | 5 | 3 | 5 | **4,85** |
+| E | Protección ante corrientes destructivas* | 6 | 6 | 2 | 5 | **4,85** |
+| C | Respaldo ante fallas eléctricas graves* | 4 | 5 | 6 | 4 | **4,75** |
+| D | Escudo eléctrico de respaldo* | 3 | 3 | 6 | 4 | **3,85** |
+| A | Capa adicional de protección eléctrica* | 2 | 2 | 6 | 3 | **3,15** |
+
+**Ranking final por impacto estimado:**
+
+1. **Op. F — "Respaldo térmico ante el breaker*"** — 5,50
+2. **Op. B — "Última línea de defensa eléctrica*"** — 4,85 (empate técnico con E)
+3. **Op. E — "Protección ante corrientes destructivas*"** — 4,85 (empate técnico con B)
+4. **Op. C — "Respaldo ante fallas eléctricas graves*"** — 4,75
+5. **Op. D — "Escudo eléctrico de respaldo*"** — 3,85
+6. **Op. A — "Capa adicional de protección eléctrica*"** — 3,15
+
+---
+
+## §R6b-5 — Recomendación finalista
+
+### Finalista única: Opción F — "Respaldo térmico ante el breaker*"
+
+**Argumento decisivo:** La Opción F es la única del set que convierte el argumento literal de Jesús María en texto de tiro sin necesitar un salto interpretativo. Jesús María dijo: cuando el ITM falla o está mal seleccionado, esta tecnología defiende lo valioso. "Respaldo térmico ante el breaker*" dice exactamente eso en 5 palabras, sin cruzar el Claim H, sin pleonasmo respecto al retiro, y con diferenciación máxima de V1/V2.
+
+El riesgo Bruna es el más bajo del set junto con las opciones A y C, pero a diferencia de éstas, la activación emocional es alta (especialmente para el técnico instalador) y la diferenciación de V1/V2 es máxima. No sacrifica ningún eje para proteger otro.
+
+El argumento de reputación del técnico instalador es especialmente fuerte: el profesional que recomienda Exceline puede decir a su cliente "este protector tiene un respaldo térmico ante el breaker" — en caso de que el breaker falle o esté mal calibrado, el protector tiene esa capa adicional. Eso protege la reputación del instalador ante fallas que de otro modo él no podría controlar.
+
+La coherencia con el Claim G (ya aprobado off-empaque por Bruna §2) es el antecedente más sólido de este set: el texto literal del Claim G off-empaque ("capa adicional de protección térmica que respalda al interruptor termomagnético") es la fuente directa del claim de V3-F. Migrar ese argumento al tiro es el movimiento más respaldado por los gates existentes.
+
+**Caveat de presentación:** "breaker" es anglicismo. Si el Owner activa la política de anglicismos, la versión de respaldo es "Respaldo térmico ante el termomagnético*" — más técnica, igualmente honesta, pero con menor activación para el consumidor residencial promedio.
+
+### Finalista de respaldo: Opción B — "Última línea de defensa eléctrica*"
+
+**Cuándo preferir Op. B sobre Op. F:** si Bruna confirma que "defensa eléctrica" sin objeto explícito no activa el Claim H, y si el Owner prioriza la activación emocional del consumidor final sobre la legibilidad técnica del instalador. Op. B tiene la activación emocional más alta del set para el consumidor residencial — "última línea" es la imagen más poderosa de los seis candidatos. El trade-off es el riesgo Bruna medio, que Op. F no tiene.
+
+**Por qué no Op. E:** La Opción E ("Protección ante corrientes destructivas*") tiene el mismo score que Op. B pero riesgo Claim H más alto. Entre Op. E y Op. B con activación emocional equivalente, Op. B tiene el riesgo menor. Op. E queda fuera del top 2 por ese diferencial de riesgo.
+
+---
+
+## §R6b-6 — Compatibilidad con caveat de retiro
+
+El cuerpo del retiro §8.3 (Bruna — texto corregido sin temperaturas numéricas, aprobado en §7.1 y confirmado en §8.4) es invariable. Solo el header cambia según el badge del tiro.
+
+Las tres versiones del header del retiro evaluadas para V3:
+
+**Versión A — retiro neutro funcional:**
+> **[Badge tiro]:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Versión B — retiro con NTC:**
+> **[Badge tiro] — Sensor NTC:** sensor de temperatura ubicado junto al relé de potencia. [Cuerpo §8.3 invariable]
+
+**Versión C — retiro con Escudo Térmico:**
+> **[Badge tiro] — Escudo Térmico (sensor de temperatura):** sensor de temperatura ubicado junto al relé de potencia. [Cuerpo §8.3 invariable]
+
+### Evaluación para la finalista Op. F ("Respaldo térmico ante el breaker*")
+
+| Versión | Coherencia con el tiro | Ventaja | Desventaja | Recomendación |
+|---|---|---|---|---|
+| A — neutro funcional | Alta | La frase del cuerpo "no reemplaza al interruptor termomagnético" refuerza directamente el claim del tiro ("respaldo ante el breaker"). Coherencia semántica perfecta. | No nombra NTC ni Escudo Térmico — la identificación del componente queda en el cuerpo del texto. | **Recomendada para Op. F** |
+| B — con NTC | Media | Añade la señal técnica del componente para el instalador. | El header con NTC puede desviar la atención del eje del claim (respaldo ante el breaker) hacia el componente — disonancia con el eje semántico de V3. | Segunda opción si el Owner quiere nombrar NTC. |
+| C — con Escudo Térmico | Baja | Ninguna ventaja específica para Op. F. | "Escudo Térmico" como subtítulo del retiro en una pieza que usa "Respaldo térmico ante el breaker" en el tiro crea confusión de naming: ¿es el mismo concepto con dos nombres o son dos cosas distintas? | No recomendada para Op. F. |
+
+**Recomendación de versión de retiro para V3 finalista (Op. F):** Versión A. El retiro neutro funcional es el más coherente con el eje semántico de V3 — el argumento del respaldo al breaker. La frase "no reemplaza al interruptor termomagnético de la instalación" que ya existe en el cuerpo §8.3 es el refuerzo semántico exacto que Op. F necesita. Ninguna de las versiones con NTC o Escudo Térmico añade valor al eje de V3; solo añaden complejidad de naming.
+
+Si el Owner quiere vincular V3 al componente NTC para coherencia con V2, la Versión B es la segunda opción — pero el header debe estar redactado para que NTC sea el instrumento, no el concepto principal: "Respaldo térmico ante el breaker (sensor NTC):" — con NTC entre paréntesis como identificador técnico, no como nombre principal.
+
+---
+
+## Supuestos y límites — Refresh 2026-05-06b
+
+**Insumos consumidos en este refresh:**
+- `Vael_VA-5_naming-funcion-termica_v1.md` (completo, incluyendo §Refresh 2026-05-05 y §Refresh 2026-05-06): criterios V1/V2, finalistas previas, gates anteriores, textos de retiro vigentes.
+- `_governance/Bruna_gate_empaque_v1.md`: §2 Claim H rechazado (texto literal y rationale), §2 Claim G (aprobado off-empaque — antecedente directo de Op. F), §7.1 bloque NTC corregido, §8.3 cuerpo invariable del retiro, §8.4 decisión final de gate V1, §10 gate de cierre V2 ("Escudo Térmico NTC*" aprobado con caveat por Kike 2026-05-06).
+- `00-brief/market-research/Consulta a perplexity sobre el NTC.txt`: slogans tipo "última línea de defensa", "escudo de seguridad de respaldo" — usados como inspiración; los textos de Perplexity no son claims aprobados y varios cruzan el Claim H.
+- Instrucción literal de Jesús María (miembro de Junta Directiva) comunicada por el Owner: argumento del "beneficio del beneficio" como tercera vía estratégica.
+
+**Insumos NO consultados en este refresh:**
+- Vera: sin nuevo insumo técnico. El mecanismo del NTC no cambia. La condición suspensiva Pendiente P-5 (monitoreo continuo vs. fusible de corte único) sigue pendiente e independiente de V3 — V3 no usa el adjetivo "activa" de V1 y no depende de esa resolución.
+- Orlan: sin consulta adicional. Las opciones de V3 son funcionales genéricas sin naming de marca propietario (excepto eventualmente Op. F si el Owner decide bautizarla). Si el Owner decide avanzar V3 con naming de marca, Orlan debe ser consultado.
+- DECISIONS.md: no consultado directamente. Las decisiones relevantes están referenciadas via Bruna gate.
+
+**Validez temporal:** V3 es propuesta de Vael post-Junta 2026-05-06. Status: propuesta. No aprobada. Gate de Bruna requerido antes de cualquier producción. V1 ("Autoprotección térmica activa*") y V2 ("Escudo Térmico NTC*") siguen vigentes y aprobadas con sus respectivos caveats. V3 no las reemplaza — son ejes semánticos distintos para contextos de comunicación distintos (V3 puede ser el argumento del argumentario de ventas off-empaque, o una tercera badge en piezas donde el espacio lo permita).
+
+**Claims con gate pendiente de Bruna:**
+- Op. F ("Respaldo térmico ante el breaker*"): gate nuevo sobre migración del Claim G (aprobado off-empaque) al tiro del empaque. Vael anticipa riesgo bajo, pero la decisión de si un claim aprobado off-empaque puede migrar al tiro es de Bruna. Prioridad: alta.
+- Op. B ("Última línea de defensa eléctrica*"): gate sobre si "defensa eléctrica" sin objeto explícito activa el Claim H. Prioridad: media (si el Owner la selecciona como alternativa a Op. F).
+- Op. E ("Protección ante corrientes destructivas*"): gate sobre Claim H — "protección ante corrientes destructivas" sin objeto explícito. Flag Claim H prioritario. No avanza sin gate específico de Bruna.
+- Opciones A, C, D: riesgo Bruna bajo, pero requieren gate estándar si el Owner las selecciona para producción.
+
+**Todos los claims de este §Refresh son propuesta de Vael. Ninguno está aprobado.** La decisión de cuál avanza es del Owner. El gate de Bruna se da después de la selección del Owner.
+
+**Decisiones Owner pendientes:**
+1. ¿V3 avanza como tercera variante de empaque, como argumento off-empaque (argumentario de ventas / QR), o se archiva?
+2. Si avanza: ¿cuál de las 6 opciones selecciona para gate de Bruna?
+3. Si avanza Op. F: ¿confirma "breaker" como anglicismo aceptado en el tiro, o requiere "termomagnético" como alternativa española?
+4. ¿Qué versión del retiro (A/B/C) avanza junto con la opción seleccionada?
+
+**Notificaciones de refresh pendientes post-decisión del Owner:**
+- A Bruna: gate de la opción seleccionada por Owner (obligatorio antes de producción).
+- A Aurelio: si V3 avanza como argumento de empaque, AU-1 puede requerir revisión para reflejar la tercera variante. Notificar para evaluación.
+- A Nerea / Solenne: V3 puede ser argumento para guion del argumentario de ventas (Nerea) o copy off-empaque (Solenne) independientemente de si llega al tiro del empaque. El Owner decide.
+- A Orlan: si el Owner decide bautizar V3 con naming propietario (p.ej. "Respaldo Térmico™"), Orlan debe confirmar disponibilidad de marca antes de producción.
+
+---
+
+*Refresh emitido por Vael — 2026-05-06. Domain-specialist. Genteca.*
+*V3 "beneficio del beneficio": propuesta, no aprobada. Finalista única recomendada: Op. F "Respaldo térmico ante el breaker*". Finalista de respaldo: Op. B "Última línea de defensa eléctrica*". Gate Bruna requerido: Op. F (migración Claim G a tiro — riesgo bajo), Op. B (objeto de defensa — riesgo medio), Op. E (Claim H — flag prioritario). Versión de retiro recomendada para Op. F: Versión A (neutro funcional). V1 y V2 vigentes sin cambio.*
