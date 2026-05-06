@@ -1387,3 +1387,207 @@ Estos dos ejes son independientes: un claim puede ser factualmente correcto (eje
 *Gate emitido: 2026-05-06*
 *Estado de las 3 opciones: APROBADO CON CAVEAT (condiciones de produccion declaradas en §9.6)*
 *Proxima accion requerida: Owner selecciona opcion para presentacion a Kike. Condiciones de produccion (SAPI VE, Vera P-5, espacio diseno) se resuelven solo si Canudas / Kike dan luz verde a la variante B-CON-NTC.*
+
+---
+
+# §10 — Gate final variante B-CON-NTC (decision Kike 2026-05-06)
+
+**Tipo de gate:** mini-gate de cierre post-decision directiva. No es gate completo — es confirmar que la variante finalista instruida por Kike (Alberto Betancourt, Direccion General) es compatible con los gates anteriores y senalar las condiciones que subsisten.
+
+**Inputs de este gate:**
+- Decision verbal de Kike 2026-05-06: naming finalista "Escudo Termico NTC*" (funcion primero, componente como sufijo identificador)
+- Kike autoriza flexibilidad en el cuerpo del caveat ("puede hablar de NTC o de Escudo")
+- Estrategia Kike: presentar a Canudas en paralelo B-sin-NTC v2.1 ("Autoproteccion termica activa*") y B-CON-NTC v2.2 ("Escudo Termico NTC*")
+- Orlan Refresh 2026-05-06 sobre riesgo IP de "Escudo Termico" en dos palabras separadas
+
+---
+
+## §10.1 — Gate del header del badge (tiro)
+
+**Texto a gatear:** `Escudo Termico NTC*`
+
+**Decision: APROBADO CON CAVEAT**
+
+**Categoria:** ✅ con condiciones suspensivas heredadas (idem §9.1.5, con una diferencia de orden gramatical evaluada abajo)
+
+### Coherencia con gate §9 Opcion A
+
+El §9 gateo "NTC EscudoTermico(TM)*" (componente primero, nombre comercial despues). La variante instruida por Kike invierte el orden: "Escudo Termico NTC*" (funcion primero, componente como sufijo identificador).
+
+**Evaluacion de la inversion de orden:** no requiere analisis nuevo de fondo. El riesgo de Claim H no lo determina el orden de los elementos sino la presencia de los mismos. "Escudo Termico NTC" contiene los mismos elementos semanticos que "NTC EscudoTermico": el descriptor funcional (Escudo Termico = funcion de proteccion termica) y el componente tecnico (NTC). La inversion beneficia la lectura funcional — el consumidor ve primero la funcion y despues la tecnologia que la implementa. Esto no abre interpretaciones de proteccion de la carga conectada que el badge en §9.1.1 no tuviera.
+
+**Diferencia grafica relevante:** Kike usa "Escudo Termico" en dos palabras separadas (no "EscudoTermico" unido). Esto es congruente con la advertencia de Orlan Refresh 2026-05-06: en dos palabras separadas el termino es aun mas descriptivo que en forma unida. El impacto es exclusivamente en el eje IP marcario (ver §10.2 sobre simbolo TM), no en el eje de veracidad del claim ni en el riesgo de Claim H.
+
+### Riesgo Claim H
+
+El badge "Escudo Termico NTC*" no promete proteccion del equipo conectado. "Escudo Termico" describe la funcion del protector (protege el cableado y al protector mismo del calor excesivo). "NTC" identifica el componente que implementa esa funcion. Ninguno de los dos elementos afirma que la carga conectada esta protegida de sobrecarga o de dano termico.
+
+**Conclusion Claim H:** MITIGA. Identico al analisis de §9.1.1. El cuerpo del caveat de retiro (§8.3 invariable) opera como guardrail obligatorio. Extension prohibida: ninguna frase derivada del badge puede afirmar que "protege el equipo conectado" sin gate adicional de Bruna.
+
+### Compatibilidad con caveat tecnico (§8.3 invariable)
+
+**Plena.** El cuerpo invariable de §8.3 ("sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo...") no menciona el nombre comercial de la funcion — describe el mecanismo. Es compatible con cualquier header de naming, incluido "Escudo Termico NTC:".
+
+**Header del caveat de retiro para v2.2 — texto literal obligatorio:**
+
+> Escudo Termico NTC: sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+---
+
+## §10.2 — Decision sobre simbolo TM
+
+**Input:** Kike no menciono TM en su decision. Orlan Refresh 2026-05-06 advierte: "Escudo Termico" en dos palabras separadas tiene riesgo medio-alto de no registrabilidad SAPI VE por descriptividad.
+
+**Decision de Bruna:** SIN TM en la formulacion final de v2.2 hasta verificacion SAPI VE favorable.
+
+**Argumento:**
+
+El simbolo TM (trademark no registrada) no genera proteccion juridica formal en Venezuela — SAPI VE requiere registro efectivo para esa proteccion. Lo que TM si genera es una representacion publica de que el titular considera el termino como marca propia. Si "Escudo Termico" en dos palabras es objetado por SAPI VE como descriptor generico (riesgo medio-alto segun Orlan), imprimir el empaque con TM:
+
+1. Crea una representacion que puede ser falsa si el termino no es registrable.
+2. No tiene valor defensivo ante un competidor que alegue genericidad.
+3. Puede ser usada en contra en un proceso de oposicion ("el titular mismo senala que considera esto una marca, pero el termino es descriptor comun").
+
+La "NTC" como sufijo no cambia el analisis: "Escudo Termico NTC" es "Escudo Termico" mas las siglas del componente — SAPI VE evaluara el conjunto y "Escudo Termico" seguira siendo el nucleo potencialmente objetable.
+
+**Recomendacion:**
+- Formulacion de tiro sin simbolo: `Escudo Termico NTC*` (asterisco obligatorio, que remite al caveat del retiro)
+- Formulacion del header de retiro sin TM: `Escudo Termico NTC:` seguido del cuerpo invariable
+- El simbolo TM se incorpora solo si SAPI VE emite opinion favorable (busqueda formal + abogado marcario confirma posicion defensible)
+
+**Si el Owner discrepa y decide incluir TM:** Bruna acepta pero declara el riesgo como flag explicito en BR-2. La decision final es del Owner — Bruna no puede rechazar el uso de TM como claim falso (no lo es — es una representacion de intencion marcaria), pero si puede y debe documentar el riesgo IP.
+
+**Clausula RISK-POLICY aplicada:** §4 Reversibilidad — el empaque impreso con TM sobre un termino eventualmente objetado por SAPI VE genera un costo de correccion irreversible. Antes de imprenta, la decision sobre TM debe tomarse con base en verificacion SAPI VE.
+
+---
+
+## §10.3 — Cuerpo del caveat tecnico: version recomendada
+
+Kike autorizo flexibilidad en el cuerpo del caveat ("puede hablar de NTC o de Escudo"). El cuerpo invariable de §8.3 usa el descriptor neutro "sensor de temperatura" — no menciona ni "NTC" ni "Escudo" en el cuerpo. Eso ya es la decision correcta: el header lleva el nombre comercial; el cuerpo describe el mecanismo.
+
+La flexibilidad de Kike aplica al **header del caveat**, no al cuerpo. El cuerpo de §8.3 ya es invariable por decision de gate anterior. Bruna confirma que no es necesario ni conveniente reabrir el cuerpo.
+
+**Evaluacion de las tres versiones propuestas:**
+
+**Version NTC explicita:**
+> Escudo Termico NTC: sensor NTC ubicado junto al rele de potencia. Detecta calentamiento excesivo...
+
+Introduce "sensor NTC" en el cuerpo, donde antes decia "sensor de temperatura". El cambio es tecnicamente mas preciso (el sensor es un termistor NTC, no un sensor generico de temperatura) pero introduce el nombre del componente en el cuerpo del caveat. El riesgo: si en un futuro el protector cambia el componente interno (ej. sustitucion de NTC por termopar), el cuerpo del caveat queda desactualizado. Ademas, la mencion explicita de "NTC" en el cuerpo puede crear confusion si el consumidor no conoce la sigla — el cuerpo esta disenado para ser explicativo, no tecnico.
+
+**Version metaforica:**
+> Escudo Termico NTC: sistema de Escudo Termico (sensor NTC) ubicado junto al rele de potencia. Detecta calentamiento excesivo...
+
+Introduce tanto "Escudo Termico" como "NTC" en el cuerpo. Esto crea redundancia (el header ya dice "Escudo Termico NTC") y hace el cuerpo mas largo sin agregar informacion nueva. Desde optica de claims, la frase parentetica "(sensor NTC)" en el cuerpo es una autoexplicacion del naming que puede confundir en lugar de clarificar.
+
+**Version cuerpo invariable (la actual de §8.3, sin cambio):**
+> Escudo Termico NTC: sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo...
+
+El header identifica la funcion y el componente. El cuerpo describe el mecanismo en lenguaje funcional claro, sin comprometer el texto a la sigla del componente especifico ni a la metafora del naming. Esta es la version que mejor soportaria una disputa: el header es el nombre comercial, el cuerpo es la descripcion funcional verificable, y ninguno de los dos se contradice ni hace promesas que el otro no pueda sostener.
+
+**Recomendacion de Bruna: VERSION CUERPO INVARIABLE (§8.3 sin cambio).**
+
+El argumento decisivo: el cuerpo del caveat es la pieza que se lee en una disputa. Cuanto mas neutro y verificable sea el lenguaje del cuerpo, mas fuerte es la posicion de Exceline. Introducir "NTC" o "Escudo" en el cuerpo no agrega valor defensivo — solo agrega especificidad que puede generar nuevas preguntas tecnicas (ej. "si dice sensor NTC, y el NTC es un fusible de corte unico, la descripcion de 'detecta' implica deteccion continua?"). El cuerpo invariable ya paso el gate de §8; no hay razon para reabrirlo.
+
+**Nota operativa:** la flexibilidad de Kike queda satisfecha con el header. El header dice "Escudo Termico NTC:" — menciona ambos elementos (Escudo y NTC). El cuerpo describe el mecanismo sin redundar.
+
+---
+
+## §10.4 — Lista de claims aprobados: variante B-CON-NTC v2.2
+
+| Claim | Texto exacto | Decision BR-2 | Condicion principal |
+|---|---|---|---|
+| Badge tiro (funcion termica) | Escudo Termico NTC* | APROBADO CON CAVEAT | Caveat de retiro §10.3 obligatorio; sin TM hasta SAPI VE; sin extension sobre equipo conectado |
+| Bullet retiro CARACTERISTICAS (header) | Escudo Termico NTC: | APROBADO CON CAVEAT | Header del bullet sigue al tiro — si el tiro cambia, el header cambia en consecuencia |
+| Caveat de retiro (cuerpo completo) | [cuerpo invariable §8.3 — reproducido literalmente en §10.1] | APROBADO — invariable | Sin modificacion del cuerpo; solo el header cambia entre variantes |
+| Claims heredados de v2 sin cambio: badge velocidad | El mas rapido ante parpadeos (< 0,03 s)* | Heredado — aprobacion previa vigente | Sin modificacion |
+| Claims heredados: inverter | Apto para cargas Inverter | Heredado — aprobacion previa vigente | Sin modificacion |
+| Claims heredados: lengüeta | [formulacion aprobada en gate anterior] | Heredado — aprobacion previa vigente | Sin modificacion |
+| Disclaimer breakers | [formulacion aprobada en gate anterior] | Heredado — aprobacion previa vigente | Sin modificacion |
+
+**Nota sobre herencia de claims:** todos los claims de v2 aprobados antes del §8 Refresh permanecen vigentes sin modificacion. El unico claim nuevo en v2.2 es el badge del tiro de funcion termica y su caveat de retiro. La v2.2 no abre ningun otro claim al cambio.
+
+---
+
+## §10.5 — Condiciones suspensivas vigentes para v2.2 imprenta
+
+### Condicion 1 — Vera P-5 (mecanismo NTC continuo vs fusible unico)
+
+**Estado:** Pendiente. Heredada de §8.1 y confirmada en §9.6.
+
+**Impacto en v2.2:** bajo. "Escudo Termico NTC" no usa el adjetivo "activa" — el adjetivo que generaba la expectativa de continuidad fue descartado en la formulacion de Kike. Por tanto, si Vera confirma que el NTC es fusible de corte unico, el badge "Escudo Termico NTC*" no requiere cambio. Solo puede requerirse ajuste menor en el cuerpo del retiro (ej. aclarar que la actuacion es unica, no recurrente — pero el cuerpo invariable actual no promete recurrencia, por lo que el impacto es minimo).
+
+**Conclusion:** Condicion de revision pre-imprenta, no condicion bloqueante del gate conceptual ni de la presentacion a Canudas.
+
+### Condicion 2 — SAPI VE verificacion formal de "Escudo Termico NTC"
+
+**Estado:** Pendiente. Obligatoria antes de produccion de arte final para imprenta.
+
+**Especificidad para v2.2:** "Escudo Termico" en dos palabras separadas tiene riesgo de descriptividad medio-alto (Orlan Refresh 2026-05-06). El sufijo "NTC" podria agregar distintividad al conjunto — un argumento ante SAPI VE seria que "Escudo Termico NTC" como denominacion completa no es descriptiva de ningun producto en el mercado venezolano. Este argumento requiere evaluacion de abogado marcario: Bruna no puede pronunciarse sobre estrategia de registro sin esa opinion.
+
+**Requiere abogado marcario:** SI. El riesgo de descriptividad es lo suficientemente elevado en el nucleo ("Escudo Termico") como para que la verificacion no sea solo una busqueda de base de datos (Orlan) sino una opinion sobre registrabilidad de un termino potencialmente descriptivo (abogado marcario). La decision de contratar ese abogado es del Owner.
+
+**Sin SAPI VE favorable:** sin TM en el empaque (ver §10.2). La imprenta puede proceder sin TM si el Owner acepta ese riesgo. No puede proceder con TM sin verificacion.
+
+### Condicion 3 — Decision de Canudas
+
+**Estado:** Pendiente. Esta es la condicion de negocio que determina si v2.2 llega a imprenta.
+
+Kike presentara a Canudas en paralelo:
+- Variante 1: B-sin-NTC v2.1 ("Autoproteccion termica activa*") — ya gateada por Bruna en §8
+- Variante 2: B-CON-NTC v2.2 ("Escudo Termico NTC*") — gateada en este §10
+
+Hasta la decision de Canudas, ninguna de las dos variantes pasa a produccion de arte final. El gate de Bruna sobre v2.2 es una condicion necesaria pero no suficiente para la imprenta.
+
+---
+
+## §10.6 — Nota para Solenne y Atlas
+
+**Texto exacto del badge tiro:**
+
+`Escudo Termico NTC*`
+
+(Sin TM. Con asterisco obligatorio. El asterisco remite al caveat del retiro.)
+
+**Texto exacto del header del bullet retiro CARACTERISTICAS:**
+
+`Escudo Termico NTC:`
+
+(Sin TM. El header precede al cuerpo invariable. No modificar ni el header ni el cuerpo una vez integrados.)
+
+**Texto exacto del caveat de retiro (cuerpo completo — palabra por palabra):**
+
+> Escudo Termico NTC: sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Instruccion sobre TM:** NO incluir TM en ninguna pieza de v2.2 (tiro, retiro, cualquier artefacto) hasta que SAPI VE emita verificacion favorable y el Owner decida incorporarlo. Si el Owner instruye explicitamente incluir TM antes de esa verificacion, solicitar confirmacion escrita del Owner y documentar el flag de riesgo IP en este gate.
+
+**Instruccion sobre el cuerpo del caveat:** NO modificar el cuerpo del caveat bajo ninguna circunstancia sin gate adicional de Bruna. La flexibilidad que Kike menciono aplica al header (nombre comercial elegido), no al cuerpo del mecanismo. El cuerpo es invariable.
+
+**Limites de uso:** el claim "Escudo Termico NTC*" aplica exclusivamente al badge del tiro de la Alternativa B blister GSM. No extender a otros artefactos de marketing (landing page, redes, catalogo) sin gate de Bruna para ese artefacto especifico.
+
+---
+
+## §10.7 — BR-2 Genteca — Entrada de gate §10
+
+**Dominio:** Genteca
+**Proyecto:** 2026-04_GSM-MB-RB-RF_empaque
+**Fecha de decision:** 2026-05-06
+**Documento de gate:** Bruna_gate_empaque_v1 §10
+**Gatekeeping trigger:** decision de Kike (Alberto Betancourt, Direccion General) de adoptar "Escudo Termico NTC*" como naming finalista de la variante B-CON-NTC v2.2
+
+| Claim gateado | Texto exacto | Decision | Condicion principal | Clausula RISK-POLICY | Precedente §9 |
+|---|---|---|---|---|---|
+| Badge tiro v2.2 | Escudo Termico NTC* | APROBADO CON CAVEAT | Caveat retiro §10.1 obligatorio; sin TM hasta SAPI VE; Canudas debe aprobar variante antes de imprenta | §3 — no afirmar datos falseables; §4 — reversibilidad antes de imprenta | §9.1.5 — coherente; inversion de orden no cambia perfil de riesgo |
+| Simbolo TM | — (suspendido) | SUSPENDIDO hasta SAPI VE | Riesgo descriptividad medio-alto en "Escudo Termico" (Orlan Refresh 2026-05-06); abogado marcario requerido | §4 | §9.1.2 — riesgo IP "EscudoTermico" trasladado a forma separada con riesgo incrementado |
+| Cuerpo caveat retiro | Cuerpo invariable §8.3 sin cambio | APROBADO — sin modificacion | Header actualizado a "Escudo Termico NTC:"; cuerpo literal sin cambio | §3 | §8.3 / §8.4 aprobacion original vigente |
+
+**Evidencia consultada para este gate:**
+- Bruna_gate_empaque_v1 §8.3, §8.4, §9.1 (bases del gate previo sobre los mismos elementos semanticos)
+- Orlan Refresh 2026-05-06 (riesgo de descriptividad "Escudo Termico" en dos palabras separadas)
+- Decision verbal de Kike 2026-05-06 (naming finalista, flexibilidad caveat, estrategia paralela Canudas)
+- RISK-POLICY.md v1.0 §3 y §4
+
+---
+
+*Gate emitido: 2026-05-06*
+*Estado v2.2: APROBADO CON CAVEAT. Dos condiciones suspensivas de produccion abiertas: SAPI VE (con abogado marcario) + decision de Canudas.*
+*Proxima accion requerida: Kike presenta a Canudas. Si Canudas elige v2.2: Owner contrata abogado marcario para SAPI VE. Vera P-5 se confirma antes de arte final.*

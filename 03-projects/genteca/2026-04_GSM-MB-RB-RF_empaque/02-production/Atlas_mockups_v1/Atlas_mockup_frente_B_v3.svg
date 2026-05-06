@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Atlas AT-2 — Static Key Visual / Mockup Frente
+  Proyecto: 2026-04_GSM-MB-RB-RF_empaque
+  Alternativa: B-3 (Contrastante — 2 frases, mayor respiro visual)
+  Variante: B-CON-NTC (v2.2 paralela)
+  Modelo de referencia: GSM-RB (los otros 3 modelos siguen mismo layout con paleta correspondiente)
+  Fecha v1: 2026-05-03
+  Fecha v2: 2026-05-05 — Cambio IP: "Sensor NTC incorporado*" → "Autoprotección térmica activa*"
+  Fecha v3: 2026-05-06 — Variante paralela B-CON-NTC: "Autoprotección térmica activa*" → "Escudo Térmico NTC*"
+             Decisión de naming: Kike (Alberto Betancourt, Dirección General), 2026-05-06.
+             Gate: Bruna_gate_empaque_v1 §10 — APROBADO CON CAVEAT.
+             TM suspendido: Bruna §10.2 — sin ™ hasta verificación SAPI VE favorable.
+             Inputs: Solenne SO-1 v4 B-CON-NTC, Bruna §10, Vael VA-5 §Refresh 2026-05-06.
+  Estado: Arte casi final — variante paralela para presentación a Canudas
+  Resolución: 800 x 1200 px (proporción blíster frente) — RGB para presentación digital
+  NOTA: Oz toma el ganador (v2.1 o v2.2) y lo adapta a CMYK + sangrado 3mm para imprenta.
+
+  RELACIÓN DE VERSIONES:
+  - v2 (B-sin-NTC, variante v2.1): badge = "Autoprotección térmica activa*". Vigente. NO sustituida.
+  - v3 (B-CON-NTC, variante v2.2): badge = "Escudo Térmico NTC*". Variante paralela. Este archivo.
+  Ambas coexisten hasta decisión explícita de Canudas.
+
+  DELTA v3 vs v2 (único cambio):
+  - Zona 5 — Badge Claim 2:
+      SALE: "Autoprotección térmica activa*" + ícono termómetro/sensor (#737578)
+      ENTRA: "Escudo Térmico NTC*" + ícono escudo térmico (preserva metáfora naming)
+  - Hilo tiro→retiro (badge lateral derecho): "Inv.+térm." sin cambio — aplica igual a ambas variantes.
+  - Nota de remisión del asterisco: actualizada a "Escudo Térmico NTC" (era "autoprotección térmica").
+  - Todos los demás elementos: SIN CAMBIO respecto a v2.
+
+  CONDICIÓN ™:
+  - Sin símbolo ™ en ningún elemento de este mockup. Condición Bruna §10.2 vigente.
+    La verificación SAPI VE es prerrequisito para incluir ™. Decisión final del Owner si discrepa.
+
+  DECISIÓN DE ÍCONO (escudo térmico):
+  - El naming "Escudo Térmico NTC" sugiere iconográficamente un escudo. Atlas elige escudo como
+    ícono del Claim 2, reemplazando el termómetro/sensor de v2. Esta coherencia ícono-naming es
+    una ventaja de v2.2 respecto a v2.1 (Solenne SO-1 v4 §Notas para Atlas).
+  - El ícono NO representa protección del equipo conectado (restricción Bruna §10.1, Claim H).
+    Representa protección del protector mismo y del cableado.
+  - Líneas de calor sutiles incorporadas al escudo (sin llamita) para evocar función térmica
+    sin competir visualmente con el dato "<0,03 s" del Claim 1.
+  - Oz reemplaza el escudo esquemático por el vectorial oficial del brand kit cuando exista.
+
+  DECISIÓN ESTRUCTURAL CLAVE vs. ALT. A (sin cambio respecto a v2):
+  - Solo 2 frases en el tiro (velocidad + Escudo Térmico NTC). "Protege tecnología Inverter"
+    migra al retiro con argumento causal completo (condición Bruna B-3-2 ya cumplida en SO-1).
+  - Liberación de espacio permite tratar "<0,03 s" como protagonista visual absoluto del tiro.
+  - Condición B-3-3: elemento visual de vinculación tiro→retiro para que el comprador
+    encuentre el claim de inverter en el reverso.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200"
+     font-family="Montserrat, 'Futura Bold', Arial, sans-serif">
+
+  <defs>
+    <linearGradient id="fondoPrincipalB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <!-- Gradiente para el bloque de velocidad — más contrastado que en A -->
+    <linearGradient id="bloqueVelocidad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF8200" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#FF8200" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF8200" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="glowB" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glowSoft" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ===== FONDO ===== -->
+  <rect width="800" height="1200" fill="url(#fondoPrincipalB)"/>
+
+  <!-- Franja de acento superior -->
+  <rect x="0" y="0" width="800" height="8" fill="#FF8200"/>
+  <!-- Franja de acento inferior -->
+  <rect x="0" y="1192" width="800" height="8" fill="#FF8200"/>
+
+
+  <!-- ===== ZONA 1: LOGO EXCELINE PROFESIONAL ===== -->
+  <!-- SIN CAMBIO respecto a v2 -->
+  <rect x="40" y="28" width="320" height="56" rx="4" fill="none" stroke="#FF8200" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="200" y="60" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="600" letter-spacing="1">
+    EXCELINE PROFESIONAL [logo aquí]
+  </text>
+
+  <rect x="40" y="94" width="720" height="2" fill="#FF8200" opacity="0.6"/>
+
+
+  <!-- ===== ZONA 2: LENGÜETA ===== -->
+  <!-- SIN CAMBIO respecto a v2 — aprobada por Bruna refresh §6 bajo condiciones B-3-1/B-3-2/B-3-3 -->
+  <rect x="40" y="110" width="720" height="80" rx="6" fill="#FF8200"/>
+  <text x="400" y="144" text-anchor="middle" fill="#0d0d0d" font-size="16" font-weight="800"
+        letter-spacing="4">
+    NUEVO
+  </text>
+  <text x="400" y="172" text-anchor="middle" fill="#0d0d0d" font-size="22" font-weight="900"
+        letter-spacing="1">
+    LA PROTECCIÓN MÁS COMPLETA
+  </text>
+
+
+  <!-- ===== ZONA 3: IMAGEN PRODUCTO GSM-RB ===== -->
+  <!-- SIN CAMBIO respecto a v2 -->
+  <rect x="220" y="210" width="360" height="270" rx="8" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <text x="400" y="330" text-anchor="middle" fill="#555" font-size="14">
+    Foto producto GSM-RB
+  </text>
+  <text x="400" y="350" text-anchor="middle" fill="#555" font-size="12">
+    (Oz inserta imagen oficial)
+  </text>
+  <text x="400" y="468" text-anchor="middle" fill="#888" font-size="13" letter-spacing="2">
+    GSM-RB
+  </text>
+
+
+  <!-- ===== ZONA 4: BLOQUE VELOCIDAD — PROTAGONISTA VISUAL ABSOLUTO ===== -->
+  <!--
+    SIN CAMBIO respecto a v2.
+    DECISIÓN DE DISEÑO B-3:
+    Al tener solo 2 claims en el tiro, el dato "<0,03 s" ocupa una zona visual
+    considerablemente mayor que en A. Se trata casi como titular de marca.
+    La frase descriptiva se mantiene pero en tipografía secundaria clara.
+    El bloque tiene fondo ligeramente más saturado que en A para amplificar el impacto.
+  -->
+
+  <!-- Fondo del bloque velocidad — más expansivo que en A -->
+  <rect x="40" y="510" width="720" height="220" rx="8" fill="url(#bloqueVelocidad)"
+        stroke="#FF8200" stroke-width="2.5" stroke-opacity="0.8"/>
+
+  <!-- Borde izquierdo naranja sólido -->
+  <rect x="40" y="510" width="7" height="220" rx="3" fill="#FF8200"/>
+
+  <!-- Ícono parpadeo/rayo — dimensión mayor que en A — SIN CAMBIO -->
+  <g transform="translate(64, 530)">
+    <polygon points="22,0 0,35 14,35 7,72 34,28 20,28 28,0"
+             fill="#FF8200" opacity="0.95" filter="url(#glowSoft)"/>
+    <circle cx="17" cy="36" r="42" fill="none" stroke="#FF8200" stroke-width="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- DATO CUANTITATIVO — protagonista tipográfico, tratamiento casi-titular — SIN CAMBIO -->
+  <text x="148" y="590" fill="#FF8200" font-size="96" font-weight="900"
+        letter-spacing="-3" filter="url(#glowB)">
+    &lt;0,03 s
+  </text>
+
+  <!-- Texto descriptivo — marcadamente subordinado al número — SIN CAMBIO -->
+  <text x="148" y="628" fill="#cccccc" font-size="17" font-weight="500" letter-spacing="0.5">
+    El más rápido ante parpadeos
+  </text>
+
+  <!-- Sub-línea de contexto técnico — enlaza con inverter en retiro (Condición B-3-3) — SIN CAMBIO -->
+  <text x="148" y="654" fill="#888" font-size="13" font-weight="400" letter-spacing="0.3">
+    Especialmente eficaz para equipos con tecnología Inverter
+  </text>
+  <!-- Indicador visual de continuación hacia el retiro (Condición Bruna B-3-3) — SIN CAMBIO -->
+  <g transform="translate(148, 668)">
+    <rect x="0" y="0" width="46" height="18" rx="3"
+          fill="#FF8200" fill-opacity="0.12" stroke="#FF8200" stroke-width="0.8"/>
+    <text x="23" y="13" text-anchor="middle" fill="#FF8200" font-size="9" font-weight="700"
+          letter-spacing="0.5">
+      Ver reverso
+    </text>
+  </g>
+
+
+  <!-- ===== ZONA 5: CLAIM "ESCUDO TÉRMICO NTC*" — BADGE SECUNDARIO ===== -->
+  <!--
+    CAMBIO v3 (único delta respecto a v2):
+    "Autoprotección térmica activa*" → "Escudo Térmico NTC*"
+    Naming decidido por Kike (2026-05-06). Gate Bruna §10 APROBADO CON CAVEAT.
+    Sin ™: Bruna §10.2 — TM suspendido hasta verificación SAPI VE favorable.
+
+    ÍCONO: escudo térmico (reemplaza termómetro/sensor de v2).
+    - Preserva metáfora del naming "Escudo Térmico".
+    - Líneas de calor sutiles (ondas sobre el escudo) evocan función térmica.
+    - No usa termómetro médico, no usa sensor genérico.
+    - No representa protección del equipo conectado (restricción Bruna §10.1 Claim H).
+    - Oz reemplaza por vectorial oficial del brand kit cuando exista.
+
+    El badge sigue siendo visualmente más pequeño que el bloque de velocidad.
+    No compite con el dato de velocidad — es el segundo diferenciador.
+    Texto nuevo tiene 3 palabras vs 4 de "Autoprotección térmica activa" — mejor ajuste de ancho.
+    Color de acento naranja del asterisco mantiene continuidad visual con el bloque superior.
+  -->
+  <rect x="40" y="766" width="720" height="72" rx="6"
+        fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
+
+  <!-- ÍCONO ESCUDO TÉRMICO (reemplaza termómetro de v2) -->
+  <!--
+    Escudo simplificado: forma heráldica (path) con detalle de calor (líneas onduladas sobre el escudo).
+    Color base: #737578 (gris corporativo Pantone Cool Gray 9C, igual al ícono de v2).
+    Acento calor: #FF8200 opacity 0.7 (líneas de onda térmica sobre la parte superior del escudo).
+    Dimensiones: ~28x34px, centrado en la misma posición que el termómetro de v2.
+  -->
+  <g transform="translate(56, 776)">
+    <!-- Cuerpo del escudo (forma heráldica simplificada) -->
+    <path d="M14,0 L28,4 L28,22 Q28,34 14,40 Q0,34 0,22 L0,4 Z"
+          fill="#737578" opacity="0.9"/>
+    <!-- División interior del escudo (línea horizontal media) -->
+    <line x1="0" y1="18" x2="28" y2="18" stroke="#555" stroke-width="1" opacity="0.5"/>
+    <!-- Detalle inicial (borde refuerzo superior) -->
+    <path d="M14,0 L28,4 L28,10 L14,8 L0,10 L0,4 Z"
+          fill="#5a5a5c" opacity="0.6"/>
+    <!-- Líneas de calor sutiles (ondas térmicas sobre el escudo — parte central) -->
+    <!-- Onda 1 -->
+    <path d="M8,24 Q10,20 12,24 Q14,28 16,24 Q18,20 20,24"
+          fill="none" stroke="#FF8200" stroke-width="1.5" stroke-opacity="0.7" stroke-linecap="round"/>
+    <!-- Onda 2 (más pequeña, debajo) -->
+    <path d="M10,31 Q12,28 14,31 Q16,34 18,31"
+          fill="none" stroke="#FF8200" stroke-width="1.2" stroke-opacity="0.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- CLAIM v3 — ESCUDO TÉRMICO NTC* -->
+  <!-- Sin ™ — condición Bruna §10.2 -->
+  <text x="108" y="808" fill="#cccccc" font-size="19" font-weight="700">
+    Escudo Térmico NTC
+  </text>
+  <text x="335" y="808" fill="#FF8200" font-size="22" font-weight="900">*</text>
+
+  <!--
+    HILO VISUAL TIRO→RETIRO (Bruna Condición B-3-3 — SIN CAMBIO respecto a v2):
+    El badge lateral derecho mantiene "Inv.+térm." — aplica igual en ambas variantes
+    (v2.1 B-sin-NTC y v2.2 B-CON-NTC). El retiro contiene tanto el argumento de inverter
+    como el caveat de Escudo Térmico NTC.
+    Oz debe asegurar que el bullet "Protege tecnología Inverter" en el retiro lleve el mismo
+    acento naranja, y que el caveat de Escudo Térmico NTC esté presente en el bloque de asteriscos.
+  -->
+  <rect x="718" y="766" width="42" height="72" rx="0 6 6 0"
+        fill="#FF8200" fill-opacity="0.15" stroke="#FF8200" stroke-width="0"/>
+  <text x="739" y="790" text-anchor="middle" fill="#FF8200" font-size="9" font-weight="700"
+        letter-spacing="0.3">
+    Inv.
+  </text>
+  <text x="739" y="803" text-anchor="middle" fill="#FF8200" font-size="9" font-weight="700"
+        letter-spacing="0.3">
+    +térm.
+  </text>
+  <text x="739" y="819" text-anchor="middle" fill="#FF8200" font-size="8"
+        letter-spacing="0.3">
+    (retiro)
+  </text>
+
+
+  <!-- ===== ZONA 6: ASTERISCO — nota de remisión ===== -->
+  <!-- ACTUALIZADO v3: nota de remisión alineada con el naming aprobado "Escudo Térmico NTC" -->
+  <rect x="40" y="862" width="720" height="2" fill="#333"/>
+
+  <text x="40" y="890" fill="#FF8200" font-size="14" font-weight="700">*</text>
+  <text x="56" y="890" fill="#888" font-size="12" font-weight="400">
+    Ver información de Escudo Térmico NTC al reverso del empaque.
+  </text>
+
+
+  <!-- ===== ZONA 7: ESPACIO VISUAL RESPIRABLE (diferenciador B vs A) ===== -->
+  <!--
+    SIN CAMBIO respecto a v2.
+    B-3 tiene más espacio en blanco entre la zona 6 y la zona de specs.
+    Este "respiro" es parte del argumento visual de la alternativa: el tiro "respira" más.
+    Atlas preserva ese espacio — no lo llena con elementos adicionales.
+  -->
+
+
+  <!-- ===== ZONA 8: ESPECIFICACIONES TÉCNICAS ===== -->
+  <!-- SIN CAMBIO respecto a v2 -->
+  <rect x="0" y="1000" width="800" height="120" fill="#111111"/>
+  <rect x="0" y="1000" width="800" height="2" fill="#FF8200" opacity="0.4"/>
+
+  <text x="400" y="1030" text-anchor="middle" fill="#666" font-size="12" letter-spacing="1">
+    ESPECIFICACIONES TÉCNICAS
+  </text>
+  <text x="130" y="1055" text-anchor="middle" fill="#888" font-size="11">Voltaje nom.</text>
+  <text x="130" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] V</text>
+
+  <text x="270" y="1055" text-anchor="middle" fill="#888" font-size="11">Corriente max.</text>
+  <text x="270" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] A</text>
+
+  <text x="410" y="1055" text-anchor="middle" fill="#888" font-size="11">Pot. protegida</text>
+  <text x="410" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] VA</text>
+
+  <text x="550" y="1055" text-anchor="middle" fill="#888" font-size="11">T° respuesta</text>
+  <text x="550" y="1072" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="700">&lt; 30 ms</text>
+
+  <text x="690" y="1055" text-anchor="middle" fill="#888" font-size="11">Hecho en</text>
+  <text x="690" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">Venezuela</text>
+
+  <!-- QR -->
+  <rect x="40" y="1096" width="80" height="80" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="80" y="1141" text-anchor="middle" fill="#555" font-size="10">[QR]</text>
+  <text x="180" y="1122" fill="#555" font-size="11">¿Por qué &lt;0,03 s?</text>
+  <text x="180" y="1138" fill="#555" font-size="11">Escanea aquí</text>
+
+  <!-- Barcode -->
+  <rect x="580" y="1100" width="180" height="60" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="670" y="1135" text-anchor="middle" fill="#444" font-size="10">[Código de barras]</text>
+
+</svg>
