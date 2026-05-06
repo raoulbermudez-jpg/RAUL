@@ -175,9 +175,10 @@ Esta convención es desde la perspectiva del **Owner que pone/recibe**. Para el 
 1. **Crear carpeta personal** en `RAUL-Exchange/[Dominio]/[Nombre-Apellido]/` con dos subcarpetas: `inbox/` y `outbox/`.
    - Nombrado: capitalizado y guion, sin espacios. Ej: `Maria-Lopez`.
    - Si requiere convención de domain pack: `RAUL-Exchange/Genteca/Maria-Lopez/`.
-2. **Compartir SOLO esa carpeta** con el colaborador desde Drive web:
-   - Click derecho en la carpeta `Maria-Lopez/` → Compartir → introducir email del colaborador → permiso **Editor** (puede subir y descargar) → Enviar.
-   - **No compartas el folder maestro `RAUL-Exchange/`** ni el folder del dominio. Solo la carpeta de la persona — así no ve carpetas de otros colaboradores.
+2. **Compartir SOLO esa carpeta** con el colaborador desde Drive web. Dos modalidades según política del dominio del colaborador:
+   - **Modalidad nominativa (preferida):** Click derecho en la carpeta `Maria-Lopez/` → Compartir → introducir email del colaborador → permiso **Editor** → Enviar. Aplicable cuando el dominio del colaborador acepta invitaciones de Google Drive externas (ej. cuentas Gmail personales como Cora-Urrea, dominios sin restricciones como grupompr.com).
+   - **Modalidad por link (fallback):** Cuando el dominio del colaborador bloquea sharing nominativo a externos (caso confirmado: **Genteca** — política de dominio Microsoft 365 / Google Workspace impide aceptar invitaciones nominativas a cuentas externas a `genteca.com.ve`), se usa "Cualquier persona con el enlace" → permiso **Editor** → copiar enlace y enviárselo al colaborador por WhatsApp/email. Limitación: el link es transferible; quien lo tenga puede entrar. Aceptable para colaboración 1:1 con persona de confianza.
+   - **No compartas el folder maestro `RAUL-Exchange/`** ni el folder del dominio. Solo la carpeta de la persona — así no ve carpetas de otros colaboradores, sin importar la modalidad usada.
 3. **Enviar al colaborador el instructivo del colaborador** (sección 2.5 abajo, copiable como email o PDF).
 4. **Registrar la relación** en `C:\Raul\04-system\03-governance\colaboradores.md` (crear si no existe) con: nombre, email, carpeta, dominio, fecha de onboarding, propósito del intercambio.
 5. Confirmar que la memoria persistente `reference_drive_exchange_ids.md` tiene el ID de la nueva carpeta. Si no, anotarlo manualmente la próxima sesión Claude Code.
@@ -257,7 +258,30 @@ Esta convención es desde la perspectiva del **Owner que pone/recibe**. Para el 
 4. **Auditoría periódica** (sugerido cada 6 meses): revisar quién tiene acceso a qué desde Drive web → Configuración compartida. Revocar accesos de personas que ya no colaboran.
 5. **Ofboarding:** cuando un colaborador deja la organización: revocar acceso desde Drive web → mover su carpeta a `RAUL-Exchange/_archived/[Nombre]_offboarded_YYYY-MM-DD/` → registrar en `colaboradores.md`.
 
-### 2.7 Diferencia entre inbox del Owner (Parte 1) e inbox de colaborador
+### 2.7 Bridge con almacenamiento corporativo del colaborador (caso SharePoint Genteca)
+
+Algunos colaboradores trabajan en sistemas corporativos donde los documentos vivos NO están en Drive (ej. SharePoint corporativo, Box, Dropbox empresarial). El sistema /RAUL/ **no accede directamente** a esos sistemas — solo a Drive del Owner. La solución es que el **Owner opere el bridge manualmente**: navega al sistema corporativo del colaborador con su navegador, descarga lo que necesita procesar, y lo copia a la carpeta apropiada en `G:\Mi unidad\RAUL-Exchange\` para que entre al flujo normal del sistema.
+
+**Caso de referencia: SharePoint Genteca compartido con Liliam Ramírez y Owner.**
+
+- Liliam tiene cuota OneDrive Genteca al tope, así que no puede usar Drive corporativo Genteca como canal.
+- Informática Genteca compartió una carpeta SharePoint con Liliam y con el Owner (vía link, porque el dominio Genteca no permite sharing nominativo a externos): `https://genteca365-my.sharepoint.com/:f:/g/personal/soporte_genteca_com_ve/IgBcHEbNvBOTQY79tEQLMkHMAbfF2P42C2arOdhlt4LFSKw?e=HO9uWe`.
+- El sistema /RAUL/ **no puede leer ni escribir** esa carpeta (autenticación Microsoft corporativa que el sistema no posee).
+- **Bridge:** el Owner abre el link en su navegador, descarga los archivos que quiere procesar, los copia a `G:\Mi unidad\RAUL-Exchange\Genteca\Liliam-Ramirez\01_De_Liliam_Para_Raoul\` (o subcarpeta lógica según corresponda). Drive Desktop streaming sincroniza solo a la nube. A partir de ahí el flujo es el normal del sistema.
+- Liliam NO interactúa con `RAUL-Exchange`. Su trabajo vive en SharePoint. El Owner es el único actor del bridge.
+
+**Cuándo aplica este patrón (Owner como bridge único):**
+- El colaborador no necesita ver lo que el sistema produce — solo entrega documentos como parte de su trabajo normal en sistema corporativo.
+- El Owner consume esos documentos pero las respuestas/entregables del sistema NO regresan al colaborador (o regresan por otro canal: email, reunión, etc.).
+- El sistema corporativo del colaborador queda como source-of-truth; las copias en `RAUL-Exchange` son staging del Owner, no archivos compartidos.
+
+**Lo que NO se debe hacer:**
+- Asumir que el sistema accede al SharePoint corporativo. Cualquier flujo automatizado debe pasar por la copia manual del Owner.
+- Dejar archivos divergentes en SharePoint y en Drive sin claridad de cuál es la versión vigente. La regla por defecto: SharePoint es source-of-truth, Drive es staging.
+
+---
+
+### 2.8 Diferencia entre inbox del Owner (Parte 1) e inbox de colaborador
 
 **Importante no confundir:**
 
