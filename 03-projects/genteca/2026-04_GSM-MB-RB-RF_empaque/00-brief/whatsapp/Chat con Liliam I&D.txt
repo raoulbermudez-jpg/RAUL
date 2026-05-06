@@ -1,0 +1,59 @@
+Raoul: NTC en los GSM-R: los 60 °C que me habías comentado (creo recordar sin estar seguro) son el umbral de disparo del NTC (cuando el sensor activa) y 132 °C (que Miguel me dijo hoy) es la temperatura que se evita llegar (destrucción) del relé. Es así?. O NTC dispara mas arriba de 60 celcius? A cuanto?
+Resumen:
+NTC abre circuito a 60, 80, 100, cuanto?
+Temperatura que se quiere evitar porque daña al relé: 132
+
+Liliam: Esa es una pregunta que para responderla te diría que requiero mas información. Donde y para que usaras mi respuesta
+Yo no recuerdo haber comentado los 60°C
+Miguel tiene razón... se dispara a 132°C, esta temperatura es interna y no pienso que deba comunicarse
+Efectivamente se fijo en función de la temperatura limite del relé
+
+Raoul: Precisamente esa es mi duda. Miguel dice que 132 grados es la temperatura a la que se daña el relé. Pero NTC debe abrir antes. Yo no voy a comunicar temperaturas, pero quiero hablar de rangos de calentamiento que permiten proteger la instalación y al propio protector.
+
+Liliam: 132 No es la temperatura donde se daña el relé, el relé se daña por encima de esta 140°C o 145°C
+
+Raoul: ok. así si
+
+Liliam: Efectivamente se fijo en función de la temperatura limite del relé
+Yo no dije que era la temperatura... dije que esta relacionada
+
+Raoul:132 es aprox la temperatura a la que el NTC abre el circuito?
+
+Liliam: Y a esa temperatura todo el sistema se mantiene seguro, cables y bornera
+
+Raoul: Eso es lo que quiero comunicar
+Que cables y borneras están protegidos porque la protección por calentamiento abre el circuito antes de que se dañen cables o conexiones (para no hablar de borneras)
+
+Liliam: Es así, esa temperatura permite mantener seguro el producto y la instalación
+
+Raoul: Ese es exactamente el claim a comunicar como consecuencia y explicación de la incorporación del NTC, Protege al protector y también a cables y conexiones. Si un cable 12 o 14 el aislante se daña a partir de 75 Celcius para aislante THW por ejemplo. Claro, que la pata o pista donde va la pata del rele puede calentarse mas y llegar a 132, pero alejado de ese relé, el calor solo es generado por corriente alta o conexiones deficientes.
+
+Liliam: El cable no alcanza estas temperatura, esta temperatura es dentro del producto
+Afuera esta caliente, pero no a esta temperatura
+
+Raoul: ok
+Si, aquí estoy viendo: TW: 60 , THW: 75
+qué corriente necesito para que la pata del relé llegue a 140?
+20 A+50% por ejemplo?
+
+Liliam: Lo puedes relacionar a la corriente, pero intervienen muchas variables
+una de esas es el tamaño del cable, el torque con el que fue apretado y con las condiciones correctas puedes llegar a 132 °C con varias condiciones de sobrecarga
+
+Raoul: Otra pregunta: Nuestros tiempos para flickers están por los 30 ms. hasta ahora lo que he investigado de la competencia en los ultimos días, ninguno baja de 200 ms. Tienes datos de alguien de la competencia que se acerque a 30 ms?
+
+Liliam: Breakermatic, tiene productos en 50 ms
+El resto es lento
+
+Raoul: OK y los hemos probado en laboratorio?. Yo no encontré ninguno . Tienes la hoja donde lo dicen?
+
+Liliam: Si. Y si cumplen
+
+Raoul: OK. Entonces lo mas cercano es 50 ms
+Bueno si dicen 50 ms y en nuestro laboratorio se ha corroborado que lo cumplen... están compitiendo  adecuadamente
+
+Liliam: Ellos son de la vieja escuela
+
+Raoul: Ese  el tipo de competencia que se necesita Un detalle: En la hoja dice 32 a 64 ms. Eso es algo que se nos acerca. Cuanto es nuesto rango probado? 20-30 s ? o algo asi?
+20 a 30 ms nosotros? algo así?
+
+Liliam: Entre 16 y 32 ms (Teóricamente), en pruebas de laboratorio entre 20 y 30 ms

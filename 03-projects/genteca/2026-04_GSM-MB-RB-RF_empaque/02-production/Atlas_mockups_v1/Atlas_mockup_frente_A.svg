@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Atlas AT-2 — Static Key Visual / Mockup Frente
+  Proyecto: 2026-04_GSM-MB-RB-RF_empaque
+  Alternativa: A (Ancla Canudas + Owner)
+  Modelo de referencia: GSM-RB (los otros 3 modelos siguen mismo layout con paleta correspondiente)
+  Fecha: 2026-05-03
+  Estado: Arte casi final — para presentación a Junta Directiva
+  Resolución: 800 x 1200 px (proporción blíster frente) — RGB para presentación digital
+  NOTA: Oz toma el ganador y lo adapta a CMYK + sangrado 3mm para imprenta.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200"
+     font-family="Montserrat, 'Futura Bold', Arial, sans-serif">
+
+  <!-- ===== DEFINICIONES / FILTROS ===== -->
+  <defs>
+    <!-- Gradiente de fondo principal: gris oscuro a negro (base existente arte Oz) -->
+    <linearGradient id="fondoPrincipal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <!-- Acento naranja Exceline Pantone 151C / #FF8200 -->
+    <!-- Gradiente para cápsula A+C (grupo causa-efecto) -->
+    <linearGradient id="capsulaGradiente" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF8200" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF8200" stop-opacity="0.06"/>
+    </linearGradient>
+    <!-- Sombra suave para el bloque de velocidad -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ===== FONDO ===== -->
+  <rect width="800" height="1200" fill="url(#fondoPrincipal)"/>
+
+  <!-- Franja de acento superior (naranja Exceline — sirve de marco de marca) -->
+  <rect x="0" y="0" width="800" height="8" fill="#FF8200"/>
+
+  <!-- Franja de acento inferior -->
+  <rect x="0" y="1192" width="800" height="8" fill="#FF8200"/>
+
+
+  <!-- ===== ZONA 1: LOGO EXCELINE PROFESIONAL (área superior) ===== -->
+  <!-- Posición reservada para logo — en arte final Oz coloca el archivo vectorial -->
+  <rect x="40" y="28" width="320" height="56" rx="4" fill="none" stroke="#FF8200" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="200" y="60" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="600" letter-spacing="1">
+    EXCELINE PROFESIONAL [logo aquí]
+  </text>
+
+  <!-- Línea divisora naranja -->
+  <rect x="40" y="94" width="720" height="2" fill="#FF8200" opacity="0.6"/>
+
+
+  <!-- ===== ZONA 2: LENGÜETA / CINTILLA ===== -->
+  <!-- Cintilla naranja con texto "NUEVO" -->
+  <rect x="40" y="110" width="720" height="80" rx="6" fill="#FF8200"/>
+  <text x="400" y="144" text-anchor="middle" fill="#0d0d0d" font-size="16" font-weight="800"
+        letter-spacing="4">
+    NUEVO
+  </text>
+  <text x="400" y="172" text-anchor="middle" fill="#0d0d0d" font-size="22" font-weight="900"
+        letter-spacing="1">
+    LA PROTECCIÓN MÁS COMPLETA
+  </text>
+
+
+  <!-- ===== ZONA 3: IMAGEN PRODUCTO GSM-RB ===== -->
+  <!-- Área reservada para fotografía del producto (frente del protector) -->
+  <rect x="220" y="210" width="360" height="300" rx="8" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <text x="400" y="340" text-anchor="middle" fill="#555" font-size="14">
+    Foto producto GSM-RB
+  </text>
+  <text x="400" y="360" text-anchor="middle" fill="#555" font-size="12">
+    (Oz inserta imagen oficial)
+  </text>
+  <!-- Código de producto -->
+  <text x="400" y="498" text-anchor="middle" fill="#888" font-size="13" letter-spacing="2">
+    GSM-RB
+  </text>
+
+
+  <!-- ===== ZONA 4: BLOQUE CAUSA-EFECTO (Frases 1 + 2 agrupadas) ===== -->
+  <!--
+    DECISIÓN DE DISEÑO CLAVE (Condición Bruna §2 Claim C):
+    Frases 1 y 2 comparten una cápsula visual con fondo naranja translúcido y borde izquierdo
+    naranja sólido. Esto las agrupa como par causa-efecto ANTES de que el lector las lea,
+    cumpliendo la condición inamovible: "Protege tecnología Inverter" no puede estar en el
+    tiro desconectado visualmente del dato de velocidad.
+    Frase 3 (NTC) queda FUERA de la cápsula, estableciéndola como capa adicional independiente.
+  -->
+
+  <!-- CÁPSULA unificadora Frases 1 + 2 -->
+  <rect x="40" y="530" width="720" height="290" rx="8"
+        fill="url(#capsulaGradiente)"
+        stroke="#FF8200" stroke-width="2" stroke-opacity="0.7"/>
+
+  <!-- Borde izquierdo naranja sólido (refuerza el agrupamiento visual) -->
+  <rect x="40" y="530" width="6" height="290" rx="3" fill="#FF8200"/>
+
+  <!-- Ícono parpadeo / rayo (sistema de íconos Exceline — falla "Parpadeos") -->
+  <!-- Rayo simplificado en naranja: comunica velocidad y evento eléctrico -->
+  <g transform="translate(74, 555)">
+    <!-- Triángulo superior del rayo -->
+    <polygon points="18,0 0,28 12,28 6,58 28,22 16,22 24,0"
+             fill="#FF8200" opacity="0.9"/>
+    <!-- Círculo de "velocidad" alrededor del rayo -->
+    <circle cx="14" cy="29" r="34" fill="none" stroke="#FF8200" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- DATO CUANTITATIVO — tipografía dominante (primer elemento que capta el ojo) -->
+  <text x="148" y="600" fill="#FF8200" font-size="72" font-weight="900"
+        letter-spacing="-2" filter="url(#glow)">
+    &lt;0,03 s
+  </text>
+
+  <!-- Texto descriptivo Frase 1 — tipografía notoriamente menor que el dato -->
+  <text x="148" y="633" fill="#e0e0e0" font-size="15" font-weight="500" letter-spacing="0.5">
+    El más rápido ante parpadeos
+  </text>
+
+  <!-- Separador interno en la cápsula -->
+  <rect x="148" y="648" width="580" height="1" fill="#FF8200" opacity="0.3"/>
+
+  <!-- Ícono conector: onda eléctrica → flecha → símbolo inverter -->
+  <!-- Funciona como puente visual interno entre Frase 1 y Frase 2 -->
+  <g transform="translate(148, 660)">
+    <!-- Onda sinusoidal (fluctuación de red) -->
+    <path d="M 0,18 Q 12,0 24,18 Q 36,36 48,18 Q 60,0 72,18"
+          fill="none" stroke="#FF8200" stroke-width="2" opacity="0.7"/>
+    <!-- Flecha de bloqueo / interceptación -->
+    <line x1="90" y1="18" x2="130" y2="18" stroke="#FF8200" stroke-width="2.5" opacity="0.8"/>
+    <polygon points="130,12 142,18 130,24" fill="#FF8200" opacity="0.8"/>
+    <!-- Símbolo simplificado "inverter" (onda cuadrada + AC) -->
+    <path d="M 155,24 L 155,12 L 165,12 L 165,24 L 175,24 L 175,12 L 185,12 L 185,24"
+          fill="none" stroke="#FF8200" stroke-width="2" opacity="0.7"/>
+    <!-- Texto "INVERTER" mini -->
+    <text x="210" y="23" fill="#FF8200" font-size="11" font-weight="700" opacity="0.85"
+          letter-spacing="1">
+      INVERTER
+    </text>
+  </g>
+
+  <!-- FRASE 2: "Protege tecnología Inverter" -->
+  <text x="148" y="730" fill="#ffffff" font-size="22" font-weight="700" letter-spacing="0.3">
+    Protege tecnología Inverter
+  </text>
+
+
+  <!-- ===== ZONA 5: FRASE 3 — NTC (independiente, fuera de la cápsula) ===== -->
+  <!--
+    NTC está en bloque separado, estableciendo jerarquía como tercer claim.
+    Fondo neutro diferente al de la cápsula naranja → señala "capa adicional".
+    Tipografía ligeramente menor que Frases 1 y 2.
+  -->
+  <rect x="40" y="850" width="720" height="70" rx="6"
+        fill="#1e1e1e" stroke="#444" stroke-width="1.5"/>
+
+  <!-- Ícono termómetro / sensor NTC (esquemático) -->
+  <g transform="translate(64, 865)">
+    <!-- Cuerpo termómetro -->
+    <rect x="8" y="0" width="10" height="32" rx="5" fill="#737578"/>
+    <!-- Bulbo -->
+    <circle cx="13" cy="37" r="8" fill="#737578"/>
+    <!-- Línea de temperatura interna -->
+    <rect x="11" y="12" width="4" height="20" rx="2" fill="#FF8200" opacity="0.7"/>
+  </g>
+
+  <text x="114" y="880" fill="#cccccc" font-size="18" font-weight="600">
+    Sensor NTC incorporado
+  </text>
+  <text x="350" y="880" fill="#FF8200" font-size="22" font-weight="900">*</text>
+
+  <text x="114" y="904" fill="#888" font-size="12" font-weight="400" letter-spacing="0.3">
+    Autoprotección térmica del protector
+  </text>
+
+
+  <!-- ===== ZONA 6: ASTERISCO — nota de remisión al retiro ===== -->
+  <!--
+    Asterisco visible y legible, remite al bloque de retiro (Bruna §3.3).
+    Posicionado en área inferior izquierda para no competir con los claims.
+  -->
+  <rect x="40" y="944" width="720" height="2" fill="#333"/>
+
+  <text x="40" y="974" fill="#FF8200" font-size="14" font-weight="700">*</text>
+  <text x="56" y="974" fill="#888" font-size="12" font-weight="400">
+    Ver información del Sensor NTC al reverso del empaque.
+  </text>
+
+
+  <!-- ===== ZONA 7: DATOS DE MODELOS Y ESPECIFICACIONES TÉCNICAS ===== -->
+  <!-- Franja inferior — área para especificaciones técnicas (voltaje, corriente) -->
+  <!-- Oz completa con los datos de HDE para cada modelo -->
+  <rect x="0" y="1000" width="800" height="120" fill="#111111"/>
+  <rect x="0" y="1000" width="800" height="2" fill="#FF8200" opacity="0.4"/>
+
+  <text x="400" y="1030" text-anchor="middle" fill="#666" font-size="12" letter-spacing="1">
+    ESPECIFICACIONES TÉCNICAS
+  </text>
+  <!-- Placeholders para datos técnicos por modelo -->
+  <text x="130" y="1055" text-anchor="middle" fill="#888" font-size="11">Voltaje nom.</text>
+  <text x="130" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] V</text>
+
+  <text x="270" y="1055" text-anchor="middle" fill="#888" font-size="11">Corriente max.</text>
+  <text x="270" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] A</text>
+
+  <text x="410" y="1055" text-anchor="middle" fill="#888" font-size="11">Pot. protegida</text>
+  <text x="410" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] VA</text>
+
+  <text x="550" y="1055" text-anchor="middle" fill="#888" font-size="11">T° respuesta</text>
+  <text x="550" y="1072" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="700">&lt; 30 ms</text>
+
+  <text x="690" y="1055" text-anchor="middle" fill="#888" font-size="11">Hecho en</text>
+  <text x="690" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">Venezuela</text>
+
+  <!-- Franja QR (opcional — área reservada) -->
+  <rect x="40" y="1096" width="80" height="80" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="80" y="1141" text-anchor="middle" fill="#555" font-size="10">[QR]</text>
+  <text x="180" y="1122" fill="#555" font-size="11">¿Por qué &lt;0,03 s?</text>
+  <text x="180" y="1138" fill="#555" font-size="11">Escanea aquí</text>
+
+  <!-- Barra legal/barcode -->
+  <rect x="580" y="1100" width="180" height="60" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="670" y="1135" text-anchor="middle" fill="#444" font-size="10">[Código de barras]</text>
+
+
+  <!-- ===== NOTA DE REFERENCIA MODELO ===== -->
+  <!--
+    Este mockup usa GSM-RB como modelo de referencia.
+    GSM-MB / GSM-RF / GSM-RE: mismo layout, paleta de color específica por modelo.
+    Oz adapta la franja de color del blíster y los datos numéricos de HDE por modelo.
+  -->
+
+</svg>

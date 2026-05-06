@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Atlas AT-2 — Static Key Visual / Mockup Frente
+  Proyecto: 2026-04_GSM-MB-RB-RF_empaque
+  Alternativa: C (Narrativa causa-efecto — propuesta creativa Vael §9, confirmada Owner)
+  Modelo de referencia: GSM-RB (los otros 3 modelos siguen mismo layout con paleta correspondiente)
+  Fecha: 2026-05-03
+  Estado: Arte casi final — para presentación a Junta Directiva
+  Resolución: 800 x 1200 px (proporción blíster frente) — RGB para presentación digital
+
+  VERIFICACIÓN DE ESPACIO (requerida por Solenne SO-1 Duda 2):
+  Frase dominante completa: "Actúa en < 0,03 s antes de que la fluctuación llegue a tu equipo"
+  Caracteres aprox.: 62 caracteres + espacios.
+  A tipografía 20px Montserrat Bold en 680px de ancho útil: cabe en 2 líneas de lectura fluida.
+  VEREDICTO: LA FRASE DOMINANTE COMPLETA ES VIABLE en este mockup.
+  Condición: tipografía mínima 18px, dividida en 2 líneas naturales, con espacio de lectura
+  generoso. No se requiere la versión reducida ("dañe" en lugar de "llegue").
+  Atlas confirma factibilidad y usa la versión completa (Claim K aprobado por Bruna).
+
+  ARQUITECTURA VISUAL C:
+  - Estructura narrativa, no de badges.
+  - Frase dominante = protagonista único del tiro.
+  - Dato "<0,03 s" embebido en la frase, no aislado.
+  - Sub-texto NTC* + Protección Inverter: claramente secundario, no compite.
+  - Ícono narrativo: cadena fluctuación → respuesta ultrarrápida → equipo intacto.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200"
+     font-family="Montserrat, 'Futura Bold', Arial, sans-serif">
+
+  <defs>
+    <linearGradient id="fondoPrincipalC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <!-- Gradiente para zona narrativa — más amplia y abierta -->
+    <linearGradient id="zonaAtmosfera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8200" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FF8200" stop-opacity="0.02"/>
+    </linearGradient>
+    <!-- Gradiente radial para el ícono narrativo -->
+    <radialGradient id="iconoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF8200" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF8200" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glowC" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="iconoShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ===== FONDO ===== -->
+  <rect width="800" height="1200" fill="url(#fondoPrincipalC)"/>
+  <rect x="0" y="0" width="800" height="8" fill="#FF8200"/>
+  <rect x="0" y="1192" width="800" height="8" fill="#FF8200"/>
+
+
+  <!-- ===== ZONA 1: LOGO EXCELINE PROFESIONAL ===== -->
+  <rect x="40" y="28" width="320" height="56" rx="4" fill="none" stroke="#FF8200" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="200" y="60" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="600" letter-spacing="1">
+    EXCELINE PROFESIONAL [logo aquí]
+  </text>
+  <rect x="40" y="94" width="720" height="2" fill="#FF8200" opacity="0.6"/>
+
+
+  <!-- ===== ZONA 2: LENGÜETA — DIFERENTE A A Y B ===== -->
+  <!--
+    Alternativa C usa "EL MÁS RÁPIDO DE LA CATEGORÍA" — Claim J aprobado Bruna.
+    Esto diferencia la lengüeta de C vs A y B y refuerza la narrativa de velocidad como
+    protagonista único sin acotación a "parpadeos" (caveat al retiro cumple la función).
+  -->
+  <rect x="40" y="110" width="720" height="80" rx="6" fill="#FF8200"/>
+  <text x="400" y="144" text-anchor="middle" fill="#0d0d0d" font-size="16" font-weight="800"
+        letter-spacing="4">
+    NUEVO
+  </text>
+  <text x="400" y="172" text-anchor="middle" fill="#0d0d0d" font-size="22" font-weight="900"
+        letter-spacing="0.5">
+    EL MÁS RÁPIDO DE LA CATEGORÍA
+  </text>
+
+
+  <!-- ===== ZONA 3: IMAGEN PRODUCTO GSM-RB ===== -->
+  <!--
+    En C la imagen del producto puede tener más presencia visual porque el copy
+    narrativo crea el argumento — la imagen refuerza el "equipo protegido".
+    Mantiene mismas proporciones que A y B para coherencia de presentación.
+  -->
+  <rect x="220" y="210" width="360" height="260" rx="8" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <text x="400" y="326" text-anchor="middle" fill="#555" font-size="14">
+    Foto producto GSM-RB
+  </text>
+  <text x="400" y="346" text-anchor="middle" fill="#555" font-size="12">
+    (Oz inserta imagen oficial)
+  </text>
+  <text x="400" y="458" text-anchor="middle" fill="#888" font-size="13" letter-spacing="2">
+    GSM-RB
+  </text>
+
+
+  <!-- ===== ZONA 4: ÍCONO NARRATIVO — Cadena fluctuación → respuesta → equipo intacto ===== -->
+  <!--
+    LIBERTAD CREATIVA C (Solenne SO-1):
+    Ícono narrativo que representa la cadena completa: fluctuación eléctrica → intercepción
+    ultrarrápida → equipo intacto. Es el elemento de mayor originalidad visual del empaque.
+
+    DISEÑO: Tres elementos en línea horizontal, conectados por flechas:
+    1. Onda sinusoidal distorsionada (fluctuación) — color gris/blanco tenso
+    2. Rayo interceptor (el protector actuando en <0,03 s) — naranja Exceline, más grande
+    3. Símbolo de equipo inverter intacto (checkmark sobre símbolo AC) — verde/blanco tranquilo
+
+    La narrativa visual está en el contraste: izquierda=amenaza (tensión) → centro=respuesta
+    (energía naranja) → derecha=protección (calma).
+  -->
+  <rect x="40" y="490" width="720" height="130" rx="8" fill="url(#zonaAtmosfera)"/>
+
+  <!-- Glow de fondo para el ícono central -->
+  <ellipse cx="400" cy="555" rx="80" ry="50" fill="url(#iconoGlow)"/>
+
+  <!-- --- ELEMENTO 1: Onda fluctuante / perturbación --- -->
+  <g transform="translate(80, 510)">
+    <!-- Onda distorsionada — representa la fluctuación de red -->
+    <path d="M 0,40 Q 10,10 20,40 Q 30,70 40,40 Q 50,10 60,40 Q 70,65 80,30 Q 90,5 100,50"
+          fill="none" stroke="#aaaaaa" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Pico de tensión (el "parpadeo") — más agresivo -->
+    <path d="M 38,40 L 46,8 L 54,40"
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Etiqueta -->
+    <text x="50" y="88" text-anchor="middle" fill="#888" font-size="11" font-weight="500">
+      Fluctuación
+    </text>
+  </g>
+
+  <!-- Flecha de transición 1→2 -->
+  <line x1="210" y1="555" x2="256" y2="555" stroke="#FF8200" stroke-width="2" opacity="0.6"/>
+  <polygon points="256,549 268,555 256,561" fill="#FF8200" opacity="0.6"/>
+
+  <!-- --- ELEMENTO 2: Protector interceptando (núcleo del ícono) --- -->
+  <g transform="translate(280, 500)" filter="url(#glowC)">
+    <!-- Círculo de acción del protector -->
+    <circle cx="50" cy="55" r="48" fill="#FF8200" fill-opacity="0.1"
+            stroke="#FF8200" stroke-width="2"/>
+    <!-- Rayo interceptor — el protector actuando -->
+    <polygon points="58,10 30,50 46,50 34,100 76,45 58,45 68,10"
+             fill="#FF8200"/>
+    <!-- Dato cuantitativo embebido en el ícono -->
+    <text x="50" y="120" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="900">
+      &lt;0,03 s
+    </text>
+  </g>
+
+  <!-- Flecha de transición 2→3 -->
+  <line x1="390" y1="555" x2="436" y2="555" stroke="#FF8200" stroke-width="2" opacity="0.6"/>
+  <polygon points="436,549 448,555 436,561" fill="#FF8200" opacity="0.6"/>
+
+  <!-- --- ELEMENTO 3: Equipo intacto --- -->
+  <g transform="translate(460, 510)">
+    <!-- Símbolo de equipo inverter protegido (inverter + checkmark) -->
+    <!-- Rectángulo: el equipo -->
+    <rect x="10" y="10" width="80" height="55" rx="6"
+          fill="none" stroke="#aaaaaa" stroke-width="2"/>
+    <!-- Símbolo AC en el equipo -->
+    <path d="M 30,37 Q 40,22 50,37 Q 60,52 70,37"
+          fill="none" stroke="#aaaaaa" stroke-width="2"/>
+    <!-- Checkmark naranja — protegido -->
+    <path d="M 65,15 L 72,25 L 88,8"
+          fill="none" stroke="#FF8200" stroke-width="3" stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <!-- Etiqueta -->
+    <text x="50" y="88" text-anchor="middle" fill="#888" font-size="11" font-weight="500">
+      Equipo intacto
+    </text>
+  </g>
+
+
+  <!-- ===== ZONA 5: FRASE DOMINANTE ===== -->
+  <!--
+    VERIFICACIÓN DE ESPACIO CONFIRMADA:
+    "Actúa en < 0,03 s antes de que la fluctuación llegue a tu equipo"
+    División natural en 2 líneas:
+    Línea 1: "Actúa en < 0,03 s antes de que"  — aprox. 34 chars
+    Línea 2: "la fluctuación llegue a tu equipo" — aprox. 34 chars
+    A 20px Montserrat Bold con tracking normal: ~14px por carácter → 476px por línea.
+    Ancho disponible: 680px. CABE CON MARGEN.
+    Tip para Oz: la fracción "<0,03 s" dentro de la frase debe recibir color #FF8200
+    para destacar el dato cuantitativo sin romper la continuidad narrativa.
+  -->
+  <rect x="40" y="640" width="720" height="148" rx="8"
+        fill="#1e1e1e" stroke="#FF8200" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Borde izquierdo naranja -->
+  <rect x="40" y="640" width="7" height="148" rx="3" fill="#FF8200"/>
+
+  <!-- Frase dominante — tipografía grande, 2 líneas -->
+  <!-- Línea 1 — con el dato cuantitativo resaltado en naranja -->
+  <text x="70" y="686" fill="#ffffff" font-size="24" font-weight="700" letter-spacing="0.2">
+    Actúa en
+  </text>
+  <text x="196" y="686" fill="#FF8200" font-size="28" font-weight="900"
+        filter="url(#glowC)">&lt;0,03 s</text>
+  <text x="360" y="686" fill="#ffffff" font-size="24" font-weight="700" letter-spacing="0.2">
+    antes de que
+  </text>
+
+  <!-- Línea 2 -->
+  <text x="70" y="724" fill="#ffffff" font-size="24" font-weight="700" letter-spacing="0.2">
+    la fluctuación llegue a tu equipo
+  </text>
+
+  <!-- Línea divisora interna -->
+  <rect x="70" y="740" width="640" height="1" fill="#FF8200" opacity="0.3"/>
+
+  <!-- Sub-texto compacto — claramente secundario -->
+  <text x="70" y="769" fill="#888" font-size="15" font-weight="500">
+    Sensor NTC* + Protección Inverter incluidos
+  </text>
+
+
+  <!-- ===== ZONA 6: ASTERISCO ===== -->
+  <rect x="40" y="812" width="720" height="2" fill="#333"/>
+
+  <text x="40" y="840" fill="#FF8200" font-size="14" font-weight="700">*</text>
+  <text x="56" y="840" fill="#888" font-size="12" font-weight="400">
+    Ver información del Sensor NTC al reverso del empaque.
+  </text>
+
+  <!--
+    NOTA DE DISEÑO C — ESPACIO:
+    C tiene significativamente más "aire" entre la Zona 6 y la zona de specs que A o B.
+    Esto se debe a que la arquitectura narrativa de 1 frase + sub-texto compacto
+    ocupa menos espacio vertical que los 3 badges de A o los 2 de B.
+    Este espacio puede usarse para:
+    (a) ampliar el ícono narrativo si Oz lo considera,
+    (b) añadir un elemento de respaldo de credibilidad ("Laboratorio I&D Genteca"),
+    (c) preservarlo como respiro visual (recomendado por Atlas — no saturar).
+    Atlas elige preservarlo: el respiro es el argumento visual de C.
+  -->
+
+  <!-- ===== ZONA 7: SPECS TÉCNICAS ===== -->
+  <rect x="0" y="1000" width="800" height="120" fill="#111111"/>
+  <rect x="0" y="1000" width="800" height="2" fill="#FF8200" opacity="0.4"/>
+
+  <text x="400" y="1030" text-anchor="middle" fill="#666" font-size="12" letter-spacing="1">
+    ESPECIFICACIONES TÉCNICAS
+  </text>
+  <text x="130" y="1055" text-anchor="middle" fill="#888" font-size="11">Voltaje nom.</text>
+  <text x="130" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] V</text>
+
+  <text x="270" y="1055" text-anchor="middle" fill="#888" font-size="11">Corriente max.</text>
+  <text x="270" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] A</text>
+
+  <text x="410" y="1055" text-anchor="middle" fill="#888" font-size="11">Pot. protegida</text>
+  <text x="410" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">[XX] VA</text>
+
+  <text x="550" y="1055" text-anchor="middle" fill="#888" font-size="11">T° respuesta</text>
+  <text x="550" y="1072" text-anchor="middle" fill="#FF8200" font-size="13" font-weight="700">&lt; 30 ms</text>
+
+  <text x="690" y="1055" text-anchor="middle" fill="#888" font-size="11">Hecho en</text>
+  <text x="690" y="1072" text-anchor="middle" fill="#aaa" font-size="13" font-weight="600">Venezuela</text>
+
+  <!-- QR -->
+  <rect x="40" y="1096" width="80" height="80" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="80" y="1141" text-anchor="middle" fill="#555" font-size="10">[QR]</text>
+  <!-- Candidata 2 de Solenne — más apropiada para C (frase accesible) -->
+  <text x="180" y="1122" fill="#555" font-size="11">Descubre cómo protege</text>
+  <text x="180" y="1138" fill="#555" font-size="11">tu equipo</text>
+
+  <!-- Barcode -->
+  <rect x="580" y="1100" width="180" height="60" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="670" y="1135" text-anchor="middle" fill="#444" font-size="10">[Código de barras]</text>
+
+</svg>

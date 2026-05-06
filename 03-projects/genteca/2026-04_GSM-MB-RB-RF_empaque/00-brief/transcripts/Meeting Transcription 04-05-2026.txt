@@ -1,0 +1,165 @@
+# Meeting Transcription 04-05-2026
+
+  Meeting started: 4/5/2026, 11:50:31
+  Duration: 36 minutes
+  Participants: Alberto Betancourt, Raoul Bermudez
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/2cP1dSxOO6dIyVh3iaCf?o=txt)
+
+    
+
+  ## Notes
+
+  NTC protege por temperatura, al protector. Si la elevacion de temperatura es debida a sobrecorriente, pues entonces  protege a la instalacion y si el equipo es grande, y la sobrecorriente es por problemas en el equipo, pues también desconcta protegiendo para este caso de equipos grandes, al mismo equipo. El tiempo de disparo ante flickers de menos de 0,03 segundos, es la verdadera diferenciacion para poder decir que protege equipos inverter
+
+  
+    ## Highlights
+
+    > 20:03 Raoul Bermudez: Norte que tú siempre nos das descubrí que somos los únicos que tenemos cero coma cero tres segundos para abajo todos los demás que hablan de tiempo de respuesta rápida son de doscientos y trescientos milisegundos, no de treinta estamos hablando de diez veces menos. Esa característica que hubiera que mira que busqué todos los hojas de de especificaciones de todos los competidores nadie tiene 30 milisegundos. Entonces eso es un elemento importantísimo que la que la consecuencia Y fíjate lo
+
+  ## Transcript
+
+  00:00 Raoul Bermudez: Hola hola Hola hola hola hola.
+03:27 Raoul Bermudez: Se oye se oye? Buenas tardes, reunión es para hablar acerca de el NTC que es la protección por temperatura de los protectores de la línea gsmr y básicamente estamos hablando para incorporar lo que José Miguel canodas, nos dijo hace un par de días algunas gran cantidad de ventajas que se pueden aprovechar sin tener miedo de que digamos que tenemos una protección que protege al mismo protector Porque además, eso es lo que permite que proteja también a los cables que van por la instalación y adicionalmente garantiza el tiempo de disparo desde cero coma cero tres segundos que es lo que ocasiona. Gracias a eso hay diferente al resto de los protectores del mercado que podamos ser inverter de verdad los que dicen que son compatibles inversas porque tengan supresores épico al no tener los cero coma cero tres segundos o menos.
+04:33 Raoul Bermudez: Pues no realmente no están protegiendo bien equipos inversos. Entonces eso es una una pata coja que tiene la competencia Y tenemos nosotros que sacarle provecho.
+11:37 Raoul Bermudez: Hola Raúl Cómo estás Mira Me acaba de llamar el señor Martín para consultar la reunión y me pide que si podríamos tener esta información del gcmrd de antes de las tres de la tarde que es cuando se desconecta Avísame por favor, Gracias
+12:22 Raoul Bermudez: Hola hola
+12:59 Raoul Bermudez: Hola Raúl Cómo estás Mira Me acaba de llamar el señor Martín para consultarme acerca de cómo nos ha vivido una reunión y me pide que si podríamos tener esta información del ccnrd de antes de las tres de la tarde que es cuando se desconecta Avísame porfa En qué termina tu reunión con Quique para para darle respuesta gracias
+14:53 Raoul Bermudez: luego comen Cómo estás Me oyes? Cómo estás
+15:15 Alberto Betancourt: Bien tú.
+15:18 Raoul Bermudez: Bien, bien, bien. Obvio que paciencia como Osvaldo vale una vaina que yo le mandé que estaba perfectamente descrito y de repente la sorpresa para mí que ahora no aparece supervisor. Yo c*** será que yo me equivoqué y cuando reviso rota todo perfecto, o sea, él tenía que preguntarme yo te voy a mandar los archivos, que yo le envié a él para que tú los veas todo descrito sugiero colocar. Aquí cambia esto por esto ya gráficamente c***, ya yo no le puedo
+15:47 Alberto Betancourt: Sí, no, Claro no, el a veces se pone terquito, pero hay que decir ese es tu
+15:47 Raoul Bermudez: hacer el trabajo.
+15:53 Alberto Betancourt: reto pana ese, o sea, eso tiene que estar ahí.
+15:57 Raoul Bermudez: Exacto bueno bájale el bájale el tamaño aquí Súbele el tamaño aquí ahora el nombre el nuevo nombre que es prohibido promotor. Eso tiene que estar Eso es parte de la parte de mercadeo, que estamos trabajando.
+16:06 Alberto Betancourt: y se puede meter perfectamente, o sea
+16:10 Raoul Bermudez: Y ahora fíjate la mentalidad de él, pensaba que haciendo que haciendo una
+16:11 Alberto Betancourt: yo
+16:14 Raoul Bermudez: etiqueta las demás eran iguales, pero si precisamente son equipos diferentes que tienen características diferentes para instalarlo en lugares diferentes, cómo me va a decir que bueno, vamos a hacer otro igual, no? Y yo le mandé la
+16:26 Alberto Betancourt: no, pero
+16:26 Raoul Bermudez: presentación, le expliqué.
+16:29 Alberto Betancourt: Sí, no, O sea yo entiendo que hay un estilo que es igual para todos, pero tiene que adaptarlo cada uno.
+16:35 Raoul Bermudez: Claro que sí Sí precisamente si los equipos fueran todos iguales para que tengo cuatro modelos. Bueno entonces eso es algo a mí es que a mí me preocupa que Osvaldo que es un tipo que es un buen diseñador él no haga un pequeño esfuerzo por entender un poco más lo que Es una llamada o por preguntar y entonces hace cosas que que no tiene sentido O sea si él encierra un esfuerzo Pues yo el otro día pero yo te puedo explicar para que no no no, no, tú me pones ahí lo que yo tengo que poner y ya c***, Imagínate tú.
+17:14 Alberto Betancourt: Sí también Hay que tenerle paciencia, porque fíjate un diseñador. Por lo general este se motiva haciendo muchas cosas distintas cuando tú trabajas en una compañía como genteca. que tienes que estar siendo básicamente lo mismo etiquetas blister Tales de Te llegas a medio encerrar tú a ti mismo. Y yo creo que algo de eso le pasa a él, entonces llega un momento que él cree que las cosas hay una sola manera de hacerla. Este Y entonces Bueno hay que sacarlo de eso.
+17:55 Alberto Betancourt: Yo viste, yo le dije Bueno sí es el reto de un diseñador todo eso tiene que
+17:55 Raoul Bermudez: Eso es la Ese es el reto.
+18:01 Alberto Betancourt: estar ahí tu desafío es cómo las ordenas y las pones bonitas y legibles.
+18:01 Raoul Bermudez: Es que hay que sacarlo. Por eso y fuimos y Los dos fuimos muy tajantes, No mira, eso es un elemento diferenciador y por eso son diferentes y son importantes y es lo que estamos diciendo eso tiene que estar si yo de verdad ya soy un técnico y no tengo Cómo ajustar el tiempo de disparo v****, estaba viendo cómo es que dispara no, eso no sirve y más bien es una vaina mucho más sofisticada. Ojo que la idea que
+18:22 Alberto Betancourt: claro
+18:24 Raoul Bermudez: él tiene de ponerlo donde van los ajustes no es descabellado, si tiene espacio ahí arriba, dice tiempo de disparo por curva inversa y pone una vaina bien bonita con una curva así dibujita, eso queda machetísimo.
+18:36 Alberto Betancourt: Claro claro
+18:38 Raoul Bermudez: Pero bueno Mira algo tengo algo interesantísimo que estuve echándole mucho coco e investigando también este el fin de semana y es que con lo que José Miguel trajo la mesa de Que bueno que lo del tiempo cero coma cero tres Es verdad que que es importante y él tiene toda la razón y no no habíamos hablado antes de eso eso vino a la mesa en estas últimas semanas o dos semanas.
+19:06 Alberto Betancourt: conversaciones
+19:08 Raoul Bermudez: Conversaciones y lo del NTC que tú y yo cuando lo conversamos dijimos si más bien poner NTC llama la atención para investigar más que c*** eso es NTC o sea, es algo así como esta vainas arrecha una Innovación Qué es eso Entonces
+19:16 Alberto Betancourt: claro claro
+19:21 Raoul Bermudez: desde ese punto de vista este cuando yo le escribí lo que le escribí que te lo copia a ti y te lo copias en el correo este que le puse una vez que íbamos a poner NTC para ver qué decía. Él dijo bueno consúltalo con Kike soy yo ya estamos listos entonces Claro claro, claro. Ahora fíjate, fíjate lo
+19:38 Alberto Betancourt: Listo Yo lo pondría este claro.
+19:43 Raoul Bermudez: interesante que que yo estuve investigando desde el punto de vista técnico porque bueno conozco y puedo puedo entender un poco el funcionamiento. Y además siempre escuchando los consejos tuyos, que ya lo tengo aquí grabado de que si hay algo diferente y que hacemos mejor que la competencia hay que decirlo bueno, resulta resulta que descubrí con esa con esa guía Y esa ese
+19:59 Alberto Betancourt: claro
+20:03 Raoul Bermudez: Norte que tú siempre nos das descubrí que somos los únicos que tenemos cero coma cero tres segundos para abajo todos los demás que hablan de tiempo de respuesta rápida son de doscientos y trescientos milisegundos, no de treinta estamos hablando de diez veces menos. Esa característica que hubiera que mira que busqué todos los hojas de de especificaciones de todos los competidores nadie tiene 30 milisegundos. Entonces eso es un elemento importantísimo que la que la consecuencia Y fíjate lo
+20:31 Alberto Betancourt: claro
+20:34 Raoul Bermudez: interesante de esto la consecuencia es que eso sí te permite decir que de verdad protege equipos inverter porque si no tienes un tiempo tan bajito Aunque digas que es inverter es mentira.
+20:47 Alberto Betancourt: Te quema la tarjeta. En pico no?
+20:51 Raoul Bermudez: Se quema la tarjeta y no estamos hablando de picos, sino de de flickers.
+20:55 Alberto Betancourt: De flickers, sí sí.
+20:56 Raoul Bermudez: De flicker Entonces eso es de voltaje cero voltaje arriba voltaje cero voltaje arriba en fracciones de segundo eso produce y tengo la explicación y todo que te lo voy a enviar todo el documento para que tú veas qué interesante eso produce que dañe a unos componentes específicos de las tarjetas de los inverter Y fíjate, que no tiene que ver con los picos de voltaje altos, eso que son picos de muy corto tiempo y muy alto, que eso vienen por rayos o por maniobras.
+21:21 Raoul Bermudez: problema porque esos supresores de pico los equipos de verter, ya lo traen a la entrada de su de su de su energía de de su de su analización porque ellos saben que los supervisores los daña Entonces ellos mismos ellas ponen sus supresores entonces si yo le pongo un supresor a un protector mío y digo que por poner un supresor es compatible con inverter Simplemente estoy poniéndole un supresor adicional al que ya trae el equipo inverter lo que verdaderamente me protege al inverter no es el tema de los picos, sino el tema del tiempo de respuesta ante los flicker porque los flickers es lo que dañan las tarjetas y que esos no son picos altos de voltaje son que bien y se va bien y se va en
+22:01 Alberto Betancourt: Sí, sí, sí sí.
+22:02 Raoul Bermudez: periodos muy cortos entonces Esa diferencia nos hace a nosotros ser los únicos que de verdad podemos decir que somos inversores somos los más rápidos de verdad de cero coma cero tres, pero la consecuencia de eso es que podemos proteger equipos invertir y electrónica más delicada y además tenemos lo del calentamiento, o sea, son dos innovaciones un solo en un solo momento y las dos hay Que decirlas como lo planteamos.
+22:24 Raoul Bermudez: Bueno en realidad fíjate y además con lo que puso José Miguel que el hecho de que la protección por calentamiento cuando es una corriente alta lo que produce el calentamiento eso esa corriente alta para lo cual están diseñados también el Breaker y los cables hasta un valor tope entonces significa que el protector cuando es por corriente alta que se calienta no por malos contactos pero sí por corriente alta sí va a proteger a los cables.
+22:52 Raoul Bermudez: instalación Entonces, Fíjate que interesante Entonces sí protege la instalación Aunque No necesariamente proteja a la carga Por qué se lo explico muy sencillo, si el equipo es grande la corriente es grande protege el cable y protege el equipo el calentamiento O sea la reacción por calentamiento, si el equipo es pequeño la corriente no es grande al cable, no le va a pasar nada, pero el equipo pequeño sí se va a quemar entonces No podemos decir que protege el equipo, pero siempre va a proteger a la instalación Entonces eso también lo podemos decir entonces es interesantísimo. Cómo cómo se conjuga todo Yo estoy trabajando inclusive en ver cómo lo podemos poner en los empaques, déjame terminar de eso y te mando toda la explicación porque inclusive ya tengo las explicaciones hasta para los videos que podemos hacer A través del código QR que va en el empaque para explicar la vaina completo.
+23:42 Raoul Bermudez: Entonces fíjate una pregunta que te voy a hacer porque me parece interesante Este nosotros, en vez de poner el código QR allá abajo botado perdido. Lo pudiéramos poner a ver qué te parece la idea, dónde van los títulos en estoy hablando de la hoja que la c en el frente donde vamos a poner el más rápido del Mercado o algo así cero coma cero menos es cero coma cero tres segundos justamente abajo y con una flecha que lo relacione la mejor protege tecnología inverter auténtica protección de tecnología inverter tenemos que darle la vuelta y adicionalmente lo del calentamiento Entonces los tres. Nosotros podemos hacer como algo gráfico bonito.
+24:22 Raoul Bermudez: Y poner el código QR justo al lado de manera que la gente entienda que esas tres cosas están explicadas en detalle en ese código QR que nos permite página web texto explicativo video explicativo todo es una idea.
+24:38 Alberto Betancourt: Chévere Me parece que está bien la el otro sitio donde se puede poner en la
+24:41 Raoul Bermudez: entonces
+24:43 Alberto Betancourt: lengüeta.
+24:45 Raoul Bermudez: Sí yo lo pensé también, pero que la lengüeta no tenemos mucho espacio porque vamos a poner nuevo.
+24:49 Alberto Betancourt: protección más completa o sea luego la protección más completa algo así
+24:54 Raoul Bermudez: Exacto ahí sí y a lo mejor hay que nuevo protección completa porque de verdad que la lengüeta siempre va Bueno un poquito más pequeño pero ahí Además del
+25:02 Alberto Betancourt: yo
+25:03 Raoul Bermudez: código QR a mí me encantaba la idea, Pues yo se lo planteé también en una reunión a José Miguel y a keidy dijo c*** pero ponemos Cuando tenemos con la discusión que la lengüeta no podíamos ponerlo de término. Yo dije c*** pero ponemos el código QR y en la lengüeta Y entonces los dos, no, pero eso es una buena idea a mí me parece que es excelente porque me llamó la atención.
+25:22 Alberto Betancourt: Claro que sí y todo el mundo tiene un celular.
+25:27 Raoul Bermudez: Claro, y además la lengüeta siempre queda más acá porque está abajo, está el protector y queda más cerca y c*** está perfecto para darle eso es una buena idea este y si a lo mejor tenemos que quitarle la palabra nueva para poder poner el el código qrs. protección total protección nuevos nuevos nuevos es más importante nuevo
+25:47 Alberto Betancourt: Nuevo nuevos importantes es muy es muy importante, Sí sí es muy importante Porque además, es que ese es un producto muy popular.
+25:57 Raoul Bermudez: Mira aquí que a lo mejor podemos poner nuevo grandote el código QR y una pregunta al lado por qué? O en qué O sea como para invitar a que la gente nuevo y qué es lo que es nuevo aquí?
+26:07 Alberto Betancourt: Sí, sí. Claro, o Averígualo no sé.
+26:11 Raoul Bermudez: Ah eso eso Averígualo Averígualo Y entonces Ah c*** tengo que ver el escanear aquí para que me explique qué c*** es lo que es nuevo además de los clientes están en el empaque Eso me parece me parece buenísimo nuevo y el código QR a
+26:21 Alberto Betancourt: claro
+26:25 Raoul Bermudez: mí me encanta eso de eso yo lo planteé y me dijeron que no pero teniendo el
+26:27 Alberto Betancourt: Qué bien.
+26:31 Raoul Bermudez: respaldo tuyo no, no me van a decir que no
+26:36 Alberto Betancourt: No, Claro claro, o sea, no, no le pare Kevin izquierdo, estaba como toda persona
+26:39 Raoul Bermudez: Okay okay.
+26:42 Alberto Betancourt: nueva buscando su protagonismo.
+26:46 Raoul Bermudez: Es normal, es normal.
+26:47 Alberto Betancourt: Y Está chévere, o sea, es una persona este, cómo se llama bien proactiva.
+26:49 Raoul Bermudez: Sí está bien. Sí, totalmente eso yo prefiero a gente que haya que frenar la gente que haya que empujar.
+26:57 Alberto Betancourt: Así es así es Preferible tener que frenar un loco que tenés que estar expoliando a alguien que no no tiene iniciativa.
+27:08 Raoul Bermudez: Exacto Exacto Exacto Entonces fíjate a mí me encanta nuevo Averígualo código y el código correcto genial No eso sí eso es un palazo.
+27:20 Alberto Betancourt: Sí, Y si no les gusta la junta directiva este protección completa o
+27:23 Raoul Bermudez: Al lado de los tres al lado ahí al ladito.
+27:25 Alberto Betancourt: protección más completa, o sea, en la lengüeta nuevo protección más completa o protección completa y tienes los tres al lado.
+27:35 Raoul Bermudez: Sí, sí, sí, sí sí sí.
+27:36 Alberto Betancourt: Si no, si no se si no se cómo se llama animan a lo del QR nada más y Averígualo Y si si no lo si no lo aceptan entonces ponemos protección más completa. Y en el blister se puede poner el QR abajo?
+27:56 Raoul Bermudez: Al lado de los tres puede ser?
+27:58 Alberto Betancourt: Así es o debajo de los tres donde quepan.
+28:02 Raoul Bermudez: A la derecha creo que cae por los tres van de izquierda a derecha y justo a la derecha y ahí inclusive puede haber Bueno yo no, no es que estoy diciendo que va por una llave, pero algo que que se vea que que todo lo vas a averiguar en ese código QR la explicación detallada de esos tres menos de cero coma cero tres segundos la más rápida, eso como consecuencia tiene que proteger su equipo inverter auténticamente y además tengo lo del calentamiento que protege el sistema y el mismo protector con el código QR le damos un palo.
+28:32 Alberto Betancourt: De acuerdo, completamente.
+28:36 Raoul Bermudez: Buenísimo, entonces déjame hacer esas propuestas para trabajarlas porque Martín quiere esta tarde ver la la idea, entonces bueno, no evidentemente no le va a dar tiempo a Osvaldo a gráficamente trabajar eso a realizarla Pero bueno,
+28:48 Alberto Betancourt: A realizarla.
+28:51 Raoul Bermudez: yo voy a hacer ahí mi intento así, Mira le pegaré encima una broma a la imagen, Mira eso es lo que está planteado. Te voy a mandar toda la explicación porque es interesantísimo todo lo que averigüé, pero c***, si nadie tiene cero coma cero tres y esa es la razón que protejo inverter los que están diciendo que protegen inverter están diciendo algo que no es cierto.
+29:09 Alberto Betancourt: Es mentira.
+29:12 Raoul Bermudez: Es una de esas cosas que que Martín quería descubrir de qué decir de la competencia parece que no sirve bueno Y tienes una.
+29:16 Alberto Betancourt: Y a la explicación lo puedes decir. Este puedes decir si no actúa en esta velocidad no protege efectivamente ningún trabajo invertido.
+29:30 Raoul Bermudez: Exactamente Y esa explicación es técnica, pero el que va a escanear para entender Por qué. Ah, c*** Esto sí, de verdad, no Esto sí explica de verdad Que porque protege inversa.
+29:39 Alberto Betancourt: Claro, y lo que sería bueno, es que en el laboratorio nuestro nos metieran las velocidades de respuesta de las competidores para que nuestros vendedores El
+29:46 Raoul Bermudez: Y revisar la nuestra.
+29:48 Alberto Betancourt: vendedor, cuando vaya para allá le dice mira este protector que está aquí reacciona en tantos milisegundos y este mío en cero coma tanto milisegundos.
+30:00 Raoul Bermudez: Pero cómo es cero cero coma cero tres segundos O menos es menos, Ah Y eso sí protege inverter y porque podemos hacer videos para los vendedores con la explicación para que se lo muestren en la agencia, o sea, así sea guerra de guerrilla, que estaba viendo circule, no importa.
+30:17 Alberto Betancourt: No, no, pero ellos, o sea, ellos. Deberían tener eso Mira contraprotector. Aquí estoy en contra tq aquí estoy contra este que tengan la información. porque las matemáticas los números son También mágicos una cosa, es que tú digas yo protejo más otra cosa que tú digas, yo tengo una velocidad de respuesta de cero coma tres segundos y los otros tienen tanto. Diez veces más eso los números convencen más que cualquier otra cosa.
+30:53 Raoul Bermudez: Sí sí, Y eso esa me gusta de diez veces diez veces más lento o decir que nosotros somos diez veces más rápido.
+30:59 Alberto Betancourt: así
+31:00 Raoul Bermudez: Y por eso sí protegemos inverte porque es que está conectado a una cosa con la
+31:03 Alberto Betancourt: Es somos dioses más rápido que es lo que necesita la tecnología inverter.
+31:03 Raoul Bermudez: otra. Eso está perfecto. Eso está perfecto. Somos diez veces más rápido que es lo que necesita la tecnología inverter para estar Bien protegida. Entonces si somos auténticamente somos protectores Auténticos de tecnología inverter los demás son puros factura falsedad y pura mentira.
+31:27 Alberto Betancourt: habladores de pendejadas
+31:28 Raoul Bermudez: Habladora de pendejada el cuello es que es verdad es impresionante eso c***** dice en cualquier huevona.
+31:33 Alberto Betancourt: Bueno, c***, que la desfachatez, yo no sé si tú llegaste a ver habían. copias chinas Que decían generación de tecnología y excellence y todo y era una copia china, no era fabricada por enteca.
+31:49 Raoul Bermudez: que descaro tan
+31:50 Alberto Betancourt: O sea descaro, pero a todos esos se les metieron. Abogados Y tal Pero hasta ahí ese nivel llegaron al descano.
+31:59 Raoul Bermudez: Bueno, Eso habla bien de la marca, Porque si quieren copiarse es porque tú eres
+32:02 Alberto Betancourt: Sí claro.
+32:04 Raoul Bermudez: el líder.
+32:05 Alberto Betancourt: Claro en inglés está el dicho que dice la mejor adulación, pues es la copia.
+32:16 Raoul Bermudez: Claro, y fíjate que algo interesante de lo que yo creo que tú estás, que ya tengo tantas reuniones, que no me acuerdo dónde estamos los dos. El otro día Cecilio decía Bueno pero si vienen entonces Y de verdad sacan un protector que sea más rápido y que de verdad saca uno con curva inversa y queda yo dije perfecto Cecilio porque qué significa eso significa que nos están copiando que van a tener que invertir más para tener esta tecnología que van a ser más caros y no van a decir que hacen vainas que no hacen a un precio muy barato, que es el engaño es decir si lo vas a tener que hacer de verdad, tienes que
+32:50 Alberto Betancourt: Te va a costar más claro, les va a costar más y no y no.
+32:50 Raoul Bermudez: invertir más te va a costar más y nosotros tenemos la marca la marca que te da el Premium de precio, es la marca lo que da el Premium de precio no es una vaina que de funciones que te pueden invitar chévere, por lo menos estás cumpliendo. Que tienes curva inversa que tiene cero coma cero tres segundos buenísimo, pero ya no vas a poder costar lo mismo y yo soy el que tengo la marca líder, entonces la competencia es así Eso es una verdadera competencia.
+33:15 Alberto Betancourt: Claro claro
+33:17 Raoul Bermudez: Y ahí es donde el trabajo de la marca y y el valor de la marca se permite tener un Premium sobre un sustituto que hace lo mismo, pero tú eres la marca.
+33:27 Alberto Betancourt: Así es la marca, es la que te desempata el juego La que te hace ganar.
+33:30 Raoul Bermudez: Es la que te hace ganar, pero los obliga.
+33:31 Alberto Betancourt: Si tú tú empatas el producto, tú empatas la distribución, tú empatas el precio el que desempate es la marca.
+33:41 Raoul Bermudez: Exacto se pueden copiar técnicamente Claro que sí te pueden copiar hasta el
+33:45 Alberto Betancourt: está
+33:46 Raoul Bermudez: tamaño de la carcasa y en una imagen más o menos igual Aunque la marca sea diferente Claro que sí se pueden copiar el el esquema de distribución también, pero lo del elemento diferenciador y el Premium de precio viene por la marca y la confiabilidad.
+33:59 Alberto Betancourt: Métele veinte años, mente años de trabajo de marca A ver en cuánto lo alcanza.
+34:07 Raoul Bermudez: Ahí está el valor, entonces ahí Cecilio se quedó callado buenísimo que hagan todo eso para que nos copien excelente, van a ser más claros Entonces no te van a decir que hacen algo a un precio muy barato y la gente dice v****, esto es igual de arrecho Y más barato comprarse eso ya no lo van a poder hacer. Bueno listo está más allá estratégico Interesante pero déjame terminar eso ahorita porque este Martín quiere verlo a las tres de la tarde Bueno ya va a ser el mejor esfuerzo. Te voy a copiar la parte es como un te voy a mandar un archivo de Word con la explicación que ahí tú seguramente te puede generar alguna idea, c***, vamos a poner esta frase.
+34:46 Alberto Betancourt: Ok De nada, vale mira ya llamaste a Lorenzo
+34:47 Raoul Bermudez: Okay dale, hablamos Gracias cuídate. Ya me dijo este muchacho, que el miércoles tenemos la reunión en la agencia.
+34:57 Alberto Betancourt: c***, a mí me había dicho que el lunes.
+35:00 Raoul Bermudez: Bueno, el miércoles ya ya van como de costumbre, van atrasando, pero ya tengo el teléfono de Lorenzo Me lo me lo diste tú y él y Manuel también me lo dio entonces ahorita Terminando de reunirnos. Voy a llamar a Lorenzo para preguntarle Mira para darle velocidad.
+35:15 Alberto Betancourt: Mándale porque Mándale un mensajito Dile Mira Alberto Quique Alberto
+35:18 Raoul Bermudez: Okay.
+35:21 Alberto Betancourt: Betancourt me dijo que hoy me van a presentar Lo he hecho y tal. Aunque para dejarlo sentado y que y que Manuel
+35:29 Raoul Bermudez: Para dejarlo sentado.
+35:35 Alberto Betancourt: Que se entiendan o sea, yo hablé con él la semana pasada y me prometió que iban a trabajar el fin de semana y que hoy presentaban.
+35:43 Raoul Bermudez: Ya, dame un segundito porque creo que Manuel me dijo que me lo iba a mandar hoy, Déjame ver. Ya, dame un segundito para para no hablar paja posible ya va, porque a lo mejor me lo mandan igual la reunión para el miércoles, pero me mandan la información hoy, Déjame chequear un momentico. En el transcurso Sí en el transcurso del día te voy enviando materiales de nuestro lado Disculpa los tiempos vamos a ver si lo que me mandan es lo que te dijeron a ti que iban a darle el lunes, vamos a ver este De todas formas.
+36:12 Alberto Betancourt: De todo de todos modos Mándale un mensajito a Lorenzo y dile me Bueno estoy esperando los contenidos y la presentación de efectividad y competencia.
+36:28 Raoul Bermudez: Ya se lo voy a mandar de una vez.
+36:29 Alberto Betancourt: Nada más y dile este según me dijo Quique que tú le habías prometido.
+36:37 Raoul Bermudez: Los chapeos mira aquí Alberto le voy a chatear Mira Alberto doctor, no?
+36:41 Alberto Betancourt: No no es chapeado es cobrándole su promesa O sea a mí me dijeron que tú
+36:47 Raoul Bermudez: Okay eso es verdad, es verdad.
+36:49 Alberto Betancourt: prometiste.
+36:52 Raoul Bermudez: Tal cual es verdad.
+  

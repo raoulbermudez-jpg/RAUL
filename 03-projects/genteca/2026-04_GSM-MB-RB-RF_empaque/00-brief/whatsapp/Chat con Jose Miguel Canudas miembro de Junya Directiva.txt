@@ -1,0 +1,23 @@
+[5:45 a. m., 2/5/2026] José Miguel Canudas: Sobre el NTC y los productos que lo llevan:
+
+En ambos casos, GSMRB (junto a sus segmentaciones) y GSMRE están  ajustados para que permitan el trabajo satisfactorio de una carga tipo motor de 2 HP (220VAC) y 1 HP (120  VAC) trabajando a una temperatura ambiente máxima de 55 Celsius con un requerimiento de sobrecarga de hasta el +50%, es de alli en adelante cuando la temperatura del rele llega a posicionarse hasta el punto de destrucción del relé).
+
+Con ello garantizamos que los productos RB, RF y MM tengan un desempeño más que satisfactorio en cualquier equipo y en cualquier condición operativa, dentro de las potencias menores o iguales a la máxima indicada en cada producto.
+
+Evidentemente mientras más va creciendo la corriente más rápido se llega a la temperatura de destrucción del relé y en consecuencia más rápido se de desconecta la carga.
+
+Lo anterior descrito hace que los productos, dentro de su rango de servicio funcionen como una protección de voltaje   y demanda destructiva de corriente al producto y al cableado específico que alimenta la carga.
+
+Si la carga es de 20 A, evidentemente funcionará como una protección contra sobrecarga, pero solo en ese valor de corriente. Para cargas inferiores no califica como una protección contra sobrecarga. El equivalente a esto es como si tuviéramos un térmico electromecánico ajustado para proteger un motor cuya corriente nominal de trabajo es de 20 Amperios.
+
+ Con ello quiero acotar lo que implica tener un NTC en un producto: protege al protector y al cableado de una condición de trabajo para la cual no fueron diseñados: un calor excesivo que puede llevar a la destrucción de estos.
+
+Estos son los beneficios de incorporar un NTC a los productos antes mencionados.
+
+[6:06 a. m., 2/5/2026] Raoul Bermúdez: Hola! Entendido . De alli entonces que protege la instalacion como un respaldo al breaker termomagnetico, cuando la carga es lo sufifientemente grande, al proteger al mismo protector, tambien protege a esa carga grande al aproximarse al valor de carga maxima nominal  y para equipos mas pequeños, prootege al protector y a la instalacion, pero no al equipo.
+[6:07 a. m., 2/5/2026] Raoul Bermúdez: Lo dificil es decir eso en un empaque, pero voy a intentarlo a ver como nos queda
+[6:35 a. m., 2/5/2026] Raoul Bermúdez: o sea, en resumen: Siempre va a actuar como una capa adicional de proteccion para toda la instalacion, respaldando al breaker (Instalación , cableado). Va a proteger al equipo contra sobrecargas, siempre que la misma sea lo suficientemente grande, cercanas a 20A de corriente nominal.  En caso de cargas pequeñas, no va a proteger contra sobrecargas a la misma. En todos los casos, protege la instalación, como un resplado al breaker termomagnético del circuito, sin pretender ser un sustituto del mismo, tal como llo estamos indicando en la sección de advertencias del retiro
+[6:48 a. m., 2/5/2026] Raoul Bermúdez: Entonces, en el empaque, podemos colocar "Sensor NTC incorporado" nos permitiría llamar la atención a leer mas para entender como funciona, para aquellos que no saben que es NTC y da una sensación de algo muy especial. Sería una frase corta y para muchos, enigmática, que llama a leer algo mas para entenderlo. Y nos quedarían tres frases cortas en el empaque: "El más rápido ante parpadeos (< 0,03 s)" , " Protege tecnología Inverter[", "Sensor NTC incorporado*" En la lengueta: "Nuevo. La Protección mas completa"
+[6:50 a. m., 2/5/2026] José Miguel Canudas: Entonces, en el empaque, podemos colocar "Sensor NTC incorporado" nos permitiría llamar la atención a leer mas para entender como funciona, para aquellos que no saben que es NTC y da una sensación de algo muy especial. Sería una frase corta y para muchos, enigmática, que llama a leer algo mas para entenderlo. Y nos quedarían tres frases cortas en el empaque: "El más rápido ante parpadeos (< 0,03 s)" , " Protege tecnología Inverter[", "Sensor NTC incorporado*" En la lengueta: "Nuevo. La Protección mas completa"
+Discútelo con Kike porfa
+[6:50 a. m., 2/5/2026] Raoul Bermúdez: Exacto. Eso te iba a decir. Que lo voy a revisar con Kike para que nos ayude

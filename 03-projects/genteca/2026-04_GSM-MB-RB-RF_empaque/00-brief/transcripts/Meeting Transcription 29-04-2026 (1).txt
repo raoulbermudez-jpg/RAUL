@@ -1,0 +1,338 @@
+# Meeting Transcription 29-04-2026
+
+  Meeting started: 29/4/2026, 13:25:31
+  Duration: 46 minutes
+  Participants: Alberto Betancourt, Raoul Bermudez
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/GhhhzFhiit92g9wNjIty?o=txt)
+
+    ## Detailed summary
+
+## Overview
+Raoul Bermudez y Alberto Betancourt revisaron el enfoque de comunicación para la nueva propuesta del protector, centrado en dos mensajes principales: protección térmica y compatibilidad con equipos inverter. También alinearon una posible narrativa de lanzamiento para la línea trifásica basada en reconocer la experiencia del técnico y poner el foco en sus necesidades reales.
+
+## Decisiones y conclusiones clave
+- Se acordó avanzar con una propuesta de empaque que destaque **“Nuevo”** y **“la protección más completa”** en la lengüeta frontal.
+- En el frente del blister se propondrían dos mensajes principales:
+  - **Autoprotección térmica**
+  - **Protege equipos inverter**
+- Se consideró incluir **NTC** como referencia técnica, con asterisco y explicación posterior, siempre que no genere sobrepromesa.
+- Se reafirmó que el mensaje debe ser técnicamente correcto y compatible con lo que ya dice la etiqueta del producto.
+
+## Mensaje de producto: protección térmica
+- Alberto insistió en volver a la disciplina de los **briefs y DDP del producto**, para evitar mensajes basados en información incompleta o contradictoria.
+- Se aclaró que el problema original del equipo no era la bornera, sino una **conexión interna no soldada** que generaba calentamiento y quemaba el equipo.
+- Alberto y Raoul coincidieron en que la frase **“autoprotección térmica”** es verdadera, no sobrepromete y diferencia al producto frente a la competencia.
+- También discutieron que el uso de **NTC** puede funcionar como ventaja si se presenta como una capacidad técnica real y no como una promesa exagerada.
+
+## Mensaje de producto: inverter
+- Raoul y Alberto coincidieron en que la protección para **equipos inverter** sí debe destacarse, porque el mercado ya lo entiende como una necesidad relevante.
+- Se sugirió usar una frase corta y clara en la pieza principal, por ejemplo:
+  - **Protege equipos inverter**
+  - **Protección para equipos inverter**
+- Alberto señaló que no conviene tratar “inverter” como una innovación nueva en sí misma, sino como una aplicación práctica y actual del producto.
+- Raoul propuso además reforzar el mensaje con el dato de respuesta **de 150 a 30 milisegundos**, como respaldo técnico.
+
+## Información técnica y apoyo al equipo comercial
+- Alberto recomendó pedir al laboratorio más datos comparativos para que ventas tenga argumentos concretos frente a competidores como **TQ** y **Protector**.
+- Raoul se comprometió a consultar a **Víctor** y **Luis González** sobre información de mercado y posibles casos de equipos de la competencia que también se estén quemando.
+- Se conversó sobre usar estos datos como munición comercial, no necesariamente en publicidad masiva, sino para el discurso de ventas.
+
+## Posicionamiento competitivo
+- Se comentó que conocer si los competidores presentan fallas similares sería un argumento de venta muy fuerte.
+- Alberto enfatizó que si el producto propio responde más rápido y evita daños, eso debe traducirse en una ventaja clara en el mercado.
+- Raoul remarcó que la propuesta debe mostrar dos innovaciones:
+  - respuesta más rápida
+  - mejor protección para equipos inverter
+
+## Línea trifásica: concepto de campaña
+- La conversación pasó a la campaña de la línea trifásica, donde Alberto propuso un enfoque más emocional y centrado en el técnico.
+- La idea base fue **reconocer la pericia del instalador** y mostrar que la marca entiende sus necesidades.
+- Se trabajaron frases orientadas a la elección del técnico, como:
+  - **“Tú qué sabes escoger, ahora tienes donde escoger”**
+- Se sugirió crear mensajes diferenciados según el caso de uso:
+  - aire acondicionado
+  - bombas de agua
+  - tableros
+  - equipos de precisión
+  - generadores y transferencias
+
+## Enfoque de marca y segmentación
+- Alberto explicó que la marca puede hacer una campaña paraguas de reconocimiento profesional y, al mismo tiempo, activar mensajes específicos por producto.
+- Se habló de consumidores y compradores con fuerte componente aspiracional y social, que pueden influir en la difusión de la marca.
+- Raoul mencionó que una base de datos de interesados ya se acerca a **480 registros**, rumbo a **500**, como señal de comunidad relevante.
+- También recordó un estudio psicográfico previo en Venezuela que clasificaba a los consumidores por tipología y ayudaba a entender su comportamiento.
+
+## Próximos pasos
+- Raoul llevará la propuesta a **Osvaldo** para preparar el arte con las nuevas frases aprobadas.
+- Se revisará la forma final de expresar el mensaje de protección térmica e inverter en empaque y otros medios.
+- Raoul consultará con **Víctor** y **Luis González** para recabar información sobre la competencia y el comportamiento de quemado de equipos.
+- Alberto quedó a disposición para seguir afinando el lenguaje de marca y los mensajes de lanzamiento.
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Raoul Bermudez: Hola
+05:18 Raoul Bermudez: Hola hola Okay Hello Kike cómo estás Me oyes
+05:27 Alberto Betancourt: Cómo estás
+05:29 Raoul Bermudez: Dije un poco cansado, pero bien.
+05:33 Alberto Betancourt: Qué tal todo.
+05:36 Raoul Bermudez: Estuve trabajando porque Osvaldo siempre me pide los archivos PDF comentados con todos los detallitos, lo que él quiero hacer En las etiquetas y tal entonces estuve trabajando en comentar las etiquetas de la línea trifásica que es algo que quiero urgente este Y me tuve que quedar hasta tarde porque es un trabajito de meticuloso de aquí Aquí te sugiero que pongas esto aquí pongan el nombre los nombres estos de prohibido por obra transfer que queremos que resalte para que la lo que resalte no sea el código sino el nombre bueno en fin. De la propuesta esa que me gustó bastante.
+06:08 Alberto Betancourt: Sí sí, está bien. Está bien, yo estuve pensando en ideas de campaña para la línea trifásica y
+06:10 Raoul Bermudez: mira
+06:15 Alberto Betancourt: hay algunas ideas que me parecen muy buenas.
+06:19 Raoul Bermudez: Qué bueno, qué bueno Por cierto. Yo te tengo que mandar que Yo trabajé un poco las ideas de esta campaña de reconexión con los técnicos para hacerla algo más de conexión emocional no tanto de producto que puede ser algo que le pudiéramos pedir a la agencia como bueno, para ver si demuestran algo aunque sea con la parte creativa. Eso pudiera ser igualito. Nosotros la podemos.
+06:40 Alberto Betancourt: Sí, no te cuento que hablé con Juan quiliche.
+06:44 Raoul Bermudez: Dime.
+06:45 Alberto Betancourt: Y Juan kilichi, le bueno, llamó a Lorenzo Luis airelel, renunció se va. Este aquí entre tú y yo me dice Juan que cree que tenía un poquito de celos de Lorenzo este que no no quería compartir el liderazgo de la agencia Bueno no sé qué le pasó este Pero bueno el hecho es que se va. Y pero tuve una conversación con Lorenzo que me dijo que él va a tomar las riendas de la cuenta y que va a poner a la gente a trabajar este.
+07:33 Alberto Betancourt: Me dijo que bueno, que iba a estar en contacto conmigo, Yo le dije No mira Está en contacto con Raúl que es quien lleva la cuenta. Yo estoy a disposición de ustedes Cuando ustedes crean, que pues soy Útil para algo. pero
+07:48 Raoul Bermudez: la estrategia estrategia y estrategia y revisión y aprobación Quique porque tú eres más experto
+07:55 Alberto Betancourt: Este Pero bueno le dije que te llamara él me dijo que pensaba que el lunes a las diez de la mañana nos podían presentar este tanto la los análisis de competencia y de performance de la de la de la cuenta nuestra. Como los contenidos que tienen ellos pendientes que no han resuelto.
+08:23 Raoul Bermudez: ok
+08:24 Alberto Betancourt: Pero que bueno, este yo le dije que te llamara y que bueno que que coordinarla contigo que yo estaba disponible cuando ustedes dijeran para atender la reunión que quieran.
+08:36 Raoul Bermudez: Ok buenísimo Bueno hasta cierto punto No fue tan descabellada la idea de decirle a la junta directiva de darle chance hasta mayo pues y para para nosotros también estar tranquilo de conciencia de que le dimos toda la oportunidad Entonces yo hoy hoy en la reunión mía del One donde colocó todas
+08:49 Alberto Betancourt: sí
+08:54 Raoul Bermudez: las cosas que he venido haciendo volví a sacarlo de la agencia le dije menos si es verdad que hemos tenido problemas pero no tenemos nada que perder con darle estas finales de mayo y ver qué pasa este fue una discusión ahí José Ismael Jesús María no ya para qué tal este Miguel no se metió mucho y y Martín si dijo Oye mira decir que nosotros vamos a hacer todo también es un pedo porque nosotros mismos entre nosotros que si esto sí que si esto no que sí vuelva allá que entonces un pedo es preferible tener alguien que sea experto en la vaina y que sea un tercero y eso Tiene razón lo hemos hablado entonces pero vamos a dar vamos a porque es que si no De verdad que si nosotros para uno etiqueta nos vamos para ti para atrás como estamos oyendo.
+09:36 Raoul Bermudez: Imagínate para unos videos.
+09:37 Alberto Betancourt: Bueno te iba a decir Hace ya cuando yo empecé a trabajar en esta última vez con genteca. Este que Martín me dijo No es que tal tú siempre nos has planteado las cosas como son y tal Y tenemos que empezar así. Yo le dije mira, nosotros en marca y comunicación en mercadeo, como quieras llamarlo. deberíamos trabajar con el Dep, el documento de especificaciones de del producto que está sacando en ese dep, tiene que estar claramente explicado, qué hace este producto que no hace la competencia? Y quién lo necesita? Y Qué cantidad más o menos necesita el mercado de esto.
+10:36 Alberto Betancourt: Eso es importante porque eso le pone disciplina a todo el proceso de investigación y desarrollo O sea no te pongas a gastar plata en investigaciones en un producto que tú no has verificado si va a tener demanda o no, O sea no está gastando plata, c***, este en tirapeos al aire.
+10:53 Raoul Bermudez: exactamente
+10:58 Alberto Betancourt: este
+10:58 Raoul Bermudez: bueno
+11:01 Alberto Betancourt: Y entonces acordamos que también amarca y comunicaciones no les llega una petición de lanzamiento de un producto que no venga acompañado de un demo. Aquí tienes un caso típico de Por qué eso tiene que exigirse tiene que ser Norma y yo se lo voy a decir a Martín otra vez se lo voy a recalcar otra vez en la próxima vez que hable con él decirle. Mira todo esto empieza, o sea, nosotros tenemos un brief de que ahora tenemos una protección térmica. Se fue el Grifo original en el cual hemos trabajado meses y meses y meses.
+11:41 Raoul Bermudez: tal cual
+11:43 Alberto Betancourt: Y NTC era la palabra mágica y con NTC y con NTC informalmente a través de Lilian yo me entero de que c*** mira como que no queremos nombrar en etc.
+12:01 Raoul Bermudez: para atrás
+12:02 Alberto Betancourt: Para atrás, cómo es esa vaina de que no quieren nombrar en etc? Si tenemos meses Ah no es que Miguel dice que él no quiere que la competencia se entere de Cuál es la tecnología que estamos utilizando para esto.
+12:17 Raoul Bermudez: Es lo que abran el equipo lo va a caber hasta una foto le saque lo pone la Inteligencia artificial empieza hasta el modelo.
+12:22 Alberto Betancourt: Claro, bueno, resulta que tampoco ese rumor era cierto en realidad. Ahora entiendo que Miguel lo que no quería era hacer una sobrepromesa
+12:35 Raoul Bermudez: Bueno, eso tiene eso tiene más sentido.
+12:37 Alberto Betancourt: Bueno pero c*** Vete para atrás en el ded O sea no jodas Vete para atrás y
+12:42 Raoul Bermudez: exacto
+12:44 Alberto Betancourt: bueno vamos a olvidarnos del NTC vamos a olvidarnos de esa vaina entonces Bueno hay que hay que volver a la disciplina de El dep y los briefs por escritos y c*** No puede ser o sea, cuánto tiempo tienen O sea que invirtieron en la investigación y desarrollo de meterle NTC Y en realidad era para que no se quemaran c***, dilo a calzón quitado entre tu gente, qué c*** que era para eso.
+13:19 Raoul Bermudez: correcto
+13:21 Alberto Betancourt: la otra cosa
+13:21 Raoul Bermudez: Bastante maroma bastante maroma, hicimos bastante maroma y peripecia hicimos para ver cómo decimos algo, que es bueno, pero que no podemos recordar que el equipo se quema v****, hemos hecho de todo.
+13:32 Alberto Betancourt: c*** pero partiendo de de este una información
+13:38 Raoul Bermudez: débil
+13:39 Alberto Betancourt: falsa incompleta contradictoria bueno todo, o sea, todo todos los adjetivos que le quieras poner la información este caben Y ahora entonces estamos a la carrera este remendando el capote y hablando de una vaina que no tiene nada que ver con el Grifo original.
+14:04 Raoul Bermudez: Exacto es verdad, pero que sin embargo es un Clay que estaba originalmente en este equipo que yo lo vi por casualidad en una etiqueta en el año 2018. Digo c***, para este equipo es compatible inverte Entonces le pregunto a Miguel Miguel me dice sí Y ahora con más razón porque en vez de ciento cincuenta milisegundos tenemos treinta segundos yo c*** pero si todo el mundo nos dice que hay que hablar de inverter Y tenemos esa oportunidad Y ahora con más razón que bajamos a 30 milisegundos, c***, eso hay que decirlo.
+14:31 Alberto Betancourt: Bueno pero cómo lo dices porque inverter lo que dice Martín es cierto yo, o sea, yo estoy oyendo inverter desde hace quince años. Hace 15 años.
+14:41 Raoul Bermudez: pero nosotros
+14:43 Alberto Betancourt: Este habrás oído el nombre de nuestro director de venta que era un tipo superávil este él decía miren. Aquí están llegando todos los equipos inverter y tal Y nosotros tenemos que meternos inverter y así fueron los primeros intentos de de ser algo compatible inverter. Este pero eso es algo viejo en el Mercado o sea nosotros no podemos bueno, no creo. Que sea una Innovación decir que protegemos invertir. Sí, podemos decir, creo yo ahora.
+15:27 Alberto Betancourt: la respuesta más rápida en el mercado Especialmente importante para equipos inverter.
+15:35 Raoul Bermudez: Me gusta esa Este enfoque. Me gusta perfecto, Porque además tienes una razón para decir que pasaste 150 a 30 milisegundos y que eso lo hace mucho más con mucha más capacidad de protección equipos delicados inversos, ahora cómo lo
+15:47 Alberto Betancourt: claro, y además
+15:48 Raoul Bermudez: decimos Bueno pero pero
+15:50 Alberto Betancourt: Y la otra cosa es que tiene este métrica para para sustentar tu argumento Soy la más rápida, porque yo respondo en tantos milisegundos y ahí ahí este laboratorio nos debe una información como digo no para la publicidad, pero si para los vendedores que le puedan decir al cliente de ellos, Mira protector responde en tres segundos y nosotros en tantos milisegundos o pq este responden en tanto y tal Y tiene c***.
+16:35 Alberto Betancourt: Tienes métricas para sustentar tu argumento y a la vez reforzar que tienes un laboratorio atrás que está midiendo y está desarrollando.
+16:48 Raoul Bermudez: Es redondito redondito. Bueno, lo podemos decir que lo vayan haciendo Y mientras tanto, vamos diciendo lo básico y después construimos sobre eso que se puede hacer cuando tengamos los datos.
+16:57 Alberto Betancourt: Claro claro, yo creo que deberíamos decir las dos cosas adelante Bueno creo que eso ya está acordado, no espero.
+17:05 Raoul Bermudez: Sí sí sí, porque es que para la única forma de que ellos dijeran que se sienten bien con este nuevo producto, porque es nuevo por varias razones primero porque es más rápido y es mejor para inverter segundo porque tiene la protección por calentamiento que es mejor para evitar el calentamiento proteger el calentamiento del sistema. El detalle ahorita que nos pongamos de acuerdo en en cómo lo vamos a decir que puede ser un poquito más largo y después como lo vamos a resumir para poder poner el empaque, pero lo que es un poquito más largo lo podemos usar para otros medios.
+17:39 Alberto Betancourt: Claro, fíjate una cosa Este Nosotros sabemos. Que nuestros equipos algunos equipos nuestros se quemaban. Me pareció oír a Martín diciendo que se quemaban por otra razón. Que no era por los no, era por bornera suelta sino porque el producto
+17:58 Raoul Bermudez: Era porque habían unos.
+18:04 Alberto Betancourt: internamente la conexión no era soldada.
+18:08 Raoul Bermudez: Correcto era un tema interno, no era por la bornera que el técnico aprieta era que internamente la conexión no estaba soldada, sino que era como un enchufe y se calentaba y producía calor que quemaba el equipo ahora lo sueldan y ya los reclamos bajaron ostensiblemente Ahora sí, era un problema de verdad el equipo.
+18:25 Alberto Betancourt: Y sabemos si a la competencia le pasa algo de eso.
+18:29 Raoul Bermudez: Yo no lo sé Esa esa pregunta tú el otro día yo la verdad que no lo sé.
+18:31 Alberto Betancourt: porque Porque eso sería. oro puro O sea si los demás equipos se están quemando y el nuestro ahora no se quema c***, es un argumento de venta muy muy arrecho.
+18:50 Raoul Bermudez: Diferenciador muy notable yo escuché que sí, que sí se están quemando los de la competencia, pero fue un comentario que no sé si si tienen alguna medición si tienen alguna muestra, si no lo sé, este le puedo preguntar. Eso se lo pudiera preguntar a Víctor A ver si Víctor tiene información al respecto, creo yo y a ventas también.
+19:08 Alberto Betancourt: Sí sería bueno o sea, Luis González y Víctor Este decirles, Mira qué información tenemos o podemos recabar a través de los vendedores a través de nuestros contactos y tal este, qué tanto se pueden estar quemando los equipos de la competencia?
+19:29 Raoul Bermudez: Correcto Sí bueno lo voy a tener como tarea voy a escribirle a Víctor lo voy a escribir a Luis González Mira queremos o sea, hacer como un monitoreo de qué tanto se queman los equipos de la Competencia por lo que antes nosotros nos quemábamos de ahora, no, que es ese calentamiento o bien porque carga conecta una carga muy grande y se quema o bien porque hay problemas internos y se quema, pero si se quedan o si no se queman eso es lo primero y nosotros ahora no, entonces ya con eso es mucho lo que se puede abarcar.
+19:55 Alberto Betancourt: Bueno fíjate a mí Yo propuse hoy una frase que a Martín No le gustó. Pero que a cómo se llama? Quién fue el que dijo el ingeniero.
+20:08 Raoul Bermudez: el ingeniero Joshua dice tú pero él no estaba en la reunión hoy.
+20:14 Alberto Betancourt: Quién era el que hubo alguien que dijo c***, a mí me gusta mucho eso de la autoprotección térmica.
+20:20 Raoul Bermudez: Francisco Ferrero Francisco Ferrero
+20:23 Alberto Betancourt: A San Francisco fue Francisco que no le reconocí la voz?
+20:27 Raoul Bermudez: Francisco
+20:28 Alberto Betancourt: Yo creo que esa frase es totalmente, verdad O sea no es ninguna sobre promesa es
+20:35 Raoul Bermudez: Es verdad.
+20:39 Alberto Betancourt: absolutamente, verdad? Es un Plus que no dice ningún competidor y tú esa frase
+20:40 Raoul Bermudez: no lo
+20:46 Alberto Betancourt: le pones el asterisco. Y atrás dices que no solo protege al protector, sino que protege también.
+20:58 Raoul Bermudez: al sistema conectado
+20:59 Alberto Betancourt: al sistema Y es una es una capa de protección adicional.
+21:06 Raoul Bermudez: Total no puedo garantizar que no se cambie el motor, pero ayuda que jode, Porque muchos motores se van a dejar de quemar. Gracias a eso.
+21:14 Alberto Betancourt: Claro claro
+21:16 Raoul Bermudez: No, Sí claro, bueno por ahí van los tiros, o sea, yo creo que sí, podemos hacer eso que tú estás diciendo perfectamente lo de inverter, yo lo podría pienso que lo pudiera manejar así como estaba lo de borneras da w8 en la parte frontal poner que que protege excelente protección para equipos inversos, la mejor protección para equipos inversos algo así y entre paréntesis menor menos de 30 milisegundos. Lo atrás, no sé, pero podemos trabajarlo así lo de inverter colocarlo ahí donde estaba lo de bornera y en la lengüeta poner lo que estamos diciendo que que es diferenciador, que es que el problema que a Miguel no le gustó porque él dice que eso es algo, que es como una deuda que tenemos que todos los equipos de este tipo de supervisores de voltaje, como no miden corriente deberían estar protegidos por ese sensor de temperatura y me dijo algo, que a mí me llamó la atención que el otro día me dice Raúl hasta las regletas que tiene el suichecito ese suichecito que se apaga solo.
+22:16 Raoul Bermudez: La regleta se carga mucho, eso es una protección térmica hasta la regletas lo tienen y nosotros teníamos unos supervisores de voltaje, que no lo tenían Y eso era una deuda que teníamos con el mercado. Él me lo explicó así. Yo no lo había visto tan claro. Él dice que c*** es una vaina que tiene que tener el equipo Ah que lo podemos decir está bien, pero lo que ahí está bueno Siempre el borderline de que la gente no piense que es un protector térmico del motor, que cuando decíamos la palabra protección térmica en el estudio era c***, era casi el 40% que pensaba que era lo que protegía el motor.
+22:49 Alberto Betancourt: claro bueno
+22:51 Raoul Bermudez: Pero bueno Ahí no salva ahí lo que nos salva el el hacer una sobremesa es el termómetro que dice calentamiento Entonces por un lado dice el termómetro calentamiento por otro lado dice la etiqueta protección térmica estamos diciendo las dos formas En qué se dice que no no coliden O sea no no está en contrapuestas y el y el clan de de del inverter que lo podemos poner donde está donde dice Warner
+23:17 Alberto Betancourt: Bueno yo yo adelante pondría este las dos frasecitas, o sea, en el blister este
+23:23 Raoul Bermudez: sí
+23:24 Alberto Betancourt: con autoprotección térmica y este protege equipos inverter.
+23:31 Raoul Bermudez: Sí a mí me parece bien y capaz que en la lengüeta en vez de poner tanto detalle, pongamos nuevo y porque es nuevo Bueno pues tienes esas dos cosas ahí y no pongamos sino nuevo y ya es una alternativa.
+23:41 Alberto Betancourt: así
+23:43 Raoul Bermudez: Poner solo la palabra nuevo que ya llama la atención al c*** esto es nuevo a ver Ah c***, Mira es para inverter tiene una autoprotege por calentamiento y atrás el vaina la explicación de que además de protegerse del mismo protege de forma indirecta a toda la instalación si hay sobre sobre corriente total. Yo lo veo bien y nos permitiría poner en la lengua de una sola palabra grande que es nuevo que ella es la que manda o tú pones nuevo. Eso es lo el mejor gancho es y porque es nuevo, c*** Ah mira ahora es inverter y ahora es proteger
+24:12 Alberto Betancourt: claro
+24:16 Raoul Bermudez: sobrecalentamiento y tiene el termómetro el termómetro el termómetro y que dice calentamiento.
+24:21 Alberto Betancourt: Y tú puedes poner también nuevo protección más completa.
+24:26 Raoul Bermudez: también protección completa protección la protección completa
+24:31 Alberto Betancourt: Sí o la protección más completa y tienes y tienes los dos las dos frasecitas
+24:33 Raoul Bermudez: la protección más completa
+24:37 Alberto Betancourt: esas que te a los que lo conocen a lo que él Estos son productos excepto los r que los instalan técnicos.
+24:47 Raoul Bermudez: Claro, Ellos saben lo que están haciendo.
+24:49 Alberto Betancourt: En su mayoría no y conocen al rb, o sea, conocen al gismrb. Lo han instalado c*** por décadas este y a esos a los que le está diciendo ahora una protección más completa.
+25:06 Raoul Bermudez: Sí, nuevo. Cómo fue que dijimos nuevo la protección más completa.
+25:12 Alberto Betancourt: Sí ahora la protección más completa bueno sin el ahora la protección más
+25:15 Raoul Bermudez: nuevo protección completa
+25:16 Alberto Betancourt: completa. O protección más completa o protección completa.
+25:23 Raoul Bermudez: Sí el problema a mí me gustaría también ponerlo así, pero cuando me siento como Osvaldo y vemos la etiqueta y nos ponemos a diseñar ahí con él Ajá Raúl que vamos a poner Bueno vamos a poner esto Ajá entonces me lo pone y y me dice ves que no se lee bien menos, verdad?
+25:39 Alberto Betancourt: No, no, pero ven acá, ven acá esa lengüeta es de un tamaño que te permite decir nuevo protección más completa sin ningún problema.
+25:52 Raoul Bermudez: Está bien Vamos a hacerlo así.
+25:52 Alberto Betancourt: desde el punto de vista diseño Dile a Osvaldo
+25:55 Raoul Bermudez: Son tres palabritas El problema. Es que yo pensaba que el horizontal porque la lengüeta uno en los en la uno la ve larga, pero es que el problema es que la lengüeta sube.
+26:04 Alberto Betancourt: Viene Doblado es más chiquito.
+26:06 Raoul Bermudez: Cruz Entonces se largo no es tan largo
+26:08 Alberto Betancourt: Pero esas palabras nuevo protección más completa.
+26:13 Raoul Bermudez: listo
+26:14 Alberto Betancourt: Entran, pero fácilmente.
+26:16 Raoul Bermudez: No me parece perfecto y con el mismo tamaño nuevo protección más completa, las dos en la misma tamaño te parece?
+26:23 Alberto Betancourt: Este que te iba a decir y bueno, el ahí el el hueso duro es convencer a Martín de autoprotección térmica. que él dice
+26:34 Raoul Bermudez: sí
+26:37 Alberto Betancourt: este Martín El público no siente y no piensa como tú O sea tú sabes, tú sabes que estás diciendo que el protector se auto protege eso lo sabes tú el público, c***, lo que está es tratando de solucionar un problema de protección y si ve c***, mira inverter, este es un protector de voltaje Este es el que me recomienda de tal Y además, dice autoprotección térmica, c***, yo no veo esto en la etiqueta de otros Por qué c*** no lo tienen los otros bueno peor de los otros, tú tienes eso adicional.
+27:22 Raoul Bermudez: Sí, Y además tampoco lo estamos poniendo en la lengüeta que llama demasiado la atención que era lo que le chocaba a a Miguel Pues a coñazo, es una demasiado una sobremesa que la van a entender demasiado fuerte Como en el estudio. Lo decía efectivamente, pero si lo estás poniendo la frase de aquí arriba. Él está poniendo aquí nuevo la protección la la protección más completa o protección más completa y las dos frasecitas que están en los clanes de aquí quitándolo de bornera y no sé qué más había Pero podemos dejar esas dos nada más, Yo no le veo mayor problema y además en la etiqueta dice protección térmica y no está mal decirlo al bajarle el tamaño.
+27:56 Alberto Betancourt: Claro, y es compatible con lo que dice la etiqueta del producto.
+28:03 Raoul Bermudez: Totalmente y Y es que en realidad la etiqueta del producto cuando tú tienes algo que térmicamente acciona una desconexión es una protección térmica y el simbolito es el que pusimos en la etiqueta que son las las dos cositas Así que desconecta Eso Eso es así técnicamente es correcto. Este vamos a sacar esta propuesta.
+28:21 Alberto Betancourt: Vamos a darle pues
+28:23 Raoul Bermudez: Sí pero yo estaba pensando yo decía, c***, es que si ponemos cualquiera de las dos en la lengüeta va a ser un pedo porque siempre van a decir una o la otra sacamos las dos de la lengüeta, las ponemos aquí arriba y ahí ponemos nuevo y
+28:34 Alberto Betancourt: protección más completa y listo y ponemos la bueno por mí resuelto vamos a
+28:34 Raoul Bermudez: listo. listo
+28:41 Alberto Betancourt: ver qué dicen los directores
+28:43 Raoul Bermudez: Ya le voy a decir a Osvaldo para que haga la para que haga el arte con eso lo voy a pasar la información Sí bueno, yo tengo que ir para allá para otras
+28:46 Alberto Betancourt: la propuesta chévere
+28:49 Raoul Bermudez: cosas Me siento con Osvaldo y le digo, vamos a hacer esto así vamos a ver y atrás atrás. Bueno, lo de los treinta milisegundos este Resaltar en alguna parte donde sepa que es ideal para ir aquí ideal para equipos inverter eso quizás podemos ideal para equipos.
+29:05 Alberto Betancourt: Bueno sí claro Yo no sé o sea, yo pondría los milisegundos y este. Protege yo no sé si sistema equipos o tecnología inverter.
+29:22 Raoul Bermudez: Me gusta esa me gusta protégete tecnología inverte porque lo decías el enchufable, lo puedes poner hasta hasta lo puedes enchufar cualquier cosa La
+29:28 Alberto Betancourt: Claro, usted.
+29:29 Raoul Bermudez: verdad, la verdad y tú me dices a mí, c***, si tú tienes una una Vero un congelador y lo vas a enchufar eso yo claro tiene el ciclo de cuestiones ciclado corto, el que es reciclado corto, que casi todos son para aire acondicionado, tiene la protección térmica tiene la protección contra inverter, o sea, para proteger adecuadamente la inversa protégete tecnología inversa. Y resaltamos resaltamos las dos innovaciones porque son dos innovaciones, la verdad.
+29:57 Alberto Betancourt: Así es Y en el lanzamiento, puedes hablar de compromiso con la innovación, es un producto mejorado nuevo acorde a las nuevas necesidades en el mercado venezolano que está todo relacionado con la con el posicionamiento de la marca.
+30:14 Raoul Bermudez: Sí, no está perfecto Innovación laboratorio de calidad, prueba la competencia para la parte de guerra de guerrilla este la torre redondito.
+30:24 Alberto Betancourt: Bueno ahí hay que pedirle el laboratorio que nos digan acá, cómo me comparo con tq, cómo me comparo con protector? Cómo me comparo con hechos para que los vendedores tengan munición
+30:36 Raoul Bermudez: sí Buenísimo, total, Claro claro, y además ellos no pueden pensar que porque sean amigos de los panas que venden la competencia no pagan Eso hay que matarlos Espero ver muertos y esos equipos son una m***** por esto y por eso y por esto hay que hacer así.
+30:57 Alberto Betancourt: Y claro, y si hay algún vendedor, bueno, tráetelo para acá.
+31:01 Raoul Bermudez: Exacto Mira Ven a vender aquí Lo que sí es bueno no sigas vendiendo esa m*****.
+31:05 Alberto Betancourt: Este está pelando bola porque no vende, pues tal vez no c*** pero es bueno, tráetelo, c***, reclutalo.
+31:10 Raoul Bermudez: Es verdad Tal cual tal cual mire cambiando de tema Entonces yo yo acabo de llamar a Manuel serpa, le escribí Mira Manuel porque no abandonado el antes me llamaba, te voy a mandar esto ahorita están como silencio.
+31:23 Alberto Betancourt: Bueno, ya este osval, cómo se llama Lorenzo me dijo yo voy a llevar la cuenta, o sea, yo me voy a convertir en El Ejecutivo de ustedes quedó en que te va a llamar y y coordinar con él.
+31:37 Raoul Bermudez: ok Perfecto perfecto Es que entonces me queda pendiente contigo Este recoger lo que yo estuve trabajando de esta campaña de conexión emocional con los técnicos donde lo importante es la persona Lo importante es lo que ellos hacen y los productos están como atrás para respaldarlo vi que hay algunas campañas de Caterpillar por ejemplo hace eso ahí hay varias varias marcas famosas que hacen
+32:01 Alberto Betancourt: Sí bueno Sí sí, tú sabes que en la campaña de lanzamiento de la nueva
+32:02 Raoul Bermudez: cosas parecidas.
+32:07 Alberto Betancourt: línea trifásica hay uno de los enfoques Pues que se me ha ocurrido justamente eso. que es Es halagarlos a ellos, c***, Tú qué sabes escoger Ahora tienes dónde escoger?
+32:24 Raoul Bermudez: Buenísimo.
+32:25 Alberto Betancourt: Y entonces le puedes decir tú sabes muy bien que un aire acondicionado no bombea agua. Porque vas a usar el mismo trifásico. O al revés, Tú sabes que una bomba de agua no enfría el aire. Por qué Tienes que usar el mismo trifásico en una bomba y en un trifásico hay varios Y tú que sabes ahora puedes escoger?
+32:54 Raoul Bermudez: Menos mal que nos quedó grabada, Porque esa frase está genial y acuérdate que tenemos las bombas el compresor y los tableros que es otra cosa que ahí ahí si
+33:01 Alberto Betancourt: Entonces, claro.
+33:03 Raoul Bermudez: tienes que tener más tiempo para que los otros actúen primero Entonces le hablas del tema de coordinación.
+33:07 Alberto Betancourt: Bueno claro, pero haces ese jueguito con el tablero con la bomba con el aire acondicionado como diciendo Mira el requerimiento de este equipo este necesita curva inversa por esto esto y esto es este que está aquí es vital que tenga un
+33:19 Raoul Bermudez: exactamente
+33:22 Alberto Betancourt: retardo de la conexión mínimo está este es el hombre del frío.
+33:27 Raoul Bermudez: exactamente
+33:28 Alberto Betancourt: Este que está aquí tú que tienes un equipo de precisión y tal Y que necesitas hacer ajuste finos y tal aquí tienes el digital.
+33:38 Raoul Bermudez: con el histórico además
+33:38 Alberto Betancourt: Y claro, y tú que eres experto en esto aquí tienes donde escoger.
+33:46 Raoul Bermudez: Ah y cuando tengas un generador una transferencia Este es el ideal, Porque te permite un tiempo mínimo para que se estabilice el generador porque si no lo que va a hacer es que lo que entra el generador tiene un tiempo muy corto, te va a despejar y es un tiempo fijo ajustable y no depende de una curva inversa que pudiera reaccionar muy rápido Entonces el que necesita es el tiempo ajustable.
+34:03 Alberto Betancourt: Y tú qué sabes Y tú qué Sabes Ahora tienes el el propio?
+34:10 Raoul Bermudez: Sí sí, eso es poner la persona antes que el equipo y el equipo es lo que te va a respaldar tu conocimiento. Eso fue Exactamente no no lo que tú estás
+34:16 Alberto Betancourt: Así es.
+34:18 Raoul Bermudez: diciendo, sino de poner la persona primero, pues lo que yo les dije que que tú y yo íbamos a trabajar en eso.
+34:23 Alberto Betancourt: Es Claro pero aquí tienes el chat. Tú puedes hacer una campaña genérica de la marca de reconociendo la dignidad de su profesión, pero también puedes
+34:36 Raoul Bermudez: exactamente
+34:36 Alberto Betancourt: hacer algo práctico con lanzamiento como el de la línea trifásico, pero los puedes casar, no?
+34:43 Raoul Bermudez: Sí, caben perfectamente uno paraguas y otro y otro más específico que
+34:46 Alberto Betancourt: claro
+34:47 Raoul Bermudez: refuerza el mensaje para uno, pero es que tengo varios ejemplos que te lo voy a compartir porque estuve viendo entonces ahí ahí hay compañías que se han destacado por este tipo de campañas de conexión, emocional resaltando el profesionalismo de los compradores donde ellos donde ellos son lo importante, entonces hacen campañas más emocionales. Entiendes tu realidad y tal Y bueno para que y el equipo está y yo estoy aquí como estoy detrás de ti para para apoyarte ayudarte en lo que tú eres un jugador pelado más o menos por ahí va la cosa.
+35:17 Alberto Betancourt: Así es. Y además, yo te estoy escuchando a ti desde hace 40 años.
+35:25 Raoul Bermudez: también
+35:26 Alberto Betancourt: Yo estoy aprendiendo de ti tus necesidades desde hace 40 años, por eso sé por
+35:31 Raoul Bermudez: Por cierto
+35:32 Alberto Betancourt: eso Sé que te hace falta esto y esto y esto.
+35:36 Raoul Bermudez: Sí sí, Por cierto, que nosotros pensamos cuando vayamos a sacar estudios de Mercado Queremos tu valiosa opinión para que los equipos que vayamos a desarrollar cubra lo que tú necesitas, porque tú eres el experto esa en la misma investigación estamos trabajando sobre eso queremos y queremos que nos
+35:51 Alberto Betancourt: Te estás comunicando.
+35:53 Raoul Bermudez: ayudes a que los equipos que nosotros hagamos sean lo que lo que tú necesitas y sea mejor para ti Y entonces Oye responden con muchísimo orgullo, no, yo quiero que esto sea así que por cierto la última encuesta que sacamos respondieron cincuenta y cuatro es una maravilla.
+36:07 Alberto Betancourt: Sí sí impresionante Bueno también gente que Se tomó el tiempo de inscribirse, es gente que distinta al universo que no le
+36:18 Raoul Bermudez: colabora Sí tal cual tal cual
+36:21 Alberto Betancourt: paró bola, o sea gente, pero es la gente más interesada.
+36:26 Raoul Bermudez: Y son los que forman opinión también.
+36:28 Alberto Betancourt: No, solo eso son los que crean modas.
+36:32 Raoul Bermudez: también
+36:32 Alberto Betancourt: Esos son los que yo no sé si Bueno leíste de Point
+36:38 Raoul Bermudez: no
+36:38 Alberto Betancourt: El libro no ese libro es una maravilla para todo el que se dedica a mercadeo este, cómo se crean las modas Y cómo cómo es la composición de distintas poblaciones en ese en ese libro este el autor dice por estudios, Yo sé que en un Universo de población hay gente muy curiosa Y ese es un grupo hay gente que es socialmente hiperactivo ese es otro grupo. Y ahí este un tercer grupo. Que son este animales sociales. Y son gente que este y te pone un experimento te dicen.
+37:31 Alberto Betancourt: toda la gente que tú conoces A través de quienes los has conocido? Y entonces dice que si tú te pones estrictamente analizar, c***, cómo conocí yo a toda la gente con la que yo me relaciono hoy en día. Vas a llegar a máximo tres personas?
+37:52 Raoul Bermudez: Que son los nodos.
+37:52 Alberto Betancourt: Esas tres esas tres personas son un ejemplo de estos animales sociales. Entonces cómo creas tú una moda Utilizando a estos tres estas tres. clusters de de tipos de personas que existen en un universo en todos los mercados entonces tú agarras a los curiosos A los Cómo se llama a los fanáticos este. Del tema y a los y a los Cómo se llama los animales sociales. Y manipulando bueno manipulando los no sino utilizándolos.
+38:36 Alberto Betancourt: c*** logras que haya una masa una masa creciente que se convierte en crítica en
+38:41 Raoul Bermudez: una moda
+38:46 Alberto Betancourt: muy poco tiempo
+38:48 Raoul Bermudez: Muy bien.
+38:50 Alberto Betancourt: entonces, bueno, este grupo que tenemos ahí en En la base de datos es un grupo que que se ve que es interesado en el tema muy interesado en el tema.
+39:04 Raoul Bermudez: Ya vamos por cuatrocientos ochenta, ya estamos acercándonos a los 500 súper
+39:04 Alberto Betancourt: y son
+39:08 Raoul Bermudez: bien.
+39:08 Alberto Betancourt: Toño Qué bueno, qué bueno.
+39:12 Raoul Bermudez: De hecho te cuento Yo hace años yo estuve en el Stanford institute porque hay
+39:12 Alberto Betancourt: bueno
+39:19 Raoul Bermudez: una compañía que se encargó de hacer un estudio en Venezuela donde participamos siete compañías grandes entre ellas polar. Yo estaba por polar que era para hacer un estudio psicográfico del perfil de eso algo muy parecido a lo que tú estás diciendo pero del venezolano y Ellos encontraron. Inclusive Ellos tienen los estudios porque hacen una un set de preguntas y con ese set de preguntas ya de una vez se clasifican A cuál cluster tú perteneces?
+39:47 Alberto Betancourt: los tipifica
+39:49 Raoul Bermudez: Lo simplifica ellos hicieron estudios cualitativos estudios cuantitativos se demoraron como tres años en hacer el estudio y ellos llegaron a un set de preguntas creo que eran quince catorce preguntas que tú respondías a esas preguntas y ya automáticamente el sistema te decía cuál era tu tipología.
+40:07 Alberto Betancourt: Cuál es tu tipo?
+40:07 Raoul Bermudez: Sí era si eras un innovator innovator aquellas personas que son los los que sí les gusta probar las cosas nuevas y tal tenías otros que eran los que los que le dan mucho valor a las marcas, pero para como como un show no O sea como la
+40:24 Alberto Betancourt: Como una proyección una proyección tuya.
+40:24 Raoul Bermudez: que me muestro. una proyección tuya y era transversal a todas las a todas las las clases sociales porque lo había en clases ricas y también en las personas que se compra un par de tenis de marca, aunque no tengan para comer Eso era y ese grupo en Venezuela es grande ese grupo de Venezuela es
+40:40 Alberto Betancourt: Claro, Sí sí Bueno es que es que el venezolano gracias a la Bonanza petrolera que hemos tenido un siglo es un pueblo consumidor. Tú no consigues eso en el
+40:50 Raoul Bermudez: grande
+40:51 Alberto Betancourt: resto de América Latina Yo trabajé en muchos mercados, en América Latina y
+40:53 Raoul Bermudez: no, no no no
+40:55 Alberto Betancourt: c*** Venezuela siempre fue un caso especial y y la rentabilidad de muchos negocios en Venezuela es muy grande, porque el venezolano es consumidor el venezolano, le gusta este sentirse bien. Bueno lucir para él mismo, o sea cómo
+41:09 Raoul Bermudez: lucir
+41:14 Alberto Betancourt: me siento yo cuando uso esto y que estoy diciéndole a los demás de mí a
+41:14 Raoul Bermudez: sí
+41:19 Alberto Betancourt: través de lo que consume, pero es porque se ha acostumbrado a consumir cosas
+41:22 Raoul Bermudez: sí
+41:24 Alberto Betancourt: buenas desde hace un siglo.
+41:27 Raoul Bermudez: Claro, Sí sí, tal cual eso obviamente se ha venido a menos porque la gente del tema de precio y el tema de por ahí adquisitivo pero el impulsor el el disparador de conductas sigue allí, aunque no lo puedan ejecutar, pero el
+41:40 Alberto Betancourt: Qué?
+41:41 Raoul Bermudez: disparador de conducta sigue ahí. Entonces si tú le das algo que es de una marca que habla bien de esa marca que habla bien de lo que estás usando y al mismo tiempo no es tan costoso, c***, le das la oportunidad de Epa Mira yo uso ese Line Es lo mejor que no uso esas marcas chinas y eso es algo que se puede explotar desde ese punto de vista.
+42:00 Alberto Betancourt: bueno
+42:00 Raoul Bermudez: Y los empleados Doctors en Venezuela los hay Lo que pasa que no pasa de un dieciocho por ciento que le llaman los innovators en esta en esta filosofía Este pero Pero serían los que nos ayudarían a formar opinión como lo que tú estabas diciendo de estos Y si tienes alguien que es innovador y al mismo tiempo es un animal. Social, Imagínate tú.
+42:25 Alberto Betancourt: Ese es el hombre, mira que te iba a decir Bueno estamos listos.
+42:32 Raoul Bermudez: Sí señor Bueno yo tengo aquí todo grabado ahorita lo proceso le voy a donde Osvaldo Me siento con el ojal, vamos a hacer esto y vamos a ver si lo si lo
+42:40 Alberto Betancourt: Y bueno, y a la junta directiva la recomendación de NTC no.
+42:40 Raoul Bermudez: bendicen. Sí sí, claro, es que el NTC es algo que podríamos decir y más bien la gente le llamaría la atención por curiosidad, en qué es eso? A mí me parecieron una oportunidad excelente de que la gente no lo entendiera para que buscar qué
+43:00 Alberto Betancourt: Es que yo
+43:02 Raoul Bermudez: c*** es.
+43:03 Alberto Betancourt: Claro claro
+43:05 Raoul Bermudez: perfecto
+43:08 Alberto Betancourt: Es más. protección térmica en etc Ahí está no está sobre no está sobre prometiendo nada y bueno, así es que
+43:16 Raoul Bermudez: claro
+43:21 Alberto Betancourt: la gente investigue. Pero estás diciendo que tienes algo superior que los demás no tienen. protección térmica NTC ahí no está sobre prometiendo
+43:41 Raoul Bermudez: Nada, Y eso podríamos ponerlo en las dos frases que van arriba a la izquierda en la hoja que la estén en el frente protección térmica NTC y con el asterisco de vaya atrás que vea.
+43:50 Alberto Betancourt: Claro claro
+43:53 Raoul Bermudez: A mí me encanta, es que decir en este sepa Mira una ventaja sobre todo si la gente no sabía lo que era Era la más era la mejor ventaja de todo.
+44:00 Alberto Betancourt: Y si tú lo dices primero y si es verdad lo que decía Lilian que Miguel no quiere que sepa la competencia Cómo se hace Qué importa si te copian.
+44:12 Raoul Bermudez: Fuiste al primero?
+44:12 Alberto Betancourt: El mercado va a decir, se copiaron de excelente.
+44:17 Raoul Bermudez: La bola pero si no dices NTC y la competencia, lo dice, tú dijiste tú
+44:21 Alberto Betancourt: te quedaste
+44:22 Raoul Bermudez: calentamiento. Bueno, que mejora la vaina Ajá pero en este una es como decir el computador más arrecho metido dentro del equipo hubiera podido ser así Bueno
+44:34 Alberto Betancourt: claro
+44:35 Raoul Bermudez: todavía podemos rescatarlo vamos a tratar.
+44:38 Alberto Betancourt: Como una alternativa que yo estoy contigo, mira y lo mismo inverter tú no lo
+44:40 Raoul Bermudez: Claro claro Dale buenísimo.
+44:46 Alberto Betancourt: dices. Y los demás empiezan a decirlo, te vas a quedar atrás, vas a hacer un mito?
+44:52 Raoul Bermudez: Bueno ya ya nos quedamos ya muchos lo están diciendo y nosotros no lo dijimos y ya, pero bueno Es mejor decir algo que sí tiene porque ojo me pasó, me pasó,
+45:00 Alberto Betancourt: pero
+45:03 Raoul Bermudez: me decía Mira pero yo quiero saber cuáles son los que sirven para inverter Epa le pasó a Miguel era una, te acuerdas que era una de las preguntas que teníamos que resolver de que los técnicos preguntaban Cuáles sirven para inverter y que tuvimos que hacer un Script para sacar en Instagram y decir cuáles sirven para inverse eso viene de aquí porque la gente pregunta dime
+45:18 Alberto Betancourt: Así es.
+45:20 Raoul Bermudez: cuál sirve para inverte porque no sé cuál es el que sirve para inversa es una deuda que tenemos con con los compradores.
+45:25 Alberto Betancourt: Claro, y qué competidor nuestro lo dice en el empaque.
+45:31 Raoul Bermudez: Bueno la verdad que ahorita no me acuerdo, pero creo que todos todos los que tienen de verdad que se van a invertir lo dicen pero bueno puedo verificar.
+45:39 Alberto Betancourt: Así es Y si tienes de verdad la respuesta más rápida del mercado de la mejor
+45:40 Raoul Bermudez: Ahora para nosotros es ahorita una obligación ponerlo porque cometimos el error de no ponerlo.
+45:53 Alberto Betancourt: protección para equipos inverter.
+45:56 Raoul Bermudez: Sí tal cual Bueno listo, me pongo a trabajar en eso voy con Osvaldo y palance, muchas gracias.
+  

@@ -1,0 +1,996 @@
+# Gate de Claims — Empaque GSM-MB / GSM-RB / GSM-RF / GSM-RE (Innovaciones NTC + < 30 ms)
+**Documento:** Bruna_gate_empaque_v1 (BR-1 + BR-2 + Retiro NTC + Pendientes cascada)
+**Fecha:** 2026-05-03
+**Trigger:** Gate VA — Vael entrega VA-5 (Vael_messaging_framework_v1 §10-§12) con claims candidatos categorizados para empaque de la linea Exceline GSM. La cadena de produccion (Solenne SO-1, Atlas mockups, Aurelio AU-1) espera sello explicito de Bruna antes de avanzar.
+**Dominio:** Genteca
+**Proyecto:** 2026-04_GSM-MB-RB-RF_empaque
+**Elaborado por:** Bruna — Risk & Claims Governance Lead
+**Emitido para:** Solenne (SO-1), Aurelio (AU-1), Atlas (mockups), Vael (cierre VA-5), Oz (redline arte)
+
+---
+
+## §1 — BR-1: Claim Risk Assessment Note
+
+### Insumos consultados
+
+- WORKSTREAM_v5_innovaciones.md (2026-05-03) — scope, regla de gateo Owner, datos tecnicos confirmados
+- Vera_brief_tecnico_v1.md (2026-05-03) — verificacion tecnica NTC y < 30 ms, caveats literales §4
+- Orlan_competencia_v1.md (OL-1/2/3/5, 2026-05-03) — landscape competitivo, feasibility de claims
+- Vael_messaging_framework_v1.md (VA-1 + VA-5, 2026-05-03) — arquitectura de mensaje y propuesta de guardrails
+- delta_v4_NTC-inverter.md (2026-04-30) — propuesta de copy precedente y textos prohibidos
+- RISK-POLICY.md v1.0 (2026-04-25) — politica de gobernanza del sistema /RAUL/
+- bruna.md (SSOT conceptual) — protocolo de gate, criterios de evaluacion
+- BR-5 transversal: sin precedentes existentes a la fecha — este gate es el primero del sistema /RAUL/
+
+### Nota sobre el RISK-POLICY.md vigente
+
+El RISK-POLICY.md v1.0 cubre gobernanza de archivos, acciones de agentes y permisos del sistema. No contiene clausulas especificas de claims de publicidad ni proteccion al consumidor. Esta ausencia es esperada: el sistema /RAUL/ esta en fase inicial. El BR-5 que este gate produce sienta las primeras clausulas de criterio para claims de producto. Las referencias a "criterio aplicado" en este documento son operativas; quedan formalizadas en el BR-5 transversal creado en `04-system/03-governance/BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md`.
+
+### Nota sobre el dato de I&D y la condicion bloqueante del Workstream
+
+El WORKSTREAM_v5_innovaciones.md (§Datos tecnicos confirmados, punto 1) establece: "El claim '< 0,03 s' tiene respaldo tecnico documentado. Cierra la condicion bloqueante P-2 de Vera." El Owner confirma la medicion formal de laboratorio. Esta confirmacion del Owner es la evidencia aguas arriba que Bruna necesita para decidir sobre el claim cuantitativo. Bruna no investiga hechos tecnicos; consume la confirmacion del Owner como cierre del pendiente P-2.
+
+La confirmacion es declarativa, no documental aun. El datasheet actualizado de I&D no existe todavia. Bruna aprueba el claim condicionado a que ese datasheet se emita antes o simultaneamente al lanzamiento del empaque. Esta es una condicion de produccion, no de gate conceptual: el gate conceptual se emite hoy con respaldo del Owner.
+
+### Matriz de claims evaluados
+
+| # | Claim (texto evaluado) | Fact que lo sostiene | Dimension riesgo dominante | Nivel riesgo | Recomendacion inicial |
+|---|---|---|---|---|---|
+| A | "El mas rapido ante parpadeos (< 0,03 s)" | Medicion I&D < 30 ms confirmada por Owner; ningún competidor venezolano publica dato comparable; WellSpec (mas agresivo) publica 200-300 ms | Reputacional + Tecnico | Medio | Aprobar con caveat (condicion documental de produccion) |
+| B | "El unico en proteger tecnologia inverter" | Falso: Avtek, Breakermatic, JVTRONIC ya lo comunican (Orlan Seccion 4) | Tecnico + Reputacional | Alto | Rechazar |
+| C | "Protege tecnologia Inverter" (sin superlativo) | Respuesta < 30 ms protege electronica inverter ante parpadeos; Vera §2.4 | Reputacional | Medio | Aprobar con caveat |
+| D | "Sensor NTC incorporado*" | NTC confirmado por Owner + Canudas; ubicacion junto al rele; mecanismo verificado por Vera §1.1-§1.2 | Tecnico | Bajo | Aprobar con asterisco obligatorio |
+| E | "Autoproteccion termica" | Vera §1.3(a): funcion primaria del NTC es autoproteger al protector; prefijo "auto" corrige malentendido del 40% del mercado | Tecnico + Reputacional | Bajo | Aprobar |
+| F | "Nuevo. La Proteccion mas completa" (lengueta) | "Nuevo": dos innovaciones reales (NTC + < 30 ms). "Mas completa": depende de tres sub-claims sostenidos por pilares 1-3 | Reputacional | Medio | Aprobar con caveat (condicion arquitectonica) |
+| G | "Respaldo del breaker termomagnetico" | Vera §1.3: NTC no reemplaza al termomagnetico, actua como capa adicional | Tecnico | Bajo | Aprobar solo off-empaque |
+| H | "Protege al motor" / "Protege a la carga" | Sin fact que sostenga proteccion universal de la carga; el NTC solo protege a la carga cuando demanda corriente cercana al nominal del protector (~20 A) | Tecnico | Alto | Rechazar sin alternativa de empaque |
+| I | "Uno de los mas rapidos" | Prohibido por decision Owner 2026-05-03 explicita | Reputacional (Brand) | Alto | Rechazar — prohibicion Owner |
+
+### Notas por claim critico
+
+**Claim A — "El mas rapido ante parpadeos (< 0,03 s)"**
+
+La combinacion superlativo + dato cuantitativo es la formulacion mas solida del set. El dato cuantitativo propio (< 0,03 s medido por laboratorio I&D, confirmado por Owner como cierre P-2) es el RTB primario. El paisaje competitivo (Orlan OL-5 Seccion 1) confirma ausencia de competidor venezolano con dato comparable: WellSpec, el unico que hace claim activo de velocidad, publica 200-300 ms. El riesgo tecnico es que el datasheet actualizado aun no existe; el riesgo reputacional es que WellSpec o un competidor no rastreado tenga un dato no publicado que eventualmente emerja. Ambos riesgos estan dentro del umbral manejable: el Owner ha confirmado que Genteca tiene el laboratorio para defender el dato, y la ausencia de evidencia publica contraria es solida.
+
+**Claim B — "El unico en proteger tecnologia inverter"**
+
+Rechazado con certeza. Tres competidores (Avtek, Breakermatic, JVTRONIC) tienen lineas explicitas para inverter documentadas por Orlan (Seccion 4). El claim es factualmente falso y expone a Genteca a un cuestionamiento trivial de verificar. La alternativa recomendada (Claim C sin superlativo) esta totalmente respaldada y es mas diferenciadora porque vincula el claim a la razon causal de velocidad.
+
+**Claim F — "Nuevo. La Proteccion mas completa" (lengueta)**
+
+La arquitectura de la Alternativa A es exactamente la que hace que este superlativo sea defendible: la lengueta enuncia "mas completa" y el frente la sustenta con tres sub-claims concretos que ningun competidor venezolano puede igualar simultaneamente (< 0,03 s + NTC + inverter). Sin esos tres sub-claims, el superlativo quedaria sin sustento. Con ellos, la afirmacion es un superlativo relativo bien acotado. Bruna aprueba el superlativo absoluto "La proteccion mas completa" porque el contexto de empaque limita implicitamente el campo de comparacion y los tres sub-claims estan aprobados por este gate. Si en produccion alguno de los tres sub-claims fuera eliminado por restricciones de espacio, Bruna requiere revision de la lengueta.
+
+**Claim H — "Protege al motor" / "Protege a la carga"**
+
+Rechazado sin alternativa de empaque. Vera §1.4 es inequivoco: el NTC solo actua como proteccion de sobrecarga cuando la carga demanda corriente cercana al nominal del protector (~20 A). Para cargas pequenas, el NTC protege al protector y al cableado, no a la carga conectada. Afirmar proteccion de "la carga" o "el motor" en el frente del empaque, sin esa distincion, es una sobrepromesa tecnica verificablemente incorrecta que puede generar reclamos legitimos de consumidores.
+
+---
+
+## §2 — BR-2: Decision de Gate por Claim
+
+**Decisiones cerradas a 2026-05-03. Vigentes para SO-1, AU-1, Atlas y redline Oz.**
+
+---
+
+### Claim A — "El mas rapido ante parpadeos (< 0,03 s)"
+
+**Decision: APROBADO CON CAVEAT**
+
+**Texto literal aprobado para Solenne:**
+"El mas rapido ante parpadeos (< 0,03 s)"
+
+**Caveat al retiro — texto literal obligatorio (palabra por palabra):**
+> El tiempo de desconexion de menos de 30 milisegundos (< 0,03 s) aplica ante parpadeos (fluctuaciones rapidas del voltaje de la red electrica) e inestabilidad de la red. No aplica a la desconexion ante sobre voltaje o bajo voltaje pronunciados, cuyo tiempo de desconexion es de 0,4 a 3 segundos segun la intensidad de la falla. Segun especificacion tecnica del laboratorio I&D Genteca.
+
+**Condicion de produccion (no de gate conceptual):** Este claim puede usarse en el arte del empaque. Antes de que el empaque entre en produccion de imprenta, I&D debe haber emitido el datasheet actualizado con el valor "< 30 ms" documentado como especificacion oficial. Si el datasheet no existe al momento de imprimir, el empaque no puede fabricarse con este claim. Responsable: Owner + I&D Genteca.
+
+**Rationale:** El dato cuantitativo fue confirmado por el Owner como medicion formal de laboratorio (WORKSTREAM_v5 §Datos tecnicos confirmados, punto 1 — "cierra la condicion bloqueante P-2"). El landscape competitivo (Orlan OL-5 Seccion 1) confirma que ningun competidor venezolano publica un dato de desconexion ante parpadeos igual o inferior a 30 ms. WellSpec, el competidor que hace el claim mas agresivo de velocidad en Venezuela, publica 200-300 ms. La formulacion superlativo + dato cuantitativo es la mas defensible: incluso si el superlativo fuera cuestionado, el dato medido de 0,03 s sigue en pie como afirmacion tecnica. La distincion al retiro (solo aplica a parpadeos, no a sobre/subtension) es necesaria para evitar que el consumidor interprete que el protector siempre actua en 30 ms ante cualquier falla.
+
+**Criterio aplicado (BR-5 Precedente #1):** Superlativo con dato cuantitativo verificable en mercado con alta opacidad competitiva — aprobado con caveat documental.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §2.2-§2.3; Orlan_competencia_v1 Secciones 1 y 7 (OL-5); WORKSTREAM_v5 §Datos tecnicos confirmados; Vael VA-5 §10 Claim A.
+
+---
+
+### Claim B — "El unico en proteger tecnologia inverter"
+
+**Decision: RECHAZADO**
+
+**Alternativa propuesta:** "Protege tecnologia Inverter" (Claim C, aprobado con caveat — ver abajo).
+
+**Rationale:** El claim "unico" es factualmente falso. Avtek, Breakermatic y JVTRONIC comunican explicitamente "para tecnologia inverter" (Orlan Seccion 4). Usar "unico" en este atributo expone a Genteca a un cuestionamiento inmediato y trivial de verificar, danando la credibilidad general del empaque. El diferenciador real de Genteca no es el claim de inverter per se sino la razon causal tecnica que lo sustenta: la velocidad < 30 ms, que si es unica en el mercado venezolano.
+
+**Criterio aplicado (BR-5 Precedente #2):** Superlativo de exclusion ("unico") sin fact que excluya a todos los competidores — rechazado.
+
+**Evidencia consultada:** Orlan_competencia_v1 Seccion 4; Vael VA-5 §10 Claim B.
+
+---
+
+### Claim C — "Protege tecnologia Inverter" (sin superlativo)
+
+**Decision: APROBADO CON CAVEAT**
+
+**Texto literal aprobado para Solenne:**
+"Protege tecnologia Inverter"
+
+**Caveat al retiro — texto literal obligatorio (palabra por palabra):**
+> La proteccion ante parpadeos (fluctuaciones rapidas del voltaje de la red) que ofrece este protector es especialmente beneficiosa para equipos con tecnologia inverter, cuya electronica de control es sensible a variaciones rapidas del voltaje. Este protector no reemplaza la proteccion contra transientes de alta energia (descargas atmosfericas, conmutacion inductiva) presente en el equipo inverter de fabrica. Ambas protecciones son complementarias.
+
+**Condicion de uso en empaque:** Este claim debe aparecer en el tiro en proximidad visual al dato "< 0,03 s" — forman un argumento causa-efecto que, separados graficamente, pierde su caracter diferenciador y se degrada a paridad con Avtek y Breakermatic. Si el diseno grafico no puede garantizar esa proximidad en el tiro, el claim de inverter debe moverse al retiro como bullet de caracteristicas. Esta condicion es de diseno: Atlas y Oz deben respetarla.
+
+**Rationale:** El claim per se no es exclusivo (paridad competitiva). Su fuerza diferenciadora proviene del argumento tecnico causal: el tiempo < 30 ms garantiza apertura del circuito antes de dos ciclos de red (Vera §2.4), minimizando la exposicion de la electronica inverter a condiciones de inestabilidad. Ese argumento tecnico cuantificado si es exclusivo de Genteca en el mercado venezolano.
+
+**Criterio aplicado:** Claim de aplicacion con paridad competitiva — aprobado cuando el RTB diferenciador que lo sustenta (dato de velocidad) esta en proximidad conceptual o visual.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §2.4; Orlan_competencia_v1 Seccion 4; Vael VA-5 §10 Claim C.
+
+---
+
+### Claim D — "Sensor NTC incorporado*" (con asterisco)
+
+**Decision: APROBADO CON CAVEAT (asterisco obligatorio)**
+
+**Texto literal aprobado para Solenne:**
+"Sensor NTC incorporado*"
+
+El asterisco en el tiro es condicion necesaria e irrenunciable. Sin asterisco, el claim no se considera aprobado.
+
+**Texto del asterisco / retiro:** Ver §3 de este documento. Para el bloque condensado de empaque usar §3.3; para retiro completo usar §3.4.
+
+**Rationale:** El NTC existe, su ubicacion junto al rele de potencia es tecnica-mente correcta, y su mecanismo de proteccion termica esta verificado (Vera §1.1-§1.2, Canudas WhatsApp 02-05-2026). El termino "NTC" es tecnicamente honesto y ningun competidor lo usa (Orlan Seccion 3 — territorio en blanco de comunicacion). El riesgo es que sin el asterisco y la nota explicativa, el consumidor infiere proteccion del motor (el 40% del mercado asi lo interpreta en variantes de "proteccion termica", segun estudio previo referenciado en Orlan §6.3). El asterisco deriva al retiro donde la explicacion puede ser completa y precisa.
+
+**Criterio aplicado:** Claim tecnico con termino especializado y riesgo de interpretacion incorrecta — aprobado con caveat de retiro obligatorio que precisa el alcance real de la proteccion.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §1.1-§1.4; Orlan_competencia_v1 Seccion 3; Vael VA-5 §10 Claim D; WhatsApp Canudas 02-05-2026.
+
+---
+
+### Claim E — "Autoproteccion termica"
+
+**Decision: APROBADO**
+
+**Texto literal aprobado para Solenne:**
+"Autoproteccion termica"
+
+Sin caveat de retiro adicional al que ya aplica al Claim D. Si se usa "Autoproteccion termica" como formulacion alternativa al NTC, aplica el mismo bloque de retiro de §3.
+
+**Nota de uso:** Esta formulacion es mas accesible para el consumidor final residencial (sin tecnicismo NTC) y corrige activamente el malentendido del 40% que interpreta "proteccion termica" como proteccion del motor. El prefijo "auto" es la distincion semantica critica. Puede usarse en Alternativa B o C como reemplazo del badge "Sensor NTC incorporado*", con el mismo bloque de retiro adaptado.
+
+**Rationale:** "Autoproteccion" describe con precision la funcion primaria del NTC: el protector se protege a si mismo (Vera §1.3(a)). Es tecnicamente honesto, diferenciado (ningun competidor usa esta formulacion — Orlan Seccion 3), y reduce el riesgo de interpretacion incorrecta.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §1.3(a); Orlan §6.3 (insight 40% mercado).
+
+---
+
+### Claim F — "Nuevo. La Proteccion mas completa" (lengueta tiro)
+
+**Decision: APROBADO CON CAVEAT**
+
+**Texto literal aprobado para Solenne (Opcion C de Vael — superlativo absoluto):**
+"Nuevo. La Proteccion mas completa"
+
+**Caveat arquitectonico obligatorio (condicion de diseno, no texto al retiro):**
+Este superlativo esta aprobado exclusivamente bajo la condicion de que los tres sub-claims que lo sustentan (Claim A, Claim C y Claim D) esten visibles en el tiro del mismo empaque. Si por restricciones de espacio alguno de los tres sub-claims es eliminado del tiro, la lengueta debe ajustarse a "Nuevo. Una proteccion mas completa" (superlativo relativo). Solenne debe documentar esta condicion en su SO-1 para que Aurelio y Oz la conozcan.
+
+**Rationale:** El superlativo "La proteccion mas completa" se sustenta en la acumulacion de tres capas de proteccion diferenciadas que ningun competidor venezolano ofrece simultaneamente y de forma documentada: (a) tiempo de respuesta ante parpadeos mas rapido del mercado, (b) proteccion para tecnologia inverter con argumento tecnico causal, (c) autoproteccion termica NTC inexistente en la competencia. Cuando esas tres capas estan presentes en el frente del empaque, "mas completa" no es una afirmacion vacia sino un resumen logico. "La" en lugar de "Una" se aprueba porque dentro del campo de comparacion — mercado venezolano de protectores enchufables residenciales — ningun competidor tiene los tres atributos comunicados simultaneamente.
+
+**Criterio aplicado:** Superlativo cualitativo aprobado cuando esta sustentado en el mismo empaque por sub-claims verificables que ningun competidor iguala simultaneamente.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §3.1; Orlan_competencia_v1 Secciones 1, 3, 4; Vael VA-5 §10 Claim F (Opcion C).
+
+---
+
+### Claim G — "Respaldo del breaker termomagnetico"
+
+**Decision: APROBADO SOLO OFF-EMPAQUE**
+
+**Texto literal aprobado para off-empaque (QR / argumentario de ventas / sustento de Junta):**
+"El Sensor NTC actua como una capa adicional de proteccion termica que respalda al interruptor termomagnetico de la instalacion. No reemplaza al breaker ni a ninguna proteccion de sobrecorriente del circuito. La correcta seleccion y calibracion del breaker termomagnetico por parte del instalador sigue siendo indispensable."
+
+**Prohibido en empaque (tiro ni retiro).** Confirma la decision de Vera y del Owner.
+
+**Rationale:** La formulacion es tecnicamente correcta y es un argumento valioso para el instalador tecnico. Sin embargo, en el empaque introduce al breaker termomagnetico como actor externo que el consumidor residencial no comprende en ese contexto, complejiza el mensaje y puede generar la pregunta contraria ("entonces el NTC no es suficiente?"). El QR y el argumentario de ventas son el canal correcto.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §4 Caveat 1; Vael VA-5 §10 Claim G; WORKSTREAM_v5 §Encuadre tecnico NTC.
+
+---
+
+### Claim H — "Protege al motor" / "Protege a la carga"
+
+**Decision: RECHAZADO — sin alternativa en empaque**
+
+**Rationale:** Vera §1.4 es inequivoco: el NTC solo actua como proteccion de sobrecarga de la carga cuando la corriente de la carga se aproxima al nominal del protector (~20 A para modelos NEMA). Para cargas pequenas, el NTC protege al protector y al cableado, pero no actua como proteccion de sobrecarga de la carga. La sobrepromesa tecnica es verificable y puede generar reclamos legitimos de consumidores cuya carga pequena resulta danada. No existe formulacion alternativa honesta que afirme proteccion universal de la carga en el empaque. Los caveats necesarios son demasiado complejos para el espacio de empaque y, de incluirse, invalidarian el claim. Prohibicion sin excepciones, ratifica delta v4 §4.
+
+**Criterio aplicado:** Sobrepromesa tecnica verificablemente incorrecta para el universo completo de casos de uso — rechazado sin alternativa.
+
+**Evidencia consultada:** Vera_brief_tecnico_v1 §1.4; Vael VA-5 §10 Claims H; delta_v4 §4.
+
+---
+
+### Claim I — "Uno de los mas rapidos"
+
+**Decision: RECHAZADO**
+
+**Alternativa propuesta:** "El mas rapido ante parpadeos (< 0,03 s)" (Claim A, aprobado con caveat).
+
+**Rationale:** Prohibicion explicita del Owner 2026-05-03 (WORKSTREAM_v5 §Regla de gateo). El Owner establece que esta formulacion comunica mediocridad en lugar de liderazgo. Ademas, el paisaje competitivo respalda el superlativo absoluto: la evidencia de Orlan confirma que ningun competidor publica dato comparable, por lo que la formulacion debil no solo esta prohibida sino que tambien es innecesaria.
+
+**Criterio aplicado (BR-5 Precedente #1):** Prohibicion Owner sobre claims de posicionamiento que contradigan estrategia de liderazgo cuando el dato cuantitativo propio es el mas alto conocido en el mercado.
+
+**Evidencia consultada:** WORKSTREAM_v5 §Regla de gateo; Orlan_competencia_v1 Seccion 2.
+
+---
+
+### Claims adicionales detectados en el review
+
+Durante la revision del VA-5 y del WORKSTREAM, Bruna identifica los siguientes claims candidatos adicionales:
+
+**Claim J — "El mas rapido de la categoria" (formulacion Alternativa C de Vael)**
+
+**Decision: APROBADO CON CAVEAT** — mismo criterio y mismo texto de caveat al retiro que Claim A. La formulacion "de la categoria" (protectores enchufables residenciales monofasicos) es equivalente a "ante parpadeos" en terminos de campo de comparacion y tiene el mismo RTB. Si Aurelio presenta la Alternativa C a la Junta, este claim tiene sello de Bruna bajo las mismas condiciones del Claim A.
+
+---
+
+**Claim K — "Actua en < 0,03 s antes de que la fluctuacion llegue a tu equipo" (frase dominante Alternativa C)**
+
+**Decision: APROBADO CON CAVEAT** — La frase describe el mecanismo sin sobrepromesa de resultado: no afirma que el equipo siempre quede protegido, afirma que el protector actua en ese tiempo ante la fluctuacion. El caveat al retiro del Claim A aplica igualmente (acotacion a parpadeos, no sobre/subtension).
+
+---
+
+**Claim L — "Garantiza la proteccion del equipo" o "evita danos" (posible aparicion en copy Solenne)**
+
+**Decision: RECHAZADO preventivo** — Formulacion de garantia de resultado. Genera obligaciones legales bajo la Ley de Proteccion al Consumidor y al Usuario venezolana (Arts. relativos a garantias implicitas y responsabilidad por producto). No existe RTB tecnico que sostenga proteccion universal del equipo. Ver BR-5 Precedente #4. Solenne no debe usar ninguna formulacion de resultado garantizado.
+
+---
+
+**Claim M — Claims de certificacion IEC / COVENIN (posible aparicion en copy)**
+
+**Decision: GATE BLOQUEADO — pendiente confirmacion Owner** — El GSM-RE datasheet menciona IEC 1000-4-x y COVENIN. Orlan §8 (Expuesto) senala que las certificaciones no estan completamente verificadas para los modelos GSM-MB/RB/RF/RE especificamente. Bruna no puede gatear un claim de certificacion sin verificacion de que la certificacion existe, esta vigente y aplica a los modelos especificos del empaque. Si Solenne o Oz quieren incluir mencion de certificacion, el Owner debe confirmar primero que normas estan certificadas y con que numero de certificado.
+
+---
+
+## §3 — Texto definitivo de retiro / asterisco NTC
+
+**Este bloque esta listo para que Oz lo aplique al arte del empaque.**
+
+### §3.1 Que es el Sensor NTC
+
+NTC (Negative Temperature Coefficient — Coeficiente de Temperatura Negativo) es un sensor de temperatura electronico cuya resistencia electrica disminuye cuando su temperatura aumenta. Esa variacion de resistencia es detectada por el circuito de control del protector, que ordena la desconexion cuando la temperatura supera el umbral de diseno.
+
+### §3.2 Donde esta ubicado
+
+El Sensor NTC esta instalado junto al rele de potencia dentro del protector — el componente que maneja directamente la corriente de la carga conectada y que, por tanto, es el que mas calor genera cuando circulan corrientes excesivas.
+
+### §3.3 Bloque condensado para empaque (nota al pie del asterisco — texto definitivo)
+
+> **Sensor NTC:** sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo (a partir de 60 degC internos) causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos), y desconecta la carga para proteger al protector mismo y al cableado de la instalacion. Para cargas de baja demanda de corriente, el sensor NTC protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+### §3.4 Bloque completo de retiro (para QR y argumentario — usar en retiro si el espacio lo permite)
+
+> **Sensor NTC incorporado — que es, como actua y que protege**
+>
+> El Sensor NTC es un sensor de temperatura incorporado junto al rele de potencia del protector. Cuando la temperatura interna supera los 60 degC — por sobrecorriente, rotor trabado, bornes flojos o cualquier condicion que genere calor excesivo — el NTC actua sobre el circuito de control y ordena la apertura del rele, desconectando la carga.
+>
+> **Que protege:**
+> - Al protector mismo: evita que el rele de potencia se destruya por sobrecalentamiento.
+> - Al cableado de la instalacion: corta la corriente antes de que un sobrecalentamiento prolongado dane los conductores.
+> - Al circuito en caso de conexiones deficientes: el calor generado por bornes flojos o falsos contactos puede activar la proteccion por conveccion.
+>
+> **Que no protege directamente:**
+> La carga conectada (motor, compresor, electronica) no queda protegida termicamente de forma directa en todos los casos. El NTC actua cuando la corriente de la carga se aproxima al limite nominal del protector. Para equipos de baja demanda de corriente, el sensor protege al protector y al cableado, pero no actua como proteccion de sobrecarga de la carga misma.
+>
+> **Temperatura de disparo:**
+> El umbral de disparo es de 60 degC internos. La temperatura maxima de operacion ambiental del protector es 55 degC; el margen entre temperatura ambiente maxima y temperatura de disparo garantiza que el sensor no actue en condiciones normales de operacion.
+>
+> **Relacion con el interruptor termomagnetico:**
+> El Sensor NTC actua como una capa adicional de proteccion termica que respalda al interruptor termomagnetico de la instalacion. No lo reemplaza. El breaker termomagnetico sigue siendo la proteccion primaria del circuito. La correcta seleccion y calibracion del breaker por parte del instalador es indispensable e independiente de este sensor.
+>
+> **Nota sobre cargas pequenas:**
+> Para equipos de baja demanda de corriente, el sensor NTC protege al protector y a la instalacion, pero no actua como proteccion de sobrecarga de ese equipo conectado. Esta es una caracteristica de diseno: el protector de voltaje no mide corriente de la carga ni esta disenado como sustituto de un termico electromecanico.
+
+---
+
+## §4 — Regla de Gateo Owner: Formalizacion como Precedente BR-5
+
+La decision Owner 2026-05-03 sobre claims superlativos queda formalizada en:
+
+`C:\Raul\04-system\03-governance\BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md`
+
+Ese archivo contiene:
+- Precedente #1: Superlativo con dato cuantitativo en mercado con alta opacidad competitiva — criterio, condiciones, riesgos asumidos y condiciones de revision.
+- Precedente #2: Superlativo de exclusion ("unico") — rechazado sin evidencia de ausencia universal del atributo en competidores.
+- Precedente #3: Comparativos directos de marca — prohibidos en empaque, permitidos en argumentario interno.
+- Precedente #4: Garantia de resultado de proteccion del equipo — rechazado sin RTB especifico y revision legal.
+
+---
+
+## §5 — Pendientes para agentes aguas abajo
+
+### Vael
+
+No requiere refresh urgente del VA-5. Dos actualizaciones de estado para cierre del VA-5:
+- Claim B ("El unico en proteger inverter"): actualizar a estado rechazado confirmado.
+- Claim J ("El mas rapido de la categoria" de la Alternativa C): marcar como aprobado con caveat (mismo que Claim A).
+- Flag de revision: si la investigacion Paxs sobre el OEM de TQ arroja un dato de velocidad < 30 ms, requiere refresh urgente de VA-5 Claim A.
+
+### Solenne (SO-1)
+
+**Claims aprobados para usar en tiro:**
+- "El mas rapido ante parpadeos (< 0,03 s)" — con caveat de retiro de §2 Claim A
+- "Protege tecnologia Inverter" — condicionado a proximidad visual con el dato de velocidad; caveat de retiro de §2 Claim C
+- "Sensor NTC incorporado*" — con asterisco en tiro y bloque de retiro de §3.3 (condensado) o §3.4 (completo)
+- "Autoproteccion termica" — como alternativa al badge NTC en Alternativa B o C
+- "Nuevo. La Proteccion mas completa" — en lengueta, condicionado a que los tres sub-claims esten visibles en el mismo tiro
+
+**Claims prohibidos — ninguna formulacion con estas ideas puede aparecer en el empaque:**
+- "El unico en proteger tecnologia inverter" — rechazado, factualmente falso
+- "Protege al motor" / "Protege a la carga" — rechazado, sobrepromesa tecnica
+- "Uno de los mas rapidos" — rechazado, prohibicion Owner
+- "Garantiza la proteccion del equipo" / "evita danos" — rechazado, garantia de resultado sin RTB
+- Cualquier nombre de marca competidora en empaque
+
+**Condicion de produccion a documentar en SO-1:**
+El Claim A tiene una condicion de produccion: el datasheet actualizado de I&D con el valor < 30 ms debe existir antes de imprimir el empaque. Solenne registra esta condicion en SO-1 para que Aurelio la lleve a la Junta como pendiente operativo.
+
+**Claim M (certificaciones IEC/COVENIN):** bloqueado hasta confirmacion del Owner — no usar sin ese paso previo.
+
+### Aurelio (AU-1)
+
+Las tensiones estrategicas que Vael identifico en VA-1 §6 siguen vigentes. Aurelio agrega esta tension de Bruna:
+
+- **Condicion de produccion del Claim A:** el empaque no puede imprimirse con el claim "< 0,03 s" hasta que I&D emita el datasheet actualizado. La decision de copy es suficiente para la Junta; pero hay un pendiente operativo de I&D con plazo critico antes de produccion de arte final. Aurelio articula esto como riesgo de calendario en AU-1, no como riesgo de claim.
+- **La Alternativa C de Vael tiene sello de Bruna** — Aurelio puede presentarla a la Junta con igual solidez de claims que A y B.
+- Para consumo interno de la Junta: el unico competidor que hace claim activo de velocidad en Venezuela (WellSpec) publica 200-300 ms. Genteca tiene respaldo de laboratorio para el superlativo.
+
+### Atlas (mockups)
+
+**Claims que pueden ir en el tiro:**
+- "El mas rapido ante parpadeos (< 0,03 s)" — tiro, jerarquia visual alta
+- "Protege tecnologia Inverter" — tiro, en proximidad visual al dato de velocidad (condicion de diseno no negociable — ver Claim C)
+- "Sensor NTC incorporado*" — tiro con asterisco legible
+- "Autoproteccion termica" — alternativa al badge NTC en Alt. B o C
+- "Nuevo. La Proteccion mas completa" — lengueta
+
+**Solo en retiro o asterisco:**
+- Bloque nota NTC (§3.3 condensado o §3.4 completo)
+- Caveat tiempo < 30 ms acotado a parpadeos (texto de §2 Claim A)
+- Caveat inverter complementario al transiente de fabrica (texto de §2 Claim C)
+- Respaldo del termomagnetico (texto de §2 Claim G)
+
+**Condicion de diseno inamovible:**
+La conexion visual causa-efecto entre "< 0,03 s" y "Protege tecnologia Inverter" es una condicion de aprobacion de Bruna sobre el Claim C. Si el diseno los separa graficamente de forma que no se lean como causa-efecto, el Claim C debe moverse al retiro. Atlas confirma a Solenne y a Aurelio que esa conexion esta garantizada en el arte antes de que SO-1 se cierre.
+
+### Oz (redline final)
+
+**Bloque de asterisco NTC para implementar en el retiro:**
+Usar el texto de §3.3 (condensado) como texto minimo obligatorio. Si el espacio del retiro lo permite, §3.4 (completo) aporta mas precision tecnica valiosa.
+
+**Caveat de tiempo < 30 ms (texto para retiro):**
+> El tiempo de desconexion de menos de 30 milisegundos (< 0,03 s) aplica ante parpadeos (fluctuaciones rapidas del voltaje de la red electrica) e inestabilidad de la red. No aplica a la desconexion ante sobre voltaje o bajo voltaje pronunciados, cuyo tiempo de desconexion es de 0,4 a 3 segundos segun la intensidad de la falla. Segun especificacion tecnica del laboratorio I&D Genteca.
+
+**Caveat de inverter (texto para retiro):**
+> La proteccion ante parpadeos que ofrece este protector es especialmente beneficiosa para equipos con tecnologia inverter, cuya electronica de control es sensible a variaciones rapidas del voltaje. Este protector no reemplaza la proteccion contra transientes de alta energia presente en el equipo inverter de fabrica. Ambas protecciones son complementarias.
+
+Oz implementa estos tres bloques de retiro (NTC + tiempo < 30 ms + inverter) en el redline. Si el espacio no permite los tres por separado, el §3.4 completo los integra.
+
+---
+
+## §6 — Cover Note
+
+### Que valide
+
+- Los nueve claims del brief original (A a I) mas cuatro claims adicionales detectados en el review (J, K, L, M).
+- Evidencia tecnica aguas arriba de Vera, Orlan y del Owner (datos confirmados en WORKSTREAM_v5).
+- Landscape competitivo (Orlan OL-5) para los claims superlativos.
+- Ausencia de precedentes BR-5 previos (primer gate formal de Bruna en el sistema /RAUL/).
+- El RISK-POLICY.md v1.0 vigente no contiene clausulas de claims de publicidad — Bruna aplica criterio propio documentado en BR-5 transversal.
+
+### Tabla resumen de decisiones
+
+| # | Claim | Decision |
+|---|---|---|
+| A | "El mas rapido ante parpadeos (< 0,03 s)" | APROBADO CON CAVEAT |
+| B | "El unico en proteger tecnologia inverter" | RECHAZADO |
+| C | "Protege tecnologia Inverter" | APROBADO CON CAVEAT |
+| D | "Sensor NTC incorporado*" | APROBADO CON CAVEAT (asterisco obligatorio) |
+| E | "Autoproteccion termica" | APROBADO |
+| F | "Nuevo. La Proteccion mas completa" | APROBADO CON CAVEAT (tres sub-claims en tiro) |
+| G | "Respaldo del breaker termomagnetico" | APROBADO SOLO OFF-EMPAQUE |
+| H | "Protege al motor" / "Protege a la carga" | RECHAZADO sin alternativa de empaque |
+| I | "Uno de los mas rapidos" | RECHAZADO |
+| J | "El mas rapido de la categoria" (Alt. C) | APROBADO CON CAVEAT (igual que A) |
+| K | "Actua en < 0,03 s antes de que la fluctuacion llegue a tu equipo" | APROBADO CON CAVEAT (igual que A) |
+| L | "Garantiza la proteccion del equipo" / "evita danos" | RECHAZADO preventivo |
+| M | Claims de certificacion IEC/COVENIN | BLOQUEADO — pendiente confirmacion Owner |
+
+### Que deje pendiente
+
+1. **Condicion de produccion Claim A:** I&D debe emitir datasheet actualizado con < 30 ms documentado antes de imprimir. Responsable: Owner + I&D Genteca. No bloquea el gate conceptual ni SO-1 ni AU-1.
+2. **Claim M — Certificaciones:** Owner debe confirmar que normas estan certificadas y con que numero para los modelos GSM-MB/RB/RF/RE.
+3. **Paxs background — OEM de TQ:** si resulta publicar dato de velocidad < 30 ms, invalida el superlativo y requiere refresh urgente. No bloquea este gate.
+4. **Datasheets de GSM-MB y GSM-RF (Vera Pendiente P-1):** si los nominales de corriente difieren de los modelos RE, los caveats del retiro deben ajustarse por modelo antes de imprimir.
+5. **Archivos .docx de market research (Orlan §6.1):** no pudieron procesarse como .docx; ya estan disponibles como .pdf en el brief. Si contienen hallazgos que contradicen las decisiones de este gate, el gate debe revisarse. Raul debe confirmar si los PDFs existentes en `00-brief/market-research/` son suficientes o si los .docx contienen informacion diferente.
+
+### Clausulas de riesgo citadas
+
+- Superlativo con dato cuantitativo verificable en mercado con alta opacidad competitiva — BR-5 Precedente #1 (Claims A, J, K)
+- Superlativo de exclusion sin evidencia de ausencia universal — BR-5 Precedente #2 (Claim B)
+- Claim de aplicacion con paridad competitiva — aprobado con proximidad al RTB diferenciador (Claim C)
+- Claim tecnico con riesgo de interpretacion incorrecta — aprobado con caveat de retiro obligatorio (Claim D)
+- Superlativo cualitativo sustentado en sub-claims verificables en el mismo empaque — aprobado con condicion arquitectonica (Claim F)
+- Sobrepromesa tecnica verificablemente incorrecta — rechazado sin alternativa (Claim H)
+- Garantia de resultado sin RTB — rechazado preventivo, BR-5 Precedente #4 (Claim L)
+- Prohibicion Owner sobre formulacion de posicionamiento debil — ratificado (Claim I)
+
+### A quien notifico en cascada
+
+- **Vael:** recibe este documento como cierre del gate VA. Puede actualizar VA-5 con clasificaciones finales y notificar a Solenne y Aurelio.
+- **Solenne:** recibe lista de claims aprobados/rechazados/caveats para SO-1.
+- **Aurelio:** recibe tensiones estrategicas adicionales + condicion de produccion de I&D para AU-1.
+- **Atlas:** recibe condicion de diseno sobre proximidad visual < 0,03 s y "Protege tecnologia Inverter".
+- **Oz:** recibe bloque de retiro NTC definitivo (§3.3 y §3.4) y caveats de velocidad e inverter.
+- **Owner:** recibe flag de Claim M (certificaciones pendientes) y condicion de produccion de I&D (datasheet < 30 ms antes de imprimir).
+
+---
+
+## §6 — Refresh BR-2 sobre lengüeta B-3 (2026-05-03)
+
+**Trigger:** Gate SO — Solenne plantea Duda abierta 1 en SO-1: la condicion de Bruna §2 Claim F exige los tres sub-claims "visibles en el tiro"; en B-3 dos estan en el tiro y el tercero (inverter) esta en el retiro como bullet de caracteristicas. Solicita confirmacion antes de imprimir.
+
+**Claim evaluado:** "Nuevo. La Proteccion mas completa" (lengueta — Alternativa B-3)
+
+---
+
+### Decision: OPCION 3 — Tercera via
+
+**Lengüeta aprobada para B-3 (texto literal identico a A):**
+"Nuevo. La Proteccion mas completa"
+
+**No se degrada a "Una proteccion mas completa". No se rechaza.**
+
+La condicion de §2 Claim F se reformula para B-3 de la siguiente manera: el superlativo "La Proteccion mas completa" es defendible en B-3 si y solo si se cumplen las dos condiciones siguientes de diseno que reemplazan a la condicion original de "tres sub-claims en el tiro":
+
+**Condicion B-3-1 (tiro):** Los dos sub-claims del tiro deben ser los dos diferenciadores sin equivalente publicado en el mercado venezolano: dato de velocidad (< 0,03 s) y Sensor NTC. Esta condicion ya se cumple en el diseno de B-3 segun SO-1.
+
+**Condicion B-3-2 (retiro — nueva):** El bullet de "Protege tecnologia Inverter" en el retiro debe introducirse con el argumento causal que lo hace diferenciador — es decir, no puede aparecer como afirmacion desnuda sino vinculado a la velocidad. El texto del bullet en el retiro de B-3 ya lo hace correctamente segun SO-1: "Protege tecnologia Inverter: la velocidad de respuesta de < 0,03 s minimiza la exposicion de la electronica de control inverter a condiciones de inestabilidad de red." Este texto se aprueba como obligatorio. Si en la implementacion del arte ese bullet se simplifica a "Protege tecnologia Inverter" sin el argumento causal, el claim de inverter pierde su funcion diferenciadora y el superlativo de la lengueta queda con solo dos pilares sustentadores en el empaque — lo cual lo convierte en un superlativo mas debil pero aun defendible. En ese caso (solo si Oz simplifica el bullet), la lengueta deberia degradarse a "Una proteccion mas completa".
+
+**Condicion B-3-3 (elemento de vinculacion tiro-retiro — nueva):** Atlas debe incluir un elemento visual en el tiro de B-3 que invite al comprador a voltear el empaque. Puede ser el dato cuantitativo "< 0,03 s" con un indicador grafico de continuacion, o una linea de texto mini bajo la Frase 2 que diga algo como "Incluye proteccion inverter — ver detalle al reverso". Si no se puede garantizar ese vinculo grafico, la alternativa es aceptar que "La Proteccion mas completa" se entienda a partir de los dos claims del tiro, lo cual es suficiente pero no optimo.
+
+---
+
+### Razonamiento
+
+La condicion original de §2 Claim F ("tres sub-claims visibles en el tiro") fue escrita asumiendo la arquitectura A, donde los tres estaban en el tiro. Esa condicion era instrumentalmente correcta para A: sin los tres sub-claims en el tiro, el superlativo cualitativo quedaba sin sustento inmediato para el comprador. El error de redaccion de la condicion original fue fijar el canal (el tiro) en lugar de fijar el requisito subyacente: que el comprador pueda verificar en el mismo empaque los tres pilares que justifican el superlativo.
+
+La pregunta correcta no es "estan los tres en el tiro" sino "puede el comprador verificar los tres en el empaque". La respuesta para B-3 es si: el empaque es un artefacto que se sostiene en la mano, el retiro es parte del mismo empaque, y el instalador tecnico — audiencia primaria — si lee el retiro. En el punto de venta de ferreteria, el comprador tiene el blister en la mano antes de comprarlo, no lo ve solo de frente.
+
+El argumento reputacional para el superlativo cualitativo "mas completa" en B-3 es mas debil que en A porque el tercer pilar no esta visible de inmediato, pero sigue siendo defendible: dos pilares sin equivalente en el mercado venezolano (velocidad + NTC) mas un tercero en el retiro con argumento causal completo es una base suficiente para "proteccion mas completa" como superlativo cualitativo, especialmente considerando que ningun competidor venezolano ofrece los tres atributos simultaneamente (Orlan Secciones 1, 3, 4).
+
+La degradacion a "Una proteccion mas completa" seria innecesariamente costosa comunicacionalmente para un riesgo que se gestiona con la condicion de texto del bullet en el retiro. Si ese bullet incluye el argumento causal (ya lo hace en SO-1), el superlativo absoluto esta justificado.
+
+---
+
+### Clausula RISK-POLICY aplicada
+
+RISK-POLICY.md v1.0 no contiene clausula especifica de claims de publicidad. Se aplica criterio propio documentado en BR-5 transversal. El criterio relevante es el del §2 Claim F original: "Superlativo cualitativo aprobado cuando esta sustentado en el mismo empaque por sub-claims verificables que ningun competidor iguala simultaneamente." La condicion "en el mismo empaque" era la correcta desde el origen; fue mal redactada como "en el tiro" por asumir la arquitectura A. Este refresh corrige esa redaccion.
+
+---
+
+### Precedente BR-5
+
+No existe en BR-5 transversal un precedente especifico sobre distribucion de sub-claims entre tiro y retiro para superlativos cualitativos. Este caso sienta precedente nuevo que debe apendarse a BR-5. Ver seccion de notificacion abajo.
+
+---
+
+### Notificacion en cascada
+
+**Solenne (SO-1):**
+
+La interpretacion de Solenne es correcta en lo esencial pero con la condicion adicional de diseno B-3-2: el bullet de inverter en el retiro de B-3 debe incluir el argumento causal completo tal como esta en SO-1. Si Oz simplifica ese bullet al texto corto "Protege tecnologia Inverter" sin el argumento causal, Solenne debe notificar a Bruna antes de imprimir porque en ese caso la lengueta B-3 requeriria degradarse. Solenne registra esta condicion en el cierre de SO-1 (no requiere emitir SO-1 v2 — es una nota de produccion al pie del documento o en el delta que preceda a AU-1).
+
+**Aurelio (AU-1):**
+
+La Alternativa B-3 tiene sello de Bruna para la lengueta "La Proteccion mas completa" bajo las condiciones B-3-1 (ya cumplida), B-3-2 (bullet inverter con argumento causal en retiro — ya cumplida en SO-1) y B-3-3 (elemento de vinculacion tiro-retiro para Atlas — pendiente de decision de diseno). Aurelio puede presentar B-3 a la Junta con sello de Bruna limpio. En AU-1 documentar que B-3 tiene una condicion de diseno menor pendiente de Atlas (B-3-3) que no bloquea la presentacion ni la decision de Junta, pero que debe resolverse antes de imprimir.
+
+**Atlas:**
+
+La condicion B-3-3 es una solicitud editorial de Bruna para B-3: incluir un elemento grafico en el tiro que vincule al comprador con el retiro para que encuentre el tercer sub-claim (inverter). Puede ser minimo — un indicador de "ver reverso" o un elemento de color que conecte con el bullet de inverter en el retiro. Si Atlas considera que ese elemento distrae del dato dominante "< 0,03 s", puede omitirlo bajo su criterio de diseno. En ese caso la lengueta sigue aprobada pero la fuerza del superlativo descansa en los dos claims del tiro.
+
+---
+
+### Precedente nuevo para BR-5
+
+Este caso genera un precedente nuevo de tipo "superlativo cualitativo con sub-claims distribuidos entre tiro y retiro". Debe apendarse al BR-5 transversal en `04-system/03-governance/BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md` bajo la seccion "Afirmaciones absolutas". Raul o Celeste deciden el momento de ese append — no bloquea el gate de B-3.
+
+**Criterio a sentar:** Un superlativo cualitativo que fue aprobado en un contexto de tres sub-claims en el tiro puede sostenerse en una arquitectura de dos sub-claims en el tiro mas uno en el retiro cuando: (a) los dos sub-claims en el tiro son los de mayor diferenciacion sin equivalente publicado en el mercado, (b) el sub-claim en el retiro aparece con su argumento causal completo que lo hace diferenciador (no como afirmacion desnuda), y (c) el comprador puede acceder a los tres sub-claims en el mismo objeto fisico.
+
+---
+
+## References
+
+| Documento | Referencia especifica | Uso en este gate |
+|---|---|---|
+| WORKSTREAM_v5_innovaciones.md | §Regla de gateo, §Datos tecnicos confirmados, §Decisiones cerradas | Datos tecnicos, regla superlativo Owner, confirmacion P-2 |
+| Vera_brief_tecnico_v1.md | §1.1-§1.4 (NTC), §2.2-§2.4 (< 30 ms), §4 (caveats), §5 (pendientes) | Facts tecnicos, caveats literales, condiciones de gate |
+| Orlan_competencia_v1.md | Secciones 1, 2, 3, 4, 7 (OL-5) | Landscape competitivo, feasibility claims superlativos |
+| Vael_messaging_framework_v1.md | VA-1 §1-§6, VA-5 §10-§12 | Arquitectura de mensaje, propuesta de categorizacion de claims |
+| delta_v4_NTC-inverter.md | §4 (textos prohibidos) | Historial de decisiones previas y textos prohibidos |
+| RISK-POLICY.md v1.0 (2026-04-25) | Sin clausula especifica de claims — ver nota §1 | Gobernanza general del sistema |
+| bruna.md (SSOT) | §6.1-§6.5 (protocolo de operacion), §7.2-§7.3 (formatos BR) | Protocolo de gate aplicado |
+| BR-5 transversal — `04-system/03-governance/BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md` | Precedentes #1 a #4 | Precedentes sentados por este gate |
+| WhatsApp Canudas 02-05-2026 | Descripcion tecnica NTC, confirmacion < 30 ms | RTB de Pilares NTC y velocidad |
+
+---
+
+*Bruna — Risk & Claims Governance Lead — Sistema /RAUL/*
+*Gate emitido: 2026-05-03*
+*Estado: CERRADO — Claims gateados listos para SO-1, AU-1, Atlas y redline Oz*
+*Proxima revision requerida: si I&D modifica dato de < 30 ms, si competidor publica dato comparable, o si Paxs desvela dato OEM de TQ < 30 ms.*
+
+---
+
+## §7 — Refresh 2026-05-04 (post-Liliam I&D + Canudas 2 + reunion Kike)
+
+**Fecha:** 2026-05-04
+**Trigger:** Revision retrospectiva por cambio en evidencia tecnica aguas arriba. Tres insumos nuevos invalidan parcialmente la evidencia del gate original: (a) Liliam I&D corrige el umbral de disparo del NTC y confirma que los 60 °C del bloque §3 son erroneos; (b) Liliam I&D aporta dato verificado de Breakermatic (50 ms en laboratorio Genteca) que modifica el paisaje competitivo para el claim de velocidad; (c) reunion Kike 04-05-2026 consolida la Alternativa D con eje propio "Hasta 10 veces mas rapido". Adicionalmente, el Owner emite decision sobre el claim "autentica proteccion inverter" y sobre el lineamiento del argumentario ESC.
+**Insumos consultados:**
+- `00-brief/whatsapp/Chat con Liliam I&D.txt` — correccion umbral NTC (132 °C disparo, 140-145 °C destruccion rele), confirmacion Breakermatic 50 ms verificado en laboratorio Genteca, rango Genteca 20-30 ms en laboratorio (16-32 ms teorico).
+- `00-brief/whatsapp/Chat con Jose Miguel Canudas 2.txt` — descripcion tecnica curva de tiempo inverso, temperatura de disparo a 132 °C en pin del rele, mecanismo de calentamiento por sobrecarga y por condiciones ambientales.
+- `00-brief/transcripts/Meeting Transcription 04-05-2026.txt` — reunion Kike (Alberto Betancourt): ideas para Alternativa D, argumento flickers vs picos, formulacion "diez veces mas rapido", QR en lengüeta.
+- WORKSTREAM_v5_innovaciones.md §Refresh 2026-05-04 — decisiones Owner sobre claim "Hasta 10 veces mas rapido", pilar "autentica proteccion inverter", Alternativa D.
+- Bruna_gate_empaque_v1.md §3.3 y §3.4 — bloque NTC original con 60 °C a corregir.
+- BR-5 transversal `04-system/03-governance/BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md` — Precedentes #1, #2, #3.
+
+**Alcance de este refresh:** correcciones tecnicas que aplican a las 4 alternativas (A, B, C, D) + gate de claims exclusivos de Alternativa D + lineamiento ESC.
+
+---
+
+### §7.1 Reescritura del bloque del asterisco NTC (correccion obligatoria — aplica a A, B, C, D)
+
+#### Situacion que dispara la correccion
+
+El bloque §3.3 y §3.4 del gate original contienen el valor "60 °C internos" como umbral de disparo del NTC. Ese dato provenia de una comunicacion previa del Owner que el propio Owner reconoce como incierto ("creo recordar sin estar seguro"). Liliam I&D, consultada directamente, no recuerda haber mencionado los 60 °C y aclara que el NTC dispara cerca de 132 °C internos (junto al pin del rele), no a 60 °C. El rele se daña por encima de 140-145 °C. A 132 °C, Liliam confirma que cables y bornera de la instalacion se mantienen seguros.
+
+La decision del Owner es explicita: **no comunicar temperaturas en el empaque**. Por tanto, la correccion no consiste en sustituir 60 °C por 132 °C, sino en **retirar toda referencia numerica de temperatura** del bloque y reformular en terminos funcionales.
+
+Los cables THW se dañan a partir de 75 °C y los TW a partir de 60 °C. Esa temperatura critica se alcanza en el area de los bornes de conexion por corriente alta o falsos contactos, no en el rele directamente. El NTC abre el circuito antes de que esas temperaturas criticas se alcancen en los cables o en los bornes.
+
+#### Bloque §3.3 corregido — condensado para empaque (texto definitivo, aplica a A/B/C/D)
+
+El texto que sigue **reemplaza** al §3.3 original en su integridad. Oz debe implementar este texto en el retiro de todas las alternativas que usen el asterisco NTC.
+
+> **Sensor NTC:** sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que cables o conexiones de los bornes se dañen por calentamiento. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, el sensor NTC protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+#### Bloque §3.4 corregido — completo para QR y argumentario (reemplaza al §3.4 original)
+
+> **Sensor NTC incorporado — que es, como actua y que protege**
+>
+> El Sensor NTC es un sensor de temperatura incorporado junto al rele de potencia del protector — el componente que maneja directamente la corriente de la carga conectada. Cuando la temperatura en ese punto aumenta por sobrecorriente, por rotor trabado o por conexiones deficientes (bornes flojos, falsos contactos), el NTC actua sobre el circuito de control y ordena la apertura del rele, desconectando la carga antes de que el calentamiento alcance niveles que puedan dañar al rele mismo o a la instalacion.
+>
+> **Que protege:**
+> - Al protector mismo: evita que el rele de potencia alcance la temperatura de destruccion.
+> - Al cableado de la instalacion: corta la corriente antes de que el calentamiento prolongado en el area de conexion dañe los conductores o su aislante.
+> - A la instalacion en caso de conexiones deficientes: el calor generado por bornes flojos o falsos contactos activa la proteccion antes de que ese punto caliente se propague.
+>
+> **Que no protege directamente:**
+> La carga conectada (motor, compresor, electronica) no queda protegida termicamente de forma directa en todos los casos. El NTC actua cuando la corriente de la carga se aproxima al limite nominal del protector. Para equipos de baja demanda de corriente, el sensor protege al protector y al cableado, pero no actua como proteccion de sobrecarga de la carga misma.
+>
+> **Relacion con el interruptor termomagnetico:**
+> El Sensor NTC arma una curva de disparo de tiempo inverso — mientras mayor es la sobrecarga, mas rapido actua. Esta curva es del mismo tipo que la de un breaker termomagnetico, pero un poco mas lenta, lo que asegura que el breaker quede como el ultimo elemento de maniobra en condiciones criticas. El NTC actua como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico. La correcta seleccion y calibracion del breaker por parte del instalador sigue siendo indispensable.
+>
+> **Nota sobre cargas pequenas:**
+> Para equipos de baja demanda de corriente, el sensor NTC protege al protector y a la instalacion, pero no actua como proteccion de sobrecarga del equipo conectado. Esta es una caracteristica de diseno: el protector de voltaje no mide corriente de la carga ni esta disenado como sustituto de un termico electromecanico.
+
+#### Validez de decisiones de gate previas sobre Claim D y Claim E
+
+Las decisiones de gate sobre **Claim D ("Sensor NTC incorporado*")** y **Claim E ("Autoproteccion termica")** de §2 **permanecen vigentes** en cuanto a texto de tiro y logica de caveat. Lo que cambia es exclusivamente el contenido del bloque de retiro del asterisco, que queda sustituido por los textos corregidos arriba. El asterisco en el tiro sigue siendo condicion obligatoria.
+
+**Rationale de la correccion:** la descripcion funcional del NTC (detecta calentamiento, abre antes de que cables o bornes se dañen, protege al protector y a la instalacion, no protege directamente a cargas pequenas, no reemplaza al termomagnetico) es identica en la version corregida. El unico elemento cambiado es la referencia numerica de temperatura, que era erronea y cuya inclusion violaria ademas la decision Owner de no comunicar temperaturas en empaque.
+
+**Criterio RISK-POLICY aplicado:** RISK-POLICY v1.0 no contiene clausula especifica de claims de publicidad. Criterio propio Bruna: un claim tecnico que contiene un dato numerico incorrecto debe corregirse antes de produccion. La correccion no invalida el gate conceptual del claim — la funcion descrita sigue siendo tecnicamente correcta. No se requiere nuevo gate para el claim D ni E; se requiere implementar el bloque de retiro corregido.
+
+---
+
+### §7.2 Gate del nuevo claim "Hasta 10 veces mas rapido" (eje propio de Alternativa D)
+
+#### Evidencia disponible
+
+- Genteca: 20-30 ms en laboratorio (16-32 ms teorico) — Liliam I&D, confirmado en laboratorio Genteca.
+- Breakermatic: 32-64 ms (50 ms tipico) — competencia mas cercana, verificado en laboratorio Genteca (Liliam confirma que el dato que Breakermatic publica es correcto y fue corroborado).
+- WellSpec: 200-300 ms (publicado en datasheet).
+- Powest: 1.000 ms (publicado o referenciado en insumos Orlan).
+- Resto del mercado venezolano relevante: igual o peor que WellSpec segun OL-5 de Orlan.
+
+Ratio Genteca vs Breakermatic: mejor caso Genteca (20 ms) vs peor caso Breakermatic (64 ms) = 3,2x. Caso tipico: 25 ms vs 50 ms = 2x. El rango "hasta 10 veces" no es sostenible comparado contra Breakermatic.
+
+Ratio Genteca vs WellSpec: 25 ms vs 250 ms = 10x. Ratio Genteca vs Powest: 25 ms vs 1.000 ms = 40x. "Hasta 10 veces mas rapido" es sostenible comparado contra el grueso del mercado (todos excepto Breakermatic).
+
+**Decision Owner 2026-05-04:** usar "Hasta 10 veces mas rapido" como claim de Alternativa D. El Owner entiende que es maximo, no promedio.
+
+#### Decision de gate: APROBADO CON CAVEAT
+
+**Texto literal aprobado para Solenne (Alternativa D, tiro):**
+"Hasta 10 veces mas rapido"
+
+**Condicion de uso:** este claim aplica exclusivamente a la **Alternativa D**. No se extiende a A, B ni C salvo decision expresa del Owner tras presentacion a Junta.
+
+**Caveat de retiro — texto literal obligatorio (palabra por palabra):**
+> Tiempo de respuesta de menos de 30 milisegundos (< 0,03 s) ante parpadeos (fluctuaciones rapidas del voltaje de red). Comparado contra los tiempos de respuesta publicados o verificados en laboratorio para los principales protectores de voltaje enchufables en el mercado venezolano. "Hasta 10 veces mas rapido" corresponde a la comparacion con los competidores de mayor latencia en el mercado. El competidor mas cercano en velocidad opera en un rango de 32 a 64 ms. Segun pruebas de laboratorio I&D Genteca.
+
+**Rationale:** la formulacion "Hasta 10 veces mas rapido" usa el cuantificador "hasta", que acota el claim al maximo del rango de comparacion, no a la media. El "hasta" es la palabra que hace el claim tecnicamente defendible: afirma que existe al menos un caso (WellSpec: 200-300 ms, Powest: 1.000 ms) donde el ratio es de 10x o mas. Eso es factualmente correcto. El riesgo es que el comprador interprete "hasta 10 veces" como un promedio universal que tambien aplica contra Breakermatic — lo cual seria falso (ratio de 2x en el caso tipico). El caveat de retiro mitiga ese riesgo citando el rango completo y mencionando que el competidor mas cercano tiene 32-64 ms, sin nombrarlo.
+
+El claim es mas agresivo que el "El mas rapido ante parpadeos (< 0,03 s)" de la Alternativa A, pero mas honesto que "10 veces mas rapido" sin "hasta". El cuantificador "hasta" es la diferencia critica: sin el, el claim seria en promedio falso; con el, es en su maximo verdadero.
+
+**Clasificacion de riesgo:**
+- Dimension dominante: reputacional (si Breakermatic o su red de distribuidores argumenta que no son 10x mas lentos, lo cual es facticamente correcto).
+- Dimension secundaria: tecnica (el dato propio esta verificado; el ratio de 10x aplica al grueso del mercado).
+- Nivel: medio. Manejable con el caveat de retiro y con la restriccion de que el claim es exclusivo de D.
+
+**Clausula RISK-POLICY aplicada:** criterio Bruna documentado en BR-5 Precedente #1 — superlativo cuantitativo con dato verificable en mercado con opacidad competitiva parcial. La novedad aqui es que el dato de Breakermatic es ahora conocido y verificado, lo que convierte la opacidad de "alta" a "parcial". El cuantificador "hasta" resuelve esa tension: permite usar el ratio maximo sin afirmar que ese ratio aplica a todos los competidores.
+
+**Precedente BR-5 referenciado:** Precedente #1 (superlativo cuantitativo verificable — condiciones 1, 2 y 3 cumplidas con la salvedad de que existe un competidor con dato publicado y verificado). Este gate sienta un sub-precedente nuevo: uso de "hasta" como cuantificador de maximo en claims de ratio comparativo cuando existe un competidor cercano que reduce el ratio promedio. Ver §7.6 nota para append a BR-5.
+
+---
+
+### §7.3 Reconfirmacion de "El mas rapido del mercado" tras dato Breakermatic
+
+#### Pregunta de gate
+
+¿Sigue siendo defendible "El mas rapido ante parpadeos (< 0,03 s)" (Claim A, aprobado con caveat en gate original) ahora que Liliam I&D confirma que Breakermatic tiene 32-64 ms (50 ms tipico) verificado en laboratorio Genteca?
+
+#### Decision: CONFIRMADO. Claim A sigue aprobado. Caveat ajustado (ver abajo).
+
+**Razonamiento:**
+
+El claim "El mas rapido ante parpadeos" afirma que Genteca tiene el menor tiempo de respuesta ante parpadeos del mercado venezolano. Genteca: 20-30 ms en laboratorio. Breakermatic: 32-64 ms. En todos los escenarios de comparacion, Genteca es mas rapido que Breakermatic:
+
+- Caso desfavorable para Genteca (30 ms) vs caso favorable para Breakermatic (32 ms): Genteca sigue siendo mas rapido por 2 ms.
+- Caso tipico: 25 ms vs 50 ms. Genteca es mas rapido.
+- Ninguno de los demas competidores relevantes tiene un dato que se aproxime a 30 ms (WellSpec 200-300 ms, Powest 1.000 ms, resto segun OL-5 Orlan).
+
+El superlativo "el mas rapido" sigue siendo factualmente correcto: en toda la evidencia disponible (publicada y verificada en laboratorio), Genteca tiene el menor tiempo de respuesta del mercado venezolano para protectores enchufables residenciales monofasicos.
+
+**Lo que cambia:** el gate original aprobaba el claim asumiendo que ningun competidor venezolano publicaba un dato comparable. Ahora existe un competidor (Breakermatic) con un dato verificado que se acerca (50 ms vs 25 ms tipico Genteca). El superlativo sigue siendo defensible, pero el caveat de retiro debe actualizarse para reflejar la existencia de ese competidor cercano y evitar que el claim parezca mas absoluto de lo que es.
+
+**Caveat de retiro actualizado — texto literal obligatorio (reemplaza al caveat de Claim A en §2):**
+> El tiempo de desconexion de menos de 30 milisegundos (< 0,03 s) aplica ante parpadeos (fluctuaciones rapidas del voltaje de la red electrica) e inestabilidad de la red. No aplica a la desconexion ante sobre voltaje o bajo voltaje pronunciados, cuyo tiempo de desconexion es de 0,4 a 3 segundos segun la intensidad de la falla. Genteca es el protector enchufable monofasico con el menor tiempo de respuesta verificado ante parpadeos en el mercado venezolano. Segun pruebas de laboratorio I&D Genteca y verificacion comparativa de competidores.
+
+**Nota a Solenne:** el texto del caveat de retiro para las Alternativas A, B y C debe actualizarse al texto de arriba. El caveat previo de §2 Claim A queda obsoleto. El nuevo texto no cambia el claim del tiro; solo agrega la referencia a la verificacion comparativa para aumentar la solidez defensiva.
+
+**Clasificacion de riesgo (recalibrada):** el nivel baja de "medio" a "medio-bajo". La existencia de un dato verificado de Breakermatic que es inferior al de Genteca (no superior) fortalece la posicion de Genteca: ya no se trata solo de ausencia de evidencia contraria sino de evidencia positiva de superioridad.
+
+**Clausula RISK-POLICY aplicada:** BR-5 Precedente #1, condicion 2 — no existe competidor con dato PUBLICADO igual o superior al dato propio. La nueva informacion (Breakermatic 50 ms verificado en laboratorio Genteca) confirma y no revierte esa condicion: 50 ms es inferior en velocidad a 25-30 ms.
+
+---
+
+### §7.4 Claim "autenticamente protege tecnologia inverter" (off-empaque, ESC, QR)
+
+#### Claim evaluado
+
+"Autenticamente protege tecnologia inverter" — como claim de frente de empaque vs como claim off-empaque (QR, argumentario ESC).
+
+#### Decision: RECHAZADO para frente de empaque. APROBADO CON CAVEAT para QR y argumentario ESC.
+
+**Razonamiento para frente de empaque:**
+
+El adverbio "autenticamente" implica que otros protectores que dicen proteger inverter no lo hacen autenticamente — es decir, es un comparativo implicito contra competidores identificables. En empaque fisico, ese comparativo implicito introduce el riesgo de denigrar a la competencia sin la evidencia explicita que lo sustente en el propio empaque. El comprador que lee "autenticamente" en el frente del empaque no tiene acceso inmediato al argumento tecnico (flickers vs picos, tiempo < 30 ms) que lo sostiene.
+
+Ademas, el argumento tecnico subyacente requiere que el comprador entienda: (a) que los equipos inverter traen supresores de pico de fabrica, (b) que lo que daña la electronica inverter son los flickers, no los picos, (c) que solo una respuesta sub-30 ms corta el flicker antes del daño. Ese argumento no cabe en el tiro del empaque. Sin el argumento, "autenticamente" es un adverbio intensivo vacio que no agrega valor defensible al claim.
+
+El claim "Protege tecnologia Inverter" (Claim C, aprobado con caveat) ya esta en frente. Agregar "autenticamente" al claim de frente no agrega valor de diferenciacion defensible — el diferenciador real ya esta comunicado en el dato "< 0,03 s" que aparece junto al claim de inverter (condicion de diseno aprobada en gate original §2 Claim C).
+
+**Razonamiento para QR y argumentario ESC:**
+
+En el QR, el landing page puede desarrollar el argumento completo flickers vs picos + dato Genteca < 30 ms + explicacion de que la competencia con > 100 ms no puede cortar el flicker antes del daño. Ese contexto hace que "autenticamente" este justificado porque el lector tiene acceso al argumento tecnico completo que lo sustenta.
+
+En el argumentario ESC, el mismo argumento completo puede desarrollarse oralmente. El ESC puede explicar la cadena tecnica y concluir "somos los que autenticamente protegen inverter".
+
+**Caveat para QR y ESC (texto orientativo — Solenne desarrolla wording final para QR):**
+El argumento a desarrollar es: los equipos inverter traen supresores de pico de alta energia incorporados de fabrica porque sus fabricantes saben que esos picos los dañan. Lo que no traen es proteccion contra flickers (fluctuaciones rapidas voltaje cero / voltaje nominal en fracciones de segundo). Los flickers dañan la electronica de control inverter porque la exponen a ciclos repetidos de arranque y corte. Solo un protector con tiempo de respuesta < 30 ms puede abrir el circuito dentro del flicker, antes de que ese ciclo se complete y dañe los componentes. Un protector con > 100 ms actua despues de que el flicker ya paso — o actua durante el siguiente, cuando el daño puede haberse iniciado. Esa diferencia es la que hace que Genteca proteja auténticamente la tecnologia inverter.
+
+**Confirmacion de la decision Owner 2026-05-04:** el argumento "los competidores con > 100 ms no protegen autenticamente inverter" queda off-empaque. Para el frente del empaque sigue vigente "Protege tecnologia Inverter" (Claim C aprobado). Esta decision de Owner es coherente con el juicio de Bruna.
+
+**Clasificacion de riesgo:**
+- En frente de empaque: alto (comparativo implicito sin argumento accesible en el propio empaque, riesgo de denigrar a competencia sin sustento visible).
+- En QR y argumentario ESC: bajo-medio (el argumento tecnico esta disponible; en ESC es venta directa con contexto; en QR el landing puede controlarse editorialmente).
+
+**Clausula RISK-POLICY aplicada:** BR-5 Precedente #2 — comparativo implicito en empaque debe tener RTB accesible en el propio empaque para sostenerse. Sin el argumento visible, "autenticamente" es un comparativo implicito sin sustento inmediato.
+
+---
+
+### §7.5 Argumento "10x mas rapido" para argumentario ESC sin restricciones
+
+#### Pregunta de gate
+
+El Owner senala que la guerra competitiva del ESC permite mayor libertad argumentativa que el empaque. ¿Cual es el piso minimo de veracidad que aplica incluso en argumentario ESC?
+
+#### Lineamiento para argumentario ESC
+
+**Lo que el ESC puede decir:**
+
+- "Somos 10 veces mas rapidos que la mayoria de los protectores del mercado." — PERMITIDO. El ratio de 10x es real comparado contra WellSpec (200-300 ms), Powest (1.000 ms) y el grueso del mercado. "La mayoria" encuadra el claim sin afirmar que aplica a todos.
+
+- "El competidor mas cercano en velocidad es de 50 ms. Nosotros somos de 25 ms. El doble de rapidos que el mas rapido del mercado despues de nosotros." — PERMITIDO. Dato verificado en laboratorio Genteca. El ESC puede citar este dato en conversacion directa con el cliente, especialmente con instaladores tecnicos.
+
+- "Los que dicen que son compatibles inverter pero tienen > 100 ms de tiempo de respuesta no pueden cortar el flicker. Nosotros con < 30 ms si podemos." — PERMITIDO. Afirmacion tecnica defendible: un tiempo de respuesta de 100 ms ante un flicker de 50 ms no puede abrir antes de que el flicker se complete. El argumento no nombra marcas por nombre; aplica como criterio tecnico general.
+
+- "Somos los mas rapidos del mercado venezolano, con menos de 30 ms verificado en nuestro laboratorio." — PERMITIDO. Dato verificado.
+
+**Lo que el ESC NO puede decir:**
+
+- "Somos 10 veces mas rapidos que Breakermatic." — PROHIBIDO. Es factualmente falso: Breakermatic tiene 32-64 ms (50 ms tipico), lo que da un ratio de 2x con Genteca, no 10x. Un instalador tecnico que conozca a Breakermatic puede refutar el dato en el acto, dañando la credibilidad del ESC y de Genteca.
+
+- "Breakermatic no protege inverter." — PROHIBIDO. Es una afirmacion sobre la funcionalidad de un producto de un competidor que puede ser incorrecta en parte (Breakermatic puede proteger ante algunos flickers) y es un comparativo directo denigratorio que puede generar conflicto legal incluso en venta directa.
+
+- "Los demas no sirven para inverter." — PROHIBIDO en esa forma generica. La formulacion correcta es la tecnica: "para proteger contra flickers necesitas menos de 30 ms; si el protector tiene > 100 ms, no puede cortar el flicker en tiempo."
+
+- Cualquier garantia de resultado ("con Genteca tu equipo inverter nunca se daña") — PROHIBIDO. Aplica Precedente BR-5 #4 incluso en venta directa.
+
+**El piso minimo de veracidad para ESC:** el ESC no puede afirmar datos numericos falsos sobre Genteca ni sobre competidores. La mayor libertad del ESC reside en el argumento tecnico (mas elaborado, mas comparativo, mas critico de la competencia como clase) pero no en la libertad de inventar o exagerar datos. Un ESC que cita "10x mas rapido que Breakermatic" cuando el dato real es 2x esta mintiendo a un cliente tecnico que puede verificarlo — ese error no solo es un riesgo legal sino un riesgo de reputacion inmediato en el campo.
+
+**Clausula RISK-POLICY aplicada:** RISK-POLICY v1.0 §3 (manejo de errores) — el principio de que los agentes no deben afirmar cosas que puedan ser falsas se traslada como principio al ESC. El ESC es un representante de Genteca; un dato falso dicho por el ESC es un dato falso de Genteca.
+
+---
+
+### §7.6 Notificacion en cascada
+
+Las siguientes actualizaciones son requeridas. Este refresh de Bruna es el disparador.
+
+**Solenne — SO-1 v2:**
+- Integrar el bloque §3.3 corregido (sin temperaturas) como texto del asterisco NTC en **todas las alternativas A, B, C y D**. El bloque §3.3 original del gate v1 queda obsoleto.
+- Integrar el caveat de retiro de Claim A actualizado (§7.3) en Alternativas A, B y C. El caveat anterior de §2 Claim A queda obsoleto.
+- Integrar el claim "Hasta 10 veces mas rapido" y su caveat de retiro (§7.2) en la Alternativa D. Este claim no se usa en A, B ni C.
+- El claim "Protege tecnologia Inverter" (Claim C) sigue vigente en todas las alternativas. Sin cambio en texto del tiro.
+
+**Atlas — mockup D + revision menor A/B/C:**
+- Mockup D: nuevo eje "Hasta 10 veces mas rapido" como claim principal del tiro, junto a los 3 claims con flecha conectora grafica segun idea de reunion Kike (< 0,03 s — autentica proteccion inverter — NTC). QR en posicion prominente junto a los 3 claims o en lengüeta.
+- Alternativas A/B/C: el cambio del asterisco NTC es textual (retiro), no visual (tiro). El frente del tiro no cambia. Atlas no necesita ajustar el mockup del tiro de A/B/C por este refresh; solo confirmar que el retiro implementara el texto actualizado de Solenne.
+
+**Aurelio — AU-1 v2:**
+- Incluir la Alternativa D con su eje propio "Hasta 10 veces mas rapido" (gateado por Bruna en §7.2).
+- Corregir la slide competitiva: Breakermatic tiene 32-64 ms (50 ms tipico) verificado en laboratorio Genteca — no los 200-300 ms que podrian haberse atribuido antes si se asumiá que solo WellSpec tenia dato comparable. El dato de WellSpec (200-300 ms) sigue siendo el que justifica el "hasta 10 veces" para el grueso del mercado.
+- El dato correcto para la slide: Genteca < 30 ms / Breakermatic 50 ms (verificado lab) / WellSpec 200-300 ms / Powest 1.000 ms / resto >= 200 ms.
+- El framing correcto para la Junta: "somos el mas rapido del mercado; el competidor mas cercano tiene el doble de nuestro tiempo de respuesta tipico."
+
+**Vivienne — PPTX v2:**
+- Incorporar las mismas correcciones de datos competitivos que Aurelio.
+- Incorporar la Alternativa D y el nuevo claim gateado.
+- Eliminar toda referencia a "60 °C" como umbral NTC si aparece en el deck.
+
+**Orlan — refresh menor:**
+- Actualizar OL-5 (o producir OL-5 v2 entrada) con el dato de Breakermatic verificado: 32-64 ms (50 ms tipico), confirmado en laboratorio Genteca por Liliam I&D. Esta es la unica actualizacion requerida en el landscape competitivo. No invalida ninguna decision de gate anterior — Genteca sigue siendo el mas rapido.
+- Nota de refresh para Orlan: el dato de Breakermatic es ahora una fortaleza defensiva (tenemos un competidor con dato verificado y somos mas rapidos), no una debilidad. El panorama competitivo no cambia de "Genteca unico bajo 30 ms" a "Genteca entre varios bajo 50 ms" — Genteca sigue siendo el unico bajo 30 ms.
+
+---
+
+### §7.7 Actualizacion de precedentes BR-5 (para append)
+
+Este refresh genera dos sub-precedentes nuevos para append al BR-5 transversal. Raul o Celeste ejecutan el append en el momento que corresponda.
+
+**Sub-precedente 7-A (append a Precedente #1):** Cuando existe un competidor con dato verificado pero inferior en performance al dato propio, el superlativo del dato propio se fortalece (ya no es solo ausencia de evidencia contraria — es evidencia positiva de superioridad). El caveat de retiro debe actualizarse para citar la verificacion comparativa. El nivel de riesgo del claim baja.
+
+**Sub-precedente 7-B (nuevo, tipo "cuantificadores de maximo en comparativos"):** El cuantificador "hasta" convierte un claim de ratio comparativo (10x) de potencialmente falso en promedio a verdadero como maximo cuando existe al menos un competidor relevante contra el cual el ratio se cumple. Condiciones de uso: (a) el cuantificador "hasta" debe estar presente — sin el, el claim es indistinguible de una afirmacion de promedio; (b) el caveat de retiro debe citar el rango completo y mencionar que el competidor mas cercano tiene un dato distinto; (c) el claim no puede usarse en contextos donde el comprador pueda interpretarlo razonablemente como promedio (ej. en argumentario ESC con instaladores tecnicos que conocen a Breakermatic, el ESC debe usar la formulacion precisa de §7.5, no el "hasta 10 veces" del empaque).
+
+---
+
+### References §7
+
+| Documento | Referencia especifica | Uso en este refresh |
+|---|---|---|
+| Chat con Liliam I&D.txt | Correccion 60 °C → 132 °C NTC; confirmacion Breakermatic 32-64 ms; rango Genteca 20-30 ms lab | Evidencia tecnica primaria para §7.1 y §7.3 |
+| Chat con Jose Miguel Canudas 2.txt | Temperatura 132 °C pin del rele; curva tiempo inverso; mecanismo sobrecarga y temperatura ambiente | Sustento tecnico para reescritura §7.1 |
+| Meeting Transcription 04-05-2026.txt | Ideas Alternativa D; argumento flickers vs picos; formulacion "10 veces mas rapido"; QR en lengüeta | Contexto para §7.2 y §7.4 |
+| WORKSTREAM_v5_innovaciones.md §Refresh 2026-05-04 | Decisiones Owner: "Hasta 10 veces mas rapido", off-empaque del "autenticamente", Alternativa D, lineamiento ESC | Decisiones Owner formalizadas |
+| Bruna_gate_empaque_v1 §3.3, §3.4, §2 Claim A, §2 Claim C | Textos originales a corregir o confirmar | Trazabilidad de cambios |
+| BR-5 transversal Precedentes #1, #2, #3 | Criterios de superlativos y comparativos aplicados | Marco de criterio precedente |
+| RISK-POLICY.md v1.0 | §3 principio de no afirmar datos falsos | Fundamento para piso ESC |
+
+---
+
+*Refresh emitido: 2026-05-04*
+*Estado: CERRADO — Correcciones tecnicas obligatorias y nuevos gates listos para SO-1 v2, Atlas mockup D, AU-1 v2, Vivienne PPTX v2, Orlan refresh menor*
+*Proxima revision requerida: si Paxs desvela dato OEM de TQ < 30 ms; si un competidor nuevo publica dato verificado < 50 ms; si el landing del QR usa formulacion de "autenticamente" sin el argumento tecnico completo.*
+
+---
+
+## §8 — Refresh 2026-05-05 — Gate naming funcion termica B-sin-NTC
+
+**Fecha:** 2026-05-05
+**Trigger:** Junta Directiva elige Alternativa B. Vael entrega VA-5 naming-funcion-termica_v1 (con §Refresh 2026-05-05) con finalista unica recomendada: "Autoproteccion termica activa*". Bruna recibe instruccion de gatear esa formulacion antes del memo de Aurelio para la Junta de manana. Tres preguntas especificas de gate: (1) ¿"activa" es defendible?, (2) ¿es extension del Claim E aprobado o claim nuevo?, (3) ¿el caveat de retiro propuesto por Vael satisface o requiere ajuste?
+
+**Insumos consultados para este refresh:**
+- Vael_VA-5_naming-funcion-termica_v1.md (2026-05-05) — 5 opciones + §Refresh Owner (Opciones A y B) + finalista recomendada con texto de retiro
+- Orlan_OL-1_competencia-naming-termico_v1.md (2026-05-05) — §3 terminologia vacante, §4 nota especifica para Bruna sobre "activa"
+- Bruna_gate_empaque_v1 §2 Claim D y Claim E (gate original 2026-05-03) — estado aprobado vigente
+- Bruna_gate_empaque_v1 §7.1 (Refresh 2026-05-04) — bloque NTC corregido, sin temperaturas numericas, vigente
+- BR-5 transversal `04-system/03-governance/BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md` — Precedentes #1 a #4
+- Vera_brief_tecnico_v1 §1.1-§1.4 — mecanismo NTC (disponible via Claim D/E previos; no hay nuevo insumo de Vera en este refresh)
+
+---
+
+### §8.1 Pregunta 1 — ¿"activa" es defendible bajo RISK-POLICY y BR-5?
+
+#### Descomposicion del claim
+
+**Texto del tiro:** "Autoproteccion termica activa*"
+
+**Lo que dice exactamente:** El protector tiene un sistema que se autoprotege del calor de forma activa.
+
+**Lo que entenderia el lector promedio (consumidor residencial):** "Tiene algo que detecta el calor y actua solo." El adjetivo "activa" comunica dinamismo y autonomia — en lenguaje cotidiano, una proteccion "activa" es una que esta en funcionamiento continuo, vigilando.
+
+**Lo que entenderia el instalador tecnico:** "Activa" diferencia entre proteccion pasiva (ej. fusible termico de un solo uso, que simplemente se funde) y proteccion activa (sensor que monitorea y actua sobre el circuito). Esta distincion es tecnica y relevante para el profesional.
+
+**Fact tecnico invocado:** El NTC opera con curva de tiempo inverso — a mayor temperatura, mayor resistencia, mas rapida la actuacion. Esta es una respuesta continua y proporcional al estimulo termico; no es un corte binario de un solo uso como un fusible convencional.
+
+**Riesgo critico identificado (flag Vera Pendiente P-5):** Vael VA-5 y Orlan OL-1 §4 senalan que existe incertidumbre sobre si el NTC del GSM opera como sensor activo de monitoreo continuo o como fusible termico de corte unico (se destruye tras actuar, igual que un fusible). Si la respuesta es "solo corte unico", el adjetivo "activa" se vuelve tecnicmente inexacto: una proteccion de corte unico que luego queda inoperativa no es "activa" en el sentido de monitoreo continuo.
+
+#### Analisis de riesgo — tres dimensiones
+
+**Dimension tecnica:**
+- Si NTC = monitoreo continuo con curva de tiempo inverso: "activa" es preciso. El NTC esta continuamente ajustando su resistencia en funcion de la temperatura; actua como sensor permanente, no como fusible.
+- Si NTC = fusible termico de corte unico: "activa" seria inexacto. Una proteccion que actua una sola vez y queda inutilizada hasta ser reemplazada no es "activa" en ninguna lectura razonable del termino.
+- Evidencia disponible: Vera_brief_tecnico_v1 §1.1-§1.2 describe el NTC con curva de tiempo inverso (Canudas en WhatsApp confirma la curva). Esto es consistente con monitoreo continuo. Sin embargo, Vael y Orlan identifican la incertidumbre sobre reseteo/reutilizacion del NTC tras actuar (Pendiente P-5 sin resolver). Bruna no puede resolver ese hecho tecnico sin Vera.
+- Nivel de riesgo tecnico: **medio** — el mecanismo de curva de tiempo inverso apoya "activa"; la incertidumbre sobre reutilizacion es el factor que no esta cerrado.
+
+**Dimension reputacional:**
+- Orlan OL-1 §3 confirma que "Autoproteccion termica activa" es territorio vacante en competidores VE. Ningun competidor puede objetar uso previo del termino.
+- Si un instalador tecnico cuestiona "activa" argumentando que el NTC es un fusible de un solo uso, la discusion seria: "su producto dice 'activa' pero en realidad se destruye al actuar". Ese cuestionamiento tendria base si el NTC es de corte unico.
+- Nivel de riesgo reputacional: **bajo en condicion de monitoreo continuo / medio en condicion de corte unico**.
+
+**Dimension regulatoria:**
+- No hay norma venezolana (COVENIN) ni regional verificada que defina "proteccion activa" para este tipo de dispositivo. El riesgo regulatorio es bajo.
+- El riesgo relevante es el de publicidad engañosa bajo la Ley de Proteccion al Consumidor venezolana si el adjetivo induce una expectativa que el producto no cumple.
+- Nivel de riesgo regulatorio: **bajo** (no hay marco normativo especifico; el riesgo es de reclamacion de consumidor, no de sancion regulatoria directa).
+
+#### Decision sobre "activa" — condicional estructurada
+
+**Si Vera confirma que el NTC del GSM opera con monitoreo continuo y es reutilizable tras enfriarse (no es fusible de corte unico):**
+**"Autoproteccion termica activa*" — APROBADO CON CAVEAT** (extension del Claim E, categoria de riesgo inalterada).
+El adjetivo "activa" es tecnicamente preciso. El caveat de retiro propuesto por Vael mitiga adecuadamente el alcance funcional. No se requiere gate adicional.
+
+**Si Vera confirma que el NTC del GSM es fusible termico de corte unico (se destruye al actuar y requiere reemplazo del protector):**
+**"Autoproteccion termica activa*" — RECHAZADO**. El adjetivo "activa" implica vigilancia continua que el mecanismo no tiene. Formulacion de respaldo: "Autoproteccion termica*" (Claim E ya aprobado, sin "activa") — disponible inmediatamente sin gate adicional.
+
+**Decision default para la Junta de manana (2026-05-06) — sin confirmacion de Vera antes de la reunion:**
+
+Bruna aprueba con caveat la formulacion "Autoproteccion termica activa*" bajo el supuesto declarado de que el NTC opera con curva de tiempo inverso continua (evidencia disponible en WhatsApp Canudas, consistent con §1.2 Vera). Este supuesto es tecnicamente plausible y es la interpretacion de los hechos disponibles. La aprobacion es **provisional** hasta que Vera cierre el Pendiente P-5.
+
+**Razon para no bloquear:** el texto de retiro propuesto por Vael ya menciona "sensor de temperatura" — no dice "sensor de monitoreo continuo" ni "reutilizable". Por tanto, incluso si el NTC fuera de corte unico, el retiro no induciria una expectativa erronea sobre el mecanismo. El riesgo de la palabra "activa" en el tiro es reputacional/tecnico con el instalador experto; el retiro lo mitiga al describir la funcion sin prometer continuidad. Ese es el balance que hace aprobable el claim con el caveat correcto.
+
+---
+
+### §8.2 Pregunta 2 — ¿Extension del Claim E o claim nuevo?
+
+**Claim E aprobado (§2, gate 2026-05-03):** "Autoproteccion termica" — APROBADO sin caveat de retiro adicional al de Claim D. El mismo bloque de retiro NTC aplica.
+
+**Claim propuesto:** "Autoproteccion termica activa*"
+
+**Analisis:** La adicion del adjetivo "activa" no introduce un atributo funcional nuevo — el mecanismo descrito en el retiro es identico. "Activa" es un calificador del modo de operacion del mismo mecanismo ya aprobado. No hay claims de resultado nuevos, no hay promesas adicionales de proteccion de la carga, no hay superlativos nuevos, no hay comparativos directos con competidores.
+
+**Conclusion:** Esta es una **extension razonable** del Claim E. No es un claim nuevo que requiera gate completo desde cero. El unico punto de gate incremental es el adjetivo "activa" evaluado en §8.1. La categoria de riesgo del Claim E (bajo, aprobado sin caveat en tiro) se mantiene en bajo para esta formulacion, con el matiz condicional sobre el mecanismo del NTC.
+
+**Por tanto:** gate flash, no gate completo. La aprobacion o rechazo de "activa" es la unica decision incremental.
+
+---
+
+### §8.3 Pregunta 3 — ¿El caveat de retiro propuesto satisface?
+
+**Texto propuesto por Vael (finalista en VA-5 §Refresh 2026-05-05):**
+
+> Autoproteccion termica activa: sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Evaluacion de Bruna:**
+
+El texto cumple todas las condiciones del §7.1 Refresh (bloque NTC corregido): sin temperaturas numericas, sin mencion del componente por nombre (NTC) en el cuerpo del retiro, alcance correcto de proteccion al protector y al cableado, caveat de cargas pequenas presente, caveat del termomagnetico presente.
+
+El texto es compatible con la posicion de "activa": no promete monitoreo en tiempo real ni continuidad de la proteccion en lenguaje que requeriria verificacion del mecanismo de corte unico vs. continuo. La descripcion funcional ("detecta... y desconecta") es valida para ambos modos de operacion del NTC.
+
+**Ajuste requerido:** uno, menor y obligatorio.
+
+La frase "Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion" no menciona que la funcion aplica ante calentamiento del relé por sobrecorriente Y por conexiones deficientes. En la version corregida del §7.1 esto estaba explicito. El texto de Vael lo menciona en la frase anterior ("sobrecorrientes o conexiones deficientes"), pero no lo reitera en la clausula de caveat final. Eso es aceptable — la estructura del parrafo ya lo cubre. No se requiere cambio.
+
+**Un ajuste SI es obligatorio:** la frase de apertura "Autoproteccion termica activa:" usa el mismo texto del tiro como encabezado del retiro. Esta convencion es correcta (es la que establece §7.1 con "[Badge elegido — ver tiro]"). Pero si Bruna aprueba con caveat condicional (pendiente P-5), el encabezado del retiro debe ser coherente con la formulacion final que apruebe el Owner. Si eventualmente se usa la formulacion de respaldo "Autoproteccion termica*" (sin "activa"), el encabezado del retiro debe ajustarse en consecuencia. Oz y Solenne deben saber que el encabezado del retiro sigue al tiro — no es un texto fijo independiente.
+
+**Conclusion sobre el caveat de retiro:** el texto propuesto por Vael satisface como base. Bruna lo aprueba **con una confirmacion operativa para Oz/Solenne**: el encabezado del retiro ("Autoproteccion termica activa:") debe actualizarse si la formulacion del tiro cambia a "Autoproteccion termica*" como resultado de la confirmacion de Vera (Pendiente P-5).
+
+**Caveat de retiro literal — palabra por palabra — para Oz y Solenne:**
+
+> Autoproteccion termica activa: sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+Este es el texto exacto. No modificar. Si la formulacion del tiro cambia a "Autoproteccion termica*" (sin "activa"), reemplazar unicamente el encabezado: "Autoproteccion termica:" — el resto del cuerpo es invariable.
+
+---
+
+### §8.4 Decision final de gate
+
+**Claim evaluado:** "Autoproteccion termica activa*" (tiro) con caveat de retiro segun §8.3.
+
+**Decision: APROBADO CON CAVEAT — condicional a Vera (Pendiente P-5)**
+
+**Categoria:** extension razonable del Claim E aprobado (§2, 2026-05-03). No es claim nuevo.
+
+**Condicion suspensiva (flag para Vera):**
+- Si Vera confirma que el NTC opera con curva de tiempo inverso continua y es funcional tras enfriarse (no fusible de corte unico): la aprobacion queda firme. No se requiere gate adicional.
+- Si Vera confirma que el NTC es fusible termico de corte unico (se destruye al actuar): "activa" debe retirarse. La formulacion de empaque pasa a "Autoproteccion termica*" (Claim E aprobado en §2, vigente sin modificacion). El caveat de retiro se mantiene identico, cambiando solo el encabezado.
+
+**Supuesto declarado:** Bruna aprueba bajo el supuesto de que la descripcion de curva de tiempo inverso en Vera §1.2 y en WhatsApp Canudas (mecanismo de calentamiento progresivo y curva de tiempo inverso) es consistente con operacion continua del NTC, no con fusible de corte unico. Este supuesto es el mas respaldado por la evidencia disponible. La incertidumbre es sobre reseteo/reutilizacion, no sobre el mecanismo de actuacion.
+
+**Riesgo asumido:** bajo. El caveat de retiro no promete monitoreo continuo ni reutilizacion del sensor. El adjetivo "activa" en el tiro es el unico elemento que genera la expectativa de continuidad; esa expectativa es razonable dado el mecanismo de curva de tiempo inverso confirmado.
+
+**Caveat de retiro — texto literal obligatorio para Oz y Solenne (reproducido de §8.3):**
+
+> Autoproteccion termica activa: sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+Sin este caveat literal integrado en el retiro, el claim del tiro no se considera aprobado.
+
+---
+
+### §8.5 Precedente para BR-5
+
+Este gate sienta un nuevo tipo de precedente no cubierto por los Precedentes #1 a #4 del BR-5 transversal: **formulacion generica de funcion como proteccion de IP (claim de funcion sin revelar componente)**.
+
+**Criterio sentado:**
+
+Cuando un claim de empaque describe una funcion tecnica (ej. "autoproteccion termica activa") sin nombrar el componente que la implementa (ej. NTC, termistor, termoresistencia), el riesgo de IP inversa (revelar secreto industrial a la competencia) se elimina. El claim es plenamente defendible porque:
+(a) La funcion descrita es real y verificable (RTB tecnico existe).
+(b) La ausencia del nombre del componente no genera ambiguedad funcional en el retiro: el texto del asterisco describe el mecanismo sin revelar la arquitectura interna.
+(c) Un competidor que copiara la formulacion tendria que implementar la funcion para sostenerla, lo que eleva el estandar de la categoria en lugar de regalar un secreto industrial.
+
+Este criterio es aplicable en cualquier dominio de /RAUL/ donde un claim de empaque o marketing describa una funcion tecnica diferenciadora sin revelar el componente especifico que la habilita.
+
+**Nota de append a BR-5:** Bruna identifica este caso como candidato a Precedente #5 del BR-5 transversal. El append se ejecuta tras confirmacion de Vera (Pendiente P-5): si la aprobacion queda firme, el precedente se formaliza. Si el claim es ajustado a "Autoproteccion termica*" (sin "activa"), el precedente se formaliza bajo esa formulacion. En cualquier caso, el criterio sobre "funcion sin componente" es valido independientemente del resultado de P-5.
+
+---
+
+### §8.6 Supuestos y dependencias
+
+| # | Supuesto / dependencia | Impacto si cambia | Agente responsable |
+|---|---|---|---|
+| 1 | NTC del GSM opera con curva de tiempo inverso continua (no fusible de corte unico) | Si es fusible unico: reemplazar "activa" por formulacion de respaldo "Autoproteccion termica*" | Vera — Pendiente P-5 |
+| 2 | Ninguna formulacion del universo de candidatos tiene registro de marca en SAPI Venezuela u OMPI (Orlan OL-1 §5 flag) | Si existe registro: escalar a Owner para decision de naming; no usar formulacion registrada sin autorizacion | Orlan (verificacion) + Owner (decision) |
+| 3 | El caveat de retiro es texto de empaque fisico, no digital expandido | Si el espacio del retiro se reduce: Solenne debe confirmar que el texto cabe antes de enviarlo a Oz para redline | Solenne (confirmacion de espacio) + Oz (implementacion) |
+| 4 | Bruna gate_empaque_v1 §7.1 bloque NTC corregido sigue siendo el texto base de retiro | Vigente. Sin cambio en este refresh | Sin accion requerida |
+
+---
+
+### §8.7 Notificaciones de cascada post-gate
+
+**Solenne (SO-1 delta):**
+- El tiro de la Alternativa B badge de funcion termica es: "Autoproteccion termica activa*"
+- El texto del asterisco de retiro es el de §8.4 literal. Sin modificacion.
+- Condicion operativa: si Vera resuelve P-5 con resultado "fusible unico", el tiro cambia a "Autoproteccion termica*" y el encabezado del retiro cambia en consecuencia. El cuerpo del retiro es invariable.
+
+**Oz (redline arte Alternativa B):**
+- Badge de tiro: "Autoproteccion termica activa*" (asterisco obligatorio).
+- Texto del asterisco: segun §8.4. No usar el texto del retiro de §3.3 original — usar exclusivamente el texto de §8.3/§8.4 de este refresh.
+- El encabezado "Autoproteccion termica activa:" es el texto que precede el bloque de retiro en el arte.
+
+**Aurelio (memo flash a Junta):**
+- La formulacion aprobada por Bruna para la Junta de manana (2026-05-06) es: "Autoproteccion termica activa*"
+- La aprobacion es firme para la presentacion de manana. La condicion suspensiva (Vera P-5) aplica al arte final de empaque para produccion de imprenta, no al memo de Junta.
+- Alternativa de respaldo si la Junta pregunta por el "activa": "Autoproteccion termica*" esta aprobada sin condicion (Claim E, §2 gate original) y puede usarse de forma inmediata si el Owner decide simplificar.
+
+**Vera (pendiente P-5 — escalar via Raul):**
+- Confirmacion requerida: ¿el NTC del GSM-MB/RB/RF/RE es reutilizable tras actuar (curva de tiempo inverso con reset al enfriar) o es de corte unico (se destruye al actuar y el protector queda inoperativo hasta reemplazo)?
+- Esta confirmacion es necesaria antes de la produccion final del arte de empaque para imprenta. No es bloqueante para el memo de Junta de manana.
+
+---
+
+### References §8
+
+| Documento | Referencia especifica | Uso en este gate |
+|---|---|---|
+| Vael_VA-5_naming-funcion-termica_v1.md (2026-05-05) | Opcion 1 tabla finalistas, §Refresh 2026-05-05 — finalista unica, texto de retiro propuesto | Claim evaluado, texto de retiro base |
+| Orlan_OL-1_competencia-naming-termico_v1.md (2026-05-05) | §3 terminologia vacante, §4 nota Bruna sobre "activa" y P-5 | Landscape competitivo, flag de riesgo tecnico |
+| Bruna_gate_empaque_v1 §2 Claim E | "Autoproteccion termica" — APROBADO (2026-05-03) | Claim base del que este es extension |
+| Bruna_gate_empaque_v1 §7.1 | Bloque NTC corregido, sin temperaturas | Texto de retiro vigente base |
+| Vera_brief_tecnico_v1 §1.1-§1.4 | Mecanismo NTC, curva tiempo inverso, alcance de proteccion | Fact tecnico que sostiene "autoproteccion" y "activa" |
+| WhatsApp Canudas (Chat 2) | Curva de tiempo inverso, temperatura 132 degC pin rele | Confirmacion mecanismo continuo |
+| BR-5 transversal Precedentes #1-#4 | Criterios de superlativos y formulaciones de funcion | Marco de precedente — sin precedente exacto para "funcion sin componente" |
+| RISK-POLICY.md v1.0 | §3 principio de no afirmar datos que puedan ser falsos | Fundamento para condicion suspensiva sobre P-5 |
+
+---
+
+*Refresh emitido: 2026-05-05*
+*Estado: APROBADO CON CAVEAT (condicional Vera P-5) — listo para memo Junta Aurelio, SO-1 delta Solenne, redline arte Oz*
+*Proxima revision requerida: confirmacion de Vera sobre mecanismo NTC (P-5) antes de produccion de imprenta del arte final. Si P-5 = fusible unico: tiro cambia a "Autoproteccion termica*", resto invariable.*

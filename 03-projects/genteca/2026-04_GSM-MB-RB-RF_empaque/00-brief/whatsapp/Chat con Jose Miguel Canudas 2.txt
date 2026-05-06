@@ -1,0 +1,10 @@
+Hola Raoul, la temperatura de 55 Celsius es la máxima del ambiente donde puede operar el protector.
+
+La temperatura que mide el NTC es en uno de los pines del relé, el que más se calienta. El punto de destrucción es de 132 Celsius, y esto ocurre cuando la sobrecarga es del 50% de la nominal del relé. 
+
+La temperatura ambiente lo único que hace es acelerar el llegar a esa condición de 132 C Celsius en ese pin del relé.
+
+Así mientras mayor es la sobrecarga más rápido  llega el relé en alcanzar los 132 Celsius, determinando que los tiempos de actuación de los RB, RF, MB y RE sean más rápidos mientras mayor es la sobrecarga, ello dibujando una curva de disparo de tiempo inverso, del mismo tipo que la de un breaker pero un poco más lenta, lo que deja al breaker como el último elemento de maniobra por condiciones críticas.
+
+Evidentemente que que en ambiente a 25 Celsius el tiempo en llegar a 132 Celsius el relé, es mayor que a 55 Celsius. Ello define curvas distintas en cuanto a los tiempos de disparo. Mientras a 25 Celsius se puede estar disparando el protector a 10 o 12 min sometido a una sobrecarga del 50%, a 55 Celsius ese disparo puede ocurrir en 4 min y a 120 A en 3 o 5 segundos.
+
