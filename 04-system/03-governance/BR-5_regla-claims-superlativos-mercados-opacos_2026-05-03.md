@@ -112,6 +112,86 @@ Para la linea GSM: el protector protege ante parpadeos y fluctuaciones de voltaj
 
 ---
 
+---
+
+### Claims de arquitectura tecnica (operacion offline / dependencia de red)
+
+#### Precedente #5 — 2026-05-06 — Claim de "sin dependencia de red/cloud" requiere que la funcion critica de seguridad sea independiente de la conectividad
+
+**Dominio del caso original:** Genteca
+**Caso original:** Bruna_gate_GME_2026-05-06.md §#GME-03 / BR-2 Genteca entrada #17
+**Producto:** GME — Exceline Profesional, Protector Monofasico Inteligente
+**Claim evaluado:** "Sin app que instalar. Sin cloud requerida."
+
+**Decision:** SUSPENDIDO — pendiente confirmacion de engineering sobre operacion offline de la funcion critica de seguridad
+
+**Criterio sentado:**
+
+Un claim de "sin dependencia de cloud / sin conexion a internet requerida" en un dispositivo IoT que tiene una funcion critica de seguridad (actuar un contactor, disparar un rele, cortar la alimentacion) debe verificar que la funcion critica opera independientemente de la conectividad de red — no solo que la interfaz de usuario puede funcionar sin cloud.
+
+La distincion es: "sin cloud para la interfaz" es un claim de UX. "Sin cloud requerida" como claim de producto implica que el producto cumple su funcion primaria (proteccion activa) sin dependencia de red. Si la proteccion activa (la funcion critica de seguridad) requiere WiFi activo para ejecutar su logica, el claim "sin cloud requerida" es materialmente falso para el caso de uso critico — aunque la UI sea local.
+
+**Tres escenarios de aplicacion:**
+
+1. Escenario favorable: la funcion critica de seguridad opera completamente sin WiFi; la UI opera con red local. El claim completo es defendible.
+2. Escenario intermedio: la funcion critica opera sin WiFi; la UI requiere red local para acceso. El claim debe aclararse: "Proteccion activa sin cloud; interfaz de monitoreo en red WiFi local."
+3. Escenario desfavorable: la funcion critica de seguridad requiere WiFi activo. El claim "sin cloud requerida" es RECHAZADO porque es falso para la funcion critica. Solo puede usarse el claim de UI: "Interfaz sin app, desde tu red WiFi local."
+
+**Riesgo arquitectonico adicional (nuevo en este precedente):**
+
+Cuando el procesamiento de la funcion critica de seguridad y el webserver/interfaz comparten el mismo microcontrolador sin watchdog independiente, un cuelgue de la interfaz puede inhabilitar la proteccion. Este riesgo va mas alla de la comunicacion — es un riesgo de seguridad del producto que debe resolverse antes del lanzamiento, independientemente de lo que se decida sobre el claim de marketing. Bruna puede identificar el riesgo y elevarlo al Owner, pero la decision de diseno es del equipo de engineering.
+
+**Aplicabilidad cross-dominio:**
+
+Este criterio aplica a cualquier producto del sistema /RAUL/ que:
+(a) tenga una funcion critica de seguridad (actuacion fisica sobre carga electrica, control de acceso, proteccion de datos criticos), y
+(b) haga un claim de "sin dependencia de red/cloud/internet".
+
+El claim debe verificar que la funcion critica pasa el test de operacion offline antes de aprobarse.
+
+**Condicion de revision:**
+Este criterio no tiene condicion de revision: es una regla basada en la definicion de funcion critica de seguridad. Su aplicacion puede matizarse segun el tipo de funcion critica en cada producto (ej. un dispositivo de monitoreo sin funcion de actuacion puede hacer el claim sin la misma exigencia), pero el principio es invariable.
+
+---
+
+### Comportamiento con reintentos en productos de proteccion
+
+#### Precedente #6 — 2026-05-06 — La logica de reintentos en productos de proteccion debe comunicarse — no ocultarse — cuando el claim implica accion inmediata
+
+**Dominio del caso original:** Genteca
+**Caso original:** Bruna_gate_GME_2026-05-06.md §#GME-02 / BR-2 Genteca entrada #16
+**Producto:** GME — Exceline Profesional, Protector Monofasico Inteligente
+**Claim evaluado:** "Proteccion integral: voltaje + corriente + subcarga + arranques por hora"
+
+**Decision:** SUSPENDIDO — pendicionado a (a) confirmacion de actuacion fisica de cada funcion y (b) definicion de como se comunica la logica de reintentos
+
+**Criterio sentado:**
+
+Cuando un producto de proteccion tiene una logica de reintentos antes del bloqueo definitivo (ej. "tres intentos antes de bloquear"), y ese producto hace un claim de "proteccion integral" o "proteccion activa", el claim crea en el usuario la expectativa de desconexion al primer evento de falla. Si el comportamiento real es diferente (el producto reintenta antes de bloquear), hay una brecha entre la promesa implicita del claim y el comportamiento real del producto.
+
+Esta brecha puede generar:
+1. Desconfianza: el usuario ve que el equipo conectado no se desconecto al primer evento de falla y concluye que el protector "no funciono".
+2. Reclamo legitimo: si el equipo conectado sufre dano durante el segundo o tercer intento de rearranque, el usuario puede argumentar que el protector prometio proteccion integral sin aclarar los reintentos.
+
+La logica de reintentos no es incorrecta ni mala para el producto — puede ser la logica tecnica mas adecuada para el tipo de carga. Pero debe comunicarse como feature (no ocultarse) cuando el claim implica proteccion activa ante el evento.
+
+**Formulacion aprobada para claims con logica de reintentos:**
+
+"Proteccion activa ante [funciones] — con logica de reintentos inteligente antes del bloqueo de seguridad." Esta formulacion describe el mecanismo completo, convierte el comportamiento de reintentos en un feature positivo (inteligencia de reintentos), y no crea la expectativa incorrecta de desconexion al primer evento.
+
+**Aplicabilidad cross-dominio:**
+
+Este criterio aplica a cualquier producto del sistema /RAUL/ que:
+(a) tenga una logica de reintentos, tolerancia, o ventana de no-disparo antes de la actuacion definitiva, y
+(b) haga un claim de proteccion activa, integral, o completa.
+
+El nivel de comunicacion requerido de la logica de reintentos varia segun el canal: en empaque (audiencia mixta) puede bastar con la formulacion "con reintentos antes del bloqueo"; en ficha tecnica (audiencia tecnica) se requiere el numero de intentos, la condicion de reset del contador, y la posibilidad de configuracion.
+
+**Condicion de revision:**
+Este criterio se revisa si el producto cambia la logica de reintentos a desconexion inmediata al primer evento — en ese caso, el claim de proteccion inmediata es directamente aprobable sin la clausula de reintentos.
+
+---
+
 ## References
 
 - WORKSTREAM_v5_innovaciones.md §Regla de gateo de claims superlativos (2026-05-03)

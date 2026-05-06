@@ -199,7 +199,116 @@
 
 ---
 
+---
+
+## Bloque GME — Gate campana lanzamiento octubre 2026 (2026-05-06)
+
+**Referencia:** `Bruna_gate_GME_2026-05-06.md` en `03-projects/genteca/GME Estudios de mercado/_intel/` — archivo fuente con rationale completo, caveats literales, reglas de invalidez y proximos pasos. Las entradas que siguen son el resumen de decisiones para trazabilidad del log acumulativo.
+
+---
+
+### #15 — 2026-05-06 — Claim A GME: "Primero en Venezuela/LATAM en este rango de precio"
+
+- **Claim evaluado (texto exacto):** "Primer protector monofasico inteligente con WiFi y medicion de voltaje y corriente a precio accesible en Venezuela / LATAM"
+- **Producto / pieza:** GME-R220 / GME-B220 / GME-M220 — P-04 landing, P-01 post LinkedIn (version superlativo)
+- **Decision:** SUSPENDIDO — pendiente OL-3 segunda iteracion (busqueda profunda AliExpress/chino OEM) + confirmacion specs engineering en firmware produccion
+- **Caveat textual (cuando se desbloquee):** Scope geografico acotado + rango de precio integrado en el mismo claim: "El primer protector monofasico en Venezuela con medicion de voltaje y corriente, WiFi y configuracion multi-aplicacion en el rango de precio accesible."
+- **Rationale:** OL-3 v1 no encontro competidor en $30–60 con la combinacion completa — vacancia verificada en fuentes primarias. Sin embargo, la busqueda del mercado chino OEM fue declarada superficial (OL-3 Limite 1). Superlativo de posicion no se gateable sin exhaustividad razonable de la busqueda. Scope "en LATAM" o "en el mundo" rechazado hasta busqueda sistematica adicional.
+- **Criterio aplicado:** BR-5 Precedente #1 (superlativo con dato cuantitativo en mercado opaco — aplicable una vez resuelta la dependencia de OL-3). BR-5 Precedente #2 (superlativo de exclusion requiere ausencia verificada).
+- **Evidencia consultada:** OL-3 v1 §Seccion 3 y §Limites; Vera VE-1 §Supuesto 1; VA-5 §Claim A; AU-1 §7.1.
+- **Scope:** GME — campana lanzamiento octubre 2026. Piezas P-04 y P-01 (version superlativo).
+
+---
+
+### #16 — 2026-05-06 — Claim B GME: "Proteccion integral V+I+subcarga+arranques/hora"
+
+- **Claim evaluado (texto exacto):** "Proteccion integral: voltaje + corriente + subcarga + arranques por hora en un solo protector monofasico"
+- **Producto / pieza:** GME — P-05 ficha tecnica, P-07 video R/B/M
+- **Decision:** SUSPENDIDO — condicionado a engineering Q15 (logica tres intentos) + Q8 (confirmacion actuacion fisica de cada funcion)
+- **Caveat textual (cuando se desbloquee):** "Proteccion activa ante voltaje, corriente, subcarga y arranques excesivos — con logica de reintentos inteligente antes del bloqueo de seguridad." La mencion de reintentos es obligatoria en el claim o en proximidad inmediata.
+- **Rationale:** El conjunto V+I+subcarga+arranques/hora es el mas diferenciado del portafolio GME (OL-3 §Diferenciado). El bloqueo es: (a) necesidad de confirmar que cada funcion activa el contactor fisicamente (no solo logging), y (b) logica de tres intentos antes del bloqueo que debe comunicarse — no ocultarse — para evitar brecha entre expectativa y comportamiento real.
+- **Criterio aplicado:** RISK-POLICY v1.0 §3 (no afirmar datos que puedan ser falsos) — aplicado a la funcion de actuacion fisica no confirmada. BR-5 Precedente #4 (analogia: no comunicar un comportamiento de proteccion que no se corresponde con el resultado real para el usuario).
+- **Evidencia consultada:** Vera VE-1 §4 Claim B; OL-3 §Seccion 3; VA-5 §Claim B; comentarios encuesta.
+- **Scope:** GME — P-05 y P-07. Campana octubre 2026.
+
+---
+
+### #17 — 2026-05-06 — Claim C GME: "Sin app que instalar. Sin cloud requerida."
+
+- **Claim evaluado (texto exacto):** "Sin app que instalar. Sin cloud requerida."
+- **Producto / pieza:** GME — P-03 empaque (si se incluye), P-04 landing, P-06 video WiFi demo
+- **Decision:** SUSPENDIDO — condicionado a engineering Q2 (operacion offline) y Q3 (arquitectura MCU proteccion/webserver). Tres escenarios posibles segun respuesta; caveats literales distintos por escenario (ver archivo fuente).
+- **Caveat textual (Escenario favorable — Q2 favorable + Q3 favorable):** "Control desde cualquier browser en la misma red WiFi. Sin app. Sin cloud. La proteccion actua independientemente de la conexion a internet."
+- **Rationale:** "Sin app que instalar" es plenamente defendible. "Sin cloud requerida" es verdad para la interfaz pero potencialmente falso para la proteccion activa si el GME requiere WiFi para disparar el contactor. Riesgo arquitectonico adicional: si el MCU de proteccion y el webserver comparten el mismo hilo sin watchdog, un cuelgue del webserver puede inhabilitar la proteccion. Este es el riesgo de mayor magnitud identificado en el gate (nota final del archivo fuente).
+- **Criterio aplicado:** RISK-POLICY v1.0 §3.
+- **Evidencia consultada:** Vera VE-1 §4 Claim C y §5 Q2/Q3; OL-3 §1.5; VA-5 §Claim C; AU-1 §7.1 y §7.2.
+- **Scope:** GME — P-03, P-04, P-06. Critico: gate debe resolverse antes del 15 julio 2026 para no comprimir ventana de imprenta del empaque (deadline 1 septiembre).
+
+---
+
+### #18 — 2026-05-06 — Claim H GME: Formulacion de "proteccion del equipo / instalacion / negocio"
+
+- **Claim evaluado (texto exacto):** Varias formulaciones — ver sub-categorias abajo
+- **Producto / pieza:** GME — todas las piezas (P-01 a P-10) donde aparezca beneficio de proteccion para el consumidor final
+- **Decision (formulacion de garantia de resultado):** RECHAZADO — equivalente a entrada #12 del log (empaque GSM) y BR-5 Precedente #4. Formulaciones prohibidas: "Tu equipo estara protegido", "Garantiza la proteccion del equipo", "Nunca mas te quedas sin equipo", "Protege tu inversion", "Evita que la bomba se dane", "Tu negocio estara protegido", cualquier variante que prometa resultado de proteccion del equipo conectado.
+- **Decision (formulacion de accion verificable):** APROBADO CON CAVEAT — texto exacto por canal en archivo fuente §Caveats literales (Caveat H-01). Puede usarse YA sin gate adicional.
+- **Caveat textual aprobado (empaque tiro):** "El GME monitorea las condiciones electricas y actua ante sobrecarga, subcarga y variaciones de voltaje — segun el perfil del equipo conectado."
+- **Caveat textual aprobado (landing / email):** "El GME detecta las variaciones electricas que danan equipos — y actua antes de que lleguen a la carga. Subcarga, sobrecarga, alto voltaje, bajo voltaje — segun el perfil del equipo que conectas. Refrigeracion, Bombas o Motores: el GME responde segun su modo."
+- **Rationale:** Transferencia directa del Precedente #4 al GME. El GME protege ante condiciones electricas especificas; no protege ante transientes de alta energia, fallas de ground, averias mecanicas, instalacion incorrecta. La Ley de Proteccion al Consumidor venezolana interpreta promesas de marketing como compromisos implicitos. La formulacion de accion verificable (describe lo que el GME hace, sin prometer el resultado final sobre el equipo conectado) es la unica defensa juridicamente sostenible.
+- **Criterio aplicado:** BR-5 Precedente #4. RISK-POLICY v1.0 §3.
+- **Evidencia consultada:** VA-5 §Claim H y §Proteccion de carga; Vera VE-1 §4; BR-2 entrada #12.
+- **Scope:** GME — todas las piezas y todos los canales. Vigente como politica permanente para el producto GME, igual que para la linea GSM.
+
+---
+
+### #19 — 2026-05-06 — Claims rechazados GME (grupo)
+
+- **Claims evaluados:** (A) "Visibilidad total del equipo desde tu celular" — (B) "Tan preciso como instrumentacion profesional" — (C) "Multivoltaje 120/220V" (V1) — (D) "Sensibilidad <1 s ante fluctuaciones" — (E) "Historial de las ultimas 20 fallas con fecha y hora" (V1)
+- **Producto / pieza:** GME — todas las piezas del lanzamiento octubre 2026
+- **Decision:** RECHAZADOS — sin alternativa posible en el estado actual de informacion (excepto (B) y (D) que tienen alternativa cuando engineering declare dato cuantitativo)
+- **Rationale (por claim):**
+  - "Visibilidad total": superlativo absoluto indefendible — el GME muestra V/I/Hz/estado/ultima falla, no temperatura de descarga, historial cronologico, ni acceso remoto fuera de red.
+  - "Tan preciso como instrumentacion profesional": sin clase de exactitud declarada IEC 60255-1, el claim es indefendible ante audiencia tecnica.
+  - "Multivoltaje 120/220": SKUs son "220"; Q10 de Vera pendiente; claim no existente hasta confirmacion hardware.
+  - "Sensibilidad <1 s": dato de engineering no disponible; y el tecnico de la encuesta (#104359489) lo cuestiona activamente — usar el claim sin dato es sobrepromesa con testigo adverso.
+  - "Historial 20 fallas": mockups muestran ultima ocurrencia por tipo sin log cronologico; RTC pendiente; feature no implementada en V1.
+- **Criterio aplicado:** RISK-POLICY v1.0 §3. BR-5 Precedente #1 (para sensibilidad y precision: el superlativo con dato cuantitativo es aprobable si el dato de engineering lo confirma — pero no sin el dato).
+- **Evidencia consultada:** Vera VE-1 §2 tabla y §4; VA-5 §Claims F, G, J, K, L; comentarios encuesta #104359489, #104362252, #104362438, #104362640.
+- **Scope:** GME — todos los canales y piezas. V1 octubre 2026.
+
+---
+
+### #20 — 2026-05-06 — Claim #GME-05: "Multi-aplicacion — un solo hardware, tres modos"
+
+- **Claim evaluado (texto exacto):** "Un solo hardware, tres modos de aplicacion: Refrigeracion, Bombas, Motores" / "Multi-aplicacion: configura para R/B/M con un solo hardware"
+- **Producto / pieza:** GME — P-03, P-07, P-08, P-09
+- **Decision (formulacion basica sin superlativo):** APROBADO CON CAVEAT — Caveat E-01 (texto exacto en archivo fuente §Caveats). Puede usarse YA.
+- **Decision (formulacion con superlativo de exclusion):** SUSPENDIDO — pendiente OL-3 segunda iteracion + decision Owner sobre modalidad SKU.
+- **Decision (formulacion "un solo hardware"):** SUSPENDIDO — condicionado a decision Owner sobre 1 hardware configurable vs. 3 SKUs fisicos (deadline 15 junio 2026).
+- **Caveat textual aprobado (formulacion basica — empaque):** "Un protector. Tres modos: Refrigeracion, Bombas, Motores. Los parametros de proteccion preajustados segun el equipo que conectas."
+- **Rationale:** Los tres modos tienen diferencias reales verificadas en mockups: valores default distintos en todos los parametros de tiempo y umbral, logica de maniobra diaria exclusiva de modo B, y tiempo de deteccion de sobrecarga configurable visible en modo M pero no en R/B (Vera §3.1–3.2). El claim de "un solo hardware" depende de la decision SKU del Owner — si son 3 SKUs fisicos, el claim es factualmente falso.
+- **Criterio aplicado:** BR-5 Precedente #2 (superlativo de exclusion requiere ausencia verificada — la segunda iteracion de OL-3 debe confirmar que ningun competidor en $30–60 tiene configuracion multi-aplicacion).
+- **Evidencia consultada:** Vera VE-1 §3.1–3.2; OL-3 §Diferenciado; VA-5 §Claim E; AU-1 §7.3.
+- **Scope:** GME — campana octubre 2026.
+
+---
+
+### #21 — 2026-05-06 — Claim #GME-08: Pricing claim democratizacion
+
+- **Claim evaluado (texto exacto):** "$35 al precio de un protector basico, con la inteligencia de uno profesional" / variantes de posicionamiento de precio
+- **Producto / pieza:** GME — P-03 empaque, P-04 landing, P-09 argumentario de ventas distribuidor
+- **Decision:** APROBADO CON CAVEAT
+- **Caveat textual aprobado (piezas publicas — empaque, landing):** "Las funciones que antes costaban cientos de dolares — ahora a precio de herramienta profesional."
+- **Caveat textual aprobado (argumentario interno distribuidor — P-09 pieza B):** Comparacion directa de precio con Littelfuse 77C (~$552 vs GME $35) con la nota: "La comparacion es de funciones accesibles — el GME no tiene las mismas certificaciones industriales que el 77C."
+- **Rationale:** La brecha 15x–23x con el competidor funcional mas cercano (Littelfuse 77C: $552 en distribuidor segun OL-3 §1.1) es el RTB central del Pilar 4. La formulacion de democratizacion no compara con ninguna marca por nombre en materiales publicos (BR-5 Precedente #3), describe funciones verificables, y no afirma certificacion industrial que el GME no tiene.
+- **Criterio aplicado:** BR-5 Precedente #3 (comparativos directos prohibidos en empaque y materiales publicos; permitidos en argumentario interno).
+- **Evidencia consultada:** OL-3 §1.1; VA-1 §Pilar 4; Informe Van Westendorp (precio $35 dentro del rango aceptable de los tres segmentos).
+- **Scope:** GME — campana octubre 2026.
+
+---
+
 *Bruna — Risk & Claims Governance Lead — Sistema /RAUL/*
 *Log iniciado: 2026-05-03. Dominio: Genteca. Primer gate formal del sistema /RAUL/.*
-*Ultima actualizacion: 2026-05-05 (entrada #14).*
+*Ultima actualizacion: 2026-05-06 (entradas #15 a #21 — bloque GME campana lanzamiento octubre 2026).*
+*Archivo fuente del bloque GME: `03-projects/genteca/GME Estudios de mercado/_intel/Bruna_gate_GME_2026-05-06.md`*
 *Appendear nuevas decisiones al final de este archivo. No reemplazar entradas existentes.*
