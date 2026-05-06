@@ -52,6 +52,9 @@
 *.webp
 *.svgz
 
+# Excepciones — curvas/gráficos de deliverables analíticos (PNG pequeños, no fuente)
+!03-projects/**/van_westendorp/*.png
+
 *.mp4
 *.mov
 *.m4v

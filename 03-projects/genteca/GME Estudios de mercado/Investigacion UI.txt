@@ -1,0 +1,15 @@
+Lo primero que voy a darte en cuanto a documentacion del desarrollo de este nuevo producto, es una encuesta que hicimos a los 
+  tecnicos de la base de datos de tecnicos de la comunidad exceline profesional que estamos creando y haciendo crecer. La        
+  encuesta consiste en un conjunto de pantallas que se estan desarrollando para la interfaz (User Interface) con las pantallas   
+  que los tecnicos van a interactuar para la configuracion, diagnostico, mantenimiento, servicio a sus clientes. Esa sera la     
+  primera tarea. Entender el archivo de excel con las preguntas y respuestas de la encuesta. Te voy a colocar en esta 
+carpeta  C:\RAUL\03-projects\genteca\GME Estudios de mercado para las investigaciones de mercado que hemos realizado.
+ Luego, en esta misma carpeta voy a colocar los resultados en excel, las preguntas y las imagenes que se utilizaron en la encuesta on line. 
+Si quieres, dejame saber si deseas que abra el link de la encuesta para que navegues por ella y entiendas mejor, pero si no, 
+te explico en este archivo de texto después que lo revises como fue el flujo de la encuesta y te doy las imagenes de pantallas del GME usadas 
+para que los tecnicos pudieran evaluarlas. El objetivo principal de la encuesta era el de seleccionar entre dos opciones de pantalla principal.
+ Una simple opcion A y una que incluye los valores ajustados para alto y bajo voltaje y para sobrecrga y subcarga principalmente. Adicionalmente 
+les preguntamos por el agrado y finalmente, una sección de precios con la metodología Van Wastendorp para tener una primera indagación sobre lo que 
+estarían dispuestos a pagar y los precios adecuados, en función de lo que vieron en las pantallas y de lo que ellos interpretan a partir de ellas, acerca 
+de las funciones y beneficios de este equipo. Se presentaron tres versiones que se seleccionan para que el equipo sea configurable para Bombas, Motores o Refrigeración.
+El set de preguntas respondidas entonces se dividían según la aplicación seleccionada, por lo que tenemos respuestas para cada aplicación. Lee el archivo Excel de esta carpeta y hazme las preguntas que requieras que las respondere en la versión 2 de este archivo 
