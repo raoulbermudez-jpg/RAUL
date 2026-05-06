@@ -121,6 +121,9 @@ venv/
 # Configuración local de Claude Code (credenciales y permisos de sesión)
 .claude/settings.local.json
 
+# Worktrees temporales de subagentes Claude Code (isolation feature)
+.claude/worktrees/
+
 # Archivos de encoding temporal (generados al subir binarios a Drive)
 b64_*.txt
 
