@@ -994,3 +994,396 @@ Este criterio es aplicable en cualquier dominio de /RAUL/ donde un claim de empa
 *Refresh emitido: 2026-05-05*
 *Estado: APROBADO CON CAVEAT (condicional Vera P-5) — listo para memo Junta Aurelio, SO-1 delta Solenne, redline arte Oz*
 *Proxima revision requerida: confirmacion de Vera sobre mecanismo NTC (P-5) antes de produccion de imprenta del arte final. Si P-5 = fusible unico: tiro cambia a "Autoproteccion termica*", resto invariable.*
+
+---
+
+# §9 — Gate de las 3 opciones B-CON-NTC (variante v2.2)
+
+**Documento:** Bruna_gate_empaque_v1 §9
+**Fecha:** 2026-05-06
+**Elaborado por:** Bruna — Risk & Claims Governance Lead
+**Trigger:** WhatsApp Kike → Canudas 2026-05-05 abre evaluacion de variante CON NTC. Owner instruye gatear 3 opciones candidates (A, B, C segun nomenclatura de este §9) para llevarlas con sus gates a Kike antes de avanzar a Solenne / Atlas / Aurelio. v2.1 B-sin-NTC permanece vigente y no es sustituida.
+
+**Insumos consultados para este gate:**
+- Vael_VA-5_naming-funcion-termica_v1.md §Refresh 2026-05-06 (ranking 7 opciones CON-NTC; finalista Op. 6 score 6,45; textos de retiro por opcion)
+- Orlan_OL-1_competencia-naming-termico_v1.md §Refresh 2026-05-06 (vacancia territorial; riesgo IP nominal; analisis argumento Kike; tabla registrabilidad candidatos; recomendacion "Thermo-Safe" como bautizado primario)
+- Bruna_gate_empaque_v1 §2 (Claims D, E, H — gate original 2026-05-03); §7.1 (bloque NTC corregido); §8 (gate "Autoproteccion termica activa*", cuerpo del caveat invariable §8.3/§8.4)
+- BR-5 transversal Precedentes #1 a #4 (criterios de superlativos, exclusion, comparativos y garantias)
+- RISK-POLICY.md v1.0 §3 (principio de no afirmar datos que puedan ser falsos)
+
+**Nota sobre las 3 opciones gateadas:** el universo de candidatos de Vael §Refresh 2026-05-06 tiene 7 opciones. Bruna gateo las 3 que el Owner instruyo presentar a Kike, identificadas segun los origenes descritos en el brief de gate:
+
+- **Opcion A del gate — "NTC EscudoTermico(TM)*":** finalista ranking Vael (Op. 6, score 6,45). Nomenclatura Vael: Op. 6.
+- **Opcion B del gate — "Thermo-Safe(TM)*":** recomendacion Orlan desde optica IP nominal (OL-1 §Refresh R4 — "mejor perfil del grupo"). Esta opcion NO aparece como badge standalone en el ranking de Vael (Vael no la propuso como badge de tiro independiente — Orlan la menciono como bautizado primario para el empaque). Bruna la gateo como claim funcional derivado de los criterios del §Refresh.
+- **Opcion C del gate — "Sensor NTC ThermoSafe(TM)*":** sintesis combinada (NTC visible + "ThermoSafe" bautizado Orlan IP-clean + bilingue). No contemplada explicitamente en ranking Vael ni recomendacion Orlan — emerge de la instruccion del Owner de tener una tercera opcion que combine ambas logicas.
+
+**Nota de notacion:** este documento usa (TM) para indicar el simbolo de marca aspiracional (™) y (R) para ® cuando el contexto lo requiere, para evitar problemas de codificacion en el archivo.
+
+---
+
+## §9.1 — Analisis de Opcion A: "NTC EscudoTermico(TM)*"
+
+**Texto exacto para tiro:** NTC EscudoTermico(TM)*
+
+**Equivalencia en tabla Vael:** Opcion 6 del §Refresh 2026-05-06 (score 6,45 — primer lugar en ranking ponderado).
+
+### §9.1.1 — Riesgo Claim H
+
+**Analisis:** El badge "NTC EscudoTermico(TM)" no contiene promesa de proteccion de equipo ni de carga conectada. NTC nombra el componente. EscudoTermico describe una funcion de proteccion termica interna del protector, no del equipo enchufado. La palabra "Escudo" tiene resonancia de proteccion activa pero su objeto semantico en el contexto del empaque de la Alternativa B (donde los dos badges son "El mas rapido ante parpadeos < 0,03 s" y el badge termico) es el protector mismo, no la carga. El retiro (cuerpo invariable §8.3) explicita ese alcance sin ambiguedad.
+
+**Riesgo de interpretacion Claim H por la Junta (40% del mercado):** Medio-bajo. La Junta ya recibio en la Junta de 2026-05-06 el argumento tecnico de alcance del NTC (protege al protector y al cableado, no actua como proteccion de sobrecarga directa de cargas de baja demanda). La palabra "Escudo" puede evocar proteccion mas amplia en un oyente rapido, pero el cuerpo del retiro neutraliza esa interpretacion. El riesgo residual es de percepcion, no de falsedad factual.
+
+**Conclusion Claim H — Opcion A:** MITIGA. El badge en el tiro no activa el Claim H rechazado. El cuerpo del caveat de retiro (invariable §8.3) opera como guardrail explicitamente probado por gate §8. Si Solenne o Oz extienden el badge con frases tipo "protege tu equipo" o "cuida tu aire acondicionado" sin gate adicional de Bruna, el Claim H se reactiva. La instruccion a Solenne es: badge solo, sin extension de beneficio al equipo conectado.
+
+### §9.1.2 — Riesgo IP marcaria
+
+**"EscudoTermico" en espanol:** Orlan OL-1 §Refresh R3 lo clasifica como descriptor generico en espanol (combina "escudo" + "termico" — describe literalmente la funcion). Riesgo de objecion SAPI VE por falta de caracter distintivo: **medio-alto**. El examinador puede objetarlo como termino puramente descriptivo del producto.
+
+**NTC:** siglas de dominio publico industrial (Negative Temperature Coefficient). No registrable como marca per se; es denominacion generica del tipo de componente. Su uso en el badge no agrega riesgo IP propio — es una descripcion tecnica verificable.
+
+**Verificacion marcaria requerida antes de imprenta:** ALTA. "EscudoTermico" solo puede imprimirse con simbolo (TM) como provisional. Si Genteca busca registro formal: requiere busqueda SAPI VE con abogado marcario + opinion sobre descriptividad antes de produccion. Si Genteca decide no registrar y lo usa solo como claim de empaque (no como marca registrada): el (TM) es una aspiracion sin respaldo formal, y la barrera anti-copia se reduce significativamente porque cualquier competidor puede usar "Escudo Termico" sin oposicion registral.
+
+**Nivel de verificacion requerido:** SAPI VE formal con abogado marcario, antes de imprenta. Condicion suspensiva de produccion (no de gate conceptual).
+
+### §9.1.3 — Defensa anti-copia (argumento Kike)
+
+**Analisis:** La logica anti-copia de la Opcion A descansa en el registro de "EscudoTermico" como marca. Vael §Refresh R6-5 lo articula correctamente: "Si la marca EscudoTermico se establece, Exceline tiene un activo de naming registrable. Un competidor que copie la placa no puede usar EscudoTermico(TM) en la caja si Exceline lo ha registrado." Orlan §Refresh R3 advierte que esa logica tiene una condicion: que la marca sea efectivamente registrable (el riesgo de objecion por descriptividad es medio-alto).
+
+**Distincion critica:** La defensa anti-copia de la Opcion A es **condicional al registro**. Sin registro formal de "EscudoTermico":
+- Un competidor que copie la placa NTC puede usar "Escudo Termico" sin impedimento marcario.
+- El argumento de Kike (bautizado que protege) no se cumple.
+- La Opcion A se comporta funcionalmente como la Op. 1 (Sensor NTC incorporado*) en terminos de defensa anti-copia.
+
+Con registro formal de "EscudoTermico(TM)" como marca (si SAPI lo concede pese al riesgo de descriptividad):
+- La defensa es alta. El competidor puede copiar la placa pero no el nombre de marca registrado.
+- Este es el escenario que Vael y Kike tienen en mente.
+
+**Evaluacion del argumento Kike para Opcion A:** Parcialmente valido. El blindaje real requiere registro marcario que no esta garantizado por la naturaleza descriptiva del termino. Bruna no puede confirmar que la Opcion A provee blindaje sin conocer el resultado de la verificacion SAPI VE.
+
+### §9.1.4 — Compatibilidad con caveat tecnico (§8 Refresh 2026-05-05)
+
+**Cuerpo invariable (reproducido de §8.3/§8.4):**
+
+> sensor de temperatura ubicado junto al rele de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se danen. Protege al protector mismo y a la instalacion electrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada. Funciona como capa adicional de proteccion termica; no reemplaza al interruptor termomagnetico de la instalacion.
+
+**Header del caveat para Opcion A — texto literal obligatorio:**
+
+> NTC EscudoTermico(TM): [sigue el cuerpo invariable de §8.3 sin modificacion]
+
+**Instruccion operativa para Oz/Solenne:** el encabezado del retiro es "NTC EscudoTermico(TM):" seguido del cuerpo invariable de §8.3. El encabezado sigue al badge del tiro: si el Owner decide ajustar la formulacion del tiro, el encabezado del retiro se ajusta en consecuencia. El cuerpo es invariable.
+
+**Compatibilidad:** PLENA. La descripcion funcional del cuerpo ("sensor de temperatura... detecta calentamiento excesivo... desconecta la carga") es compatible tanto con "NTC EscudoTermico" como con cualquier badge alternativo del set.
+
+### §9.1.5 — Decision de gate: Opcion A
+
+**Decision: APROBADO CON CAVEAT**
+
+**Condicion 1 (tecnica — caveat de retiro):** El header del retiro es "NTC EscudoTermico(TM):" seguido del cuerpo invariable de §8.3. Sin ese caveat literal, el claim del tiro no se considera aprobado.
+
+**Condicion 2 (condicion suspensiva de produccion — IP marcaria):** El simbolo (TM) en el tiro puede usarse como provisional para la presentacion a Kike y para mockups. Para produccion de imprenta, Genteca debe completar verificacion SAPI VE formal con abogado marcario sobre la registrabilidad de "EscudoTermico" como marca en Venezuela (clase 9). Si SAPI VE objeta el termino por descriptividad: el simbolo (TM) debe retirarse del empaque final o la formulacion de la marca debe ajustarse a un termino con mayor caracter distintivo. Esta condicion no bloquea el gate conceptual; bloquea la produccion de imprenta.
+
+**Condicion 3 (condicion suspensiva de produccion — Vera P-5):** La aprobacion hereda la condicion suspensiva del §8.1: si Vera confirma que el NTC es fusible de corte unico (no reutilizable), el adjetivo funcional "activa" de la v2.1 no aplica a este badge (Opcion A no usa "activa"), pero si Vera contradice la descripcion funcional del cuerpo del caveat, el texto del retiro debe revisarse. Esta condicion es de bajo impacto para la Opcion A especificamente porque el badge no contiene la palabra "activa".
+
+**Extension prohibida sin gate adicional:** Solenne y Oz no pueden extender el badge con frases de beneficio al equipo conectado ("protege tu aire acondicionado", "cuida tu electrodomestico" o similares). Cualquier extension de ese tipo requiere gate nuevo de Bruna.
+
+**Rationale:** El badge "NTC EscudoTermico(TM)*" satisface todos los criterios del §Refresh 2026-05-06 (Criterios 1-7 de Vael): NTC visible (responde a Canudas), funcion comprensible (EscudoTermico para el consumidor), Claim H nulo, caveat compatible. El riesgo dominante es el IP marcario sobre "EscudoTermico", que Bruna no puede resolver sin verificacion SAPI VE. La aprobacion es provisional en ese eje. El riesgo funcional del claim es bajo: el RTB tecnico (NTC en circuito de potencia, mecanismo verificado por Vera y Canudas) sostiene el badge sin sobre-promesa.
+
+**Clausula RISK-POLICY aplicada:** §3 — no afirmar datos que puedan ser falsos. El badge describe un componente real (NTC) con una funcion real (escudo termico = proteccion termica activa). No hay dato falso en el claim. El riesgo es de registro marcario, no de falsedad tecnica.
+
+**Precedente BR-5 aplicado:** Precedente #4 — garantia de resultado rechazada sin RTB universal. Este gate confirma que el badge de funcion termica (sin promesa de proteccion de la carga) NO cae en el Precedente #4. Bruna identifica este caso como extensión del criterio de §8.5 (funcion sin componente → aquí es funcion CON componente + naming de marca): el criterio se amplía pero la lógica es la misma.
+
+---
+
+## §9.2 — Analisis de Opcion B: "Thermo-Safe(TM)*"
+
+**Texto exacto para tiro:** Thermo-Safe(TM)*
+
+**Origen:** Recomendacion Orlan OL-1 §Refresh R4 ("mejor perfil del grupo" en mapa de riesgo IP). No propuesta por Vael como badge standalone de tiro — Orlan la recomienda como bautizado primario para el empaque.
+
+**Nota sobre el anglicismo:** la instruccion del Owner es que los anglicismos son aceptados temporalmente SIEMPRE con alternativa española o combinacion bilingue en la misma frase. "Thermo-Safe" es un anglicismo puro. Para cumplir la instruccion del Owner: el badge del tiro debe ir acompañado de alternativa española en el mismo artefacto visual (ej. subtitulo en espanol: "Proteccion Termica Activa" o equivalente). Bruna nota esta tension con la instruccion del Owner y la declara como condicion de diseno, no como causa de rechazo del claim.
+
+### §9.2.1 — Riesgo Claim H
+
+**Analisis:** "Thermo-Safe" es un bautizado de naming de tecnologia — no es una afirmacion funcional directa sobre lo que el protector hace. El termino "Safe" (seguro, protegido) puede evocar proteccion del equipo en una lectura rapida: "thermo" = calor + "safe" = a salvo → "a salvo del calor". Esa lectura puede activar en la Junta (40% del mercado) la interpretacion de que el equipo conectado esta protegido de sobrecalentamiento.
+
+**Evaluacion:** El riesgo Claim H de la Opcion B es **mayor que el de la Opcion A**. La razon: "EscudoTermico" en espanol al menos es intuitivamente un escudo del protector mismo; "Thermo-Safe" en ingles, sin la funcion descripta en el badge, puede leerse como garantia de que el equipo conectado es "thermo-safe" (termicamente seguro). Este riesgo no lo activa el badge solo — lo activa la combinacion con el caveat de retiro que menciona "desconecta la carga". Un lector rapido que vea "Thermo-Safe(TM)" en el tiro y "desconecta la carga" en el retiro puede inferir que el sistema protege la carga del calor.
+
+**Mitigacion disponible:** El cuerpo del caveat de retiro (§8.3 invariable) contiene la clausula de caveat explícita: "Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actua como proteccion de sobrecarga directa de la carga conectada." Esta clausula es la mitigacion principal. La instruccion literal a Solenne: badge solo, sin extension sobre el equipo conectado.
+
+**Conclusion Claim H — Opcion B:** EXPONE PARCIALMENTE. El badge por si solo no activa el Claim H rechazado, pero la evocacion semantica de "Safe" (seguro) en ingles genera una tension que la Opcion A y la Opcion C no tienen en la misma medida. El caveat de retiro mitiga la sobre-promesa. El riesgo no es suficiente para rechazar, pero es superior al de la Opcion A.
+
+### §9.2.2 — Riesgo IP marcaria
+
+**"Thermo-Safe":** Orlan §Refresh R3 lo clasifica como el candidato con **perfil IP mas limpio del grupo**. No se encontro marca registrada en clase 9 (aparatos electricos y electronicos) en el segmento protectores de voltaje. El termino no es puramente descriptivo en espanol (es un anglicismo compuesto: "thermo" no es una palabra española de uso comun; "safe" tampoco) — esto reduce el riesgo de objecion por descriptividad ante SAPI VE.
+
+**Evaluacion de registrabilidad:** Orlan R3 concluye: "Registrable sin riesgo aparente en el segmento protectores electricos VE, sujeto a verificacion SAPI VE formal." El riesgo descriptividad es **bajo** (el termino no describe directamente el producto en el vocabulario cotidiano del consumidor venezolano).
+
+**Tension con instruccion Owner (anglicismo):** la instruccion del Owner de alternar anglicismo con español en el mismo artefacto visual aplica aqui. Si el badge es "Thermo-Safe(TM)" en el tiro, la alternativa española debe aparecer en el mismo empaque (retiro o subtitulo del badge). El encabezado del caveat ("Thermo-Safe(TM):") puede ir acompañado de una traduccion funcional en el cuerpo, pero el cuerpo invariable no se modifica. Bruna acepta que el encabezado en ingles satisface la instruccion del Owner si en el retiro o en el cuerpo visible del empaque aparece la descripcion en español (que ya esta en el cuerpo invariable §8.3).
+
+**Verificacion marcaria requerida antes de imprenta:** ALTA (idem todas las opciones). Para "Thermo-Safe" la condicion suspensiva aplica igualmente, pero con menor riesgo de objecion que "EscudoTermico". La verificacion SAPI VE sigue siendo obligatoria — el perfil mas limpio no equivale a confirmacion.
+
+### §9.2.3 — Defensa anti-copia (argumento Kike)
+
+**Analisis:** "Thermo-Safe" como bautizado de tecnologia es un nombre propio compuesto, no un descriptor generico. Si se registra como marca en Venezuela, la defensa anti-copia es real y robusta: un competidor que copie la placa NTC no puede poner "Thermo-Safe(TM)" en su empaque si Exceline lo tiene registrado.
+
+**Tension con el argumento de Kike:** Sin embargo, la Opcion B **no menciona NTC en el tiro**. Esto significa que:
+(a) El argumento de Kike de comunicar la innovacion tecnica por nombre (NTC) no se cumple directamente — el consumidor ve "Thermo-Safe" sin saber que la tecnologia es un termistor NTC.
+(b) La apertura de Canudas fue literal: "Hagan un ejemplo de comunicacion con las siglas NTC." La Opcion B no satisface ese pedido literal. Puede ser rechazada en la revision de Canudas por no mostrar las siglas.
+
+**Blindaje real:** Alto si se registra "Thermo-Safe". La barrera de naming es real porque el termino no es descriptivo generico — un competidor no puede reclamarlo trivialmente. Pero el blindaje es sobre el nombre comercial, no sobre el argumento tecnico de NTC. Si la competencia copia la placa con NTC y lo llama de otra manera, el blindaje de naming no aplica.
+
+**Conclusion defensa anti-copia:** La Opcion B provee el mejor blindaje de naming del trio evaluado **si el nombre se registra** — porque "Thermo-Safe" tiene el perfil IP mas limpio. Pero no provee el blindaje del argumento NTC que Kike articulo (comunicar NTC primero para que los seguidores sean seguidores, no lideres). La logica de Kike requiere NTC visible; la Opcion B no lo tiene.
+
+### §9.2.4 — Compatibilidad con caveat tecnico (§8 Refresh 2026-05-05)
+
+**Header del caveat para Opcion B — texto literal obligatorio:**
+
+> Thermo-Safe(TM): [sigue el cuerpo invariable de §8.3 sin modificacion]
+
+**Nota sobre el anglicismo en el header:** el header del retiro en ingles puede generar tension con la instruccion del Owner de preferencia española. Bruna acepta que el header en ingles es correcto porque es el badge del tiro el que determina el header del retiro (convencion establecida en §7.1 y confirmada en §8.3). El cuerpo del retiro esta en espanol — eso satisface la instruccion del Owner en el nivel del retiro.
+
+**Compatibilidad:** PLENA. El cuerpo invariable §8.3 no menciona el nombre de la tecnologia — describe el mecanismo. "Thermo-Safe" como encabezado es compatible con ese cuerpo sin tension.
+
+### §9.2.5 — Decision de gate: Opcion B
+
+**Decision: APROBADO CON CAVEAT**
+
+**Condicion 1 (riesgo Claim H — caveat de retiro):** El cuerpo del caveat de retiro §8.3 es obligatorio e invariable. Sin ese texto literal, el claim "Thermo-Safe(TM)" no se considera aprobado. El header es "Thermo-Safe(TM):" seguido del cuerpo invariable.
+
+**Condicion 2 (instruccion Owner — anglicismo):** El badge "Thermo-Safe(TM)" debe aparecer en el empaque con alternativa española visible en el mismo artefacto (retiro, subtitulo del badge o equivalente). La alternativa en español puede ser "Proteccion Termica" o el descriptor funcional que Solenne y Oz acuerden, sujeto a gate de Bruna si el termino alternativo es un nuevo claim. El cuerpo del retiro en espanol cumple parcialmente esta condicion; Solenne debe confirmar que la instruccion del Owner se satisface con ese nivel de presencia española.
+
+**Condicion 3 (condicion suspensiva — IP marcaria):** Verificacion SAPI VE formal antes de imprenta. Perfil mas limpio del grupo — riesgo de objecion por descriptividad bajo — pero la verificacion es igualmente obligatoria.
+
+**Condicion 4 (condicion suspensiva — respuesta a Canudas):** La Opcion B no menciona NTC en el tiro. Si Canudas requiere ver las siglas NTC en el badge del tiro como condicion para aceptar la variante CON-NTC, la Opcion B no satisface ese pedido literal. Esta condicion no es de gate de Bruna (es una decision del Owner y Canudas), pero Bruna la declara como flag explicito para la presentacion.
+
+**Extension prohibida sin gate adicional:** idem Opcion A. Ninguna extension sobre proteccion del equipo conectado sin gate de Bruna.
+
+**Rationale:** El badge "Thermo-Safe(TM)*" tiene el perfil IP mas limpio del trio y la mejor base para registro formal de marca. El riesgo de Claim H es gestionable con el caveat de retiro obligatorio. La debilidad estrategica es que no menciona NTC — lo cual puede ser una fortaleza de IP (no revela componente) pero una debilidad de respuesta al pedido literal de Canudas. Bruna aprueba el claim como tal; la decision de si la Opcion B satisface el pedido de Canudas corresponde al Owner.
+
+**Clausula RISK-POLICY aplicada:** §3 — no afirmar datos que puedan ser falsos. "Thermo-Safe" es un bautizado de naming — no afirma nada falseable directamente. La funcion que el nombre evoca (proteccion termica) es real y verificada. No hay dato falso.
+
+---
+
+## §9.3 — Analisis de Opcion C: "Sensor NTC ThermoSafe(TM)*"
+
+**Texto exacto para tiro:** Sensor NTC ThermoSafe(TM)*
+
+**Nota sobre alternativa española:** la instruccion del Owner sobre anglicismos obliga a una alternativa española en la misma frase o en el mismo artefacto. Opcion C tal como se plantea tiene el anglicismo "ThermoSafe" — la alternativa española seria: "Sensor NTC con tecnologia de Escudo Termico" (5 palabras — larga para un badge de blister con espacio ya ocupado por el badge de velocidad). Bruna acepta "Sensor NTC ThermoSafe(TM)" con la alternativa española en el cuerpo del retiro y/o como subtitulo, segun acuerde Solenne con Oz y Atlas.
+
+**Nota sobre la denominacion:** el Owner instruyó la formulacion "Sensor NTC ThermoSafe(TM)*" como combinacion. Bruna la evalua exactamente en esos terminos, no como variante de las Opciones 3 o 6 de Vael (que son "Tecnologia NTC EscudoTermico(TM)" y "NTC EscudoTermico(TM)" respectivamente). La diferencia significativa es: (a) usa "ThermoSafe" (forma unida, sin guion) en lugar de "EscudoTermico" — esto afecta el perfil IP; (b) usa "Sensor" como descriptor explicito del componente (vs. "NTC" solo o "Tecnologia NTC"); (c) combina NTC visible con el bautizado anglicismo IP-clean de Orlan.
+
+### §9.3.1 — Riesgo Claim H
+
+**Analisis:** "Sensor NTC ThermoSafe(TM)" contiene tres elementos: "Sensor" (descriptor de componente tecnico), "NTC" (sigla del tipo de componente) y "ThermoSafe(TM)" (bautizado de nombre de tecnologia). Ninguno de los tres afirma proteccion del equipo conectado. "Sensor" y "NTC" son neutros respecto al Claim H. "ThermoSafe" tiene la misma tension semantica que "Thermo-Safe" (ver §9.2.1): "safe" puede evocar proteccion del equipo en una lectura rapida.
+
+**Diferencia con Opcion B:** En la Opcion C, "ThermoSafe" va precedido de "Sensor NTC" — esto ancla semanticamente el badge al componente tecnico, reduciendo la probabilidad de que el lector infiera una promesa de proteccion del equipo. "Sensor NTC ThermoSafe(TM)*" se lee mas facilmente como "el sensor NTC que llamamos ThermoSafe" que como "el sistema que hace al equipo thermo-safe".
+
+**Conclusion Claim H — Opcion C:** MITIGA. El anclaje de "Sensor NTC" reduce el riesgo de interpretacion de proteccion de la carga. El cuerpo del caveat de retiro sigue siendo la guardrail principal. Riesgo inferior al de la Opcion B, ligeramente superior al de la Opcion A (porque "ThermoSafe" tiene la misma evocacion semantica de "safe" que la Opcion B).
+
+### §9.3.2 — Riesgo IP marcaria
+
+**"ThermoSafe" (forma unida):** Orlan §Refresh R3 evaluo "Thermo-Safe" (con guion). "ThermoSafe" como forma unida sin guion tiene el mismo analisis de fondo: es un anglicismo compuesto, no un descriptor generico en espanol, con perfil de registrabilidad bajo-riesgo similar a "Thermo-Safe". La diferencia de forma grafica (guion vs. sin guion) puede tener implicaciones registrales — son denominaciones distintas ante el SAPI. Bruna trata "ThermoSafe" (sin guion) como variante con perfil IP equivalente a "Thermo-Safe" (con guion), pero Orlan debe confirmar si la forma unida tiene precedentes adicionales en base de datos de marcas antes de la busqueda SAPI VE.
+
+**"Sensor NTC":** no es registrable como marca (descriptor tecnico de dominio publico). No genera riesgo IP adicional.
+
+**Longitud del badge:** 3 elementos ("Sensor NTC ThermoSafe(TM)") — cuatro palabras mas el simbolo. Mas larga que la Opcion A (dos elementos) y B (uno). El espacio en el blister de la Alternativa B, donde "El mas rapido ante parpadeos (< 0,03 s)" ya ocupa espacio dominante, es una tension de diseno. Oz y Atlas deben verificar que la Opcion C cabe sin comprimir la jerarquia visual del badge de velocidad.
+
+**Verificacion marcaria requerida antes de imprenta:** ALTA. Verificacion SAPI VE de "ThermoSafe" (forma unida) especificamente, dado que la forma con guion y la forma unida son denominaciones distintas. La condicion suspensiva de produccion es identica a las Opciones A y B.
+
+### §9.3.3 — Defensa anti-copia (argumento Kike)
+
+**Analisis:** La Opcion C combina la logica de ambas opciones anteriores:
+- NTC visible en el tiro: activa directamente el argumento de Kike ("Exceline comunica NTC primero, los que lo copian son seguidores").
+- "ThermoSafe(TM)" como bautizado registrable: si se registra, el competidor que copie la placa no puede usar el nombre comercial de la tecnologia.
+
+**Doble capa de defensa:** La Opcion C ofrece la defensa mas completa del trio: (1) pionerismo en comunicacion de NTC (argumentativo — depende de la velocidad del lanzamiento de Exceline) + (2) blindaje de naming registrado (marcario — depende del registro SAPI VE).
+
+**Limitacion compartida con Opcion B:** La defensa de naming requiere registro. Sin registro, "ThermoSafe" es tan copiable como cualquier descriptor. La barrera es el registro.
+
+**Limitacion adicional vs. Opcion A:** Si "EscudoTermico" es registrable (pese al riesgo de descriptividad), el nombre en espanol tiene mayor resonancia local para el consumidor venezolano que "ThermoSafe" en ingles. La defensa anti-copia de naming no es mas fuerte en la Opcion C que en la Opcion A en terminos de impacto de mercado — si bien el perfil IP de "ThermoSafe" es mas limpio.
+
+**Conclusion defensa anti-copia:** Alta potencial — la mas alta del trio si se registra "ThermoSafe" + NTC se comunica antes que la competencia. En la practica, requiere cumplir ambas condiciones simultaneamente.
+
+### §9.3.4 — Compatibilidad con caveat tecnico (§8 Refresh 2026-05-05)
+
+**Header del caveat para Opcion C — texto literal obligatorio:**
+
+> Sensor NTC ThermoSafe(TM): [sigue el cuerpo invariable de §8.3 sin modificacion]
+
+**Compatibilidad:** PLENA. El cuerpo invariable de §8.3 describe el mecanismo del sensor sin mencionar el nombre comercial — es compatible con cualquier bautizado de la funcion en el encabezado.
+
+**Nota sobre la Condicion Suspensiva Vera P-5:** La Opcion C usa "Sensor NTC" — no usa el adjetivo "activa" de la v2.1. La condicion suspensiva de P-5 (si el NTC es fusible de corte unico, retirar "activa") no afecta directamente el badge de la Opcion C. Sin embargo, si P-5 confirma que el NTC es fusible de corte unico, la descripcion del cuerpo del retiro ("detecta calentamiento excesivo... y desconecta la carga") podria merecer una revision de redaccion para reflejar que la actuacion es unica (no recurrente). Bruna mantiene la condicion P-5 como dependencia de bajo impacto para la Opcion C, pero no como condicion bloqueante del gate conceptual.
+
+### §9.3.5 — Decision de gate: Opcion C
+
+**Decision: APROBADO CON CAVEAT**
+
+**Condicion 1 (caveat de retiro):** El header del retiro es "Sensor NTC ThermoSafe(TM):" seguido del cuerpo invariable de §8.3. Sin ese texto, el claim del tiro no se considera aprobado.
+
+**Condicion 2 (instruccion Owner — anglicismo):** El badge incluye el anglicismo "ThermoSafe". La alternativa española debe aparecer en el empaque. La alternativa recomendada por Bruna para el retiro o subtitulo es: "Proteccion termica activa" o "tecnologia de escudo termico" — sujeta a decision de Solenne y Owner. El cuerpo del retiro en español ya provee contexto en espanol.
+
+**Condicion 3 (condicion suspensiva — IP marcaria "ThermoSafe" forma unida):** Verificacion SAPI VE de "ThermoSafe" (sin guion) antes de imprenta. Orlan debe confirmar si la forma unida tiene analisis de registrabilidad diferente a la forma con guion evaluada en §Refresh.
+
+**Condicion 4 (condicion suspensiva — espacio de diseno):** Oz y Atlas deben confirmar que "Sensor NTC ThermoSafe(TM)*" cabe en el blister de la Alternativa B sin comprimir el badge de velocidad "El mas rapido ante parpadeos (< 0,03 s)". Si no cabe: la Opcion C debe acortarse (ej. eliminar "Sensor" y usar "NTC ThermoSafe(TM)*") o descartarse en favor de la Opcion A o B. El gate conceptual es valido; la condicion de espacio es operativa.
+
+**Extension prohibida sin gate adicional:** idem Opciones A y B.
+
+**Rationale:** "Sensor NTC ThermoSafe(TM)*" es la opcion que mas directamente responde al pedido literal de Canudas ("siglas NTC" visibles) combinando el argumento de Kike (NTC comunicado primero) con el perfil IP mas limpio del bautizado (ThermoSafe / Thermo-Safe — recomendado por Orlan). La sintesis es logicamente coherente. El costo es la longitud del badge (tension de diseno) y la doble condicion suspensiva (SAPI VE + espacio). El riesgo de Claim H es el mas bajo del trio gracias al anclaje semantico de "Sensor NTC" que contextualiza correctamente el "ThermoSafe" como nombre del componente, no como promesa de resultado.
+
+**Clausula RISK-POLICY aplicada:** §3 — no afirmar datos que puedan ser falsos. "Sensor NTC ThermoSafe(TM)" describe: (1) un componente real (Sensor NTC — verificado por Vera y Canudas), (2) un nombre comercial (ThermoSafe — aspiracional, no falso). No hay dato factual falseable.
+
+---
+
+## §9.4 — Tabla comparativa final: Opciones A, B, C
+
+| Eje de evaluacion | Opcion A: "NTC EscudoTermico(TM)*" | Opcion B: "Thermo-Safe(TM)*" | Opcion C: "Sensor NTC ThermoSafe(TM)*" |
+|---|---|---|---|
+| **Riesgo Claim H** | Bajo — badge no evoca proteccion de la carga. Caveat §8.3 mitiga. | Medio-bajo — "Safe" puede evocar proteccion del equipo en lectura rapida. Caveat §8.3 mitiga. | Bajo — "Sensor NTC" ancla semanticamente el badge al componente. Caveat §8.3 mitiga. |
+| **Riesgo IP marcaria** | Medio-alto — "EscudoTermico" es descriptor generico en español; riesgo objecion SAPI por descriptividad. | Bajo — "Thermo-Safe" perfil mas limpio del grupo; termino no descriptivo en español. | Bajo — "ThermoSafe" (forma unida) perfil equivalente a "Thermo-Safe"; necesita confirmacion Orlan sobre variante sin guion. |
+| **Defensa anti-copia** | Alta SI se registra "EscudoTermico". Condicional al registro. Sin registro: media (igual a Op. 1 Vael). | Alta SI se registra "Thermo-Safe". No comunica NTC — debilita argumento Kike de pionerismo de NTC. | Alta SI se registra "ThermoSafe" + NTC se lanza antes que competencia. Doble capa: naming + pionerismo NTC. |
+| **Responde pedido Canudas (NTC visible)** | Si — NTC en el tiro. | No — NTC no aparece en el badge del tiro. Flag critico para aprobacion de Canudas. | Si — NTC en el tiro ("Sensor NTC"). Respuesta mas explicita del trio. |
+| **Compatibilidad caveat §8** | Plena. Header: "NTC EscudoTermico(TM):" | Plena. Header: "Thermo-Safe(TM):" | Plena. Header: "Sensor NTC ThermoSafe(TM):" |
+| **Longitud badge** | Compacta (2 elementos). Menor riesgo de tension de diseno. | La mas compacta (1 elemento). Sin problema de espacio. | 3 elementos (4 palabras + simbolo). Mayor riesgo de tension de diseno en el blister. |
+| **Cumple instruccion anglicismo Owner** | Si — "EscudoTermico" es español. | No directamente — "Thermo-Safe" es anglicismo. Requiere alternativa española visible en el empaque. | No directamente — "ThermoSafe" es anglicismo. Requiere alternativa española visible. |
+| **Decision BR-2** | APROBADO CON CAVEAT | APROBADO CON CAVEAT | APROBADO CON CAVEAT |
+
+---
+
+## §9.5 — Recomendacion final desde optica de riesgo combinado
+
+**Menor riesgo combinado (legal + reputacional + tecnico): Opcion B — "Thermo-Safe(TM)*"**
+
+La Opcion B acumula el menor riesgo combinado porque:
+1. Riesgo IP marcaria: el mas bajo del trio — "Thermo-Safe" tiene el perfil mas limpio de registrabilidad segun Orlan §Refresh R3/R4. Ninguna señal de conflicto en clase 9.
+2. Riesgo Claim H: gestionable con el caveat de retiro obligatorio.
+3. Sin riesgo de rechazo SAPI VE por descriptividad (a diferencia de "EscudoTermico").
+4. Sin riesgo de tension de diseno (badge mas compacto del trio).
+
+**Debilidad critica de la Opcion B:** No satisface el pedido literal de Canudas de ver "las siglas NTC". Esta debilidad es estrategica, no de riesgo de claims. La decision de si presentar la Opcion B a pesar de ese flag corresponde al Owner. Bruna no puede subsanar esa debilidad; solo puede declararla.
+
+**Mayor riesgo combinado: Opcion A — "NTC EscudoTermico(TM)*"**
+
+El mayor riesgo individual en el trio es el riesgo IP de "EscudoTermico" como termino potencialmente no registrable por descriptividad en SAPI VE (Orlan §Refresh R3: riesgo medio-alto). Si SAPI VE objeta el termino, el simbolo (TM) en el empaque ya impreso queda sin respaldo formal, y la barrera anti-copia que justifica la eleccion del naming se vuelve inexistente. La Opcion A es la que mas depende del resultado de la verificacion SAPI VE para cumplir su proposicion de valor (blindaje de naming).
+
+**Posicion de la Opcion C:** la Opcion C ("Sensor NTC ThermoSafe(TM)*") tiene el perfil de riesgo mas equilibrado en los ejes de claim (Claim H: bajo, mejor del trio gracias al anclaje "Sensor NTC") y el perfil IP mas limpio del grupo excepto por la tension de diseno (4 palabras). Es la opcion que mejor responde al brief del Owner (NTC visible + bautizado IP-clean + bilingue en misma frase) si el espacio del blister lo permite.
+
+**Declaracion obligatoria de Bruna (rol de Risk & Claims Governance Lead):** Esta recomendacion es desde la optica exclusiva de riesgo de claims y riesgo legal de naming. No es una recomendacion estrategica general sobre la variante v2.2 ni sobre cual opcion tiene mayor potencial comercial o cual convencer mejor a Canudas. Esas dimensiones corresponden al Owner y a Kike. Bruna puede pronunciarse sobre el riesgo; la decision final es del Owner.
+
+---
+
+## §9.6 — Clausulas condicionales antes de produccion de imprenta
+
+Las condiciones que siguen aplican a TODAS las opciones gateadas en este §9. Ninguna de las tres opciones puede pasar a produccion de imprenta hasta que las condiciones marcadas como obligatorias esten resueltas.
+
+### Condicion 1 — Vera P-5 (mecanismo NTC continuo vs fusible unico)
+
+**Estado:** Pendiente. Flag abierto desde §8.1 (Refresh 2026-05-05).
+
+**Impacto por opcion:**
+- Opcion A: impacto bajo. "NTC EscudoTermico(TM)" no usa el adjetivo "activa". Si P-5 confirma fusible de corte unico, la descripcion del cuerpo del retiro puede necesitar ajuste menor para reflejar que la actuacion es unica ("detecta... y desconecta" → "detecta... y desconecta permanentemente hasta reemplazo del protector" o equivalente). No bloquea el badge del tiro.
+- Opcion B: impacto bajo. "Thermo-Safe(TM)" no implica continuidad o actuacion recurrente. El cuerpo del retiro es el mismo analisis que la Opcion A.
+- Opcion C: impacto bajo con la misma salvedad que A. "Sensor NTC" como descriptor no implica continuidad. El riesgo de P-5 es menor en las opciones CON-NTC que en la v2.1 (que usaba "activa").
+
+**Conclusion:** La Condicion Vera P-5 es de impacto bajo para todas las opciones B-CON-NTC de este §9. No es condicion bloqueante del gate conceptual ni de la presentacion a Kike/Canudas. Es condicion de revision menor antes de imprenta.
+
+### Condicion 2 — SAPI VE verificacion formal del bautizado finalista
+
+**Estado:** Pendiente. Ninguna de las tres opciones tiene verificacion formal SAPI VE.
+
+**Condicion suspensiva de produccion de imprenta (obligatoria para todas las opciones):** El bautizado finalista que el Owner elija (sea "EscudoTermico", "Thermo-Safe" / "ThermoSafe", o cualquier variante) debe pasar por verificacion SAPI VE con abogado marcario antes de que se produzca el arte final para imprenta. Orlan es claro (§Refresh R3): "El bautizado SIN verificacion SAPI VE es defendible unicamente como provisional. Imprimir empaque con bautizado no verificado expone a Genteca a: (a) oposicion de tercero, (b) invalidacion de marca despues de inversion en empaque, (c) costo de reimpresion."
+
+**Jerarquia de riesgo por opcion:**
+- Opcion B ("Thermo-Safe"): menor riesgo de objecion — prioridad de verificacion si es el finalista elegido.
+- Opcion C ("ThermoSafe" forma unida): riesgo similar a B; Orlan debe confirmar que la forma unida no genera diferencias de registrabilidad respecto a la forma con guion.
+- Opcion A ("EscudoTermico"): mayor riesgo de objecion por descriptividad — requiere opinion de abogado marcario sobre estrategia para defender la marca ante posible objecion SAPI.
+
+**Responsable:** Owner (decision de contratar abogado marcario) + Orlan (research preliminar de apoyo).
+
+### Condicion 3 — Confirmacion de espacio de diseno (especifica para Opcion C)
+
+**Estado:** Pendiente para la Opcion C.
+
+La Opcion C ("Sensor NTC ThermoSafe(TM)*") tiene 4 palabras mas el simbolo. Atlas y Oz deben confirmar que el badge cabe en el blister de la Alternativa B sin comprimir la jerarquia visual del badge de velocidad "El mas rapido ante parpadeos (< 0,03 s)". Si no cabe: la Opcion C debe acortarse (retirando "Sensor" o ajustando la formulacion) o descartarse.
+
+**Responsable:** Owner + Atlas + Oz (mockup real).
+
+### Condicion 4 — Alternativa española visible en el empaque (para Opciones B y C)
+
+**Estado:** Pendiente de decision de diseno.
+
+Las Opciones B ("Thermo-Safe") y C ("Sensor NTC ThermoSafe") incluyen anglicismos. La instruccion del Owner es que los anglicismos van acompañados de alternativa española o combinacion bilingue en el mismo artefacto. Solenne debe confirmar con el Owner como se implementa esta instruccion en el artefacto final (subtitulo del badge, nota en el retiro, o cuerpo del retiro como contexto en español ya existente).
+
+**Responsable:** Solenne (propuesta de implementacion) + Owner (decision).
+
+---
+
+## §9.7 — Notificaciones de cascada post-gate §9
+
+**Para el Owner (presentacion a Kike):**
+- Las tres opciones tienen gate de Bruna: APROBADO CON CAVEAT.
+- El flag critico para la presentacion: la Opcion B no menciona NTC en el tiro — Canudas puede rechazarla si el pedido literal ("siglas NTC") es condicion. Declarar ese flag a Kike para que decida si incluir la Opcion B en el set que presenta.
+- El flag de menor riesgo IP combinado: Opcion B.
+- El flag de mayor respuesta al brief de Canudas: Opcion C (NTC visible + bautizado IP-clean).
+- Las condiciones suspensivas de PRODUCCION DE IMPRENTA (SAPI VE, Vera P-5, espacio de diseno) no bloquean la presentacion a Kike. Son condiciones de produccion, no de decision estrategica.
+
+**Para Vael (informacion):**
+- Las Opciones A y C del gate corresponden a las Opciones 6 y una sintesis nueva del §Refresh 2026-05-06. La Opcion B del gate es la recomendacion Orlan que no tenia ranking explicit en Vael.
+- Si el Owner elige la Opcion C ("Sensor NTC ThermoSafe(TM)*"), Vael debe confirmar si la formulacion encaja en la arquitectura de mensaje de VA-1 Pilar 3 sin tension conceptual.
+
+**Para Solenne (SO-1 delta, cuando Owner decida):**
+- No actuar hasta que Owner seleccione la opcion y la Decision de Canudas sea favorable.
+- Los tres cuerpos del caveat de retiro son identicos (§8.3 invariable). Solo cambian los headers. Solenne prepara el texto del retiro con el header correspondiente a la opcion seleccionada.
+
+**Para Oz (redline arte):**
+- No actuar hasta confirmacion de Owner.
+- El asterisco en el tiro es obligatorio para las tres opciones.
+- El texto del retiro usa el encabezado de la opcion seleccionada + el cuerpo invariable de §8.4.
+
+**Para Vera (pendiente):**
+- Condicion P-5 sigue abierta. El impacto en las opciones B-CON-NTC es bajo, pero la confirmacion antes de imprenta sigue siendo requerida para cerrar el ciclo del §8.
+
+---
+
+## §9.8 — BR-2 Genteca — Entrada de gate §9
+
+**Dominio:** Genteca
+**Proyecto:** 2026-04_GSM-MB-RB-RF_empaque
+**Fecha de decision:** 2026-05-06
+**Documento de gate:** Bruna_gate_empaque_v1 §9
+
+| Opcion gateada | Texto exacto del tiro | Decision | Condicion principal | Clausula RISK-POLICY | Precedente BR-5 |
+|---|---|---|---|---|---|
+| Opcion A — "NTC EscudoTermico(TM)*" | NTC EscudoTermico(TM)* | APROBADO CON CAVEAT | Caveat retiro §8.3 obligatorio; SAPI VE "EscudoTermico" antes de imprenta; sin extension sobre equipo conectado | §3 — no afirmar datos falseables | Criterio §8.5 (funcion con componente + naming marca) — aplicado |
+| Opcion B — "Thermo-Safe(TM)*" | Thermo-Safe(TM)* | APROBADO CON CAVEAT | Caveat retiro §8.3 obligatorio; alternativa española visible en empaque; SAPI VE "Thermo-Safe" antes de imprenta; NTC no visible — flag para Canudas | §3 | Sin precedente especifico — nuevo en BR-5 candidato |
+| Opcion C — "Sensor NTC ThermoSafe(TM)*" | Sensor NTC ThermoSafe(TM)* | APROBADO CON CAVEAT | Caveat retiro §8.3 obligatorio; SAPI VE "ThermoSafe" (forma unida) antes de imprenta; confirmacion espacio de diseno Atlas/Oz; alternativa española visible | §3 | Criterio §8.5 ampliado — NTC + naming bilingue |
+
+**Evidencia consultada para este gate:**
+- Vael_VA-5_naming-funcion-termica_v1.md §Refresh 2026-05-06 (ranking, textos de retiro, criterios reformulados)
+- Orlan_OL-1_competencia-naming-termico_v1.md §Refresh 2026-05-06 (vacancia territorial, IP nominal, analisis copia china, recomendacion "Thermo-Safe")
+- Bruna_gate_empaque_v1 §2 Claim H (rechazo sin alternativa — referencia de frontera); §7.1 (bloque NTC corregido); §8.3/§8.4 (caveat invariable de retiro)
+- BR-5 transversal Precedentes #1, #2, #4 (criterios de superlativos, exclusion, garantia de resultado)
+- RISK-POLICY.md v1.0 §3
+
+---
+
+## §9.9 — Candidato a Precedente BR-5 (append pendiente de confirmacion Owner)
+
+**Nuevo criterio identificado:** Gate de naming de tecnologia con componente tecnico visible (NTC) + bautizado comercial registrable en mercado con opacidad competitiva alta.
+
+**Criterio propuesto:**
+
+Cuando un claim de empaque bautiza una tecnologia interna (ej. "EscudoTermico(TM)", "ThermoSafe(TM)") combinando el nombre del componente tecnico (NTC) con un nombre comercial registrable, el gate de Bruna evalua dos ejes independientes:
+1. **Eje de claim funcional:** el claim describe una funcion real verificable? (Vera). Si si: aprobable con caveat. El hecho de revelar el componente (NTC) es una decision estrategica del Owner, no una cuestion de veracidad del claim.
+2. **Eje de IP nominal:** el bautizado elegido es registrable como marca? (Orlan — SAPI VE formal). Este eje no bloquea el gate conceptual pero si bloquea la produccion de imprenta.
+
+Estos dos ejes son independientes: un claim puede ser factualmente correcto (eje 1 OK) pero tener riesgo de IP marcaria (eje 2 pendiente). El gate conceptual se emite sobre el eje 1; la condicion suspensiva de produccion se emite sobre el eje 2. Solenne y Oz no deben esperar la resolucion del eje 2 para preparar mockups y argumentario, pero si para producir el arte final de imprenta.
+
+**Scope de aplicacion:** cualquier dominio de /RAUL/ donde un claim de empaque o marketing bautice una funcion tecnica con un nombre comercial que incluya el nombre o siglas del componente que la implementa.
+
+**Estado:** candidato — Bruna lo eleva al Owner para decision de formalizacion en BR-5 transversal. El append a BR-5 se ejecuta cuando el Owner confirme que la experiencia de este gate vale como criterio generalizable.
+
+---
+
+*Gate emitido: 2026-05-06*
+*Estado de las 3 opciones: APROBADO CON CAVEAT (condiciones de produccion declaradas en §9.6)*
+*Proxima accion requerida: Owner selecciona opcion para presentacion a Kike. Condiciones de produccion (SAPI VE, Vera P-5, espacio diseno) se resuelven solo si Canudas / Kike dan luz verde a la variante B-CON-NTC.*

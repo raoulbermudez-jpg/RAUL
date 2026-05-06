@@ -448,3 +448,488 @@ Este es el único desplazamiento que registran las opciones del Owner — y es m
 
 *Refresh emitido por Vael — 2026-05-05. Domain-specialist. Genteca.*
 *Finalista única propuesta: "Autoprotección térmica activa*". Decisión final: Bruna (BR-2). Copy publicable: Solenne (SO-1 delta). Memo Junta: Aurelio.*
+
+---
+
+# §Refresh 2026-05-06 — Variante CON NTC (escenario abierto por Canudas + Kike)
+
+**Documento:** Vael_VA-5_naming-funcion-termica_v1 §Refresh 2026-05-06
+**Fecha:** 2026-05-06
+**Trigger:** WhatsApp Kike → Canudas 2026-05-05. Kike argumenta que el NTC es innovación real, que no comunicarlo permite que competidores chinos copien la placa y lo cacareen primero, y que Exceline quedaría como rezagada. Canudas responde: "Hagan un ejemplo de comunicación con las siglas NTC. Y lo vemos." Esa respuesta es una apertura a evaluar — no una aprobación. El Owner instruye producir una variante B-CON-NTC (v2.2) paralela a B-sin-NTC (v2.1 vigente) para presentar a Canudas como contrapropuesta en reunión posterior.
+**Status de v2.1:** VIGENTE. Este documento no la sustituye. v2.2 es escenario paralelo — los dos coexisten hasta decisión de Canudas.
+**Para:** Bruna (gate posterior), Owner (decisión de presentar v2.2 a Canudas), Orlan (riesgo IP — ver notas en celdas correspondientes).
+
+---
+
+## §R6-1 — Criterios reformulados para el escenario CON NTC
+
+Los 7 criterios del VA-5 v1 prohibían revelar el componente (Criterio 1). En el escenario B-sin-NTC esa prohibición era correcta: Canudas la formuló en la Junta de 2026-05-05. En el escenario CON NTC, ese criterio se convierte en análisis de costo-beneficio: el argumento de Kike (innovación visible, defensa anti-copia, liderazgo de categoría) es un beneficio potencial que Canudas abrió a evaluar.
+
+Los criterios que siguen aplican **únicamente a este §Refresh**. Los criterios del VA-5 v1 siguen vigentes para la variante v2.1.
+
+| # | Criterio reformulado | Diferencia respecto a v1 |
+|---|---|---|
+| 1 | Revelar "NTC" en el tiro es una decisión de costo-beneficio, no una prohibición. Se evalúa en cada opción. | CAMBIA: de "prohibición absoluta" a "análisis costo-beneficio por opción" |
+| 2 | Lenguaje de función O de componente nombrado, según cuál sirva mejor al argumento de innovación de la opción. | CAMBIA: se admite lenguaje de componente cuando el argumento de marca lo justifica |
+| 3 | Compatible con el cuerpo invariable del caveat de retiro (Bruna §8.3 — texto corregido sin temperaturas numéricas). Solo el header del retiro cambia según el badge del tiro. | IGUAL |
+| 4 | Audiencia mixta B: instalador técnico (primario — lee retiro, entiende NTC) + consumidor residencial (secundario — solo ve tiro). Para opciones con NTC visible, el instalador técnico es beneficiario neto. | IGUAL — pero el instalador técnico pasa a ser audiencia con ventaja en opciones CON NTC |
+| 5 | Preferible 4 palabras o menos. Jerarquía visual con "El más rápido ante parpadeos" en el blister de B. | IGUAL |
+| 6 | Coherencia con VA-1 Pilar 3 (NTC como territorio en blanco de comunicación — Orlan §3) y con el argumento de innovación pionera que Kike articuló a Canudas. | CAMBIA: agrega el argumento "Exceline hace que NTC se conozca; el que lo copie es seguidor, no líder" |
+| 7 | CERO promesa de protección del motor / la carga (prohibición Vera §1.4 + Bruna Claim H — sin excepciones). Este criterio es inamovible en ambos escenarios. | IGUAL — no se negocia |
+
+**Nota sobre el Criterio 7:** Algunas formulaciones del research de Perplexity que el Owner obtuvo ("Doble vida útil: protege la integridad del propio protector y salvaguarda su electrodoméstico ante fallas eléctricas graves", "Sistema de Respaldo Térmico: La última línea de defensa para tu aire acondicionado") invocan protección del equipo conectado. Esas formulaciones están en zona roja de Claim H. Vael no las propone y las marca explícitamente. El Owner consultó Perplexity como insumo de inspiración; los textos de Perplexity no son claims aprobados y varios de ellos serían rechazados por Bruna sin modificación.
+
+---
+
+## §R6-2 — Evaluación de las 7 opciones
+
+---
+
+### Opción 1 — "Sensor NTC incorporado*" ⚠
+
+**Texto exacto para tiro:** Sensor NTC incorporado*
+
+**Contexto:** Esta es la opción original aprobada por Bruna (Claim D, BR-2 §2, 2026-05-03) y rechazada por Canudas en Junta por revelar "secreto industrial sin agregar beneficio percibido al comprador." Canudas abrió el 2026-05-05 a revisitar esta decisión si el ejemplo de comunicación lo convence. Esta opción recupera exactamente ese texto, que ya tiene gate de Bruna vigente.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3 — solo header cambia):**
+
+> **Sensor NTC incorporado:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | Neutral | Revela el componente por nombre. Beneficio: argumento de innovación de Kike se comunica directamente. Costo: el que Canudas señaló — ¿agrega beneficio percibido al comprador medio? Depende de cuánto evangelización haga Exceline sobre NTC. |
+| 2 — Función o componente | Componente | Nombra el componente. No habla de función. El instalador técnico lo entiende; el consumidor residencial no. |
+| 3 — Caveat de retiro compatible | Sí | Cuerpo invariable §8.3 aplica. Header = "Sensor NTC incorporado:" |
+| 4 — Audiencia mixta | Tenso | Instalador técnico: ventaja (NTC le dice todo). Consumidor residencial: "NTC" es opaco sin contexto. |
+| 5 — Longitud | Sí | 3 palabras. |
+| 6 — Coherencia VA-1 + argumento Kike | Sí | VA-1 Pilar 3 ya tenía NTC como eje. Kike lo defiende explícitamente. |
+| 7 — Cero Claim H | Sí | No promete protección del motor ni de la carga. |
+
+**Pros:**
+- Gate de Bruna ya existe (Claim D aprobado con caveat). Ruta más rápida a producción si Canudas aprueba.
+- El instalador técnico entiende NTC: es la señal técnica más directa de sofisticación de componente.
+- La tesis de Kike es que NTC irá ganando significado a medida que Exceline lo comunique: "cualquier otro competidor que lo incorpore va a estar siguiendo al líder." Esta opción es la apuesta más directa para esa tesis.
+- Compatible con argumento anti-copia: si los chinos copian la placa con NTC y lo comunican, Exceline ya lo habrá comunicado primero.
+
+**Contras:**
+- Es exactamente la opción que Canudas rechazó en Junta. La presentación como "el mismo badge" puede no pasar la revisión si no va acompañada de un contexto narrativo que el tiro solo no puede dar.
+- "NTC" en el tiro sin evangelización previa es opaco para el consumidor residencial — el asterisco hace todo el trabajo explicativo.
+- No comunica función ni beneficio. Solo nombra componente. Para el consumidor que no sabe qué es NTC (mayoría en el punto de venta), es igual que si dijera "Sensor X23B incorporado".
+
+**Riesgo IP:** ver Orlan §Refresh — la opción original ya fue evaluada. NTC está en la Decisión Canudas como "secreto industrial". La reapertura de Canudas sugiere que el debate no está cerrado, pero la evaluación de si revelar NTC habilita copia china sigue pendiente en Orlan. Orlan debe confirmar si NTC es un término de dominio público en fichas técnicas de proveedores OEM o si es propiedad operativa de Genteca. Ver Orlan §Refresh.
+
+**Riesgo Claim H:** Nulo. El texto del retiro no promete protección del equipo conectado.
+
+**Defensa anti-copia china (argumento Kike):** Media. Si Exceline comunica NTC primero, los competidores que copien la placa y lo comuniquen después quedan como seguidores. Pero si la copia se da antes de que la comunicación de Exceline haya calado, el argumento se invierte. La eficacia de esta defensa depende de la velocidad de la campaña de Exceline, no del badge en sí.
+
+**Compatibilidad caveat Bruna §8.3:** Sí. Cuerpo invariable; solo header cambia.
+
+---
+
+### Opción 2 — "Escudo Térmico Integrado*" ⚠
+
+**Texto exacto para tiro:** Escudo Térmico Integrado*
+
+**Contexto:** Propuesta #1 de Perplexity ("Con Escudo Térmico Integrado"). Perplexity la destacó como la opción con mayor gancho comercial combinada con "Previene sobrecalentamientos y riesgo de incendio." Vael adopta la primera parte como badge; la segunda parte está en zona roja de Claim H y se descarta.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3):**
+
+> **Escudo Térmico Integrado:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | No revela NTC | NTC solo aparece en retiro si se explicita; el badge es metáfora visual. Costo: no comunica el componente que Canudas abrió a evaluar. Beneficio: sí comunica la función con potencia visual. |
+| 2 — Función o componente | Función + metáfora | "Escudo" = protección activa; "Térmico" = del calor; "Integrado" = parte del diseño. No nombra NTC. |
+| 3 — Caveat de retiro compatible | Sí | Cuerpo invariable §8.3 aplica. |
+| 4 — Audiencia mixta | Fuerte | "Escudo" funciona para ambas audiencias. El consumidor residencial visualiza una barrera. El instalador técnico entiende la función pero no recibe la señal técnica de componente. |
+| 5 — Longitud | Sí | 3 palabras. |
+| 6 — Coherencia VA-1 + argumento Kike | Parcial | VA-1 Pilar 3 tenía NTC como eje. Este badge no menciona NTC — debilita el argumento de Kike sobre comunicar la innovación por nombre. |
+| 7 — Cero Claim H | Condicional | Si se usa solo "Escudo Térmico Integrado*", el Claim H está protegido. Si se añade la frase de Perplexity "riesgo de incendio" o "protege tu electrodoméstico", el Claim H entra en zona roja. Solenne no puede extender este badge con esas frases sin nuevo gate de Bruna. |
+
+**Pros:**
+- La palabra "Escudo" genera visualización inmediata: barrera física, protección robusta. Perplexity señala que el cerebro procesa imágenes antes que texto. En punto de venta de ferretería, el atributo visual es una ventaja.
+- No revela NTC como componente. Si el debate de IP no está resuelto, esta opción elimina ese riesgo.
+- "Integrado" comunica que no es add-on sino parte del diseño. Coherente con "La protección más completa."
+- Compatible con la apertura de Canudas: es un "ejemplo de comunicación" que no reproduce el texto que rechazó.
+
+**Contras:**
+- No satisface el pedido literal de Canudas ("con las siglas NTC"). Si Canudas quería ver NTC visible, esta opción no lo da. Puede ser rechazada en la revisión por no responder a lo que pidió.
+- La metáfora "Escudo" es genérica: cualquier competidor puede usar "Escudo Térmico" sin tener un NTC. No hay defensa técnica de la formulación.
+- Para el instalador técnico que conoce NTC, "Escudo Térmico Integrado" es menos informativo que "Sensor NTC incorporado." Puede percibirse como marketingese.
+- Perplexity combinó el badge con "Previene sobrecalentamientos y riesgo de incendio" — esa cola de frase está en zona roja de Claim H (Bruna). Si el Owner o Oz la añaden en el redline sin gate, el claim queda fuera de spec.
+
+**Riesgo IP:** ver Orlan §Refresh. "Escudo Térmico Integrado" no revela componente. El nombre puede ser apropiado como lenguaje de marca. Orlan debe confirmar si hay precedente en la categoría regional.
+
+**Riesgo Claim H:** Bajo en el badge solo. Riesgo medio si se extiende con frases del research de Perplexity. La instrucción literal a Solenne y Oz es: badge solo, sin frases adicionales sobre protección del equipo o riesgo de incendio.
+
+**Defensa anti-copia china:** Baja. "Escudo Térmico Integrado" describe una función genérica. Cualquier competidor con NTC (o incluso sin NTC, con un bimetal) puede reclamarlo. No tiene la especificidad técnica que da el nombre del componente.
+
+**Compatibilidad caveat Bruna §8.3:** Sí. Cuerpo invariable; solo header cambia.
+
+---
+
+### Opción 3 — "Tecnología NTC EscudoTérmico™" (combinación bilingüe) ⚠
+
+**Texto exacto para tiro:** Tecnología NTC EscudoTérmico™*
+
+**Contexto:** El Owner aceptó anglicismos temporalmente con alternativa española o combinación bilingüe en la misma frase. Perplexity propuso "Tecnología Thermo-Safe™" como bautizo comercial del NTC. Vael propone en cambio la fórmula bilingüe obligatoria: "NTC" (componente técnico, siglas universales) + "EscudoTérmico™" (nombre de marca en español). Esta construcción cumple la instrucción del Owner (español obligatorio, anglicismo aceptado solo en combinación) y responde al pedido de Canudas de ver "las siglas NTC" mientras añade identidad de marca.
+
+**Formulación alternativa en español puro (obligatoria per instrucción Owner):** Tecnología NTC EscudoTérmico™* — ya es bilingüe por construcción. Si se requiere versión sin anglicismo: "Tecnología Sensor-Térmico NTC™*" — menos elegante. Vael recomienda la versión bilingüe.
+
+**Nota sobre la marca™:** el símbolo ™ implica una aspiración de apropiación de marca. La decisión de usar ™ vs ® corresponde al Owner y al asesor legal. Vael lo incluye como indicador de intención de naming de tecnología; el Owner decide si la marca se registra o si el ™ se usa como señal no registrada.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3):**
+
+> **Tecnología NTC EscudoTérmico™:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | Revela NTC | Beneficio: cumple el pedido de Canudas; activa la tesis de Kike; el instalador técnico recibe señal precisa. Costo: 4 palabras más símbolo, posible saturación visual en blister pequeño. |
+| 2 — Función o componente | Componente + nombre de marca | NTC nombra el componente; "EscudoTérmico" nombra la función con metáfora. Doble canal. |
+| 3 — Caveat de retiro compatible | Sí | Cuerpo invariable §8.3 aplica. |
+| 4 — Audiencia mixta | Fuerte | Instalador técnico: lee NTC, entiende. Consumidor residencial: lee "EscudoTérmico", visualiza protección. Cada audiencia recibe su señal. |
+| 5 — Longitud | Tenso | 4 palabras + símbolo. Puede ser la formulación más larga del set. En blister con badge de velocidad, requiere verificación de espacio con Atlas/Oz. |
+| 6 — Coherencia VA-1 + argumento Kike | Sí | Comunica NTC (innovación que Exceline bautiza) + función (EscudoTérmico como lenguaje de marca propio). Kike quedaría satisfecho: las siglas están, y están en un contexto de naming de tecnología. |
+| 7 — Cero Claim H | Sí | Ninguna promesa de protección del equipo conectado. |
+
+**Pros:**
+- Es la única opción del set que da al mismo tiempo: NTC visible (argumento Kike + pedido Canudas) + nombre de función comprensible para el consumidor + aspiración de apropiación de marca a largo plazo.
+- Si la marca "EscudoTérmico" se establece, Exceline tiene un activo de naming registrable. Un competidor que copie la placa no puede usar "EscudoTérmico™" — eso es la defensa real de marca que Perplexity señaló para "Thermo-Safe™".
+- El doble canal técnico/emocional ("NTC" para el técnico, "EscudoTérmico" para el comprador) maximiza la cobertura de audiencias en una sola frase.
+- Responde exactamente al pedido de Canudas ("con las siglas NTC") y va más allá: lo integra en un concepto de marca.
+
+**Contras:**
+- Longitud: 4 palabras + símbolo. En el blister de B donde "El más rápido ante parpadeos (< 0,03 s)" ya ocupa espacio dominante, la saturación visual es un riesgo real. Oz y Atlas deben verificar.
+- La marca™ implica compromiso de naming a largo plazo. Si la empresa no va a defender el nombre en el mercado (campañas, refuerzo en otros canales), el ™ es aspiracional pero vacío.
+- Pronunciabilidad: "NTC EscudoTérmico" es una cadena de cinco sílabas técnicas + cuatro sílabas de función. En venta oral (el instalador recomendando el producto), la frase es larga.
+- La combinación bilingüe puede percibirse como indefinida: ¿es el nombre "NTC EscudoTérmico" o son dos elementos separados? La puntuación y el diseño tipográfico son críticos para que funcione visualmente.
+
+**Riesgo IP:** ver Orlan §Refresh. Si "EscudoTérmico" se registra como marca, la protección es alta. Si no se registra, cualquier competidor puede usar el término. Orlan debe confirmar disponibilidad del nombre como marca en Venezuela y región.
+
+**Riesgo Claim H:** Nulo. El badge no invoca protección del equipo.
+
+**Defensa anti-copia china:** Alta. Esta es la lógica exacta que Perplexity articuló para "Thermo-Safe™": si la competencia copia la placa, no puede poner "EscudoTérmico™" en la caja si Exceline lo ha registrado. La copia física del componente no implica la copia del naming de marca.
+
+**Compatibilidad caveat Bruna §8.3:** Sí. Cuerpo invariable; solo header cambia.
+
+---
+
+### Opción 4 — "Sensor NTC · Escudo Térmico*" ⚠
+
+**Texto exacto para tiro:** Sensor NTC · Escudo Térmico*
+
+**Contexto:** Híbrido propuesto por el Owner. El interpunto (·) separa el componente de la función en una sola línea. Alternativa española pura ya está presente por construcción.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3):**
+
+> **Sensor NTC · Escudo Térmico:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | Revela NTC | Igual que Op. 1 y 3. |
+| 2 — Función o componente | Ambos | "Sensor NTC" = componente; "Escudo Térmico" = función/metáfora. |
+| 3 — Caveat de retiro compatible | Sí | |
+| 4 — Audiencia mixta | Fuerte | Cada audiencia lee lo suyo. |
+| 5 — Longitud | Tenso | 4 palabras + interpunto. Similar a Op. 3 en carga visual. |
+| 6 — Coherencia VA-1 + argumento Kike | Sí | NTC visible + función metafórica. |
+| 7 — Cero Claim H | Sí | |
+
+**Pros:**
+- El interpunto crea una lectura en dos tiempos: el técnico se detiene en "Sensor NTC" y el comprador continúa hacia "Escudo Térmico". Es una arquitectura tipográfica que permite el doble canal.
+- Más legible que la Opción 3 porque evita el nombre de marca™ (sin la carga de comprometerse a un naming registrable).
+- Responde al pedido de Canudas ("siglas NTC") y al argumento de Kike.
+- En español puro sin anglicismo.
+
+**Contras:**
+- El interpunto es un dispositivo tipográfico. En un blister de ferretería, la reproducción de ese carácter depende del sistema de tipografía de Oz. Si el interpunto no se imprime correctamente, se lee como "Sensor NTC Escudo Térmico" (posible confusión con que el sensor se llama "Escudo Térmico").
+- La frase como nombre de función es ambigua en la segunda lectura: "Escudo Térmico" como subtítulo de "Sensor NTC" puede parecer una descripción del sensor, no de la función del sistema. La relación lógica entre las dos partes no está explícita.
+- Sin ™, la defensa anti-copia es igual a la de Op. 1 (el que copie la placa puede decir "Sensor NTC · Escudo Térmico" si el término no está registrado).
+
+**Riesgo IP:** ver Orlan §Refresh. Sin registro de "Escudo Térmico" como marca, la protección es la misma que para Op. 1.
+
+**Riesgo Claim H:** Nulo.
+
+**Defensa anti-copia china:** Media. Superior a Op. 1 si "Escudo Térmico" se registra; igual a Op. 1 si no se registra.
+
+**Compatibilidad caveat Bruna §8.3:** Sí.
+
+---
+
+### Opción 5 — "Tecnología NTC: Previene Sobrecalentamiento*" ⚠
+
+**Texto exacto para tiro:** Tecnología NTC: Previene Sobrecalentamiento*
+
+**Contexto:** Storytelling antifuego propuesto por el Owner. El colon construye una relación causa-efecto: la tecnología NTC es la causa; prevenir el sobrecalentamiento es el efecto.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3):**
+
+> **Tecnología NTC — Previene Sobrecalentamiento:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | Revela NTC | NTC visible. "Tecnología" eleva el registro. |
+| 2 — Función o componente | Componente + verbo de acción | "NTC" = componente; "Previene Sobrecalentamiento" = acción funcional. |
+| 3 — Caveat de retiro compatible | Sí | |
+| 4 — Audiencia mixta | Parcial | El consumidor residencial entiende "Previene Sobrecalentamiento". El instalador técnico preferiría más especificidad técnica. |
+| 5 — Longitud | Fuera del rango preferido | 4 palabras + signo de puntuación. El colon y la longitud total hacen que sea la formulación más larga del set. |
+| 6 — Coherencia VA-1 + argumento Kike | Sí | NTC visible + beneficio antifuego. Kike argumentó el riesgo de incendio implícito en falsos contactos. |
+| 7 — Cero Claim H | Zona gris | "Previene Sobrecalentamiento" sin calificador puede interpretarse como prevención del sobrecalentamiento del equipo conectado (Claim H). Si el lector infiere que previene el sobrecalentamiento del aire acondicionado, el claim croza la línea de Bruna. El asterisco mitiga pero no elimina esa interpretación. Bruna debe evaluar. |
+
+**Pros:**
+- "Previene Sobrecalentamiento" comunica la acción directa en lenguaje de beneficio accesible para el consumidor residencial. Es la formulación más directamente conectada con el argumento emocional de Perplexity (miedo al calor excesivo y al daño del equipo).
+- "Tecnología NTC" eleva el componente a categoría de innovación ("tecnología", no "sensor"). Esto refuerza el argumento de Kike.
+- Estructura causa-efecto clara: el colon hace explícita la relación.
+
+**Contras:**
+- Criterio 7 en zona gris: "Previene Sobrecalentamiento" sin calificador (¿sobrecalentamiento de qué?) puede activar la interpretación de protección del equipo conectado. El asterisco solo mitiga si el comprador lo lee. En el tiro solo, el claim puede ser interpretado como Claim H por Bruna. Requiere gate específico.
+- Longitud: es la opción más larga del set, incluyendo el colon. En el blister de B, la competencia visual con "El más rápido ante parpadeos (< 0,03 s)" es la más difícil de resolver.
+- "Previene Sobrecalentamiento" como badge no tiene potencial de apropiación de marca: es una descripción de acción genérica que cualquier fabricante con cualquier mecanismo de protección térmica puede usar.
+
+**Riesgo IP:** ver Orlan §Refresh. Término funcional genérico, sin ventaja de naming propietario.
+
+**Riesgo Claim H:** ALTO. Requiere gate específico de Bruna sobre si "Previene Sobrecalentamiento" sin calificador cruza la línea de protección implícita de la carga conectada. Vael categoriza esta opción como ⚠ con flag de Claim H. No avanza sin gate explícito de Bruna.
+
+**Defensa anti-copia china:** Muy baja. "Tecnología NTC: Previene Sobrecalentamiento" describe componente + función genérica. Sin naming de marca, la copia es trivial.
+
+**Compatibilidad caveat Bruna §8.3:** Sí en el cuerpo. El header en el retiro debería leer "Tecnología NTC — Previene Sobrecalentamiento:" (con guión en lugar de colon para distinguir del texto del cuerpo).
+
+---
+
+### Opción 6 — "NTC ThermoShield™ / NTC EscudoTérmico™*" (combinación bilingüe compacta) ⚠
+
+**Texto exacto para tiro — versión bilingüe:** NTC ThermoShield™*
+**Alternativa española obligatoria (instrucción Owner):** NTC EscudoTérmico™*
+**Formulación bilingüe en misma frase (preferida por Vael):** NTC EscudoTérmico / ThermoShield™*
+
+**Contexto:** Aportación creativa de Vael. En lugar de construir una frase larga, se usa la sigla NTC como prefijo de un nombre de tecnología bautizado. La diferencia con la Opción 3 es la compacidad: dos o tres elementos, no cuatro palabras. El ™ señala intención de naming propietario.
+
+**Nota de anglicismo:** La instrucción del Owner es que los anglicismos son aceptados temporalmente pero con alternativa española o combinación bilingüe en la misma frase. Por tanto:
+- Si se usa "NTC ThermoShield™": debe aparecer en el mismo artefacto visual "NTC EscudoTérmico™" como alternativa o subtítulo.
+- Si el espacio del blister no permite ambos: usar "NTC EscudoTérmico™" como única versión (español puro).
+- Vael recomienda: "NTC EscudoTérmico™" como nombre principal del badge, con "ThermoShield" como subtexto de diseño si el espacio lo permite.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3):**
+
+> **NTC EscudoTérmico™:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | Revela NTC | Directamente. |
+| 2 — Función o componente | Componente + nombre de marca | NTC = componente; EscudoTérmico = naming de función. |
+| 3 — Caveat de retiro compatible | Sí | |
+| 4 — Audiencia mixta | Fuerte | NTC al técnico; EscudoTérmico al consumidor. |
+| 5 — Longitud | Sí | 2 elementos. Es el badge más compacto del set CON-NTC. |
+| 6 — Coherencia VA-1 + argumento Kike | Sí | NTC visible + naming de marca. |
+| 7 — Cero Claim H | Sí | |
+
+**Pros:**
+- Es la versión más compacta de la combinación componente + nombre de marca. Dos elementos, un solo badge.
+- La compacidad resuelve el problema de longitud que afecta a las Opciones 3, 4 y 5. En el blister de B, "NTC EscudoTérmico™" compite visualmente mejor con el badge de velocidad.
+- "NTC EscudoTérmico™" como nombre tiene el mayor potencial de apropiación de marca del set: es corto, es registrable, y combina la señal técnica (NTC) con la identidad de función (EscudoTérmico).
+- La lógica anti-copia de Perplexity aplica en su versión más fuerte: si se registra "EscudoTérmico™" o "ThermoShield™", el competidor que copie la placa no puede usar el nombre.
+- Responde al pedido de Canudas ("siglas NTC") y al argumento de Kike (NTC como innovación bautizada por Exceline).
+
+**Contras:**
+- "NTC EscudoTérmico" sin "Tecnología" o "Sensor" delante es una frase de naming puro: el comprador que no sabe qué es NTC recibe una cadena sin verbo ni sustantivo claro. El retiro hace todo el trabajo explicativo.
+- El ™ implica un compromiso de naming que la empresa debe sostener en el tiempo: si el nombre no se usa consistentemente en todos los canales (packaging, QR, argumentario ESC, publicidad), el valor del naming se diluye.
+- Como todas las opciones CON-NTC: si la aprobación de Canudas no llega, este badge queda archivado.
+
+**Riesgo IP:** ver Orlan §Refresh. Esta es la opción con mayor potencial de protección via naming registrado. Orlan debe confirmar disponibilidad de "EscudoTérmico" y/o "ThermoShield" como marcas en Venezuela/región.
+
+**Riesgo Claim H:** Nulo.
+
+**Defensa anti-copia china:** Alta. La más alta del set si el naming se registra.
+
+**Compatibilidad caveat Bruna §8.3:** Sí. Cuerpo invariable; header = "NTC EscudoTérmico™:".
+
+---
+
+### Opción 7 — "Primer protector con NTC en Venezuela*" ✅ (claim de pionero) — solo si se confirma hecho
+
+**Texto exacto para tiro:** Primer protector con NTC en Venezuela*
+
+**Contexto:** Aportación creativa de Vael. El argumento de Kike es exactamente este: Exceline fue primero. Si Exceline comunica NTC antes que cualquier competidor venezolano, puede reclamar el pionerismo en la categoría. Orlan §3 confirma que a 2026-05-03 ningún competidor venezolano comunica NTC en empaque ni datasheet. El claim de pionero convierte el argumento de Kike en texto de tiro.
+
+**Condición de uso:** Este claim solo es válido si Orlan puede confirmar que ningún competidor venezolano ha comunicado NTC en empaque, POP o publicidad **antes del lanzamiento de Exceline**. Si esa condición se verifica al momento del lanzamiento, el claim es defendible. Si un competidor se adelanta (el escenario exacto que Kike quiere evitar), el claim queda inválido. Es el claim más arriesgado del set en términos de ventana temporal, y el más poderoso si se lanza a tiempo.
+
+**Texto del asterisco para retiro (cuerpo invariable Bruna §8.3):**
+
+> **Primer protector con NTC en Venezuela:** sensor de temperatura ubicado junto al relé de potencia. Detecta calentamiento excesivo causado por sobrecorrientes o por conexiones deficientes (bornes flojos o falsos contactos) y desconecta la carga antes de que el cableado o las conexiones se dañen. Protege al protector mismo y a la instalación eléctrica. Para cargas de baja demanda de corriente, protege al protector y al cableado, pero no actúa como protección de sobrecarga directa de la carga conectada. Funciona como capa adicional de protección térmica; no reemplaza al interruptor termomagnético de la instalación.
+
+**Evaluación por criterios reformulados:**
+
+| Criterio | Cumple | Nota |
+|---|---|---|
+| 1 — Revelar NTC: análisis costo-beneficio | Revela NTC | Completamente. Además, lo posiciona como innovación pionera en el mercado venezolano. |
+| 2 — Función o componente | Componente + posicionamiento de liderazgo | Menciona componente + reclama primer mover en el mercado. |
+| 3 — Caveat de retiro compatible | Sí | Cuerpo invariable §8.3. El header indica la función del NTC. |
+| 4 — Audiencia mixta | Fuerte para el instalador técnico | "NTC" al técnico + "Primero en Venezuela" a ambos. El consumidor residencial entiende el pionerismo aunque no entienda NTC. |
+| 5 — Longitud | Fuera del rango preferido | 6 palabras. La más larga del set. Requiere decisión de diseño: si cabe en el blister de B sin comprimir el badge de velocidad. |
+| 6 — Coherencia VA-1 + argumento Kike | Perfecta | Esta opción ES el argumento de Kike convertido en texto de empaque. |
+| 7 — Cero Claim H | Sí | No promete protección del equipo. |
+
+**Pros:**
+- Es el único badge del set que convierte el argumento estratégico de Kike (innovación pionera, liderazgo de categoría) en claim de tiro directo. No hay traducción ni pérdida de fuerza argumentativa.
+- "Primero en Venezuela" es el claim de diferenciación más fuerte del set en términos de posicionamiento. Si se lanza antes que cualquier competidor, es un claim verificable y memorable.
+- El claim de pionero tiene efecto permanente: incluso si los competidores copian el NTC después, el hecho de que Exceline fue primero no cambia. "El primero" es un atributo temporal irreversible.
+- Compatible con la tesis de Bruna BR-5 Precedente #2 invertido: en lugar de "el único", se dice "el primero" — que es un claim de liderazgo temporal más honesto y más difícil de refutar.
+
+**Contras:**
+- Longitud: 6 palabras. La más larga del set. El espacio en el blister de B puede ser un bloqueante operativo. Atlas y Oz deben confirmar viabilidad antes de que el claim avance en el proceso.
+- El claim de pionero tiene una ventana de validez: es válido mientras ningún competidor lo haya comunicado antes. Si un competidor se adelanta en el lapso entre la decisión de Junta y el lanzamiento del empaque, el claim queda inválido. Es el claim con mayor exposición a la variable tiempo.
+- Bruna necesita verificación activa de Orlan antes de aprobar: el claim "Primero en Venezuela" es un superlativo de orden temporal que requiere evidencia de que ningún competidor lo comunicó antes. Sin ese gate, Bruna no puede aprobarlo.
+- Para el consumidor residencial sin contexto técnico, "NTC" en el badge sigue siendo opaco. La fuerza del claim descansa en el "Primero en Venezuela", no en NTC en sí.
+
+**Riesgo IP:** ver Orlan §Refresh. Orlan debe confirmar que el claim de "primero en Venezuela" es verificable al momento del lanzamiento. Esta es la opción que más depende de la confirmación de Orlan.
+
+**Riesgo Claim H:** Nulo.
+
+**Defensa anti-copia china:** La más alta del set. Si se lanza a tiempo, el registro histórico de primacía queda en el mercado. La copia confirma el liderazgo de Exceline.
+
+**Compatibilidad caveat Bruna §8.3:** Sí. Cuerpo invariable; solo header cambia.
+
+---
+
+## §R6-3 — Tabla resumen comparativa
+
+| # | Texto tiro | Palabras | NTC visible | Lenguaje | Riesgo Claim H | Defensa anti-copia | Apropiación marca | Riesgo gate Bruna | Responde pedido Canudas |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Sensor NTC incorporado* | 3 | Sí | Componente | Nulo | Media | Nula | Bajo (ya aprobado) | Sí (recupera el original) |
+| 2 | Escudo Térmico Integrado* | 3 | No | Función+metáfora | Bajo (badge solo) | Baja | Media | Bajo | Parcial (no tiene NTC) |
+| 3 | Tecnología NTC EscudoTérmico™* | 4+™ | Sí | Comp.+naming™ | Nulo | Alta (si se registra) | Alta | Medio (naming nuevo + ™) | Sí |
+| 4 | Sensor NTC · Escudo Térmico* | 4+· | Sí | Comp.+metáfora | Nulo | Media-alta | Media | Bajo-medio | Sí |
+| 5 | Tecnología NTC: Previene Sobrecalentamiento* | 4+ | Sí | Comp.+acción | ALTO (zona gris) | Muy baja | Nula | Alto (flag Claim H) | Sí |
+| 6 | NTC EscudoTérmico™* | 2+™ | Sí | Naming compacto | Nulo | Alta (si se registra) | Alta | Medio (naming + ™) | Sí |
+| 7 | Primer protector con NTC en Venezuela* | 6 | Sí | Pionero | Nulo | La más alta | Alta | Alto (requiere gate Orlan) | Sí — la más directa |
+
+**Nota columna "Responde pedido Canudas":** la apertura de Canudas fue "hagan un ejemplo con las siglas NTC." Las opciones 2 no incluye NTC en el tiro — responde a la función pero no a la instrucción literal. Las demás incluyen NTC en el tiro.
+
+---
+
+## §R6-4 — Ranking por impacto estimado (4 ejes ponderados)
+
+Ejes y pesos asignados por instrucción del Owner:
+
+| Eje | Peso asignado (Vael) |
+|---|---|
+| Diferenciación competitiva (anti-copia china) | 30% |
+| Comprensión audiencia mixta (instalador + consumidor) | 25% |
+| Apropiación de marca a largo plazo | 25% |
+| Riesgo gate Bruna | 20% |
+
+Puntuaciones de 1 (más débil) a 7 (más fuerte) por eje. Riesgo Bruna: puntuación inversa (1 = más arriesgado, 7 = más limpio para gate).
+
+| # | Opción | Diferenciación (30%) | Comprensión (25%) | Apropiación marca (25%) | Riesgo Bruna (20%) | Score ponderado |
+|---|---|---|---|---|---|---|
+| 6 | NTC EscudoTérmico™* | 7 | 6 | 7 | 5 | **6,45** |
+| 3 | Tecnología NTC EscudoTérmico™* | 7 | 7 | 7 | 4 | **6,35** |
+| 7 | Primer protector con NTC en Venezuela* | 7 | 5 | 6 | 2 | **5,35** |
+| 1 | Sensor NTC incorporado* | 4 | 5 | 2 | 7 | **4,45** |
+| 4 | Sensor NTC · Escudo Térmico* | 5 | 6 | 4 | 5 | **5,00** |
+| 2 | Escudo Térmico Integrado* | 3 | 6 | 4 | 6 | **4,55** |
+| 5 | Tecnología NTC: Previene Sobrecalentamiento* | 2 | 4 | 1 | 1 | **2,00** |
+
+**Ranking final por impacto estimado:**
+
+1. **Op. 6 — "NTC EscudoTérmico™*"** — 6,45
+2. **Op. 3 — "Tecnología NTC EscudoTérmico™*"** — 6,35
+3. **Op. 7 — "Primer protector con NTC en Venezuela*"** — 5,35
+4. **Op. 4 — "Sensor NTC · Escudo Térmico*"** — 5,00
+5. **Op. 2 — "Escudo Térmico Integrado*"** — 4,55
+6. **Op. 1 — "Sensor NTC incorporado*"** — 4,45
+7. **Op. 5 — "Tecnología NTC: Previene Sobrecalentamiento*"** — 2,00
+
+---
+
+## §R6-5 — Recomendación finalista
+
+### Finalista principal: Opción 6 — "NTC EscudoTérmico™*"
+
+**Argumento decisivo:** La Opción 6 es la única del set que resuelve los cuatro ejes simultáneamente sin comprometer ninguno. Responde al pedido literal de Canudas (NTC visible), activa la tesis de Kike (nombre de marca propietario que los competidores no pueden copiar aunque copien la placa), es compacta (2 elementos — la más corta del set CON-NTC), y tiene el mayor potencial de apropiación de marca a largo plazo si "EscudoTérmico™" se registra. Para el instalador técnico, NTC es señal directa de componente sofisticado. Para el consumidor residencial, EscudoTérmico es una imagen de protección sin necesidad de entender el componente. Riesgo de Claim H: nulo. Riesgo de gate Bruna: medio (el naming nuevo requiere gate del nombre, no del claim funcional).
+
+**Diferencia crítica con la Opción 3:** La Opción 3 ("Tecnología NTC EscudoTérmico™*") tiene casi el mismo score (6,35 vs 6,45) pero agrega la palabra "Tecnología" y el colon, lo que aumenta la longitud en dos elementos. "Tecnología" eleva el registro retórico (útil para el consumidor) pero en un blister de ferretería con espacio ya ocupado por el badge de velocidad, cada palabra extra tiene un costo real de diseño. La Opción 6 logra el mismo efecto con menos palabras.
+
+### Finalista de respaldo: Opción 3 — "Tecnología NTC EscudoTérmico™*"
+
+**Cuándo preferir Op. 3 sobre Op. 6:** si Oz y Atlas confirman que el espacio del blister de B permite 4 palabras + ™ sin comprimir el badge de velocidad. En ese caso, "Tecnología" añade el registro de innovación que refuerza el argumento de Kike sin costo de comprensión. Si el espacio es el factor limitante, Op. 6 es la alternativa directa.
+
+### Criterio de elección entre Op. 6 y Op. 3
+
+El Owner y Atlas/Oz deciden según maqueta real. La pregunta concreta: ¿cabe "Tecnología NTC EscudoTérmico™*" en el blister de B sin comprimir la jerarquía visual del badge de velocidad? Si sí: Op. 3. Si no: Op. 6. Ambas van a Bruna con el mismo texto de retiro; el gate es idéntico salvo por el header.
+
+### Nota sobre la Opción 7
+
+La Opción 7 ("Primer protector con NTC en Venezuela*") es la más poderosa estratégicamente si se lanza antes que cualquier competidor. Vael la incluye en el top 3 del ranking y recomienda que el Owner la considere para el lanzamiento completo si Orlan puede confirmar la vacancia del claim en el momento de producción del arte. No es adecuada para la reunión con Canudas como "ejemplo de comunicación" (es demasiado larga para un badge de tiro y requiere gate de Orlan que no está disponible hoy). Es un claim para la campaña de lanzamiento, no solo para el empaque.
+
+---
+
+## §R6-6 — Nota sobre anglicismos (instrucción Owner)
+
+El Owner instruyó que los anglicismos son aceptados temporalmente pero SIEMPRE con alternativa española o combinación bilingüe en la misma frase.
+
+| Opción | Anglicismo presente | Alternativa española | Fórmula bilingüe disponible |
+|---|---|---|---|
+| 2 | No | N/A | N/A |
+| 3 | "Tecnología" (pseudoanglicismo naturalizado) | Ídem en español | No aplica |
+| 5 | No aplica | No aplica | No aplica |
+| 6 — versión ThermoShield™ | Sí ("ThermoShield") | "EscudoTérmico™" | "NTC EscudoTérmico / ThermoShield™" |
+| 6 — versión EscudoTérmico™ | No | Es la alternativa española | N/A |
+
+**Instrucción para Solenne y Oz:** para las opciones finalistas (6 y 3), la versión española "EscudoTérmico™" es la principal. "ThermoShield" puede aparecer como subtexto de diseño o en el QR, pero el badge del tiro va en español o bilingüe español-primero. Esta instrucción es por diseño de marca (VA-1 §3 — coherencia con pilares de marca Exceline para el mercado venezolano).
+
+---
+
+## §R6-7 — Supuestos y límites — Refresh 2026-05-06
+
+**Insumos consumidos en este refresh:**
+
+- `00-brief/whatsapp/Kike conversando con Jose Miguel Canudas.txt` (2026-05-05): apertura de Canudas a evaluar variante con NTC; argumento de Kike sobre innovación, copia china y pionerismo. Insumo primario de este §Refresh.
+- `00-brief/market-research/Consulta a perplexity sobre el NTC.txt` (fecha implícita: previa a 2026-05-05, generada por el Owner): formulaciones de Perplexity (Escudo Térmico Integrado, Tecnología Thermo-Safe™, opciones de copy). Insumo de inspiración — los textos de Perplexity son candidatos de partida, no claims aprobados. Varios cruzan el Claim H de Bruna.
+- `Vael_VA-5_naming-funcion-termica_v1.md` (2026-05-05): VA-5 v1 + §Refresh 2026-05-05. Criterios 1–7 originales, top 3 previo, finalista única B-sin-NTC. Leído completo antes de añadir este §Refresh.
+- `_governance/Bruna_gate_empaque_v1.md` §2 (Claims D y E), §7.1 (bloque NTC corregido sin temperaturas), §8 (gate "Autoprotección térmica activa*"): estado de aprobaciones vigentes, texto literal del caveat de retiro invariable, condición suspensiva Pendiente P-5 sobre "activa".
+- `Vael_messaging_framework_v1.md` (VA-1): Pilar 3, §4 anti-mensajes, §1 audiencias.
+
+**Insumos NO consultados por no estar disponibles o no ser necesarios para este §Refresh:**
+- Orlan §Refresh paralelo (en producción en este mismo turno): las celdas de "Riesgo IP" en este documento quedan marcadas como "ver Orlan §Refresh." Orlan debe responder sobre: (a) disponibilidad de "EscudoTérmico" y/o "ThermoShield" como marcas registrables en Venezuela/región; (b) si "Primer protector con NTC en Venezuela" es un claim verificable a la fecha de lanzamiento; (c) si el término NTC es de dominio público en el mercado o si su comunicación por Exceline constituye genuina apertura de territorio.
+- Vera: no hay nuevo insumo de Vera en este refresh. El mecanismo del NTC no cambia. La condición suspensiva del Pendiente P-5 (Bruna §8.1) sobre monitoreo continuo vs. fusible de corte único sigue pendiente e independiente de este §Refresh.
+- DECISIONS.md: consultado implícitamente a través de WORKSTREAM_v5 y Bruna gate. Sin nueva decisión del Owner registrada que afecte este scope más allá de la instrucción de producir v2.2.
+
+**Validez temporal:** Este §Refresh produce la variante B-CON-NTC (v2.2) para presentación a Canudas en reunión posterior a la Junta de hoy 2026-05-06. La Junta de hoy cerró con v2.1 (B-sin-NTC) vigente. v2.2 no reemplaza a v2.1 hasta decisión explícita de Canudas + Owner. Triggers de invalidación:
+- Si Orlan confirma que un competidor venezolano ya comunicó NTC antes del lanzamiento de Exceline: la Op. 7 queda inválida y el argumento de pionero de la Op. 6 se debilita (pero no se elimina — Exceline sigue siendo el primer comunicador activo de NTC en su categoría si actúa a tiempo).
+- Si Canudas rechaza la variante CON-NTC en la reunión de revisión: este §Refresh se archiva y v2.1 queda como única variante.
+- Si Vera cierra Pendiente P-5 con resultado "fusible de corte único": no afecta directamente a este §Refresh (las opciones CON-NTC no usan el adjetivo "activa" de la v2.1), pero sí afecta la variante v2.1 en paralelo.
+
+**Claims con gate pendiente de Bruna (todos los de este §Refresh):**
+- Op. 1: gate mínimo (Claim D ya aprobado — verificar que recuperar el badge original con el mismo texto del retiro §8.3 no requiere nuevo gate por el cambio de contexto de decisión). Bajo riesgo.
+- Op. 2: gate nuevo sobre "Escudo Térmico Integrado" como badge. Evaluar si "Escudo" + "Integrado" sin NTC visible introduce algún riesgo de interpretación. Bajo riesgo anticipado.
+- Op. 3: gate sobre naming "Tecnología NTC EscudoTérmico™" — el nombre comercial ™ requiere aval del Owner sobre la decisión de naming de tecnología antes del gate de Bruna sobre el claim.
+- Op. 4: gate sobre "Sensor NTC · Escudo Térmico" como formulación híbrida. El claim funcional está dentro del rango del Claim D aprobado. Bajo-medio riesgo.
+- Op. 5: GATE PRIORITARIO antes de cualquier otro — Claim H en zona gris por "Previene Sobrecalentamiento" sin calificador. Vael recomienda que si Op. 5 no recibe gate limpio de Bruna, se retire del set antes de presentar a Canudas.
+- Op. 6: gate sobre naming "NTC EscudoTérmico™" — mismo criterio que Op. 3. El naming es la decisión principal; el claim funcional está dentro del rango del Claim D. Medio riesgo (por naming nuevo, no por riesgo de claim).
+- Op. 7: gate de Orlan requerido antes de Bruna. Sin confirmación de Orlan sobre vacancia del claim "Primero en Venezuela" al momento del lanzamiento, Bruna no puede gatear. Este claim es el más poderoso del set si la confirmación llega; es el más arriesgado si no llega.
+
+**Ningún claim de este §Refresh está aprobado.** Todos son propuesta de Vael. La decisión de cuáles llegan a Canudas como "ejemplo de comunicación" es del Owner. El gate de Bruna se da después de la selección del Owner.
+
+**Notificaciones de refresh pendientes post-decisión del Owner:**
+- A Orlan: solicitar §Refresh sobre disponibilidad de naming "EscudoTérmico™" / "ThermoShield™" como marca + verificación de vacancia del claim "Primero en Venezuela."
+- A Bruna: gate de la(s) opción(es) que el Owner seleccione para presentar a Canudas.
+- A Aurelio: si Canudas aprueba la variante CON-NTC, Aurelio necesita actualizar el memo de seguimiento de Junta para reflejar el cambio de badge en v2.2.
+- A Solenne: si Bruna aprueba alguna opción CON-NTC, Solenne emite delta de SO-1 con el nuevo badge y el mismo cuerpo de retiro.
+- A Oz: si Solenne emite delta, Oz actualiza redline con el header del retiro correspondiente a la opción aprobada.
+
+---
+
+*Refresh emitido por Vael — 2026-05-06. Domain-specialist. Genteca.*
+*Variante B-CON-NTC (v2.2): propuesta, no aprobada. Gate de Bruna requerido en todas las opciones. Op. 5 tiene flag de Claim H prioritario. v2.1 vigente hasta decisión de Canudas. Riesgo IP: pendiente Orlan §Refresh.*
