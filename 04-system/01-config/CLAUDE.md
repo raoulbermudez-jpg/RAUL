@@ -42,15 +42,15 @@ These agents form the end-to-end content production pipeline. They are transvers
 
 | Name | CSC Layer | Role | When to engage |
 |------|-----------|------|----------------|
-| **Aurelio** ⭐ | Estrategia | Content Strategist | First gate — campañas, lanzamientos, planes multi-formato. Define QUÉ, A QUIÉN y CUÁNDO |
-| **Nerea** ⭐ | Estrategia | Script & Narrative Architect | Después de Aurelio — guiones, hooks, copy por pieza y formato |
-| **Orfeo** ⭐ | Producción | Audio & Conversation Producer | Contenido multi-voz, podcasts, conversaciones estilo studio |
-| **Luma** ⭐ | Producción | Video & Motion Producer | Video: shorts, reels, largo, motion graphics |
-| **Vela** ⭐ | Producción | Narration & Voiceover | Narración de voz única, voiceover para video o presentación |
-| **Atlas** ⭐ | Producción | Static Visual Producer | Carruseles, infografías, miniaturas, POP, material impreso |
-| **Bruna** ⭐ | Gobernanza | Brand & Risk Governance | Gate obligatorio antes de cualquier publicación pública — sin Bruna, nada sale |
-| **Ivo** ⭐ | Distribución | Distribution & Channel Strategist | Canal, fecha, metadata, publicación — solo recibe lo que Bruna aprobó |
-| **Sira** ⭐ | Memoria | Archive, Version & Recycling | Versiona, cataloga, propone reciclaje de activos entre campañas |
+| **Aurelio** ⭐ | Estrategia | Content Strategist (AU-1..AU-5) | First gate — campañas, lanzamientos, planes multi-formato. AU-1 plan, AU-2 mapa trimestral, AU-3 brief Nerea, AU-4 brief Solenne, AU-5 reciclaje |
+| **Nerea** ⭐ | Estrategia | Script & Narrative Architect (NE-1..NE-5) | Después de Aurelio. NE-1 guion largo, NE-2 reel, NE-3 carrusel narrativo capítulo, NE-4 audio single/multi-voz etiquetado, NE-5 narrative map |
+| **Orfeo** ⭐ | Producción | Motion Graphics & Visual Systems Production Lead (OR-1..OR-5) | Motion graphics, overlays, transiciones, animated assets reutilizables; integra a video producido por Luma |
+| **Luma** ⭐ | Producción | Video Production Lead (LU-1..LU-5) | Video: shorts, reels, largo. Integra audio de Vela + visuales estáticos de Atlas + motion de Orfeo |
+| **Vela** ⭐ | Producción | Voiceover & Audio Production Lead (VE-1..VE-5) | Único productor de audio del CSC. Voiceover single-voice y conversaciones de una o dos voces (diálogo / podcast corto) ejecutando NE-4 con turnos etiquetados Voz A / Voz B |
+| **Atlas** ⭐ | Producción | Static Visual Production Lead (AT-1..AT-5) | AT-1 carousel pack, AT-2 single static / key visual, AT-3 infografía, AT-4 layout PDF (handoff Oz si refinamiento), AT-5 visual adaptation matrix |
+| **Bruna** ⭐ | Gobernanza | Risk & Claims Governance Lead (BR-1..BR-5) | Gate obligatorio antes de Ivo. 4 fases del pipeline (VA / AU / NE / SO). BR-2 acumulativo por dominio. BR-5 precedentes transversal |
+| **Ivo** ⭐ | Distribución | Content Publication & Logging Orchestrator (IV-1..IV-5) | IV-1 chain log, IV-2 outputs index, IV-3 feed Sira, IV-4 feed Celeste, IV-5 publication summary. No publica sin sello Bruna |
+| **Sira** ⭐ | Memoria | Archive, Version & Recycling Librarian | Single source of truth reciclaje (AU-5) en `04-system/05-indexes/`. Sin entrada en catálogo, no existe como memoria reciclable |
 
 *(⭐ = global agent, available in every project. Path: `C:\Users\User\.claude\agents\`)*
 
@@ -83,7 +83,10 @@ These agents are anchored to the **Genteca** domain. They consult Genteca's KB, 
 - **Pieza única, formato conocido, no requiere campaña** (ej. un post de LinkedIn sobre un producto): entrar directo en Nerea con el brief → Atlas/Solenne para producción → Bruna → Ivo.
 - **Campaña o lanzamiento multi-formato** (ej. video + carrusel + audio): Aurelio primero → Nerea → producción en paralelo → Bruna → Ivo → Sira.
 - **Publicación de cualquier pieza hacia afuera**: SIEMPRE pasa por Bruna antes de Ivo. Sin excepción.
-- **Solenne vs. Nerea**: Solenne es escritora B2B Genteca-específica (blog, LinkedIn, email, product copy). Nerea es la arquitecta de guiones y narrativa para producción multimodal (video, audio, carrusel). Si el output final es texto publicable directamente → Solenne. Si el output alimenta a Orfeo/Luma/Vela/Atlas → Nerea.
+- **Solenne vs. Nerea (frontera operativa):**
+  - Pieza editorial individual (post LinkedIn suelto, email, header, body landing simple, descripción producto, copy empaque, caption, ficha amigable, **carrusel editorial estándar**) → **Solenne (SO-1 / SO-2 / SO-3)**.
+  - Pieza audiovisual o pieza dentro de **serie con arco narrativo macro multi-pieza** (incluye carrusel narrativo capítulo) → **Nerea (NE-X)**, con SO-4 de Solenne como input de body editorial cuando aplica.
+  - Si la pieza alimenta a Atlas / Luma / Vela / Orfeo (cualquier productor Capa 3) → entra por Nerea.
 
 ## Hiring New Team Members
 

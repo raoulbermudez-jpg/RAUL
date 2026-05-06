@@ -13,8 +13,8 @@
 |--------|---------------|
 | **Vera** | Selección o comparación de relés/protectores; IEC/NEMA; cross-referencia vs. ABB/Schneider/Eaton/Siemens |
 | **Orlan** | Inteligencia de mercado, benchmarking competidores, market sizing, HMI trends |
-| **Solenne** | Contenido B2B: blog, LinkedIn, email, video scripts, case studies, product copy |
-| **Vael** | Estrategia de marca y mensajería, positioning, tono de voz, campaign briefs, launch kits |
+| **Solenne** | Copy & Editorial Execution Lead (SO-1..SO-5): post LinkedIn, email, body landing simple, descripción producto, copy empaque, captions, fichas amigables, body editorial (SO-4) input para Nerea cuando hay narrativa multi-pieza, mini-cover note de trazabilidad |
+| **Vael** | Brand & Messaging Strategist (VA-1..VA-5): VA-1 messaging framework, VA-2 positioning, VA-3 message map por campaña × audiencia × canal, VA-4 content brief para CSC, VA-5 guardrails (claims defendibles ✅ / con caveat ⚠ / prohibidos ❌) |
 | **Celeste** | Ingesta de documentos desde `01-inbox/03-raw-sources/` hacia KB; PDF/Word → Markdown |
 | **Renzo** | Diagramas eléctricos (PNG/JPG/PDF), guías de instalación, troubleshooting técnico de campo |
 | **Oz** | Redlines de fichas técnicas, PDFs anotados para Ozwaldo, delta documents de cambios visuales |
