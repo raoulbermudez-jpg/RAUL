@@ -1,6 +1,6 @@
 # PKA_LEGACY_MAP — Índice maestro de contenido /RAUL/ disperso
 
-**Versión:** v0.1
+**Versión:** v0.2
 **Última actualización:** 2026-05-07
 **Tipo:** índice operativo vivo
 **Audiencia:** privada (paths con info personal y de colaboradores)
@@ -89,8 +89,8 @@ Material de investigación que NO está en uso operativo pero queda preservado p
 | Ubicación | Tipo | Estado |
 |---|---|---|
 | `C:\RAUL\02-knowledge-base\02-domains\02-plenus-metabolica\` | KB stub | Sin contenido sustancial. |
-| `C:\Users\User\OneDrive\Presentación final Raoul - QTorta.pptx` (114 MB) | Presentación QTorta yogurt | RESCATABLE → `03-projects/plenus/` o archivo. |
-| `C:\Users\User\OneDrive\Plenus.pptx` (5.5 MB) | Presentación Plenus | RESCATABLE. |
+| `C:\RAUL\03-projects\plenus\Presentación final Raoul - QTorta.pptx` (114 MB) | Presentación QTorta yogurt (fecha original 2023-06-15) | Rescatado 2026-05-07 desde OneDrive raíz. Gitignored por `*.pptx`. |
+| `C:\RAUL\03-projects\plenus\Plenus.pptx` (5.5 MB) | Presentación Plenus (fecha original 2024-11-19) | Rescatado 2026-05-07 desde OneDrive raíz. Gitignored por `*.pptx`. |
 | `G:\Mi unidad\WorkspaceIA Backup\Plenus\` | KB legacy | Legacy. Auditar. |
 
 ### 5.3 Finca (ganadería)
@@ -159,6 +159,8 @@ Marcado para depuración con fecha-objetivo.
 | `C:\Users\User\OneDrive\RAUL\` | Migrar a G: y eliminar | Cuando se confirme migración |
 | `G:\Mi unidad\WorkspaceIA Backup\` | Eliminar después de archivar valioso a `C:\RAUL\` | Después de auditoría |
 | `G:\Mi unidad\07 - Tecnología e IA\` (Google AI Studio + Earth) | Ignorar (no PKA) | — |
+| ~~`OneDrive\Desktop\One Drive Windows Escritorio\Frussion\Presentación final Raoul - QTorta .pptx`~~ | Eliminado 2026-05-07 (duplicado del rescatado) | ✅ done |
+| ~~`OneDrive\Desktop\Personal dic 2022\Finca\Yogurt\Cremades\Wallace\Plenus.pptx`~~ | Eliminado 2026-05-07 (duplicado del rescatado) | ✅ done |
 
 ---
 
@@ -174,6 +176,13 @@ Cosas que esta excavación NO cubrió completamente y conviene revisitar.
 ---
 
 ## 10. Changelog
+
+### v0.2 — 2026-05-07
+
+- Plenus rescatado: `Presentación final Raoul - QTorta.pptx` (114 MB) y `Plenus.pptx` (5.5 MB) movidos desde OneDrive raíz a `03-projects/plenus/`. Filename QTorta normalizado (eliminado espacio raro antes de `.pptx`). Ambos gitignored por `*.pptx`.
+- Duplicados eliminados de OneDrive: copia QTorta en `Frussion\` y copia Plenus en `Personal dic 2022\Finca\Yogurt\Cremades\Wallace\` (verificadas idénticas en tamaño y fecha antes de eliminar).
+- Sección 5.2 Plenus actualizada para reflejar nuevas rutas y fechas originales de los archivos.
+- Sección 8 actualizada con registro de eliminaciones (tachado).
 
 ### v0.1 — 2026-05-07
 
