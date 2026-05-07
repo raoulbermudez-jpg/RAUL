@@ -88,13 +88,18 @@ Pregunta abierta: ¿debería incluir la mención del CC a Oz o no? Tu juicio.
 
 **Ubicación:** Claude Code Desktop → Routines.
 
-**Recomendaciones de intervalo:**
+**Configuración vigente (desde 2026-05-06):** cada 2 horas en ventana **6:00–23:00 hora local Caracas**, con disparo extra a las 23:00 para cubrir el techo. **10 disparos diarios** (6, 8, 10, 12, 14, 16, 18, 20, 22, 23). Fuera de esa ventana (23:00–06:00) la rutina queda en pausa — sin disparos nocturnos para no consumir cuota de tokens en horas sin actividad del Owner.
 
-| Escenario | Intervalo sugerido |
-|---|---|
-| Operación normal (default) | 4 h |
-| Día con varias tareas urgentes desde celular | 1 h |
-| Vacaciones o periodos de baja actividad | 12 h o pausar |
+**Routine remoto vigente:** `raul-inboxbot` (trigger ID `trig_01RgGGbpCvckUzSwkyGMDNtm`). Cron expression UTC: `0 0,2,3,10,12,14,16,18,20,22 * * *`. Gestión vía `https://claude.ai/code/routines/trig_01RgGGbpCvckUzSwkyGMDNtm` o desde Claude Code con `/schedule`.
+
+**Recomendaciones de intervalo (configurables según escenario):**
+
+| Escenario | Intervalo sugerido | Ventana |
+|---|---|---|
+| **Operación normal (default vigente)** | **2 h** | 6:00–23:00 |
+| Día con varias tareas urgentes desde celular | 1 h | 6:00–23:00 |
+| Vacaciones o periodos de baja actividad | 4 h o pausar | 8:00–20:00 |
+| Modo standby total | Pausar | — |
 
 **Prompt recomendado del Routine:**
 

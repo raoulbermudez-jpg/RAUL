@@ -163,7 +163,7 @@ Usar Gmail MCP `create_draft`:
 | Plataforma | Instrucción |
 |---|---|
 | Claude Code Desktop (Routines) | `Ejecuta InboxBot. Lee y sigue C:\RAUL\.claude\agents\inboxbot\AGENT.md` |
-| Claude Code CLI (`/loop`) | `/loop 4h` con el prompt anterior |
+| Claude Code CLI (`/loop`) | `/loop 2h` con el prompt anterior |
 | Cualquier otro LLM | Cargar este archivo como system prompt y ejecutar |
 
-Frecuencia recomendada: cada 4 horas, o manualmente cuando el Owner avise que dejó una tarea.
+Frecuencia recomendada (vigente desde 2026-05-06): cada 2 horas en ventana 6:00–23:00 más un disparo extra a las 23:00 para cubrir el techo de la ventana (10 disparos diarios a las 6, 8, 10, 12, 14, 16, 18, 20, 22 y 23 horas locales Caracas). Cron expression UTC vigente: `0 0,2,3,10,12,14,16,18,20,22 * * *` en routine remoto `raul-inboxbot` (trigger ID `trig_01RgGGbpCvckUzSwkyGMDNtm`). Fuera de esa ventana (23:00–06:00) la rutina queda en pausa. Manualmente cuando el Owner avise fuera de ventana.
