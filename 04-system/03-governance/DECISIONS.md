@@ -257,4 +257,36 @@ Modelo A en `04-system/02-agents/`.
 
 ---
 
+## 2026-05-07 — OPEN QUESTION (pendiente): ¿Librarian por dominio o transversal cuando se activen Plenus/Finca/Teca/marca-personal/Panamá?
+
+**Estado:** Abierta. NO es una decisión tomada — es una pregunta arquitectónica registrada para revisión cuando se active el segundo dominio del sistema (probablemente Plenus, dado que `Presentación final Raoul - QTorta.pptx` y `Plenus.pptx` ya fueron rescatados a `03-projects/plenus/` el 2026-05-07).
+
+**Contexto y motivación:**
+
+- El Owner recordó haber diseñado un flujo `01-inbox/03-raw-sources/` → procesamiento → archivo en KB con curación impecable. La memoria es real: ese flujo existe y lo opera **Celeste**.
+- Pero el conceptual de Celeste declara explícitamente: "Si en el futuro se activan KBs de Plenus, Finca, Teca o marca-personal, esos dominios tendrán sus propios librarians (no se reusa este rol — cada dominio tiene su propio set, según política de `domain-specialist`)."
+- La Hoja de Ruta v0.3 da por sentado este patrón implícitamente al describir Fase 3 ("activar dominios + identificar gap de domain-specialists"), pero NO valida explícitamente que la curación deba ser domain-specific en lugar de global-service.
+- Con 5 dominios futuros (Plenus, Finca, Teca, marca-personal, Panamá) → 5 Celestes con conceptuales casi idénticos podría ser overhead innecesario si la lógica de curación (clasificar Technical vs Market, convertir a Markdown limpio, archivar con naming canónico) es esencialmente la misma entre dominios.
+
+**Las dos opciones (a evaluar cuando llegue el momento):**
+
+- **(A) Patrón actual — un librarian por dominio.** Cada dominio tiene su Celeste-equivalente. Boundaries claras, taxonomía y vocabulario domain-specific embebidos en el agente. Costo: 5 agentes con conceptuales muy parecidos, 5 hire rounds Tier 0 a ejecutar.
+- **(B) Promover a `global-service` transversal — un solo librarian para todos los dominios.** Más simple de mantener; rompe la regla de domain-specialist; requiere que el agente conozca taxonomías de todos los dominios o que reciba `domain` como parámetro de contexto. Costo: arquitectura más acoplada al multi-dominio, pero menos overhead de mantenimiento.
+
+**Trigger de revisión:** cuando el Owner solicite activación formal del **segundo dominio** (más allá de Genteca). En ese momento, antes de que Michelina diseñe el librarian del nuevo dominio, decidir si:
+- se contrata uno nuevo siguiendo (A), o
+- se promueve Celeste (o un sucesor renombrado) a transversal siguiendo (B).
+
+**Por qué no decidir ahora:**
+
+- Solo hay un dominio activo (Genteca). No hay aún señal suficiente sobre cuánto difiere realmente la lógica de curación entre dominios — taxonomías de Plenus (metabólica/yogurt) y Finca (ganadería) podrían ser tan distintas que (A) sea imprescindible, o tan similares que (B) sea claramente superior. Decidir ahora es prematuro.
+
+**Implicaciones de no decidir antes del trigger:**
+
+- Si el Owner no reabre esta pregunta antes de activar Plenus, **por defecto Michelina diseñará un librarian Plenus nuevo siguiendo (A)**. No es problema — solo cierra la opción (B) sin debate consciente. Esta entrada existe precisamente para que la pregunta no se pierda.
+
+**Acción adicional registrada:** auditar `G:\Mi unidad\WorkspaceIA\RAG_SOURCES\` (10 files, encontrado en excavación 2026-05-07) cuando se rescate contenido legacy de Plenus/Finca/Teca, por si contiene reglas o material útil del flujo raw→KB anterior.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
