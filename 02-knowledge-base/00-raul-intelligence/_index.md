@@ -18,6 +18,7 @@
 | `patrones-de-delegacion.md` | Qué agente funciona mejor para qué tipo de tarea; errores de routing corregidos | Hay duda sobre a quién delegar o la tarea es ambigua |
 | `preferencias-del-owner.md` | Decisiones que Raoul ha tomado, correcciones que ha hecho, lo que aprueba sin pedir cambios | Tarea de alto riesgo, decisión con alternativas, o output de alto impacto |
 | `aprendizajes-genteca.md` | Especificidades del dominio Genteca aprendidas en producción (más allá de lo que dice el KB) | Cualquier tarea del dominio Genteca |
+| `PKA_LEGACY_MAP.md` | Índice maestro de contenido /RAUL/ disperso en C:/G:/D:/OneDrive/Google Drive: ubicaciones canónicas vivas, legacy archivado, contenido por dominio, zonas a depurar y zonas pendientes de explorar | Hay duda sobre dónde vive un archivo legacy, se va a rescatar/depurar contenido fuera del repo activo, o se reactiva F6 y hace falta localizar el research Paxs |
 
 ## Subcarpetas
 
@@ -33,5 +34,5 @@ Si creas un archivo o subcarpeta nueva en esta carpeta, añade una fila a la tab
 
 ---
 
-**Última actualización:** 2026-05-04
-**Entradas totales:** 4 archivos activos + 1 subcarpeta (`methodology/`)
+**Última actualización:** 2026-05-07
+**Entradas totales:** 5 archivos activos + 1 subcarpeta (`methodology/`)

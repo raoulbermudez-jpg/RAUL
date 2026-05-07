@@ -226,4 +226,35 @@ Modelo A en `04-system/02-agents/`.
 
 ---
 
+## 2026-05-07 — F6 (Mirror Coach + Persona Delegation) conscientemente diferida hasta F5 estable
+
+**Decisión:** No iniciar F6 en este ciclo. Diferida formalmente hasta que F5 (Madurez operativa) lleve al menos 3 meses estable, según pre-requisito declarado en `02-knowledge-base/00-raul-intelligence/methodology/Hoja_De_Ruta_Raul.md` §F6 (línea 421).
+
+**Contexto y motivación:**
+
+- En sesión 2026-05-07 el Owner preguntó por el agente coach personal y agente clon que recordaba haber diseñado.
+- Excavación arqueológica del repo + drives confirmó: el blueprint metodológico existe (Hoja de Ruta v0.3 + research Paxs en `_private/research/2026-05-04_paxs_ai-coach-cloning.md`), pero el agente Espejo nunca fue construido.
+- Estado real de fases predecesoras al 2026-05-07:
+  - F0/F1/F2: completas.
+  - F3 multi-dominio: en curso (Genteca activo, Panamá iniciado, Plenus/Finca/Teca pendientes).
+  - F4 validación + métricas: NO iniciada (sin KPIs por dominio, sin golden outputs, sin rúbricas formales).
+  - F5 madurez operativa: parcial (Sira/Celeste/Ivo/Bruna BR-5 operan ad-hoc, sin auditoría trimestral ni cadencia formal validada como estable).
+- 6 brechas explícitas no resueltas en el blueprint del Espejo (R3-R8 + AC2-AC3 del research Paxs) bloquean construirlo correctamente aunque la fase estuviera lista.
+- Prioridad real del Owner es Genteca/GME/GST/Panamá. Adelantar F6 sin F4/F5 maduras: costo > beneficio.
+
+**Alternativas consideradas:**
+
+- **Construir agente Espejo ahora con blueprint parcial.** Rechazado: las 6 brechas explícitas en el research Paxs producirían un agente con boundaries equivocados; además F5 sin estabilidad de 3 meses no provee la señal mínima para que el coach tenga insumo real.
+- **Cerrar las brechas R3-R8 a v0.4 sin construir agente.** Diferido: trabajo metodológico valioso pero no urgente; se reactiva cuando F5 esté cerca de estable.
+
+**Implicaciones:**
+
+- F6 NO se inicia hasta dos gates simultáneos: F5 estable 3+ meses + F4 con métricas mínimas operativas.
+- El research de Paxs (2026-05-04) queda preservado en `_private/` como insumo activable; cuando se reactive F6, partir de R3-R8 + AC2-AC3 antes de diseñar conceptual del agente Espejo.
+- Acción complementaria autorizada en esta sesión: construir `02-knowledge-base/00-raul-intelligence/PKA_LEGACY_MAP.md` para indexar contenido /RAUL/ disperso en C:/G:/D:/OneDrive/Google Drive y no volver a perder rastros del trabajo legacy.
+
+**Estado:** Vigente desde 2026-05-07. Próxima revisión: cuando F5 acumule 3 meses de operación estable o cuando el Owner solicite reactivación explícita.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
