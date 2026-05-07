@@ -7,3 +7,5 @@
 | 2026-05-04 | InboxBot ciclo manual v3.2 | archivado retroactivo tarea-gsm-r-ntc gdoc | DONE | _archived/ | 0 |
 | 2026-05-04 | InboxBot ciclo manual v3.2 | tarea-gsm-r-pdf-recuperado | DUPLICADO | outbox + _archived/ | 0 |
 | 2026-05-04 | InboxBot ciclo manual v3.2 | prueba-canal-cueva-legacy | ACK | outbox + _archived/ | 0 |
+| 2026-05-07 | Sesion local Raul (Claude Code) — InboxBot remoto NO disparo | tarea-anglicismos-marcas-genteca: deck Junta SAPI cadena CSC completa Aurelio→Paxs‖Vera‖Orlan→Vael→Bruna→Nerea→Vivienne | DELIVERED | outbox + _archived/ + 03-projects | ~340k |
+| 2026-05-07 | Sesion local Raul — iteracion follow-up Owner | tarea-anglicismos-marcas-genteca v2: deck dual escenarios NTC (Caso A no autoriza / Caso B si autoriza propuesta Kike). Vivienne actualizo S-1/S-8/S-9/S-9A/S-9B/S-A2/S-A4. Total 22 slides. Fix typo Autoprteccion→Autoproteccion (5 instancias) | DELIVERED | outbox + 03-projects | ~70k |

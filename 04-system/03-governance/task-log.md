@@ -95,3 +95,6 @@ El log anterior en C:\WorkspaceIA\PROJECTS\Claude code\Team\task-log.md queda co
   - runtime listo para Claude Code bajo `.claude\agents\...`
   - definición conceptual alineada con el resto del equipo en `04-system\02-agents\conceptual\`.
 - A partir de ahora, cualquier ajuste de estos agentes se hace primero en los archivos conceptuales de RAUL y luego se refleja en sus AGENT.md derivados.
+
+| 2026-05-07 | Raul (sesion local) | Tarea Drive inbox: deck Junta SAPI/anglicismos. Cadena CSC completa: Aurelio AU-3+AU-4 → Paxs research SAPI VE → Vera inventario 3 marcas D:\ → Orlan benchmark 8 competidores → Vael VA-2+VA-5 (top 7 + pivote ThermoShield NTC→Thermo-Safe) → Bruna BR-2 + 3 nuevos precedentes BR-5 → Nerea NE-1 (20 slides) → Vivienne .pptx. Output: `2026-05-07_Vivienne_anglicismos-marcas-genteca_APROBADO-PARA-owner.pptx` en outbox Drive + proyecto C:\RAUL\03-projects\genteca\2026-05-07_marcas-anglicismos-junta\. 3 escalaciones Owner pendientes (verificación Exceline en SAPI, addendum HDE Vera, decisión presupuesto IP) | delivered |
+| 2026-05-07 | Raul (sesion local) | Diagnóstico: rutina remota raul-inboxbot NO procesó tarea creada 07:36 Caracas (disparos 8am y 10am no la tomaron). Hipótesis: parentId duplicado (tarea visible en 2 fileIds Drive) o race condition sync cloud o bug silencioso resolución .gdoc. Pendiente investigar logs Web UI | pending |
