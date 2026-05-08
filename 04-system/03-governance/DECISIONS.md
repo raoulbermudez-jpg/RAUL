@@ -337,4 +337,32 @@ El Atlas 4 contenía SALES_ARGs comparativos contra Schneider y genéricos chino
 
 ---
 
+## 2026-05-08 — Cierre BR-2 sobre argumentos de venta atlas-legacy + canal D3 elegido (esperar evidencia natural)
+
+**Contexto:** complementa la entrada 2026-05-07 sobre integración de atlas legacy. El Owner regresó al sistema y revisó el BR-1 emitido por Bruna sobre los 8 argumentos de venta extraídos del Atlas 4.
+
+**Decisiones del Owner:**
+
+1. **BR-2 emitido:** autorizó los 7 argumentos VERDE+AMARILLO+NARANJA-reformulado para uso externo. Bruna appendeó las 7 entradas al log de claims `2026-05-03_genteca_claim-approval-log_v1.md` (entradas #22-28). Argumento 8 (COVENIN 3445) sigue ROJO — bloqueado hasta verificación SENCAMER/FONDONORMA.
+
+2. **Argumento 7 reformulado:** se eliminó el dato cuantitativo "CORPOELEC ya en 210V en muchas zonas" del Argumento 7 (cable sumergible). Se convirtió en "redes con variabilidad de tensión" como condición genérica. El ejemplo del 91% Vn se mantiene como ilustrativo, no estadístico. Pasa de NARANJA a AMARILLO con caveat. Reformulación aplicada en `wiki/tech/argumentos-venta-tecnicos.md`.
+
+3. **Documento renombrado:** `argumentos-venta-tecnicos-INTERNO-PENDIENTE-GATE.md` → `argumentos-venta-tecnicos.md` (tras BR-2 aprobado). El header del documento refleja el nuevo estado y mantiene el Argumento 8 marcado como bloqueado.
+
+**Decisión D3 — canal para aclarar GST-RD/GST-RG:**
+
+El Owner delegó a Raul la elección del canal. Decisión: **canal C — esperar evidencia natural**. Razones:
+- El lote engineering GME (15 preguntas) está en vuelo con Kike + escalación de riesgo de diseño pendiente con el Owner. Sumar 2 preguntas más diluiría el foco GME (lanzamiento octubre 2026, alto stakes).
+- Abrir hilo separado con Kike/Keiddys para preguntas no urgentes saturaría el canal de aprobaciones sin valor inmediato — los wikis ya neutralizaron el riesgo (referencias a GST-RD/RG marcadas como "estado disponibilidad NO confirmado").
+- Si un proyecto futuro toca GST-RD o GST-RG, naturalmente se preguntará en ese contexto.
+
+**Marcador de seguimiento:** cualquier interacción con Kike/Keiddys donde naturalmente surjan los productos GST-RD/RG es oportunidad de pescar la respuesta. Si en 2 meses sigue sin haber claridad, reabrir D3.
+
+**Acción pendiente del Owner:**
+- Argumento 8 (COVENIN 3445): coordinar con Genteca/legal la verificación SENCAMER/FONDONORMA del certificado vigente y alcance por modelo.
+
+**Estado:** D3 cerrado por canal C. BR-2 cerrado para 7/8 argumentos. Argumento 8 queda en lista de pendientes con acción identificada.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

@@ -307,8 +307,127 @@
 
 ---
 
+---
+
+## Bloque Argumentos de venta tecnicos — Atlas 4 legacy (2026-05-07)
+
+**Referencia:** `03-projects/genteca/_governance/2026-05-07_BR-1_argumentos-venta-atlas-legacy.md` — archivo fuente con analisis detallado, caveats literales, riesgos transversales y precedentes aplicados. Las entradas que siguen son el registro formal de las decisiones autorizadas por el Owner el 2026-05-07.
+
+**Scope del bloque:** Argumentario tecnico Exceline Profesional / linea GST, extraido por Vera del Atlas 4 legacy (marzo 2026). Uso externo: equipos de ventas, distribuidores, material tecnico comercial. Argumento 8 (COVENIN 3445) EXCLUIDO — sigue bloqueado, pendiente verificacion documental.
+
+---
+
+### #22 — 2026-05-07 — Argumento 1: Monitor de red obligatorio Venezuela
+
+- **Claim evaluado (texto exacto):** "El monitor de red y el rele de sobrecarga son complementarios — no sustitutos. El rele actua cuando la corriente de falla ya se establecio; el monitor de red actua antes, al detectar la condicion de red que la causara (falta de fase, desequilibrio, subtension)."
+- **Identificador:** `argumento-venta-monitor-red`
+- **Producto / pieza:** Argumentario de ventas tecnico Exceline Profesional — uso externo (distribuidores, equipo comercial, material tecnico)
+- **Decision:** APROBADO CON CAVEAT (AMARILLO)
+- **Caveat textual obligatorio (palabra por palabra):** "El monitor de red y el rele de sobrecarga son complementarios — no sustitutos. El rele actua cuando la corriente de falla ya se establecio; el monitor de red actua antes, al detectar la condicion de red que la causara (falta de fase, desequilibrio, subtension). Los tiempos citados corresponden a especificaciones tecnicas estandar de dispositivos de proteccion. La frecuencia de estas condiciones varia segun la instalacion y la zona de suministro."
+- **Condicion de uso:** El caveat es obligatorio en cualquier pieza escrita que use este argumento. En uso oral, la regla transversal aplica: los datos sobre la red venezolana se presentan como condiciones tecnicas observables, no como estadisticas.
+- **Rationale:** Fundamento fisico irrefutable (IEC 60947-4-1). Riesgo unico: deslizamiento oral hacia "tres causas principales" como afirmacion estadistica. El caveat previene ese deslizamiento. Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** RISK-POLICY v1.0 §3 — no afirmar datos que puedan ser falsos (aplicado al dato de frecuencia de fallas en red venezolana sin fuente publicable).
+- **Precedente BR-5 referenciado:** BR-5 Precedente #3 (comparativos directos prohibidos — el argumento esta libre de referencia a marcas; conforme).
+- **Evidencia consultada:** BR-1 fuente §Argumento 1; IEC 60947-4-1.
+- **Scope:** Argumentario de ventas tecnico — uso externo Exceline Profesional. Vigente desde 2026-05-07.
+
+---
+
+### #23 — 2026-05-07 — Argumento 2: Rele electronico vs bimetalico
+
+- **Claim evaluado (texto exacto):** Comparativo tecnico: tres limitaciones del rele bimetalico clasico (no deteccion de desequilibrio, ausencia de memoria termica entre ciclos, tiempos de disparo en stall) vs rele electronico. Diferencial de costo del conjunto: 5-15%.
+- **Identificador:** `argumento-venta-rele-electronico-vs-bimetalico`
+- **Producto / pieza:** Argumentario de ventas tecnico Exceline Profesional — uso externo
+- **Decision:** APROBADO CON CAVEAT (AMARILLO)
+- **Caveat textual obligatorio (palabra por palabra):** "Las limitaciones descritas (deteccion de desequilibrio, memoria termica, tiempo de disparo en stall) corresponden al diseno estandar del rele bimetalico clasico — verificables en las curvas tiempo-corriente de especificacion del dispositivo. La condicion de desequilibrio de red (en torno al 5%) es una condicion tecnica frecuente en redes con variabilidad de suministro, que el profesional puede verificar con un multimetro en su instalacion. El diferencial de costo del 5-15% es una estimacion de referencia; varia segun el conjunto de maniobra especifico."
+- **Condicion de uso:** El diferencial de costo debe presentarse siempre como estimacion de referencia, no como dato de precision. El dato de desequilibrio CORPOELEC se presenta como condicion tecnica observable, no como estadistica publicada.
+- **Rationale:** Las tres limitaciones tecnicas del bimetalico son hechos de especificacion verificables. El dato de desequilibrio "frecuente en CORPOELEC" necesita el marco de condicion tecnica observable (no estadistica). El diferencial de costo es aritmeticamente correcto con rangos conservadores. Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** RISK-POLICY v1.0 §3 (dato de campo venezolano sin fuente publicable — reformulado como condicion tecnica).
+- **Precedente BR-5 referenciado:** BR-5 Precedente #3 (comparativo tecnologia vs tecnologia — no marca; conforme).
+- **Evidencia consultada:** BR-1 fuente §Argumento 2.
+- **Scope:** Argumentario de ventas tecnico — uso externo Exceline Profesional. Vigente desde 2026-05-07.
+
+---
+
+### #24 — 2026-05-07 — Argumento 3: Coordinacion Tipo 2
+
+- **Claim evaluado (texto exacto):** Distincion Tipo 1 / Tipo 2 segun IEC 60947-4-1. Beneficio operacional: solo fusibles como recambio ante cortocircuito (vs contactor completo en Tipo 1). Diferencial de costo del conjunto: 15-25% superior para Tipo 2.
+- **Identificador:** `argumento-venta-coordinacion-tipo-2`
+- **Producto / pieza:** Argumentario de ventas tecnico Exceline Profesional — uso externo (incluyendo fichas tecnicas y especificaciones formales)
+- **Decision:** APROBADO SIN RESTRICCIONES (VERDE)
+- **Caveat textual obligatorio:** Ninguno. En canales donde la audiencia exija precision (licitaciones, fichas tecnicas formales), presentar el diferencial de costo como "referencia aproximada que varia segun fabricante y diseno del conjunto."
+- **Rationale:** Argumento 100% normativo (IEC 60947-4-1). Diferencial de costo es referencia estandar del sector, no afirmacion estadistica. Sin comparativo de marcas. Sin datos de campo no verificables. Listo para uso externo incluyendo fichas tecnicas. Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** Ninguna — argumento libre de riesgos identificados.
+- **Precedente BR-5 referenciado:** Ninguno requerido.
+- **Evidencia consultada:** BR-1 fuente §Argumento 3; IEC 60947-4-1.
+- **Scope:** Argumentario de ventas tecnico y fichas tecnicas formales — uso externo Exceline Profesional. Vigente desde 2026-05-07.
+
+---
+
+### #25 — 2026-05-07 — Argumento 4: PTC para sumergibles
+
+- **Claim evaluado (texto exacto):** Mecanismo PTC para deteccion de marcha en seco en bombas sumergibles: la corriente del motor baja (o se mantiene) sin carga hidraulica — el rele de sobrecarga no detecta la condicion — el PTC mide temperatura real del devanado (150-160 degC) y actua cuando el rele no puede. Costo de reemplazo de motor sumergible significativamente superior al motor superficial equivalente.
+- **Identificador:** `argumento-venta-ptc-sumergibles`
+- **Producto / pieza:** Argumentario de ventas tecnico Exceline Profesional — uso externo
+- **Decision:** APROBADO CON CAVEAT (AMARILLO)
+- **Caveat textual obligatorio (palabra por palabra):** "La marcha en seco es uno de los modos de falla mas daninos en bombas sumergibles, porque la corriente del motor — el parametro que el rele de sobrecarga monitorea — no sube cuando falta el agua: la carga hidraulica desaparece y la corriente puede bajar o mantenerse. Solo el termistor PTC en el devanado detecta el calentamiento resultante. Los motores sumergibles tienen costos de reemplazo significativamente superiores a motores superficiales equivalentes por su diseno especial (sellado, construccion); el costo del PTC representa una fraccion pequena del valor del equipo protegido."
+- **Condicion de uso:** No usar "3-10x mas costoso" como dato cuantitativo en canales externos sin catalogo de precios citado. No usar "problema mas frecuente" como afirmacion estadistica — reformular como "uno de los modos de falla mas daninos."
+- **Rationale:** Mecanismo fisico irrefutable (secuencia corriente/temperatura en marcha en seco). Las dos afirmaciones sin fuente reformuladas en el caveat. Temperatura de disparo PTC (150-160 degC) verificable en especificaciones de componentes estandar. Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** RISK-POLICY v1.0 §3 (dato sin fuente: "problema mas frecuente" y "3-10x" — reformulados en caveat).
+- **Precedente BR-5 referenciado:** BR-5 Precedente #3 (sin comparativo de marcas; conforme).
+- **Evidencia consultada:** BR-1 fuente §Argumento 4.
+- **Scope:** Argumentario de ventas tecnico — uso externo Exceline Profesional. Vigente desde 2026-05-07.
+
+---
+
+### #26 — 2026-05-07 — Argumento 5: Clase 10 para bombas
+
+- **Claim evaluado (texto exacto):** Seleccion de Clase 10 vs Clase 20 para bombas centrifugas segun IEC 60947-4-1 Tabla VIII. Tiempo de arranque bomba centrifuga: 2-5 segundos. Clase 20 (disenada para cargas de alta inercia) genera riesgo de dano en stall con bomba centrifuga. Clase 10 es la seleccion correcta para este tipo de carga.
+- **Identificador:** `argumento-venta-clase-10-bombas`
+- **Producto / pieza:** Argumentario de ventas tecnico Exceline Profesional — uso externo (incluyendo fichas tecnicas y especificaciones formales)
+- **Decision:** APROBADO SIN RESTRICCIONES (VERDE)
+- **Caveat textual obligatorio:** Ninguno.
+- **Rationale:** Argumento 100% normativo y tecnico. Todos los datos cuantitativos provienen de IEC 60947-4-1 o de la fisica del equipo (tiempo de arranque bomba centrifuga). Sin comparativo de marcas. Sin datos de campo sin respaldo. Listo para uso externo incluyendo fichas tecnicas y especificaciones para licitacion. Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** Ninguna — argumento libre de riesgos identificados.
+- **Precedente BR-5 referenciado:** Ninguno requerido.
+- **Evidencia consultada:** BR-1 fuente §Argumento 5; IEC 60947-4-1 Tabla VIII.
+- **Scope:** Argumentario de ventas tecnico y fichas tecnicas formales — uso externo Exceline Profesional. Vigente desde 2026-05-07.
+
+---
+
+### #27 — 2026-05-07 — Argumento 6: Anti-short cycle en hardware GST-RR / GSC-CR
+
+- **Claim evaluado (texto exacto):** Tiempo minimo de reconexion de 180 segundos restringido por hardware en GST-RR y GSC-CR. Diferenciador verificable contra la ficha tecnica del producto. Referencia a "otros protectores ajustables" (categoria funcional, sin marca nombrada) que permiten configurar el temporizador desde 0 o 5 segundos.
+- **Identificador:** `argumento-venta-anti-short-cycle-hardware`
+- **Producto / pieza:** Argumentario de ventas tecnico — GST-RR / GSC-CR — uso externo
+- **Decision:** APROBADO SIN RESTRICCIONES (VERDE)
+- **Caveat textual obligatorio:** Ninguno. Nota operacional: verificar que la ficha tecnica publicada del GST-RR y GSC-CR sea la version vigente antes de uso externo en canal donde la audiencia pueda verificar el dato (distribuidores tecnicos, licitaciones). Confirmar que no hay confusion de nomenclatura con modelos GST-RD / GST-RG (en estado incierto segun DECISIONS.md 2026-05-07 D3) — los modelos RR y CR son distintos pero la verificacion es previa al uso externo.
+- **Rationale:** Argumento basado en spec de producto verificable (180 s por hardware). Fundamento fisico correcto (calor por ciclos de arranque sucesivos, verificable con calculo de energia). Sin comparativo de marcas ("otros protectores ajustables" es descripcion de categoria funcional — conforme BR-5 Precedente #3). Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** Ninguna aplicada — argumento libre de riesgos identificados con la nota operacional de verificacion de ficha tecnica.
+- **Precedente BR-5 referenciado:** BR-5 Precedente #3 (descripcion de categoria funcional vs comparativo de marca — conforme).
+- **Evidencia consultada:** BR-1 fuente §Argumento 6; ficha tecnica GST-RR / GSC-CR (version vigente a confirmar).
+- **Scope:** Argumentario de ventas tecnico — uso externo GST-RR / GSC-CR. Vigente desde 2026-05-07.
+
+---
+
+### #28 — 2026-05-07 — Argumento 7: Cable sumergible correctamente dimensionado (reformulado)
+
+- **Claim evaluado (texto exacto — version reformulada Opcion A autorizada):** "En instalaciones donde la tension de suministro puede estar por debajo del nominal (condicion comun en redes con variabilidad), una caida adicional de 10V en el cable puede dejar al motor a 91% de Vn. A esa tension, el par de arranque es 83% del nominal (par proporcional a V^2) y la corriente sube para compensar. Disenar siempre con la caida de tension en cable dentro del 3% del nominal — para 60 metros de profundidad y 5 HP a 220V, eso implica seccion minima de 6 mm^2."
+- **Identificador:** `argumento-venta-cable-sumergible-dimensionado`
+- **Producto / pieza:** Argumentario de ventas tecnico Exceline Profesional — uso externo
+- **Decision:** APROBADO CON CAVEAT (AMARILLO) — Opcion A (reformulacion sin dato CORPOELEC cuantitativo) autorizada por el Owner 2026-05-07.
+- **Caveat textual obligatorio (palabra por palabra):** "En instalaciones donde la tension de suministro puede estar por debajo del nominal (condicion comun en redes con variabilidad), una caida adicional de 10V en el cable puede dejar al motor a 91% de Vn. A esa tension, el par de arranque es 83% del nominal (par proporcional a V^2) y la corriente sube para compensar. Disenar siempre con la caida de tension en cable dentro del 3% del nominal — para 60 metros de profundidad y 5 HP a 220V, eso implica seccion minima de 6 mm^2."
+- **Restriccion critica:** El dato original "CORPOELEC ya en 210V en muchas zonas" fue ELIMINADO de la formulacion aprobada. El ejemplo numerico del 91% se mantiene como ilustrativo de la fisica (condicion generica de "redes con variabilidad"), NO como estadistica de la red venezolana. Prohibido restituir el dato cuantitativo de CORPOELEC en ninguna pieza externa sin fuente verificable (ver BR-1 Opcion B — requiere accion de Orlan).
+- **Rationale:** El argumento fisico (seccion del cable como parametro de diseno del sistema, caida de tension, consecuencias en par y corriente, norma del 3%) es solido y verificable (IEC 60364 y equivalentes, calculo de seccion vs caida estandar). El dato "210V en muchas zonas" fue eliminado por carecer de fuente publicable — reemplazado por "redes con variabilidad" como condicion generica. El ejemplo numerico del 91% se conserva como ilustracion de la fisica, no como afirmacion estadistica. Autorizado por el Owner 2026-05-07.
+- **Clausula RISK-POLICY aplicada:** RISK-POLICY v1.0 §3 (dato cuantitativo de campo sin fuente — eliminado; ejemplo numerico reencuadrado como ilustrativo).
+- **Precedente BR-5 referenciado:** BR-5 Precedente #3 (sin comparativo de marcas; conforme). Nota: este caso ilustra la regla transversal BR-1 sobre "datos de campo venezolano sin fuente" (candidato a Precedente BR-5 si el Owner decide formalizarlo).
+- **Evidencia consultada:** BR-1 fuente §Argumento 7 (Opcion A); IEC 60364; DECISIONS.md 2026-05-07.
+- **Scope:** Argumentario de ventas tecnico — uso externo Exceline Profesional. Vigente desde 2026-05-07. Si el Owner opta por Opcion B (evidencia verificable de dato CORPOELEC via Orlan), esta entrada se actualiza a AMARILLO con formulacion mas especifica — requiere nueva entrada en este log.
+
+---
+
 *Bruna — Risk & Claims Governance Lead — Sistema /RAUL/*
 *Log iniciado: 2026-05-03. Dominio: Genteca. Primer gate formal del sistema /RAUL/.*
-*Ultima actualizacion: 2026-05-06 (entradas #15 a #21 — bloque GME campana lanzamiento octubre 2026).*
-*Archivo fuente del bloque GME: `03-projects/genteca/GME Estudios de mercado/_intel/Bruna_gate_GME_2026-05-06.md`*
+*Ultima actualizacion: 2026-05-07 (entradas #22 a #28 — bloque argumentos de venta tecnicos Atlas 4 legacy; 7 argumentos autorizados por Owner; Argumento 8 COVENIN 3445 excluido, sigue bloqueado).*
+*Archivos fuente: bloque GME en `03-projects/genteca/GME Estudios de mercado/_intel/Bruna_gate_GME_2026-05-06.md`; bloque argumentos en `03-projects/genteca/_governance/2026-05-07_BR-1_argumentos-venta-atlas-legacy.md`*
 *Appendear nuevas decisiones al final de este archivo. No reemplazar entradas existentes.*

@@ -1,23 +1,33 @@
-# Argumentos de venta técnicos — USO INTERNO PENDIENTE GATE BRUNA
+# Argumentos de venta técnicos — Genteca
 
-> ## ⚠ DOCUMENTO INTERNO — NO PUBLICABLE EXTERNAMENTE
+> ## ✅ 7 de 8 ARGUMENTOS APROBADOS PARA USO EXTERNO (BR-2 2026-05-07)
 >
-> **Estado:** pendiente revisión por Bruna (governance / risk).
-> **Fecha de extracción:** 2026-05-07.
+> **Estado:** BR-2 emitido por Bruna 2026-05-07 tras autorización del Owner.
+> **Fecha de extracción inicial:** 2026-05-07.
 > **Origen:** Atlas 4 legacy (mercado Venezuela, marzo 2026) + RAG Integrador secciones 5-6.
+> **Log de claims:** `03-projects/genteca/_governance/2026-05-03_genteca_claim-approval-log_v1.md` (entradas #22 a #28 — appendeadas 2026-05-07).
 >
-> **NO usar en:**
-> - Material publicado externamente (LinkedIn, blog, email a cliente, deck a junta)
-> - Packaging, etiquetas, fichas comerciales públicas
-> - Comparativas formales con Schneider, ABB, Siemens, WEG o cualquier competidor identificable
+> **Distribución de veredictos:**
 >
-> **SÍ usar en:**
-> - Entrenamiento interno de equipo comercial Genteca
-> - Conversación 1:1 con técnicos de instalación (sin material impreso)
-> - Insumo para que Bruna evalúe gate antes de externalización
+> | # | Argumento | Veredicto | Uso externo |
+> |---|---|---|---|
+> | 1 | Monitor de red | 🟡 AMARILLO con caveat | ✅ aprobado |
+> | 2 | Relé electrónico vs bimetálico | 🟡 AMARILLO con caveat | ✅ aprobado |
+> | 3 | Coordinación Tipo 2 | 🟢 VERDE | ✅ aprobado sin cambios |
+> | 4 | PTC para sumergibles | 🟡 AMARILLO con caveat | ✅ aprobado |
+> | 5 | Clase 10 para bombas | 🟢 VERDE | ✅ aprobado sin cambios |
+> | 6 | Anti-short cycle hardware GST-RR/GSC-CR | 🟢 VERDE | ✅ aprobado (verificar ficha técnica vigente) |
+> | 7 | Cable sumergible (reformulado) | 🟡 AMARILLO con caveat | ✅ aprobado tras reformulación |
+> | **8** | **COVENIN 3445** | 🔴 **ROJO** | **❌ PENDIENTE — no usar externamente** |
+>
+> **Reglas de uso:**
+> - Los argumentos VERDE pueden usarse externamente sin caveat adicional.
+> - Los argumentos AMARILLO requieren incluir el caveat literal escrito en la sección "Caveat literal" de cada argumento (también en el log de claims).
+> - El Argumento 8 (COVENIN 3445) NO puede usarse externamente bajo ninguna forma hasta verificación SENCAMER/FONDONORMA del certificado vigente.
+> - Los argumentos comparativos contra terceros (Schneider, ABB, genéricos chinos, WEG) **siguen vetados** — viven en `legacy-atlas/ProtMotores_Atlas_4_Mercado_Venezuela.md` solo para consulta histórica.
 >
 > **Por qué este documento existe:**
-> Vera identificó (auditoría 2026-05-07) que el Atlas 4 tiene argumentos técnicos basados en física verificable — útiles. Pero también argumentos comparativos contra terceros que están en zona Precedente #3 de Bruna (gate GME) — riesgosos. Este documento contiene **solo los argumentos basados en física verificable**. Los argumentos comparativos quedaron en `legacy-atlas/ProtMotores_Atlas_4_Mercado_Venezuela.md` para consulta histórica, no para reutilización.
+> Vera identificó (auditoría 2026-05-07) que el Atlas 4 tiene argumentos técnicos basados en física verificable — útiles. Pero también argumentos comparativos contra terceros que están en zona Precedente #3 de Bruna (gate GME) — riesgosos. Este documento contiene **solo los argumentos basados en física verificable**.
 
 ---
 
@@ -148,34 +158,43 @@ Si un termostato mal calibrado o defectuoso genera ciclos de 1 minuto on / 1 min
 
 Caída de tensión en cable: ΔV = I × R_cable.
 
-Con la red CORPOELEC ya en 210V (en sistemas nominales 220V) en muchas zonas, una caída adicional de 10V en el cable deja al motor a 200V — 91% de la tensión nominal.
+En redes con variabilidad de tensión (subtensión por debajo de Vn nominal), la caída adicional en el cable se acumula sobre la subtensión de red. Si el motor opera ya por debajo de Vn (por causa de la red) y suma una caída adicional en cable insuficiente, puede recibir tensión sustancialmente menor a la nominal.
 
-A esta tensión:
-- Par de arranque: 91² = 83% del nominal (par ∝ V²)
+A 91% de Vn (ejemplo numérico):
+- Par de arranque: 0.91² = 83% del nominal (par ∝ V²)
 - Corriente: sube para compensar
 - Sobrecalentamiento incluso con carga normal
 
-**Norma de diseño:** caída máxima 3% de Vn — para 220V, máximo 6.6V; para 440V, máximo 13.2V.
+**Norma de diseño:** caída máxima en cable 3% de Vn — para 220V, máximo 6.6V; para 440V, máximo 13.2V.
 
 Para 60 metros de profundidad y 5 HP a 220V: mínimo 6 mm² (no 2.5 mm² como se usa frecuentemente para ahorrar).
 
-**Frase utilizable internamente:**
-"El cable de un motor sumergible es parte del sistema de protección, no solo un conductor. Con CORPOELEC ya en 210V y caída adicional en cable insuficiente, el motor recibe 200V — 91% de Vn. A esa tensión el par de arranque es 83% del nominal y la corriente sube para compensar. Calcular siempre con holgura."
+**Frase utilizable externamente (BR-2 aprobado, ver caveat):**
+"El cable de un motor sumergible es parte del sistema de protección, no solo un conductor. En redes con variabilidad de tensión, una caída adicional en cable insuficiente se acumula sobre la subtensión de red — el motor puede recibir tensión sustancialmente menor a la nominal. A 91% de Vn, el par de arranque es 83% del nominal y la corriente sube para compensar. Calcular siempre con holgura sobre el 3% de caída máxima."
 
-**Pendiente para gate Bruna:** afirmación "210V en muchas zonas" — observación sólida sin estadística publicable.
+**Caveat literal para uso externo:** la magnitud de la subtensión de red depende de cada zona y cada instalación; el ejemplo del 91% es ilustrativo, no estadística.
+
+**Estado:** 🟡 AMARILLO tras reformulación — aprobado para uso externo con caveat literal (BR-2 2026-05-07 tras reformulación autorizada por Owner).
 
 ---
 
 ## 8. Argumento — COVENIN 3445 (Exceline Profesional)
 
-**Fundamento normativo (verificable, basado en marco regulatorio venezolano):**
+> ### 🔴 BLOQUEADO — NO USAR EXTERNAMENTE
+>
+> **Estado:** ROJO en BR-1 2026-05-07. NO se autorizó en BR-2.
+> **Razón:** afirmar cumplimiento normativo con una norma específica sin presentar el número de certificado vigente y su alcance por modelo es riesgo regulatorio directo (precedente BR-2 entrada #13 sobre claim de certificación IEC/COVENIN para línea GSM).
+>
+> **Acción requerida antes de uso:** alguien técnico/legal de Genteca verifica en SENCAMER/FONDONORMA el estado y número de COVENIN 3445 vigente para los modelos Exceline Profesional + alcance por modelo. Sin ese dato, Bruna no puede gatear.
 
-COVENIN 3445 es la norma venezolana aplicable a dispositivos de supervisión y protección eléctrica. Los productos Exceline Profesional están diseñados según esta norma. Para instalaciones industriales formales en Venezuela, la especificación técnica local requiere cumplimiento COVENIN.
+**Fundamento normativo (verificable):**
 
-**Frase utilizable internamente:**
+COVENIN 3445 es la norma venezolana aplicable a dispositivos de supervisión y protección eléctrica. Los productos Exceline Profesional están diseñados según esta norma.
+
+**Frase que se podría usar (PENDIENTE verificación):**
 "Los productos importados europeos cumplen IEC; los americanos cumplen UL. Para instalaciones formales en Venezuela, la especificación técnica local requiere COVENIN. Exceline Profesional es la opción que cumple con el marco normativo local."
 
-**Pendiente para gate Bruna:** verificar vigencia COVENIN 3445 + verificar declaración formal de cumplimiento por parte de Genteca antes de uso externo.
+**Por qué está bloqueado:** sin certificado vigente verificable + alcance por modelo, la afirmación entra en zona de riesgo regulatorio. La frase es comercialmente valiosa si es real; el problema es el "si es real" — necesita evidencia documental.
 
 ---
 
@@ -216,6 +235,9 @@ Si en algún momento el equipo comercial necesita usar estos argumentos, requier
 
 ---
 
-**Próximo paso:** Bruna debe revisar este documento (gate BR-1 / BR-2) antes de cualquier uso externo. Hasta entonces, el documento existe como insumo de training interno.
+**Próximo paso:** Argumento 8 (COVENIN 3445) requiere verificación documental con SENCAMER/FONDONORMA antes de uso externo. Una vez tengas el certificado vigente y alcance por modelo, Bruna puede emitir BR-2 adicional para appendear al log de claims.
 
-**Última actualización:** 2026-05-07. Versión 0.1 (extracción inicial pendiente gate).
+**Historial de versiones:**
+
+- **v1.0 — 2026-05-08:** 7/8 argumentos aprobados externamente (BR-2 2026-05-07 → log claims #22-28). Argumento 7 (cable sumergible) reformulado eliminando dato cuantitativo "210V CORPOELEC" no respaldado, convertido a "redes con variabilidad de tensión". Argumento 8 (COVENIN 3445) sigue ROJO — pendiente verificación documental.
+- **v0.1 — 2026-05-07:** extracción inicial desde Atlas 4 legacy, marcado como "INTERNO-PENDIENTE-GATE" para revisión Bruna.
