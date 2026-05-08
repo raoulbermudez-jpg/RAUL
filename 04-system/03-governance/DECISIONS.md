@@ -289,4 +289,52 @@ Modelo A en `04-system/02-agents/`.
 
 ---
 
+## 2026-05-07 — Integración de atlas legacy 2026-03 a KB Genteca + GST-RD/GST-RG pendientes de aclarar con engineering
+
+**Decisión:** integrar selectivamente el set de atlas y RAG generados con Opus 4.6 en marzo 2026 (rescatados desde Drive y OneDrive en sesión 2026-05-07) a la KB activa de Genteca, según veredicto de auditoría técnica de Vera. Ejecutado en modo autónomo autorizado por el Owner.
+
+**Contexto:**
+
+- 9 archivos legacy fueron rescatados a `01-inbox/03-raw-sources/genteca/legacy-atlas-2026-03/` (8 atlas/RAG + 1 instrumental NotebookLM descartado).
+- Vera realizó auditoría técnica completa el 2026-05-07: ningún hallazgo crítico de contradicción técnica con trabajo reciente (GME, GST, GSM); 6 riesgos identificados, principalmente claims comparativos en Atlas 4 que requieren gate Bruna.
+- Owner autorizó ejecución completa del plan de Vera en modo autónomo.
+
+**Resultado de la integración:**
+
+| Archivo legacy | Acción ejecutada |
+|---|---|
+| Atlas 1 — Motores Trifásicos | INTEGRADO → `wiki/tech/motores-trifasicos-fundamentos.md` |
+| Atlas 2 — Protecciones Eléctricas | INTEGRADO → `wiki/tech/protecciones-electricas-motores.md` |
+| Atlas 3 — Aplicaciones | INTEGRADO (tablas + patrones) → `wiki/tech/aplicaciones-bombeo-refrigeracion.md` |
+| Atlas 4 — Mercado Venezuela | PARCIAL: archivado en `legacy-atlas/`; argumentos físicos puros extraídos a `wiki/tech/argumentos-venta-tecnicos-INTERNO-PENDIENTE-GATE.md` (uso interno solamente, pendiente gate Bruna) |
+| Atlas 5 — Exceline Profesional | ARCHIVADO en `legacy-atlas/` (specs ya cubiertas en `specs/` activos) |
+| Atlas 6 — Genius | ARCHIVADO en `legacy-atlas/` (specs ya cubiertas en `specs/` activos) |
+| RAG Integrador v2 | INTEGRADO (Protocolo + Q&A) → `wiki/tech/protocolo-seleccion-producto-genteca.md` |
+| URLs Bibliography | INTEGRADO → `wiki/references/referencias-bibliograficas-motores-trifasicos.md` |
+| URLs CopyPaste NotebookLM | DESCARTADO (instrumental obsoleto, contenido duplicado en Bibliography) |
+
+**Decisión D3 — GST-RD y GST-RG pendientes de aclarar con engineering:**
+
+Los productos GST-RD (supervisor con LCD e histórico) y GST-RG (curva inversa tiempo-voltaje) figuraban en marzo 2026 como "en desarrollo próximo". Al 2026-05-07 no hay evidencia en la KB activa ni en proyectos de avance en el desarrollo. Decisión conservadora aplicada en modo autónomo: en los wikis integrados, las referencias a estos productos se neutralizaron como "estado de disponibilidad NO confirmado" y se marcaron como "pendiente aclaración con engineering antes de mencionarlos a clientes".
+
+**Acción pendiente del Owner:** decidir si agregar 2 preguntas sobre estado real de GST-RD/RG al lote de 15 preguntas engineering GME ya en vuelo con Kike, o abrir hilo separado, o esperar evidencia natural.
+
+**Decisión D2 — argumentos de venta:**
+
+El Atlas 4 contenía SALES_ARGs comparativos contra Schneider y genéricos chinos que entran en zona Precedente #3 de Bruna (gate GME). Decisión aplicada:
+- Argumentos basados en física verificable → extraídos a doc interno `argumentos-venta-tecnicos-INTERNO-PENDIENTE-GATE.md`
+- Argumentos comparativos contra terceros + datos placeholder ("Y% probabilidad falla", "30% del Schneider" sin fuente) → quedan archivados solo en `legacy-atlas/`, NO se extrajeron al wiki
+- Bruna delegada para BR-1 sobre los argumentos extraídos antes de cualquier uso externo
+
+**Implicaciones:**
+
+- `wiki/tech/` y `wiki/references/` son carpetas nuevas en la KB de Genteca (no existían antes 2026-05-07).
+- `legacy-atlas/` es nueva carpeta hermana de `wiki/`, `specs/`, `assets/` — archivo histórico de consulta, no fuente activa de claims.
+- `argumentos-venta-tecnicos-INTERNO-PENDIENTE-GATE.md` está en KB pero marcado prominentemente como NO publicable hasta gate Bruna.
+- Los 8 archivos legacy rescatados (excepto el descartado) viven en `legacy-atlas/` para auditoría futura — no editar.
+
+**Estado:** completo en lo operativo. Pendiente del Owner: D3 (canal con engineering) + revisar BR-1 de Bruna cuando esté disponible + autorizar uso externo de argumentos técnicos extraídos cuando Bruna gate.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
