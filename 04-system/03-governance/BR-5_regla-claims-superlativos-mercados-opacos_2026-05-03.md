@@ -1,7 +1,7 @@
 # Precedents & Guidelines Memo — Risk & Claims (transversal)
 **Mantenido por:** Bruna — Risk & Claims Governance Lead
 **Ubicacion canonica:** `04-system/03-governance/`
-**Ultima actualizacion:** 2026-05-03
+**Ultima actualizacion:** 2026-05-08
 
 ---
 
@@ -192,11 +192,88 @@ Este criterio se revisa si el producto cambia la logica de reintentos a desconex
 
 ---
 
+### Datos cuantitativos de campo en contextos regulatorios / de infraestructura opacos (sin fuente estadistica publicable)
+
+#### Precedente #7 — 2026-05-08 — Argumento tecnico con dato cuantitativo de campo venezolano sin fuente publicable: tres salidas validas; reformulacion a condicion generica es la mas rapida
+
+**Dominio del caso original:** Genteca
+**Caso original:** BR-1 argumentos-venta atlas-legacy §Argumento 7 (2026-05-07) / BR-2 Genteca entrada #28
+**Producto:** Argumentario de ventas tecnico Genteca — cable sumergible correctamente dimensionado
+**Claim evaluado:** "Con CORPOELEC ya en 210V (en sistemas nominales 220V) en muchas zonas, una caida adicional de 10V en el cable deja al motor a 200V — 91% de la tension nominal"
+
+**Decision sobre el caso:** NARANJA (2026-05-07, BR-1) → AMARILLO con caveat (2026-05-08, Owner autoriza Opcion A)
+
+**Trigger del patron (cuando aplica este precedente):**
+
+Un argumento tecnico que descansa en una afirmacion cuantitativa especifica del contexto venezolano — o de cualquier contexto con infraestructura de datos opaca — sin fuente estadistica publicable. Ejemplos del patron:
+
+- "X% de desequilibrio frecuente en CORPOELEC"
+- "temperatura ambiente de Y grados en zonas industriales venezolanas"
+- "Z% de subtension en instalaciones de la region"
+- "W% probabilidad de falla en N anos segun datos de campo"
+- "[Red de suministro] ya en [valor] en muchas zonas"
+
+El dato es plausible y reconocido por practicantes del sector. El problema no es la plausibilidad: es la ausencia de fuente publicable. Si un cliente formal o un competidor pide la referencia, no hay respuesta verificable.
+
+**Las tres salidas validas:**
+
+**Salida 1 (reformulacion — usable hoy):** Eliminar el dato cuantitativo especifico. Reformular como condicion generica observable. Mantener el ejemplo numerico solo como ilustracion del impacto fisico, no como estadistica. Resultado: AMARILLO con caveat.
+
+Patron de reformulacion:
+- Antes: "[Fuente sin datos] ya en [valor cuantitativo] en [muchas zonas / porcentaje / frecuencia]"
+- Despues: "en redes con variabilidad de tension [o: ambientes industriales con temperatura elevada / instalaciones con red inestable / etc.]"
+- El ejemplo numerico sobrevive con el marcador "ilustrativo": "si la red entrega [valor inferior al nominal], una caida adicional de [delta] en el cable deja al motor a [resultado] — [porcentaje]% de la tension nominal; este calculo es ilustrativo del impacto fisico, no una estadistica de frecuencia."
+
+**Salida 2 (evidencia — mas fuerte, requiere accion):** Respaldar el dato cuantitativo con fuente verificable: informe MPPEE, norma COVENIN de calidad de energia, informe CORPOELEC, registro de mantenimiento industrial documentado, encuesta sectorial. Con fuente verificable, el claim puede pasar a VERDE (fuente solida: informe oficial con metodologia clara) o AMARILLO (fuente de nivel medio: registro de mantenimiento, encuesta de distribuidor). Esta salida requiere que Orlan o Vera provean la fuente — Bruna no investiga.
+
+**Salida 3 (uso interno solamente):** Mantener el dato cuantitativo sin reformulacion, pero limitar el argumento a entrenamiento interno del equipo comercial. El dato es valioso para que el vendedor comprenda el contexto y reconozca la condicion cuando la ve. No pasa a material externo (decks de ventas, fichas comerciales, empaque, material de distribuidor) en ninguna formulacion. Estado: ROJO para uso externo, valido para uso interno.
+
+**Resultado del caso concreto:**
+
+Owner eligio Salida 1 (Opcion A). Argumento 7 reformulado en `wiki/tech/argumentos-venta-tecnicos.md` (Genteca KB):
+- "CORPOELEC ya en 210V en muchas zonas" → "redes con variabilidad de tension" (condicion generica)
+- El ejemplo del 91% Vn se mantiene como ilustrativo, no estadistico
+- El argumento fisico central (formula delta-V, caida maxima 3% Vn, seccion minima 6 mm² para 60m/5HP/220V) queda intacto
+
+**Caveat literal estandar para Salida 1:**
+
+"La magnitud de [el fenomeno: la variabilidad de tension / el desequilibrio de red / la temperatura de operacion] depende de cada zona y cada instalacion; el ejemplo del [porcentaje o valor] es ilustrativo del impacto fisico, no una estadistica de frecuencia."
+
+Para el caso especifico de cable sumergible / subtension:
+"La magnitud de la variabilidad de tension depende de cada zona y cada instalacion; el ejemplo del 91% de Vn es ilustrativo del impacto fisico de una caida combinada (red + cable), no una estadistica de frecuencia para la red venezolana."
+
+**Aplicabilidad cross-dominio:**
+
+Este patron aplica a cualquier dominio del sistema /RAUL/ donde un argumento tecnico use un dato de campo cuantitativo sobre infraestructura con opacidad estadistica: red electrica venezolana (CORPOELEC), condiciones climaticas / temperatura industrial, tasas de falla de equipos en campo local, datos de calidad de agua o gas, metricas de conectividad o red de telecomunicaciones, cualquier afirmacion del tipo "en muchas zonas / instalaciones / casos de [pais o region sin estadisticas publicadas]".
+
+No se limita a Genteca. Plenus, Finca, Teca, Panama, marca-personal: si el argumento usa un dato cuantitativo de campo sin fuente publicable como premisa de un claim externo, aplica este precedente.
+
+**Conexion con Precedente #3 (comparativos directos):**
+
+Precedente #3 (gate GME, 2026-05-03): prohibe comparativos directos con marcas terceras sin evidencia publicable. Precedente #7 (este): pauta como manejar datos cuantitativos de contexto sin fuente publicable. Logica compartida: "reformular o respaldar antes de externalizar." En ambos casos, el argumento fisico o tecnico subyacente puede ser solido — el problema es la forma en que se expresa sin respaldo, no el mecanismo que describe. En ambos, la reformulacion correcta preserva el argumento de fondo.
+
+**Regla operativa para productores de claims (Vera / Solenne / Vael / Aurelio / cualquier agente CSC):**
+
+Cuando un argumento contiene [numero] + [fuente opaca] + [escala geografica o sectorial sin estadistica] (ej. "X% en muchas zonas", "frecuente en [pais]", "tipico en instalaciones [region]"):
+1. No pasar a uso externo sin gate de Bruna.
+2. Proponer reformulacion Salida 1 al Owner como camino rapido.
+3. Si el Owner quiere mantener el dato cuantitativo: solicitar a Orlan / Vera la fuente verificable (Salida 2).
+4. Si no hay fuente posible y el Owner quiere el dato exacto: limitar al uso interno (Salida 3).
+
+**Condicion de revision:**
+
+Este precedente no tiene condicion de revision de la regla. Su aplicacion puede matizarse en contextos donde existe estadistica publica robusta sobre la infraestructura del pais en cuestion (ej. si Venezuela publica estadisticas oficiales de calidad de energia con metodologia verificable, la Salida 2 se vuelve la ruta principal). La condicion de revision es: "aparece fuente estadistica publicable para el dato en cuestion" — en ese caso ese argumento especifico pasa por Salida 2 sin necesidad de Salida 1.
+
+**Casos posteriores que apliquen este precedente:** (pendiente — actualizar cuando aplique)
+
+---
+
 ## References
 
 - WORKSTREAM_v5_innovaciones.md §Regla de gateo de claims superlativos (2026-05-03)
 - Bruna_gate_empaque_v1.md §2 Claims A, B, C, L (decisiones originales de este precedente)
-- BR-2 Genteca — `03-projects/genteca/_governance/` (entradas #1 a #13)
+- BR-2 Genteca — `03-projects/genteca/_governance/` (entradas #1 a #13; entrada #28 — caso origen de Precedente #7)
 - Vera_brief_tecnico_v1.md (facts tecnicos que sustentan los RTBs)
 - Orlan_competencia_v1.md Secciones 1, 2, 4 (landscape competitivo Venezuela)
 - RISK-POLICY.md v1.0 (2026-04-25) — gobernanza general del sistema
+- BR-1 argumentos-venta atlas-legacy — `03-projects/genteca/_governance/2026-05-07_BR-1_argumentos-venta-atlas-legacy.md` §Argumento 7 (origen de Precedente #7)
