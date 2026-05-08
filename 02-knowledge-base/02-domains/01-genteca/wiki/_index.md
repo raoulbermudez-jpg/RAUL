@@ -1,6 +1,6 @@
 # Genteca — Wiki (index)
 
-**Estado:** stub. Esta carpeta se poblará en fases post-migración con artículos compilados sobre el dominio Genteca: fundamentos técnicos, patrones de aplicación, lecciones aprendidas de proyectos cerrados, guías de decisión.
+**Estado:** parcialmente poblado. Esta carpeta contiene artículos compilados sobre el dominio Genteca: fundamentos técnicos, patrones de aplicación, lecciones aprendidas, guías de decisión.
 
 ## Subcarpetas
 
@@ -8,14 +8,13 @@
   - `01-identidad-de-marca.md` — logos, Pantones, tipografías, atributos, esloganes, usos, fotografía.
   - `02-estrategia-digital-y-audiencias.md` — diagnóstico IG, benchmarking, audiencias, posicionamiento, pilares, framework digital, campaña AA/Refr.
 - `market/` — Market intelligence específico de Genteca (competidores, HMI, tendencias, benchmarking). Provisional bajo el dominio; se reevaluará promover a `03-cross-cutting/02-marketing-tecnico.md` si crece el marketing transversal (ver `FOLDER-ARCHITECTURE.md` §9).
+- `tech/` — **Poblado 2026-05-07.** Artículos técnicos compilados desde el atlas legacy de marzo 2026 tras auditoría Vera. Ver `tech/_index.md` para detalle. Incluye: fundamentos de motores trifásicos, protecciones eléctricas, aplicaciones (bombeo/refrigeración/ventiladores/transportadores), protocolo de selección de producto Genteca, y argumentos de venta técnicos (uso interno pendiente gate Bruna).
+- `references/` — **Poblado 2026-05-07.** Bibliografía técnica curada (22 fuentes académicas y técnicas con ~95% acceso abierto) sobre motores trifásicos y sus protecciones. Ver `references/_index.md`.
 
-## Qué va aquí (cuando se pueble)
+## Qué se podría añadir en el futuro
 
-- `01-fundamentos-tecnicos.md` — fundamentos de protección eléctrica aplicables a la línea Genteca.
-- `02-proteccion-motores.md` — patrones de protección para motores (refrigeración, bombas, VRF).
-- `03-proteccion-bombas-hidroneumaticos.md` — patrones para bombas sumergibles e hidroneumáticos.
 - `04-HMI-y-comunicacion-MODBUS.md` — GIO-Link, MODBUS RTU, integración HMI.
-- `05-lecciones-de-campo.md` — patrones observados en proyectos ejecutados.
+- `05-lecciones-de-campo.md` — patrones observados en proyectos ejecutados (GME, GST, GSM).
 
 ## Qué NO va aquí
 

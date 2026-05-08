@@ -1,0 +1,539 @@
+ATLAS 5 — EXCELINE PROFESIONAL: PROTECCIONES TRIFÁSICAS
+Base de Conocimiento: Protecciones Eléctricas para Motores Trifásicos
+Proyecto: ProtMotores | Carril 2 — Técnico/Industrial
+Fabricante/Distribuidor: GENTE, Generación de Tecnología, C.A. (GENTECA)
+Marca: Exceline Profesional | Mercado: Venezuela + Latinoamérica
+Versión: 1.0 | Marzo 2026
+Prefijos RAG: INGLÉS | Contenido: ESPAÑOL
+Fuente: Hojas de Especificaciones (HDE) oficiales GENTECA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 1 — DESCRIPCIÓN GENERAL DE LA LÍNEA
+
+TECH_PRODUCT: Exceline_Profesional_Linea_Trifasica
+  Descripción: Exceline Profesional es la línea de protecciones eléctricas de
+  grado industrial de GENTECA, diseñada específicamente para el mercado
+  venezolano y latinoamericano. Todos los productos están diseñados y
+  verificados bajo normas IEC de compatibilidad electromagnética (IEC 61000-4-x)
+  y fabricados en Venezuela.
+  Eslogan de línea: "GARANTIZA CONFIANZA Y DURACIÓN"
+  Normas base: COVENIN 3445 (Venezuela) | IEC 61010-1 | IEC 60255-6/8 |
+    IEC 60947-1 | UL 508 | IEEE C37.112
+  Ambiente de diseño: Industrial Severo (ambiente electromagnético más exigente).
+  Compatible con ambientes residenciales con medidas adicionales si aplica.
+  Temperatura operación: -5°C a +55°C.
+  Humedad relativa máxima: 85%.
+  Montaje: Riel simétrico DIN (estándar) + superficie plana (todos los modelos).
+  Contacto Venezuela: Av. El Buen Pastor c/c Vargas, Edif. Alba, Piso 1,
+    Local 1-A, Boleíta Norte, Caracas. Telf.: +58 212 237.07.11.
+    E-mail: genteven@genteca.com.ve | www.genteca.com.ve
+
+TECH_SEGMENT: Clasificacion_Linea_Exceline_Profesional_Trifasica
+  La línea trifásica Exceline Profesional se divide en dos familias:
+
+  FAMILIA A — SUPERVISORES DE VOLTAJE (Solo voltaje, sin medición de corriente):
+    Protegen contra fallas de red eléctrica: sub/sobretensión, falta de fase,
+    fase invertida, desequilibrio, variación de frecuencia.
+    Actúan vía contacto seco SPDT que maneja la bobina de un contactor.
+    No protegen contra sobrecarga de corriente → siempre se combinan con relé de
+    sobrecarga o arrancador.
+    Modelos: GST-RM, GST-RR (y próximamente GST-RD, GST-RG en desarrollo).
+
+  FAMILIA B — PROTECTORES DE SOBRECARGA (Voltaje + Corriente):
+    Protegen contra fallas de red Y fallas de corriente del motor/compresor.
+    Miden corriente mediante transformadores de corriente (CT) integrados.
+    Los cables del motor pasan directamente por los orificios del protector.
+    Compatible con cualquier tipo de contactor.
+    Modelos: GSC-MB, GSC-CR.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 2 — FAMILIA A: SUPERVISORES DE VOLTAJE
+
+TECH_PRODUCT: GST-RM_Supervisor_Trifasico_Motores_Transferencias
+  Nombre completo: Supervisor Trifásico para Motores, Transferencias y
+    Sistemas de Distribución GST-RM
+  Marca: Exceline Profesional
+  Modelos disponibles:
+    GST-RM220: Sistema 208/220 V~ trifásico
+    GST-RM440: Sistema 440/480 V~ trifásico
+  Normas: Diseñado según COVENIN 3445 | Verificado IEC 61000-4-2/3/4/5
+  Aplicaciones principales:
+    - Motores trifásicos de uso general (bombas, ventiladores, compresores)
+    - Sistemas de transferencia automática (ATS)
+    - Sistemas de distribución trifásica
+    - Bombas trifásicas de proceso
+  FUNCIONES DE PROTECCIÓN (todas incluidas):
+    ✓ Alto voltaje (sobrevoltaje)
+    ✓ Bajo voltaje (subtensión)
+    ✓ Apagones y parpadeos
+    ✓ Fase invertida
+    ✓ Pérdida de fase
+    ✓ Desbalance de voltaje
+    ✓ Variación de frecuencia
+  DIFERENCIADOR vs GST-RR: Tiempo de desconexión ajustable (0.5-10s) que
+    el GST-RR tiene fijo en 3s. Esta flexibilidad es ideal para motores y
+    transferencias que requieren ajuste fino del tiempo de respuesta.
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje nominal 208/220V: Bajo voltaje ajustable 165-200V | SV: 264V (fijo)
+    Voltaje nominal 440/480V: Bajo voltaje ajustable 350-420V | SV: 575V (fijo)
+    Pérdida de fase: IN >33%, OUT <28%
+    Desbalance de voltaje: IN ±8%, OUT ±6%
+    Variación de frecuencia: IN ±3% fn, OUT ±2% fn
+    Fase invertida: <0.5 s detección
+    Tiempo de desconexión (ajustable): 0.5 a 10 s
+    Tiempo de desconexión parpadeos: 150 ms
+    Tiempo de conexión (ajustable): 5 a 600 s
+    Contacto relé SPDT: 3.5A@250V~ / 1.5A@480V~
+    Cableado: 12-24 AWG
+    Carcasa: ABS y Nylon
+    Temperatura operación: -5°C a +55°C | Humedad: 85%
+    Dimensiones: 80mm × 100mm × 38mm | Peso: 0.116 kg (0.25 lb)
+  AJUSTE DE USUARIO (perillas manuales):
+    Perilla voltaje bajo (ajustable) | Perilla tiempo desconexión (0.5-10s) |
+    Perilla tiempo conexión (5-600s)
+  INDICADORES LED:
+    - Conectado/Temporizado (fijo=conectado, intermitente=temporizado)
+    - Sobre voltaje / Bajo voltaje / Desbalance
+    - Pérdida de fase / Fase invertida / Falla de frecuencia
+  SALIDA: Contacto SPDT
+    95: Contacto común | 98: NA (salida activada) | 96: NC (auxiliar de falla)
+  INSTALACIÓN: Riel DIN 35mm + superficie plana. Sin neutro (3 hilos).
+  IMPORTANTE: Requiere contactor externo para manejar la carga. El GST-RM
+    maneja solo la bobina del contactor, no la corriente del motor directamente.
+
+TECH_PRODUCT: GST-RR_Supervisor_Trifasico_Refrigeracion_AA
+  Nombre completo: Supervisor Trifásico para Refrigeración y Aire Acondicionado
+  Marca: Exceline Profesional
+  Modelos disponibles:
+    GST-RR220: Sistema 208/220 V~ trifásico
+    GST-RR440: Sistema 440/480 V~ trifásico
+  Normas: COVENIN 3445 | IEC 61000-4-2/3/4/5
+  Aplicaciones principales:
+    - Compresores de refrigeración trifásicos (herméticos, semiherméticos)
+    - Aires acondicionados trifásicos (splits, chiller, VRF)
+    - Cámaras frigoríficas comerciales e industriales
+    - Sistemas de refrigeración de proceso
+  FUNCIONES DE PROTECCIÓN (todas incluidas):
+    ✓ Alto voltaje (ajustable) — diferencial vs GST-RM donde es fijo
+    ✓ Bajo voltaje (ajustable)
+    ✓ Apagones y parpadeos
+    ✓ Fase invertida
+    ✓ Pérdida de fase
+    ✓ Desbalance de voltaje
+    ✓ Variación de frecuencia
+  DIFERENCIADOR CLAVE — ANTI-SHORT CYCLE INTEGRADO:
+    El tiempo de conexión mínimo es 180 segundos (3 minutos) — no configurable
+    por debajo de este valor. Esto garantiza que el compresor no rearranque
+    antes de que las presiones del sistema de refrigeración se hayan estabilizado.
+    Esta protección no puede ser "olvidada" por el instalador porque está
+    integrada en el hardware del producto.
+    COMPARACIÓN: GST-RM permite TC desde 5s → no apto para compresores.
+    GST-RR garantiza TC mínimo 180s → protección de compresor integrada.
+  DIFERENCIADOR — SOBREVOLTAJE AJUSTABLE:
+    A diferencia del GST-RM donde el SV es fijo (264V o 575V), el GST-RR
+    permite ajustar el sobrevoltaje: 230-270V (220V) o 495-575V (440V).
+    Esto permite adaptarse a los requisitos específicos del fabricante del
+    equipo de refrigeración (que puede especificar ±5%, ±10% o ±15%).
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje nominal 208/220V: UV ajustable 165-200V | OV ajustable 230-270V
+    Voltaje nominal 440/480V: UV ajustable 350-420V | OV ajustable 495-575V
+    Pérdida de fase: IN >33%, OUT <28%
+    Desbalance de voltaje: IN ±8%, OUT ±6%
+    Variación de frecuencia: IN ±3% fn, OUT ±2% fn
+    Fase invertida: <0.5 s detección
+    Tiempo de desconexión por fallas de V: 3 s (fijo)
+    Tiempo de desconexión parpadeos: 150 ms
+    Tiempo de conexión (ajustable): 180 a 600 s (MÍNIMO 180s — anti-short cycle)
+    Contacto relé SPDT: 3.5A@250V~ / 1.5A@480V~
+    Cableado: 12-24 AWG | Carcasa: ABS y Nylon
+    Temperatura operación: -5°C a +55°C | Humedad: 85%
+    Dimensiones: 80mm × 100mm × 38mm | Peso: 0.116 kg (0.25 lb)
+  AJUSTE DE USUARIO (perillas manuales):
+    Perilla voltaje bajo | Perilla voltaje alto | Perilla tiempo conexión (180-600s)
+  INDICADORES LED: Idénticos al GST-RM.
+  SALIDA: Contacto SPDT (idéntico al GST-RM).
+  INSTALACIÓN: Riel DIN 35mm + superficie plana. Sin neutro (3 hilos).
+  IMPORTANTE: Requiere contactor externo. Solo protección de voltaje — no de
+    sobrecarga de corriente. Combinar con GSC-CR para protección completa.
+
+COMPARISON: GST-RM_vs_GST-RR_diferencias_clave
+  | Parámetro              | GST-RM (Motores)    | GST-RR (Refrigeración)  |
+  | Sobrevoltaje           | Fijo (264V/575V)    | Ajustable (230-270V)    |
+  | Tiempo desconexión     | Ajustable 0.5-10s   | Fijo 3s                 |
+  | Tiempo conexión mín.   | 5 segundos          | 180 segundos (3 min)    |
+  | Anti-short cycle       | No integrado        | Sí, integrado hardware  |
+  | Aplicación ideal       | Motores, ATS        | Compresores refrig/A/A  |
+  Error común: Usar GST-RM en compresores de refrigeración → el instalador
+  debe recordar ajustar manualmente el tiempo de conexión a ≥180s. Con
+  GST-RR esto está garantizado en hardware, no depende del instalador.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 3 — FAMILIA B: PROTECTORES DE SOBRECARGA (VOLTAJE + CORRIENTE)
+
+TECH_PRODUCT: GSC-MB_Protector_Sobrecarga_Motores_Bombas
+  Nombre completo: Protector de Sobrecarga Trifásico para Motores y Bombas
+  Marca: Exceline Profesional
+  Modelos disponibles:
+    GSC-MB22012: 208/220V | 3.5–12.5A (solo disponible en 220V)
+    GSC-MB22032: 208/220V | 10–32A
+    GSC-MB22080: 208/220V | 25–80A
+    GSC-MB44032: 440/480V | 10–32A
+    GSC-MB44080: 440/480V | 25–80A
+  Normas: IEC 61010-1 | IEC 60255-6/8 | IEC 60947-1 | IEEE C37.112
+  Aplicaciones principales:
+    - Motores trifásicos industriales y comerciales
+    - Bombas centrífugas superficiales
+    - Ventiladores y sopladores trifásicos
+    - Transportadores y máquinas con motor trifásico
+    - Cualquier carga trifásica con motor de inducción
+  POSICIONAMIENTO: Sustituto superior al relé térmico bimetálico convencional.
+    Más confiable, más preciso, más rápido ante fallas combinadas de voltaje
+    y corriente, con calibración estable en el tiempo.
+  FUNCIONES DE PROTECCIÓN (todas incluidas):
+    ✓ Sobrecarga (corriente) — con curva I²t (Clase 10 frío / Clase 3 caliente)
+    ✓ Rotor trancado (locked rotor) — detección y disparo acelerado
+    ✓ Alto voltaje (sobrevoltaje)
+    ✓ Bajo voltaje (subtensión)
+    ✓ Desbalance de voltaje
+    ✓ Desbalance de corriente (CUB)
+    ✓ Pérdida de fase (voltaje y corriente)
+    ✓ Fase invertida
+    ✓ Apagones y parpadeos
+    ✓ Memoria térmica
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje sistema 208/220V:
+      Límites de operación: 124→300V~
+      UV ajustable: 145→285V~ | OV ajustable: 180→261V~
+      Histéresis: UV IN 8%, OUT 6% | VUB: IN 8%, OUT 6%
+    Voltaje sistema 440/480V:
+      Límites de operación: 264→672V~
+      UV ajustable: 300→625V~ | OV ajustable: 384→540V~
+    Falta de fase por voltaje (VSP): IN >33%, OUT <28%
+    Fase invertida (PR): <1 s disparo
+    Desbalance de corriente (CUB): IN >48%, OUT <28% (CSP >60%)
+    Tiempo desconexión por falla voltaje: 3 s (fijo)
+    Tiempo conexión después de falla (TC): 5 a 600 s (AJUSTABLE — perilla)
+    Clase térmica: Curva Fría: 10 | Curva Caliente: 3
+      (A mayor temperatura previa del motor, el tiempo de disparo es 1/3 menor)
+    Desconexión permanente: 3 fallas de corriente en <30 min → requiere reset
+      manual (IEEE Std. C37.112). Evita ciclos destructivos repetitivos.
+    Rango corriente: Ver tabla de modelos
+    Contacto relé: 1A@240V~ / 0.5A@480V~
+    Vida eléctrica: 100.000 operaciones | Vida mecánica: 10.000.000 operaciones
+    Categoría de uso: AC-15 (cargas >72VA)
+    Temperatura operación: -5°C a +55°C | Humedad: 85%
+    Dimensiones: 92mm × 91mm × 96mm | Peso: 417g (0.92 lb)
+    Cableado: 10-18 AWG
+    Carcasa: PC, ABS, Nylon
+  INSTALACIÓN (CARACTERÍSTICA ÚNICA):
+    Los cables del motor pasan directamente por los orificios con CT integrados.
+    No se requieren CT externos ni puntos adicionales de conexión.
+    Compatible con cualquier marca y modelo de contactor.
+    Montaje: Riel DIN + superficie plana.
+  AJUSTE DE USUARIO (2 perillas):
+    Perilla FLA: Ajusta la corriente máxima permitida al valor In del motor.
+    Perilla TC: Tiempo de conexión después de falla de voltaje (5-600s).
+  INDICADORES LED (4):
+    Señaliza el tipo de falla activa y el estado de la salida.
+  RESET: Botón pulsador manual para rearmado después de 3 fallas consecutivas.
+  TABLA CORRIENTES POR MODELO Y POTENCIA EQUIVALENTE:
+    GSC-MB22012: 3.5-12.5A → 208V: 0.75-3HP | 440V: no disponible
+    GSC-MB22032: 10-32A   → 208V: 3-7.5HP  | 440V: 7.5-20HP
+    GSC-MB22080: 25-80A   → 208V: 7.5-25HP | 440V: no disponible (usar 440)
+    GSC-MB44032: 10-32A   → 440V: 7.5-20HP
+    GSC-MB44080: 25-80A   → 440V: 20-50HP
+    Rango medición corriente: 0.35-125A (12), 1-320A (32), 2.5-800A (80)
+
+TECH_PRODUCT: GSC-CR_Protector_Sobrecarga_Compresores_Refrigeracion
+  Nombre completo: Protector de Sobrecarga Trifásico para Compresores de
+    Refrigeración y Aire Acondicionado
+  Marca: Exceline Profesional
+  Modelos disponibles:
+    GSC-CR22012: 208/220V | 3.5–12.5A (solo disponible en 220V)
+    GSC-CR22032: 208/220V | 10–32A
+    GSC-CR22080: 208/220V | 25–80A
+    GSC-CR44032: 440/480V | 10–32A
+    GSC-CR44080: 440/480V | 25–80A
+  Normas: IEC 61010-1 | IEC 60255-6/8 | IEC 60947-1 | IEEE C37.112
+  Aplicaciones principales:
+    - Compresores de refrigeración trifásicos (herméticos y semiherméticos)
+    - Compresores de aires acondicionados trifásicos
+    - Unidades condensadoras comerciales e industriales
+    - Chillers y equipos de proceso con compresor trifásico
+  POSICIONAMIENTO: El GSC-CR es físicamente idéntico al GSC-MB pero con una
+    diferencia técnica crítica en el tiempo mínimo de conexión, que lo hace
+    específicamente apto para compresores donde el GSC-MB no debe usarse.
+  FUNCIONES DE PROTECCIÓN:
+    Idénticas al GSC-MB en tipo de protecciones cubiertas.
+  DIFERENCIA CRÍTICA vs GSC-MB — ANTI-SHORT CYCLE INTEGRADO EN TC:
+    GSC-MB: Tiempo de conexión ajustable 5 a 600 segundos.
+    GSC-CR: Tiempo de conexión ajustable 180 a 600 segundos (MÍNIMO 180s).
+    El GSC-CR no puede configurarse para reconectar antes de 3 minutos.
+    Esta restricción de hardware garantiza que el compresor nunca rearranque
+    antes de que las presiones del circuito de refrigeración se estabilicen,
+    previniendo el liquid slugging y el arranque con cabeza alta de presión.
+    Es una protección de proceso que no depende del ajuste del instalador.
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje sistema 208/220V:
+      Límites: 124→300V~ | UV: 145→285V~ | OV: 180→261V~
+    Voltaje sistema 440/480V:
+      Límites: 264→672V~ | UV: 300→625V~ | OV: 384→540V~
+    Histéresis voltaje: UV IN 8%, OUT 6%
+    VUB: IN 8%, OUT 6% (IN >33% VSP, OUT <28%)
+    Fase invertida: <1 s
+    Desbalance corriente CUB: IN >48% | CSP: IN >60%
+    Tiempo desconexión falla V: 3 s (fijo)
+    TC (tiempo conexión): 180 a 600 s — MÍNIMO OBLIGATORIO 180 SEGUNDOS
+    Clase térmica: Curva Fría: 10 | Curva Caliente: 3
+    Desconexión permanente: 3 fallas corriente en <30 min → reset manual
+    Contacto relé: 1A@240V~ / 0.5A@480V~
+    Temperatura operación: -5°C a +55°C | Humedad: 85%
+    Dimensiones: 92mm × 91mm × 96mm | Peso: 398g (0.87 lb)
+    Cableado: 10-18 AWG | Carcasa: PC, ABS, Nylon
+  INSTALACIÓN: Idéntica al GSC-MB (cables del motor por orificios con CT).
+  TABLA MODELOS Y POTENCIAS (igual estructura que GSC-MB).
+
+COMPARISON: GSC-MB_vs_GSC-CR_seleccion_correcta
+  | Criterio                | GSC-MB               | GSC-CR                 |
+  | Aplicación              | Motores / Bombas     | Compresores Refrig/A/A |
+  | TC mínimo               | 5 segundos           | 180 segundos           |
+  | Anti-short cycle        | Manual (ajustable)   | Hardware (garantizado) |
+  | Compresor hermético     | NO RECOMENDADO       | SÍ — primera opción    |
+  | Motor bomba centrif.    | SÍ — primera opción  | No necesario           |
+  | Dimensiones             | 92×91×96mm, 417g     | 92×91×96mm, 398g       |
+  | Modelos disponibles     | 5 (igual)            | 5 (igual)              |
+  Nota: Son físicamente casi idénticos. La selección correcta depende
+  exclusivamente de la aplicación. Error frecuente: usar GSC-MB en compresor
+  con TC ajustado a 180s → depende del instalador. Con GSC-CR está garantizado.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 4 — NUEVOS DESARROLLOS (EN PROCESO — NO EN MERCADO AÚN)
+
+TECH_PRODUCT: GST-RD_En_Desarrollo
+  Nombre: Supervisor Trifásico GST-RD (En Desarrollo)
+  Marca: Exceline Profesional
+  Estado: Producto en desarrollo — no disponible aún en el mercado.
+  Descripción: Supervisor trifásico de voltaje para uso general, que incorpora
+    en la línea Exceline Profesional las capacidades avanzadas de visualización
+    y diagnóstico de la plataforma Genius (retrofit/adaptación). Diseñado para
+    competir con productos premium del mercado que incluyen pantalla digital.
+  Diferenciadores planificados vs GST-RM actual:
+    + Pantalla LCD (el GST-RM solo tiene LEDs)
+    + Histórico de fallas con fecha, hora y valor de la falla
+    + Rango de ajuste más amplio que el GST-RM
+    + Misma filosofía de protección trifásica de voltaje del GST-RM
+    + Mantiene la robustez y confiabilidad de la plataforma Exceline Profesional
+  Posicionamiento planificado: El supervisor trifásico de voltaje más completo
+    de Exceline Profesional — entre el GST-RM (perillas, sin pantalla) y los
+    relés Genius (pantalla completa, comunicación MODBUS).
+
+TECH_PRODUCT: GST-RG_En_Desarrollo
+  Nombre: Supervisor/Protector Trifásico GST-RG (En Desarrollo)
+  Marca: Exceline Profesional
+  Estado: Producto en desarrollo — no disponible aún en el mercado.
+  Descripción: Supervisor trifásico de voltaje específicamente diseñado para
+    motores y bombas trifásicas, que incorpora una curva inversa tiempo-voltaje
+    como mecanismo de protección principal.
+  DIFERENCIADOR TÉCNICO CLAVE — CURVA INVERSA TIEMPO-VOLTAJE:
+    La mayoría de los supervisores de voltaje operan con umbrales fijos: si el
+    voltaje supera o cae por debajo de un umbral ajustado, el relé dispara
+    después de un tiempo fijo de retardo.
+    El GST-RG propone un enfoque diferente: a mayor desviación del voltaje
+    respecto al valor nominal ajustado, menor es el tiempo admisible de
+    operación antes del disparo. Esta es la analogía en voltaje de lo que la
+    curva I²t hace en corriente (mayor corriente → disparo más rápido).
+    Fundamento técnico: La curva de daño de un motor trifásico no es un umbral
+    fijo — una desviación pequeña puede tolerarse más tiempo que una desviación
+    grande. La curva inversa tiempo-voltaje modela esto con mayor precisión que
+    un umbral fijo, protegiendo mejor el motor sin generar disparos intempestivos
+    por variaciones breves y pequeñas.
+  Aplicación planificada: Motores y bombas trifásicas — especialmente relevante
+    en el contexto venezolano donde la red CORPOELEC presenta desviaciones de
+    voltaje de magnitud variable y duración variable.
+  Posicionamiento planificado: El supervisor de voltaje más adecuado para
+    motores y bombas en la línea Exceline Profesional. Complementa al GST-RR
+    (optimizado para compresores de refrigeración) con una solución equivalente
+    pero optimizada para cargas rotativas de bomba y motor general.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 5 — COMPARACIONES Y SELECCIÓN DE PRODUCTOS
+
+COMPARISON: Matriz_Seleccion_Exceline_Profesional_Por_Aplicacion
+  Guía de selección rápida para la línea trifásica Exceline Profesional:
+
+  | Aplicación                     | Familia  | Producto rec. | Combinar con   |
+  | Motor trifásico general        | B        | GSC-MB        | Monitor red*   |
+  | Bomba centrífuga superficial   | B        | GSC-MB        | Presostato succ|
+  | Motor/bomba alta potencia      | B        | GSC-MB440     | Monitor red*   |
+  | Compresor refrig. hermético    | B        | GSC-CR        | GST-RR opcion. |
+  | Compresor A/A trifásico        | B        | GSC-CR        | GST-RR opcion. |
+  | Sistema trifásico general      | A        | GST-RM        | + relé sobr.   |
+  | Transferencia automática       | A        | GST-RM        | Solo           |
+  | Distribución trifásica         | A        | GST-RM        | Solo           |
+  | Refrig./A/A (solo voltaje)     | A        | GST-RR        | + relé sobr.   |
+  | Bomba sumergible               | B        | GSC-MB + PTC  | Sonda nivel    |
+
+  (*) Nota: Los GSC-MB y GSC-CR incluyen protección de voltaje (sub/sobre,
+  desbalance, fase perdida, secuencia). Para instalaciones con red CORPOELEC
+  muy inestable, el GST-RM puede añadirse como primera línea de detección
+  de condiciones de red antes de que afecten la corriente del motor.
+
+COMPARISON: Exceline_Profesional_vs_Rele_Termico_Bimetalico
+  El GSC-MB/CR vs. un relé térmico bimetálico convencional:
+
+  | Característica              | Térmico Bimetálico  | GSC-MB / GSC-CR     |
+  | Costo inicial               | Menor               | Moderado            |
+  | Protección sobrecarga       | Sí (I²t)            | Sí (I²t + CT)       |
+  | Precisión medición          | ±10-15%             | ±2% (CT integrado)  |
+  | Calibración en el tiempo    | Se deriva con temp. | Estable (electrónico)|
+  | Detección falta de fase     | Lenta (30-60s)      | Rápida (3s)         |
+  | Detección desbalance V      | No                  | Sí (IN ±8%)         |
+  | Detección desbalance I      | No (solo final)     | Sí (CUB >48%)       |
+  | Detección fase invertida    | No                  | Sí (<1s)            |
+  | Sub/sobrevoltaje            | No                  | Sí                  |
+  | Anti-short cycle            | No (CR: Sí)         | GSC-CR: 180s mínimo |
+  | Memoria térmica             | Parcial (se enfría) | Real (electrónica)  |
+  | Rotor trancado rápido       | Lento (clase fija)  | Clase 3 caliente    |
+  | Tercer falla → reset manual | No                  | Sí (protección acum)|
+  Conclusión: El GSC-MB ofrece protección significativamente superior en el
+  contexto venezolano (desbalances, falta de fase, desviaciones de voltaje),
+  al mismo tiempo que protege la corriente. Para compresores: solo GSC-CR.
+
+COMPARISON: Aplicaciones_de_Corriente_y_Potencia_por_Modelo
+  Referencia de selección de modelo por potencia del motor (valores aproximados):
+  Sistema 208/220V:
+    0.75-3 HP (0.55-2.2 kW): GSC-MB22012 / GSC-CR22012
+    3-7.5 HP (2.2-5.5 kW): GSC-MB22032 / GSC-CR22032
+    7.5-25 HP (5.5-18.5 kW): GSC-MB22080 / GSC-CR22080
+  Sistema 440/480V:
+    7.5-20 HP (5.5-15 kW): GSC-MB44032 / GSC-CR44032
+    20-50 HP (15-37 kW): GSC-MB44080 / GSC-CR44080
+  Para motores >50HP a 440V: Consultar línea Genius (GUCT+, GIII, GSPT-MV).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 6 — ARGUMENTOS DE VENTA TÉCNICA
+
+SALES_ARG: GST-RR_Anti_Short_Cycle_Argumento
+  Situación: Cliente quiere proteger compresor de A/A trifásico. Considera
+    GST-RM porque "es lo mismo pero más barato".
+  Argumento técnico:
+    "El GST-RM y el GST-RR tienen la misma protección de fallas de red.
+    La diferencia crítica está en el tiempo mínimo de reconexión después de una
+    falla: el GST-RM puede configurarse desde 5 segundos, el GST-RR garantiza
+    mínimo 180 segundos. Para un motor de bomba o ventilador, 5 segundos son
+    suficientes. Para un compresor de refrigeración, reconectar antes de 3
+    minutos puede causar liquid slugging, arranque contra presión alta y falla
+    mecánica del compresor. Con el GST-RR, esa protección está en el hardware
+    — no depende de que el instalador recuerde ajustar el temporizador."
+  Diferencial de precio: Mínimo. El diferencial justificado por el costo de
+    reposición de un compresor hermético quemado vs. un compresor intacto.
+
+SALES_ARG: GSC-MB_vs_Termico_Argumento_Venezuela
+  Situación: Cliente especifica relé térmico bimetálico convencional.
+  Argumento técnico:
+    "El relé térmico bimetálico fue diseñado para redes estables con variaciones
+    de ±5%. La red CORPOELEC tiene desequilibrios de 3-8% frecuentes y falta de
+    fase por fusibles quemados o contactores deteriorados. El GSC-MB detecta:
+    falta de fase en 3s (el térmico tarda 30-60s y puede no detectarla), desbalance
+    de corriente >48%, subtensión, sobretensión y fase invertida — además de la
+    sobrecarga que el térmico también detecta. La medición por CT integrado es más
+    precisa (±2%) y estable en el tiempo que el bimetálico. Y si hay 3 fallas
+    sucesivas en 30 minutos, bloquea hasta intervención humana — evitando que el
+    motor sea destruido por ciclos repetitivos sin diagnóstico."
+
+SALES_ARG: Fabricado_en_Venezuela_Argumento
+  "Los productos Exceline Profesional son fabricados en Venezuela por GENTECA,
+  una empresa venezolana con más de [X] años de experiencia diseñando y fabricando
+  tecnología de supervisión y control eléctrico. Están diseñados conociendo la
+  red CORPOELEC — no son productos importados adaptados. Tienes soporte técnico
+  local, disponibilidad de repuestos y reposición sin depender de importaciones."
+
+TECH_DIFFERENTIATOR: COVENIN_3445_Ventaja_Local
+  Los supervisores GST-RM y GST-RR están diseñados según COVENIN 3445, la norma
+  venezolana para este tipo de equipos. Los productos importados genéricos
+  frecuentemente declaran cumplimiento con IEC o UL pero no con COVENIN, que
+  es el marco normativo local aplicable. Para instalaciones industriales formales
+  en Venezuela, la conformidad con COVENIN es el requisito técnico local.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 7 — HALLAZGOS CLAVE
+
+FINDING: GSC-CR_Tiempo_Minimo_No_Configurable
+  La característica técnica más importante del GSC-CR no es su lista de funciones
+  de protección (idéntica al GSC-MB) sino su tiempo mínimo de conexión de 180
+  segundos fijo en hardware. Esto convierte al GSC-CR en el único protector de
+  sobrecarga trifásico de la línea que garantiza el anti-short cycle del compresor
+  independientemente del ajuste del instalador. Es una decisión de diseño que
+  elimina el error humano de configuración en la aplicación más crítica de la línea.
+
+FINDING: CT_Integrado_Ventaja_Instalacion
+  La integración de los transformadores de corriente (CT) directamente en el
+  cuerpo del GSC-MB y GSC-CR, con orificios por donde pasan los cables del motor,
+  elimina los puntos adicionales de conexión que existen en sistemas con CT
+  externos. Esto reduce el número de borneras, el riesgo de conexiones flojas y
+  el tiempo de instalación. Compatible con cualquier marca y calibre de cable
+  dentro del rango AWG admitido.
+
+FINDING: Clase_Termica_Adaptativa_Frio_Caliente
+  Todos los protectores GSC (MB y CR) usan clase térmica 10 en frío y clase 3
+  en caliente. Esto significa que después de una sobrecarga (motor caliente), si
+  ocurre otra sobrecarga, el tiempo de disparo es 1/3 del tiempo en frío. Esta
+  adaptación dinámica protege mejor al motor en condiciones de arranques
+  repetitivos o sobrecargas intermitentes, situación común en bombas con ciclos
+  de demanda y compresores en modo de control de temperatura.
+
+FINDING: Tercer_Falla_Bloqueo_Automatico
+  La función de bloqueo después de 3 fallas de corriente en menos de 30 minutos
+  (IEEE Std. C37.112) es una protección crítica para instalaciones sin supervisión
+  continua — común en Venezuela en pozos de bombeo, cuartos de máquinas y
+  instalaciones remotas. Sin esta función, un motor con un problema intermitente
+  (ej: bomba con impulsor parcialmente obstruido) puede disparar, rearrancar
+  automáticamente, disparar, rearrancar — degradando el motor en cada ciclo
+  hasta la falla catastrófica sin que nadie intervenga. El bloqueo fuerza la
+  intervención humana que diagnostique la causa raíz.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 8 — NORMAS Y FUENTES
+
+SOURCE: HDE_GST-RM_Exceline_Profesional
+  GENTECA. Hoja de Especificaciones GST-RM — Supervisor Trifásico para Motores,
+  Transferencias y Sistemas de Distribución. Caracas: GENTE, Generación de
+  Tecnología, C.A. www.genteca.com.ve
+
+SOURCE: HDE_GST-RR_Exceline_Profesional
+  GENTECA. Hoja de Especificaciones GST-RR — Supervisor Trifásico para
+  Refrigeración y Aire Acondicionado. Caracas: GENTE, Generación de Tecnología, C.A.
+
+SOURCE: HDE_GSC-MB_Exceline_Profesional
+  GENTECA. Hoja de Especificaciones GSC-MB — Protector de Sobrecarga Trifásico
+  para Motores y Bombas. Caracas: GENTE, Generación de Tecnología, C.A.
+
+SOURCE: HDE_GSC-CR_Exceline_Profesional
+  GENTECA. Hoja de Especificaciones GSC-CR — Protector de Sobrecarga Trifásico
+  para Compresores de Refrigeración y Aire Acondicionado.
+  Caracas: GENTE, Generación de Tecnología, C.A.
+
+SOURCE: COVENIN_3445
+  FONDONORMA/COVENIN. COVENIN 3445: Relés de protección. Norma venezolana
+  aplicable a dispositivos de supervisión y protección eléctrica.
+  Caracas: FONDONORMA.
+
+SOURCE: IEEE_C37_112_1996
+  IEEE. IEEE Standard Inverse-Time Characteristic Equations for Overcurrent
+  Relays. IEEE Std. C37.112-1996. Nueva York: IEEE.
+  Relevancia: Base normativa para la curva de disparo y la función de tercera
+  falla de los protectores GSC-MB y GSC-CR.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIN DEL ATLAS 5 — EXCELINE PROFESIONAL: PROTECCIONES TRIFÁSICAS
+Proyecto ProtMotores | Versión 1.0 | Marzo 2026
+Siguiente: Atlas 6 — Genius: Protecciones Trifásicas
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

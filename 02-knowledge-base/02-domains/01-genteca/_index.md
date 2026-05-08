@@ -24,9 +24,15 @@
     brand/               ← identidad de marca y estrategia digital — poblado 2026-04-30
     market/              ← market intelligence específico de Genteca (provisional bajo dominio)
       _index.md
+    tech/                ← artículos técnicos compilados — poblado 2026-05-07
+      _index.md          ← detalle de los 5 artículos
+    references/          ← bibliografía técnica curada — poblado 2026-05-07
+      _index.md
   specs/                 ← hojas de especificación, catálogos, manuales, datasheets
     _index-specs.md
     <192 documentos .md de producto>
+  legacy-atlas/          ← atlas y RAG legacy (marzo 2026) rescatados al repo, archivo de consulta
+    _index.md            ← poblado 2026-05-07
   assets/                ← material visual específico Genteca
     _index.md
     products/            ← fotos de producto (codificadas por código de producto)

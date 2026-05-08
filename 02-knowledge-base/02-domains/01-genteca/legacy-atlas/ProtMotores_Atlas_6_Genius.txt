@@ -1,0 +1,642 @@
+ATLAS 6 — GENIUS: PROTECCIONES TRIFÁSICAS
+Base de Conocimiento: Protecciones Eléctricas para Motores Trifásicos
+Proyecto: ProtMotores | Carril 2 — Técnico/Industrial
+Fabricante/Distribuidor: GENTE, Generación de Tecnología, C.A. (GENTECA)
+Marca: Genius | Submarca: SUBTRONIC (línea GSPT)
+Mercado: Venezuela + Latinoamérica
+Versión: 1.0 | Marzo 2026
+Prefijos RAG: INGLÉS | Contenido: ESPAÑOL
+Fuente: Hojas de Especificaciones (HDE) oficiales GENTECA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 1 — DESCRIPCIÓN GENERAL DE LA LÍNEA GENIUS
+
+TECH_PRODUCT: Genius_Linea_Trifasica_Overview
+  Descripción: Genius es la línea premium de relés de protección y control de
+  GENTECA, diseñada para aplicaciones industriales que requieren mayor
+  sofisticación: pantalla LCD, comunicación MODBUS RTU, clase térmica ajustable,
+  programador horario, medición de parámetros eléctricos avanzados y registro
+  de fallas. Todos los productos Genius están diseñados para Ambiente Industrial
+  Severo según estándares IEC y verificados electromagnéticamente con las
+  normas IEC 61000-4-x más exigentes (Clase 3 y Clase 4).
+  Normas base: IEC 61010-1 | IEC 60255-6/8 | IEC 60947-1 | UL 508 |
+    IEEE C37.112 | NOM-003 (algunos modelos)
+  Temperatura operación: -5°C a +55°C | Humedad máxima: 85%
+  Comunicación estándar: MODBUS RTU @ 9600 bps, RS485
+    Acceso mediante adaptador GIO-Plug o GIO-Link (accesorio vendido por separado)
+  Fabricación: Venezuela | GENTE, Generación de Tecnología, C.A.
+
+TECH_SEGMENT: Clasificacion_Linea_Genius_Trifasica
+  La línea trifásica Genius se organiza en tres familias:
+
+  FAMILIA G1 — RELÉS DE FALLA DE FASE (Solo voltaje, con LCD y MODBUS):
+    Protección de voltaje avanzada con pantalla, comunicación y programador.
+    Modelo: GII+ (con programador horario) — equivalente premium del GST-RM.
+
+  FAMILIA G2 — RELÉS DE PROTECCIÓN INTEGRAL (Voltaje + Corriente, estándar):
+    Protección completa: voltaje + corriente + modelo térmico ajustable.
+    Clase térmica configurable. LCD, MODBUS, programador horario opcional.
+    Modelos: GUCT+ (compacto, DIN) | GIII (gran formato, CT desmontable)
+
+  FAMILIA G3 — RELÉS DE PROTECCIÓN PARA BOMBAS (Voltaje + Corriente, especializado):
+    Optimizados para bombas en general. Clase térmica 10 fija + límite de
+    arranques por hora según NEMA MG10 + subcarga + histórico 80 fallas.
+    Modelos: GSPT (compact, CT integrado) | GSPT-MV (gran formato, multivoltaje,
+    PT100 temperatura)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 2 — FAMILIA G1: RELÉS DE FALLA DE FASE
+
+TECH_PRODUCT: GII_Plus_Rele_Falla_Fase_Con_LCD
+  Nombre completo: Relé de Falla de Fase GII+
+  Marca: Genius
+  Modelos disponibles:
+    GII+L120S: 120 VAC (monofásico — conexión L-N disponible)
+    GII+L208S: 208/220 VAC trifásico (L-L)
+    GII+L480S: 440/480 VAC trifásico (L-L)
+    Nota: Solo 208 y 480 disponibles en conexión L-L (trifásico).
+    Disponible con programador horario (modelo base GII+) para
+    eventos de encendido/apagado programados.
+  Normas: IEC 61010-1 | IEC 60255-6 | IEC 60947-1 | UL 508
+  Aplicaciones principales:
+    - Protección de voltaje para cargas trifásicas (motores, compresores, sistemas)
+    - Transferencias automáticas con control horario
+    - Sistemas de distribución trifásica con monitoreo
+    - Equipos que requieren encendido/apagado programado
+    - Aplicaciones donde se necesita historial de fallas y comunicación MODBUS
+  FUNCIONES DE PROTECCIÓN:
+    ✓ Sobre voltaje (OV): Ajustable 5-20% del voltaje nominal
+    ✓ Bajo voltaje (UV): Ajustable -20% a -5% del voltaje nominal
+    ✓ Desbalance de voltaje (VUB): Ajustable 2-10% | IN >33%, OUT <28%
+    ✓ Pérdida de fase (VSP): IN >33%, OUT <28%
+    ✓ Fase invertida (PR): <1s disparo
+    ✓ Variación de frecuencia: Ajustable ±2% a ±10% de Fn
+    ✓ Ciclado corto (Short cycling): Protección integrada
+  FUNCIONES DE MONITOREO Y COMUNICACIÓN:
+    ✓ Pantalla LCD 16×2: Voltaje de las 3 fases, desbalance, frecuencia, status
+    ✓ Botones: Rearme, Ajuste (×2), Selección (4 botones totales)
+    ✓ Puerto GIO (MODBUS RTU @ 9600 bps): Requiere GIO-Plug (accesorio separado)
+    ✓ Encendido/Apagado Remoto vía comunicación
+    ✓ Reportes: Voltaje | Valores ajustados | Modo encendido | Últimas 20 fallas
+    ✓ Histórico de fallas: Tipo de falla, valor, fecha, hora y tiempo de duración
+    ✓ Bloqueo de parámetros (Password): 0000=libre, 0001-9999=bloqueado
+  PROGRAMADOR HORARIO (solo modelo GII+):
+    ✓ 20 eventos programables (semanales)
+    ✓ 20 feriados programables
+    ✓ Batería de respaldo del reloj incluida
+    Aplicación: Programar encendido/apagado de sistemas según horario predefinido
+    (ahorro energético, restricciones de operación, mantenimiento programado).
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje operación: 120V (72-168V) | 208/220V (145-312V) | 440/480V (264-672V)
+    Consumo: 44 mA
+    Frecuencia: 50/60Hz | Operación: 42-70Hz
+    Ajuste UV: GII+L208: 165-225V | GII+L480: 350-460V
+    Ajuste OV: GII+L208: 215-270V | GII+L480: 460-580V
+    Histéresis voltaje: GII+L208: 6V | GII+L480: 12V
+    VUB: IN >33%, OUT <28% | Ajustable 2-10%
+    Frecuencia: ±2% a ±10% ajustable
+    TD (tiempo desconexión): Ajustable 1-30 s
+    TC (tiempo conexión): Ajustable 0-600 s
+    PR (fase invertida): <1s
+    Rearme: Automático o Manual (selección usuario)
+    Salida relé: SPDT | 3A@240V~ / 1.5A@480V~
+    Vida eléctrica: 100.000 op. | Vida mecánica: 10.000.000 op.
+    Categoría: AC-15 (cargas >72VA)
+    Temperatura: -5°C a +55°C | Almacenaje: -10°C a +70°C | HR: 85%
+    Grado protección: IP20
+    Dimensiones: 105mm × 90mm × 68mm | Peso: 230g (0.506 lb)
+    Cableado: 12-18 AWG
+    Carcasa: LEXAN, ABS, Nylon
+    Montaje: Riel DIN + Superficie plana + Empotrable (Flush Mounting)
+  COMPATIBILIDAD ELECTROMAGNÉTICA (IEC 61000-4-x):
+    Verificado para 11 tipos de perturbaciones electromagnéticas industriales
+    incluyendo: descargas electrostáticas, ruido radiado, transientes rápidas,
+    picos alta energía, perturbaciones conducidas, campos magnéticos,
+    reducciones/interrupciones, armónicos, fluctuaciones, desbalance, frecuencia.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 3 — FAMILIA G2: RELÉS DE PROTECCIÓN INTEGRAL
+
+TECH_PRODUCT: GUCT_Plus_Rele_Proteccion_Control_Motores
+  Nombre completo: Relé de Protección y Control de Motores GUCT+
+  Marca: Genius
+  Modelos disponibles (nomenclatura: GUCT+[CONTROL][VOLTAJE][CORRIENTE][IDIOMA]):
+    GUCT+208-04-S: 208/220/240V | 1-4A    | 0.5-0.75HP@208V
+    GUCT+208-12-S: 208/220/240V | 3.5-12.5A | 0.75-3HP@208V
+    GUCT+208-32-S: 208/220/240V | 10-32A  | 3-7.5HP@208V
+    GUCT+208-80-S: 208/220/240V | 25-80A  | 7.5-25HP@208V
+    GUCT+480-04-S: 440/480V     | 1-4A    | 0.5-2HP@480V
+    GUCT+480-12-S: 440/480V     | 3.5-12.5A | 2-7.5HP@480V
+    GUCT+480-32-S: 440/480V     | 10-32A  | 7.5-20HP@480V
+    GUCT+480-80-S: 440/480V     | 25-80A  | 20-50HP@480V
+    Con programador horario: GUCT++[voltaje][corriente][idioma]
+  Normas: IEC 61010-1 | IEC 60255-6/8 | IEC 60947-1 | UL 508 | IEEE C37.112
+    NOM-003 (versión México)
+  Aplicaciones principales:
+    - Motores trifásicos industriales de uso general
+    - Motores de bombas y ventiladores con requisitos de clase térmica ajustable
+    - Motores con arranques frecuentes (función anti-jogging)
+    - Sistemas integrados con SCADA/PLC via MODBUS
+    - Motores con demanda de control horario (apagado automático fuera de horario)
+  FUNCIONES DE PROTECCIÓN (completas):
+    ✓ Sobrecarga (OL): Ajustable 5-50% sobre In nominal
+    ✓ Subcarga (UC): Ajustable por FP o por % de In nominal (30-90% / FP 0.3-0.9)
+    ✓ Sobre voltaje (OV): Ajustable 5-20%
+    ✓ Bajo voltaje (UV): Ajustable -20% a -5%
+    ✓ Desbalance de voltaje (VUB): Ajustable 2-10%
+    ✓ Pérdida de fase voltaje (VSP): IN >33%, OUT <28%
+    ✓ Desbalance de corriente (CUB): IN >48%
+    ✓ Pérdida de fase corriente (CSP): IN >60%
+    ✓ Variación de frecuencia: Ajustable ±2% a ±10%
+    ✓ Fase invertida (PR): <1s
+    ✓ Rotor bloqueado (LR): Detección acelerada — 3 segundos de disparo
+    ✓ Memoria térmica: El modelo térmico continúa corriendo con motor parado
+  CLASE TÉRMICA AJUSTABLE (diferenciador vs GSC-MB y GSPT):
+    Clase ajustable de 5 a 30 (en pasos de 1).
+    Curva caliente = Curva fría / 3.
+    Tiempo máximo entre curvas fría/caliente: 2 horas.
+    El usuario selecciona la clase según la aplicación específica:
+      Clase 5-10: Cargas de baja inercia (bombas centrífugas, ventiladores)
+      Clase 10-20: Cargas de inercia media (compresores, algunas bombas)
+      Clase 20-30: Cargas de alta inercia (molinos, grandes ventiladores)
+  OPCIÓN DE ALTA INERCIA:
+    Parámetro adicional para motores con tiempo de arranque muy largo.
+    Umbral de calor por alta inercia: 400% del umbral normal.
+    Temporizado de conexión por alta inercia: 20-120 s ajustable.
+    Permite gestionar arranques de muy alta inercia sin disparo intempestivo.
+  PROTECCIÓN SUBCARGA (diferenciador vs GSC-MB):
+    Detecta cuando el motor trabaja con carga muy por debajo de la nominal.
+    Útil para: bomba sin caudal (rotura de impulsor), transmisión rota
+    (correa partida), nivel bajo en depósito (precursor de marcha en seco).
+    Tipo de detección: Ajustable por FP o por % de In.
+    Umbral FP: 0.3-0.9 ajustable.
+    Umbral %Inom: 30-90% ajustable.
+    Temporizado desconexión subcarga: 5-600 s ajustable.
+    Temporizado conexión tras subcarga: 2-500 min ajustable.
+  FUNCIONES DE MONITOREO:
+    ✓ Pantalla LCD 16×2
+    ✓ Medición: Corriente | Voltaje | Frecuencia | FP | kVA | kW | kWH
+    ✓ Histórico de fallas: 20 últimas fallas (tipo, valor, hora, fecha, duración)
+    ✓ Horas de trabajo acumuladas del motor
+    ✓ Bloqueo de parámetros (Password)
+  COMUNICACIÓN:
+    MODBUS RTU @ 9600 8N1 | GIO Port (requiere GIO-Plug vendido por separado)
+    Funciones remotas: Encendido/Apagado | Lectura de parámetros y fallas
+    Rango de direcciones: 1-127
+  PROGRAMADOR HORARIO (GUCT++):
+    60 eventos programables semanales | 20 feriados
+    Ajuste de reloj: hh:mm dd/mm/aa
+  ESPECIFICACIONES FÍSICAS Y ELÉCTRICAS:
+    Voltaje operación 208: 145-312V | 480: 264-672V | Consumo: 45 mA
+    Frecuencia: 50/60Hz | Operación: 42-70 Hz | Continuo
+    Rango medición voltaje: 0-312V (208) / 0-672V (480)
+    Rango medición corriente: 1.5-40A (04) | 0.3-125A (12) | 1-320A (32) | 2.5-800A (80)
+    Precisión: ±2% voltaje y corriente
+    Contactos: SPST | 1A@240V~ / 0.5A@480V~
+    Vida eléctrica: 100.000 op. | Vida mecánica: 10.000.000 op.
+    Categoría: AC-15 (B300 Pilot Duty)
+    Temperatura: -5°C a +55°C | Almacenaje: -10°C a +70°C | HR: 85%
+    Grado protección: IP20
+    Voltaje aislamiento: 500V | Impulso: 5kV | Dieléctrica: 2.5kV@50/60Hz
+    Dimensiones: 92mm × 91mm × 96mm | Peso: 494g (1.09 lb)
+    Cableado borneras: 10-18 AWG | CT interno: ≤11mm, AWG4
+    Carcasa: LEXAN, ABS, VYDYNE | Nivel contaminación: Grado 3
+    Montaje: Riel DIN + superficie plana
+
+TECH_PRODUCT: GIII_Rele_Proteccion_Total_Motores_Gran_Formato
+  Nombre completo: Relé de Protección Total de Motores GIII
+  Marca: Genius
+  Descripción: El GIII es el relé de protección total de motores de mayor
+  capacidad de la línea Genius. Comparte la plataforma del GSPT-MV con caja
+  de CT desmontable, pero además incluye 2 entradas digitales, puerto RS-485
+  independiente (además del GIO Port) y opción de CT externos para motores
+  de muy alta potencia.
+  Modelos disponibles:
+    GIII-120-050-S: 120V | 15-50A
+    GIII-120-100-S: 120V | 30-100A
+    GIII-120-180-S: 120V | 55-180A
+    GIII-208-050-S: 208/220V | 15-50A
+    GIII-208-100-S: 208/220V | 30-100A
+    GIII-208-180-S: 208/220V | 55-180A
+    GIII-480-050-S: 440/480V | 15-50A
+    GIII-480-100-S: 440/480V | 30-100A
+    GIII-480-180-S: 440/480V | 55-180A
+    GIII-XXX-000-S: CT externos (cualquier voltaje, sin CT integrado — para
+      motores de potencia superior a los rangos de CT integrados)
+    GIII+ (con programador horario): 60 eventos + 20 feriados
+  Normas: IEC 61010-1 | IEC 60255-6/8 | IEC 60947-1 | UL 508 | IEEE C37.112
+  Aplicaciones principales:
+    - Motores de alta potencia (15-180A): bombas de gran caudal, compresores
+      industriales, ventiladores de gran porte, transportadores pesados
+    - Instalaciones con integración PLC/SCADA intensiva (RS-485 dedicado)
+    - Motores con sensor de temperatura PT100 instalado
+    - Sistemas con señales de proceso externas (entradas digitales)
+    - Aplicaciones donde se requiere clase térmica personalizada (5-30)
+  DIFERENCIADORES EXCLUSIVOS DEL GIII (vs GUCT+):
+    1. DOS ENTRADAS DIGITALES:
+       Entradas tipo digital para integrar señales de proceso externas.
+       Ejemplos de uso: Señal de nivel bajo de cisterna, presostato, sensor de
+       flujo, señal de permisivo externo, señal de paro de emergencia remota.
+       Compatibilidad: Contacto seco (R<10kΩ = ON, R>100kΩ = OFF).
+    2. SENSOR DE TEMPERATURA PT100 INTEGRADO:
+       Entrada analógica para sensor Platino 100 Ohm, 3 cables (compatible 2 y 4 cables).
+       Rango medición: -20°C a +200°C.
+       Protección por temperatura: Ti (inicial) ajustable 20-150°C.
+       Temperatura máxima Tm: ajustable 50-200°C.
+       Disparo a Tm. Reconexión a (Tm-Ti)/6 + Ti.
+       Compensación por temperatura: Selección de usuario (sí/no).
+    3. PUERTO RS-485 INDEPENDIENTE:
+       Además del GIO Port, el GIII incluye una salida RS-485 dedicada (S-, S+, SG)
+       para integración directa con PLC o SCADA sin necesidad del adaptador GIO-Plug.
+       También dispone de GIO Port (requiere GIO-Plug).
+    4. OPCIÓN CT EXTERNOS (modelo 000):
+       Para motores de potencia muy alta cuyos cables no pasan por los CT integrados.
+       Compatible con CT externos de cualquier fabricante.
+    5. CLASE TÉRMICA AJUSTABLE (5-30):
+       Curvas disponibles: Clase 5, 10, 15, 20, 25, 30 (normas IEEE C37-112 / IEC 60255-8).
+       Curva caliente = Curva fría / 3.
+  FUNCIONES DE PROTECCIÓN (completas — superconjunto del GUCT+):
+    ✓ Sobrecarga / Subcarga (FP o %In)
+    ✓ Sobre voltaje / Bajo voltaje (ajustable)
+    ✓ Desbalance de voltaje y corriente
+    ✓ Pérdida de fase (voltaje y corriente)
+    ✓ Fase invertida
+    ✓ Variación de frecuencia
+    ✓ Rotor bloqueado (3s disparo)
+    ✓ Temperatura (PT100) — función exclusiva GIII
+    ✓ Detección de FP (factor de potencia) como criterio de subcarga
+    ✓ Alta inercia (umbral 400%, TC 20-120s)
+    ✓ Memoria térmica
+    ✓ Tercera falla → bloqueo permanente (IEEE C37.112)
+    ✓ Entradas digitales ×2 — función exclusiva GIII
+    ✓ Detección de factor de potencia: 0.0 a 1.0
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje operación: 120V (72-168V) | 208/220V (145-312V) | 440/480V (264-672V)
+    Consumo: 38 mA | Frecuencia: 50/60Hz | Operación: 42-70Hz
+    UV: 208V: 165-225V | 480V: 320-380V | 120V: 95-115V
+    OV: 208V: 215-270V | 480V: 420-480V | 120V: 125-145V
+    VUB: IN >33%, OUT <28% | Ajustable 2-10%
+    TD: 1-30s | TC: 0-600s | VSP: 3s
+    Rango corriente modelo 050: 1.5-500A | 100: 3.0-1000A | 180: 5.5-1800A
+    Salida relé control: SPDT | 3A@240VAC / 1.5A@480VAC
+    Salida relé auxiliar: SPDT adicional (para alarma vs disparo separados)
+    Vida eléctrica: 100.000 op. | Vida mecánica: 10.000.000 op.
+    Temperatura: -5°C a +55°C | Almacenaje: -10°C a +70°C
+    Grado protección: IP20 | Categoría OV: Categoría III, 4kV
+    Dimensiones GIII: 175mm × 90mm × 78mm
+    Dimensiones Caja CT: 175mm × 90mm × 79.8mm
+    Dimensiones total (GIII + Caja CT): 175mm × 90mm × 157.8mm
+    Peso GIII: 482g (1.06 lb) | Peso Caja CT: 882g (1.94 lb)
+    Peso total: 1364g (3.00 lb)
+    Cableado borneras: AWG30-12 | CT interno: <18mm, máximo AWG0
+    Montaje: Riel DIN + superficie plana + empotrable
+    Histórico fallas: 20 últimas fallas (tipo, valor, hora, fecha, duración)
+    Programador horario (GIII+): 60 eventos + 20 feriados
+  COMPATIBILIDAD EMC: 11 categorías IEC 61000-4-x con niveles de ensayo
+    detallados (Nivel 3 para la mayoría, Nivel 4 para picos y perturbaciones
+    conducidas — el nivel de inmunidad más exigente disponible).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 4 — FAMILIA G3: RELÉS DE PROTECCIÓN PARA BOMBAS (SUBTRONIC)
+
+TECH_PRODUCT: GSPT_Rele_Proteccion_Bombas_General
+  Nombre completo: Relé de Protección para Bombas en General GSPT (SUBTRONIC)
+  Marca: Genius | Sub-marca: SUBTRONIC
+  Modelos disponibles:
+    GSPT-208-04-S: 208/220/240V | 1-4A    | 0.5-0.75HP@208V
+    GSPT-208-12-S: 208/220/240V | 3.5-12.5A | 0.75-3HP@208V
+    GSPT-208-32-S: 208/220/240V | 10-32A  | 3-7.5HP@208V
+    GSPT-208-80-S: 208/220/240V | 25-80A  | 7.5-25HP@208V
+    GSPT-480-04-S: 440/480V     | 1-4A    | 0.5-2HP@480V
+    GSPT-480-12-S: 440/480V     | 3.5-12.5A | 2-7.5HP@480V
+    GSPT-480-32-S: 440/480V     | 10-32A  | 7.5-20HP@480V
+    GSPT-480-80-S: 440/480V     | 25-80A  | 20-50HP@480V
+  Normas: IEC 61010-1 | IEC 60255-6/8 | IEC 60947-1 | UL 508 | IEEE C37.112 | NEMA MG10
+  APLICACIÓN ESPECÍFICA: Diseñado especialmente para proteger motores de
+    bombas con clase térmica 10. Optimizado para el perfil de operación de
+    bombas: arranques frecuentes, riesgo de marcha en seco, subcarga por
+    bomba sin caudal o caudal insuficiente, ciclos repetitivos.
+  DIFERENCIADOR PRINCIPAL vs GUCT+ — CLASE TÉRMICA 10 FIJA + LÍMITE ARRANQUES:
+    El GSPT usa clase térmica 10 de forma fija (no ajustable por el usuario).
+    Esto garantiza la protección correcta para motores de bombas, cuya
+    inercia es baja y cuyos tiempos de arranque son cortos (2-5 segundos).
+    Usar una clase más alta (20 o 30) en una bomba centrífuga reduce la
+    protección ante rotor bloqueado, que con Clase 10 dispara en <10 segundos.
+  LÍMITE AUTOMÁTICO DE ARRANQUES POR HORA (NEMA MG10):
+    Función única de la línea GSPT: el relé limita la cantidad máxima de
+    arranques por hora según la potencia del motor instalado, en conformidad
+    con NEMA MG10. Esto previene el calentamiento acumulativo del rotor por
+    arranques excesivos en bombas con ciclos de nivel muy frecuentes.
+    Tabla de arranques máximos por hora (automática según HP configurado):
+      1-3 HP → 12 arranques/hora máximo
+      5-7.5 HP → 7 arranques/hora
+      10-15 HP → 5 arranques/hora
+      20-25 HP → 4 arranques/hora
+      30-50 HP → 3 arranques/hora
+      75-100 HP → 3 arranques/hora
+      125-250 HP → 2 arranques/hora
+    Tiempo mínimo entre arranques: 1-10 minutos (ajustable, NEMA MG10).
+  FUNCIÓN SUBCARGA (DETECCIÓN DE MARCHA EN SECO INDIRECTA):
+    El GSPT detecta condición de subcarga como indicador de:
+    - Bomba sin caudal (válvula cerrada, rotura de impulsor)
+    - Bomba con nivel bajo (precursor de marcha en seco en superficiales)
+    - Correa rota en sistemas de transmisión
+    Ajuste: Límite inferior relativo a corriente nominal.
+    Temporizado a desconexión por subcarga: 5-600 s ajustable.
+    Temporizado a conexión tras subcarga: 2-500 min ajustable.
+  HISTÓRICO 80 FALLAS (vs 20 del GUCT+):
+    El GSPT registra las últimas 80 fallas con: tipo de falla, valor, hora,
+    fecha y duración. Este histórico extendido es especialmente útil para
+    diagnóstico de bombas en pozos o cisternas remotas donde las fallas
+    intermitentes son difíciles de capturar en tiempo real.
+  FUNCIONES DE PROTECCIÓN (completas):
+    ✓ Sobrecarga (Clase 10 fría / Clase 3 caliente — no ajustable)
+    ✓ Subcarga (límite inferior relativo a In)
+    ✓ Sobre voltaje / Bajo voltaje (ajustable)
+    ✓ Desbalance de voltaje (VUB): IN >33%, OUT <28% | ajustable 2-10%
+    ✓ Pérdida de fase (voltaje y corriente)
+    ✓ Desbalance de corriente (CUB): IN >48% / CSP: IN >60%
+    ✓ Fase invertida (PR): <1s
+    ✓ Variación de frecuencia: ±2% a ±10%
+    ✓ Rotor bloqueado acelerado: Disparo en 3 segundos
+    ✓ Memoria térmica
+    ✓ Exceso de arranques falsos (límite por HP — NEMA MG10)
+    ✓ Tercera falla → bloqueo permanente (IEEE C37.112)
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje operación 208: 145-312V | 480: 264-672V | Consumo: 45 mA
+    UV 208: 165-225V | OV 208: 215-270V | Histéresis: 6V
+    UV 480: 350-460V | OV 480: 460-580V | Histéresis: 12V
+    VUB: IN >33%, OUT <28%
+    TD: 1-30s | TC: 0-600s | PR: <1s | LR (locked rotor): 3s
+    Clase térmica: 10 (fija) | Curva caliente: 10/3 = Clase 3.33
+    Subcarga: Límite inferior ajustable relativo a In
+    TC subcarga: 5-600s | TC conexión tras subcarga: 2-500 min
+    3ª Falla: Bloqueo permanente → reset manual requerido
+    Rango medición corriente: 1.5-40A (04) | 0.3-125A (12) | 1-320A (32) | 2.5-800A (80)
+    Rango medición voltaje: 0-312V (208) / 0-672V (480) | ±2% precisión
+    Otros parámetros medidos: FP (0.00-1.00) | kVA | kW | kWH | horas motor
+    Rango frecuencia: 45.0-70.0 Hz
+    Contactos: DPST | 1A@240V~ / 0.5A@480V~
+    Vida eléctrica: 100.000 op. | Vida mecánica: 10.000.000 op.
+    Temperatura: -5°C a +55°C | Almacenaje: -10°C a +70°C | HR: 85%
+    Grado protección: IP20 | Nivel contaminación: Grado 3
+    Voltaje aislamiento: 500V | Impulso: 5kV | Dieléctrica: 2.5kV
+    Dimensiones: 92mm × 91mm × 96mm | Peso: 494g (1.09 lb)
+    Cableado: 10-18 AWG | CT: ≤11mm, AWG4
+    Carcasa: LEXAN, ABS, VYDYNE
+    Montaje: Riel DIN + superficie plana
+    MODBUS RTU @ 9600 8N1 | GIO Port (GIO-Plug requerido separado)
+
+TECH_PRODUCT: GSPT_MV_Rele_Proteccion_Bombas_Multivoltaje
+  Nombre completo: Relé de Protección Total de Bombas en General GSPT-MV (SUBTRONIC)
+  Marca: Genius | Sub-marca: SUBTRONIC
+  Definición: Versión MULTIVOLTAJE y gran formato del GSPT. Agrega sensor de
+    temperatura PT100 y capacidad de motores de mayor potencia (hasta 180A).
+  Modelos disponibles:
+    GSPT-MV-050-S: Multivoltaje | 15-50A  → 3-10HP@220V / 7.5-25HP@440V (aprox)
+    GSPT-MV-100-S: Multivoltaje | 30-100A → 10-25HP@220V / 25-50HP@440V (aprox)
+    GSPT-MV-180-S: Multivoltaje | 55-180A → 20-50HP@220V / 50-150HP@440V (aprox)
+  DIFERENCIADORES EXCLUSIVOS vs GSPT estándar:
+    1. MULTIVOLTAJE CONFIGURABLE POR SOFTWARE:
+       El GSPT-MV puede configurarse para cualquiera de los siguientes voltajes
+       nominales sin cambiar el modelo:
+       Estándares: 208, 220, 230, 240, 400, 440, 480 V~
+       Especiales: 200, 420, 460 V~
+       Los límites de UV y OV se adaptan automáticamente al voltaje nominal
+       configurado. Ideal para distribuidores que manejan múltiples mercados
+       (Venezuela 220V, EE.UU. 460/480V, Europa 400V) con un solo stock.
+    2. SENSOR DE TEMPERATURA PT100:
+       Entrada analógica para sensor Platino 100 Ohm, 3 cables (compatible con
+       sensores de 2 y 4 cables). Rango: -20°C a +200°C.
+       Ajuste Ti (inicial): 20-150°C | Ajuste Tm (máximo): 50-200°C.
+       Disparo al alcanzar Tm. Reconexión a: (Tm - Ti)/6 + Ti.
+       Aplicación crítica: Bombas sumergibles sin agua — el PT100 detecta el
+       calentamiento del devanado independientemente de la corriente (que puede
+       no subir si la bomba opera sin carga).
+       Compensación por temperatura: Selección usuario (sí/no).
+    3. CAPACIDAD DE CORRIENTE MAYOR (hasta 180A):
+       Cubre motores hasta ~55-180A, equivalente a motores de 20-150HP@440V
+       o 20-50HP@220V — rangos no cubiertos por el GSPT estándar.
+    4. MONTAJE EMPOTRABLE EN PANEL (FLUSH MOUNTING):
+       Además de DIN y superficie plana, el GSPT-MV puede empotrar en panel.
+       El frontal insertable (accesorio vendido por separado) permite instalación
+       en puerta de tablero con acabado profesional.
+    5. CAJA DE CT DESMONTABLE:
+       Los CT del GSPT-MV están en una caja separada desmontable que se conecta
+       al cuerpo del relé. Permite instalar el relé en el tablero y llevar los
+       CT al punto de medición. Facilita la instalación en tableros existentes.
+  FUNCIONES DE PROTECCIÓN:
+    Idénticas al GSPT estándar + protección por temperatura (PT100).
+  ESPECIFICACIONES TÉCNICAS COMPLETAS:
+    Voltaje operación: 200-480V~ según configuración (cualquiera de los 10 valores)
+    Límites: 72-672V~ (rango total multivoltaje)
+    Consumo: 38 mA | Frecuencia: 50/60Hz | Operación: 42-70Hz
+    UV: -20% a -5% del voltaje nominal (entrega fábrica: -10%)
+    OV: +5% a +20% del voltaje nominal (entrega fábrica: +10%)
+    VUB: IN >33%, OUT <28% | Ajustable 2-10%
+    TD: 1-30s | TC: 0-600s | VSP: 3s | PR: <1s | LR: 3s
+    Rango corriente 050: 1.5-500A | 100: 3.0-1000A | 180: 5.5-1800A
+    Contactos: SPDT | 3A@240V~ / 1.5A@480V~
+    Temperatura: -5°C a +55°C | Almacenaje: -10°C a +70°C | HR: 85%
+    Grado protección: IP20 | Cat. OV: Cat. III, 4kV
+    Dimensiones GSP: 175×90×78mm | Caja CT: 175×90×79.8mm
+    Dimensiones total: 175×90×157.8mm
+    Peso GSP: 463g (1.53 lb) | Caja CT: 882g (1.94 lb) | Total: 1345g (2.95 lb)
+    Cableado: AWG12-18 | CT: <18mm, AWG0
+    Montaje: DIN + superficie plana + empotrable
+    MODBUS RTU @ 9600 8N1 | GIO Port (GIO-Plug requerido)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 5 — COMPARACIONES Y SELECCIÓN
+
+COMPARISON: Matriz_Seleccion_Genius_Por_Aplicacion
+  | Aplicación                       | Producto rec. | Diferenciador clave    |
+  | Protección voltaje + horario     | GII+          | LCD + MODBUS + horario  |
+  | Motor general clase adj.         | GUCT+         | Clase 5-30 ajustable    |
+  | Motor alta potencia / PT100      | GIII          | PT100 + RS485 + dig.in  |
+  | Motor grande CT externos         | GIII-000      | CT externos ilimitado   |
+  | Bomba centrífuga superficial     | GSPT          | Cl.10 + límite arran.   |
+  | Bomba sumergible (marcha seco)   | GSPT-MV       | PT100 + multivoltaje    |
+  | Bomba gran potencia (>50HP 220V) | GSPT-MV-180   | 55-180A + multivoltaje  |
+  | Multi-mercado (varios voltajes)  | GSPT-MV       | Configurable 200-480V   |
+  | SCADA intensivo, PLC             | GIII          | RS485 + entradas digit. |
+
+COMPARISON: GUCT_vs_GSPT_diferencias_estrategicas
+  | Criterio                | GUCT+                | GSPT                    |
+  | Clase térmica           | Ajustable (5-30)     | Fija (10) — para bombas |
+  | Límite arranques NEMA   | No incluido          | Sí — según HP           |
+  | Histórico de fallas     | 20 fallas            | 80 fallas               |
+  | Subcarga                | Por FP o %In         | Por %In (límite inf.)   |
+  | Aplicación diseñada     | Motores en general   | Bombas en general       |
+  | Protección PT100        | No (usar GIII/MV)    | No (usar GSPT-MV)       |
+  | Alta inercia            | Sí (ajustable)       | No (no aplica bombas)   |
+  | Entradas digitales      | No                   | No                      |
+  | RS-485 independiente    | No                   | No                      |
+  Regla práctica: Para bombas → GSPT. Para motores de proceso → GUCT+.
+  Para motores grandes o con PT100 → GIII / GSPT-MV.
+
+COMPARISON: GSPT_vs_GSPT_MV_cuando_usar_cada_uno
+  | Criterio                | GSPT estándar        | GSPT-MV                 |
+  | Voltajes soportados     | 208/220V ó 440/480V  | 200-480V configurable   |
+  | Corriente máxima        | 25-80A               | 15-180A (3 modelos)     |
+  | Sensor temperatura      | No incluido          | PT100 integrado         |
+  | Montaje empotrable      | No                   | Sí (Flush Mounting)     |
+  | Caja CT desmontable     | No                   | Sí (CT separable)       |
+  | Mercados múltiples      | No (fijo por modelo) | Sí (un stock, cualq. V) |
+  | Para sumergibles        | No ideal (sin PT100) | IDEAL (PT100 + subcarga)|
+  | Peso total              | 494g                 | 1345g (con caja CT)     |
+  Usar GSPT-MV cuando: Motor de bomba sumergible (PT100 marcha en seco),
+  motor >25HP@220V, mercado con tensiones distintas a 208/440V, o se requiere
+  montaje empotrado en panel.
+
+COMPARISON: Genius_vs_Exceline_Profesional_Posicionamiento
+  | Criterio                | Exceline Profesional | Genius                  |
+  | Pantalla (LCD)          | No (solo LEDs)       | Sí en todos             |
+  | Ajuste clase térmica    | Fija (10/3)          | Ajustable (GUCT+, GIII) |
+  | Comunicación MODBUS     | No                   | Sí en todos             |
+  | Programador horario     | No                   | Sí (modelos +)          |
+  | Histórico fallas        | No                   | 20 (GUCT+) / 80 (GSPT) |
+  | Sensor temperatura      | No                   | GSPT-MV / GIII          |
+  | Entradas digitales      | No                   | GIII (×2)               |
+  | Corriente máxima        | 80A (GSC-MB/CR)      | 180A (GSPT-MV / GIII)  |
+  | Perfil usuario          | Técnico instalador   | Ingeniero / SCADA      |
+  | Costo relativo          | Base (1×)            | Superior (1.5-3×)       |
+  Regla: Para el 80% de instalaciones estándar (motor + protección básica):
+  Exceline Profesional. Para el 20% que requiere diagnóstico avanzado,
+  integración con automatización, alta potencia o condiciones especiales: Genius.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 6 — ARGUMENTOS DE VENTA TÉCNICA
+
+SALES_ARG: GSPT_Limite_Arranques_Argumento
+  Situación: Cliente de sistema de bombeo con ciclos de nivel frecuentes.
+  Argumento técnico:
+    "Las bombas de nivel hacen arrancan y paran según flotadores o presostatos.
+    Si los flotadores están mal ajustados, pueden hacer 20-30 arranques por hora.
+    Cada arranque genera el equivalente térmico de 15-30 segundos de carga plena
+    en el rotor. El GSPT monitorea esto y bloquea el arranque si se supera el
+    límite de NEMA MG10 para la potencia de ese motor. No hay relé de sobrecarga
+    convencional — ni bimetálico ni electrónico genérico — que haga esto. Previene
+    la falla por ciclos excesivos, que es la segunda causa de quema de motores de
+    bombas después de la marcha en seco."
+
+SALES_ARG: GSPT_MV_Sumergible_PT100_Argumento
+  Situación: Cliente de bomba sumergible de pozo profundo.
+  Argumento técnico:
+    "La marcha en seco destruye un motor sumergible en minutos porque el agua
+    es su refrigerante. Cuando el nivel baja y la bomba opera sin agua, la corriente
+    del motor puede bajar — no subir — porque no hay carga hidráulica. Ningún relé
+    de corriente detecta esto. El GSPT-MV con sensor PT100 instalado en el devanado
+    del motor sí lo detecta: mide la temperatura real y dispara cuando alcanza
+    el límite configurado. Es la única protección efectiva contra marcha en seco
+    en bombas sumergibles, porque es independiente de la corriente."
+
+SALES_ARG: GUCT_Clase_Termica_Ajustable_Argumento
+  Situación: Cliente con motor de compresor de tornillo (alta inercia).
+  Argumento técnico:
+    "Un compresor de tornillo de 30 HP puede tardar 15-20 segundos en arrancar.
+    Con un relé de Clase 10, ese arranque puede dispararlo incluso cuando el motor
+    está sano. Con el GUCT+, usted selecciona Clase 20 o Clase 30 según el tiempo
+    de arranque real medido — y puede cambiarla sin reemplazar el relé. Un relé
+    térmico bimetálico requiere una referencia de hardware diferente para cambiar
+    de clase. El GUCT+ es un solo producto que se adapta a la aplicación."
+
+SALES_ARG: GIII_RS485_SCADA_Argumento
+  Situación: Planta industrial con sistema SCADA existente.
+  Argumento técnico:
+    "El GIII incluye puerto RS-485 dedicado (S-, S+, SG) para integración directa
+    con su PLC o SCADA sin ningún adaptador adicional. Reporta corriente, voltaje,
+    FP, kW, kWH, temperatura y el histórico de fallas en tiempo real. Las dos
+    entradas digitales permiten conectar señales de proceso — por ejemplo, un
+    presostato o sensor de nivel — para condicionar el arranque del motor desde
+    el mismo relé de protección. Es más que un relé de protección: es un
+    instrumento de medición y control integrado."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 7 — HALLAZGOS CLAVE
+
+FINDING: GSPT_Clase_10_Fija_Eleccion_Deliberada
+  La decisión de fijar la clase térmica en 10 en el GSPT (en lugar de hacerla
+  ajustable como en el GUCT+) no es una limitación sino una decisión de diseño
+  específica para bombas. Los motores de bombas centrífugas tienen baja inercia
+  y arranques cortos (2-5 segundos). La Clase 10 les da máxima protección contra
+  stall y sobrecarga con disparo en <10s. Dar al instalador la opción de subir
+  a Clase 30 puede reducir la protección efectiva. La clase fija elimina el error
+  de configuración por exceso de flexibilidad.
+
+FINDING: Historico_80_Fallas_GSPT_Valor_Diagnostico
+  El registro de 80 fallas (vs 20 del GUCT+) en el GSPT tiene una justificación
+  práctica: las bombas en pozos, cisternas y plantas de tratamiento operan sin
+  supervisión continua y pueden acumular muchas fallas menores a lo largo de
+  días o semanas. Al revisar el sistema periódicamente, el técnico puede ver
+  un patrón de fallas que indica la causa raíz (ej: fallas de subcarga cada
+  atardecer → nivel bajo al final del día → precursor de marcha en seco).
+  Con solo 20 fallas en registro, ese patrón podría haberse perdido.
+
+FINDING: Multivoltaje_GSPT_MV_Ventaja_Canal
+  El GSPT-MV multivoltaje tiene una ventaja logística significativa para
+  distribuidores que atienden múltiples países o plantas con diferentes tensiones
+  nominales. Un solo SKU de GSPT-MV cubre: Venezuela (220V), Colombia (220V),
+  México (220/440V), EE.UU. (460/480V) y Europa (400V). El distribuidor
+  mantiene un único inventario en lugar de mantener stock separado por tensión.
+  La configuración de voltaje se hace por software en el campo, sin herramientas
+  especiales.
+
+FINDING: GII_Plus_Programador_Horario_Aplicacion_Real
+  El programador horario del GII+ (y GUCT++/GIII+) no es solo una característica
+  de conveniencia. En instalaciones venezolanas, permite automatizar el apagado
+  de sistemas durante las horas de mayor riesgo de caída de la red (picos de
+  demanda), programar mantenimientos preventivos (apagado automático durante
+  horarios definidos), o gestionar el consumo energético (apagado fuera de
+  horario laboral). Con 20 eventos semanales y 20 feriados, cubre toda la
+  programación operativa de una instalación típica.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 8 — NORMAS Y FUENTES
+
+SOURCE: HDE_GII_Plus_Genius
+  GENTECA. Hoja de Especificaciones GII+ MV-01-0017-B.01-S — Relé de Falla de
+  Fase GII+. Caracas: GENTE, Generación de Tecnología, C.A. www.genteca.com.ve
+
+SOURCE: HDE_GUCT_Plus_Genius
+  GENTECA. Hoja de Especificaciones GUCT+ MV-01-01070.E-02-S — Relé de
+  Protección y Control de Motores GUCT+. Caracas: GENTE, Generación de
+  Tecnología, C.A. www.genteca.com.ve
+
+SOURCE: HDE_GIII_Genius
+  GENTECA. Hoja de Especificaciones GIII MV-01-0059.8-02-S — Relé de Protección
+  Total de Motores GIII. Caracas: GENTE, Generación de Tecnología, C.A.
+
+SOURCE: HDE_GSPT_Genius_Subtronic
+  GENTECA. Hoja de Especificaciones GSPT — Relé de Protección para Bombas en
+  General (SUBTRONIC). Caracas: GENTE, Generación de Tecnología, C.A.
+
+SOURCE: HDE_GSPT_MV_Genius_Subtronic
+  GENTECA. Hoja de Especificaciones GSPT-MV HDE V2 — Relé de Protección Total
+  de Bombas en General (SUBTRONIC). Caracas: GENTE, Generación de Tecnología, C.A.
+
+SOURCE: NEMA_MG10_Starts_Per_Hour
+  National Electrical Manufacturers Association. NEMA MG10: Energy Management
+  Guide for Selection and Use of Polyphase Motors.
+  Contenido: Tabla de número máximo de arranques por hora según potencia del motor.
+  Base normativa para la función de límite de arranques del GSPT.
+
+SOURCE: IEC_60255_8_Thermal_Relay
+  IEC 60255-8: Electrical relays — Part 8: Thermal electrical relays.
+  Contenido: Definición de clases de disparo térmico (5, 10, 15, 20, 25, 30)
+  y requisitos de curvas de disparo caliente/frío.
+  Base normativa para todos los relés Genius con modelo térmico.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIN DEL ATLAS 6 — GENIUS: PROTECCIONES TRIFÁSICAS
+Proyecto ProtMotores | Versión 1.0 | Marzo 2026
+Siguiente: RAG Integrador v2 — actualizado con Exceline Profesional y Genius
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,0 +1,493 @@
+RAG INTEGRADOR v2 — MAPA DE CONEXIONES CRUZADAS
+Base de Conocimiento: Protecciones Eléctricas para Motores Trifásicos
+Proyecto: ProtMotores | Versión 2.0 | Marzo 2026
+ACTUALIZACIÓN v2: Incorpora Atlas 5 (Exceline Profesional) y Atlas 6 (Genius)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOTA DE USO: Este documento es el mapa de conexiones entre los 6 Atlas.
+NO repite la ciencia ni las fichas técnicas — las referencia.
+Cargar PRIMERO en NotebookLM antes de los Atlas individuales.
+
+Atlas referenciados:
+  Atlas 1: Motores Trifásicos — fundamentos, parámetros, modos de falla
+  Atlas 2: Protecciones Eléctricas — tecnologías genéricas, coordinación
+  Atlas 3: Aplicaciones — bombeo, refrigeración, máquinas rotativas
+  Atlas 4: Mercado — competidores, argumentos de venta, Venezuela
+  Atlas 5: Exceline Profesional — GST-RM, GST-RR, GSC-MB, GSC-CR (+ GST-RD/RG)
+  Atlas 6: Genius — GII+, GUCT+, GIII, GSPT, GSPT-MV
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 1 — VOCABULARIO SEMÁNTICO UNIFICADO (actualizado v2)
+
+Prefijos y su referencia de Atlas:
+  CONCEPT: [parámetro motor]      → Atlas 1 (In, Vn, clase térm., IP, FS)
+  MECHANISM: [modo de falla]      → Atlas 1 + Atlas 2
+  TECH_PRODUCT: [dispositivo gen] → Atlas 2 (relé bimetálico, monitor red, etc.)
+  TECH_APPLICATION: [aplicación]  → Atlas 3 (bombas, compresores, transportadores)
+  MARKET_FINDING: [dato mercado]  → Atlas 4
+  COMPETITOR: [competidor]        → Atlas 4
+  SALES_ARG: [argumento]          → Atlas 4 + Atlas 5 + Atlas 6
+  TECH_PRODUCT: [Exceline Prof.]  → Atlas 5 (GST-RM, GST-RR, GSC-MB, GSC-CR)
+  TECH_PRODUCT: [Genius]          → Atlas 6 (GII+, GUCT+, GIII, GSPT, GSPT-MV)
+  COMPARISON: [comparación]       → Atlas 2 + Atlas 5 + Atlas 6
+
+Familia de productos GENTECA — mapa de modelos:
+  EXCELINE PROFESIONAL — Solo voltaje:
+    GST-RM (220/440): Motores, transferencias, distribución → Atlas 5
+    GST-RR (220/440): Refrigeración y A/A, anti-short cycle → Atlas 5
+    GST-RD [en desarrollo]: GST-RM con LCD e histórico → Atlas 5
+    GST-RG [en desarrollo]: Curva inversa tiempo-voltaje → Atlas 5
+  EXCELINE PROFESIONAL — Voltaje + Corriente:
+    GSC-MB (220: 12/32/80A; 440: 32/80A): Motores/bombas → Atlas 5
+    GSC-CR (220: 12/32/80A; 440: 32/80A): Compresores refrig/A/A → Atlas 5
+  GENIUS — Solo voltaje:
+    GII+ (120/208/480, con/sin horario): Cargas trifásicas → Atlas 6
+  GENIUS — Voltaje + Corriente:
+    GUCT+ (208/480 × 04/12/32/80A, con/sin horario): Motores → Atlas 6
+    GIII (120/208/480 × 050/100/180A/CT ext., con/sin horario): Alta pot. → Atlas 6
+    GSPT (208/480 × 04/12/32/80A): Bombas clase 10 fija → Atlas 6
+    GSPT-MV (MV × 050/100/180A): Bombas multivoltaje + PT100 → Atlas 6
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 2 — RUTAS TÉCNICAS COMPLETAS (FALLA → DETECCIÓN → PRODUCTO GENTECA → ARGUMENTO)
+
+Las rutas técnicas v2 añaden el producto específico de GENTECA que resuelve cada ruta.
+
+PATHWAY: Ruta_Falta_de_Fase → Producto_GENTECA
+  Atlas 1: Motor monofásico → corriente 200-300% en fases restantes → daño rápido.
+  Atlas 2: Detección: monitor red (<500ms) o relé electrónico (<1s).
+  Atlas 3: Compresores herméticos (no rebobinables) y sumergibles = máximo riesgo.
+  Atlas 4 + Venezuela: Causa más frecuente de quema de motores — fusibles o
+    contactores deteriorados.
+  Atlas 5 — Exceline Profesional:
+    GST-RM/GST-RR: Detectan VSP (IN>33%, OUT<28%) en <0.5s.
+    GSC-MB/GSC-CR: Detectan pérdida de fase por corriente (CUB>60%) en 3s.
+    Combinación óptima: GSC-MB + GST-RM = doble detección (voltaje + corriente).
+  Atlas 6 — Genius:
+    GII+: Detecta VSP en <1s. Reporte histórico + MODBUS.
+    GUCT+/GSPT/GIII: Detectan CSP (IN>60%) en <3s + VSP vía voltaje.
+  SALES_ARG integrado: "El GSC-MB detecta la falta de fase en 3 segundos por
+    corriente, más el GST-RM que la detecta en menos de 0.5 segundos por voltaje.
+    Dos líneas de defensa para la falla más frecuente en Venezuela."
+
+PATHWAY: Ruta_Desequilibrio → Producto_GENTECA
+  Atlas 1: 3-8% desequilibrio Venezuela → temperatura motor +25-50%.
+  Atlas 2: Detección voltimétrica (monitor red) o amperimétrica (relé electrónico).
+  Atlas 5 — Exceline Profesional:
+    GST-RM/GST-RR: VUB IN ±8%, OUT ±6% — detecta desequilibrio >8%.
+    GSC-MB/GSC-CR: CUB IN >48% — detecta desequilibrio de corriente severo.
+    NOTA: Los GST detectan desbalance antes que los GSC (voltaje antes que corriente).
+  Atlas 6 — Genius:
+    GII+: VUB ajustable 2-10%. Reporte de % de desbalance en pantalla LCD.
+    GUCT+/GIII/GSPT: VUB + CUB — doble detección voltaje y corriente.
+  SALES_ARG integrado: "El GII+ muestra el porcentaje real de desbalance en
+    pantalla. El técnico puede ver si el sistema tiene 3% o 6% de desbalance
+    sin instrumentos adicionales. Eso permite actuar antes de que el motor se dañe."
+
+PATHWAY: Ruta_Marcha_En_Seco → Producto_GENTECA
+  Atlas 1: Corriente puede BAJAR cuando bomba opera sin agua. Relé corriente NO detecta.
+  Atlas 2: PTC o sensor proceso detectan. Relé de sobrecarga estándar no detecta.
+  Atlas 3: Crítico en sumergibles y superficiales con cisterna vacía.
+  Atlas 5 — Exceline Profesional:
+    GSC-MB: No detecta directamente. Complementar con presostato en succión.
+    GSC-CR: No detecta directamente (aplicación compresor, no bomba de agua).
+    Recomendación Exceline Profesional: GSC-MB + presostato de baja presión
+    en succión (protección de proceso externa).
+  Atlas 6 — Genius:
+    GSPT: Detecta subcarga como precursor de marcha en seco. No mide temperatura.
+    GSPT-MV: DETECCIÓN DIRECTA con sensor PT100. Mide temperatura real del
+    devanado. Si la bomba opera sin agua y el motor se calienta → disparo por Tm.
+    GIII: También incluye entrada PT100.
+    SALES_ARG: "Para bombas sumergibles, el GSPT-MV con PT100 es la única
+    protección que detecta marcha en seco de forma directa, independientemente
+    de la corriente. El GSPT sin PT100 detecta la subcarga como señal indirecta."
+
+PATHWAY: Ruta_Short_Cycling_Compresor → Producto_GENTECA
+  Atlas 1: Cada arranque = calor extra. Límite de arranques/hora para cada HP.
+  Atlas 3: Compresores herméticos: arranque contra presión alta → falla mecánica.
+  Atlas 5 — Exceline Profesional:
+    GST-RR: TC MÍNIMO 180s EN HARDWARE. Garantía anti-short cycle sin configuración.
+    GSC-CR: TC MÍNIMO 180s EN HARDWARE. Mismo principio por el lado de corriente.
+    Combinación óptima compresores: GSC-CR + GST-RR = protección completa.
+  Atlas 6 — Genius:
+    GUCT+: TC configurable. Puede ajustarse a 180s pero depende del usuario.
+    GSPT: Función de límite de arranques/hora NEMA MG10. Complementaria.
+    GIII: TC configurable + PT100 para temperatura real del compresor.
+  SALES_ARG: "La diferencia entre el GSC-CR/GST-RR y cualquier otra protección
+    para compresores es que los 3 minutos mínimos de reconexión están en el
+    hardware. No se pueden configurar mal. No se pueden olvidar. Para compresores
+    herméticos que cuestan 5-10× más que un motor rebobinable, esa garantía
+    de hardware vale mucho más que su diferencial de precio."
+
+PATHWAY: Ruta_Subtension_Venezuela → Producto_GENTECA
+  Atlas 1: Tensión baja → par reducido (T∝V²) → corriente mayor → calentamiento.
+  Atlas 4: CORPOELEC: 200-210V en sistemas 220V es frecuente. Derating real.
+  Atlas 5 — Exceline Profesional:
+    GST-RM220: UV ajustable 165-200V → detecta subtensión bajo 165V (mínimo).
+    GST-RR220: UV ajustable 165-200V → mismo rango.
+    GSC-MB220: UV 145-285V → detecta subtensión bajo el umbral ajustado.
+  Atlas 6 — Genius:
+    GII+L208: UV ajustable 165-225V → puede ajustarse a 195V para capturar
+    la subtensión típica venezolana (210V en sistema 220V) si se desea.
+    GUCT+208: UV 165-225V → mismo rango ajustable.
+    GSPT-MV: UV -20% a -5% del voltaje nominal configurado → muy flexible.
+  SALES_ARG: "Con la red CORPOELEC en 210V y el ajuste de UV en 205V, el relé
+    detecta los períodos de subtensión más severos y protege el motor de operar
+    a 94% de tensión nominal de forma continua."
+
+PATHWAY: Ruta_Rotor_Bloqueado → Producto_GENTECA
+  Atlas 1: I = 5-7 × In indefinidamente → destrucción en segundos a minutos.
+  Atlas 2: Relé bimetálico: 30-90s (insuficiente). Electrónico: 3s.
+  Atlas 5 — Exceline Profesional:
+    GSC-MB/GSC-CR: Clase caliente = 3 → tiempo de disparo en caliente = 1/3 del frío.
+    Si motor ya estaba caliente y hay stall: disparo en tiempo de clase 3.
+    No tienen función locked rotor dedicada con timer configurable.
+  Atlas 6 — Genius:
+    GUCT+/GIII/GSPT/GSPT-MV: Función locked rotor acelerada → 3 SEGUNDOS FIJOS
+    de disparo ante rotor bloqueado. Independiente de la clase térmica configurada.
+    SALES_ARG: "El GUCT+ y el GSPT disparan en 3 segundos ante rotor bloqueado,
+    independientemente de la clase térmica configurada. Para un motor de 3 kW,
+    3 segundos vs 30+ segundos del bimetálico es la diferencia entre un
+    devanado intacto y un devanado quemado."
+
+PATHWAY: Ruta_Sobrecarga → Producto_GENTECA
+  Atlas 1: I > In → calor acumulado → degradación aislamiento (Arrhenius).
+  Atlas 2: Curva I²t (clase 10/20/30) define el tiempo de disparo admisible.
+  Atlas 5 — Exceline Profesional:
+    GSC-MB/GSC-CR: Curva fría clase 10 / curva caliente clase 3.
+    Ajuste por perilla FLA al valor de In del motor. Calibración estable en tiempo.
+    Medición por CT integrado (±2% vs ±10-15% del bimetálico).
+  Atlas 6 — Genius:
+    GUCT+/GIII: Clase térmica AJUSTABLE 5-30. Usuario configura la clase correcta.
+    GSPT/GSPT-MV: Clase 10 fija + curva caliente clase 3. Óptimo para bombas.
+    Todos: Memoria térmica real (el modelo térmico corre con motor parado).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 3 — MATRIZ DE SINERGIAS CRUZADAS INTER-DOMINIO (v2)
+
+CROSS_SYNERGY: Exceline_Profesional × Contexto_Venezuela
+  La línea Exceline Profesional fue desarrollada con el contexto venezolano
+  como referencia: COVENIN 3445, red CORPOELEC con desequilibrios frecuentes,
+  temperatura ambiente alta, instalaciones sin supervisión continua.
+  Los umbrales de VUB (IN ±8%, OUT ±6%) y los tiempos de detección (<0.5s
+  para fase invertida, 3s para fallas de voltaje) fueron calibrados para
+  el perfil de fallas real del sistema venezolano, no para el ideal normativo.
+
+CROSS_SYNERGY: GSC_CR × GST_RR × Compresor_Refrigeracion
+  La combinación óptima para compresores de refrigeración trifásicos en Venezuela:
+  GST-RR (solo voltaje, anti-short cycle 180s hardware) +
+  GSC-CR (voltaje + corriente, anti-short cycle 180s hardware).
+  Doble garantía: incluso si el usuario ajusta incorrectamente uno de los dos,
+  el otro mantiene la protección de anti-short cycle. Para compresores herméticos
+  (no rebobinables), esta redundancia de hardware es la mejor práctica.
+
+CROSS_SYNERGY: GSPT × Bombas × NEMA_MG10 × Arranques_Venezuela
+  La función de límite de arranques del GSPT (NEMA MG10) es especialmente
+  relevante en Venezuela porque las bombas de pozo profundo y cisterna operan
+  sin supervisión continua y pueden sufrir ciclos de arranque muy frecuentes
+  por: nivel bajo de agua (nivel de pozo fluctúa según demanda), flotadores
+  mal calibrados, presostatos con histéresis pequeña.
+  El GSPT detecta automáticamente cuándo se superan los arranques permitidos
+  por HP y bloquea el siguiente arranque — protección que ningún relé externo
+  importado genérico o europeo ofrece por defecto.
+
+CROSS_SYNERGY: GSPT_MV × Marcha_En_Seco × Venezuela_Sequias
+  En períodos de sequía o restricciones de agua potable (frecuentes en Venezuela),
+  los niveles de pozos y cisternas bajan drásticamente. Las bombas sumergibles
+  operan frecuentemente sin agua. El GSPT-MV con PT100 es la única protección
+  del portafolio GENTECA que detecta esta condición de forma directa (por
+  temperatura) independientemente de la corriente del motor.
+
+CROSS_SYNERGY: GIII × SCADA × Industria_Venezolana
+  Las plantas industriales venezolanas con sistemas SCADA o PLC existentes
+  (plantas de proceso, generadoras eléctricas, instalaciones petroleras)
+  necesitan integración de protecciones eléctricas con sus sistemas de control.
+  El GIII ofrece RS-485 nativo (sin adaptador), 2 entradas digitales para
+  señales de proceso, y comunicación MODBUS RTU — todo en el mismo relé de
+  protección. Reduce la cantidad de dispositivos en el tablero y centraliza
+  el diagnóstico en el sistema SCADA existente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 4 — PARES Q&A OPTIMIZADOS PARA RAG (v2 — incluye productos GENTECA)
+
+QA_Q: ¿Qué producto Exceline Profesional o Genius recomiendas para proteger un compresor de refrigeración de 5 HP a 220V?
+QA_A: Para un compresor de refrigeración trifásico de 5 HP a 220V, la recomendación
+  óptima combina dos productos Exceline Profesional (Atlas 5):
+  Primero, el GSC-CR22032 (Protector de Sobrecarga Trifásico para Compresores,
+  modelo 220V, 10-32A) que protege contra sobrecarga, rotor trancado, falta de
+  fase, desbalance de corriente y voltaje. Su característica crítica para
+  compresores es el tiempo mínimo de conexión de 180 segundos — anti-short cycle
+  integrado en hardware.
+  Segundo, el GST-RR220 (Supervisor Trifásico para Refrigeración) como primera
+  línea de detección de condiciones de red (detecta falta de fase en <0.5s,
+  vs los 3s del GSC-CR). También tiene anti-short cycle de 180s por hardware.
+  La combinación GSC-CR + GST-RR da doble protección de red + protección de
+  corriente + doble garantía de anti-short cycle. Alternativamente, si se
+  requiere MODBUS y registro de fallas, el GUCT+208-32 (Genius, Atlas 6) cubre
+  ambas funciones en un solo dispositivo con clase térmica ajustable.
+
+QA_Q: ¿Cuál es la diferencia entre el GSC-MB y el GSC-CR de Exceline Profesional?
+QA_A: El GSC-MB y el GSC-CR son físicamente casi idénticos y ofrecen las mismas
+  funciones de protección (Atlas 5): sobrecarga, rotor trancado, falta de fase,
+  desbalance de voltaje y corriente, sub/sobretensión, fase invertida, apagones.
+  La diferencia crítica está en una sola especificación: el tiempo mínimo de
+  conexión después de una falla de voltaje. El GSC-MB lo tiene ajustable de 5 a
+  600 segundos. El GSC-CR lo tiene restringido de 180 a 600 segundos — no puede
+  configurarse por debajo de 3 minutos. Esto convierte al GSC-CR en el protector
+  correcto para compresores de refrigeración, donde reconectar antes de 3
+  minutos puede causar liquid slugging y daño mecánico al compresor. El GSC-MB
+  es el correcto para motores de bombas, ventiladores y uso general, donde no
+  hay restricción de tiempo mínimo de reconexión. La selección correcta depende
+  únicamente de la aplicación, no del precio ni del tamaño.
+
+QA_Q: ¿Para qué sirve el sensor PT100 en el GSPT-MV y cuándo es necesario?
+QA_A: El sensor PT100 en el GSPT-MV (Atlas 6) mide la temperatura real del devanado
+  del motor a través de un sensor instalado en los bobinados. Es necesario cuando
+  el motor puede sobrecalentarse sin que la corriente eléctrica lo refleje — la
+  condición más crítica es la marcha en seco de bombas sumergibles (Atlas 1 y 3).
+  Cuando una bomba sumergible opera sin agua, el motor pierde su refrigerante
+  natural (el agua). La temperatura del devanado sube rápidamente. Pero la
+  corriente del motor puede bajar (sin carga hidráulica) o mantenerse normal —
+  ningún relé de corriente detecta este peligro. El PT100 lo detecta directamente
+  por temperatura. Cuando se alcanza la temperatura máxima configurada (Tm), el
+  GSPT-MV dispara. La reconexión solo ocurre cuando la temperatura baja a un
+  valor calculado según los parámetros configurados. Para bombas sumergibles en
+  pozos con nivel variable (muy común en Venezuela), el GSPT-MV con PT100 es la
+  protección más efectiva disponible en la línea GENTECA.
+
+QA_Q: ¿Cuándo usar el GUCT+ y cuándo usar el GSPT de Genius?
+QA_A: La elección entre GUCT+ y GSPT depende de la aplicación específica (Atlas 6).
+  Usar GUCT+ cuando: El motor no es de bomba (compresor de tornillo, ventilador
+  industrial, transportador, máquina con inercia variable), se requiere clase
+  térmica ajustable (la aplicación tiene tiempo de arranque largo que requiere
+  Clase 20 o 30), se necesita la función de alta inercia, o el sistema debe
+  integrar con SCADA mediante MODBUS.
+  Usar GSPT cuando: La aplicación es bomba (centrífuga, de pozo, de aguas
+  residuales), el tiempo de arranque es corto (2-5s — Clase 10 es correcta),
+  se requiere control del número de arranques por hora (NEMA MG10) para evitar
+  daño por ciclos excesivos, o se necesita mayor historial de fallas (80 vs 20).
+  GSPT-MV cuando: La bomba es sumergible (necesita PT100 para marcha en seco),
+  la potencia supera los 80A de los GSPT estándar, o se necesita multivoltaje
+  configurable para un mismo SKU en mercados con diferentes tensiones nominales.
+
+QA_Q: ¿Qué diferencia al GII+ de Genius del GST-RM de Exceline Profesional?
+QA_A: Ambos son supervisores de voltaje trifásico sin medición de corriente,
+  pero tienen diferencias significativas (Atlas 5 y Atlas 6).
+  El GST-RM usa perillas manuales para ajuste y LEDs para indicación. No tiene
+  pantalla, comunicación ni registro de fallas. Es simple, robusto y económico.
+  El GII+ tiene pantalla LCD que muestra voltajes de las 3 fases, porcentaje de
+  desbalance y frecuencia en tiempo real. Incluye MODBUS RTU para integración
+  con sistemas de control, registro histórico de las últimas 20 fallas (con tipo
+  de falla, valor, fecha, hora y duración), y la opción de programador horario
+  (hasta 20 eventos semanales + 20 feriados). Los rangos de ajuste y las
+  funciones de protección son comparables. El GII+ tiene ajuste de TD (tiempo
+  de desconexión) de 1-30s, mientras el GST-RM tiene ajuste de TD de 0.5-10s.
+  Elegir GST-RM cuando: presupuesto limitado, instalación simple sin requisitos
+  de diagnóstico ni comunicación. Elegir GII+ cuando: se necesita diagnóstico
+  de fallas, integración MODBUS, control horario o visualización de parámetros
+  en tiempo real.
+
+QA_Q: ¿Cuántos modelos de protectores trifásicos tiene GENTECA y cómo se organizan?
+QA_A: GENTECA tiene 7 líneas de productos trifásicos activos (más 2 en desarrollo),
+  que se organizan en dos marcas (Atlas 5 y Atlas 6):
+  EXCELINE PROFESIONAL — Solo voltaje: GST-RM (2 modelos: 220V y 440V),
+  GST-RR (2 modelos: 220V y 440V). En desarrollo: GST-RD (con pantalla) y
+  GST-RG (curva inversa tiempo-voltaje para motores/bombas).
+  EXCELINE PROFESIONAL — Voltaje + Corriente: GSC-MB (5 modelos: 3 para 220V
+  en rangos 3.5-12.5A, 10-32A, 25-80A; 2 para 440V en rangos 10-32A y 25-80A)
+  y GSC-CR (misma estructura de modelos que GSC-MB, para compresores).
+  GENIUS — Solo voltaje: GII+ en 3 tensiones (120V, 208/220V, 440/480V),
+  con y sin programador horario.
+  GENIUS — Voltaje + Corriente: GUCT+ (8 modelos: 4 rangos de corriente × 2
+  tensiones), GIII (hasta 18 modelos: 3 rangos × 3 tensiones × CT externos +
+  opción horario), GSPT (8 modelos iguales que GUCT+), GSPT-MV (3 modelos de
+  gran corriente: 050/100/180A, multivoltaje con PT100).
+  Total portafolio activo trifásico: ~40 referencias de producto.
+
+QA_Q: ¿Cuál es el argumento de venta principal del GST-RR frente a un supervisor trifásico genérico importado para refrigeración?
+QA_A: El argumento principal tiene tres dimensiones (Atlas 4 y Atlas 5):
+  Primera: Anti-short cycle en hardware. El GST-RR garantiza un tiempo mínimo de
+  reconexión de 180 segundos mediante restricción de hardware — no configurable
+  por debajo de este valor. Un supervisor genérico importado puede tener
+  el temporizador libre desde 0 o 5 segundos, dependiendo del ajuste del
+  instalador. Si el instalador olvida ajustar el temporizador correctamente,
+  el compresor puede sufrir short cycling desde el primer día. Con el GST-RR,
+  eso es imposible por diseño.
+  Segunda: Diseño para Venezuela. El GST-RR cumple COVENIN 3445 (norma local) y
+  fue diseñado conociendo la red CORPOELEC — sus umbrales de detección de
+  desbalance y subtensión están calibrados para el perfil real de la red
+  venezolana, no para un mercado europeo o norteamericano con red estable.
+  Tercera: Soporte local. Fabricado en Venezuela por GENTECA. Soporte técnico
+  local disponible, sin tiempos de espera de importación para asistencia técnica.
+
+QA_Q: ¿Para qué motor específico debo usar el GSC-MB vs el GUCT+ de Genius?
+QA_A: La elección entre GSC-MB (Exceline Profesional, Atlas 5) y GUCT+ (Genius,
+  Atlas 6) depende del nivel de diagnóstico y control requerido, no del nivel
+  de protección.
+  Usar GSC-MB cuando: la instalación es simple, el presupuesto es ajustado, no
+  se necesita integración MODBUS ni diagnóstico de fallas, el motor es de uso
+  general sin requisitos especiales de clase térmica, y la corriente del motor
+  está entre 3.5A y 80A a 220V o entre 10A y 80A a 440V.
+  Usar GUCT+ cuando: se requiere clase térmica ajustable (motores con arranque
+  largo como compresores de tornillo — Clase 20 o 30), se necesita subcarga
+  configurable (para detectar correa rota o bomba sin caudal por FP o %In),
+  se requiere integración con SCADA/PLC via MODBUS, se quiere historial de
+  fallas, o el instalador necesita visualizar corriente, voltaje y FP en
+  pantalla LCD sin instrumentos adicionales.
+  El GUCT+ no reemplaza al GSC-MB en coste-efectividad para aplicaciones simples,
+  pero lo supera claramente en instalaciones que requieren diagnóstico y control.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 5 — PROTOCOLO DE SELECCIÓN DE PRODUCTO GENTECA (INTEGRADO)
+
+PROTOCOL: Seleccion_Producto_GENTECA_Paso_a_Paso
+  Protocolo que cruza los 6 Atlas para llegar al producto GENTECA correcto:
+
+  PASO 1 — ¿Cuál es la aplicación? (Atlas 3)
+    ¿Compresor de refrigeración o A/A? → Rama COMPRESOR
+    ¿Bomba (superficial o sumergible)? → Rama BOMBA
+    ¿Motor de uso general? → Rama MOTOR GENERAL
+
+  PASO 2A — RAMA COMPRESOR:
+    ¿Solo protección de voltaje (contactor externo)?
+      → GST-RR (220V o 440V según sistema) — Exceline Profesional (Atlas 5)
+    ¿Protección de voltaje + corriente + anti-short cycle?
+      → GSC-CR (modelo según voltaje y corriente del compresor) — Exceline Profesional
+    ¿Ambas capas de protección (recomendado para herméticos)?
+      → GST-RR + GSC-CR (double layer, anti-short cycle hardware en ambos)
+    ¿Se requiere MODBUS o clase térmica ajustable?
+      → GUCT+ (Genius, Atlas 6) + GST-RR (Exceline Profesional)
+
+  PASO 2B — RAMA BOMBA:
+    ¿Bomba superficial, corriente ≤80A a 220V o ≤80A a 440V?
+      ¿Sin requisitos de diagnóstico avanzado?
+        → GSC-MB (modelo según voltaje y corriente) — Exceline Profesional (Atlas 5)
+      ¿Con diagnóstico, MODBUS, límite arranques?
+        → GSPT (modelo según voltaje y corriente) — Genius (Atlas 6)
+    ¿Bomba sumergible (riesgo marcha en seco)?
+      ¿Potencia ≤50HP@440V o ≤25HP@220V?
+        → GSPT + PT100 externo (si motor tiene termistor instalado) — Genius
+        → GSPT-MV + PT100 integrado (si el motor no tiene termistor) — Genius (Atlas 6)
+      ¿Potencia >50HP@440V o necesidad multivoltaje?
+        → GSPT-MV (050, 100 o 180 según corriente) — Genius (Atlas 6)
+    ¿Además se requiere supervisor de red (doble capa)?
+      → Agregar GST-RM220 o 440 — Exceline Profesional (Atlas 5)
+
+  PASO 2C — RAMA MOTOR GENERAL:
+    ¿Potencia ≤50HP@440V, sin requisitos avanzados?
+      → GSC-MB (modelo según voltaje y corriente) — Exceline Profesional (Atlas 5)
+      Agregar GST-RM si la red CORPOELEC es particularmente inestable
+    ¿Clase térmica ajustable requerida (arranque largo >8s)?
+      → GUCT+ (Genius, Atlas 6)
+    ¿Alta potencia (>50HP@440V o >25HP@220V)?
+      → GUCT+480-80 o GIII (según si se necesita PT100, RS485, entradas digitales)
+    ¿Integración SCADA intensiva?
+      → GIII (con RS485 nativo + entradas digitales) — Genius (Atlas 6)
+
+  PASO 3 — ¿Red CORPOELEC muy inestable? (Aplica a todas las ramas)
+    Si la instalación tiene historial de desequilibrios >5%, subtensiones
+    frecuentes o cortes selectivos frecuentes:
+      → Agregar capa de supervisión voltaje: GST-RM (motores) o GST-RR (compresores)
+    O seleccionar directamente un producto Genius con GII+ integrado.
+
+PROTOCOL: Verificacion_Seleccion_Corriente_Modelo
+  Para verificar que el modelo de corriente es correcto:
+  1. Obtener In del motor de la placa de características (Atlas 1, sección 2).
+  2. Verificar que In esté dentro del rango ajustable del modelo seleccionado.
+  3. Para GSC-MB/CR: ajustar perilla FLA exactamente a In del motor.
+  4. Para GUCT+/GSPT: configurar parámetro de corriente nominal al In.
+  5. Si el motor tiene FS=1.15: ajustar al valor In × 1.15 para aprovechar el FS.
+  Nota: Si In está en el límite superior del rango del modelo, elegir el
+  siguiente modelo mayor (ejemplo: motor de 12A → GSC-MB22012 va justo en el
+  límite superior; considerar GSC-MB22032 para mayor margen).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 6 — ARGUMENTOS DE VENTA INTEGRADOS MULTIDOMINIO (v2)
+
+SALES_ARG: Argumento_GENTECA_vs_Genericos_Venezuela
+  "Los protectores GENTECA (Exceline Profesional y Genius) tienen tres ventajas
+  sobre los genéricos importados para el mercado venezolano:
+  Primera: Diseñados para Venezuela. COVENIN 3445, calibrados para la red
+  CORPOELEC, fabricados en Venezuela por una empresa con décadas de experiencia
+  en el sistema eléctrico venezolano. No son adaptaciones de productos europeos
+  o asiáticos.
+  Segunda: Funciones específicas para los problemas venezolanos. Anti-short
+  cycle en hardware para compresores (GST-RR/GSC-CR). Límite de arranques por
+  hora NEMA MG10 para bombas (GSPT). Protección marcha en seco por PT100 para
+  sumergibles (GSPT-MV). Ningún genérico importado tiene estas funciones en el
+  mismo paquete a precio comparable.
+  Tercera: Soporte técnico local. GENTECA tiene soporte técnico en Caracas, con
+  asistencia para selección, instalación y resolución de problemas. Los genéricos
+  importados no tienen respaldo local — si hay un problema, el instalador está solo."
+
+SALES_ARG: Argumento_Hardware_vs_Software_Anti_Short_Cycle
+  "Con los GST-RR y GSC-CR, el anti-short cycle está en el hardware. No se puede
+  configurar incorrectamente. No se puede olvidar. No depende de que el técnico
+  instalador sepa por qué los compresores necesitan 3 minutos entre arranques.
+  Con cualquier otro protector ajustable, el cliente depende del instalador para
+  configurar correctamente ese parámetro crítico. Si el instalador no sabe, el
+  compresor hermético (que no se rebobina — se reemplaza completo) puede fallar
+  en semanas. La garantía de hardware del GST-RR y GSC-CR tiene un valor
+  económico real que va más allá del costo del producto."
+
+SALES_ARG: Argumento_Exceline_Profesional_COVENIN
+  "COVENIN 3445 es la norma venezolana aplicable a dispositivos de supervisión y
+  protección eléctrica. Los productos Exceline Profesional están diseñados según
+  esta norma. Los productos importados europeos o asiáticos pueden cumplir IEC
+  o UL, pero no necesariamente COVENIN. Para instalaciones industriales formales
+  en Venezuela, la especificación técnica local requiere cumplimiento COVENIN.
+  Exceline Profesional es la opción que cumple con el marco normativo local."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 7 — ÍNDICE CRUZADO DE CONCEPTOS (v2 — incluye productos GENTECA)
+
+[Concepto] → [Atlas] → [Prefijos de búsqueda]
+
+  Anti-short cycle              → Atlas 3, 5, 6    → TECH_APPLICATION:, TECH_PRODUCT:
+  Clase térmica                 → Atlas 2, 5, 6    → CONCEPT:, TECH_PRODUCT:
+  Compresor refrigeración       → Atlas 3, 5, 6    → TECH_APPLICATION:, TECH_PRODUCT:
+  COVENIN 3445                  → Atlas 5          → SOURCE:, TECH_DIFFERENTIATOR:
+  CT integrado                  → Atlas 5, 6       → TECH_PRODUCT: (GSC-MB/CR, GUCT+, GSPT)
+  Curva inversa tiempo-voltaje  → Atlas 5          → TECH_PRODUCT: (GST-RG en desarrollo)
+  Desequilibrio fases           → Atlas 1, 2, 4, 5, 6 → MECHANISM:, TECH_PRODUCT:
+  Exceline Profesional          → Atlas 5          → TECH_PRODUCT:, SALES_ARG:
+  Falta de fase                 → Atlas 1, 2, 3, 5, 6 → MECHANISM:, TECH_PRODUCT:
+  GENTECA                       → Atlas 5, 6       → TECH_PRODUCT:, SALES_ARG:
+  Genius                        → Atlas 6          → TECH_PRODUCT:, COMPARISON:
+  GII+                          → Atlas 6          → TECH_PRODUCT:
+  GIII                          → Atlas 6          → TECH_PRODUCT:
+  GSC-CR                        → Atlas 5          → TECH_PRODUCT:
+  GSC-MB                        → Atlas 5          → TECH_PRODUCT:
+  GST-RD (desarrollo)           → Atlas 5          → TECH_PRODUCT:
+  GST-RG (desarrollo)           → Atlas 5          → TECH_PRODUCT:
+  GST-RM                        → Atlas 5          → TECH_PRODUCT:
+  GST-RR                        → Atlas 5          → TECH_PRODUCT:
+  GSPT                          → Atlas 6          → TECH_PRODUCT:
+  GSPT-MV                       → Atlas 6          → TECH_PRODUCT:
+  GUCT+                         → Atlas 6          → TECH_PRODUCT:
+  Límite arranques NEMA MG10    → Atlas 1, 6       → CONCEPT:, TECH_PRODUCT: (GSPT)
+  Locked rotor / Stall          → Atlas 1, 2, 5, 6 → MECHANISM:, TECH_PRODUCT:
+  Marcha en seco                → Atlas 1, 2, 3, 5, 6 → MECHANISM:, TECH_PRODUCT:
+  MODBUS RTU                    → Atlas 6          → TECH_PRODUCT:
+  Multivoltaje                  → Atlas 6          → TECH_PRODUCT: (GSPT-MV)
+  PT100 / Sensor temperatura    → Atlas 2, 6       → TECH_PRODUCT:, MECHANISM:
+  Programador horario           → Atlas 6          → TECH_PRODUCT: (GII+, GUCT++, GIII+)
+  Red CORPOELEC Venezuela       → Atlas 1, 4, 5    → CONCEPT:, MARKET_FINDING:
+  Subcarga / Underload          → Atlas 2, 6       → MECHANISM:, TECH_PRODUCT:
+  Sumergible                    → Atlas 3, 5, 6    → TECH_APPLICATION:, TECH_PRODUCT:
+  Supervisores de voltaje       → Atlas 2, 5, 6    → TECH_PRODUCT:
+  Tercera falla bloqueo         → Atlas 5, 6       → TECH_PRODUCT:, FINDING:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIN DEL RAG INTEGRADOR v2
+Proyecto ProtMotores | Versión 2.0 | Marzo 2026
+CARGAR ESTE DOCUMENTO PRIMERO EN NOTEBOOKLM (reemplaza el v1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
