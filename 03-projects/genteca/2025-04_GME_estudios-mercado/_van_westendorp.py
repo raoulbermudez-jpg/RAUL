@@ -12,7 +12,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-BASE = Path(r'C:\RAUL\03-projects\genteca\GME Estudios de mercado')
+BASE = Path(r'C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado')
 OUT  = BASE / 'van_westendorp'
 OUT.mkdir(exist_ok=True)
 XLSX = BASE / 'DATA FINAL Pantallas GME.xls.xlsx'

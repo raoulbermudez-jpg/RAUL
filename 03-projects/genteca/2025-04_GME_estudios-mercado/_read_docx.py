@@ -4,7 +4,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 from docx import Document
 from pathlib import Path
 
-BASE = Path(r'C:\RAUL\03-projects\genteca\GME Estudios de mercado')
+BASE = Path(r'C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado')
 files = ['R-pantallas para consulta.docx',
          'B-pantallas para consulta.docx',
          'M-pantallas para consulta.docx']

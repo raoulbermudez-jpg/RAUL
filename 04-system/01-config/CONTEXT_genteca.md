@@ -68,7 +68,7 @@ Relés y protectores para motores, bombas y aplicaciones industriales exigentes.
 |----------|--------|------|
 | Empaque GSM-MB / RB / RF / RE | 3 variantes listas para Junta Directiva | Alternativa B refinada con 3 ejes paralelos: V1 "Autoprotección térmica activa*" (sin NTC) — V2 "Escudo Térmico NTC*" (con NTC, post WhatsApp Kike-Canudas) — V3 "beneficio del beneficio" con 3 sub-opciones (V3a "Respaldo térmico ante el breaker*" / V3b "Respaldo térmico ante fallas del termomagnético*" / V3c "Última línea de defensa eléctrica*") propuesta por Jesús María. Memo AU-1 v2.3 + PPTX 23 slides listos. Esperando decisión Junta. Anexo SAPI bautizado IP en presentación |
 | Etiquetas GST-R | Propuesta Oz v1 recibida 2026-05-04 | 3 productos visibles (RM/RR/RT) en 3 líneas de diseño. Línea 2 seleccionada Owner. GST-RD pendiente próxima entrega Oz + título "Supervisor Trifásico de Voltaje" + decisiones D1-D5 (color RM, indicadores superiores, badges, diales/datos técnicos, pantone azul). Brief técnico Vera v1 con gap curva inversa pendiente I&D |
-| GME estudio de mercado | Activo 2026-05-06 | Nueva línea de producto. Encuesta UI + Van Westendorp pricing + OL-3 análisis de nicho vacío. Ver carpeta `03-projects/genteca/GME Estudios de mercado/` |
+| GME estudio de mercado | Activo 2026-05-06 | Nueva línea de producto. Encuesta UI + Van Westendorp pricing + OL-3 análisis de nicho vacío. Ver carpeta `03-projects/genteca/2025-04_GME_estudios-mercado/` |
 
 ---
 

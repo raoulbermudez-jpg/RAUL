@@ -5,7 +5,7 @@ from collections import Counter, defaultdict
 from statistics import mean, median
 import openpyxl
 
-PATH = r'C:\RAUL\03-projects\genteca\GME Estudios de mercado\DATA FINAL Pantallas GME.xls.xlsx'
+PATH = r'C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\DATA FINAL Pantallas GME.xls.xlsx'
 wb = openpyxl.load_workbook(PATH, data_only=True)
 ws = wb.active
 

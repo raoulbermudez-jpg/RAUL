@@ -349,8 +349,8 @@ El GME compite en un nicho cruzado muy específico — protección monofásica +
 | 12 | PrevenIng Smart WiFi protector — parecebuenaidea.com.py | https://parecebuenaidea.com.py/producto/protector-de-voltaje-monofasico-smart-wifi/ | 2026-05-06 | Speculative | [Fuente única] Datos técnicos mínimos; precio ~$35 USD estimado; sin confirmación de medición de corriente |
 | 13 | Patent US 20240332944 — Justia | https://patents.justia.com/patent/20240332944 | 2026-05-06 | Confirmed | Patent filing publicado octubre 2024; abstracto leído; claims completos no analizados |
 | 14 | AHR Expo 2025 cobertura | https://refindustry.com/articles/articles/ahr-expo-2025-exploring-hvacr-innovations-from-featured-exhibitors/ | 2026-05-06 | Confirmed | Cobertura periodística; ausencia de lanzamiento relevante en el nicho — ausencia confirmatoria |
-| 15 | Pantallas GME (fuente primaria interna) | C:\RAUL\03-projects\genteca\GME Estudios de mercado\_img_R\ | 2026-05-06 | Confirmed | Imágenes del producto Exceline GME; fuente primaria interna — máxima confianza para specs propias |
-| 16 | Informe Van Westendorp GME | C:\RAUL\03-projects\genteca\GME Estudios de mercado\Informe_Van_Westendorp.md | 2026-05-06 | Confirmed | Análisis interno; n=29; contexto de precio y segmentación |
+| 15 | Pantallas GME (fuente primaria interna) | C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\_img_R\ | 2026-05-06 | Confirmed | Imágenes del producto Exceline GME; fuente primaria interna — máxima confianza para specs propias |
+| 16 | Informe Van Westendorp GME | C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\Informe_Van_Westendorp.md | 2026-05-06 | Confirmed | Análisis interno; n=29; contexto de precio y segmentación |
 | 17 | GEYA GRV8-01 — geya.net | https://www.geya.net/product/single-phase-voltage-monitoring-relay-grv8-01/ | 2026-05-06 | Confirmed | Página oficial GEYA; solo voltaje sin corriente confirmado |
 | 18 | Shelly Pro EM-50 — shelly.com | https://www.shelly.com/products/shelly-pro-em-50 | 2026-05-06 | Confirmed | Página oficial |
 

@@ -408,4 +408,4 @@ Este AU-1 es el plan de lanzamiento del primer producto nuevo Exceline Profesion
 
 *Aurelio — Content Strategist | Dominio Genteca | 2026-05-06*
 *Output AU-1 v1 — Plan de Campaña GME*
-*Ruta: `C:\Raul\03-projects\genteca\GME Estudios de mercado\_intel\Aurelio_AU-1_plan-campana_GME_2026-05-06.md`*
+*Ruta: `C:\Raul\03-projects\genteca\2025-04_GME_estudios-mercado\_intel\Aurelio_AU-1_plan-campana_GME_2026-05-06.md`*

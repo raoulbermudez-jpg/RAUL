@@ -203,7 +203,7 @@
 
 ## Bloque GME — Gate campana lanzamiento octubre 2026 (2026-05-06)
 
-**Referencia:** `Bruna_gate_GME_2026-05-06.md` en `03-projects/genteca/GME Estudios de mercado/_intel/` — archivo fuente con rationale completo, caveats literales, reglas de invalidez y proximos pasos. Las entradas que siguen son el resumen de decisiones para trazabilidad del log acumulativo.
+**Referencia:** `Bruna_gate_GME_2026-05-06.md` en `03-projects/genteca/2025-04_GME_estudios-mercado/_intel/` — archivo fuente con rationale completo, caveats literales, reglas de invalidez y proximos pasos. Las entradas que siguen son el resumen de decisiones para trazabilidad del log acumulativo.
 
 ---
 
@@ -429,5 +429,5 @@
 *Bruna — Risk & Claims Governance Lead — Sistema /RAUL/*
 *Log iniciado: 2026-05-03. Dominio: Genteca. Primer gate formal del sistema /RAUL/.*
 *Ultima actualizacion: 2026-05-07 (entradas #22 a #28 — bloque argumentos de venta tecnicos Atlas 4 legacy; 7 argumentos autorizados por Owner; Argumento 8 COVENIN 3445 excluido, sigue bloqueado).*
-*Archivos fuente: bloque GME en `03-projects/genteca/GME Estudios de mercado/_intel/Bruna_gate_GME_2026-05-06.md`; bloque argumentos en `03-projects/genteca/_governance/2026-05-07_BR-1_argumentos-venta-atlas-legacy.md`*
+*Archivos fuente: bloque GME en `03-projects/genteca/2025-04_GME_estudios-mercado/_intel/Bruna_gate_GME_2026-05-06.md`; bloque argumentos en `03-projects/genteca/_governance/2026-05-07_BR-1_argumentos-venta-atlas-legacy.md`*
 *Appendear nuevas decisiones al final de este archivo. No reemplazar entradas existentes.*

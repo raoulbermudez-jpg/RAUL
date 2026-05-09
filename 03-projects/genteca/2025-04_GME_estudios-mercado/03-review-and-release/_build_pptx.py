@@ -19,7 +19,7 @@ from pptx.util import Inches, Pt
 import copy
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE   = r"C:\RAUL\03-projects\genteca\GME Estudios de mercado"
+BASE   = r"C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado"
 OUT    = os.path.join(BASE, "03-review-and-release",
                       "Resultados_Investigacion_Pantallas_GME_VW_para_I+D_v1_2026-05-06.pptx")
 IMG_R  = os.path.join(BASE, "_img_R")

@@ -4,7 +4,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 from pathlib import Path
 import zipfile, shutil
 
-BASE = Path(r'C:\RAUL\03-projects\genteca\GME Estudios de mercado')
+BASE = Path(r'C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado')
 files = {
     'R': 'R-pantallas para consulta.docx',
     'B': 'B-pantallas para consulta.docx',

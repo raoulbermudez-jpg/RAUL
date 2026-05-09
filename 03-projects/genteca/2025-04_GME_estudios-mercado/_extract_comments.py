@@ -4,8 +4,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 import openpyxl
 from collections import defaultdict
 
-PATH = r'C:\RAUL\03-projects\genteca\GME Estudios de mercado\DATA FINAL Pantallas GME.xls.xlsx'
-OUT = r'C:\RAUL\03-projects\genteca\GME Estudios de mercado\Comentarios_tecnicos_encuesta.md'
+PATH = r'C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\DATA FINAL Pantallas GME.xls.xlsx'
+OUT = r'C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\Comentarios_tecnicos_encuesta.md'
 
 wb = openpyxl.load_workbook(PATH, data_only=True)
 ws = wb.active

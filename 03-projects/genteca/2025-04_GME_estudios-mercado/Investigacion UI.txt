@@ -3,7 +3,7 @@ Lo primero que voy a darte en cuanto a documentacion del desarrollo de este nuev
   encuesta consiste en un conjunto de pantallas que se estan desarrollando para la interfaz (User Interface) con las pantallas   
   que los tecnicos van a interactuar para la configuracion, diagnostico, mantenimiento, servicio a sus clientes. Esa sera la     
   primera tarea. Entender el archivo de excel con las preguntas y respuestas de la encuesta. Te voy a colocar en esta 
-carpeta  C:\RAUL\03-projects\genteca\GME Estudios de mercado para las investigaciones de mercado que hemos realizado.
+carpeta  C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado para las investigaciones de mercado que hemos realizado.
  Luego, en esta misma carpeta voy a colocar los resultados en excel, las preguntas y las imagenes que se utilizaron en la encuesta on line. 
 Si quieres, dejame saber si deseas que abra el link de la encuesta para que navegues por ella y entiendas mejor, pero si no, 
 te explico en este archivo de texto después que lo revises como fue el flujo de la encuesta y te doy las imagenes de pantallas del GME usadas 

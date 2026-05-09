@@ -409,11 +409,11 @@ Sin estas respuestas, los claims B, C y E no pueden considerarse técnicamente v
 
 | # | Fuente | URL / Referencia | Acceso | Confianza |
 |---|---|---|---|---|
-| S1 | OL-3 Orlan — Innovation Radar GME 2026-05-06 | `C:\RAUL\03-projects\genteca\GME Estudios de mercado\_intel\OL-3_GME_innovation_radar_2026-05-06.md` | Directo | Confirmed (interna) |
-| S2 | Mockups GME-R220 (6 pantallas) | `C:\RAUL\03-projects\genteca\GME Estudios de mercado\_img_R\` | Directo | Confirmed (fuente primaria) |
-| S3 | Mockups GME-B220 (6 pantallas) | `C:\RAUL\03-projects\genteca\GME Estudios de mercado\_img_B\` | Directo | Confirmed (fuente primaria) |
-| S4 | Mockups GME-M220 (6 pantallas) | `C:\RAUL\03-projects\genteca\GME Estudios de mercado\_img_M\` | Directo | Confirmed (fuente primaria) |
-| S5 | Informe Van Westendorp GME | `C:\RAUL\03-projects\genteca\GME Estudios de mercado\Informe_Van_Westendorp.md` | Directo | Confirmed (interna) |
+| S1 | OL-3 Orlan — Innovation Radar GME 2026-05-06 | `C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\_intel\OL-3_GME_innovation_radar_2026-05-06.md` | Directo | Confirmed (interna) |
+| S2 | Mockups GME-R220 (6 pantallas) | `C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\_img_R\` | Directo | Confirmed (fuente primaria) |
+| S3 | Mockups GME-B220 (6 pantallas) | `C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\_img_B\` | Directo | Confirmed (fuente primaria) |
+| S4 | Mockups GME-M220 (6 pantallas) | `C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\_img_M\` | Directo | Confirmed (fuente primaria) |
+| S5 | Informe Van Westendorp GME | `C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\Informe_Van_Westendorp.md` | Directo | Confirmed (interna) |
 | S6 | IEC 60947-4-1 — Contactors and motor starters (Ed. 4:2018, Ed. 5:2023) | https://webstore.iec.ch/en/publication/74487 | Web (paywall — abstract accedido) | Confirmed (norma vigente) |
 | S7 | IEC 60255-1:2022 — Measuring relays and protection equipment | https://webstore.iec.ch/en/publication/59762 | Web (paywall — abstract accedido) | Confirmed (norma vigente) |
 | S8 | Trip Class description — Schneider Electric TeSys GV5/GV6 | https://www.productinfo.schneider-electric.com/gv5pbgv6pbdocumentation/doca0161-tesys-gv5pb-gv6pb-user-guide | Web | Confirmed |
