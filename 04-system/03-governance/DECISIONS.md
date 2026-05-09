@@ -503,9 +503,26 @@ Recon mostró que la carpeta está VACÍA. La entrada 2026-04-25 ("Política age
 - `RAUL-Exchange/` en Drive ahora contiene solo Panama. Cuando Panama active al sistema RAUL, refactor adicional decidirá ubicación canónica.
 - Riesgo dual hierarchy 2026-05-07 sigue activo hasta acción Owner Drive web.
 
+**Update final 2026-05-09 (continuación de sesión, post-DECISIONS-write):**
+
+Drive cloud dual hierarchy del incidente 2026-05-07 → ✅ **resuelta** vía Drive web Owner action.
+
+Recon adicional vía Drive MCP confirmó que el legacy parent `1Yex3K9hQnPgaVQ1QRSiH8PClP9NJMKrc` era el folder auto-creado **"Mi PC"** por Google Backup & Sync (descontinuado). Visible en Drive web bajo `Computadoras > Mi PC`. Contenía 5 subfolders:
+
+- `01-owner-to-raul` (con tarea incidente 2026-05-07 + TEST-SYNC inerte)
+- `02-deliverables-to-owner` (4 deliverables, todos duplicados verificados del canónico)
+- `genteca/2026-04-19/` (1 archivo `GST_Exceline_Presentacion_JD_V3_texto.md`, existe en local)
+- `Downloads` (descargas misceláneas pre-RAUL)
+- `WorkspaceIA` (workspace pre-/RAUL/; scripts archivados en commit 52d7e9b; resto inerte)
+
+Owner ejecutó vía Drive web: rename defensivo `Mi PC` → `Mi PC - LEGACY DELETE 2026-05-09` → Move to Papelera. Drive index lo invalidó inmediatamente — searches de `01-owner-to-raul` y `02-deliverables-to-owner` devuelven ahora solo el canónico (verificado post-trash vía Drive MCP). Folder físico en Papelera (30 días recuperable; auto-purge si no se vacía manualmente).
+
 **Estado:**
-- Decisiones 1-8 + ajustes ejecutadas en sesión 2026-05-09 (commit pendiente al cerrar entrada).
-- Pendiente: (a) Owner action Drive web para resolver dual hierarchy original; (b) test InboxBot con nueva config; (c) decisión futura sobre Panama en /RAUL/.
+- Decisiones 1-8 + ajustes ejecutadas en sesión 2026-05-09.
+- Drive cloud dual hierarchy: ✅ resuelta esta sesión (Owner action vía Drive web + verificado).
+- Cueva legacy local: ✅ resuelta (commit edbb547).
+- RAUL-Exchange/colaboradores reorganización: ✅ ejecutada (commit edbb547).
+- Pendiente menor: (a) validación operacional InboxBot remoto en próximo cron disparo; (b) decisión futura sobre Panama si/cuando active al sistema /RAUL/.
 
 ---
 
