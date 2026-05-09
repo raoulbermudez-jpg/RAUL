@@ -432,4 +432,81 @@ El Owner delegó a Raul la elección del canal. Decisión: **canal C — esperar
 
 ---
 
+## 2026-05-09 — Cleanup colaboradores (RAUL-Exchange → RAUL/colaboradores) + cueva legacy + status agentes globales
+
+**Decisión:** consolidar el canal Drive de colaboradores externos bajo `RAUL/colaboradores/<dominio>/<nombre>/` (estructura clara y consistente con AGENT.md de InboxBot), limpiar artefactos vestigiales en cueva legacy local, y reflejar en memoria/DECISIONS el estado real de agentes globales.
+
+**Contexto y motivación:**
+
+- Owner reportó confusión sobre múltiples ubicaciones con elementos /RAUL/-related: `C:\RAUL\` (repo), `C:\Users\User\.claude\` (Claude Code internals), `C:\Users\User\Mi unidad\` (cueva legacy Backup & Sync), `G:\Mi unidad\` (Drive Desktop streaming).
+- Recon read-only mostró: (1) en Drive existían dos top-level folders `RAUL/` y `RAUL-Exchange/`, semánticamente confusos — el primero para Owner inbox, el segundo para colaboradores; (2) `RAUL-Exchange/Genteca/<colab>/01_De_X_Para_Raoul/` no matcheaba el path que esperaba InboxBot AGENT.md (`RAUL/colaboradores/<colab>/inbox/`) → InboxBot fallaba silenciosamente al escanear colaboradores; (3) cueva legacy local tenía 1 archivo huérfano + un `.claude/settings.local.json` que pertenecía a otra máquina (`raoul.bermudez` user, sincronizado pre-Backup-&-Sync-EOL); (4) `C:\Users\User\.claude\agents\` está VACÍO contradiciendo memoria 2026-04-25 que esperaba Michelina/Paxs/Vivienne ahí.
+- El estado pre-cleanup tenía ~9 colaboradores y 1 carpeta especial activos; sistema en modo piloto. Owner explícitamente dijo: "no hay tantos archivos en juego porque apenas estoy usando mi repo raul para trabajar. Podemos decir que prácticamente los trabajos son una prueba para pulir el repo." → riesgo bajo para cleanup disruptivo.
+
+**Decisiones del Owner durante la sesión:**
+
+1. **A (disruptivo es OK):** mover RAUL-Exchange/ → RAUL/colaboradores/ por consistencia con repo bien estructurado.
+2. **C (cirugía):** limpiar solo los 2 vestigios RAUL-related en cueva legacy, dejar archivo personal del Owner intacto.
+3. **A (memoria stale):** actualizar memoria sobre agentes globales para reflejar realidad (vacío).
+4. **SÍ:** entrada formal en DECISIONS.md (esta entrada).
+5. **A1:** preservar capa de dominio en colaboradores (`<dominio>/<colab>/`).
+6. **B1:** mantener naming español/numeral (`01_De_X_Para_Raoul/`, `02_De_Raoul_Para_X/`, `03_Archivo/`) en lugar de simplificar a inbox/outbox/archive.
+7. **C1:** Memoria_Tareas_Pendientes va a `RAUL/colaboradores/Genteca/_memoria-tareas-pendientes/` (prefijo `_` señala "no es colaborador").
+8. **P4:** dejar Panama en `RAUL-Exchange/Panama/` por ahora — Panama no es colaboradores (carpetas temáticas Analisis-Mercado/Contratos/EmbassyClub/Finanzas/Reparaciones), su activación al sistema RAUL queda pendiente de definir mejor el caso de uso.
+
+**Acciones ejecutadas:**
+
+1. **Drive moves (G:\):**
+   - Creado `G:\Mi unidad\RAUL\colaboradores\Genteca\` y `Academicos\`.
+   - Movidas 7 carpetas Genteca: Ana-Mendez, Cora-Urrea, Julio-Heredia, Liliam-Ramirez, Oswaldo, Rhinoska-Celis, Valeria-Ostos.
+   - Movido y renombrado `Memoria_Tareas_Pendientes` → `_memoria-tareas-pendientes`.
+   - Movido Daniel-Rubio (Academicos).
+   - rmdir de `RAUL-Exchange/Genteca/` y `RAUL-Exchange/Academicos/` (vacíos post-move).
+   - **Drive IDs:** colaboradores individuales preservados (move atómico mantiene ID); padres `Genteca/`/`Academicos/` viejos eliminados, nuevos creados con nuevos IDs. Permisos compartidos con colaboradores siguen activos vía link directo a su carpeta.
+
+2. **Cueva legacy local:**
+   - Eliminado `C:\Users\User\Mi unidad\RAUL\01-inbox\01-owner-to-raul\Prueba 1 del 4 de mayo.txt`.
+   - Eliminado `C:\Users\User\Mi unidad\.claude\` (solo contenía `settings.local.json` de otra máquina).
+
+3. **Repo updates (commits en este push):**
+   - `.claude/agents/inboxbot/AGENT.md`: Read+Edit (no Write) — nuevo path pattern colaboradores, scan logic con dominio + shortname, archivado por canal (`_archived/` para Owner, `03_Archivo/` para colaboradores).
+   - `04-system/02-agents/conceptual/inboxbot.md`: revisado, sin cambios necesarios (path-agnóstico por diseño).
+   - `04-system/03-governance/GUIA-CARPETAS-RAUL.md`: estructura colaboradores reescrita en sección 2.3 + tabla raíz + tabla de quick-reference.
+   - `04-system/03-governance/OPERATIVA-REMOTA-Y-COLABORADORES.md`: replace_all `RAUL-Exchange` → `RAUL/colaboradores` (todas las refs en este doc apuntaban a colaboradores; Panama no aparecía).
+   - `02-knowledge-base/00-raul-intelligence/PKA_LEGACY_MAP.md`: 2 entradas de tabla actualizadas.
+   - `03-projects/genteca/2026-04_GST-R_etiquetas/02-production/Oz_propuesta_v1/README.md`: 2 referencias de path actualizadas.
+   - `04-system/03-governance/2026-05-05_status-cierre.md`: NO modificado (doc histórico, refs reflejan estado de esa fecha).
+
+4. **Memoria actualizada (`C:\Users\User\.claude\projects\C--RAUL\memory\`):**
+   - `feedback_drive_dual_inbox_hierarchy.md`: añadido status update aclarando que el cleanup NO resolvió la dual hierarchy del incidente 2026-05-07 (ese es Drive cloud, requiere Owner action en Drive web).
+   - `reference_drive_exchange_ids.md`: añadida sección "Reorganización 2026-05-09" con estructura nueva y nota sobre IDs preservados/cambiados.
+
+**Aclaración importante — qué NO se resolvió:**
+
+El incidente original InboxBot 2026-05-07 fue causado por **dos jerarquías paralelas en Drive cloud** con el mismo nombre `01-inbox/01-owner-to-raul/` bajo parents distintos: canónica `RAUL` (id `124VdcO237NDXAowD0DZ0BoJVMiQNMKPG`) y legacy parent `1Yex3K9hQnPgaVQ1QRSiH8PClP9NJMKrc` (residual de Drive Backup & Sync que sobrevivió a la migración 2026-04). Este cleanup NO tocó esa duplicación — requiere acción Owner desde Drive web para identificar y consolidar/eliminar el legacy parent. El riesgo de duplicación silenciosa en rutinas automáticas persiste hasta entonces.
+
+**Status de agentes globales `C:\Users\User\.claude\agents\`:**
+
+Recon mostró que la carpeta está VACÍA. La entrada 2026-04-25 ("Política agentes globales vs. locales") esperaba Michelina/Paxs/Vivienne ahí. Owner confirmó (decisión 3) que el flujo actual es siempre `C:\RAUL\` → no necesita copia global. La entrada 2026-04-25 queda como historial; la realidad actual es: agentes solo en `C:\RAUL\.claude\agents\` + SSOT en `04-system/02-agents/conceptual/`.
+
+**Alternativas consideradas:**
+
+- **Mover RAUL-Exchange a RAUL/colaboradores conservando naming inglés (inbox/outbox/archive):** rechazado — Owner prefirió B1 español/numeral para que colaboradores vean naming claro en su Drive.
+- **Mover Panama a RAUL/colaboradores/Panama/ literal (decisión 1.A literal):** rechazado — Panama no tiene colaboradores, son carpetas temáticas. Forzarlo en colaboradores/ es semánticamente incorrecto.
+- **Mover Panama a RAUL/dominios-personal/Panama/ (nueva ubicación):** rechazado — compromete decisión arquitectónica antes de que el caso de uso esté maduro.
+- **Eliminar cueva legacy completamente:** rechazado — contiene archivo personal del Owner (helados, finanzas, fotos BlackBerry 2014-2015). Cleanup quirúrgico (decisión C) preserva el archivo personal.
+- **Resolver dual hierarchy Drive cloud en esta sesión:** out of scope — requiere Drive web access que no estaba disponible en la sesión filesystem-based.
+
+**Implicaciones:**
+
+- InboxBot debería ahora encontrar correctamente colaboradores en `RAUL/colaboradores/<dominio>/<nombre>/01_De_<shortname>_Para_Raoul/`. Test pendiente Owner cuando arranque rutina remota.
+- Memoria de IDs Drive en `reference_drive_exchange_ids.md` para `RAUL-Exchange/Genteca` y `RAUL-Exchange/Academicos` parents está stale; los IDs internos de colaboradores siguen válidos.
+- `RAUL-Exchange/` en Drive ahora contiene solo Panama. Cuando Panama active al sistema RAUL, refactor adicional decidirá ubicación canónica.
+- Riesgo dual hierarchy 2026-05-07 sigue activo hasta acción Owner Drive web.
+
+**Estado:**
+- Decisiones 1-8 + ajustes ejecutadas en sesión 2026-05-09 (commit pendiente al cerrar entrada).
+- Pendiente: (a) Owner action Drive web para resolver dual hierarchy original; (b) test InboxBot con nueva config; (c) decisión futura sobre Panama en /RAUL/.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

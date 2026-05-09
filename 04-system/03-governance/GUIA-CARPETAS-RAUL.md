@@ -16,7 +16,8 @@ Lectura recomendada cuando dudes "¿dónde está X?" o "¿puedo borrar esto?".
 |---|---|---|
 | `C:\RAUL\` | **Repo maestro local.** Aquí vive todo el contenido del sistema /RAUL/: agentes, KB, projects, governance, scripts, conceptual SSOT, configuración. | Edición directa cuando trabajas en sesión Claude Code. Versionado con git. |
 | `G:\Mi unidad\RAUL\01-inbox\` | **Canal cloud Owner ↔ InboxBot.** Lo que dejas/recibes desde el celular. | Subes tareas a `01-owner-to-raul/`, lees entregables de `02-deliverables-to-owner/` desde la app Drive móvil. |
-| `G:\Mi unidad\RAUL-Exchange\` | **Punto de intercambio cloud con colaboradores externos.** Cada colaborador tiene su propia subcarpeta con `inbox/` + `outbox/`. | Cuando depositas archivos para un colaborador (en `outbox/` de él) o revisas lo que él te envió (en `inbox/` de él). |
+| `G:\Mi unidad\RAUL\colaboradores\` | **Punto de intercambio cloud con colaboradores externos.** Cada colaborador tiene su propia carpeta con `01_De_X_Para_Raoul/` + `02_De_Raoul_Para_X/` + `03_Archivo/`. | Cuando depositas archivos para un colaborador (en su `02_De_Raoul_Para_X/`) o revisas lo que él te envió (en su `01_De_X_Para_Raoul/`). |
+| `G:\Mi unidad\RAUL-Exchange\Panama\` | **Dominio personal Panama (apt Embassy Club).** Sin colaboradores. | Estructura temática: Analisis-Mercado, Contratos, EmbassyClub, Finanzas, Reparaciones. Activación RAUL pendiente. |
 
 ### B. Carpetas vivas que NO tocas (sistema automático las maneja)
 
@@ -97,35 +98,44 @@ C:\RAUL\
 
 **Frecuencia InboxBot:** cada 4 h por defecto (configurable en Routines de Claude Code Desktop).
 
-### 2.3 Cuándo y cómo usar `G:\Mi unidad\RAUL-Exchange\`
+### 2.3 Cuándo y cómo usar `G:\Mi unidad\RAUL\colaboradores\` (y `RAUL-Exchange\Panama\`)
 
-**Cuándo:** intercambio de archivos con colaboradores externos (Genteca, Panamá).
+**Cuándo:** intercambio de archivos con colaboradores externos (Genteca, Academicos) + acceso al dominio personal Panama.
 
-**Estructura nueva (post-reorganización 2026-05-04):**
+**Estructura post-cleanup 2026-05-09:**
 
 ```
-RAUL-Exchange/
+G:\Mi unidad\RAUL\colaboradores\          ← colaboradores con flujo bidireccional
 ├── Genteca/
-│   ├── Oswaldo/        ├── inbox/  ← Oz te envía cosas a ti
-│   │                   └── outbox/ ← tú le dejas cosas a Oz
+│   ├── Oswaldo/
+│   │   ├── 01_De_Oswaldo_Para_Raoul/    ← Oz te envía cosas
+│   │   ├── 02_De_Raoul_Para_Oswaldo/    ← tú le dejas cosas
+│   │   └── 03_Archivo/                  ← procesados (InboxBot mueve aquí)
+│   ├── Cora-Urrea/         (misma estructura 01/02/03)
 │   ├── Liliam-Ramirez/
 │   ├── Ana-Mendez/
 │   ├── Valeria-Ostos/
 │   ├── Rhinoska-Celis/
-│   ├── Cora-Urrea/
-│   └── Julio-Heredia/
-└── Panama/
+│   ├── Julio-Heredia/
+│   └── _memoria-tareas-pendientes/      ← carpeta especial (prefijo `_`, NO colaborador, InboxBot la ignora)
+└── Academicos/
+    └── Daniel-Rubio/
+
+G:\Mi unidad\RAUL-Exchange\               ← legacy, mantenido solo para Panama
+└── Panama/                               ← dominio personal (sin colaboradores)
+    ├── Analisis-Mercado/
     ├── Contratos/
-    ├── EmbassyClub/    ├── inbox/
-    │                   └── outbox/
-    ├── Reparaciones/
+    ├── EmbassyClub/
     ├── Finanzas/
-    └── Analisis-Mercado/
+    └── Reparaciones/
 ```
 
-**Convención inbox/outbox (perspectiva Owner):**
-- **`outbox/` del colaborador** = lo que tú le dejas a él (él lo recibe).
-- **`inbox/` del colaborador** = lo que él te deja a ti (tú lo recibes).
+**Convención por carpeta de colaborador (perspectiva Owner):**
+- **`01_De_<colab>_Para_Raoul/`** = lo que el colaborador te deja a ti (tu inbox para él).
+- **`02_De_Raoul_Para_<colab>/`** = lo que tú le dejas a él (su inbox).
+- **`03_Archivo/`** = histórico de archivos ya procesados (InboxBot mueve fuentes aquí post-procesamiento).
+
+**Naming asimétrico:** la carpeta padre del colaborador puede ser `<Nombre-Apellido>` (ej. `Cora-Urrea/`) mientras el subfolder usa solo `<Nombre>` (ej. `01_De_Cora_Para_Raoul/`). InboxBot deriva el shortname del subfolder.
 
 **Cuándo activar canal de colaborador en InboxBot:** AGENT.md ya tiene canal "Colaboradores" activable cuando exista la subcarpeta `inbox/` del colaborador. InboxBot escanea automáticamente los `inbox/` y procesa archivos nuevos.
 
@@ -241,7 +251,7 @@ Todo lo demás es **canal, runtime, backup o legacy**. Si trabajas con un archiv
 
 ### 4.2 Regla 2: Drive es para movilidad y colaboración
 
-`G:\Mi unidad\RAUL\` y `G:\Mi unidad\RAUL-Exchange\` solo existen para que tú (desde celular) o colaboradores (desde sus PCs) puedan dejar/recibir cosas. **No es lugar de trabajo.**
+`G:\Mi unidad\RAUL\` (incluye `colaboradores/`) y `G:\Mi unidad\RAUL-Exchange\Panama\` solo existen para que tú (desde celular) o colaboradores (desde sus PCs) puedan dejar/recibir cosas. **No es lugar de trabajo.**
 
 ### 4.3 Regla 3: OneDrive solo es respaldo
 
@@ -264,7 +274,7 @@ Si AGENT.md o un Routine apunta ahí, **lo rechaza automáticamente** desde v3.2
 | Archivo curado y validado | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` (o `wiki/`, `assets/` según tipo) |
 | Trabajo en proyecto activo | `C:\RAUL\03-projects\<dominio>\<período>_<código>_<tema>\` |
 | Decisión / política / runbook | `C:\RAUL\04-system\03-governance\` |
-| Para colaborador externo | `G:\Mi unidad\RAUL-Exchange\<dominio>\<persona>\outbox\` |
+| Para colaborador externo | `G:\Mi unidad\RAUL\colaboradores\<dominio>\<persona>\02_De_Raoul_Para_<persona>\` |
 
 ---
 

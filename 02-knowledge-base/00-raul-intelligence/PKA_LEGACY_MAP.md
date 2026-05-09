@@ -23,7 +23,8 @@ Punto de entrada para localizar cualquier contenido relacionado con /RAUL/, PKA,
 |---|---|---|
 | `C:\RAUL\` | Repo activo maestro (~5,059 files, 281 carpetas). SSOT versionado en git. | Punto de operación diaria. |
 | `G:\Mi unidad\RAUL\` | Canal cloud Owner ↔ InboxBot. | 01-inbox vivo (~75 files). Bajo gestión InboxBot. |
-| `G:\Mi unidad\RAUL-Exchange\` | Canal con colaboradores externos (Genteca + Panamá). | Carpetas por colaborador y por dominio. IDs en `reference_drive_exchange_ids.md`. |
+| `G:\Mi unidad\RAUL\colaboradores\` | Canal Drive con colaboradores externos por dominio (Genteca, Academicos). Migrado 2026-05-09 desde `RAUL-Exchange/`. | Estructura `<dominio>/<nombre>/01_De_X_Para_Raoul/`, `02_De_Raoul_Para_X/`, `03_Archivo/`. IDs en `reference_drive_exchange_ids.md` (parcialmente stale, actualizar). |
+| `G:\Mi unidad\RAUL-Exchange\Panama\` | Dominio Panama (apt Embassy Club). Activación RAUL pendiente. | Estructura temática (sin colaboradores). |
 | `C:\Users\User\OneDrive\RAUL-backup\` | Espejo nightly del KB. Recovery 30d. | Cron `RAUL_KB_Backup_OneDrive` 23:00 robocopy /MIR. |
 
 ---
@@ -81,7 +82,7 @@ Material de investigación que NO está en uso operativo pero queda preservado p
 | `D:\01. Exceline\` | Product DB Exceline (~30.9 GB, 5,259 files) | Externo. NO copiar. Fuente para Vera/Orlan. |
 | `D:\02. Exceline-Profesional\` | Product DB Exceline Pro (~14.6 GB, 5,744 files) | Externo. NO copiar. |
 | `D:\03. Genius\` | Product DB Genius (~3.6 GB, 1,618 files) | Externo. NO copiar. Tiene "OJO REVISAR Y DEPURAR". |
-| `G:\Mi unidad\RAUL-Exchange\Genteca\` | Carpetas por colaborador (Ana Mendez, Cora Urrea, Julio Heredia, Liliam Ramirez, Oswaldo, Rhinoska Celis, Valeria Ostos) + Memoria_Tareas_Pendientes | Vivo. Canal externo. |
+| `G:\Mi unidad\RAUL\colaboradores\Genteca\` | Carpetas por colaborador (Ana-Mendez, Cora-Urrea, Julio-Heredia, Liliam-Ramirez, Oswaldo, Rhinoska-Celis, Valeria-Ostos) + `_memoria-tareas-pendientes/` (carpeta especial, no colaborador) | Vivo. Canal externo. Migrado 2026-05-09 desde `RAUL-Exchange/Genteca/`. |
 | `G:\Mi unidad\WorkspaceIA Backup\Genteca\` | KB legacy archivada (01_Biblioteca_Tecnica, 02_ProtMotores_Atlas, 03_Productos_Exceline, 04_Compartidos_Equipo, 05_Guiones_Video) | Legacy. Auditar y rescatar lo valioso → `02-domains/01-genteca/`. |
 
 ### 5.2 Plenus (metabólica)

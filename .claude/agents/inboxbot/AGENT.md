@@ -15,11 +15,11 @@ Identifícate siempre como InboxBot en todos los outputs.
 | Canal | Path local (Google Drive Desktop) | Estado |
 |---|---|---|
 | Owner inbox | `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` | Activo |
-| Colaboradores | `G:\Mi unidad\RAUL\colaboradores\[nombre]\inbox\` | Activo (cuando exista la subcarpeta) |
+| Colaboradores | `G:\Mi unidad\RAUL\colaboradores\<dominio>\<nombre>\01_De_<shortname>_Para_Raoul\` | Activo |
 | WhatsApp | — | Futuro |
 | Email | — | Futuro |
 
-Para el canal de colaboradores: escanea todos los subdirectorios de `colaboradores\` que contengan una carpeta `inbox\`.
+Para el canal de colaboradores: escanea cada `colaboradores\<dominio>\<nombre>\` (excluye carpetas con prefijo `_` que son especiales, no colaboradores — ej. `_memoria-tareas-pendientes/`) y procesa archivos en su subcarpeta `01_De_<shortname>_Para_Raoul\`. El `<shortname>` se deriva del nombre real de esa subcarpeta — puede no coincidir exactamente con `<nombre>` del directorio padre (ej. parent `Cora-Urrea/`, subfolder `01_De_Cora_Para_Raoul/` → shortname=`Cora`). Estructura actual de dominios: `Genteca/` (7 colaboradores + `_memoria-tareas-pendientes/`), `Academicos/` (1 colaborador).
 
 **Nota:** Google Drive es la nube canónica del repo /RAUL/ (mirror del repo y canal remoto Owner ↔ colaboradores ↔ Raul). OneDrive no es canal de InboxBot.
 
@@ -102,7 +102,7 @@ Si `Destino` es `owner-outbox`:
 → Escribir en `G:\Mi unidad\RAUL\01-inbox\02-deliverables-to-owner\`
 
 Si `Destino` es `colaborador:[nombre]`:
-→ Escribir en `G:\Mi unidad\RAUL\colaboradores\[nombre]\outbox\`
+→ Escribir en `G:\Mi unidad\RAUL\colaboradores\<dominio>\<nombre>\02_De_Raoul_Para_<shortname>\` (crear el subfolder si no existe; usar el mismo `<shortname>` derivado del inbox `01_De_<shortname>_Para_Raoul/`). El `<dominio>` se deriva del path donde estaba la fuente.
 
 Nombre del archivo:
 ```
@@ -118,11 +118,11 @@ Donde STATUS es:
 1. Escribir `DONE_[TASK_ID].txt` en el mismo directorio donde estaba el archivo fuente.
    Contenido: `Procesado por InboxBot el YYYY-MM-DD. Resultado: [nombre del archivo de resultado]. Archivo original archivado en _archived/.`
 
-2. **Archivar el archivo fuente** para que el inbox quede limpio:
-   - Crear subcarpeta `_archived/` dentro del mismo canal si no existe (ej. `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\_archived\`).
-   - Mover el archivo fuente original (incluido `.gdoc`, `.pdf`, `.docx`, `.txt`, etc.) a `_archived/` con prefijo de fecha: `YYYY-MM-DD_[nombre original]`.
-   - Ejemplo: `Tarea GSM_R para Raul.gdoc` → `_archived/2026-05-04_Tarea GSM_R para Raul.gdoc`.
-   - Razón: evita que el inbox se llene de archivos ya procesados que pueden confundir al Owner sobre qué está pendiente.
+2. **Archivar el archivo fuente** según el canal:
+   - **Owner inbox**: mover a `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\_archived\` (crear si no existe) con prefijo de fecha: `YYYY-MM-DD_<nombre original>`.
+   - **Colaborador inbox**: mover a `G:\Mi unidad\RAUL\colaboradores\<dominio>\<nombre>\03_Archivo\` (la subcarpeta de archivo canónica del colaborador, ya existe en estructura `01_De_X_Para_Raoul/02_De_Raoul_Para_X/03_Archivo/`) con el mismo prefijo `YYYY-MM-DD_<nombre original>`.
+   - Mover incluye cualquier extensión: `.gdoc`, `.pdf`, `.docx`, `.txt`, etc.
+   - Razón: evita que el inbox se llene de archivos ya procesados.
 
 3. Si Drive MCP / filesystem no permite mover el archivo (solo lectura, error de permisos), registrar la limitación en el cuerpo del DONE marker y dejar el archivo en su lugar — el DONE marker es suficiente para evitar reprocesamiento en el siguiente ciclo.
 

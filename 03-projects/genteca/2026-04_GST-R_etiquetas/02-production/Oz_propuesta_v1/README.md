@@ -1,6 +1,6 @@
 # Oz — Propuesta etiquetas GST-R · v1
 
-**Fecha entrega Oz:** 2026-05-04 (vía Drive `RAUL-Exchange/Genteca/Oswaldo/01_De_Oswaldo_Para_Raoul/`)
+**Fecha entrega Oz:** 2026-05-04 (vía Drive `RAUL/colaboradores/Genteca/Oswaldo/01_De_Oswaldo_Para_Raoul/` — migrado desde `RAUL-Exchange/Genteca/` el 2026-05-09)
 **Recepción Owner:** 2026-05-05
 **Insumo de origen:** brief Oz v2 (`03-review-and-release/GST-R_etiquetas_brief_v2.pdf`) + copy v2 (`02-production/GST-R_etiquetas_copy_v2.md`)
 **Estado:** propuesta de avance — NO es versión final.
@@ -10,7 +10,7 @@
 ## Contenido
 
 - `PROP_GST_ETQ_v1.jpg` — propuesta visual única de Oz (JPG 2.2 MB, fuera de git por regla `*.jpg`).
-  - Original en Drive: `G:\Mi unidad\RAUL-Exchange\Genteca\Oswaldo\01_De_Oswaldo_Para_Raoul\PROP_GST_ETQ.jpg`
+  - Original en Drive: `G:\Mi unidad\RAUL\colaboradores\Genteca\Oswaldo\01_De_Oswaldo_Para_Raoul\PROP_GST_ETQ.jpg`
   - Renombrado localmente a `_v1` para seguimiento de versiones.
 
 ## Qué incluye la propuesta
