@@ -218,7 +218,7 @@ Después de ejecutar Paso 3, validar:
 - [x] Carpeta `GME Estudios de mercado/` renombrada (`2025-04_GME_estudios-mercado/`) y 13 archivos con citaciones actualizados.
 - [x] DECISIONS.md actualizado con entrada cubriendo decisiones 1-4 (commit 9252e83).
 - [x] Documentación de `RAUL_ROOT` añadida a `CONTEXT_core.md`.
-- [ ] `RAUL_ROOT` seteado a nivel de sistema (Owner action — opcional, default funciona).
+- [ ] `RAUL_ROOT` seteado a nivel de sistema (Owner action — opcional, default funciona). Paso a paso documentado en `CONTEXT_core.md` sección "Configuración de paths para scripts (`RAUL_ROOT`)".
 - [x] `gsm_empaque_redlines_v4.py` movido a `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/`.
 - [ ] `FOLDER-ARCHITECTURE.md` actualizado si/cuando la reorganización 05-indexes/06-logs proceda (Paso futuro).
 

@@ -88,9 +88,47 @@ Los scripts Tier 1 (`fase4_kb_formatter.py`, `pendrive_pipeline.py`, `backup_kb_
 3. Default hardcoded `C:\RAUL`.
 
 **Configuración recomendada:**
-- **Producción Windows:** `setx RAUL_ROOT "C:\RAUL"` (PowerShell elevado), o System Properties → Environment Variables.
-- **Sesión puntual:** `$env:RAUL_ROOT = "C:\RAUL"` antes de invocar scripts.
-- **Sin setup:** scripts usan el default. Máquinas existentes no requieren cambios.
+- **Producción Windows:** setear permanentemente vía `setx` o System Properties (ver paso a paso abajo).
+- **Sesión puntual:** `$env:RAUL_ROOT = "C:\RAUL"` antes de invocar scripts (válido solo en esa shell).
+- **Sin setup:** scripts usan el default `C:\RAUL`. Máquinas existentes no requieren cambios.
+
+**Cómo setear `RAUL_ROOT` permanentemente (Windows) — paso a paso:**
+
+Opción 1 — PowerShell:
+
+```powershell
+# Abrir PowerShell como administrador (para system-wide) o normal (para user-only)
+setx RAUL_ROOT "C:\RAUL" /M     # /M = system-wide (requiere admin); sin /M = user-only
+
+# IMPORTANTE: setx no afecta la sesión activa. Cerrar y abrir nueva PowerShell.
+# Verificar en la nueva sesión:
+$env:RAUL_ROOT                  # debe imprimir: C:\RAUL
+```
+
+Opción 2 — GUI Windows:
+
+1. Win + X → System → Advanced system settings → Environment Variables.
+2. New (en System variables si querés system-wide, o User variables para tu usuario): Name = `RAUL_ROOT`, Value = `C:\RAUL`.
+3. OK → reiniciar PowerShell, CMD, VS Code, y cualquier otro IDE/terminal abierto para que recarguen el entorno.
+
+**Verificación end-to-end (post-setup):**
+
+```powershell
+# 1. Confirmar que la variable está visible en una nueva PowerShell
+$env:RAUL_ROOT
+
+# 2. Self-test del helper Python
+python "C:\RAUL\04-system\04-tools-and-scripts\raul_paths.py"
+# Debe mostrar: ROOT = C:\RAUL  [OK]
+# Si la variable está mal seteada, ROOT mostraría el valor seteado (no el default).
+```
+
+**Cuándo conviene setearlo:**
+- Si querés usar un root distinto al default `C:\RAUL` (ej. clonar el repo en otra ubicación para test).
+- Si tenés varios checkouts del repo y querés cambiar entre ellos via env var.
+- Para CI/CD o setups portables.
+
+Si solo trabajás con un único `C:\RAUL`, no necesitás setear la variable — el default funciona.
 
 **Helper Python:** scripts importan `from raul_paths import paths`. El helper vive en `04-system/04-tools-and-scripts/raul_paths.py` y provee paths canónicos (`ROOT`, `INBOX`, `KB`, `PROJECTS`, `SYSTEM`, `REPORTS_DIR`, `PENDRIVE`, `ENV_FILE`, más `INDEXES_CANONICAL_DIR` y `LOGS_DIR` para futura separación).
 
