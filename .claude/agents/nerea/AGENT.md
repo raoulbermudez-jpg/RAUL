@@ -13,7 +13,7 @@ tools:
 # Nerea — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\nerea.md`
+`C:\RAUL\04-system\02-agents\conceptual\nerea.md`
 
 Toda la identidad, misión, frontera narrativo-vs-editorial, boundaries,
 sub-protocolos de NE-1 a NE-5, formato de outputs con mini-cover note
@@ -28,30 +28,30 @@ archivo solo aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/03-governance/DECISIONS.md` | `C:\Raul\04-system\03-governance\DECISIONS.md` |
-| Brand wiki Genteca (voz / registro / léxico) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Identidad de marca Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\01-identidad-de-marca.md` |
-| Estrategia digital y audiencias Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\02-estrategia-digital-y-audiencias.md` |
-| Market wiki Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
-| Specs Genteca (consultar via Vera, no reinterpretar) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Briefs técnicos de Vera | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` o `01-strategy-and-design\` |
-| Outputs de Orlan (OL-1 a OL-5) | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| **Outputs de Vael (VA-1 a VA-5; VA-3 message map + VA-5 guardrails críticos)** | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| **Outputs de Aurelio (AU-1, AU-3 críticos; AU-2 / AU-4 / AU-5 contextuales)** | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| **AU-2 trimestral acumulativo del dominio** | `C:\Raul\03-projects\genteca\_governance\` |
-| **BR-2 acumulativo Genteca (claims con caveat literal)** | `C:\Raul\03-projects\genteca\_governance\` |
-| **BR-5 transversal (precedentes cross-dominio)** | `C:\Raul\04-system\03-governance\` |
-| **SO-4 de Solenne (body editorial Genteca; consumo crítico)** | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| Outputs de Solenne (SO-1, SO-2, SO-3, SO-5) contextuales | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| **Outputs de Nerea (NE-1 a NE-5) por proyecto** | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Catálogo Sira de NE-X / piezas archivadas (consulta para coherencia de serie) | `C:\Raul\04-system\05-indexes\` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/03-governance/DECISIONS.md` | `C:\RAUL\04-system\03-governance\DECISIONS.md` |
+| Brand wiki Genteca (voz / registro / léxico) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Identidad de marca Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\01-identidad-de-marca.md` |
+| Estrategia digital y audiencias Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\02-estrategia-digital-y-audiencias.md` |
+| Market wiki Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
+| Specs Genteca (consultar via Vera, no reinterpretar) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Briefs técnicos de Vera | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` o `01-strategy-and-design\` |
+| Outputs de Orlan (OL-1 a OL-5) | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| **Outputs de Vael (VA-1 a VA-5; VA-3 message map + VA-5 guardrails críticos)** | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| **Outputs de Aurelio (AU-1, AU-3 críticos; AU-2 / AU-4 / AU-5 contextuales)** | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| **AU-2 trimestral acumulativo del dominio** | `C:\RAUL\03-projects\genteca\_governance\` |
+| **BR-2 acumulativo Genteca (claims con caveat literal)** | `C:\RAUL\03-projects\genteca\_governance\` |
+| **BR-5 transversal (precedentes cross-dominio)** | `C:\RAUL\04-system\03-governance\` |
+| **SO-4 de Solenne (body editorial Genteca; consumo crítico)** | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| Outputs de Solenne (SO-1, SO-2, SO-3, SO-5) contextuales | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| **Outputs de Nerea (NE-1 a NE-5) por proyecto** | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Catálogo Sira de NE-X / piezas archivadas (consulta para coherencia de serie) | `C:\RAUL\04-system\05-indexes\` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
 
 ### Tool mappings
 

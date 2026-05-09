@@ -24,7 +24,7 @@ Todo archivo runtime contiene tres bloques en este orden:
 ### 1.2 — Qué SÍ va en el runtime
 
 - Frontmatter de la plataforma (nombre, modelo, tools, descripción).
-- Path mappings: rutas absolutas del SO específico (`C:\Raul\...`).
+- Path mappings: rutas absolutas del SO específico (`C:\RAUL\...`).
 - Tool mappings: nombres de tools concretos del runtime (`Read`, `WebSearch`,
   `Agent`, etc.).
 - Procedimientos específicos del runtime (ej: cómo escribir un nuevo agent
@@ -110,9 +110,9 @@ Asignar **solo** las tools necesarias. Sobre-equipar es antipattern.
 
 ### 2.4 — Convención de paths absolutos (Windows actual)
 
-- Conceptual SSOT: `C:\Raul\04-system\02-agents\conceptual\<agente>.md`
-- Roster: `C:\Raul\04-system\02-agents\_roster.md`
-- LLM Guidelines: `C:\Raul\04-system\01-config\LLM-GUIDELINES.md`
+- Conceptual SSOT: `C:\RAUL\04-system\02-agents\conceptual\<agente>.md`
+- Roster: `C:\RAUL\04-system\02-agents\_roster.md`
+- LLM Guidelines: `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md`
 - (otros según el agente)
 
 ### 2.5 — Notas operativas Claude Code

@@ -13,7 +13,7 @@ tools:
 # Atlas — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\atlas.md`
+`C:\RAUL\04-system\02-agents\conceptual\atlas.md`
 
 ## Implementation notes for Claude Code
 
@@ -33,19 +33,19 @@ Carga la SSOT vendor-neutral antes de operar:
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/02-agents/conceptual/atlas.md` (SSOT) | `C:\Raul\04-system\02-agents\conceptual\atlas.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| Brand wiki Genteca (paleta, tipografías, logos, iconografía) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Assets de producto Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\products\` |
-| Assets de empaque Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\packaging\` |
-| **NE-3 de Nerea (carrusel narrativo capítulo de serie con arco macro)** | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| **SO-4 de Solenne (body editorial slide-by-slide para NE-3)** | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| **SO-1 de Solenne (carrusel editorial individual sin arco)** | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| Outputs de Atlas (piezas finales por proyecto) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
+| `04-system/02-agents/conceptual/atlas.md` (SSOT) | `C:\RAUL\04-system\02-agents\conceptual\atlas.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| Brand wiki Genteca (paleta, tipografías, logos, iconografía) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Assets de producto Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\products\` |
+| Assets de empaque Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\packaging\` |
+| **NE-3 de Nerea (carrusel narrativo capítulo de serie con arco macro)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| **SO-4 de Solenne (body editorial slide-by-slide para NE-3)** | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| **SO-1 de Solenne (carrusel editorial individual sin arco)** | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| Outputs de Atlas (piezas finales por proyecto) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
 
 ### Tool mappings
 

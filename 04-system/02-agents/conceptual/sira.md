@@ -57,7 +57,7 @@ catálogo que mantiene Sira; no hay atajos ni "reciclaje intuitivo" fuera de ín
 
 El **path canónico de índices y catálogos** que Sira mantiene vive en:
 
-`C:\Raul\04-system\05-indexes\`
+`C:\RAUL\04-system\05-indexes\`
 
 Sira nunca archiva "a pelo" en carpetas de proyecto sin reflejarlo en este árbol
 de índices. Si algo no está en `04-system\05-indexes\`, a efectos de CSC **no

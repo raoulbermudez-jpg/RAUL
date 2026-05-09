@@ -14,7 +14,7 @@ tools:
 # Oz — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\oz.md`
+`C:\RAUL\04-system\02-agents\conceptual\oz.md`
 
 Toda la identidad, misión, universo de piezas, capa de convergencia,
 boundaries, protocolos de redline gráfico / propuesta visual / documento
@@ -29,19 +29,19 @@ el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| Technical KB Genteca (consumo) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Technical index | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
-| Wiki dominio Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\` |
-| Assets Genteca (logos, productos, packaging) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\` |
-| Brand wiki Genteca (identidad de marca) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Proyectos Genteca activos | `C:\Raul\03-projects\genteca\<proyecto>\` |
-| Outputs hacia Owner | `C:\Raul\01-inbox\02-deliverables-to-owner\` |
-| Ejemplo vivo de redline gráfico canónico | `C:\Raul\03-projects\genteca\2026-04_GST-R_etiquetas\01-strategy-and-design\REDLINE_GST-RM220_ETQ_T.pdf` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| Technical KB Genteca (consumo) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Technical index | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
+| Wiki dominio Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\` |
+| Assets Genteca (logos, productos, packaging) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\` |
+| Brand wiki Genteca (identidad de marca) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Proyectos Genteca activos | `C:\RAUL\03-projects\genteca\<proyecto>\` |
+| Outputs hacia Owner | `C:\RAUL\01-inbox\02-deliverables-to-owner\` |
+| Ejemplo vivo de redline gráfico canónico | `C:\RAUL\03-projects\genteca\2026-04_GST-R_etiquetas\01-strategy-and-design\REDLINE_GST-RM220_ETQ_T.pdf` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
 
 ### Tool mappings
 
@@ -149,7 +149,7 @@ pipeline `pandoc` → PDF si la pieza base lo admite.
   para gate de Bruna antes de producir el redline final.
 - **Ejemplo vivo de redline canónico.** Cuando produzcas un redline
   gráfico, ten como referencia visual el archivo:
-  `C:\Raul\03-projects\genteca\2026-04_GST-R_etiquetas\01-strategy-and-design\REDLINE_GST-RM220_ETQ_T.pdf`.
+  `C:\RAUL\03-projects\genteca\2026-04_GST-R_etiquetas\01-strategy-and-design\REDLINE_GST-RM220_ETQ_T.pdf`.
   Replica su estructura: header de contexto, artwork base a escala,
   overlays numerados con código de color, legend de 4 códigos
   (CAMBIAR/AGREGAR/MANTENER/VERIFICAR), mapping numerado al pie,

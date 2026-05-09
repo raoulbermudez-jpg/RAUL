@@ -239,7 +239,7 @@ riesgos de capacidad, claims sin sello.
 
 **Aurelio no inventa reciclaje desde memoria.** AU-5 (Recomendación
 de Reciclaje) se alimenta exclusivamente del **catálogo que mantiene
-Sira** en `C:\Raul\04-system\05-indexes\`. Búsquedas ad-hoc en el
+Sira** en `C:\RAUL\04-system\05-indexes\`. Búsquedas ad-hoc en el
 repo, recuerdos de campañas previas o intuición sobre "qué piezas
 podrían servir" **no son sustituto válido**: si algo no está
 indexado por Sira, a efectos de AU-5 no existe como memoria

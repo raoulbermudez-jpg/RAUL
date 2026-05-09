@@ -13,7 +13,7 @@ tools:
 # Orfeo — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\orfeo.md`
+`C:\RAUL\04-system\02-agents\conceptual\orfeo.md`
 
 ## Implementation notes for Claude Code
 
@@ -43,20 +43,20 @@ Carga la SSOT vendor-neutral antes de operar:
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/02-agents/conceptual/orfeo.md` (SSOT) | `C:\Raul\04-system\02-agents\conceptual\orfeo.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| Brand wiki Genteca (paleta, tipografías, motion system, lineamientos gráficos) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| **NE-X de Nerea (guion narrativo, escenas, beats clave)** | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| **SO-X de Solenne (on-screen text, copy aprobado, captions)** | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| **VA-X de Vael (arquitectura de mensaje, pilares)** | `C:\Raul\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` |
-| **Layouts y key visuals de Atlas (AT-1..AT-5 base estática)** | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Visual system / redlines de Oz (cuando existe sistema maestro) | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| BR-2 / BR-5 (claims aprobados con caveats literales) | `C:\Raul\03-projects\<dominio>\_governance\` y `C:\Raul\04-system\03-governance\` |
-| Outputs de Orfeo (motion specs + asset packs + scene maps + handoff bundles) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
+| `04-system/02-agents/conceptual/orfeo.md` (SSOT) | `C:\RAUL\04-system\02-agents\conceptual\orfeo.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| Brand wiki Genteca (paleta, tipografías, motion system, lineamientos gráficos) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| **NE-X de Nerea (guion narrativo, escenas, beats clave)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| **SO-X de Solenne (on-screen text, copy aprobado, captions)** | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| **VA-X de Vael (arquitectura de mensaje, pilares)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` |
+| **Layouts y key visuals de Atlas (AT-1..AT-5 base estática)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Visual system / redlines de Oz (cuando existe sistema maestro) | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| BR-2 / BR-5 (claims aprobados con caveats literales) | `C:\RAUL\03-projects\<dominio>\_governance\` y `C:\RAUL\04-system\03-governance\` |
+| Outputs de Orfeo (motion specs + asset packs + scene maps + handoff bundles) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
 
 ### Tool mappings
 

@@ -15,7 +15,7 @@ tools:
 # Renzo — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\renzo.md`
+`C:\RAUL\04-system\02-agents\conceptual\renzo.md`
 
 Toda la identidad, misión, capacidad multimodal central, boundaries,
 sub-protocolos de interpretación de diagramas / guías de instalación /
@@ -30,19 +30,19 @@ Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| Technical KB Genteca (consumo) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Technical index | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
-| Wiki dominio Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\` |
-| Diagramas Genteca (PNG/JPG/PDF) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\diagrams\` |
-| Assets Genteca (productos, packaging, uncoded) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\` |
-| Proyectos Genteca activos | `C:\Raul\03-projects\genteca\<proyecto>\` |
-| **Ejemplo vivo de manual técnico canónico** | `C:\Raul\03-projects\genteca\2026-05_GIII-MV_manual\01-strategy-and-design\GIII-MV-GD-MAN8003-VE-V1.pdf` |
-| Outputs típicos (guías, checklists, troubleshooting, guiones) | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| Technical KB Genteca (consumo) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Technical index | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
+| Wiki dominio Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\` |
+| Diagramas Genteca (PNG/JPG/PDF) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\diagrams\` |
+| Assets Genteca (productos, packaging, uncoded) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\` |
+| Proyectos Genteca activos | `C:\RAUL\03-projects\genteca\<proyecto>\` |
+| **Ejemplo vivo de manual técnico canónico** | `C:\RAUL\03-projects\genteca\2026-05_GIII-MV_manual\01-strategy-and-design\GIII-MV-GD-MAN8003-VE-V1.pdf` |
+| Outputs típicos (guías, checklists, troubleshooting, guiones) | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
 
 ### Tool mappings
 

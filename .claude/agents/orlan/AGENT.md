@@ -15,7 +15,7 @@ tools:
 # Orlan — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\orlan.md`
+`C:\RAUL\04-system\02-agents\conceptual\orlan.md`
 
 Toda la identidad, misión, distinción fact/claim, boundaries,
 sub-protocolos de OL-1 a OL-5, jerarquía de fuentes, formato de
@@ -29,20 +29,20 @@ archivo solo aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| Market wiki Genteca (consumo principal) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
-| Brand wiki Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Wiki dominio Genteca (general) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\` |
-| Specs Genteca (para conocer producto propio) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Technical index Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
-| Assets Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\` |
-| Proyectos Genteca activos | `C:\Raul\03-projects\genteca\<proyecto>\` |
-| Outputs típicos (briefs, tablas, memos, radars) | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` o `02-production\` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| Market wiki Genteca (consumo principal) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
+| Brand wiki Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Wiki dominio Genteca (general) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\` |
+| Specs Genteca (para conocer producto propio) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Technical index Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
+| Assets Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\` |
+| Proyectos Genteca activos | `C:\RAUL\03-projects\genteca\<proyecto>\` |
+| Outputs típicos (briefs, tablas, memos, radars) | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` o `02-production\` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
 
 ### Tool mappings
 

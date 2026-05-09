@@ -397,7 +397,7 @@ transversal** y propone reciclajes. Es la **memoria viva** y la
 **fuente única de reciclaje estructurado** del CSC: **AU-5
 (Recomendación de Reciclaje) de Aurelio se basa exclusivamente en
 su catálogo**. Mantiene el árbol canónico de índices en
-`C:\Raul\04-system\05-indexes\`; lo que no esté allí no existe
+`C:\RAUL\04-system\05-indexes\`; lo que no esté allí no existe
 como memoria reciclable.
 
 ### Tareas típicas
@@ -425,7 +425,7 @@ como memoria reciclable.
 - **Propuestas de reciclaje** para nuevas campañas.
 - **Registro de trazabilidad** por cadena (pieza → cadena → agentes → fecha).
 - **Confirmación de archivo** a Raul (dispara cierre en task-log).
-- **Catálogo canónico** en `C:\Raul\04-system\05-indexes\` como
+- **Catálogo canónico** en `C:\RAUL\04-system\05-indexes\` como
   single source of truth para reciclaje (input para AU-5 de Aurelio
   y consultas de Nerea para coherencia de serie).
 

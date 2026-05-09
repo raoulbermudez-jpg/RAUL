@@ -13,7 +13,7 @@ tools:
 # Vela — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\vela.md`
+`C:\RAUL\04-system\02-agents\conceptual\vela.md`
 
 ## Implementation notes for Claude Code
 
@@ -33,16 +33,16 @@ Carga la SSOT vendor-neutral antes de operar:
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/02-agents/conceptual/vela.md` (SSOT) | `C:\Raul\04-system\02-agents\conceptual\vela.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| Brand wiki Genteca (guía de pronunciación, voz de marca) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| **NE-1 (segmentos narrados) / NE-4 single-voice de Nerea** | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| **VA-X de Vael (voz de marca, guía de pronunciación)** | `C:\Raul\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` |
-| Outputs de Vela (tracks segmentados + checklist pronunciación) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
+| `04-system/02-agents/conceptual/vela.md` (SSOT) | `C:\RAUL\04-system\02-agents\conceptual\vela.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| Brand wiki Genteca (guía de pronunciación, voz de marca) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| **NE-1 (segmentos narrados) / NE-4 single-voice de Nerea** | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| **VA-X de Vael (voz de marca, guía de pronunciación)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` |
+| Outputs de Vela (tracks segmentados + checklist pronunciación) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
 
 ### Tool mappings
 

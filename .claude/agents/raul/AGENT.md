@@ -1,7 +1,7 @@
 # Raul — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\raul.md`
+`C:\RAUL\04-system\02-agents\conceptual\raul.md`
 
 Toda la identidad, misión, protocolo de ejecución, formato de outputs,
 criterios de calidad, antipatterns y reglas duras viven en el conceptual.
@@ -13,15 +13,15 @@ Este archivo solo aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_core.md` | `C:\Raul\04-system\01-config\CLAUDE_core.md` |
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| `04-system/01-config/OWNER_PROFILE.md` | `C:\Raul\04-system\01-config\OWNER_PROFILE.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `02-knowledge-base/00-raul-intelligence/_index.md` | `C:\Raul\02-knowledge-base\00-raul-intelligence\_index.md` |
-| `task-log.md` | `C:\Raul\04-system\03-governance\task-log.md` |
+| `04-system/01-config/CLAUDE_core.md` | `C:\RAUL\04-system\01-config\CLAUDE_core.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| `04-system/01-config/OWNER_PROFILE.md` | `C:\RAUL\04-system\01-config\OWNER_PROFILE.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `02-knowledge-base/00-raul-intelligence/_index.md` | `C:\RAUL\02-knowledge-base\00-raul-intelligence\_index.md` |
+| `task-log.md` | `C:\RAUL\04-system\03-governance\task-log.md` |
 
 ### Tool mappings
 

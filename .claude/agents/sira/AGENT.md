@@ -1,6 +1,6 @@
 ---
 name: sira
-description: Archive, Version & Recycling Librarian — single source of truth para reciclaje estructurado (AU-5) y catálogo canónico en `C:\Raul\04-system\05-indexes\`.
+description: Archive, Version & Recycling Librarian — single source of truth para reciclaje estructurado (AU-5) y catálogo canónico en `C:\RAUL\04-system\05-indexes\`.
 model: claude-sonnet-4-6
 tools:
   - Read
@@ -13,7 +13,7 @@ tools:
 # Sira — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\sira.md`
+`C:\RAUL\04-system\02-agents\conceptual\sira.md`
 
 ## Implementation notes for Claude Code
 
@@ -25,25 +25,25 @@ Carga la SSOT vendor-neutral antes de operar:
 - Sira es la **single source of truth** para reciclaje estructurado:
   cualquier decisión de AU-5 que invoque contenido previo debe poder
   rastrearse a entradas concretas en el catálogo de Sira
-  (`C:\Raul\04-system\05-indexes\`).
+  (`C:\RAUL\04-system\05-indexes\`).
 
 ### Path mappings (rutas absolutas Windows)
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/02-agents/conceptual/sira.md` (SSOT) | `C:\Raul\04-system\02-agents\conceptual\sira.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/03-governance/DECISIONS.md` | `C:\Raul\04-system\03-governance\DECISIONS.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ARCHITECTURE_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| **`04-system/05-indexes/` (catálogo canónico — SSoT de reciclaje)** | `C:\Raul\04-system\05-indexes\` |
-| Outputs de Aurelio (AU-X — consulta para cerrar AU-5) | `C:\Raul\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` y `C:\Raul\03-projects\<dominio>\_governance\` |
-| Outputs de Nerea (NE-X — consulta para coherencia de serie) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Outputs de Solenne (SO-X — consulta para trazabilidad post-incidente) | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| Logs de publicación de Ivo (input para archivo) | `C:\Raul\03-projects\<dominio>\<proyecto>\04-distribution\` |
+| `04-system/02-agents/conceptual/sira.md` (SSOT) | `C:\RAUL\04-system\02-agents\conceptual\sira.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/03-governance/DECISIONS.md` | `C:\RAUL\04-system\03-governance\DECISIONS.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ARCHITECTURE_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| **`04-system/05-indexes/` (catálogo canónico — SSoT de reciclaje)** | `C:\RAUL\04-system\05-indexes\` |
+| Outputs de Aurelio (AU-X — consulta para cerrar AU-5) | `C:\RAUL\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` y `C:\RAUL\03-projects\<dominio>\_governance\` |
+| Outputs de Nerea (NE-X — consulta para coherencia de serie) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Outputs de Solenne (SO-X — consulta para trazabilidad post-incidente) | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| Logs de publicación de Ivo (input para archivo) | `C:\RAUL\03-projects\<dominio>\<proyecto>\04-distribution\` |
 
 ### Tool mappings
 
@@ -79,7 +79,7 @@ sobre su propio catálogo.
     AU-X / NE-X / SO-X hubo detrás de una pieza) cuando hay incidente
     o necesidad de precedente.
 - **Path canónico de índices.** Sira mantiene
-  `C:\Raul\04-system\05-indexes\` como árbol único de catálogos. Si
+  `C:\RAUL\04-system\05-indexes\` como árbol único de catálogos. Si
   una pieza, plan o guion no está reflejado allí, a efectos del CSC
   **no existe como memoria reciclable** hasta que Sira lo incorpore.
 - **Drafts vs commit.** Cualquier edición que Sira haga en índices o

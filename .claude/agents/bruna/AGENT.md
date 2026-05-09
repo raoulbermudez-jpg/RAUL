@@ -13,7 +13,7 @@ tools:
 # Bruna — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\bruna.md`
+`C:\RAUL\04-system\02-agents\conceptual\bruna.md`
 
 Toda la identidad, misión, distinción técnico/reputacional/regulatorio,
 boundaries, sub-protocolos de BR-1 a BR-5, formato de outputs con
@@ -28,23 +28,23 @@ archivo solo aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| **`04-system/03-governance/RISK-POLICY.md`** (consulta crítica) | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| **`04-system/03-governance/DECISIONS.md`** (consulta crítica) | `C:\Raul\04-system\03-governance\DECISIONS.md` |
-| Brand wiki Genteca (contexto de marca cuando aplica) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Market wiki Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
-| Specs Genteca (consultar via Vera, no reinterpretar) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Outputs de Vera (specs validadas, briefs técnicos) | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` o `01-strategy-and-design\` |
-| Outputs de Orlan (OL-1 a OL-5) | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| Outputs de Vael (VA-1 a VA-5; VA-5 crítico para gate) | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| Copy de Solenne en revisión | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| **Outputs por proyecto de Bruna (BR-1, BR-3 contextual, BR-4)** | `C:\Raul\03-projects\<dominio>\<proyecto>\03-review-and-release\` |
-| **BR-2 acumulativo (Approval Log) — uno por dominio** | `C:\Raul\03-projects\<dominio>\_governance\` |
-| **BR-5 transversal (Precedents Memo) — único para todo /RAUL/** | `C:\Raul\04-system\03-governance\` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| **`04-system/03-governance/RISK-POLICY.md`** (consulta crítica) | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| **`04-system/03-governance/DECISIONS.md`** (consulta crítica) | `C:\RAUL\04-system\03-governance\DECISIONS.md` |
+| Brand wiki Genteca (contexto de marca cuando aplica) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Market wiki Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
+| Specs Genteca (consultar via Vera, no reinterpretar) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Outputs de Vera (specs validadas, briefs técnicos) | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` o `01-strategy-and-design\` |
+| Outputs de Orlan (OL-1 a OL-5) | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| Outputs de Vael (VA-1 a VA-5; VA-5 crítico para gate) | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| Copy de Solenne en revisión | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| **Outputs por proyecto de Bruna (BR-1, BR-3 contextual, BR-4)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\03-review-and-release\` |
+| **BR-2 acumulativo (Approval Log) — uno por dominio** | `C:\RAUL\03-projects\<dominio>\_governance\` |
+| **BR-5 transversal (Precedents Memo) — único para todo /RAUL/** | `C:\RAUL\04-system\03-governance\` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
 
 **Nota sobre BR-2 y BR-5 (decisión vigente registrada en `DECISIONS.md`
 2026-05-02):**

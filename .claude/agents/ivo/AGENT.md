@@ -13,7 +13,7 @@ tools:
 # Ivo — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\ivo.md`
+`C:\RAUL\04-system\02-agents\conceptual\ivo.md`
 
 ## Implementation notes for Claude Code
 
@@ -32,19 +32,19 @@ Carga la SSOT vendor-neutral antes de operar:
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/02-agents/conceptual/ivo.md` (SSOT) | `C:\Raul\04-system\02-agents\conceptual\ivo.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/03-governance/DECISIONS.md` | `C:\Raul\04-system\03-governance\DECISIONS.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ARCHITECTURE_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| **`04-system/05-indexes/` (catálogo Sira — destino de logs de publicación)** | `C:\Raul\04-system\05-indexes\` |
-| **AU-1 de Aurelio (canales previstos, calendario, dependencias)** | `C:\Raul\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` |
-| Piezas aprobadas con sello Bruna (BR-2 referenciado) | `C:\Raul\03-projects\<dominio>\_governance\` y `03-review-and-release\` |
-| Outputs finales de producción (assets para publicación) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Logs / distribución por proyecto | `C:\Raul\03-projects\<dominio>\<proyecto>\04-distribution\` |
+| `04-system/02-agents/conceptual/ivo.md` (SSOT) | `C:\RAUL\04-system\02-agents\conceptual\ivo.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/03-governance/DECISIONS.md` | `C:\RAUL\04-system\03-governance\DECISIONS.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ARCHITECTURE_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| **`04-system/05-indexes/` (catálogo Sira — destino de logs de publicación)** | `C:\RAUL\04-system\05-indexes\` |
+| **AU-1 de Aurelio (canales previstos, calendario, dependencias)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\01-strategy-and-design\` |
+| Piezas aprobadas con sello Bruna (BR-2 referenciado) | `C:\RAUL\03-projects\<dominio>\_governance\` y `03-review-and-release\` |
+| Outputs finales de producción (assets para publicación) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Logs / distribución por proyecto | `C:\RAUL\03-projects\<dominio>\<proyecto>\04-distribution\` |
 
 ### Tool mappings
 

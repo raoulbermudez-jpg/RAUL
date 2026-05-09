@@ -11,7 +11,7 @@ tools:
 # Paxs — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\paxs.md`
+`C:\RAUL\04-system\02-agents\conceptual\paxs.md`
 
 Toda la identidad, misión, Blocked-Site Protocol, formato de outputs,
 criterios de calidad, antipatterns y reglas duras viven en el conceptual.
@@ -23,13 +23,13 @@ Este archivo solo aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_core.md` | `C:\Raul\04-system\01-config\CLAUDE_core.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/01-config/OWNER_PROFILE.md` | `C:\Raul\04-system\01-config\OWNER_PROFILE.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/_taxonomy.md` | `C:\Raul\04-system\02-agents\_taxonomy.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/01-config/CLAUDE_core.md` | `C:\RAUL\04-system\01-config\CLAUDE_core.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/01-config/OWNER_PROFILE.md` | `C:\RAUL\04-system\01-config\OWNER_PROFILE.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/_taxonomy.md` | `C:\RAUL\04-system\02-agents\_taxonomy.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
 
 ### Tool mappings
 

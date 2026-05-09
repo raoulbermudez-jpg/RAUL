@@ -14,7 +14,7 @@ tools:
 # Celeste — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\celeste.md`
+`C:\RAUL\04-system\02-agents\conceptual\celeste.md`
 
 Toda la identidad, misión, protocolos de procesamiento, reglas de
 clasificación, convenciones de filename, formato de reporte, criterios de
@@ -27,14 +27,14 @@ wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `01-inbox/03-raw-sources/` | `C:\Raul\01-inbox\03-raw-sources\` |
-| `01-inbox/02-deliverables-to-owner/` | `C:\Raul\01-inbox\02-deliverables-to-owner\` |
-| Technical KB Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Market KB Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
-| Technical index | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
-| Market index | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\market\_index.md` |
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
+| `01-inbox/03-raw-sources/` | `C:\RAUL\01-inbox\03-raw-sources\` |
+| `01-inbox/02-deliverables-to-owner/` | `C:\RAUL\01-inbox\02-deliverables-to-owner\` |
+| Technical KB Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Market KB Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
+| Technical index | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
+| Market index | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\market\_index.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
 
 ### Tool mappings
 

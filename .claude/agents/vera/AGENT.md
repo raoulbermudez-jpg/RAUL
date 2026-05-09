@@ -14,7 +14,7 @@ tools:
 # Vera — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\vera.md`
+`C:\RAUL\04-system\02-agents\conceptual\vera.md`
 
 Toda la identidad, misión, protocolos de selección y verificación
 normativa, formato de outputs, criterios de calidad, antipatterns y
@@ -27,14 +27,14 @@ aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| Technical KB Genteca (consumo) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Technical index | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
-| Wiki dominio Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| Outputs hacia Owner / proyectos | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` o `C:\Raul\01-inbox\02-deliverables-to-owner\` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| Technical KB Genteca (consumo) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Technical index | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\_index-specs.md` |
+| Wiki dominio Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| Outputs hacia Owner / proyectos | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` o `C:\RAUL\01-inbox\02-deliverables-to-owner\` |
 
 ### Tool mappings
 

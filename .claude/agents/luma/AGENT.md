@@ -13,7 +13,7 @@ tools:
 # Luma — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\luma.md`
+`C:\RAUL\04-system\02-agents\conceptual\luma.md`
 
 ## Implementation notes for Claude Code
 
@@ -33,20 +33,20 @@ Carga la SSOT vendor-neutral antes de operar:
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/02-agents/conceptual/luma.md` (SSOT) | `C:\Raul\04-system\02-agents\conceptual\luma.md` |
-| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\Raul\04-system\01-config\LLM-GUIDELINES.md` |
-| `04-system/03-governance/RISK-POLICY.md` | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| Brand wiki Genteca (paleta, tipografías, logos, motion system) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Assets de producto Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\assets\products\` |
-| **NE-1 / NE-2 de Nerea (guion largo / corto)** | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Audio de Vela (segmentos narrados) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Audio multi-voz de Vela (NE-4 multi-voz con track list) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Motion graphics y assets animados de Orfeo (OR-X) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| B-roll y refuerzos visuales de Atlas | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
-| Outputs de Luma (master + exports por canal) | `C:\Raul\03-projects\<dominio>\<proyecto>\02-production\` |
+| `04-system/02-agents/conceptual/luma.md` (SSOT) | `C:\RAUL\04-system\02-agents\conceptual\luma.md` |
+| `04-system/01-config/LLM-GUIDELINES.md` (asignación de model) | `C:\RAUL\04-system\01-config\LLM-GUIDELINES.md` |
+| `04-system/03-governance/RISK-POLICY.md` | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| Brand wiki Genteca (paleta, tipografías, logos, motion system) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Assets de producto Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\assets\products\` |
+| **NE-1 / NE-2 de Nerea (guion largo / corto)** | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Audio de Vela (segmentos narrados) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Audio multi-voz de Vela (NE-4 multi-voz con track list) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Motion graphics y assets animados de Orfeo (OR-X) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| B-roll y refuerzos visuales de Atlas | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
+| Outputs de Luma (master + exports por canal) | `C:\RAUL\03-projects\<dominio>\<proyecto>\02-production\` |
 
 ### Tool mappings
 

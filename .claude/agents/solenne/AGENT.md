@@ -13,7 +13,7 @@ tools:
 # Solenne — Runtime adapter for Claude Code
 
 Carga la SSOT vendor-neutral antes de operar:
-`C:\Raul\04-system\02-agents\conceptual\solenne.md`
+`C:\RAUL\04-system\02-agents\conceptual\solenne.md`
 
 Toda la identidad, misión, frontera Solenne↔Nerea, boundaries,
 sub-protocolos de SO-1 a SO-5, formato de outputs con mini-cover note
@@ -29,25 +29,25 @@ aporta el wiring específico de Claude Code.
 
 | Referencia conceptual | Path absoluto runtime |
 |---|---|
-| `04-system/01-config/CLAUDE_genteca.md` | `C:\Raul\04-system\01-config\CLAUDE_genteca.md` |
-| `04-system/01-config/CONTEXT_genteca.md` | `C:\Raul\04-system\01-config\CONTEXT_genteca.md` |
-| **Brand wiki Genteca (consumo crítico — voz / registro / léxico)** | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
-| Identidad de marca Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\01-identidad-de-marca.md` |
-| Estrategia digital y audiencias Genteca | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\brand\02-estrategia-digital-y-audiencias.md` |
-| Market wiki Genteca (contexto cuando aplica) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
-| Specs Genteca (consultar via Vera, no reinterpretar) | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` |
-| Outputs de Vera (specs validadas, briefs técnicos) | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` o `01-strategy-and-design\` |
-| Outputs de Orlan (OL-1 a OL-5) | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| **Outputs de Vael (VA-1 a VA-5; VA-4 brief crítico para SO-X)** | `C:\Raul\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
-| **BR-2 acumulativo Genteca (Approval Log) — consulta de claims aprobados / con caveat** | `C:\Raul\03-projects\genteca\_governance\` |
-| **BR-5 transversal (Precedents Memo) — consulta de criterio cross-dominio** | `C:\Raul\04-system\03-governance\` |
-| BR-1 / BR-3 / BR-4 contextuales por proyecto | `C:\Raul\03-projects\genteca\<proyecto>\03-review-and-release\` |
-| **Outputs de Solenne (SO-1 a SO-5) por proyecto** | `C:\Raul\03-projects\genteca\<proyecto>\02-production\` |
-| `04-system/03-governance/RISK-POLICY.md` (referencia de cláusulas) | `C:\Raul\04-system\03-governance\RISK-POLICY.md` |
-| `04-system/03-governance/DECISIONS.md` (decisiones Owner) | `C:\Raul\04-system\03-governance\DECISIONS.md` |
-| `04-system/02-agents/_roster.md` | `C:\Raul\04-system\02-agents\_roster.md` |
-| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\Raul\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
-| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\Raul\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
+| `04-system/01-config/CLAUDE_genteca.md` | `C:\RAUL\04-system\01-config\CLAUDE_genteca.md` |
+| `04-system/01-config/CONTEXT_genteca.md` | `C:\RAUL\04-system\01-config\CONTEXT_genteca.md` |
+| **Brand wiki Genteca (consumo crítico — voz / registro / léxico)** | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\` |
+| Identidad de marca Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\01-identidad-de-marca.md` |
+| Estrategia digital y audiencias Genteca | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\brand\02-estrategia-digital-y-audiencias.md` |
+| Market wiki Genteca (contexto cuando aplica) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\wiki\market\` |
+| Specs Genteca (consultar via Vera, no reinterpretar) | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` |
+| Outputs de Vera (specs validadas, briefs técnicos) | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` o `01-strategy-and-design\` |
+| Outputs de Orlan (OL-1 a OL-5) | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| **Outputs de Vael (VA-1 a VA-5; VA-4 brief crítico para SO-X)** | `C:\RAUL\03-projects\genteca\<proyecto>\01-strategy-and-design\` |
+| **BR-2 acumulativo Genteca (Approval Log) — consulta de claims aprobados / con caveat** | `C:\RAUL\03-projects\genteca\_governance\` |
+| **BR-5 transversal (Precedents Memo) — consulta de criterio cross-dominio** | `C:\RAUL\04-system\03-governance\` |
+| BR-1 / BR-3 / BR-4 contextuales por proyecto | `C:\RAUL\03-projects\genteca\<proyecto>\03-review-and-release\` |
+| **Outputs de Solenne (SO-1 a SO-5) por proyecto** | `C:\RAUL\03-projects\genteca\<proyecto>\02-production\` |
+| `04-system/03-governance/RISK-POLICY.md` (referencia de cláusulas) | `C:\RAUL\04-system\03-governance\RISK-POLICY.md` |
+| `04-system/03-governance/DECISIONS.md` (decisiones Owner) | `C:\RAUL\04-system\03-governance\DECISIONS.md` |
+| `04-system/02-agents/_roster.md` | `C:\RAUL\04-system\02-agents\_roster.md` |
+| `04-system/02-agents/content-supply-chain/ROUTING-GUIDE.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\ROUTING-GUIDE.md` |
+| `04-system/02-agents/content-supply-chain/AGENTS_Content-Supply-Chain.md` | `C:\RAUL\04-system\02-agents\content-supply-chain\AGENTS_Content-Supply-Chain.md` |
 
 ### Tool mappings
 
