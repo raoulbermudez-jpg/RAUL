@@ -481,4 +481,4 @@ Este plan es el primer gate formal de empaque del sistema /RAUL/ para Genteca e 
 *AU-1 v2 emitido: 2026-05-04*
 *Estado: COMPLETO — listo para Junta Directiva Genteca*
 *Próxima acción: Decisión de Junta → desbloquea Paso 9 del pipeline CSC (Solenne delta v5 + instrucción Oz). Para D: comprometer workstream de contenidos QR en la misma sesión.*
-*v1 archivado en: `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Aurelio_AU-1_memo_junta_v1.md` — no sobreescrito.*
+*v1 archivado en: `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Aurelio_AU-1_memo_junta_v1.md` — no sobreescrito.*

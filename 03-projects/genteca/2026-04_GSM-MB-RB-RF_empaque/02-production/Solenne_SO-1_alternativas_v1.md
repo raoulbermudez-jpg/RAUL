@@ -433,13 +433,13 @@ Recomendación de Solenne: la Candidata 1 es la más efectiva para la audiencia 
 
 | Documento | Ruta | Secciones consumidas |
 |---|---|---|
-| Vael_messaging_framework_v1 (VA-1 + VA-5) | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Vael_messaging_framework_v1.md` | §1-§9 (5 pilares, mensajes por audiencia, jerarquía, anti-mensaje, brief Atlas, ejes A/B/C) y §10-§12 (guardrails, temas sensibles, gate items) |
+| Vael_messaging_framework_v1 (VA-1 + VA-5) | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Vael_messaging_framework_v1.md` | §1-§9 (5 pilares, mensajes por audiencia, jerarquía, anti-mensaje, brief Atlas, ejes A/B/C) y §10-§12 (guardrails, temas sensibles, gate items) |
 
 ### BR-X aplicados
 
 | Documento | Ruta | Claims y decisiones aplicadas |
 |---|---|---|
-| Bruna_gate_empaque_v1 (BR-1 + BR-2) | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\_governance\Bruna_gate_empaque_v1.md` | Claim A (velocidad): APROBADO CON CAVEAT — texto literal §2 Claim A integrado en las tres alternativas. Claim C (inverter): APROBADO CON CAVEAT — texto literal §2 Claim C integrado. Claim D (NTC): APROBADO CON CAVEAT — texto literal §3.3 integrado. Claim F (lengüeta A y B): APROBADO CON CAVEAT — condición arquitectónica documentada. Claim J (lengüeta C): APROBADO CON CAVEAT. Claim K (frase dominante C): APROBADO CON CAVEAT. Claim B rechazado: no aparece en ninguna alternativa. Claim H rechazado: no aparece en ninguna alternativa. Claim I rechazado: no aparece en ninguna alternativa. |
+| Bruna_gate_empaque_v1 (BR-1 + BR-2) | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\_governance\Bruna_gate_empaque_v1.md` | Claim A (velocidad): APROBADO CON CAVEAT — texto literal §2 Claim A integrado en las tres alternativas. Claim C (inverter): APROBADO CON CAVEAT — texto literal §2 Claim C integrado. Claim D (NTC): APROBADO CON CAVEAT — texto literal §3.3 integrado. Claim F (lengüeta A y B): APROBADO CON CAVEAT — condición arquitectónica documentada. Claim J (lengüeta C): APROBADO CON CAVEAT. Claim K (frase dominante C): APROBADO CON CAVEAT. Claim B rechazado: no aparece en ninguna alternativa. Claim H rechazado: no aparece en ninguna alternativa. Claim I rechazado: no aparece en ninguna alternativa. |
 
 ### Caveats literales integrados (confirmación de palabra por palabra)
 
@@ -454,11 +454,11 @@ Los siguientes bloques de texto aparecen en las secciones RETIRO de las tres alt
 
 | Documento | Ruta | Uso |
 |---|---|---|
-| Vera_brief_tecnico_v1 | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Vera_brief_tecnico_v1.md` | Datos técnicos NTC (§1.1-§1.4), mejora 150 ms → < 30 ms (§2.2-§2.4), caveats literales (§4) |
-| Orlan_competencia_v1 | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Orlan_competencia_v1.md` | Landscape competitivo, NTC como territorio en blanco (Secc. 3), inverter paridad vs. diferenciación causal (Secc. 4) |
-| delta_v4_NTC-inverter | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\GSM-MB-RB-RF-RE_empaque_delta_v4_NTC-inverter.md` | Secciones del retiro sin cambio (v3/v4 aprobadas), textos prohibidos (§4) |
-| WhatsApp Canudas 02-05-2026 | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\whatsapp\Chat con Jose Miguel Canudas miembro de Junya Directiva.txt` | Alternativa A ratificada (texto exacto de las cuatro frases), mecanismo técnico NTC |
-| WORKSTREAM_v5_innovaciones | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\WORKSTREAM_v5_innovaciones.md` | Decisiones cerradas, regla de gateo superlativos, confirmación Alternativa C, brief vinculación gráfica < 0,03 s ↔ inverter |
+| Vera_brief_tecnico_v1 | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Vera_brief_tecnico_v1.md` | Datos técnicos NTC (§1.1-§1.4), mejora 150 ms → < 30 ms (§2.2-§2.4), caveats literales (§4) |
+| Orlan_competencia_v1 | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Orlan_competencia_v1.md` | Landscape competitivo, NTC como territorio en blanco (Secc. 3), inverter paridad vs. diferenciación causal (Secc. 4) |
+| delta_v4_NTC-inverter | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\GSM-MB-RB-RF-RE_empaque_delta_v4_NTC-inverter.md` | Secciones del retiro sin cambio (v3/v4 aprobadas), textos prohibidos (§4) |
+| WhatsApp Canudas 02-05-2026 | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\whatsapp\Chat con Jose Miguel Canudas miembro de Junya Directiva.txt` | Alternativa A ratificada (texto exacto de las cuatro frases), mecanismo técnico NTC |
+| WORKSTREAM_v5_innovaciones | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\WORKSTREAM_v5_innovaciones.md` | Decisiones cerradas, regla de gateo superlativos, confirmación Alternativa C, brief vinculación gráfica < 0,03 s ↔ inverter |
 
 ### Supuestos editoriales
 

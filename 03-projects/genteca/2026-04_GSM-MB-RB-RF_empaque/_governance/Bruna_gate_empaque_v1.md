@@ -294,7 +294,7 @@ El Sensor NTC esta instalado junto al rele de potencia dentro del protector — 
 
 La decision Owner 2026-05-03 sobre claims superlativos queda formalizada en:
 
-`C:\Raul\04-system\03-governance\BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md`
+`C:\RAUL\04-system\03-governance\BR-5_regla-claims-superlativos-mercados-opacos_2026-05-03.md`
 
 Ese archivo contiene:
 - Precedente #1: Superlativo con dato cuantitativo en mercado con alta opacidad competitiva — criterio, condiciones, riesgos asumidos y condiciones de revision.

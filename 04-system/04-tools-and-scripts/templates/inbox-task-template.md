@@ -33,6 +33,6 @@
 
 ---
 
-_Instrucciones de uso: guardar este archivo en `C:\Raul\01-inbox\01-owner-to-raul\` con nombre `YYYY-MM-DD_[slug-corto].md`. InboxBot lo procesará en el próximo ciclo (cada 4h) o Raoul puede pedirle a Raul que lo atienda en sesión directa._
+_Instrucciones de uso: guardar este archivo en `C:\RAUL\01-inbox\01-owner-to-raul\` con nombre `YYYY-MM-DD_[slug-corto].md`. InboxBot lo procesará en el próximo ciclo (cada 4h) o Raoul puede pedirle a Raul que lo atienda en sesión directa._
 
 _Template v1.0 — 2026-05-01_

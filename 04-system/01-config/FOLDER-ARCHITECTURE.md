@@ -501,7 +501,7 @@ Ejemplo `.gitignore` inicial:
 
 Configuración concreta de Drive Desktop: mapear las carpetas listadas como **bidireccionales** (Computer Folder), no streaming-only.
 
-**Backup adicional pendiente:** la KB (`/RAUL/02-knowledge-base/`) puede respaldarse en OneDrive como copia secundaria. Hoy `C:\Raul\` no está dentro de ninguna carpeta sincronizada por OneDrive — requiere decisión de implementación (ver §10.5 backup).
+**Backup adicional pendiente:** la KB (`/RAUL/02-knowledge-base/`) puede respaldarse en OneDrive como copia secundaria. Hoy `C:\RAUL\` no está dentro de ninguna carpeta sincronizada por OneDrive — requiere decisión de implementación (ver §10.5 backup).
 
 ### 10.4 InboxBot
 

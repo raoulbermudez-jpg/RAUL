@@ -634,14 +634,14 @@ Tecnología NTC explicada aquí
 
 | Documento | Ruta | Secciones consumidas |
 |---|---|---|
-| Vael_messaging_framework_v1 (VA-1 + VA-5) | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Vael_messaging_framework_v1.md` | §1-§9 (5 pilares, mensajes por audiencia, jerarquía, anti-mensaje, brief Atlas, ejes A/B/C, Alternativa D como extensión creativa dentro de la libertad concedida) + §10-§12 (guardrails, temas sensibles, gate items). No hay VA-X nuevo para D — el framework de Vael aplica por extensión. |
-| Paxs_inverter_flickers_v1 | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Paxs_inverter_flickers_v1.md` | §2 (mecanismos de daño en electrónica inverter), §3 (afirmaciones defendibles y no defendibles), §4 (insumo ESC), §5 (insumo QR), §6 (pendientes técnicos). Consumido para: (a) fundamentar la arquitectura del QR de D; (b) identificar anti-mensajes implícitos de D; (c) señalar pendientes que afectan al QR. |
+| Vael_messaging_framework_v1 (VA-1 + VA-5) | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Vael_messaging_framework_v1.md` | §1-§9 (5 pilares, mensajes por audiencia, jerarquía, anti-mensaje, brief Atlas, ejes A/B/C, Alternativa D como extensión creativa dentro de la libertad concedida) + §10-§12 (guardrails, temas sensibles, gate items). No hay VA-X nuevo para D — el framework de Vael aplica por extensión. |
+| Paxs_inverter_flickers_v1 | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Paxs_inverter_flickers_v1.md` | §2 (mecanismos de daño en electrónica inverter), §3 (afirmaciones defendibles y no defendibles), §4 (insumo ESC), §5 (insumo QR), §6 (pendientes técnicos). Consumido para: (a) fundamentar la arquitectura del QR de D; (b) identificar anti-mensajes implícitos de D; (c) señalar pendientes que afectan al QR. |
 
 ### BR-X aplicados
 
 | Documento | Ruta | Claims y decisiones aplicadas |
 |---|---|---|
-| Bruna_gate_empaque_v1 (BR-1 + BR-2 + §7 Refresh) | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\_governance\Bruna_gate_empaque_v1.md` | §7.1: bloque asterisco NTC reescrito — integrado en A, B, C, D (reemplaza al §3.3 de v1). §7.2: "Hasta 10 veces más rápido" APROBADO CON CAVEAT — integrado exclusivamente en D. §7.3: caveat de velocidad actualizado — integrado en A, B, C, D (reemplaza al §2 Claim A de v1). §7.4: "auténticamente" RECHAZADO para frente de empaque — Solenne aplica: D usa "Protege tecnología Inverter" sin "auténticamente". §6 Opción 3: duda de lengüeta B-3 resuelta — B mantiene "La Protección más completa". Claims A, C, D, F, J, K: sin cambio respecto a v1. Claims B, H, I: rechazados — no aparecen en ninguna alternativa. |
+| Bruna_gate_empaque_v1 (BR-1 + BR-2 + §7 Refresh) | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\_governance\Bruna_gate_empaque_v1.md` | §7.1: bloque asterisco NTC reescrito — integrado en A, B, C, D (reemplaza al §3.3 de v1). §7.2: "Hasta 10 veces más rápido" APROBADO CON CAVEAT — integrado exclusivamente en D. §7.3: caveat de velocidad actualizado — integrado en A, B, C, D (reemplaza al §2 Claim A de v1). §7.4: "auténticamente" RECHAZADO para frente de empaque — Solenne aplica: D usa "Protege tecnología Inverter" sin "auténticamente". §6 Opción 3: duda de lengüeta B-3 resuelta — B mantiene "La Protección más completa". Claims A, C, D, F, J, K: sin cambio respecto a v1. Claims B, H, I: rechazados — no aparecen en ninguna alternativa. |
 
 ### Caveats literales integrados — confirmación de palabra por palabra (v2)
 
@@ -657,11 +657,11 @@ Los siguientes bloques aparecen en las secciones RETIRO de las cuatro alternativ
 
 | Documento | Ruta | Uso |
 |---|---|---|
-| WORKSTREAM_v5_innovaciones.md §Refresh 2026-05-04 | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\WORKSTREAM_v5_innovaciones.md` | Decisiones Owner: "Hasta 10 veces más rápido", Alternativa D, lineamiento ESC, corrección técnica NTC |
-| Chat con Liliam I&D.txt | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\whatsapp\Chat con Liliam I&D.txt` | Corrección umbral NTC (132 °C, no 60 °C); confirmación Breakermatic 32-64 ms verificado en laboratorio Genteca; rango Genteca 20-30 ms en laboratorio |
-| Chat con Jose Miguel Canudas 2.txt | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\whatsapp\Chat con Jose Miguel Canudas 2.txt` | Temperatura disparo NTC (132 °C, pin del relé); curva de tiempo inverso; mecanismo de calentamiento por sobrecarga y temperatura ambiente |
-| Meeting Transcription 04-05-2026.txt | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\transcripts\Meeting Transcription 04-05-2026.txt` | Ideas de la reunión Alberto Betancourt + Raoul (Kike): QR en zona de títulos (min 23:42), "NUEVO / AVERÍGUALO" (min 26:07-27:08), flecha conectora gráfica (min 27:23-28:02), "diez veces más rápido" (min 30:53-31:03), argumento flickers vs picos (min 20:51-22:02) |
-| Paxs_inverter_flickers_v1 | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Paxs_inverter_flickers_v1.md` | Marco narrativo §3, insumo ESC §4, insumo QR §5, pendientes §6 |
+| WORKSTREAM_v5_innovaciones.md §Refresh 2026-05-04 | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\WORKSTREAM_v5_innovaciones.md` | Decisiones Owner: "Hasta 10 veces más rápido", Alternativa D, lineamiento ESC, corrección técnica NTC |
+| Chat con Liliam I&D.txt | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\whatsapp\Chat con Liliam I&D.txt` | Corrección umbral NTC (132 °C, no 60 °C); confirmación Breakermatic 32-64 ms verificado en laboratorio Genteca; rango Genteca 20-30 ms en laboratorio |
+| Chat con Jose Miguel Canudas 2.txt | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\whatsapp\Chat con Jose Miguel Canudas 2.txt` | Temperatura disparo NTC (132 °C, pin del relé); curva de tiempo inverso; mecanismo de calentamiento por sobrecarga y temperatura ambiente |
+| Meeting Transcription 04-05-2026.txt | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\transcripts\Meeting Transcription 04-05-2026.txt` | Ideas de la reunión Alberto Betancourt + Raoul (Kike): QR en zona de títulos (min 23:42), "NUEVO / AVERÍGUALO" (min 26:07-27:08), flecha conectora gráfica (min 27:23-28:02), "diez veces más rápido" (min 30:53-31:03), argumento flickers vs picos (min 20:51-22:02) |
+| Paxs_inverter_flickers_v1 | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\01-strategy-and-design\Paxs_inverter_flickers_v1.md` | Marco narrativo §3, insumo ESC §4, insumo QR §5, pendientes §6 |
 
 ### Supuestos editoriales
 

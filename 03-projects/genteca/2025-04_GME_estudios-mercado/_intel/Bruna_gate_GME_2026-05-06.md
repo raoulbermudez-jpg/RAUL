@@ -530,5 +530,5 @@ Este gate no requiere asesoria legal externa en el estado actual de informacion.
 
 *Bruna — Risk & Claims Governance Lead | Dominio Genteca | 2026-05-06*
 *Output BR-2 especifico campana GME v1*
-*Ruta: `C:\Raul\03-projects\genteca\2025-04_GME_estudios-mercado\_intel\Bruna_gate_GME_2026-05-06.md`*
+*Ruta: `C:\RAUL\03-projects\genteca\2025-04_GME_estudios-mercado\_intel\Bruna_gate_GME_2026-05-06.md`*
 *Candidato a incorporar al log acumulativo `03-projects/genteca/_governance/2026-05-03_genteca_claim-approval-log_v1.md` — decision Celeste.*

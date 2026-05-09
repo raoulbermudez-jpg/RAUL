@@ -51,7 +51,7 @@ Toda la operación del sistema /RAUL/ desde fuera del PC corre sobre **Google Dr
 ```
 Tarea: revisar copy del email a Ana Méndez sobre brief MPR
 
-Contexto: Tengo borrador en C:\Raul\03-projects\genteca\... revisarlo y
+Contexto: Tengo borrador en C:\RAUL\03-projects\genteca\... revisarlo y
 proponer 2 alternativas — una más directa y otra más diplomática.
 
 Audiencia: Ana Méndez (Genteca, gerente).
@@ -120,7 +120,7 @@ Ese prompt simple deja a `AGENT.md` como única fuente de verdad. No hardcodear 
    - Debe existir `DONE_test-inboxbot-YYYY-MM-DD.txt` en el inbox.
    - Debe existir entregable en `02-deliverables-to-owner/`.
    - Debe existir borrador Gmail con asunto `[InboxBot] Test InboxBot`.
-4. Si alguno de los tres falla → revisar `C:\Raul\04-system\03-governance\inboxbot-tasklog.md` para diagnosticar.
+4. Si alguno de los tres falla → revisar `C:\RAUL\04-system\03-governance\inboxbot-tasklog.md` para diagnosticar.
 
 ### 1.7 Errores comunes y soluciones
 
@@ -185,7 +185,7 @@ Esta convención es desde la perspectiva del **Owner que pone/recibe**. Para el 
    - **Modalidad por link (fallback):** Cuando el dominio del colaborador bloquea sharing nominativo a externos (caso confirmado: **Genteca** — política de dominio Microsoft 365 / Google Workspace impide aceptar invitaciones nominativas a cuentas externas a `genteca.com.ve`), se usa "Cualquier persona con el enlace" → permiso **Editor** → copiar enlace y enviárselo al colaborador por WhatsApp/email. Limitación: el link es transferible; quien lo tenga puede entrar. Aceptable para colaboración 1:1 con persona de confianza.
    - **No compartas el folder maestro `RAUL-Exchange/`** ni el folder del dominio. Solo la carpeta de la persona — así no ve carpetas de otros colaboradores, sin importar la modalidad usada.
 3. **Enviar al colaborador el instructivo del colaborador** (sección 2.5 abajo, copiable como email o PDF).
-4. **Registrar la relación** en `C:\Raul\04-system\03-governance\colaboradores.md` (crear si no existe) con: nombre, email, carpeta, dominio, fecha de onboarding, propósito del intercambio.
+4. **Registrar la relación** en `C:\RAUL\04-system\03-governance\colaboradores.md` (crear si no existe) con: nombre, email, carpeta, dominio, fecha de onboarding, propósito del intercambio.
 5. Confirmar que la memoria persistente `reference_drive_exchange_ids.md` tiene el ID de la nueva carpeta. Si no, anotarlo manualmente la próxima sesión Claude Code.
 
 ### 2.4 Flujo del día a día con un colaborador
@@ -326,4 +326,4 @@ El inbox del Owner es el **canal directo de tareas tuyas**. Los inbox de colabor
 
 ---
 
-*Documento mantenido en* `C:\Raul\04-system\03-governance\OPERATIVA-REMOTA-Y-COLABORADORES.md`. *Cualquier cambio sustantivo en rutas, frecuencia o convenciones se actualiza aquí + se refleja en `inboxbot/AGENT.md` si aplica.*
+*Documento mantenido en* `C:\RAUL\04-system\03-governance\OPERATIVA-REMOTA-Y-COLABORADORES.md`. *Cualquier cambio sustantivo en rutas, frecuencia o convenciones se actualiza aquí + se refleja en `inboxbot/AGENT.md` si aplica.*

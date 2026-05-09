@@ -14,7 +14,7 @@ Lectura recomendada cuando dudes "¿dónde está X?" o "¿puedo borrar esto?".
 
 | Carpeta | Función | Cuándo la tocas |
 |---|---|---|
-| `C:\Raul\` | **Repo maestro local.** Aquí vive todo el contenido del sistema /RAUL/: agentes, KB, projects, governance, scripts, conceptual SSOT, configuración. | Edición directa cuando trabajas en sesión Claude Code. Versionado con git. |
+| `C:\RAUL\` | **Repo maestro local.** Aquí vive todo el contenido del sistema /RAUL/: agentes, KB, projects, governance, scripts, conceptual SSOT, configuración. | Edición directa cuando trabajas en sesión Claude Code. Versionado con git. |
 | `G:\Mi unidad\RAUL\01-inbox\` | **Canal cloud Owner ↔ InboxBot.** Lo que dejas/recibes desde el celular. | Subes tareas a `01-owner-to-raul/`, lees entregables de `02-deliverables-to-owner/` desde la app Drive móvil. |
 | `G:\Mi unidad\RAUL-Exchange\` | **Punto de intercambio cloud con colaboradores externos.** Cada colaborador tiene su propia subcarpeta con `inbox/` + `outbox/`. | Cuando depositas archivos para un colaborador (en `outbox/` de él) o revisas lo que él te envió (en `inbox/` de él). |
 
@@ -45,14 +45,14 @@ Lectura recomendada cuando dudes "¿dónde está X?" o "¿puedo borrar esto?".
 
 ## Parte 2 — Cosas que tocas tú: instructivo detallado
 
-### 2.1 Cuándo y cómo usar `C:\Raul\` (repo maestro)
+### 2.1 Cuándo y cómo usar `C:\RAUL\` (repo maestro)
 
 **Cuándo:** durante sesiones interactivas de Claude Code, cuando trabajas localmente en el PC.
 
 **Estructura interna principal:**
 
 ```
-C:\Raul\
+C:\RAUL\
 ├── 01-inbox\                       ← lo que entra crudo (raw + briefs sin procesar)
 │   ├── 01-owner-to-raul\           ← (legacy local — el canal vivo es G:)
 │   ├── 02-deliverables-to-owner\   ← (legacy local)
@@ -140,7 +140,7 @@ RAUL-Exchange/
 
 ### 3.1 Archivos RAW (sin curar)
 
-**Ubicación:** `C:\Raul\01-inbox\03-raw-sources\`
+**Ubicación:** `C:\RAUL\01-inbox\03-raw-sources\`
 
 **Qué son:** todo lo que entra al sistema sin haber sido procesado todavía. Incluye briefs del Owner, transcripciones de reunión crudas, hojas técnicas de I&D, fotos del pendrive, archivos de colaboradores, presentaciones recibidas.
 
@@ -163,7 +163,7 @@ RAUL-Exchange/
 
 ### 3.2 Archivos CURADOS (en KB)
 
-**Ubicación:** `C:\Raul\02-knowledge-base\02-domains\01-genteca\` (para Genteca; cada dominio tiene su rama)
+**Ubicación:** `C:\RAUL\02-knowledge-base\02-domains\01-genteca\` (para Genteca; cada dominio tiene su rama)
 
 **Qué son:** versiones limpias, estructuradas, con metadata, listas para que los agentes las consulten. Salen del trabajo de Celeste (selección) + Sira (indexado).
 
@@ -195,7 +195,7 @@ RAUL-Exchange/
 
 ### 3.3 Portafolio detalles técnicos Genteca (lo que preguntaste)
 
-**Ubicación:** `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\`
+**Ubicación:** `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\`
 
 **Inventario:** 193 archivos `.md` con detalles de todo el portafolio Exceline.
 
@@ -217,7 +217,7 @@ RAUL-Exchange/
 
 ### 3.4 Índices y catálogos (output de Sira)
 
-**Ubicación:** `C:\Raul\04-system\05-indexes\`
+**Ubicación:** `C:\RAUL\04-system\05-indexes\`
 
 **Contenido relevante:**
 
@@ -235,9 +235,9 @@ RAUL-Exchange/
 
 ## Parte 4 — Reglas de oro para evitar confusión
 
-### 4.1 Regla 1: el contenido de trabajo SOLO vive en `C:\Raul\`
+### 4.1 Regla 1: el contenido de trabajo SOLO vive en `C:\RAUL\`
 
-Todo lo demás es **canal, runtime, backup o legacy**. Si trabajas con un archivo y no estás en `C:\Raul\`, te estás equivocando de ubicación.
+Todo lo demás es **canal, runtime, backup o legacy**. Si trabajas con un archivo y no estás en `C:\RAUL\`, te estás equivocando de ubicación.
 
 ### 4.2 Regla 2: Drive es para movilidad y colaboración
 
@@ -260,10 +260,10 @@ Si AGENT.md o un Routine apunta ahí, **lo rechaza automáticamente** desde v3.2
 | Tipo de archivo | Carpeta correcta |
 |---|---|
 | Brief / tarea para el sistema | `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` (desde celular) o trabajar directamente en sesión Claude Code (desde PC) |
-| Archivo crudo recibido (PDF, transcripción, datasheet) | `C:\Raul\01-inbox\03-raw-sources\genteca\` (o el subdominio que corresponda) |
-| Archivo curado y validado | `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` (o `wiki/`, `assets/` según tipo) |
-| Trabajo en proyecto activo | `C:\Raul\03-projects\<dominio>\<período>_<código>_<tema>\` |
-| Decisión / política / runbook | `C:\Raul\04-system\03-governance\` |
+| Archivo crudo recibido (PDF, transcripción, datasheet) | `C:\RAUL\01-inbox\03-raw-sources\genteca\` (o el subdominio que corresponda) |
+| Archivo curado y validado | `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` (o `wiki/`, `assets/` según tipo) |
+| Trabajo en proyecto activo | `C:\RAUL\03-projects\<dominio>\<período>_<código>_<tema>\` |
+| Decisión / política / runbook | `C:\RAUL\04-system\03-governance\` |
 | Para colaborador externo | `G:\Mi unidad\RAUL-Exchange\<dominio>\<persona>\outbox\` |
 
 ---
@@ -271,13 +271,13 @@ Si AGENT.md o un Routine apunta ahí, **lo rechaza automáticamente** desde v3.2
 ## Parte 5 — FAQ rápida
 
 **P: ¿Dónde está la KB?**
-R: `C:\Raul\02-knowledge-base\`. Backup en `OneDrive\RAUL-backup\`.
+R: `C:\RAUL\02-knowledge-base\`. Backup en `OneDrive\RAUL-backup\`.
 
 **P: ¿Dónde están los detalles técnicos del portafolio Genteca?**
-R: `C:\Raul\02-knowledge-base\02-domains\01-genteca\specs\` — 193 archivos.
+R: `C:\RAUL\02-knowledge-base\02-domains\01-genteca\specs\` — 193 archivos.
 
 **P: ¿Dónde están los archivos crudos antes de curar?**
-R: `C:\Raul\01-inbox\03-raw-sources\genteca\` — separados por tema (gsm-labels, gst-labels, etc.).
+R: `C:\RAUL\01-inbox\03-raw-sources\genteca\` — separados por tema (gsm-labels, gst-labels, etc.).
 
 **P: ¿Quién cura los raw?**
 R: Celeste decide qué entra a KB; Sira indexa y nombra. Tú apruebas mover si están de acuerdo.
@@ -299,4 +299,4 @@ R: No tocar. Es de otra persona, no del sistema.
 
 ---
 
-*Mantenido en `C:\Raul\04-system\03-governance\GUIA-CARPETAS-RAUL.md`. Actualizar si emergen nuevas carpetas o se reorganiza la estructura.*
+*Mantenido en `C:\RAUL\04-system\03-governance\GUIA-CARPETAS-RAUL.md`. Actualizar si emergen nuevas carpetas o se reorganiza la estructura.*

@@ -20,7 +20,7 @@
 
 | Recurso | Ruta o descripción |
 |---|---|
-| [Documento / KB / archivo] | [C:\Raul\... o descripción] |
+| [Documento / KB / archivo] | [C:\RAUL\... o descripción] |
 | [Contexto de dominio] | `04-system/01-config/CONTEXT_<dominio>.md` |
 
 ## Output esperado

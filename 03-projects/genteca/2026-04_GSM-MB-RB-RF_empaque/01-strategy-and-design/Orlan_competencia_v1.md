@@ -330,7 +330,7 @@ Basado en lo disponible (sin los .docx), los insights de consumidor que el equip
 
 | # | Fuente | URL | Fecha de acceso | Confianza | Notas |
 |---|---|---|---|---|---|
-| 1 | Hoja de Especificaciones GSM-RE (local) | `C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\specs-i-d\GSM-RE-Protector para Aires Acondicionados y Refrigeración Enchufable.pdf` | 2026-05-03 | Confirmed | Spec oficial Genteca. Tiempo de flicker = 150 ms (spec pre-innovación). |
+| 1 | Hoja de Especificaciones GSM-RE (local) | `C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\00-brief\specs-i-d\GSM-RE-Protector para Aires Acondicionados y Refrigeración Enchufable.pdf` | 2026-05-03 | Confirmed | Spec oficial Genteca. Tiempo de flicker = 150 ms (spec pre-innovación). |
 | 2 | WhatsApp José Miguel Canudas (local) | `00-brief/whatsapp/Chat con Jose Miguel Canudas miembro de Junya Directiva.txt` | 2026-05-03 | Confirmed | Descripción técnica NTC y < 30 ms. Nota de Canudas: "verificar con fuentes técnicas." |
 | 3 | Transcripción reunión 29-04-2026 (local) | `00-brief/transcripts/Meeting Transcription 29-04-2026 (1).txt` | 2026-05-03 | Confirmed | Menciones TQ, Protector, insight 40% comprensión térmica. |
 | 4 | Comentarios sobre las innovaciones (local) | `00-brief/innovaciones/Comentarios sobre las innovaciones.txt` | 2026-05-03 | Confirmed | Descripción técnica de < 30 ms y NTC. |
