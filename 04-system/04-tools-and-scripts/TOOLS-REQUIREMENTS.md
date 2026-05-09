@@ -26,7 +26,7 @@
 |---|---|---|---|
 | `PyMuPDF` (fitz) | 1.27.2.2 | `pip install pymupdf` | `gsm_empaque_redlines_v4.py`, agente Oz |
 | `anthropic` | instalada | `pip install anthropic` | Scripts de integración API |
-| `python-pptx` | instalada | `pip install python-pptx` | `gen_gst_r_pptx_v2.py`, Vivienne |
+| `python-pptx` | instalada | `pip install python-pptx` | Vivienne, scripts de build PPTX en proyectos genteca |
 | `python-docx` | instalada | `pip install python-docx` | Celeste, scripts de intake |
 | `reportlab` | instalada | `pip install reportlab` | Generación PDF alternativa |
 | `Pillow` | instalada | `pip install Pillow` | Procesamiento de imágenes |
@@ -41,10 +41,9 @@
 | `gsm_empaque_redlines_v4.py` | `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/` | PyMuPDF | Redlines PDF anotados empaque GSM — tiro y retiro |
 | `fase4_kb_formatter.py` | `04-tools-and-scripts/` | (verificar) | Formatter de KB para fase 4 |
 | `pendrive_pipeline.py` | `04-tools-and-scripts/` | (verificar) | Pipeline de inventario pendrive D |
-| `gen_gst_r_pptx_v2.py` | `03-projects/genteca/2026-04_GST-R_etiquetas/02-production/` | python-pptx | Brief PPTX etiquetas GST-R |
-| `descargar_genteca_v2.py` | `04-tools-and-scripts/scripts/` | requests (verificar) | Descarga masiva PDFs genteca.com.ve |
-| `celeste_screening_loteC.py` | `04-tools-and-scripts/scripts/` | PyMuPDF, pytesseract | Pre-screening + OCR Lote C KB |
-| `ocr_stubs.py` | `04-tools-and-scripts/scripts/` | pytesseract, Pillow | OCR de imágenes para stubs KB |
+| `raul_paths.py` | `04-tools-and-scripts/` | (stdlib) | Helper canónico de paths via RAUL_ROOT; también runnable como self-test |
+
+**Scripts archivados:** ver `05-archive/03-system-history/legacy-scripts/_index.md` (Tier 3 abandonados en commit 52d7e9b: `descargar_genteca`, `descargar_genteca_v2`, `celeste_screening_loteC`, `ocr_stubs`, `gen_gst_r_pdf_v2`, `gen_gst_r_pptx_v2`).
 
 ---
 

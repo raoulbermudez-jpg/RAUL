@@ -5,11 +5,11 @@ author: "GitHub Copilot (Copilot Chat in VS Code)"
 creation_date: "2026-05-08"
 purpose: "Proporcionar análisis técnico y recomendaciones de mejora para el PKA basadas en auditoría, para que Claude Opus 4.7 evalúe antes de ejecutar cambios"
 audience: ["Claude Opus 4.7", "Raoul Bermúdez", "Team"]
-status: "draft-for-review-by-claude"
+status: "historical-record"
 ssot_for: []
 depends_on: ["PKA-AUDIT-CHECKLIST.md", "FOLDER-ARCHITECTURE.md", "DECISIONS.md"]
 version: "1.0"
-how_to_use: "Leer completo. Discutir con Claude. Claude evalúa y aprueba/rechaza/modifica antes de ejecutar. Registrar decisiones en DECISIONS.md"
+how_to_use: "Record histórico del análisis original de Copilot. NO usar como SSOT activo. Para estado actualizado de cada recomendación, ver SCRIPTS-DEPENDENCIES.md (decisiones 1-5) y DECISIONS.md (entrada 2026-05-08 PKA audit cycle). Defectos de numeración (dos I.2, dos I.3, sección VI duplicada) preservados intencionalmente como evidencia del proceso."
 ---
 
 # PKA-IMPROVEMENTS-SUMMARY.md

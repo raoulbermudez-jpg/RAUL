@@ -155,14 +155,14 @@ Scripts cuyos paths hardcoded apuntan a workspaces previos al sistema /RAUL/ (`C
 
 **Estándar:** `C:\RAUL` — uppercase, backslash en raw strings Python.
 
-**Ocurrencias actuales en el repo (a corregir en Paso 3):**
+**Estado post-fix (commits 3c3cad1, f1d98fa, 5b7ef15, 27487a2):**
 
-```
-C:/RAUL  (forward slash)            → fase4_kb_formatter.py, pendrive_pipeline.py
-C:\Raul  (mixed case)               → backup_kb_to_onedrive.ps1, build_junta_pptx.py,
-                                       render_B_v2.py, build_v6.py, gsm_empaque_redlines_v4.py
-C:\RAUL  (canónico)                 → gen_redlines*, gen_gla_t, GME scripts (ya correcto)
-```
+✅ Casing normalizado a `C:\RAUL` en scripts (3b) y en docs (follow-up #1, 36 archivos / 341 ocurrencias). Tier 1 además refactorizado a env var `RAUL_ROOT` via helper `raul_paths.py` (3d).
+
+Snapshot histórico pre-fix (referencia):
+- `C:/RAUL` (forward slash uppercase) → `fase4_kb_formatter.py`, `pendrive_pipeline.py` — refactorizados a `paths.*` en 3d.
+- `C:\Raul` (mixed case) → `backup_kb_to_onedrive.ps1`, `build_junta_pptx.py`, `render_B_v2.py`, `build_v6.py`, `gsm_empaque_redlines_v4.py` — corregidos en 3b.
+- `C:\RAUL` (canónico) → `gen_redlines*`, `gen_gla_t`, GME scripts — ya estaban correctos.
 
 **Notas:**
 - En Python, raw strings con backslash: `r"C:\RAUL\..."` (no doble backslash, no forward slash).

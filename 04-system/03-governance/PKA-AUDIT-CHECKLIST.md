@@ -161,7 +161,7 @@ Revisar cada dominio activo:
 - [ ] Proyectos en `03-projects/<dominio>/` siguen patrón: `YYYY-MM_slug-descriptivo/`
 - [ ] Proyectos tienen etapas numeradas `00-`, `01-`, `02-`, `03-`, `04-`
 - [ ] No hay excepciones de naming sin documentar
-- [ ] **AUDITORÍA:** No hay carpetas con espacios como `GME Estudios de mercado/` (VIOLATION ENCONTRADA: revisar en D3)
+- [x] **AUDITORÍA:** No hay carpetas con espacios como `GME Estudios de mercado/` (RESUELTO: renombrado a `2025-04_GME_estudios-mercado/` en commit b41279e)
 - [ ] **AUDITORÍA:** Todas las carpetas de proyecto usan minúsculas y guiones (no CamelCase ni espacios)
 
 ### C4 — Archivos de dominio
@@ -223,7 +223,7 @@ Revisar cada dominio activo:
 - [ ] No hay proyectos "huérfanos" sin enlace a dominio o sin propósito claro
 - [ ] Los proyectos completados se mueven a `05-archive/` con documentación de cierre
 - [ ] **AUDITORÍA PROFUNDA:** Revisar proyectos incompletos en `03-projects/genteca/`:
-  - [ ] `2025-04_GME Estudios de mercado/` — estado desconocido, carpeta tiene violation naming (espacios)
+  - [x] `GME Estudios de mercado/` — RESUELTO: renombrado a `2025-04_GME_estudios-mercado/` en commit b41279e (Q2 2025; Owner planea poblarlo con estudios adicionales)
   - [ ] Otros proyectos sin etapas `04-published/` — ¿completar, archivar, o abandonar?
   - [ ] Crear registry de proyectos incompletos en `PROJECT-INCOMPLETE-REGISTRY.md`
 
@@ -319,7 +319,7 @@ Revisar cada dominio activo:
 - [ ] No hay excepciones de naming no documentadas
 - [ ] Si existen archivos con espacios o caracteres especiales, están en `DECISIONS.md`
 - [ ] No hay archivos llamados `_backup_`, `_old_`, `_temp_` sin propósito explícito
-- [ ] **HALLAZGO:** `GME Estudios de mercado/` tiene espacios (violation de C3) — renombrar o documentar excepción
+- [x] **HALLAZGO RESUELTO:** `GME Estudios de mercado/` renombrado a `2025-04_GME_estudios-mercado/` en commit b41279e
 
 ### G3 — Duplicación
 
