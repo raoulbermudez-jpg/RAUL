@@ -38,7 +38,7 @@
 
 | Script | Ruta | Dependencias | Propósito |
 |---|---|---|---|
-| `gsm_empaque_redlines_v4.py` | `04-tools-and-scripts/` | PyMuPDF | Redlines PDF anotados empaque GSM — tiro y retiro |
+| `gsm_empaque_redlines_v4.py` | `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/` | PyMuPDF | Redlines PDF anotados empaque GSM — tiro y retiro |
 | `fase4_kb_formatter.py` | `04-tools-and-scripts/` | (verificar) | Formatter de KB para fase 4 |
 | `pendrive_pipeline.py` | `04-tools-and-scripts/` | (verificar) | Pipeline de inventario pendrive D |
 | `gen_gst_r_pptx_v2.py` | `03-projects/genteca/2026-04_GST-R_etiquetas/02-production/` | python-pptx | Brief PPTX etiquetas GST-R |

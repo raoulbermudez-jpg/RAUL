@@ -87,7 +87,7 @@ Scripts que viven dentro de un proyecto y son específicos de él. NO se refacto
 
 | Script | Path hardcoded | Acción |
 |---|---|---|
-| `04-system/04-tools-and-scripts/gsm_empaque_redlines_v4.py:15-16` | `C:\Raul\01-inbox\...`, `C:\Raul\03-projects\...` | **Mal ubicado** — debería vivir dentro del proyecto GSM-MB-RB-RF. Mover a `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/` en Paso 3. Corregir casing simultáneamente. |
+| `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/gsm_empaque_redlines_v4.py:15-16` | `C:\RAUL\01-inbox\...`, `C:\RAUL\03-projects\...` | Movido a su proyecto (follow-up #2). Casing fix en commit 3c3cad1. |
 | `03-projects/genteca/2026-05-07_marcas-anglicismos-junta/build_deck.py:205` | OUTPUT a su propio folder | Auto-contenido. Solo casing fix. |
 | `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/build_junta_pptx.py:34` | `C:\Raul\...` | Casing fix. |
 | `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/02-production/Atlas_mockups_v1/render_B_v2.py:27` | `C:\Raul\...` | Casing fix. |
@@ -219,7 +219,7 @@ Después de ejecutar Paso 3, validar:
 - [x] DECISIONS.md actualizado con entrada cubriendo decisiones 1-4 (commit 9252e83).
 - [x] Documentación de `RAUL_ROOT` añadida a `CONTEXT_core.md`.
 - [ ] `RAUL_ROOT` seteado a nivel de sistema (Owner action — opcional, default funciona).
-- [ ] `gsm_empaque_redlines_v4.py` movido a su proyecto correspondiente (Tier 2 follow-up).
+- [x] `gsm_empaque_redlines_v4.py` movido a `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/`.
 - [ ] `FOLDER-ARCHITECTURE.md` actualizado si/cuando la reorganización 05-indexes/06-logs proceda (Paso futuro).
 
 ---
