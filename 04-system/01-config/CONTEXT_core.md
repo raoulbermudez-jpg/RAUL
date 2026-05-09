@@ -75,3 +75,25 @@ Rol esperado de los agentes:
 - Trabajar en `03-projects/` para tareas concretas.
 - Respetar las reglas y convenciones definidas en `04-system/`.
 - Proponer compilaciones y mejoras a la wiki cuando encuentren conocimiento nuevo o fragmentado.
+
+---
+
+### Configuración de paths para scripts (`RAUL_ROOT`)
+
+Los scripts Tier 1 (`fase4_kb_formatter.py`, `pendrive_pipeline.py`, `backup_kb_to_onedrive.ps1`) resuelven sus paths via la variable de entorno `RAUL_ROOT`, con fallback a `C:\RAUL` si no está seteada.
+
+**Resolución (orden de precedencia):**
+1. Argumento explícito (`get_paths(root="...")`, para tests).
+2. Variable de entorno `RAUL_ROOT`.
+3. Default hardcoded `C:\RAUL`.
+
+**Configuración recomendada:**
+- **Producción Windows:** `setx RAUL_ROOT "C:\RAUL"` (PowerShell elevado), o System Properties → Environment Variables.
+- **Sesión puntual:** `$env:RAUL_ROOT = "C:\RAUL"` antes de invocar scripts.
+- **Sin setup:** scripts usan el default. Máquinas existentes no requieren cambios.
+
+**Helper Python:** scripts importan `from raul_paths import paths`. El helper vive en `04-system/04-tools-and-scripts/raul_paths.py` y provee paths canónicos (`ROOT`, `INBOX`, `KB`, `PROJECTS`, `SYSTEM`, `REPORTS_DIR`, `PENDRIVE`, `ENV_FILE`, más `INDEXES_CANONICAL_DIR` y `LOGS_DIR` para futura separación).
+
+**PowerShell:** scripts usan `$env:RAUL_ROOT` con fallback inline.
+
+Detalles operativos: `04-system/01-config/SCRIPTS-DEPENDENCIES.md`.

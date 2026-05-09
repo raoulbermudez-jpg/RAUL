@@ -26,10 +26,11 @@ how_to_use: "Consultar antes de mover carpetas, renombrar root, o tocar cualquie
 
 | # | Decisión | Estado |
 |---|---|---|
-| 1 | Crear este documento como SSOT de dependencias de scripts | Ejecutado |
-| 2 | Tier 3 (legacy pre-/RAUL/): abandonar — mover a `05-archive/03-system-history/legacy-scripts/` | Pendiente Paso 3 |
-| 3 | Renombrar `GME Estudios de mercado/` → naming compliant + actualizar 6 scripts internos en mismo commit | Pendiente Paso 3 |
-| 4 | Casing canónico: `C:\RAUL` (uppercase, backslash en raw strings Python) | Pendiente Paso 3 |
+| 1 | Crear este documento como SSOT de dependencias de scripts | Ejecutado (commit 9207aaf) |
+| 2 | Tier 3 (legacy pre-/RAUL/): abandonar — mover a `05-archive/03-system-history/legacy-scripts/` | Ejecutado (commit 52d7e9b) |
+| 3 | Renombrar `GME Estudios de mercado/` → naming compliant + actualizar scripts internos | Ejecutado como `2025-04_GME_estudios-mercado/` (commit b41279e) |
+| 4 | Casing canónico: `C:\RAUL` (uppercase). Forward slash vs backslash queda al criterio del autor (pathlib y PowerShell aceptan ambos) | Ejecutado parcial (commit 3c3cad1 — scripts; md files pendientes en cleanup futuro) |
+| 5 | Refactor Tier 1 a env vars con helper `raul_paths.py` (flat, no en `_lib/` por simplicidad) | Ejecutado (este commit) |
 
 Estas decisiones deben replicarse como entrada en [DECISIONS.md](../03-governance/DECISIONS.md) tras ejecución completa.
 
@@ -67,7 +68,16 @@ RAUL_REPORTS_DIR   = ${RAUL_SYSTEM}\05-indexes              (compatibilidad pre-
 **Configuración de la variable:** documentar en [CLAUDE.md](CLAUDE.md) y en `04-system/01-config/CONTEXT_core.md` que `RAUL_ROOT` puede setearse via:
 1. System Environment Variables (Windows) — preferido para producción.
 2. `.env` file en root del repo — preferido para desarrollo (ya existe).
-3. Default hardcoded en `_lib/raul_paths.py` (`C:\RAUL`).
+3. Default hardcoded en `raul_paths.py` (`C:\RAUL`).
+
+**Estado de ejecución (2026-05-08):**
+
+Ejecutado como Paso 3d. Deviations del plan original:
+
+- **Helper plano `raul_paths.py`** directo en `04-tools-and-scripts/`, NO en `_lib/`. Razón: un solo módulo, simplicidad de import, evita complicaciones de package/namespace. Si emergen más helpers, refactorizar a `_lib/` entonces.
+- **Documentación de `RAUL_ROOT` solo en `CONTEXT_core.md`**, NO en `CLAUDE.md`. Razón: CLAUDE.md describe rol de agente (Identity, Cardinal Rule, routing); paths son configuración de sistema, pertenecen a CONTEXT_core.
+
+Self-test del helper ejecutado tras creación: 7/10 paths [OK] (los activos), 3/10 [MISSING] esperados (`INDEXES_CANONICAL_DIR`, `LOGS_DIR` pendientes de separación; `.env` opcional según Owner).
 
 ---
 
@@ -201,15 +211,16 @@ Conocida: `RAUL_KB_Backup_OneDrive` (23:00 diario) ejecuta `backup_kb_to_onedriv
 
 Después de ejecutar Paso 3, validar:
 
-- [ ] `RAUL_ROOT` definido en sistema o `.env`.
-- [ ] `_lib/raul_paths.py` creado y testado en `pendrive_pipeline.py` y `fase4_kb_formatter.py`.
-- [ ] `backup_kb_to_onedrive.ps1` corre con casing corregido.
-- [ ] Tier 3 movido a `05-archive/03-system-history/legacy-scripts/` con `_index.md`.
-- [ ] `_LEGACY_MOVED.md` creado en `04-system/04-tools-and-scripts/scripts/`.
-- [ ] Carpeta `GME Estudios de mercado/` renombrada y 6 scripts internos actualizados (mismo commit).
-- [ ] `gsm_empaque_redlines_v4.py` movido a su proyecto correspondiente.
-- [ ] DECISIONS.md actualizado con entrada cubriendo decisiones 1-4.
-- [ ] `FOLDER-ARCHITECTURE.md` actualizado si la reorganización 05-indexes/06-logs procede.
+- [x] `raul_paths.py` creado, testado y consumido por `fase4_kb_formatter.py` + `pendrive_pipeline.py`.
+- [x] `backup_kb_to_onedrive.ps1` usa `$env:RAUL_ROOT` con fallback + casing corregido.
+- [x] Tier 3 movido a `05-archive/03-system-history/legacy-scripts/` con `_index.md`.
+- [x] `_LEGACY_MOVED.md` creado en `04-system/04-tools-and-scripts/scripts/`.
+- [x] Carpeta `GME Estudios de mercado/` renombrada (`2025-04_GME_estudios-mercado/`) y 13 archivos con citaciones actualizados.
+- [x] DECISIONS.md actualizado con entrada cubriendo decisiones 1-4 (commit 9252e83).
+- [x] Documentación de `RAUL_ROOT` añadida a `CONTEXT_core.md`.
+- [ ] `RAUL_ROOT` seteado a nivel de sistema (Owner action — opcional, default funciona).
+- [ ] `gsm_empaque_redlines_v4.py` movido a su proyecto correspondiente (Tier 2 follow-up).
+- [ ] `FOLDER-ARCHITECTURE.md` actualizado si/cuando la reorganización 05-indexes/06-logs proceda (Paso futuro).
 
 ---
 

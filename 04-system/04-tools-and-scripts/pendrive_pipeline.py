@@ -15,11 +15,13 @@ from datetime import datetime
 import logging
 
 # ── Configuración ──────────────────────────────────────────────────────────────
-PENDRIVE         = Path("D:/")
-KB_GENTECA       = Path("C:/RAUL/02-knowledge-base/02-domains/01-genteca")
-STAGING          = Path("C:/RAUL/01-inbox/03-raw-sources/genteca/pendrive-D")
-ASSETS_BASE      = Path("C:/RAUL/02-knowledge-base/02-domains/01-genteca/assets")
-REPORT_DIR       = Path("C:/RAUL/04-system/05-indexes")
+from raul_paths import paths
+
+PENDRIVE         = paths.PENDRIVE
+KB_GENTECA       = paths.KB / "02-domains" / "01-genteca"
+STAGING          = paths.INBOX / "03-raw-sources" / "genteca" / "pendrive-D"
+ASSETS_BASE      = paths.KB / "02-domains" / "01-genteca" / "assets"
+REPORT_DIR       = paths.REPORTS_DIR
 LOG_FILE         = REPORT_DIR / f"pendrive_pipeline_{datetime.now().strftime('%Y%m%d_%H%M')}.log"
 
 # Líneas de producto

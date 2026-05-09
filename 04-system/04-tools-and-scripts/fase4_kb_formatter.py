@@ -21,12 +21,14 @@ from datetime import datetime
 import logging
 
 # ── Configuración ──────────────────────────────────────────────────────────────
-STAGING       = Path("C:/RAUL/01-inbox/03-raw-sources/genteca/pendrive-D")
-KB_SPECS      = Path("C:/RAUL/02-knowledge-base/02-domains/01-genteca/specs")
-INDEXES_DIR   = Path("C:/RAUL/04-system/05-indexes")
+from raul_paths import paths
+
+STAGING       = paths.INBOX / "03-raw-sources" / "genteca" / "pendrive-D"
+KB_SPECS      = paths.KB / "02-domains" / "01-genteca" / "specs"
+INDEXES_DIR   = paths.REPORTS_DIR
 PROGRESS_FILE = INDEXES_DIR / "fase4_progress.json"
 LOG_FILE      = INDEXES_DIR / f"fase4_{datetime.now().strftime('%Y%m%d_%H%M')}.log"
-ENV_FILE      = Path("C:/RAUL/.env")
+ENV_FILE      = paths.ENV_FILE
 
 MODEL         = "claude-haiku-4-5-20251001"
 MIN_CHARS     = 300    # archivos con menos contenido útil se omiten
@@ -186,7 +188,7 @@ def main():
 
     api_key = get_api_key()
     if not api_key and not args.dry_run:
-        log.error("ANTHROPIC_API_KEY no encontrada. Configúrala como variable de entorno o en C:\\RAUL\\.env")
+        log.error(f"ANTHROPIC_API_KEY no encontrada. Configúrala como variable de entorno o en {ENV_FILE}")
         sys.exit(1)
 
     # Recolectar archivos pendientes

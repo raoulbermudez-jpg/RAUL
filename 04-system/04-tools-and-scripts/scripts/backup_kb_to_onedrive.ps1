@@ -2,16 +2,23 @@
 # backup_kb_to_onedrive.ps1
 # Espejo incremental del Knowledge Base de /RAUL/ hacia OneDrive
 # =============================================================================
-# Fuente:  C:\RAUL\02-knowledge-base
+# Fuente:  C:\RAUL\02-knowledge-base   (configurable via $env:RAUL_ROOT)
 # Destino: C:\Users\User\OneDrive\RAUL-backup\02-knowledge-base
 # Modo:    /MIR (mirror — refleja exactamente el estado de la fuente)
 # Recovery: OneDrive conserva historial de versiones ~30 dias
 # Frecuencia: diaria (configurada via Task Scheduler)
 # =============================================================================
 
-$source  = "C:\RAUL\02-knowledge-base"
+# RAUL_ROOT con fallback a C:\RAUL si la variable de entorno no esta seteada
+if ($env:RAUL_ROOT) {
+    $root = $env:RAUL_ROOT
+} else {
+    $root = "C:\RAUL"
+}
+
+$source  = Join-Path $root "02-knowledge-base"
 $dest    = "C:\Users\User\OneDrive\RAUL-backup\02-knowledge-base"
-$logDir  = "C:\RAUL\04-system\04-tools-and-scripts\scripts\logs"
+$logDir  = Join-Path $root "04-system\04-tools-and-scripts\scripts\logs"
 $logFile = Join-Path $logDir "backup_kb.log"
 
 # Crear carpeta de logs si no existe
