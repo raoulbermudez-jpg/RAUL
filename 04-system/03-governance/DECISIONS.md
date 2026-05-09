@@ -365,4 +365,71 @@ El Owner delegó a Raul la elección del canal. Decisión: **canal C — esperar
 
 ---
 
+## 2026-05-08 — Ciclo de auditoría PKA + remediaciones Pasos 1-3c
+
+**Decisión:** ejecutar ciclo de auditoría del PKA propuesto por GitHub Copilot, evaluado por Claude Opus 4.7, con remediaciones priorizadas en 4 pasos. Pasos 1, 2, 3a, 3b y 3c ejecutados. Paso 3d (refactor Tier 1 a variables de entorno) queda pendiente para sesión separada.
+
+**Contexto y motivación:**
+
+- Copilot Chat (VS Code) produjo 3 documentos de auditoría (`PKA-AUDIT-CHECKLIST.md`, `PKA-IMPROVEMENTS-SUMMARY.md`, `PKA-FLOW.md`) e identificó 3 hallazgos críticos: scripts con paths hardcoded, naming violation `GME Estudios de mercado/`, proyectos con estructura incompleta.
+- Owner pidió evaluación de Claude Opus 4.7 antes de ejecutar cambios.
+- Claude amplió el scope tras auditoría completa: 22 scripts (no 3) con paths hardcoded, 5 riesgos cross-cutting no vistos por Copilot (InboxBot AGENT.md hardcoded, dual hierarchy Drive G:\ vs cueva legacy, Task Scheduler dependiente de paths absolutos, casing inconsistente, ubicación de `.env`).
+- Owner eligió Opción 2 (Claude dirige y ejecuta) sobre Opción 1 (brief a Copilot), por mejor preservación de memoria persistente y disciplina Modelo A.
+
+**Pasos ejecutados:**
+
+| Paso | Descripción | Commit |
+|---|---|---|
+| 1 | Consolidación `PKA-FLOW.md` (versión rica de Copilot a `01-config/`, duplicado en `03-governance/` eliminado) | 9207aaf |
+| 2 | Creación `SCRIPTS-DEPENDENCIES.md` como SSOT de inventario y dependencias de scripts | 9207aaf |
+| 3a | Archivo de 6 scripts Tier 3 legacy (era pre-/RAUL/) a `05-archive/03-system-history/legacy-scripts/` + redirector | 52d7e9b |
+| 3b | Casing canónico `C:\RAUL` en 6 scripts (5 Python + 1 PowerShell). Tier 1 ya tenía casing correcto | 3c3cad1 |
+| 3c | Rename `GME Estudios de mercado/` → `2025-04_GME_estudios-mercado/` + 13 archivos con citaciones actualizadas (6 scripts internos + 7 docs/notes) | b41279e |
+
+**Paso pendiente:**
+
+- **3d** — Refactor Tier 1 (`fase4_kb_formatter.py`, `pendrive_pipeline.py`, `backup_kb_to_onedrive.ps1`) a variables de entorno (`RAUL_ROOT`, `RAUL_INDEXES_DIR`, `RAUL_LOGS_DIR`). Prerrequisito para separación `05-indexes/canonical/` ↔ `06-logs/` (recomendación I.2 de Copilot).
+
+**Hallazgos cross-cutting documentados (en `SCRIPTS-DEPENDENCIES.md`):**
+
+1. `.claude/agents/inboxbot/AGENT.md` tiene path hardcoded a `inboxbot-tasklog.md` — manejar con Read+Edit (Write produce loops de permisos).
+2. Dual hierarchy en Google Drive (`G:\Mi unidad\RAUL\` canónico vs `C:\Users\User\Mi unidad\RAUL\` cueva legacy descontinuada). Riesgo activo de InboxBot.
+3. Task Scheduler `RAUL_KB_Backup_OneDrive` referencia path absoluto del `.ps1`. Mover el script requiere reconfigurar la tarea programada.
+4. Casing inconsistente (`C:/RAUL`, `C:\RAUL`, `C:\Raul`). Fix parcial aplicado en Paso 3b (scripts); md files quedan para cleanup futuro.
+5. `.env` en root del repo es patrón aceptable (debe seguir en `.gitignore`).
+
+**Alternativas consideradas:**
+
+- **Copilot ejecuta los cambios** (Opción 1 del Owner): rechazado — Copilot no tiene memoria persistente (Modelo A, taxonomía, BR-1/BR-5 vigentes, dual hierarchy). Riesgo de pisar disciplina ya establecida.
+- **Mantener ordenación original Copilot** (SSOT-MATRIX como I.1 prioritario): modificado — Claude reordenó por riesgo creciente. Auditoría completa de paths primero, porque scripts hardcoded eran bloqueantes para reorganización.
+- **Versionado SemVer agresivo en frontmatter (I.4 Copilot)**: rechazado — alto overhead, baja utilidad. DECISIONS.md ya cumple esa función.
+- **Auto-generación de índices + dashboard HTML (III.1, III.3 Copilot)**: rechazado — contradice disciplina vendor-neutral si los scripts se vuelven dependencia operativa.
+- **Mover scripts Tier 3 a worktree de pruebas vs `05-archive/`**: rechazado — los archivados no son recuperables, son evidencia histórica. Git log preserva el contenido.
+
+**Documentos generados/consolidados:**
+
+- `04-system/01-config/SCRIPTS-DEPENDENCIES.md` — SSOT de inventario de 22 scripts en 3 tiers, plan de variables canónicas, comando de regresión grep.
+- `04-system/01-config/PKA-FLOW.md` — flujo end-to-end del PKA (versión rica de Copilot consolidada).
+- `04-system/03-governance/PKA-AUDIT-CHECKLIST.md` — checklist operacional para auditorías futuras (cadencia: mensual o cada 5 proyectos).
+- `04-system/03-governance/PKA-IMPROVEMENTS-SUMMARY.md` — análisis de mejoras priorizadas (referencia histórica del proceso, no SSOT activo).
+- `04-system/03-governance/CLAUDE-REVIEW-PROMPT.md` — template del prompt usado por Owner para invocar evaluación.
+- `05-archive/03-system-history/legacy-scripts/_index.md` — inventario de scripts archivados (gitignored, en disco).
+- `04-system/04-tools-and-scripts/scripts/_LEGACY_MOVED.md` — redirector que indica destino de archivado.
+
+**Implicaciones:**
+
+- Toda incorporación futura de scripts debe documentarse en `SCRIPTS-DEPENDENCIES.md`.
+- La separación canonical/logs en `05-indexes/` queda en stand-by hasta que se ejecute Paso 3d.
+- Owner conoce los riesgos cross-cutting documentados.
+- Carpeta `2025-04_GME_estudios-mercado/` queda activa para que Owner agregue estudios adicionales desde su disco duro.
+
+**Follow-ups menores pendientes:**
+
+- Casing `\Raul\` en `_intel/Bruna_gate_GME_*.md` y `_intel/Aurelio_AU-1_*.md` (mixed case en md files, no rompe en Windows pero rompe en case-sensitive systems).
+- Posible cleanup posterior si emergen otros stale references al revisar `_intel/` y `_governance/` con más detalle.
+
+**Estado:** Pasos 1-3c cerrados (commits 9207aaf, 52d7e9b, 3c3cad1, b41279e). Paso 3d en stand-by para sesión limpia.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
