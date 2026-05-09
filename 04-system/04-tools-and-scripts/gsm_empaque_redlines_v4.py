@@ -12,8 +12,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 # ---------------------------------------------------------------------------
 # Rutas
 # ---------------------------------------------------------------------------
-SRC_DIR  = r"C:\Raul\01-inbox\03-raw-sources\genteca\ntc-gsm-hojas-glase"
-OUT_DIR  = r"C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release"
+SRC_DIR  = r"C:\RAUL\01-inbox\03-raw-sources\genteca\ntc-gsm-hojas-glase"
+OUT_DIR  = r"C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release"
 TIRO_SRC = SRC_DIR + r"\GSM-MB-RB-RF_GLA_T_ (1).pdf"
 RETI_SRC = SRC_DIR + r"\GSM-MB-RB-RF_GLA_R_ (1).pdf"
 TIRO_OUT = OUT_DIR + r"\GSM-MB-RB-RF-RE_GLA_T_redline_v4.pdf"

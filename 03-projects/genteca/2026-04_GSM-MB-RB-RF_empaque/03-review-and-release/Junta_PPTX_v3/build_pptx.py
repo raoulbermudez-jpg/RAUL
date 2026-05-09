@@ -1670,7 +1670,7 @@ def build():
     slide_anexo_pregunta(prs)   # A5
 
     out_path = (
-        "C:/Raul/03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque"
+        "C:/RAUL/03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque"
         "/03-review-and-release/Junta_PPTX_v3"
         "/Avance_dual-variantes_GSM-empaque_2026-05-06.pptx"
     )

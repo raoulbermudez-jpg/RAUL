@@ -13,7 +13,7 @@ Dependencia: cairosvg
   (Si cairosvg no está disponible, instalar con GTK runtime en Windows — ver documentación cairosvg)
 
 Ejecución:
-  cd C:\\Raul\\03-projects\\genteca\\2026-04_GSM-MB-RB-RF_empaque\\02-production\\Atlas_mockups_v1
+  cd C:\\RAUL\\03-projects\\genteca\\2026-04_GSM-MB-RB-RF_empaque\\02-production\\Atlas_mockups_v1
   python render_B_v2.py
 """
 
@@ -24,8 +24,8 @@ import shutil
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ── Rutas ────────────────────────────────────────────────────────────────────
-BASE_PROD   = r'C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\02-production\Atlas_mockups_v1'
-PPTX_DIR    = r'C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_PPTX_v2'
+BASE_PROD   = r'C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\02-production\Atlas_mockups_v1'
+PPTX_DIR    = r'C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_PPTX_v2'
 
 SVG_IN      = os.path.join(BASE_PROD, 'Atlas_mockup_frente_B_v2.svg')
 PNG_OUT     = os.path.join(BASE_PROD, 'Atlas_mockup_frente_B_v2.png')

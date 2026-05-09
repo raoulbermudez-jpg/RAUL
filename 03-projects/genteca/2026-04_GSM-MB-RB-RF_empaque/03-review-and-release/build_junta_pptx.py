@@ -30,8 +30,8 @@ prs.slide_height = SLIDE_H
 
 BLANK_LAYOUT = prs.slide_layouts[6]   # completely blank
 
-IMG_PATH = r"C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_PPTX_v2\Atlas_mockup_frente_B.png"
-OUTPUT   = r"C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_GSM_empaque_B-sin-NTC_propuesta.pptx"
+IMG_PATH = r"C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_PPTX_v2\Atlas_mockup_frente_B.png"
+OUTPUT   = r"C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_GSM_empaque_B-sin-NTC_propuesta.pptx"
 
 # ── Helper functions ────────────────────────────────────────────────────────────
 

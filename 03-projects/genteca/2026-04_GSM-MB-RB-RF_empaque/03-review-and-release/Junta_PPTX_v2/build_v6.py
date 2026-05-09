@@ -17,7 +17,7 @@ from pptx.enum.dml import MSO_THEME_COLOR
 import copy
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-OUT_DIR  = r'C:\Raul\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_PPTX_v2'
+OUT_DIR  = r'C:\RAUL\03-projects\genteca\2026-04_GSM-MB-RB-RF_empaque\03-review-and-release\Junta_PPTX_v2'
 PNG_DIR  = OUT_DIR
 OUT_FILE = os.path.join(OUT_DIR, 'Junta_GSM_empaque_v6.pptx')
 
