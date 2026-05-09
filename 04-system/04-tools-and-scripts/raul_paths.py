@@ -10,7 +10,8 @@ Used by Tier 1 scripts (fase4_kb_formatter, pendrive_pipeline) per
 Usage:
     from raul_paths import paths
     inbox = paths.INBOX
-    indexes = paths.REPORTS_DIR  # actual 05-indexes/ (pre-separación)
+    indexes = paths.INDEXES_DIR  # 05-indexes/ — canonical curated
+    logs = paths.LOGS_DIR        # 06-logs/ — runtime + machine-generated
 
     # Or explicit (testing):
     from raul_paths import get_paths
@@ -37,9 +38,8 @@ class RaulPaths:
     KB: Path
     PROJECTS: Path
     SYSTEM: Path
-    INDEXES_CANONICAL_DIR: Path  # post-separación: 05-indexes/canonical/
-    LOGS_DIR: Path               # post-separación: 06-logs/
-    REPORTS_DIR: Path            # actual (pre-separación): 05-indexes/
+    INDEXES_DIR: Path            # 05-indexes/ — canonical curated indexes
+    LOGS_DIR: Path               # 06-logs/ — runtime logs + machine-generated reports
     PENDRIVE: Path               # D:/ (runtime device, no env override)
     ENV_FILE: Path               # .env at repo root
 
@@ -56,9 +56,8 @@ def get_paths(root: str | Path | None = None) -> RaulPaths:
         KB=root / "02-knowledge-base",
         PROJECTS=root / "03-projects",
         SYSTEM=system,
-        INDEXES_CANONICAL_DIR=system / "05-indexes" / "canonical",
+        INDEXES_DIR=system / "05-indexes",
         LOGS_DIR=system / "06-logs",
-        REPORTS_DIR=system / "05-indexes",
         PENDRIVE=Path("D:/"),
         ENV_FILE=root / ".env",
     )

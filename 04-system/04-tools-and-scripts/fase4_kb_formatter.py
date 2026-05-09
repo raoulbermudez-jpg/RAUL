@@ -25,9 +25,8 @@ from raul_paths import paths
 
 STAGING       = paths.INBOX / "03-raw-sources" / "genteca" / "pendrive-D"
 KB_SPECS      = paths.KB / "02-domains" / "01-genteca" / "specs"
-INDEXES_DIR   = paths.REPORTS_DIR
-PROGRESS_FILE = INDEXES_DIR / "fase4_progress.json"
-LOG_FILE      = INDEXES_DIR / f"fase4_{datetime.now().strftime('%Y%m%d_%H%M')}.log"
+PROGRESS_FILE = paths.LOGS_DIR / "fase4_progress.json"
+LOG_FILE      = paths.LOGS_DIR / f"fase4_{datetime.now().strftime('%Y%m%d_%H%M')}.log"
 ENV_FILE      = paths.ENV_FILE
 
 MODEL         = "claude-haiku-4-5-20251001"
@@ -42,7 +41,7 @@ LINEA_LABEL = {
 }
 
 # ── Logging ────────────────────────────────────────────────────────────────────
-INDEXES_DIR.mkdir(parents=True, exist_ok=True)
+paths.LOGS_DIR.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",

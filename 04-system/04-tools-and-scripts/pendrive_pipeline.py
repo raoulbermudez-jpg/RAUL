@@ -21,7 +21,7 @@ PENDRIVE         = paths.PENDRIVE
 KB_GENTECA       = paths.KB / "02-domains" / "01-genteca"
 STAGING          = paths.INBOX / "03-raw-sources" / "genteca" / "pendrive-D"
 ASSETS_BASE      = paths.KB / "02-domains" / "01-genteca" / "assets"
-REPORT_DIR       = paths.REPORTS_DIR
+REPORT_DIR       = paths.LOGS_DIR
 LOG_FILE         = REPORT_DIR / f"pendrive_pipeline_{datetime.now().strftime('%Y%m%d_%H%M')}.log"
 
 # Líneas de producto

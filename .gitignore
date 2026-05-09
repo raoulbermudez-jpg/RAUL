@@ -130,8 +130,9 @@ venv/
 # Archivos de encoding temporal (generados al subir binarios a Drive)
 b64_*.txt
 
-# Logs operativos de pipelines
+# Logs operativos de pipelines (transient outputs en 06-logs/)
 pendrive_pipeline_stdout.txt
+fase4_progress.json
 
 # ---------------------------
 # 7) Apéndices privados de metodología

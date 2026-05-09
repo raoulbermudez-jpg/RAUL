@@ -30,7 +30,8 @@ how_to_use: "Consultar antes de mover carpetas, renombrar root, o tocar cualquie
 | 2 | Tier 3 (legacy pre-/RAUL/): abandonar — mover a `05-archive/03-system-history/legacy-scripts/` | Ejecutado (commit 52d7e9b) |
 | 3 | Renombrar `GME Estudios de mercado/` → naming compliant + actualizar scripts internos | Ejecutado como `2025-04_GME_estudios-mercado/` (commit b41279e) |
 | 4 | Casing canónico: `C:\RAUL` (uppercase). Forward slash vs backslash queda al criterio del autor (pathlib y PowerShell aceptan ambos) | Ejecutado parcial (commit 3c3cad1 — scripts; md files pendientes en cleanup futuro) |
-| 5 | Refactor Tier 1 a env vars con helper `raul_paths.py` (flat, no en `_lib/` por simplicidad) | Ejecutado (este commit) |
+| 5 | Refactor Tier 1 a env vars con helper `raul_paths.py` (flat, no en `_lib/` por simplicidad) | Ejecutado (commit f1d98fa) |
+| 6 | Separación física `05-indexes/` (canonical curated, flat) ↔ `06-logs/` (runtime + machine-generated). Helper renombra `INDEXES_CANONICAL_DIR` → `INDEXES_DIR`, elimina `REPORTS_DIR`. | Ejecutado (este commit) |
 
 Estas decisiones deben replicarse como entrada en [DECISIONS.md](../03-governance/DECISIONS.md) tras ejecución completa.
 
@@ -56,9 +57,8 @@ RAUL_INBOX         = ${RAUL_ROOT}\01-inbox
 RAUL_KB            = ${RAUL_ROOT}\02-knowledge-base
 RAUL_PROJECTS      = ${RAUL_ROOT}\03-projects
 RAUL_SYSTEM        = ${RAUL_ROOT}\04-system
-RAUL_INDEXES_DIR   = ${RAUL_SYSTEM}\05-indexes\canonical    (post separación)
-RAUL_LOGS_DIR      = ${RAUL_SYSTEM}\06-logs                 (post separación)
-RAUL_REPORTS_DIR   = ${RAUL_SYSTEM}\05-indexes              (compatibilidad pre-separación)
+RAUL_INDEXES_DIR   = ${RAUL_SYSTEM}\05-indexes               (canonical curated indexes)
+RAUL_LOGS_DIR      = ${RAUL_SYSTEM}\06-logs                  (runtime logs + machine-generated reports)
 ```
 
 **Helper Python propuesto:** crear `04-system/04-tools-and-scripts/_lib/raul_paths.py` con función `get_paths()` que retorna un dataclass con todos los paths resueltos. Cada script Tier 1 hace `from _lib.raul_paths import get_paths`.
@@ -77,7 +77,7 @@ Ejecutado como Paso 3d. Deviations del plan original:
 - **Helper plano `raul_paths.py`** directo en `04-tools-and-scripts/`, NO en `_lib/`. Razón: un solo módulo, simplicidad de import, evita complicaciones de package/namespace. Si emergen más helpers, refactorizar a `_lib/` entonces.
 - **Documentación de `RAUL_ROOT` solo en `CONTEXT_core.md`**, NO en `CLAUDE.md`. Razón: CLAUDE.md describe rol de agente (Identity, Cardinal Rule, routing); paths son configuración de sistema, pertenecen a CONTEXT_core.
 
-Self-test del helper ejecutado tras creación: 7/10 paths [OK] (los activos), 3/10 [MISSING] esperados (`INDEXES_CANONICAL_DIR`, `LOGS_DIR` pendientes de separación; `.env` opcional según Owner).
+Self-test del helper post-3d + post-separación 05-indexes/06-logs: 8/9 paths [OK] (todos activos incluyendo INDEXES_DIR y LOGS_DIR), 1/9 [MISSING] esperado (`.env` opcional según Owner).
 
 ---
 
@@ -220,7 +220,7 @@ Después de ejecutar Paso 3, validar:
 - [x] Documentación de `RAUL_ROOT` añadida a `CONTEXT_core.md`.
 - [ ] `RAUL_ROOT` seteado a nivel de sistema (Owner action — opcional, default funciona). Paso a paso documentado en `CONTEXT_core.md` sección "Configuración de paths para scripts (`RAUL_ROOT`)".
 - [x] `gsm_empaque_redlines_v4.py` movido a `03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/`.
-- [ ] `FOLDER-ARCHITECTURE.md` actualizado si/cuando la reorganización 05-indexes/06-logs proceda (Paso futuro).
+- [x] `FOLDER-ARCHITECTURE.md` actualizado con la reorganización 05-indexes/06-logs (Opción B flat: 05-indexes/ contiene 5 índices canónicos directos; 06-logs/ contiene logs + pendrive_D_*).
 
 ---
 

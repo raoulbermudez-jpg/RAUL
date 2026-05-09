@@ -130,7 +130,7 @@ python "C:\RAUL\04-system\04-tools-and-scripts\raul_paths.py"
 
 Si solo trabajás con un único `C:\RAUL`, no necesitás setear la variable — el default funciona.
 
-**Helper Python:** scripts importan `from raul_paths import paths`. El helper vive en `04-system/04-tools-and-scripts/raul_paths.py` y provee paths canónicos (`ROOT`, `INBOX`, `KB`, `PROJECTS`, `SYSTEM`, `REPORTS_DIR`, `PENDRIVE`, `ENV_FILE`, más `INDEXES_CANONICAL_DIR` y `LOGS_DIR` para futura separación).
+**Helper Python:** scripts importan `from raul_paths import paths`. El helper vive en `04-system/04-tools-and-scripts/raul_paths.py` y provee paths canónicos (`ROOT`, `INBOX`, `KB`, `PROJECTS`, `SYSTEM`, `INDEXES_DIR` apuntando a `05-indexes/`, `LOGS_DIR` apuntando a `06-logs/`, `PENDRIVE`, `ENV_FILE`).
 
 **PowerShell:** scripts usan `$env:RAUL_ROOT` con fallback inline.
 

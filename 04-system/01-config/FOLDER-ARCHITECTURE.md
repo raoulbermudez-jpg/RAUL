@@ -307,10 +307,19 @@ Función: cerebro del sistema Raul. Define cómo se trabaja, no el trabajo en s�
       project-template/README.md
       sop-template.md
       report-template.md
-  05-indexes/
-    projects-index.md       ← índice ligero de proyectos activos
-    kb-index-by-domain.md   ← índice de KB por dominio
-    research-index.md       ← líneas de investigación abiertas
+  05-indexes/                       ← índices canónicos curados (SSOT)
+    _index.md
+    projects-index.md             ← proyectos activos por dominio + estado
+    domains-index.md              ← dominios activos del sistema
+    kb-index-by-domain.md         ← inventario de KB por dominio
+    research-index.md             ← líneas de investigación abiertas
+    companion-docs-index.md       ← companion docs (sufijo PERPLEXITY)
+  06-logs/                          ← logs runtime + reportes machine-generated
+    _index.md
+    *.log                         ← logs por run (gitignored vía *.log global)
+    pendrive_pipeline_stdout.txt  ← stdout dump (gitignored)
+    fase4_progress.json           ← state file (gitignored)
+    pendrive_D_*.{json,md}        ← snapshot del pendrive D (tracked)
 ```
 
 **Regla de agentes (SSOT):**
