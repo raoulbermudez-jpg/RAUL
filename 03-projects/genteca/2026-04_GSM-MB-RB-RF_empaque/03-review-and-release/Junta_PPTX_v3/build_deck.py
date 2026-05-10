@@ -532,38 +532,44 @@ add_rect(s, Inches(0.45), rs_y, Inches(12.45), Inches(0.0), ACCENT_ORANGE)
 s = prs.slides.add_slide(blank)
 set_slide_bg(s, BG_NAVY)
 add_brand_header(s, FOOTER)
-add_text(s, Inches(0.45), Inches(0.85), Inches(12), Inches(0.7),
-         "Salimos al mercado con el ™. Volvemos con ® cuando llegue.",
-         font="Calibri Light", size=24, bold=True, color=WHITE)
-add_text(s, Inches(0.45), Inches(1.5), Inches(12), Inches(0.5),
+add_text(s, Inches(0.45), Inches(0.85), Inches(12.5), Inches(0.7),
+         "Solicitud SAPI antes del lanzamiento. Salimos con ™. Volvemos con ®.",
+         font="Calibri Light", size=22, bold=True, color=WHITE)
+add_text(s, Inches(0.45), Inches(1.45), Inches(12.5), Inches(0.5),
          "Mecánica del registro aplicada al caso Thermo-Safe.",
          font="Calibri", size=13, color=ACCENT_ORANGE)
 
-# Timeline three boxes
-tx = [Inches(0.5), Inches(4.78), Inches(9.06)]
-tw = Inches(4.0)
-ty_t = Inches(2.4)
-th = Inches(2.3)
-labels = ["HOY", "D + 30 días", "D + 6 a 12 meses"]
-events = [
-    "Empaque al mercado con\n«Tecnología Thermo-Safe™ NTC»",
-    "Solicitud SAPI introducida\n(presupuesto IP autorizado)",
-    "Certificado emitido\n«Thermo-Safe®»  +  «Exclusivo de Genteca»",
+# Timeline four boxes
+tx = [Inches(0.55), Inches(3.65), Inches(6.75), Inches(9.85)]
+tw = Inches(2.95)
+ty_t = Inches(2.15)
+th = Inches(2.5)
+labels = [
+    "ANTES DEL LANZAMIENTO",
+    "DÍA 0",
+    "MES ~1",
+    "MES 6 – 12",
 ]
-for i in range(3):
+events = [
+    "Búsqueda WEBPI de antecedentes  +  presentación FM-02 al SAPI\n(≤30 días entre ambas)",
+    "Lanzamiento al mercado con ™\nPrelación ya asegurada por timestamp",
+    "Publicación en Boletín de Propiedad Industrial\n+ ventana de oposición (30 días hábiles)",
+    "Certificado emitido\n«Thermo-Safe®» + «Exclusivo de Genteca»",
+]
+for i in range(4):
     add_rect(s, tx[i], ty_t, tw, th, CARD_NAVY)
     add_rect(s, tx[i], ty_t, tw, Inches(0.55), ACCENT_ORANGE)
     add_text(s, tx[i], ty_t, tw, Inches(0.55), labels[i],
-             font="Calibri", size=14, bold=True, color=DARK_INK,
+             font="Calibri", size=12, bold=True, color=DARK_INK,
              align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE)
-    add_text(s, tx[i] + Inches(0.3), ty_t + Inches(0.7), tw - Inches(0.6),
+    add_text(s, tx[i] + Inches(0.18), ty_t + Inches(0.7), tw - Inches(0.36),
              th - Inches(0.85), events[i],
-             font="Calibri", size=14, color=WHITE, align=PP_ALIGN.CENTER,
+             font="Calibri", size=12, color=WHITE, align=PP_ALIGN.CENTER,
              anchor=MSO_ANCHOR.MIDDLE)
-    if i < 2:
+    if i < 3:
         # Arrow between
-        ax = tx[i] + tw + Inches(0.05)
-        add_rect(s, ax, ty_t + th / 2 - Inches(0.03), Inches(0.18), Inches(0.06),
+        ax = tx[i] + tw + Inches(0.02)
+        add_rect(s, ax, ty_t + th / 2 - Inches(0.03), Inches(0.11), Inches(0.06),
                  ACCENT_ORANGE)
 
 # Why-it-matters block
@@ -575,16 +581,16 @@ add_text(s, Inches(0.65), wy + Inches(0.07), Inches(12), Inches(0.4),
          "POR QUÉ HACERLO ASÍ", font="Calibri", size=12, bold=True, color=ACCENT_ORANGE)
 
 points = [
-    "Adoptar el ™ inmediato es legal y comercialmente correcto.",
-    "30 días es el plazo desde el primer uso público para introducir el papeleo SAPI.",
-    "Cuando llegue el ®, se libera la palabra «exclusivo» — segunda ola de comunicación gratis.",
-    "Submisión paralela de varios candidatos: el abogado marcario decide la combinación óptima.",
+    "Venezuela es first-to-file: la prelación se establece por timestamp en SAPI, no por uso comercial.",
+    "El plazo «30 días» corre entre los resultados de búsqueda WEBPI y la consignación de la solicitud — no desde el lanzamiento.",
+    "Adoptar ™ desde día 1 es práctica internacional. Cuando llegue ®, se libera la palabra «Exclusivo» — segunda ola de comunicación gratis.",
+    "Submisión paralela de varios candidatos: ancla la marca con el primero que pase el examen.",
 ]
 for i, pt in enumerate(points):
     add_multi_text(s, Inches(0.7), wy + Inches(0.65) + Inches(0.32) * i,
                    Inches(12), Inches(0.32), [
         {"text": "•  ", "size": 13, "bold": True, "color": ACCENT_ORANGE},
-        {"text": pt, "size": 13, "color": WHITE},
+        {"text": pt, "size": 12, "color": WHITE},
     ])
 
 # ---------------------------------------------------------------------------
@@ -787,11 +793,250 @@ add_text(s, Inches(0.65), fy, Inches(12), Inches(0.75),
          font="Calibri", size=13, color=WHITE, anchor=MSO_ANCHOR.MIDDLE)
 
 # ---------------------------------------------------------------------------
+# SLIDE 13 — Anexo: Procedimiento SAPI en detalle
+# ---------------------------------------------------------------------------
+s = prs.slides.add_slide(blank)
+set_slide_bg(s, BG_NAVY)
+add_brand_header(s, FOOTER)
+add_text(s, Inches(0.45), Inches(0.85), Inches(12.5), Inches(0.7),
+         "Anexo — Procedimiento SAPI en detalle",
+         font="Calibri Light", size=24, bold=True, color=WHITE)
+add_text(s, Inches(0.45), Inches(1.5), Inches(12.5), Inches(0.5),
+         "Línea de tiempo, hitos críticos, marco legal aplicable.",
+         font="Calibri", size=13, color=ACCENT_ORANGE)
+
+# 6 step cards in 2 rows × 3 columns (left ~70% of slide)
+left_block_w = Inches(8.55)
+sx_base = Inches(0.45)
+sy_base = Inches(2.1)
+card_w = Inches(2.75)
+card_h = Inches(2.0)
+gap = Inches(0.15)
+
+steps = [
+    ("1", "Búsqueda WEBPI", "Antecedentes fonéticos y gráficos del nombre candidato.", "Inmediata (en línea)"),
+    ("2", "Consignación FM-02", "Presentación formal con todos los candidatos en paralelo.", "≤ 30 días desde búsqueda"),
+    ("3", "Examen de forma", "SAPI revisa requisitos formales del expediente.", "3 días – 1 semana"),
+    ("4", "Publicación en Boletín", "Solicitud aparece en el Boletín de Propiedad Industrial.", "≈ 1 mes después"),
+    ("5", "Ventana de oposición", "Terceros pueden oponerse al registro.", "30 días hábiles"),
+    ("6", "Examen de fondo + grant", "Evaluación sustantiva, certificado y pago de tasas.", "Variable — total 6 a 12 meses"),
+]
+for idx, (num, label, body, tline) in enumerate(steps):
+    col = idx % 3
+    row = idx // 3
+    x = sx_base + (card_w + gap) * col
+    y = sy_base + (card_h + Inches(0.18)) * row
+    add_rect(s, x, y, card_w, card_h, CARD_NAVY)
+    # Step number circle
+    add_rect(s, x + Inches(0.15), y + Inches(0.15), Inches(0.45), Inches(0.45), ACCENT_ORANGE)
+    add_text(s, x + Inches(0.15), y + Inches(0.15), Inches(0.45), Inches(0.45), num,
+             font="Calibri", size=18, bold=True, color=DARK_INK,
+             align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, x + Inches(0.7), y + Inches(0.18), card_w - Inches(0.85), Inches(0.45),
+             label, font="Calibri", size=13, bold=True, color=WHITE,
+             anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, x + Inches(0.2), y + Inches(0.75), card_w - Inches(0.4), Inches(0.85),
+             body, font="Calibri", size=11, color=SUBTLE_BLUE)
+    add_text(s, x + Inches(0.2), y + card_h - Inches(0.45), card_w - Inches(0.4), Inches(0.35),
+             tline, font="Calibri", size=10, bold=True, color=ACCENT_ORANGE)
+
+# Sidebar — datos clave
+sb_x = Inches(9.30)
+sb_y = Inches(2.1)
+sb_w = Inches(3.6)
+sb_h = Inches(4.18)
+add_rect(s, sb_x, sb_y, sb_w, sb_h, CARD_LIGHTER)
+add_text(s, sb_x + Inches(0.25), sb_y + Inches(0.18), sb_w - Inches(0.5), Inches(0.4),
+         "DATOS CLAVE", font="Calibri", size=12, bold=True, color=ACCENT_ORANGE)
+
+key_facts = [
+    ("Marco legal", "LPI Venezuela 1955"),
+    ("Sistema", "First-to-file (prelación por timestamp en SAPI)"),
+    ("Antes del grant", "«Expectativa de derecho», no derecho exigible"),
+    ("Costo por marca", "$880 – $1,640 con abogado marcario"),
+    ("Símbolos", "™ desde día 1 (no regulado).  ® solo con certificado."),
+    ("Total realista", "6 a 12 meses sin oposición"),
+]
+ky = sb_y + Inches(0.7)
+for lbl, val in key_facts:
+    add_text(s, sb_x + Inches(0.25), ky, sb_w - Inches(0.5), Inches(0.25),
+             lbl, font="Calibri", size=10, bold=True, color=ACCENT_ORANGE)
+    add_text(s, sb_x + Inches(0.25), ky + Inches(0.25), sb_w - Inches(0.5), Inches(0.4),
+             val, font="Calibri", size=11, color=WHITE)
+    ky += Inches(0.62)
+
+# ---------------------------------------------------------------------------
+# SLIDE 14 — Anexo: Alternativas registrables badge térmico
+# ---------------------------------------------------------------------------
+s = prs.slides.add_slide(blank)
+set_slide_bg(s, BG_NAVY)
+add_brand_header(s, FOOTER)
+add_text(s, Inches(0.45), Inches(0.85), Inches(12.5), Inches(0.7),
+         "Anexo — Candidatos para badge térmico",
+         font="Calibri Light", size=24, bold=True, color=WHITE)
+add_text(s, Inches(0.45), Inches(1.5), Inches(12.5), Inches(0.5),
+         "Estrategia de submisión paralela: lead + respaldos distintivos + variantes defensivas.",
+         font="Calibri", size=13, color=ACCENT_ORANGE)
+
+# Table
+ty = Inches(2.15)
+ch = Inches(0.5)
+rh = Inches(0.55)
+cx0 = Inches(0.45)
+cx1 = Inches(2.85)
+cx2 = Inches(6.05)
+cx3 = Inches(10.15)
+cw0 = Inches(2.40)
+cw1 = Inches(3.20)
+cw2 = Inches(4.10)
+cw3 = Inches(2.75)
+
+add_rect(s, cx0, ty, cw0, ch, CARD_LIGHTER)
+add_rect(s, cx1, ty, cw1, ch, CARD_LIGHTER)
+add_rect(s, cx2, ty, cw2, ch, CARD_LIGHTER)
+add_rect(s, cx3, ty, cw3, ch, CARD_LIGHTER)
+for cx, cw, lbl in [(cx0, cw0, "Candidato"), (cx1, cw1, "Construcción"),
+                    (cx2, cw2, "Notas"), (cx3, cw3, "Lote / odds")]:
+    add_text(s, cx + Inches(0.15), ty, cw, ch, lbl,
+             font="Calibri", size=11, bold=True, color=ACCENT_ORANGE,
+             anchor=MSO_ANCHOR.MIDDLE)
+
+thermal_candidates = [
+    ("Thermo-Safe™", "Compuesto + abstracción «Safe»",
+     "Lead actual del deck. Sin colisión Class 9 detectada.",
+     "A — altas", GREEN_OK),
+    ("ThermoCore™", "Compuesto + «Core» (núcleo tech)",
+     "Diferencia bien si Thermo-Safe se considera muy genérico.",
+     "A — altas", GREEN_OK),
+    ("ThermoLogic™", "Compuesto + «Logic» (algoritmo)",
+     "Refuerza el discurso «la propiedad intelectual real es el algoritmo».",
+     "A — altas", GREEN_OK),
+    ("ThermoVault™", "Compuesto + «Vault» (bóveda)",
+     "Connota seguridad sin describir función. Más figurativo.",
+     "A — altas-medias", YELLOW_MED),
+    ("Termalia™", "Single-word fantasy",
+     "Patrón Exceline / Genius. Verificar coincidencias en otras clases.",
+     "B — altas (distintiva)", GREEN_OK),
+    ("Termiko™", "Single-word fantasy",
+     "Corto, distintivo fonéticamente. Limpio.",
+     "B — altas", GREEN_OK),
+    ("CalorSafe™", "Latín + inglés híbrido",
+     "Riesgo: «Calor» es descriptor más directo en español que «Thermo».",
+     "C — medias", YELLOW_MED),
+]
+for i, (cand, constr, note, lote, marker) in enumerate(thermal_candidates):
+    y = ty + ch + rh * i
+    bg = CARD_NAVY if i % 2 == 0 else BG_NAVY
+    add_rect(s, cx0, y, cw0, rh, bg)
+    add_rect(s, cx1, y, cw1, rh, bg)
+    add_rect(s, cx2, y, cw2, rh, bg)
+    add_rect(s, cx3, y, cw3, rh, bg)
+    # Marker stripe
+    add_rect(s, cx0, y, Inches(0.07), rh, marker)
+    add_text(s, cx0 + Inches(0.2), y, cw0 - Inches(0.3), rh, cand,
+             font="Calibri", size=12, bold=True, color=WHITE,
+             anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, cx1 + Inches(0.15), y, cw1 - Inches(0.3), rh, constr,
+             font="Calibri", size=11, color=SUBTLE_BLUE, anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, cx2 + Inches(0.15), y, cw2 - Inches(0.3), rh, note,
+             font="Calibri", size=11, color=WHITE, anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, cx3 + Inches(0.15), y, cw3 - Inches(0.3), rh, lote,
+             font="Calibri", size=11, bold=True, color=marker,
+             anchor=MSO_ANCHOR.MIDDLE)
+
+# Bottom recommendation strip
+br_y = ty + ch + rh * 7 + Inches(0.2)
+add_rect(s, Inches(0.45), br_y, Inches(12.45), Inches(0.7), CARD_NAVY)
+add_multi_text(s, Inches(0.65), br_y, Inches(12.0), Inches(0.7), [
+    {"text": "Submisión paralela recomendada:  ", "size": 12, "bold": True, "color": ACCENT_ORANGE},
+    {"text": "Lote A (Thermo-Safe + ThermoCore + ThermoLogic) + Lote B (Termalia / Termiko) como respaldo distintivo.",
+     "size": 12, "color": WHITE},
+], anchor=MSO_ANCHOR.MIDDLE)
+
+# ---------------------------------------------------------------------------
+# SLIDE 15 — Anexo: Alternativas registrables badge velocidad
+# ---------------------------------------------------------------------------
+s = prs.slides.add_slide(blank)
+set_slide_bg(s, BG_NAVY)
+add_brand_header(s, FOOTER)
+add_text(s, Inches(0.45), Inches(0.85), Inches(12.5), Inches(0.7),
+         "Anexo — Candidatos para badge velocidad (línea FlickerGuard)",
+         font="Calibri Light", size=22, bold=True, color=WHITE)
+add_text(s, Inches(0.45), Inches(1.5), Inches(12.5), Inches(0.5),
+         "Aplicable cuando se decida llevar la velocidad <30 ms también al frente.",
+         font="Calibri", size=13, color=ACCENT_ORANGE)
+
+# Reuse same column widths as slide 14
+add_rect(s, cx0, ty, cw0, ch, CARD_LIGHTER)
+add_rect(s, cx1, ty, cw1, ch, CARD_LIGHTER)
+add_rect(s, cx2, ty, cw2, ch, CARD_LIGHTER)
+add_rect(s, cx3, ty, cw3, ch, CARD_LIGHTER)
+for cx, cw, lbl in [(cx0, cw0, "Candidato"), (cx1, cw1, "Construcción"),
+                    (cx2, cw2, "Notas"), (cx3, cw3, "Lote / odds")]:
+    add_text(s, cx + Inches(0.15), ty, cw, ch, lbl,
+             font="Calibri", size=11, bold=True, color=ACCENT_ORANGE,
+             anchor=MSO_ANCHOR.MIDDLE)
+
+speed_candidates = [
+    ("FlickerGuard™", "Compuesto + «Guard»",
+     "Lead 2026-05-07. «Guard» implica protección — riesgo descriptivo medio.",
+     "C — medias-altas", YELLOW_MED),
+    ("FlickerSense™", "Compuesto + «Sense» (sensar)",
+     "Más limpio que «Guard». Acto de detección sin implicar protección.",
+     "A — altas", GREEN_OK),
+    ("FlickerLogic™", "Compuesto + «Logic» (algoritmo)",
+     "Pareja natural con ThermoLogic. Crea familia de portafolio.",
+     "A — altas", GREEN_OK),
+    ("FlickerSync™", "Compuesto + «Sync» (sincronización)",
+     "Connota la coordinación con la red eléctrica. Distintivo.",
+     "A — altas", GREEN_OK),
+    ("FlickerScope™", "Compuesto + «Scope» (instrumento)",
+     "Metáfora de medición. Limpia pero menos directa para el técnico.",
+     "B — altas-medias", YELLOW_MED),
+    ("FlickIQ™", "Abreviado + «IQ» (inteligencia)",
+     "Brevedad y distintividad. Estilo distinto al ThermoXxx.",
+     "B — altas", GREEN_OK),
+    ("MicroFlick™", "«Micro» + «Flick»",
+     "Evoca el rango temporal (microsegundos) sin describirlo.",
+     "B — altas", GREEN_OK),
+    ("Velocia™", "Single-word fantasy",
+     "Patrón Exceline. Evoca velocidad como nombre propio.",
+     "B — altas (distintiva)", GREEN_OK),
+]
+for i, (cand, constr, note, lote, marker) in enumerate(speed_candidates):
+    y = ty + ch + rh * i
+    bg = CARD_NAVY if i % 2 == 0 else BG_NAVY
+    add_rect(s, cx0, y, cw0, rh, bg)
+    add_rect(s, cx1, y, cw1, rh, bg)
+    add_rect(s, cx2, y, cw2, rh, bg)
+    add_rect(s, cx3, y, cw3, rh, bg)
+    add_rect(s, cx0, y, Inches(0.07), rh, marker)
+    add_text(s, cx0 + Inches(0.2), y, cw0 - Inches(0.3), rh, cand,
+             font="Calibri", size=12, bold=True, color=WHITE,
+             anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, cx1 + Inches(0.15), y, cw1 - Inches(0.3), rh, constr,
+             font="Calibri", size=11, color=SUBTLE_BLUE, anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, cx2 + Inches(0.15), y, cw2 - Inches(0.3), rh, note,
+             font="Calibri", size=11, color=WHITE, anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, cx3 + Inches(0.15), y, cw3 - Inches(0.3), rh, lote,
+             font="Calibri", size=11, bold=True, color=marker,
+             anchor=MSO_ANCHOR.MIDDLE)
+
+# Bottom strip
+br_y = ty + ch + rh * 8 + Inches(0.15)
+add_rect(s, Inches(0.45), br_y, Inches(12.45), Inches(0.55), CARD_NAVY)
+add_multi_text(s, Inches(0.65), br_y, Inches(12.0), Inches(0.55), [
+    {"text": "Familia de portafolio:  ", "size": 12, "bold": True, "color": ACCENT_ORANGE},
+    {"text": "ThermoLogic + FlickerLogic   |   ThermoCore + FlickerSync   |   Thermo-Safe + FlickerSense.",
+     "size": 12, "color": WHITE},
+], anchor=MSO_ANCHOR.MIDDLE)
+
+# ---------------------------------------------------------------------------
 # Save
 # ---------------------------------------------------------------------------
 out_path = (
     "03-projects/genteca/2026-04_GSM-MB-RB-RF_empaque/03-review-and-release/"
-    "Junta_PPTX_v3/Junta_GSM_empaque_v3.2_2026-05-11.pptx"
+    "Junta_PPTX_v3/Junta_GSM_empaque_v3.3_2026-05-11.pptx"
 )
 prs.save(out_path)
 print(f"Saved: {out_path}")
