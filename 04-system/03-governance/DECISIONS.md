@@ -595,11 +595,12 @@ Nota específica para sub-decisión 7 (hybrid migration): alternativas eran solo
 
 **Estado:**
 
-- Pasos 1-6 ejecutados y commiteados en sesiones 2026-05-09 / 2026-05-10. 8 commits totales (`1f1ca02`, `8dc0bc6`, `a2cc124`, `fe90647`, `428775f`, `ff0e977`, `bf19a04`, `5c7352f`).
-- Step 7 (este DECISIONS entry): ✅ esta entrada.
-- Step 8 (MEMORY.md entry feedback): ⏳ siguiente.
-- Validación end-to-end pendiente: pasar una decisión real por Pause+Resume completo (sección H del proposal). Caso test natural: cuando Bruna desbloquee DEC-2026-05-06-002 (post OL-3 v2 + specs), pasarla por el nuevo flujo.
-- Colaterales abiertos (3, no Phase 3): `04-system/07-temp/` (OCR pilot folder), `04-system/06-logs/ocr_candidates_hde_man_v2.json` (v2 análisis OCR). Resolver como bloque separado tras cerrar Phase 3.
+- Pasos 1-6 ejecutados y commiteados en sesiones 2026-05-09 / 2026-05-10. 8 commits totales para los componentes (`1f1ca02`, `8dc0bc6`, `a2cc124`, `fe90647`, `428775f`, `ff0e977`, `bf19a04`, `5c7352f`).
+- Step 7 (este DECISIONS entry): ✅ commit `54261d8`.
+- Step 8 (MEMORY.md entry feedback): ✅ archivo `feedback_phase3_governance_pause_resume.md` + pointer en `MEMORY.md` (vive en `C:\Users\User\.claude\projects\C--Raul\memory\`, fuera del repo por diseño — memoria es per-installation, no per-repo).
+- **Phase 3 governance: COMPLETADA 2026-05-10.** 9 commits totales (8 componentes + 1 closure entry).
+- Validación end-to-end pendiente (sección H del proposal — checklist post-implementación): pasar una decisión real por Pause+Resume completo. Caso test natural: cuando Bruna desbloquee DEC-2026-05-06-002 (post OL-3 v2 + specs), pasarla por el nuevo flujo. Si funciona end-to-end, marcar el sistema como "validado en producción".
+- Colaterales abiertos (no Phase 3, scope OCR pilot paralelo): `04-system/07-temp/`, `04-system/06-logs/ocr_candidates_hde_man_v2.json`, `04-system/06-logs/ocr_candidates_final.json`, `04-system/06-logs/ocr_dedup_report.md`. Resolver como bloque separado.
 
 ---
 
