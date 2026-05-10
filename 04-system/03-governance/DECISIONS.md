@@ -526,4 +526,81 @@ Owner ejecutó vía Drive web: rename defensivo `Mi PC` → `Mi PC - LEGACY DELE
 
 ---
 
+## 2026-05-10 — Implementación Phase 3 governance: 6 componentes + 8 sub-decisiones de diseño
+
+**Decisión:** ejecutar incremental los 6 componentes operativos del plan aprobado en `GOVERNANCE-PROPOSAL-PHASE2-2026-05-09.md` (sección J — pasos 1-6), formalizando 8 sub-decisiones de diseño que emergieron durante la ejecución y que ajustan o extienden lo propuesto originalmente.
+
+**Contexto y motivación:**
+
+El sistema /RAUL/ tenía documentación del flujo CSC (Capa 2b — Aurelio → Nerea/Solenne → producción → Bruna → Ivo) pero NO tenía formalizada la coordinación con humanos externos al sistema (junta directiva Genteca, regulators SAPI/SENCAMER/FONDONORMA, contrapartes Panama, legal externo). La diagnóstica `GOVERNANCE-DIAGNOSTIC-2026-05-09.md` identificó esta brecha (gates de decisión sin canal estructurado, decisiones in-flight sin tracking, cadenas Pause+Resume sin patrón). El proposal Phase 2 propuso una arquitectura completa; este Phase 3 ejecuta los 6 componentes que quedaban pendientes tras el step 1 (DECISION-MAKERS.md ya commiteado el 2026-05-09 en `1f1ca02`).
+
+**Componentes ejecutados:**
+
+| # | Componente | Commit | Output principal |
+|---|---|---|---|
+| 1 | DECISION-MAKERS.md (registro 11 decisores) | `1f1ca02` (2026-05-09) | `04-system/03-governance/DECISION-MAKERS.md` |
+| 2 | PENDING-DECISIONS-REGISTRY.md + siembra 7 decisiones | `8dc0bc6` | `04-system/03-governance/PENDING-DECISIONS-REGISTRY.md` |
+| 3 | 5 carpetas inbox (04-decisions-in-flight/, 05-from-junta/, 06-from-regulators/, 07-from-third-parties/, 08-special-deliverables/) con `_index.md` por canal + `_outgoing/` donde aplica | `a2cc124` | `01-inbox/` reorganizado |
+| 3.A | Colateral: track de 4 archivos audit fase4 (`skipped_*.txt` + `ocr_candidates_hde_man.json`) | `fe90647` | `04-system/06-logs/` |
+| 3.B | Colateral: hybrid retroactive migration de 5 in-flight decisions a `04-decisions-in-flight/<project>/<decision-id>/context.md` | `428775f` | 5 context.md migrados |
+| 4 | 4 templates governance (decision-request, alternative-proposal, regulator-submission, junta-decision-package) | `ff0e977` | `04-system/04-tools-and-scripts/templates/` |
+| 5 | InboxBot v3.2 → v3.3 (mods F.1-F.4: detección canales nuevos, Paso 1.5 parseo decision-id, Paso 6 reentry, manejo AWAITING-DECISION) | `bf19a04` | `.claude/agents/inboxbot/AGENT.md` |
+| 6 | FRONTMATTER-CONVENTIONS.md con status field (9 valores canónicos) + cross-ref desde NAMING-CONVENTIONS.md | `5c7352f` | `04-system/01-config/FRONTMATTER-CONVENTIONS.md` |
+
+**Sub-decisiones de diseño (8) tomadas durante ejecución:**
+
+Estas no estaban resueltas en el proposal Phase 2 y se formalizaron en sesión 2026-05-09 / 2026-05-10:
+
+1. **Formalizar `PARTIALLY-RESPONDED` como estado canónico** — referenciado en patrón A.4 del proposal pero ausente en lista canónica B.2. Casos reales (DEC-2026-05-08-001 marcas anglicismos en convergence junta+SAPI) requieren el estado.
+
+2. **Formalizar `CLOSED-NOT-VIABLE` como estado canónico** — idem A.4. Necesario para multi-decisor cuando alguien rechaza y no se va a alternative path.
+
+3. **Crear nuevo estado `SUSPENDED-UPSTREAM`** — no existía en proposal. Distingue "esperando decisor" (acción del decisor humano) de "esperando insumo upstream" (acción de un agente del sistema). Caso fundador: DEC-2026-05-06-002 (claim primero LATAM bloqueado pending segunda iteración OL-3 + confirmación specs antes de poder enrutar a OWNER). Sin este estado, este tipo de bloqueos se mapean a PENDING con nota — pierde semántica útil para Bruna y para tracking de upstream.
+
+4. **DEC-2026-05-08-D1-D5 (GST Labels) modelado como umbrella row** — el proposal sembraba esta entry sin definir si expandir a 5 sub-IDs (D1, D2, ..., D5) o tratarla como una sola decisión agrupadora. Decisión: umbrella hasta que las 5 D tengan scope concreto; cuando se materialicen, se expande con sub-IDs `DEC-2026-05-08-D1` ... `-D5`.
+
+5. **Decision-ID generado por agente solicitante (no por InboxBot)** — el proposal no especificaba quién genera el ID. Decisión: el agente que activa Pause+Resume genera el ID al crear el package (formato `DEC-YYYY-MM-DD-NNN`). InboxBot solo actualiza estado y respuesta. Razón: modelo directo, evita mods adicionales a InboxBot AGENT.md.
+
+6. **Track de skipped_*.txt + ocr_candidates como audit data** (no gitignore) — colateral 1 del step 3. Snapshot persistente del output de fase4 (2049 archivos del pendrive D omitidos por filtros): permite revisitar candidatos a OCR mejorado en el futuro. Trade-off aceptado: re-runs de fase4 generarán diffs informativos.
+
+7. **Migración retroactiva hybrid: solo las 5 in-flight a `04-decisions-in-flight/`** (no las 2 cerradas) — colateral 2 del step 3. Decisiones cerradas (DEC-2026-05-04-001 RESPONDED, DEC-2026-04-29-001 CLOSED-WITHDRAWN) quedan referenciadas solo en registry; las 5 activas reciben workspace `<project-id>/<decision-id>/context.md`. Convención retroactiva nueva: solo `context.md` requerido (no fabricar `package.md` / `options.md` / `recommendation.md` / `response.md` para decisiones que ya existían pre-2026-05-09).
+
+8. **Status field documentado en doc separado FRONTMATTER-CONVENTIONS.md** (no en NAMING-CONVENTIONS.md) — step 6. El proposal sección J recomendaba NAMING-CONVENTIONS pero ese doc tiene scope estricto de nombres de carpeta/archivo (subtitle explícito); status field es frontmatter YAML, scope distinto. Doc separado da home extensible para futuras convenciones de frontmatter (`risk_level`, `expiry_date`, `channel_published`, `reuse_potential` — sección 3 "Por definir").
+
+**Alternativas consideradas:**
+
+Las alternativas estructurales del proposal Phase 2 quedaron documentadas en su sección I (7 alternatives rechazadas: tools externos tipo Notion, mezclar pendings con DECISIONS, agente Decision Coordinator dedicado, canal único bypass, implementación monolítica, auto-detection por keywords, escritura concurrente al registry). Para las 8 sub-decisiones de esta sesión, las alternativas concretas se discutieron inline con Owner (ver mensajes user/assistant en la sesión 2026-05-09 / 2026-05-10) y la racional de cada elección quedó embebida arriba.
+
+Nota específica para sub-decisión 3 (SUSPENDED-UPSTREAM): la alternativa era "mantener PENDING con nota explícita en Owner notes". Rechazada porque pierde la distinción semántica que importa para Bruna (¿estoy esperando humano externo o estoy esperando agente interno?). Coste de añadir vocabulario es mínimo.
+
+Nota específica para sub-decisión 7 (hybrid migration): alternativas eran solo prospectiva (no migrar nada — barato pero deja registry sin workspaces para casos activos) y full retroactiva (incluir las 2 cerradas — máxima coherencia pero duplica info que ya vive en project folders). Hybrid es el balance.
+
+**Implicaciones:**
+
+- **Cualquier agente que active Pause+Resume** ahora tiene workflow estructurado: generar `DEC-YYYY-MM-DD-NNN`, crear package en `01-inbox/04-decisions-in-flight/<project-id>/<decision-id>/`, copiar versión adaptada al `_outgoing/` del canal correspondiente (05/06/07), añadir fila a `PENDING-DECISIONS-REGISTRY.md`.
+
+- **InboxBot ahora ejecuta reentry** cuando detecta archivos con pattern `(DEC|JUNTA|REG|ALT)-\d{4}-\d{2}-\d{2}-[A-Z0-9]+` en canales 05/06/07: actualiza registry, identifica agente solicitante, invoca Raul para reanudar cadena. Skip automático para archivos correspondientes a decisiones aún PENDING/IN-DELIBERATION/SUSPENDED-UPSTREAM/PARTIALLY-RESPONDED (evita loops).
+
+- **Frontmatter `status` extiende vocabulario de deliverables** con 9 valores canónicos. `AWAITING-DECISION-<id>` linkea explícitamente con registry; `CRISIS-DRAFT` linkea con patrón A.3 (override) y obliga post-mortem Bruna en 72h.
+
+- **Vocabulario de estados extendido** vs proposal Phase 2: la lista canónica del registry pasa de 7 (B.2) a 10 estados con la formalización de PARTIALLY-RESPONDED + CLOSED-NOT-VIABLE + SUSPENDED-UPSTREAM. Las 5 templates governance (step 4) ya reflejan los 10 estados en sus `status:` enum.
+
+- **`01-inbox/` ahora tiene 8 canales** (3 originales + 5 nuevos), cada uno con `_index.md` que documenta política de retención, anti-patterns y flujo. README parent actualizado.
+
+- **NAMING-CONVENTIONS.md sigue enfocado en nombres** de carpeta/archivo. FRONTMATTER-CONVENTIONS.md es el nuevo home para convenciones de campos YAML.
+
+- **Audit data del pendrive D ahora versionada** en git: 2049 paths omitidos + 35K de candidatos OCR. Permite recuperar selectivamente material si en el futuro hay capacidad para OCR mejorado.
+
+- **5 packages retroactivos** en `04-decisions-in-flight/` (gme/, marcas-anglicismos-junta/, covenin-3445/, gst-r-etiquetas/) con context.md apuntando al material original disperso. Convención retroactiva (solo `context.md`) documentada en `_index.md`.
+
+**Estado:**
+
+- Pasos 1-6 ejecutados y commiteados en sesiones 2026-05-09 / 2026-05-10. 8 commits totales (`1f1ca02`, `8dc0bc6`, `a2cc124`, `fe90647`, `428775f`, `ff0e977`, `bf19a04`, `5c7352f`).
+- Step 7 (este DECISIONS entry): ✅ esta entrada.
+- Step 8 (MEMORY.md entry feedback): ⏳ siguiente.
+- Validación end-to-end pendiente: pasar una decisión real por Pause+Resume completo (sección H del proposal). Caso test natural: cuando Bruna desbloquee DEC-2026-05-06-002 (post OL-3 v2 + specs), pasarla por el nuevo flujo.
+- Colaterales abiertos (3, no Phase 3): `04-system/07-temp/` (OCR pilot folder), `04-system/06-logs/ocr_candidates_hde_man_v2.json` (v2 análisis OCR). Resolver como bloque separado tras cerrar Phase 3.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
