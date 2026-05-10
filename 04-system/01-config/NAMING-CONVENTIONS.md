@@ -6,6 +6,8 @@
 
 Este documento define las convenciones de nombres del sistema. Los patrones aquí registrados están en uso activo; los pendientes de definición están marcados explícitamente en §3.
 
+> **Scope:** este doc cubre **nombres de carpetas y archivos**. Las convenciones de **frontmatter YAML** (campo `status`, `document_id`, etc.) viven en [`FRONTMATTER-CONVENTIONS.md`](FRONTMATTER-CONVENTIONS.md) (creado 2026-05-10 — Phase 3 step 6).
+
 ---
 
 ## 1. Principios generales
