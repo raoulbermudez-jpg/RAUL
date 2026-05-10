@@ -1,0 +1,634 @@
+# Meeting Transcription 09-05-2026
+
+  Meeting started: 9/5/2026, 8:28:32
+  Duration: 123 minutes
+  Participants: Kike, Raoul Bermudez
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/610cz2goUhLYG1X8j8JC?o=txt)
+
+    ## Smart AI Advice [NEW]
+
+# About This Meeting
+
+- **Type of meeting:** Strategy and product/brand positioning discussion.
+- **Primary purpose:** Evaluate naming and branding options for new protection technologies, especially the NTC-based thermal protection proposal, and align messaging for packaging, marketing, and registration strategy.
+- **Participants and roles/responsibilities:**
+  - **Raoul Bermudez:** Meeting host and product/brand strategist; proposed registration and packaging approaches; coordinates presentations and agency work.
+  - **Kike:** Internal expert and advisor; provided guidance on market messaging, consumer language, technical relevance, and trademark/branding practicality.
+- **Industry:** Electrical protection devices, HVAC-related protection, industrial/consumer product branding, and intellectual property/brand registration.
+
+# Smart AI Advice
+
+## 📚 External Experts & Thought Leaders (Not Present in the Meeting)
+
+- **Ries & Trout** — Positioning should focus on owning a clear word or concept in the customer’s mind; useful for naming technologies so they become memorable category signals.
+- **Al Ries** — “Own a word” thinking helps create distinct brand assets that are easy to remember and defend.
+- **David Aaker** — Brand architecture and brand equity frameworks help decide whether to use a master brand plus endorsed technology names.
+- **Simon Sinek** — Start with the “why” and communicate the consumer benefit first, especially for packaging aimed at non-technical buyers.
+- **Marty Neumeier** — A strong brand is a distinctive idea; useful for turning technical features into simple, ownable language.
+- **Kevin Lane Keller** — Customer-based brand equity reminds the team to make names easy to recognize, understand, and associate with benefits.
+
+## 🧠 Frameworks To Apply
+
+- **Positioning Statement Framework** — Define who the product is for, what problem it solves, and why it is different.
+- **Brand Architecture (Aaker/Keller)** — Separate master brand, product line names, and technology names to avoid clutter and strengthen protection.
+- **Jobs-To-Be-Done** — Translate technical features into the job the product performs for the buyer, installer, or end user.
+- **Message Hierarchy** — Front panel: one core promise; back panel: technical explanation; QR code: deep-dive content.
+- **Naming Criteria Matrix** — Score candidate names by registrability, memorability, technical descriptiveness, market appeal, and fit with the brand.
+- **Consumer vs. Technician Messaging Split** — Use different language for mass-market products and technical/installer-facing products.
+
+## 🚀 Recommended Best Practices
+
+- Keep the **front-of-pack message short** and benefit-led.
+- Use **distinctive fantasy names** for technologies when possible; avoid purely descriptive phrases.
+- Maintain **separate messaging tracks** for technical users and mass consumers.
+- Validate names with **legal/IP review early** to reduce registration risk.
+- Use **QR codes** to host detailed instructions, videos, diagrams, and expandable explanations.
+- Present **one primary option plus backups** to avoid decision paralysis.
+- Build a **competitor comparison** that shows how rivals name and explain similar technologies.
+- Ensure the naming strategy supports both **protection against copycats** and **stronger market differentiation**.
+- Test the proposed wording with **sales teams and technical users** before final packaging approval.
+
+  
+
+  
+    ## Highlights
+
+    > 01:16:55 Kike: Sí acuérdate esta gente. Los Socios los dueños de esta compañía no son mercadólogos
+> 01:46:29 Raoul Bermudez: De hecho yo les comenté Mira nuestros competidores más fuertes son Breaker Mati protector y bueno los más conocidos que son que están peleando en participación de Mercado Esos son los que me interesa ver de primero en la comparación Cómo está la las redes sociales de Excel Line y cómo están las redes sociales de Breaker Mati de arte de protector lo más importante eso es lo primero que yo quiero ver porque cuando yo como dueño empresa voy a ver algo, Yo quiero ver mis competidores que están haciendo y los Quiero ver los competidores serio Porque por ejemplo hay tickets.
+
+  ## Transcript
+
+  00:00 Raoul Bermudez: Hola hola se oye
+01:39 Kike: Hola qué tal Raúl
+01:41 Raoul Bermudez: Bien, y tú cómo estás?
+01:43 Kike: chévere
+01:44 Raoul Bermudez: Qué bueno estás en Barcelona España
+01:47 Kike: estoy yo pensé que tú sabías yo le había dicho a Kevin no sé si Se me pasó di por sentado que sabían todos.
+02:06 Raoul Bermudez: Cuando uno se conecta y se relaciona con tanta gente llega un momento en que si no tenés un grupo me mandaron un correo, es muy difícil que todo el mundo se entere, no, pero no importa que no hay ningún problema, lo bueno que estaba pasándolo bien y que igual te podemos seguir conectados como cuando estabas en Australia que no había problema.
+02:24 Kike: Bueno, tuvimos un nieto nuevo una Nieto nuevo. El el sábado en la noche y por eso vinimos para acá y entonces bueno.
+02:35 Raoul Bermudez: Qué bien.
+02:37 Kike: Me quedo aquí en los hijita.
+02:40 Raoul Bermudez: Qué bien, qué bueno, qué bueno, ya aprovechas y bueno, como Bueno ahorita es Gerardo no.
+02:46 Kike: Todavía está en en primavera este y está súper sabroso está entre 15 y 19 grados casi todos los días.
+02:59 Raoul Bermudez: una maravilla sabroso
+03:00 Kike: y los días muy bonitos excepto dos hoy que está todo nublado y llovió y sí, Bueno llovizna, está lloviendo y Y cuándo fue el lunes el lunes o el martes el martes los lunes c***, perdón el 12.
+03:20 Raoul Bermudez: Hoy hoy es hoy es Cinco de Mayo hoy?
+03:22 Kike: el 12 no no
+03:27 Raoul Bermudez: Hoy es nueve de mayo.
+03:27 Kike: El cinco el martes fue la cosa el martes llovió. Pero el resto es muy bonito y bueno Barcelona es a mí me encanta.
+03:37 Raoul Bermudez: Sí, Barcelona es bello y no es tan frío como Madrid Madrid un poco más frío creo, no? Y mucho viento.
+03:44 Kike: Sí, sí sí. No y esa temperatura entre 15 y 19 es una maravilla.
+03:51 Raoul Bermudez: Sí sí, mi esposa es alemana. Bueno nació en Venezuela pero el padre es alemanes y tiene nacionalidad alemana y mis hijas también deben pasaporte alemán y cuando vamos a Alemania nos encanta ir en otoño, porque en otoño no hace ni tanto frío ni calor y hay unos días bellísimos y bueno espectacular.
+04:11 Kike: Los otoños tienden a ser también más estables Primavera siempre es este muy inestable, te pueden tocar este una semana mala y en otoño es mucho más difícil por lo menos Bueno mi experiencia. Yo viví cinco años en Inglaterra y viví tres años en Milano Y en los dos era más o menos parecido eso no en los climas distintos Pero eso de que el otoño es más estable es así y en Argentina igual.
+04:48 Kike: en Argentina el otoño es mucho más Este estable que el que Primavera
+04:53 Raoul Bermudez: Sí por eso nos gusta viajar en otoño Y además que nos gusta el tema de los colores en otoño es espectacular Te da más vida.
+05:00 Kike: Sí sí, sí lo sabe en qué parte de Alemania
+05:03 Raoul Bermudez: bueno, la familia de ella está en essen que cerca de dusseldor y la familia del papá lo que pasa que no queda mucho es más al sur es un pueblo cerca de Munich y bueno yo con polar también aprovechaba y tú sabes que los cerveceros alemanes este hacía muchos viajes de Alemania y íbamos a ferias en Alemania y bueno en alguna oportunidad estuve en una digamos sesiones de de trabajo y visitas a fábricas y visitas a ver proyectos de cosas nuevas en cervecería estuve dos semanas viajando por Alemania Y después teníamos la feria la famosa feria del octoberfest.
+05:45 Raoul Bermudez: Y bueno, nada, mi esposa Sí y por darle le pagaba O sea me pagaba el viaje completo para el octoberfest y mi esposa podía ir también nos pagaban a mí y a mi esposa, entonces fuimos yo estuve dos semanas de trabajo, después una
+05:57 Kike: Que es sabroso, Qué bueno.
+06:02 Raoul Bermudez: semana completo doctor Fest y después aprovechamos y nos quedamos tres semanas más de vacaciones, nosotros por nuestra cuenta Total que estuve en mes y medio
+06:08 Kike: claro
+06:09 Raoul Bermudez: y bueno, fue una experiencia espectacular y fue precisamente. Bueno, octubre otro otoño. Una maravilla Pero ellos son de ahí de esa zona de digamos Alemania la parte central de hecho el abuelo de mi esposa. Él era un empresario que tenía minas de minas de carbón. y y durante la Guerra pues este esa zona de esen, era muy Industrial Entonces era donde fabricaban muchos tanques cosas para la guerra no y
+06:43 Kike: Y fue muy bombardeada.
+06:45 Raoul Bermudez: Y fue muy bombardeada, Sí señor, esa es una zona muy bombardeada por porque estaba toda la fábricas allí, pero es en es como el corazón industrial de esa zona de Alemania y bueno, el abuelo de mi esposo tenía toda su tenía la mina de Carbón tenía también fábricas y durante la Guerra pues lo reclutaron los nazis, lo reclutaron usando su uniforme usted ahora esto.
+07:08 Kike: Aquí está hecha plomo.
+07:10 Raoul Bermudez: y bueno no se aprobó Pero él era Tenía que poner su fábricas al Servicio del Estado
+07:16 Kike: Ah está bien.
+07:18 Raoul Bermudez: Y es la zona de hierro también, porque ahí está compañías famosas de todo el hierro la producción de vías para para ferrovía y todas esas cosas es una una zona muy interesante Pero bueno, es una ciudad muy bonita, no sé si la conoces.
+07:35 Kike: estado de trabajo y no te no tuve chance ni de Casualidad me asomé por la ventana. Ya llegué aeropuerto
+07:45 Raoul Bermudez: una
+07:49 Kike: hotel reunión todo el día al día siguiente Dormir dos noches y al día siguiente de vuelta.
+07:59 Raoul Bermudez: Una relación porque esa ciudad a pesar de ser una zona digamos de muchas industrias Y eso es precisamente la ventaja de que tiene una parte de lo que llama la alza, no la parte vieja de la ciudad donde hay una gran cantidad de de micro cervecerías Y eso no sé si la tuviste oportunidad de conocer, pero una una calle llena de micro cervecerías calles no empedradas cervecerías antiguas de mil ochocientos mil setecientos y pico y hace la cerveza con el método antiguo en barriles de madera y son micro cervecerías Y tú puedes ir a una a otra a otra a otra a otra y pruebas diferentes tipos de cerveza y por supuesto las comidas alemanas y todo eso, eso es algo Si algún día tienes oportunidad de ir a duster tú preguntas Mira yo quiero ir a la que es la parte vieja de la ciudad y eso es algo fantástico, son muy alemán, pero muy bonitos.
+08:52 Kike: Está bien Lo tendré en agenda.
+08:55 Raoul Bermudez: Sí sí, como vas a viajar a Europa de vez en cuando, pues te echas una escapadita hasta allá y vale la pena. Bueno, es mucha gente, pero bueno Siempre una experiencia, no?
+09:05 Kike: Claro claro Qué bueno
+09:08 Raoul Bermudez: Mira, tengo tengo aquí algo que dije No yo tengo que mostrarle esto aquí que para para que coordinemos entre los dos, este lo que podemos presentarle a Martín pero es que antes Te quiero presentar algo que que fue un hallazgo que te encontré que me parece interesantísimo y que tiene totalmente que ver con marca con con nombres de registros de tecnología ya. Lo voy a mostrar Para que veas y los nombres que vas a ver Son son unos propuestas, No necesariamente son los nombres definitivos, pero ya, déjame mostrarte la presentación Esa primera y después que veamos, eso te muestro Cómo pudiéramos aplicar algo de eso. Específicamente ya para el caso del lunes, no? Qué es lo que yo quisiera ver si ojalá lo compraran. Bueno, si a ti te gusta también, claro, eso es lo primero este. Yo voy a ver aquí compartir.
+10:00 Raoul Bermudez: A ver si me sale más fácil que el otro día. Aquí está compartir y entonces yo selecciono. Lo que quiero compartir. pestaña de Chrome ventana Ok en este avance Dual aquí está Ya ahora ya estoy aprendiendo Cómo es esto Me imagino que ya puedes ver la pantalla. Okay este la voy a poner en grande para ver si lo ves más grande.
+10:30 Kike: Sí, okay.
+10:33 Raoul Bermudez: Pero no hace nada Ahora sí la vez más grande ahora.
+10:37 Kike: no
+10:38 Raoul Bermudez: Okay perfecto, bueno, básicamente este. Variante No espérate Esta es la presentación, no esta no es esta es la que viene después déjame mostrarte primero la otra que es la que es como que el hallazgo general que sirve para para todos los productos. Es esta que está aquí. Okay no sé si si la ves igual o tengo que compartir la
+11:06 Kike: Ahorita no estoy estudiando a ti.
+11:06 Raoul Bermudez: Parte no la ves. Okay entonces voy a voy a compartir esta Es que como son chiquiticas cuando las voy a compartir, no las veo bien. Es esta ahora sí lo ves, verdad? Okay perfecto
+11:24 Kike: Sí, excelente registra sus algoritmos.
+11:29 Raoul Bermudez: Mira que que hallazgo tan interesante. Estrategia de propiedad intelectual marca tecnológicas clase nueve, espérate sapia y Venezuela tiene una una clase nueve que son para registrar marcas tecnológicas donde tú no registras un producto tú registras una tecnología. Entonces allí lo interesante es que te permite darle un nombre fantasía o una tecnología y ser el primero en posicionarlo en el mercado unido a esta tecnología que te pueden copiar la tecnología, pero no te pueden copiar el nombre que ya tú le bautizaste A esa tecnología. Eso ya es tuyo.
+12:11 Kike: O sea, eso está protegido legalmente.
+12:14 Raoul Bermudez: Está protegido legalmente y es la clase nueve.
+12:19 Kike: El nombre no nada más.
+12:21 Raoul Bermudez: El nombre nada más el nombre nada más claro, yo yo hice un intento y me metí en sapi para ver y decir Bueno yo voy a registrar un nombre fantasía lo empecé a hacer con el NTC por supuesto y le puse un nombre fantasía en etc para ver si NTC podía estar dentro del nombre fantasía y Ya nadie puede usar en el tercero Bueno no es así, porque NTC es una tecnología que no es propietaria es algo que lo puedo usar cualquiera entonces si yo meto NTC dentro del nombre fantasía que le propongo a sapi de una vez lo rechaza porque te dice no es que eso es una tecnología y el riesgo, o sea el riesgo de que no te puedan registrar. Eso es muy alto, no significa que no se pueda intentar pero pero digamos el riesgo es alto de que entre la rechacen porque tú estás poniendo una tecnología dentro de un nombre y tú puedes registrar un nombre.
+13:09 Raoul Bermudez: Para una tecnología donde tú tienes algún tipo de desarrollo entonces ahí viene la parte del Software entonces si yo hago un software, que yo desarrollo como normalmente hace de genteca, yo puedo ponerme un NTC pero yo tengo un software, que yo voy a desarrollar para que eso haga una función.
+13:26 Kike: Que es único?
+13:27 Raoul Bermudez: Que es único y entonces yo registro el nombre de mi tecnología Ah que eso tiene adentro un NTC Bueno yo lo puedo explicar en otra parte Bueno eso es una tecnología de un de un sensor de temperatura no tengo que nombrarlo lo puedo nombrar, pero como ya tú te apropias del nombre Ya nadie, puede usar ese nombre y cualquiera puede poner nfc que lo pueden poner y nosotros fuimos los primeros si queremos ponerlo, pero es que además tenemos un hombre que no lo que no Además tenemos un nombre, que no lo pueden ponerme gracias, Me mostraste. Aquí hay alternativas, no puede ser en inglés Puede ser en español, la ventaja del inglés es que en zapio va a pasar más fácil como un hombre fantasía Porque
+14:02 Kike: claro
+14:05 Raoul Bermudez: si pones palabras en español que tengan relación con la función se van a decir No pero ahí lo que estás explicando la función, eso no lo puedes registrar como un nombre de fantasía tecnológica. Entonces por eso no es que no se pueda Pero bueno por eso la idea es que sea en inglés y eso le da como un cierto prestigio a una tecnología no estamos usando un anglicismo Aquí está la explicación.
+14:27 Raoul Bermudez: No, el tema el tema sobre los anglicismos porque como la marca bien lo dice en sus Pilares o en su digamos. Lo que es la el manual de marca y no me acuerdo en otra parte, está dice que no se pueden usar anglicismo, o sea, no debemos usar. Okay eso se entiende este.
+14:47 Kike: el manual de marca de
+14:50 Raoul Bermudez: Oye no sé en alguna parte Yo vi un documento que decía que no debíamos usar anglicismo Pero bueno, no sé si eso es algo que tú hiciste en algún momento o no hay problema.
+14:57 Kike: No, no no no no no, no, yo no sé dónde salió eso este además. Venezuela ha estado invadida históricamente de productos importados. Este y tuve a nivel Industrial este hay cualquier cantidad lo que es este abb snyder. yton todas esas marcas este tienen una piel de productos con nombres en inglés Que el gremio los conoce y hay muchos términos de de que se usan en protección que están en inglés.
+15:43 Raoul Bermudez: Exactamente Exactamente esa bueno, qué bueno, porque una de las dudas que yo tenía o sea, yo no sabía si era que tú habías puesto esa como una normativa, que no se podían usar anglicismo Eso está escrito en alguna parte Yo después Tengo que buscar el documento sé que lo vi y dije conchale es para para nosotros eso sería una traba porque más bien exactamente como tú dices las grandes compañías usan términos en inglés para nombres de tecnología y ya los tengo aquí algunos que encontré para para la presentación este Pero bueno dicho eso.
+16:13 Kike: A eso yo no le pararía, es más ni hablaría de eso para presentárselo a la
+16:15 Raoul Bermudez: Okay. perfecto
+16:17 Kike: junta directiva. no vaya a ser que se vayan a enrollar con Con eso.
+16:24 Raoul Bermudez: no, no, listo, Listo Ya esta lámina, no va, no te preocupes porque
+16:28 Kike: empezando el nombre Excel Line No es español.
+16:35 Raoul Bermudez: Sí, Bueno fíjate que aquí aquí está, no sé si ves el cursor aquí dice
+16:38 Kike: Ah bueno sí.
+16:39 Raoul Bermudez: nombre inspirado en anglicismo y excelente registrable precisamente porque no
+16:43 Kike: Ah mira mira tú yo no lo había leído pero es así.
+16:43 Raoul Bermudez: describen ningún protector, sino sí lo puse ahí de ejemplo. Sí aquí está toda la explicación era como una preparación por si acaso eso que yo vi en este documento era algo que estaba como que establecido en la compañía y dije Bueno la el primer bloque que tengo que tumbar es esto, pero
+17:00 Kike: No, olvídate, mira y el mismo genius. O sea no es genius, sino este así mismo lo bautizaron ella.
+17:10 Raoul Bermudez: exactamente Está bien, bueno, esta presentación estaba preparada primero para verla contigo y después exactamente lo que tú estás haciendo No no hablemos de eso Bueno listo, problema menos.
+17:24 Kike: sí, no es que si no nos enrollamos con esto y van a empezar la no, que si el gremio que si los técnicos no conocen Que
+17:34 Raoul Bermudez: Y es todo lo contrario.
+17:34 Kike: Y y no es relevante para un hombre, no?
+17:36 Raoul Bermudez: Bueno pero esta es la claro, Esta es la mina Exacto exactamente lo que tú estás diciendo es un nombre fantasía no es un término eléctrico técnico en inglés no no es un nombre fantasía que puede ser Pedro Pérez como Gar safe,
+17:52 Kike: como
+17:52 Raoul Bermudez: es lo mismo como John way es lo mismo Exactamente Bueno pero de todas formas Esto está aquí a la hora de que tengamos que no pero ya va Mira esto es como una Mira no eso no es así Eso es así aquí está la explicación la respuesta ante cada una de las posibles que iban a rechazar marcas en idioma extranjero no rechaza nada en otro idioma es lo que los elementos de fantasía en cualquier idioma son registrables.
+18:18 Raoul Bermudez: Ahí no hay problema Bueno está todas las respuestas de las posibles dudas que puedan surgir la siguiente era bueno, esto ya es algo que tú y yo habíamos hablado cuando busqué la posibilidad de registrar, por ejemplo, escudo térmico como termal que se me ocurrió que pudiera ser y había puesto al principio NTC para meter NTC dentro del nombre y ya registrar lo que nadie pudiera usar NTC Pero bueno, eso no es factible. Entonces quedó el como una una posibilidad, pero lo que sucede es que no sería aprobado por safi, porque describe literalmente la función porque es como protección térmica escudo térmico Entonces es más difícil la alternativa que Dime dime.
+19:01 Kike: No, pero escudo no es este no es protección.
+19:08 Raoul Bermudez: No, no, ojo el permaxil lo podemos intentar meter en sapi, no habría problema, pero tenemos Tú sabes que cuando tú metes algo, tú puedes meter varios de una vez porque si te rechazan uno y tienes que volver a poner otro después tienes que volver a pagar Entonces si queremos meter termo al chill o termo shield, que sea más fácil, podemos pensar en thermochil, podemos meter ese Pero podemos meter este que tiene más posibilidades que es termo seis.
+19:39 Raoul Bermudez: OK Porque bueno tiene más posibilidades podemos meter los dos yo metería los dos de una vez y que está pinos apruebe que el que pueda aprobarse este porque
+19:49 Kike: claro
+19:51 Raoul Bermudez: este describe un poco este no describe Este fíjate aquí algunos analogías, No inverter, fíjate que inverter no se pudo registrar porque es genérico para los aires acondicionados. Pero excelente, por ejemplo, para protectores un hombre propio, si se puede registrar este el artículo 34 es el que se pone kiki, claro, Yo no sé quiénes son los abogados de que o de genteca que pueden hacer esto no los conozco, No sé si tú has trabajado algo con ellos.
+20:19 Kike: Mira hay uno yo no, yo no sé si lo usan para esto, pero lo hemos usado mucho para todo lo que son las copias y todo esto que es muy amigo mío, estudió conmigo este ella por casualidad. Ellos lo usaban antes de yo entrar en teca, pero estudió conmigo todo el bachillerato en el colegio San Ignacio se llama Joel bracho.
+20:47 Raoul Bermudez: okay, Bueno entonces de repente como es amigo tuyo o si quieres consultarle
+20:47 Kike: Que imagínate tú si estará metido en cosas de marca y propiedad intelectual que él maneja todo lo que es de Cruz diez a nivel mundial.
+21:03 Raoul Bermudez: antes, yo te puedo dar esta presentación y que él te dé las luces para ver qué es lo que podemos presentar o no, Si tienes chance, si tienes tiempo si no, no importa pero
+21:11 Kike: Pero pero es que además por casualidad, él es el abogado de genteca.
+21:16 Raoul Bermudez: Sí sí Exacto por eso súper
+21:19 Kike: Está Yo creo que él vive en Panamá pero Pero sigue siendo el abogado de ella.
+21:27 Raoul Bermudez: Buenísimo, porque él pudiera ser hasta hasta alguna recomendación que podamos incorporar de aquí al lunes y ahí si hay chance pues. Pero bueno en todo caso seguimos fíjate que yo estoy de acuerdo contigo, podemos poner termo a mí me gusta más ser mochil que terma, o sea, como está aquí está hermosa ahí, pero ponemos y ponemos los dos y ya está y la verdad
+21:50 Kike: Sí yo
+21:51 Raoul Bermudez: que hablar hablar de escudo es chévere, pues podemos poner un símbolo de escudo, lo que te protege y sale.
+21:57 Kike: También se este, o sea la otra cosa. Es que tú puedes poner un nombre de fantasía y tú puedes registrar una parte, tú puedes poner, por ejemplo thermoxil y al lado le pones NTC Y ver todo este sapi. Venga a decirte que estás incorporando eso entre un hombre, no, no, Yo estoy poniendo las dos cosas. Estoy poniendo termo Gil NTC me respeta mi termoxil, o sea, yo protejo el NTC no, no pretendo que me lo defiendas como mío único. Pero termoxil sí y yo lo estoy combinando.
+22:42 Raoul Bermudez: Exactamente eso es perfecto, es perfecto lo que tú estás diciendo porque eso fue lo que a mí se me ocurrió a ver si lo podía meter adentro y no se puede, pero si puedo ponerlo al lado no hay problema.
+22:52 Kike: claro
+22:53 Raoul Bermudez: O lo puedo poner en el O sea no importa, digamos, podemos ser los primeros en apropiarnos de NTC y podemos hacer los primeros en apropiarnos de un hombre que no nos pueden copiar y queda mucho más elegante en el empaque.
+23:05 Kike: Aquí Lo importante es que estemos este combinados tú y yo en convencerlos a ellos de que, o sea, el argumento de Miguel Nadie conoce esa vaina. Bueno, pana, nadie lo conoce hasta que lo traiga excelente eso se llama Innovación tú conoces el viejo cuento de los dos tipos que los mandan a estudiar un mercado. Y el primero es un administrador y el segundo es un mercadólogo. el primero manda un reporte basado en la misma información Llegan una isla y el primero manda su reporte.
+23:54 Kike: Cien por ciento de la población, anda, descalzo esto era una fábrica de zapatos Aquí no hay potencial. El mercadologo dice 100% de la gente anda descalza tremendo potencial.
+24:11 Raoul Bermudez: claro
+24:13 Kike: es la visión que tú le ves O sea a
+24:16 Raoul Bermudez: Uno pensando que uno pensando en el pasado y el presente y otro pensando en la oportunidad del futuro.
+24:21 Kike: La Así es Entonces cómo interpretas tú eso bueno, tenés que tener un poquito de visión este en base a tu experiencia. yo veo esto como una gran oportunidad de Por un lado hacer más competitivo al gsmr y por otro lado esto le da imagen, o sea, esto apuntarla ayuda a la imagen de marca de como marca innovadora como
+24:53 Raoul Bermudez: Y de innovación exactamente.
+24:55 Kike: marca que como marca que realmente estudia. el suministro eléctrico venezolano Y a medida que se pone más difícil Innova y te hace protecciones más adecuadas a la realidad del momento
+25:14 Raoul Bermudez: Exactamente tal cual Y eso Imagínate todo lo que podemos construir a partir de aquí y Creo yo que le agregaría un gran valor si nosotros Le ponemos el apellido a la innovación y le ponemos algo que se ha registrable y que nadie nos va a cobrar a senador y posicionamos ese nombre como parte de la tecnología y que inclusive si tú pones ese nombre escudo termal NTC o sea, como lo hagamos este una vez que ya tú pongas, eso te permite darle algo de mucho más categoría porque nosotros en Venezuela y tú lo sabes cuando tú ves algo así con una tecnología específica exclusiva y después poner después exclusivo de Excel Line este la gente va a decir y ya eso se convierte inclusive en un argot técnico, eso sería el el deseable Mira la gente, no aquí, mira si no es termoshil, no? Bueno, a fulano igual y no es la misma tecnología ni la misma
+26:07 Kike: claro
+26:09 Raoul Bermudez: calidad es le pusieron.
+26:11 Kike: ese no, el verdadero es el de
+26:15 Raoul Bermudez: y el primero
+26:16 Kike: Claro, el verdadero, o sea, porque quizá haya sido el primero. No es tan tan sólido como él.
+26:23 Raoul Bermudez: exacto y queda muy Y queda mucho más evidente que los demás son copias que nunca van a ser igual.
+26:32 Kike: El líder es el líder.
+26:34 Raoul Bermudez: Y que te copien Es lo normal.
+26:38 Kike: Así es.
+26:39 Raoul Bermudez: Por eso la innovación tiene que ser permanente porque tú eres el líder innovador.
+26:43 Kike: Claro pero ahí donde entras Api si tú tienes registrado el termalt escudo térmico no se puede, no?
+26:53 Raoul Bermudez: Vamos a probar Ese es el tipo de cosas que sería Es que yo decía Bueno aquí Necesito un abogado que me ayude porque de repente me dice, no Bye lo que pasa es que según la información de sapi esto sería como que más fácil de rechazarse Por eso, yo empecé a crear otras opciones y cuando tú lo metes en sapid te da como que Bueno eso sí, eso sí puede pasar la primera instancia Pero bueno Los abogados, son los expertos en eso, pero bueno, nosotros podemos poner cuatro opciones y metemos las cuatro escudo térmico termosil este podemos
+27:18 Kike: bueno
+27:23 Raoul Bermudez: poner termo, seis que parece que tiene más oportunidad y podemos poner ahí, no sé cómo ponerlo en español, pero tenemos seis queda bien en inglés porque en español quedaría horrible.
+27:34 Kike: Sí este yo para efectos de la presentación yo no pondría, no será aprobado por
+27:47 Raoul Bermudez: ok
+27:47 Kike: sino
+27:49 Raoul Bermudez: Pondría como varias alternativas de una vez.
+27:52 Kike: sí Yo pondría probablemente aprobado por sapi. y este juguemosnos la con sapis, o sea
+28:10 Raoul Bermudez: ok el intento el intento que el intento
+28:12 Kike: O o más difícil, o sea, pero no, no le pondría No porque entonces este. Es muy tajante y a lo mejor tiene chance.
+28:26 Raoul Bermudez: Bueno podemos poner alternativas con chance alternativa con más posibilidades algo así en base a la primera Okay clarísimo claro, yo empecé por aquí Pero
+28:34 Kike: Algo así así.
+28:40 Raoul Bermudez: lo bueno viene ahora ya tú vas a ver Mira esto Mira bueno hablando de lo que exactamente lo que tú decías aquí arriba a la izquierda, el nombre de la marca excelente es algo anglicismo Total genius, que también ojo anglicismo no describen sino que identifican el secreto está en cualquier nombre de cualquier tecnología que no sea descriptiva de la tecnología, sino que la identifica con un nombre Porque si la pones descriptiva no te la aceptas.
+29:10 Raoul Bermudez: Sal Entonces el secreto está en si es en inglés, a mí me parece que es mejor, no significa que no se puede hacer en español, pero mira estas, o sea, como somos los más rápidos antes flickers ante parpadeo con la tecnología exclusiva flicker. La que podamos poner bueno para la parte de térmica forense log o otro nombre que se nos ocurra para el histórico de fallas, porque eso es un software histórico de único con histórico de fallas forense log, porque Forest es por forense Entonces yo puedo ir aquí podemos detectar, qué fue lo que pasó como un análisis forense y esa palabra la podemos usar en español y por eso le decimos forense.
+29:54 Raoul Bermudez: Es como Bueno hay que buscarle quizás la explicación es como como estamos diciendo que son Acuérdate que una de las tecnologías que José Miguel había dicho que era muy importante, pero que no sabíamos Cómo decirla. y que se hizo porque la gente de la de Deco no sé si era otras compañías eléctricas, hace tiempo este tenía el problema de que cuando arrancaba los aires acondicionados arrancaban todos al mismo tiempo porque tenía exactamente el mismo tiempo para el arranque Y eso Entonces le tumbaba le tumbaba la red eléctrica, porque de todo arrancaba al mismo tiempo con los protectores de todo tipo y ahí estaba metidos entonces ahí fue donde ocurrió aquello de hacer un arranque una un arranque posterior del aire acondicionado que Espera los tres minutos, pero que no fueran tres minutos exactos, sino que fuera algo aleatorio que varía un poco para que los aires acondicionados no arranquen igual Ese es
+30:44 Kike: No arranquen todos juntos.
+30:45 Raoul Bermudez: el Ese es el famoso que le podemos buscar otra palabra podemos Buscar en español, pero eso también se puede registrar porque es una tecnología Epa No yo hago algo para que los aires de tu casa no arranquen todos al mismo tiempo para que la carga no sea tan grande y no te tumbe en el Breaker y tengas continuidad a tu servicio, pero es tecnología es el nombre que querrá y todo eso es registrable.
+31:09 Raoul Bermudez: Cuando tiene la tm, es que tú puedes empezar a usar el nombre de una vez O sea tú lo pones en tu empaque listo Ahí va y le pongo tm. Qué significa eso, qué es? Y tengo treinta días para para introducir el papelón mientras Ya estoy en el mercado, tengo 30 días.
+31:28 Kike: te iba a preguntar Justo eso este en vista de la inminencia que tenemos nosotros de salir con el NTC este dará tiempo de registrar esto en Sapi, sabes cómo son los tiempos?
+31:43 Raoul Bermudez: La respuesta es entre seis y doce meses Pero la pero pueden ser menos si se paga seguramente ahora escucha el detalle está en que yo puedo colocar esto introduzco los papeles que tengo 30 días después que lo pongo en el empaque, o sea, después que está en el mercado, yo puedo lanzar esto al mercado así como
+32:00 Kike: Ah bueno lo peor que lo peor que puede pasar es que no te lo registren Pero tú
+32:01 Raoul Bermudez: ponerle tn
+32:05 Kike: lo puedes seguir usando No es que está prohibido que lo use.
+32:07 Raoul Bermudez: Claro, y por eso no está prohibido que lo uses Si alguien, lo quiere usar, le van a decir, no, no lo puedes usar Porque aquí, es genteca introdujo la solicitud de registro de eso, Tú no lo puedes usar, o sea, ya te protesta y que otros no lo pueden usar Y si te dan la del visto. Bueno, eso es tuyo y dtm pasas a r? Que ya es registrado Entonces ya vas a ver la estrategia en la otra presentación, pero déjame seguir por aquí entonces bueno este.
+32:36 Kike: Ahora que para efectos de esta presentación.
+32:38 Raoul Bermudez: Porque es mucha Es mucha amplitud de muchas cosas.
+32:42 Kike: Yo no presentaría nada de esto de este chat. Sí porque la decisión Entonces se va a convertir, en vamos a adoptar esto donde ahora en adelante para todo y dejamos hablar de NTC para gsmr.
+33:04 Raoul Bermudez: Sí sería una lástima porque te sale más baratos meter muchos nombres, un solo golpe Pero bueno, eso quizás podamos después que tengamos la aprobación de lo de NTC decimos Pero mira, ahora vamos a pedir esta presentación donde estamos planteando.
+33:17 Kike: por ahí es lo que te iba a decir primero vamos a centrarnos en NTC Y vamos a ver qué tal va la reunión. Si vemos, caras sonriente y aprobatoria decimos mira y además. Aquí hay este esta serie de este ideas para este otros productos y otras otras tecnologías pues.
+33:45 Raoul Bermudez: Perfecto entonces lo que hacemos Es que pongo las láminas de aquí que sean Solo que tengan Solo que ver con lo del NTC las incorporo en la otra presentación que vamos a ver ahora y estas otras láminas que hablan ya de algo más amplio pero que tiene la ventaja de que tienes economías escalas porque cuando tú agarras todas tus tecnologías y metes todos los nombres en un solo trámite Entonces te sale mucho más económico.
+34:07 Kike: Claro Mira y la manera de venderselas a ellos Raúl es las copias o sea
+34:17 Raoul Bermudez: claro
+34:21 Kike: El uno de los grandes problemas o el mayor problema que ha tenido este excelente en los últimos 20 años es la aparición de las copias chinas de las cuales no se han podido defender efectivamente este hubo alguna defensa buena con respecto al diseño de la caja. Pero inmediatamente cambiaron de caja y siguen apareciendo el software lo que va dentro y todo el investigación y todo eso Este no se ha podido defender efectivamente Esta es la manera de defenderlo.
+35:00 Raoul Bermudez: Total, claro, quizás no puedas defender el software, pero ya al tener algo registrado y que explica que es una tecnología el nombre ya no lo puedes usar y ya desde el punto de vista de mercadeo. Ya tú estoy posicionaste con ese nombre que esa es esa tecnología cualquier otra si le quieren poner un nombre va a tener que ser otro y si le quieren poner una explicación que nadie Lee eso en el reverso de los empaques para mí me parece que desde el punto de vista mercadeo, es una gran protección, se pueden copiar. Sí se pueden copiar la tecnología. Sí pueden usar el mismo nombre No ese es el gancho.
+35:37 Raoul Bermudez: Bueno sigo Este fíjate, Qué pasa si no se registra Bueno vamos a seguirla Mira
+35:43 Kike: claro
+35:44 Raoul Bermudez: esta secuencia gente que desarrolla y comunica una Innovación como lo hemos venido haciendo el competidor identifica un nombre para esa innovación y lo registro primero en Sapi, o sea se le copiar No solamente la innovación, sino que le ponen un nombre porque no se han puesto las pilas todavía, pero si lo pone un nombre después ellos son los que se apropian de ese nombre o si tú tienes un nombre y
+36:06 Kike: claro
+36:07 Raoul Bermudez: no lo registras, si tú tienes un nombre lo sacas el empaque no lo registras, te pueden copiar el nombre, o sea usted.
+36:14 Kike: Bueno este tú puedes pelearla y tal a mí me tocó pelear varias veces eso porque tú demuestras el uso previo a la intención de registro y bueno tienes alguna defensa. pero pero o sea pero pero es es un cómo se llama es un dolor de cabeza y es una es un un proceso este que te va a quitar tiempo
+36:48 Raoul Bermudez: Todo lo que quita tiempo, quita dinero Esta es la mejor forma de protegerse Mira por un lado te protege no empezamos.
+36:53 Kike: Bueno Y no y vas a tener que usar abogados y tal este para demostrar que tú usaste ese nombre antes de que ellos lo registraran.
+37:02 Raoul Bermudez: A hablar sí, Y eso Imagínate eso, es como un hombre de una marca. Imagínate con el nombre de una tecnología más difícil todavía, pero tenemos la oportunidad de apropiarnos de esta de esta metodología este otorga, la marca al competidor porque fue el que registró fue el que presentó el nombre del competidor y gente que recibe la notificación de infracción por un nombre que fue invención tuya que no registraste que otro registro es para mira aquí. Yo tengo el registro. Tú tienes que quitar eso de tu empaque eso es más destructivo todavía.
+37:34 Raoul Bermudez: Entonces aquí la moraleja es si vamos a poner un nombre Porque nos gusta, hay que registrarlo porque si no es peor.
+37:42 Kike: Sí, sí, sí sí.
+37:44 Raoul Bermudez: Y el deber seré pongo el nombre e introduzco el empaque y si quiero inclusive
+37:44 Kike: otra cosa
+37:50 Raoul Bermudez: antes de salir meto los posibles nombres, que quiero que me aprueben, pero ahí sí, hay que meter un coñazo de nombre porque es el detalle está en que si lo pongo en el empaque y no más aprueba en ese nombre. Tengo que después que cambiar el nombre, ves el tema, no O sea yo sí puedo poner un nombre, pero tengo que poner algo que la que el abogado nos diga no vale Este nombre, no, pero este sí, porque este sí tiene mucho más posibilidades, vamos con este y vamos con los otros por si acaso que a la hora de la cosa de cualquier cosa lo cambiamos, pero ya podemos salir de una vez, pero hay que registrar.
+38:21 Kike: seguro
+38:22 Raoul Bermudez: Qué pasa Qué pasa, si no te lo registran. Bueno, si el que te va a copiar quiere copiar el nombre tampoco lo va a poder registrar porque ya tiene un precedente que tú lo pusiste primero y no te lo probaron, no se lo van a probar a más nadie.
+38:35 Kike: Así es Y si tú lo usaste y si tú lo usaste primero, él es un copión.
+38:41 Raoul Bermudez: además Además desde el punto de vista legal y desde el punto de vista del mercado, las mejores opciones es colocar los nombres y solicitar el registro
+38:50 Kike: correcto
+38:53 Raoul Bermudez: O o la mejor opción de todas es ir ahorita a registrar un coñazo de nombre de todas las tecnologías y una vez que estén aprobadas las empezamos a sacar al mercado, ya no nos pueden copiar esta sería lo mejor, pero ahorita no tenemos tiempo Ahorita tenemos que darle con esa forma, pero las demás tecnologías Yo sí pudiera de una vez empezar a meter esos registros y en lo que me la pruebes ya yo puedo después salir con todos los empaques con todas esas tecnologías.
+39:18 Kike: Sí este, pero vamos a hacer eso no O sea primero NTC si nos compran la idea decimos Bueno mira aquí hay otra pila de tecnología que son una defensa más de la calidad de nuestros productos, pues del Software nuestro de lo que no se ve.
+39:38 Raoul Bermudez: Sí y están las dos vías como dices tú la defensa del punto de vista legal, pero también el posicionamiento adecuado del punto de vista de mercadeo con un nombre fantasía que te va a ayudar a posicionarte en la mente de las personas.
+39:51 Kike: claro
+39:53 Raoul Bermudez: En las dos cosas, okay, seguimos. Aquí exactamente lo que tú estabas diciendo que ahí las compañías internacionales como registran, entonces fíjate, por ejemplo sirios, es un registro de simen no dice arrancador directo es un arrancador directo, pero no lo dice lo que sí nombre es una línea de arranque o sea, Fíjate que la función no la puedes decir así, pero sí, si estás diciendo que es una línea de arranque tesis de Schneider sistema de control de motor él hablan de un ecosistema.
+40:27 Raoul Bermudez: Esta es la estrategia que tenemos que aprender de ella easyers protección de red familia de redes armor Star que a mí me parece raro que le hayan aprobado esto pero bueno, porque armor starte dice que una protección no de rockwell, motor protegido.
+40:46 Kike: armadura
+40:47 Raoul Bermudez: Concepto de armadura religión ya bebé relé de protección es una plataforma arrancó el controlado arranque flexible entonces fíjate como le dan la vuelta para registrar la tecnología y para así hablar en términos de lo que la de lo que el nombre está expresando porque te voy a decir iton Dice que es un arranque flexible. Bueno es un arrancador controlado que es una tecnología que todo el mundo puede tener, no? Pero el mío es arranque flexible, o sea, hasta el Klein lo ponen como más de mercadeo y más de fantasía para poder registrar. Yo no sé si es que ellos también tienen registrado estas palabras que están aquí de o frases que están aquí, No lo sé No lo sé, pero este lo que sí sé es que estos nombres si los quieren registrados y es el es el uso y costumbre y como decías tú los técnicos venezolanos están acostumbrados a esos términos a esos anglicismos y los reconoce perfectamente bien y la gente te ama No el amor estar o no. El el Sirius el que tiene sirio y ya está.
+41:47 Raoul Bermudez: Entonces, Fíjate en Venezuela según la investigación que pude hacer ningún competidor, ha registrado nombres de algoritmo propietarios en la clase nueve son algoritmos propietarios la pista está libre y gente que podemos ser los primeros en hacerlo y por eso digo yo que si aprueban la estrategia para NTC aquí la cosa sería plantear de una vez Mira vamos a agarrar todas las tecnologías que tenemos que creo que es la lámina siguiente aquí está.
+42:11 Raoul Bermudez: Y vamos a poner nombres a todas esas tecnologías el Forest lock o similar cien o veinte histórico de falla, que mira, lo tiene el genio tres por ejemplo y el gme nuevo que va a salir, va a tener histórico de falla este y cada vez vamos a amar hacia eso el flickergard, que es uno de los que más me gusta este lo de lo menos de 30 milisegundos, que es el flicker detección.
+42:35 Raoul Bermudez: una cosa Eso viene para prácticamente toda la Línea Inclusive la línea hogar Este lo tienes sml, pero un collazo de producto en los sm nuevos mbrb. Todos tienen este flicker girl todos y es lo de menos de 30 milisegundos todos los competidores Pueden decir menos de 3000 segundos cuando lo logren, pero nosotros somos los únicos que vamos a poder decir flicker girl y los primeros. Lo de termo safe o termos o termoxil este función térmica integrada a los sm ahorita sería lo ideal Aunque pudiéramos presentar los dos de eso, yo tengo una lámina que tiene los dos tiene el termo seis y el flickergar porque las dos tecnologías están en la nueva línea.
+43:20 Kike: Sí yo no sé si yo arrancaría con los dos en el en el mismo producto porque este es mucho para el mercado.
+43:31 Raoul Bermudez: Es mucho, pero lo podemos ir registrando, si compra la idea lo podemos ir
+43:32 Kike: pero
+43:35 Raoul Bermudez: registrando y más adelante lo ponemos.
+43:37 Kike: Así es cuando esté bien establecido el termo safe. le metemos el otro ahora con
+43:48 Raoul Bermudez: Sí sí, sí Exacto más adelante, además es una Innovación o sea Sigues dando noticias e Innovación sobre cosas que ya tenías, pero que las vas a cacarear y como el nombre es nuevo. Esto es nuevo es una tecnología registrada patentada, o sea
+44:07 Kike: Bueno, es que estás innovando hasta en crear nombres.
+44:12 Raoul Bermudez: Exactamente exactamente y al mismo tiempo protegiéndote de copia.
+44:17 Kike: Bueno, que ese que el que ese es el el argumento principal, no?
+44:23 Raoul Bermudez: Sí, Bueno a mí me gusta mucho el argumento de mercadeo O sea si tú viste a mí a mí el argumento me quedó, me encanta porque desde el punto está comunicación. Me parece que es muy poderoso ese tipo de nombre para después abrir el abanico y explicar qué cosa es speaker girl es una tecnología propietaria porque una vez que la registra ya es propietaria y exclusiva de genteca, porque eso eso sí lo eso sí lo puedes decir porque ya cuando te dan
+44:46 Kike: Así es.
+44:50 Raoul Bermudez: el registro, no cuando esté m que es la que estás en trámite, sino cuando ya r que registra tú puedes ahí le puedes Añadir la palabra exclusivo?
+44:59 Kike: exclusiva así es
+45:00 Raoul Bermudez: No le puedes poner la palabra exclusiva hasta que no te dé el registro Pero más bien, te da la oportunidad de ir migrando los empaques y la comunicación. Ahora esto es exclusivo entonces mira bueno, y ahí puedes cacarearlo. Somos exclusivos de esta tecnología en Venezuela se pueden copiar, pero van a quedar muy mal cuando se copien.
+45:18 Kike: así
+45:19 Raoul Bermudez: Bueno, el triple lock que es el bloqueo a la tercera falla el famoso bloqueo que a la tercera falla se bloquea y tienes que hacer el rearme manual. Bueno, todos los genios tienen eso el Tas Memory Smart Memory Pero bueno, el grn. El relé nivel tiene memoria del Estado memoriza el estado en que está hacia el tanque estaba Vaciando si el tal que estaba subiendo Bueno es un Memory memoria de estado y y lo podemos también a lo mejor capaz, que es más difícil en español memoria de estado es más difícil que el dolor en el registro pero Memory pasa más fácil y el eso tiene es bueno, pues de una batería porque recuerda se va la luz y Recuerda lo que estaba haciendo y cuando viene la luz de nuevo, si estaba Vaciando sigue Vaciando si estaba llenando, sigue llenando, es un Memory y es una tecnología exclusiva de los neurales de nivel de nosotros Entonces fíjate algo tan sencillo como un relé de nivel, le damos una categoría diciendo la tecnología que tenemos.
+46:15 Raoul Bermudez: Porque la verdad gente acá Innova muchísimo, tenemos ingenieros programadores bergatarios este traen Hardware de China pero el desarrollo de los algoritmos y
+46:25 Kike: Sí, sí.
+46:26 Raoul Bermudez: el software es de nosotros. Eso es lo que tenemos que decir Y tenemos que registrar.
+46:33 Kike: Es una Es una excelente es un excelente manera de protegerte contra las copias.
+46:34 Raoul Bermudez: el mira Y darle valor a tu desarrollo local.
+46:42 Kike: Así es así.
+46:45 Raoul Bermudez: Y de cacarear de nuestros ingenieros.
+46:46 Kike: Y el nombre, o sea, esos nombres en inglés te abren la curiosidad, o sea por un lado te aíslan Pero por otro lado, te dicen y qué será esa vaina Y entonces aumenta el interés en en conocer de qué se trata?
+47:03 Raoul Bermudez: y todos Irán acompañados de su código QR
+47:06 Kike: nada
+47:06 Raoul Bermudez: La vaina y es un asterisco un código QR que por cierto se comento algo que fue buenísimo, le dimos el la guía rápida de los controladores de temperatura, se la dimos a unos técnicos que fueron la semana pasada que queríamos que probaran. Bueno, cómo configuras los controladores de temperatura nuevos, el de doble el Dual que tiene dos dos ondas que es para congelación y el sencillo, que tiene una sonda una sola Sonda que es para cavas de conservación, era unos técnicos en refrigeración, le dimos los controladores este lo pudimos para para que lo conectaran y le dimos la guía rápida para ver si lo que queremos era probar si la Es suficiente para configurar y arrancar el sistema.
+47:50 Raoul Bermudez: Los dejamos solos tranquilos, Porque dijeron ahí cómodos con su vida y su controlador que lo configuraran y tal lo probaron con agua fría, después le ponían el ajuste de temperatura. Lo hicieron perfecto, llegamos y les preguntamos, Mira qué tal, cómo estuvo No perfecto la guerra, pero no funciona perfecto y lo primero que me dijo el tipo es mira, pero este código QR no está funcionando todavía porque lo escaneé y no me llevó a nada.
+48:14 Raoul Bermudez: Fíjate, fíjate que la idea de colocar el código QR en la guía rápida es una buena idea porque ya probamos que el tipo lo escanea, Porque si él está configurado y ve un código QR que dice aquí tienes la información completa, lo escanea y puedes ir a un video, puedes ir a un video más una más una explicación escrita las dos cosas un diagrama de flujo de cómo hacerlo más el video, o sea, eso lo podemos hacer perfectamente ya en la guía, rápida, incorporamos un código QR diferente Al que está en el empaque porque el del empaque quizás sea el más tradicional que va a la página web donde está la hoja de especificación y todo eso, pero la guía rápida, ya incorporamos otro código QR que es Dinámico lo podemos decir que hoy que vaya a la página web, le podemos decir mañana que vaya un video de YouTube y pasado mañana que vaya a una promoción.
+49:05 Raoul Bermudez: O sea, eso lo podemos hacer tanto el de la caja.
+49:08 Kike: O en la página web, puedes tener link a YouTube o bueno?
+49:13 Raoul Bermudez: Sí sí, O sea podemos hacer el o podemos hacer un lugar específico de la página web que sean varios varios enlaces de ese equipo como que video de cómo configurarlo diagrama de de cajitas o diagramas lógicos de cómo configurarlo glosario de término y la gente desde la página web puede hacerle clic a diferentes cosas y no le cambiaríamos el lucantil normal que tenemos en la página web, sino que haríamos como un lugar específico donde tiene todas esas opciones también hay muchas opciones la ventaja del código QR Dinámico Quique
+49:44 Kike: Está chévere.
+49:47 Raoul Bermudez: que eso fue una idea que yo planteé y ya ya la estamos implementando Es que hoy va a un lugar quiere hacer una promoción por ejemplo mira Vamos a ponerle que vaya a la promoción y de la promoción un video. Por ejemplo, si quieres que mira ahorita no es este video ahorita es un video diferente vamos a que la cuando la gente lo escanee, vaya este otro video y se cambia por software Bueno entonces, mira este este me encanta el terma, no, no
+50:08 Kike: tal
+50:13 Raoul Bermudez: me alcanza por el nombre, Porque el nombre puede ser otro pero termal cool este que es lo de arranque caliente arranque frío de la curva del modelo de la curva, que lo tienen los guiños que que detecta si el equipo tiene un tiempo trabajando y está caliente el tiempo de disparos es diferente.
+50:29 Kike: Claro, no, no buenísimo.
+50:30 Raoul Bermudez: Este y también podemos tener la de curva inversa, la famosa curva inversa la podemos registrar también porque por qué? Porque tiene un software por detrás. Entonces y el estándar hay muchas cosas que se pueden hacer entonces bueno, esto era esta lo voy a quitar porque vamos a ver si se puede lo del escudo térmico NTC que era lo primero que habíamos pensado Para registrarlos, eso sí que es muy difícil, pero el abogado el que va a ser en la última palabra.
+50:56 Raoul Bermudez: O termo chile, NTC como está incorporando NTC dentro dentro de lo que dice aquí el obstáculo para registro incorporar el componente en el nombre crea riesgo de descriptividad por referencia técnica directa y por eso sapis más difícil que te lo acepto.
+51:12 Kike: Para el registro.
+51:14 Raoul Bermudez: para registro
+51:15 Kike: Pero tú puedes registrar escudo térmico Y si te lo aprueban tú al lado le pones NTC
+51:24 Raoul Bermudez: tal cual tal cual
+51:25 Kike: si quieres entre paréntesis o haces lo que tú quieras, pero
+51:29 Raoul Bermudez: Sí que era un poco la idea de esta es que yo yo me puse como que bueno, yo voy a registrar con NTC de una vez, pero no te dice que no, pero pero bueno, lo podemos hacer como tú dices, ponemos escudo térmico En caso de que se pueda registrar escudo térmico, si lo quieren en español y en este al lado y ya está él aquí aquí iría al lado del escudo térmico. Aquí iría la tm o la r. O sea, lo que estoy diciendo que que es r o tm, que se ha registrado ejecutivo.
+51:54 Kike: Es escudo térmico y En este cel se lo pones al lado, aunque no esté registrado, o sea.
+51:59 Raoul Bermudez: Claro, le pone con con escudo térmico NTC Y en este escudo térmico es lo que tiene aquí el simbolito de registro y ya.
+52:09 Kike: perfecto
+52:12 Raoul Bermudez: Bueno listo, este bueno De todas formas este termo seis que es lo importante también es tener varios nombres por si nos rechazan uno no no quedarnos con con
+52:21 Kike: Claro, Sí sí, sí.
+52:22 Raoul Bermudez: agarrado de la brocha así en la escalera, o sea Okay. Este okay, Bueno y aquí es bueno, va, esto lo podemos ver directo ya en la otra presentación porque ya estoy hablando de las alternativas seleccionadas Y tal Pero nosotros presentación lo podemos ver. Bueno lo que sí tenemos aquí una sola estrategia el componente NTC en caso de que se empeñen que es secreto Industrial Bueno ya tenemos la alternativa del nombre este lo primero sería bautizarlo Fíjate que dice máximo 30 días desde el primer uso público, o sea una vez que tú sacas Pues suponte que sea sin sensores de NTC sino que diga Solo termo seis y este m no elemento de fantasía registrable por el artículo 34 máximo 30 días desde el primer uso público es decir podemos salir y a los 30 días introducimos los papeles el proceso es rápido dura entre seis y doce meses.
+53:18 Kike: perfecto
+53:19 Raoul Bermudez: Para línea bueno, eso ya lo habíamos visto en la lámina anterior. Esto están como listos para safi, porque ya se se en la página web. Tú te metes y tú puedes poner los nombres y te dan como que mira eso sí podría pasar esto no podría pasar de una vez un primer filtro, no esto ya está listo ya, ya pasaron ese primer filtro. Y bueno, excelente profesional pudiera este tener nombres bautizados con un nivel dos estos son los que los que ya tendría tienes la línea será imperfeccional por cierto, yo no sé si Excel hay profesional como marca está registrada, no lo sé.
+53:51 Kike: Yo no lo sé, tampoco. Yo me imagino que sí pero
+53:55 Raoul Bermudez: Pero yo pienso que puede que no, pero bueno, eso es un tema que hay profesional no está registrado, vamos a registrarlo porque eso es como tu marca para agua de todo esto.
+54:04 Kike: claro
+54:05 Raoul Bermudez: Y la estrategia de decir una marca contenedor existente que debería ser ese ley profesional y un nivel dos con los nombres bautizados de las tecnologías de la marca de sala de profesional que te da, creo que te da una mayor cobertura y protección ante copias. Esto es excelente.
+54:20 Kike: Te da mayor, te da mayor protección Porque fíjate que los nombres de los
+54:23 Raoul Bermudez: Sí yo creo.
+54:25 Kike: productos nuestros son todos genéricos supervisor trifásico de voltaje.
+54:32 Raoul Bermudez: Cualquiera puede ponerlo. Bueno, ojo y ahorita lo de frío Pro digital Y eso son registrables también.
+54:40 Kike: Va en la misma línea claro.
+54:43 Raoul Bermudez: Va en la misma línea Es la misma línea?
+54:45 Kike: Y eso eso yo creo que serían registrables toditos los mandaría a registrar de una vez.
+54:51 Raoul Bermudez: Sí, Exacto Fíjate que aquí nivel tres de escritores técnicos que o sea, tú ponen ahí excelente profesional después viene como un nivel dos el nombre bautizado, por ejemplo thermo seis y un nivel tres el descriptor térmico ahí sí, curó inversa tiempo voltaje menos por triple bloqueo menos de 30.000 segundos el histórico de falla esos son descriptores técnicos que no son registrables pero que tienen que explicar la tecnología que tú estás registrando.
+55:20 Raoul Bermudez: Entonces los descriptores explican Los nombres son la propiedad Entonces nosotros a veces estamos c*** Cómo decimos que es menos de 30 mil segundos o le ponemos cero coma cero tres segundos Eso está muy bien pero si registramos el nombre después explicamos el descriptor y el descriptor te dice todo que lo podemos poner en la frase, lo podemos poner atrás el nombre te llama la atención como dices tú a ver el descriptor e inclusive alguna explicación más completa.
+55:48 Kike: Claro, con flicker.
+55:51 Raoul Bermudez: Esa me gusta Okay Fíjate que hay ejemplos de cómo de cómo se utilizan estas cosas el instalador técnico venezolano dice inverso no dice compresor de velocidad variable dice Breaker bueno los candidatos flickergardson es una equivalencia, a estos anglicismos que el venezolano está muy acostumbrado a eso además con la influencia de la industria petrolera antes más, la que puede venir ahora con más razón.
+56:21 Kike: Claro en España como dirán Breaker interruptor
+56:25 Raoul Bermudez: Seguramente porque es el nombre en español y cuando estemos magnético es itm, que es las siglas item interruptor termo magnético y de hecho la gente habla de itn en español. Pero fíjate que en Venezuela nosotros hubiéramos podido poner interruptores termomagnéticos que técnicamente es lo correcto desde el punto de vista lenguaje también te dice completo es un interruptor termomagnético y no todos son interruptores termomagnéticos el interruptor de la luz, el interruptor de la luz es un interruptor pero no hasta termomagnético.
+56:55 Kike: Sí lo que pasa es que hay tal historia llamándolo Breaker que para que
+56:56 Raoul Bermudez: una
+57:03 Kike: entiendan que es un Breaker Hay que hay que remar mucho.
+57:10 Raoul Bermudez: totalmente Bueno, Y aquí un poco lo la articulado, no, el artículo 34 que son causales de inadmisibilidad y por eso pasas uno el filtro primero signos descriptivos del producto de sus características signos genéricos del producto signos que introduzcan error sobre el origen. lo que no prohíbe palabras extranjeras no de escritoras literales O sea signos de fantasía en cualquier idioma.
+57:36 Kike: Yo creo yo creo que esta es otra presentación aparte.
+57:41 Raoul Bermudez: Y por eso, por eso la tengo Aparte ahorita, vamos a introducir de aquí.
+57:42 Kike: Yo me yo me enfocaría en NTC Y si compran ese. si compran el registro en sapi de del NTC Después le presentamos la mira. Inspirados o hallado esto en en el proceso del NTC queremos que este es un camino que es muy este efectivo para ayudarnos en la protección de las copias.
+58:20 Raoul Bermudez: Totalmente Ya te voy a compartir la otra que sería la que presentamos que lo que voy a hacer es agregar algunas láminas de la que acabamos de ver. En esta o con las que ya están quizás ya sea suficiente ya, ya vas a ver si se cae la yo te vuelvo a convocar, déjame que lo tengo. Aquí compartir. Compartir ventana y voy a compartir esta que esta es la que Okay dime si la ves en azul. Porque voy a poner en grande.
+59:00 Kike: Sí, avance, empaque smr. mb
+59:10 Raoul Bermudez: yo puse la red de una vez que que no estaba en esta primera tanda porque va a salir después y es lo mismo o sea, no hay prácticamente nada diferente en ese equipo tres variantes déjame contarte primero una breve historia Cuando el lunes o el martes yo no me acuerdo Cuándo fue me llama keidis todo apurada Raúl Raúl que el señor Martín que quiere ver El Avance de lo que han trabajado de lo de NTC digital y yo no tenía listo esto yo no había trabajado todo lo demás que estoy trabajando ahora pero le mandé a los a Martín y mantiene Martín copió a Jesús María y a José Miguel
+59:49 Kike: Miguel
+59:51 Raoul Bermudez: Las tres opciones que que yo tenía como mira con NTC sin NTC este y con lo que Jesús María había dicho pero entonces yo no había terminado eso, pero yo sé decantaron de una vez ellos se decantaron por lo que habíamos llamado la opción B la opción B era la era la que tenía los tres en la parte de adelante que era que era compatible inverter que tenía lo del NTC o protector térmico y que tenía lo de más rápido de 30 menos de 30 milisegundos Esa era la opción.
+01:00:20 Raoul Bermudez: La opción B era igual solamente que la parte de inverter pasaba para el retiro y en el frente quedaba lo de menos a 30 milisegundos y la protección por temperatura esas dos es la opción B porque ellos decían que inverter es algo que ya no es tan novedoso porque ya todo el mundo lo está diciendo pero para nosotros es una deuda de que tenemos que decir cuáles son compatibles inverso que la gente no está preguntando Inclusive la etiqueta capaz que se miramos que poner compatible inverso para que la gente sepa porque si no lo vamos a poner el tiro solamente lo vamos a poner el retiro y en ninguna parte dice el equipo que es fácil, vamos a tener que poner la etiqueta no nos queda otra.
+01:01:00 Kike: Y qué importa que sea viejo Si nosotros, Nunca lo dijimos y no sé si los competidores lo dicen.
+01:01:08 Raoul Bermudez: Sí, lo dicen, sí lo dicen y a nosotros nos están Sí fíjate si lo dicen y
+01:01:09 Kike: Sí, lo dicen.
+01:01:12 Raoul Bermudez: además no solo que lo dicen sino que a nosotros nos están preguntando Cuáles son inversas, cuáles son los que puedo usar para inverter Y acuérdate que tuvimos en la que ahorita vamos a hablarlo de la agencia, pero acuérdate que tuvimos para lo que le dimos a la agencia los escritos, le dimos uno, era Cuáles son los equipos si tenemos un equipo inverter, debes compartir, debes protegerlo adecuadamente Y estos son los equipos de ese Line que te ayudan a proteger lo que es verte Entonces nosotros, hicimos un video para explicar la importancia de proteger adecuadamente los equipos inversos para decir cuáles de nuestros protectores protegen equipos inversos en un video en instagram, pero los empaques no lo estamos diciendo eso es una locura.
+01:01:58 Kike: Es una locura.
+01:02:00 Raoul Bermudez: Entonces, José Miguel Dijo no vamos a decir en instagram, Este lo de los inverter y cuáles son los equipos compatibles inverter por los técnicos nos están preguntando La idea, es buena, pero es es mandatorio colocarlo en el empaque si nos están preguntando porque no lo decimos en ningún lado.
+01:02:15 Kike: Así es así es Y si los demás lo dicen, te ganaron O sea si yo tengo un equipo
+01:02:18 Raoul Bermudez: entonces claro
+01:02:21 Kike: inverter y yo tengo un bicho que me parece chimbo, pero dice protege equipos inverter y el tuyo se ve espectacular tiene la fama de la madre Y tal Pero no dice yo no voy a arriesgar mi equipo inverter.
+01:02:37 Raoul Bermudez: Exacto porque no lo dice
+01:02:38 Kike: Porque no lo hice.
+01:02:40 Raoul Bermudez: Claro, y porque pongamos un video.
+01:02:41 Kike: Ni me voy a tomar el tiempo de ponerme a investigar este, si si los protege o no.
+01:02:47 Raoul Bermudez: exacto y porque pongas un video en instagram, chévere pero
+01:02:52 Kike: en el momento de la compra no vas a salir a buscar videos en Instagram
+01:02:56 Raoul Bermudez: Por eso era que yo lo quería poner en el frente, pero tanto Jesús María como José Miguel quieren ponerlo a invertir atrás Bueno okay, Bueno en el en el empaque podemos ponerlo atrás, pero tenemos entonces que ponerlo en la etiqueta, sí o sí. Un tema que eso sí es un tema álgido de álgido. Bueno importante Pues de la reunión de que mira tenemos que decir que es inverte o que no ventaja.
+01:03:18 Kike: entonces
+01:03:21 Raoul Bermudez: La ventaja es como somos de menos de 30.000 segundos que eso sí es algo nuevo Eso sí es una innovación y podemos decir que somos los más rápidos porque el que más se acerca habla entre 30 y 50, pero más hacia cincuenta con las pruebas Nosotros sí podemos decir que es menos de 30 y si podemos decir que somos los más rápidos Pero eso te da pie Y esa es la la razón técnica por la cual podemos decir con mucho más fuerza de que protegemos equipos inversos porque somos los más rápidos en el flicker, entonces un el que somos los más
+01:03:48 Kike: claro
+01:03:55 Raoul Bermudez: rápidos te lleva a decir que somos los mejores Por esa razón, en protegerse Pero eso hay que construirlo. Bueno voy aquí con la presentación Entonces ellos escogieron el que era solamente los dos El de menos de 30 milisegundos y el de la protección por NTC diciendo no diciendo NTC pero era lo que había que ver. Entonces este una vez eso, o sea, la alternativa B que era la que los empaques la decisión eran los dos velocidad más función relativa del NTC más la tecnología inverter desarrollada en el retiro.
+01:04:31 Raoul Bermudez: el cliente de velocidad no cambia el más rápido entre parpadeo es el elemento dominante del tiro en las tres variantes Cómo se nombra la función térmica bueno son tres ejes posibles la función térmica este habíamos hablado que lo que hice fue aquí construir tres posibilidades para que de una vez se decidan porque yo iba a poner solo a la NTC Pero qué sucedió cuando hablé con Jesús María Jesús María no quiere hablar de NTC él quiere hablar del beneficio del beneficio, es decir qué beneficio tiene tener en ese Facebook NTC la gente no sabe lo que NTC bueno Ok protejo térmicamente Sí pero Cuál es el beneficio de que protege térmicamente es decir, cuál es la frase que él tenemos ahí ahora en el es el beneficio del beneficio chévere Entonces yo construir una alternativa que se llama el sí, yo
+01:05:15 Kike: protege mejor
+01:05:18 Raoul Bermudez: construí una alternativa que es el beneficio del beneficio ahorita ahorita la vas a ver y entonces ahí está reflejado lo que dice Jesús María que entonces la variante uno sin NTC O sea ya sabemos que es la opción B Pero dentro de la opción B la variante uno sin NTC que es el nombre funcional puro sin revelar el componente que si se enganchan con eso bueno. Te tengo la barajita de registrar el nombre y no vas a decir.
+01:05:45 Kike: Y en ese caso, qué diría?
+01:05:49 Raoul Bermudez: Ya lo vamos a ver Ya lo vamos a ver este ya te voy a mostrar, tenemos la variante dos que es con NTC donde NTC es visible en el empaque que es la que la que habíamos propuesto y y que José Miguel bingo, como dices tú bingo, que quisiéramos propuestas y la tesis anti copia activada que es un posible registro de los seis. la variante tres que es el beneficio del beneficio, como lo dio ya más Jesús María es el que comunica la consecuencia última que es la protección ante corrientes extremas y la protección de la instalación, si el Breaker falla con tres sub opciones de tono que son como piezas de un rompecabezas Por qué tres sub opciones de tono porque en el frente yo pudiera poner alguno de los tres, si la opción es ir en el frente con el beneficio del beneficio relacionado con NTC O sea no nombro NTC Pero entonces pongo el beneficio del beneficio que sería este puede ser protección ante corriente extremas y respaldo al Breaker Pero hay tres opciones en esa parte y esas tres opciones, para qué las pongo para que cogemos en caso de que lo que pongamos en el tiro sea alguna De esas opciones cojamos una Pero si no, si lo que vamos es por la de la marca que se registra el nombre que se registra o ponerlo en etc o poner las dos cosas lo que se registra más ponerle dtc. Nosotros ese beneficio del beneficio no es que se pierde eso va a estar en el retiro y va a estar en otros elementos como comunicacionales del beneficio del beneficio, cuando hablemos de estos nuevos equipos.
+01:07:22 Raoul Bermudez: O sea, yo no es que estoy perdiendo eso Simplemente estoy escogiendo qué es lo que voy a poner en el tiro.
+01:07:26 Kike: Claro en el espacio más reducido que tengo que es el blister
+01:07:30 Raoul Bermudez: Exactamente Esto es para escoger, no significa que lo demás no lo voy a decir lo voy a decir en el retiro, en el retiro, lo voy a decir lo voy a hacer en
+01:07:35 Kike: claro
+01:07:38 Raoul Bermudez: instagram, lo voy a decir lo voy a decir en YouTube lo voy a decir lo voy a decir en playas, lo voy a decir, o sea, esto es como las piezas de un rompecabezas para ver lo que vamos a poner en el tiro, pero lo demás no se pierde nada.
+01:07:48 Kike: claro
+01:07:50 Raoul Bermudez: Pero bueno hay que escoger, no? Entonces aquí, aquí tienes como que las tres no, el sin NTC dice era lo que habíamos hablado con escudo térmico. Que era lo que creo recordar que a ver lo que habíamos quedado, verdad? El eje de comunicación bueno es una función técnica del protector. Está
+01:08:10 Kike: sí
+01:08:11 Raoul Bermudez: bien, requiere verificación en sapi, no nada que ver No eso es algo que no no es registrable, pues simplemente riesgo de malentendido Bueno este puede leerse como que el protector actúa sobre el equipo conectado es un riesgo de malentendido, que ya lo evaluamos. con escudo térmico nfc
+01:08:30 Kike: Sí pero pero fíjate que con escudo térmico no, no estás diciendo protección térmica.
+01:08:38 Raoul Bermudez: Es correcto, es mucho menos riesgo.
+01:08:39 Kike: Y Es un término nuevo que lo explicas atrás y ahí este ahí no hay ninguna sobremesa.
+01:08:47 Raoul Bermudez: Es correcto de hecho esta última parte ahorita para revisar contigo, yo puedo quitar esto último Para no caer en detalle porque con ellos a veces puede desenganchar con algo y puede ser complicado. Si ya, o sea, este tema Por qué está surgiendo todo esto y bueno, va a salir algo. Bueno, que es la recomendación de la del registro de los nombres Pero está saliendo porque entre ellos tres no había ningún tipo de acuerdo y cómo íbamos a decir ni que decir.
+01:09:15 Raoul Bermudez: Pero eso es consecuencia de experiencias pasadas que cosas que no salieron bien lo del protector que se quemaba Este lo de decir térmico que los técnicos ponían arrugado en la cara porque Martín me dijo cuando yo le decía que tiene protección térmica o si fue arrugaban la cara. Bueno, vamos a medir eso a ver qué es lo que están pensando, o sea, son muchos elementos, lo de decir inverter que no lo estamos diciendo Entonces cuando mezclamos todo y nos enfocamos en que podemos poner muy pocas cosas en el tiro. El empaque ahí se nos empastela.
+01:09:44 Raoul Bermudez: Que es esta decisión, pero lo que también hay que venderle lo que también hay que venderles que tenemos códigos QR que la gente los escanea que van a ver más explicaciones que hay que llamar la atención para que lo escaneen y vean más explicaciones, porque lo primero que nos dijeron casualmente estos mismos técnicos Perdón los vendedores, el lunes tuve que darle una pequeña sala a los vendedores sobre los controladores de temperatura nuevos y una de las cosas que los mismos vendedores dijeron es Mira yo he hablado con los técnicos y me dicen que si no va a haber algo digital para ellos seguir una guía de instalación.
+01:10:15 Raoul Bermudez: ya la gente código QR
+01:10:17 Kike: Está acostumbrada a eso?
+01:10:19 Raoul Bermudez: totalmente
+01:10:19 Kike: Están acostumbrados a YouTube y a tiktok.
+01:10:23 Raoul Bermudez: Sí señor Entonces si tú le pones una guía a través de un código QR de estos que estamos usando ahora dinámicos que es una maravilla los tipos sabemos que lo van a ver sabemos que lo van a usar, no los dijo los técnicos que probaron los controladores de temperatura y nos los dio la gente de venta que los técnicos que ellos habían hablado les preguntaron si no iba a haber algo digital que ellos se pudieran guiar.
+01:10:45 Kike: Sí, sí, no es que el lenguaje hoy en día es audiovisual, hay que darle las cosas masticadas.
+01:10:54 Raoul Bermudez: Es así es así Bueno entonces la segunda alternativa es poner con escudo térmico e incluir lo del NTC que era la que nos gustaba. Y la variante, que Jesús María está insistiendo, está insistiendo con mucha fuerza entonces Oye tenemos que darle chance, a que lo pongamos sobre la mesa porque él está hablando mucho de esto del beneficio del beneficio. Entonces aquí están las tres variantes que yo te decía que son como la las piezas de rompecabezas, que si no van en el en el tiro van en el retiro y si no y y también en otras piezas en otros medios la versión tres a es respaldo térmico del Breaker que eso hay que decirlo como fuera protege la instalación ante corrientes extremas y es la última línea de defensa eléctrica, que es algo político una frase un poquitico más de que puede ser Más comprensible y más emocional la última línea de defensa eléctrica, o sea, cuando todo falla yo te salvo.
+01:11:47 Raoul Bermudez: Por qué? Porque tengo una nueva tecnología que es la última línea de defensa eléctrica? Si el Breaker mira lo que está aquí respaldo ante situaciones y corrientes extremas si el Breaker falla o está mal seleccionado educar, el técnico este le da puerta a los a un crosselling Me faltó la s de crossell, le da la abre la puerta Ah mira Te vendo este producto, pero recuerda que la instalación tiene que llevar un Breaker termomagnético que te lo tengo, será un profesional que para estos cables Y para esta instalación y para estos aire acondicionados, veréis que la adecuadas este este que es algo que José Miguel es algo, que José Miguel meridio, él quiere incorporar.
+01:12:27 Raoul Bermudez: Incorporar este en la parte de atrás de donde va en el blister donde va el equipo en la parte de atrás, él quiere poner quizás no en esta línea no me acuerdo qué línea me dijo él quería poner allí para cable tal y carga de tanto usar el Breaker tal para acá, o sea, como una guía de los Breakers que deben ser usados en la instalaciones porque la visión que él tiene, eh? Estamos en deuda con el técnico que tenemos que enseñarle Cómo hacer buenas instalaciones Entonces si vas a instalar un aire acondicionado, ponga este protector Pero pon este este Breaker como queriendo decir Dame la dame y eso es.
+01:13:01 Kike: Sí sí, sí, Mira dame un segundito, déjame ya cerró una ventana porque está lloviendo y estoy oyendo ya.
+01:13:48 Raoul Bermudez: ok
+01:13:50 Kike: listo
+01:13:52 Raoul Bermudez: Y qué pasa se había mucho ruido de la lluvia?
+01:13:55 Kike: Sí, está oyendo las gotitas cayendo decía c*** Quisiera saber entonces me acordé que tenía una ventana abierta ahí.
+01:14:03 Raoul Bermudez: O sea que está lloviendo más o menos duro
+01:14:05 Kike: Sí, está lloviendo duro ahorita.
+01:14:09 Raoul Bermudez: bueno Barcelona si tenés el tema de la humedad y la lluvia fuerza cerca de la costa
+01:14:17 Kike: Sí, señor.
+01:14:18 Raoul Bermudez: Bueno, entonces esa versión tres, o sea, nosotros pudiéramos escoger poner porque lo que está aquí es lo que vivía en el tiro no la primera línea escudo térmico o podemos con el escudo térmico en el tc o ponemos alguna de estas tres protege la instalación entre corrientes extremas, que sería la que dice más Ultra mi línea de defensa eléctrica es bonita Me gusta es atractiva, pero tampoco explica mucho el respaldo térmico al Breaker es chévere para el técnico, pero es muy básico sin embargo, Las tres, son buenas, o sea ojo, si ellos quieren en vez de poner escudo térmico en vez de poner escudo térmico NTC y Quieren poner alguna de estas tres. Bueno Okay no hay problema, después igual se explica.
+01:15:02 Raoul Bermudez: Pero perdemos todo el tema de de poder registrar nombre eso no valdría la pena. Ojo que el tema este de aquí de termocebo o termo chill, este tengo que ponerlo después de las primeras láminas donde hablemos de lo del registro, porque si no se nos va a confundir, no O sea yo tengo que traer algunas algunas láminas de la presentación anterior que no complique mucho, pero que expliquen lo que la intención.
+01:15:29 Kike: Claro, Sí tú no tienes el blister tal cual como es. Es con las con las distintas variantes, no?
+01:15:39 Raoul Bermudez: Yo le dije a Osvaldo que lo hiciera. yo le di la yo le di la opción yo leí la opción B Que dice con escudo térmico NTC y le dije Haz una variante que diga termostacey. O sea, él, él está fabricando eso para que ver cómo se ve, porque también
+01:15:56 Kike: ok
+01:16:01 Raoul Bermudez: le dije que pusiera Bueno vamos a verlo, ahorita más adelante, ya vas a ver cómo cómo quedaría tengo tengo como quedaría la armado y Osvaldo me lo está Armando para para ver cómo se ve en el empaque porque le dije que pusiéramos el código QR en la pestaña. Que es una alternativa donde donde hablamos de la profesión la más completa. Que ponga un código QR y para nuevo la protección más completa o no, eso es
+01:16:26 Kike: nuevo nuevo
+01:16:31 Raoul Bermudez: lo es nuevo más, Sí o sí, porque es más. Yo pongo nuevo nada más y es suficiente. Tú quieres La verdad, la verdad si yo pongo nuevo grandote y un código QR Ya está listo Pero puede ser si no cabe la protección más
+01:16:44 Kike: Sí, sí, sí sí.
+01:16:47 Raoul Bermudez: completa, ponemos nuevo protección más completa o protector Sí algo así no sé, vamos a ver cómo queda.
+01:16:55 Kike: Sí acuérdate esta gente. Los Socios los dueños de esta compañía no son mercadólogos
+01:17:04 Kike: Entonces este ayuda muchísimo si le enseñamos el blister con Cómo va a salir tal cual solo los ayuda muchísimo.
+01:17:16 Raoul Bermudez: Sí, Yo le pedí a Osvaldo que lo terminara era ayer a las dos y media de la tarde, no sé si lo terminó, No he revisado los correos capaz, que ya lo me lo mandó, No lo sé, pero él él trabajó básicamente la opción B Perdón la la variante. Está con NTC tanto la versión con escudo térmico NTC como la versión que va a decir tecnología de termosaif, exclusivo.
+01:17:41 Kike: Sí tú sabes la otra cosa considerar es que nosotros tenemos dos públicos. Los rb rr este normalmente quien los compra es un técnico quien los instala es un técnico, pero también tienes el re que es un enchufable. Que ese es masivo completamente y este ahí no interviene ningún técnico. Por qué digo esto porque Al público masivo el lenguaje es como dice Jesús María cuando Jesús María dice Cuál es el beneficio del beneficio en realidad está hablando de Cuál es el beneficio del consumidor.
+01:18:30 Kike: O sea no me digas cómo funciona ni la parte ingeniería, sino Qué hace por mí. Ah me alarga la vida de mi aire acondicionado, gracias a una protección térmica o una capa térmica o alarga la vida o protege mejor protección más completa Ese es el lenguaje que el público masivo puede entender y se puede interesar protege equipos inverter. este clarito Los demás este quién se va a meter a ver un código QR este con con escudo térmico un técnico.
+01:19:19 Kike: un técnico
+01:19:20 Raoul Bermudez: Lo que me estás diciendo claramente es que podemos tener una estrategia para los que son de bornera y otra estrategia para el enchufable y con este rompecabezas que tenemos aquí armamos uno para la bornera y otro para enchufarlo listo.
+01:19:33 Kike: Así es o sea, los equipos que van a consumo masivo este ponemos el beneficio del beneficio como lo llama Jesús María que es el beneficio final al consumidor.
+01:19:45 Raoul Bermudez: Correcto protege tu instalación entre corrientes extremas, no hay una que es
+01:19:46 Kike: Y en el en el otro? Sí, es verdad.
+01:19:51 Raoul Bermudez: que evita incendios, pero eso es muy drástica Pero es verdad. Es verdad, o sea, si tú si tú dices tú que él es el el publicista experto, dice Mira es verdad que es drástico, pero la gente ante el miedo y dice evita corrientes extremas que pueden producir incendios o que pueden quemar su instalación, si quieres ponemos eso en el rb y ya con eso, si si tú me das permiso yo pongo protege contracorrientes extremas que queman su instalación, sí o que no sé, hay que buscar la palabra bonita, Porque quincieras, que
+01:20:28 Kike: que pudieran quemarse
+01:20:31 Raoul Bermudez: incineran su instalación y ahí hablamos de fuego, pero es una palabra más elegante que es incinerar.
+01:20:35 Kike: Sí, sí.
+01:20:35 Raoul Bermudez: por ejemplo protege contracorrientes extremas que incineran su instalación
+01:20:41 Kike: que pudieran incinerar tu
+01:20:43 Raoul Bermudez: Sí que pudieran generar su salvación es largo, pero bueno.
+01:20:48 Kike: Sí bueno
+01:20:51 Raoul Bermudez: O ponemos los dos protege contracorrientes extremas propiedades de contra daños catastróficos o protege contra evita evita que se que se incinere su instalación. No me suena emotivamente no me da todavía el clic, pero por ahí van los tiros.
+01:21:11 Kike: Sí sí, pero o sea, pero digo como principio tengamos en cuenta estos dos públicos no y y que si le comunica a cada uno al masivo beneficio final. Y a los técnicos sí les podemos dar más información técnica porque se van a interesar.
+01:21:33 Raoul Bermudez: Sí, no, lo que voy a hacer aquí en esta variante tres, le voy a poner este especialmente importante para el Cuál es el que es.
+01:21:45 Kike: R, es el que es enchufable.
+01:21:47 Raoul Bermudez: no, O sea voy a poner aquí que especialmente importante para la red como que esta variante es la que tenemos que aprovechar por el además que me imagino que esa es un consumo muy masivo del
+01:21:57 Kike: Sí, Bueno ahí no necesitas ningún técnico Eso es para aire acondicionados 220 este no Y hasta 120.
+01:22:04 Raoul Bermudez: Ahí tenemos que ponerte Sí ahí tenemos que poner lo de la protección este y tenemos que ponerlo de inverter lo juro.
+01:22:12 Kike: inverter claro
+01:22:14 Raoul Bermudez: Ahí sí, ahí sí, tenemos que poner inverter en el tiro ajuro.
+01:22:18 Kike: que
+01:22:21 Raoul Bermudez: Bueno, Seguimos entonces Bueno aquí, lo que imagínate esto sería la el tiro entonces diría Esta es la versión sin NTC Ok diría nuevo la protección más completa en el en la lengüeta, el Klein uno lo que pasa es que Estos espacios ya son chiquiticos Pero bueno, hay que aprovechar el más rápido ante parpadeo menos de comas cero tres segundos y con escudo térmico Sin poner nfc, esa es una con el con el asterisco, que si se empeñan en no querer decir NTC bueno eso.
+01:22:55 Raoul Bermudez: La otra es nuevo la protección más completa El más rápidamente parpadeo no ha cambiado nada, pero con escudo térmico NTC ahí ponemos el NTC entonces la otra alternativa. luego Nueva protección completa para darle espacio a un código QR en la lengüeta O sea poner nueva protección completa hay que poner nueva para hacerlo compatible con protección completa en género y poner el espacio y que me permita el
+01:23:24 Kike: QR
+01:23:25 Raoul Bermudez: espacio para el QR el más rápido entre parpadeo se queda igual y aquí ya introducimos tecnología termostacey.
+01:23:33 Kike: ok
+01:23:33 Raoul Bermudez: Que va con la con la tm. La el siguiente paso si logramos tecnología termo save el siguiente paso es una fíjate y ahí podemos entrar al registro el siguiente paso cuando nos den el registro es exclusivo de nosotros le añadimos la palabra exclusiva. Ahí si le podemos Y entonces como dice esto es una evolución una innovación y le damos más rimbombante con comunicación los únicos en Venezuela en tener la tecnología termo save Imagínate lo que puede construirte a partir de allí somos los únicos en tener la tecnología termocey patentada registrada todo todos van a tener, no importa, Yo soy el único en tener tu hermosa, hija.
+01:24:19 Kike: Sí sí, mira y no vamos a presentar nada de inverter.
+01:24:26 Raoul Bermudez: De inverter, no Bueno lo voy a perdón, pero ya de que estás hablando de colocarlo y verte de aquí o otra cosa.
+01:24:34 Kike: De colocar inverter aquí en alguna, o sea insistirle en que c*** está bien.
+01:24:37 Raoul Bermudez: Ah okay, okay.
+01:24:43 Kike: Que que no lo hayamos tenido y que es tecnología vieja Bueno está bien, pero si yo un consumidor voy a un anaquel, y tengo un que protege un equipo inverter y hay uno que me dice que lo protege y hay otro que no me dice nada, me voy ahí por el que lo dice.
+01:25:07 Raoul Bermudez: bueno donde
+01:25:07 Kike: Y lo que nos están diciendo los vendedores, es que están entrando muchos equipos inverter.
+01:25:16 Raoul Bermudez: Sí de hecho el estimado es veintidós por ciento hoy en día del mercado de 12 mil btu y en proyección cuando Yo investigué la proyección, es que más de
+01:25:21 Kike: claro
+01:25:26 Raoul Bermudez: 50% los equipos de doce mil veintiún en los próximos tres años más de 50% van a ser.
+01:25:33 Kike: seguro
+01:25:35 Raoul Bermudez: Bueno entonces aquí Dónde dónde cabe lo de inverter nos quedaría un poquito más largo hay que ver cómo podemos resumirlo aquí donde dice el más rápido entre parpadeo menos de cero coma cero tres segundos ahí es que va a invertir.
+01:25:46 Kike: Yo yo lo pondría abajo, lo podrían poner abajo Incluso si quieres más
+01:25:52 Raoul Bermudez: Abajo más pequeño, okay?
+01:25:53 Kike: chiquito más pequeño Y pone ideal para inverter.
+01:26:00 Raoul Bermudez: ideal para tecnología inversa
+01:26:03 Kike: Ni siquiera tecnología como todo el mundo sabe inverter.
+01:26:06 Raoul Bermudez: Ideal para inversa el mejor para podemos ir el mejor para inverte porque tenemos
+01:26:08 Kike: ideal para
+01:26:13 Raoul Bermudez: menos de 30 milisegundos.
+01:26:15 Kike: Así es puedes poner el mejor para inverter.
+01:26:18 Raoul Bermudez: el mejor para invertir
+01:26:18 Kike: Y pones el mejor para chiquito y puedes poner inverter un poquito más grande. Que es para que es que el público vea O sea si yo estoy buscando un producto
+01:26:26 Raoul Bermudez: listo
+01:26:30 Kike: para un aire que yo acabo de comprar que es inverter, c***, eso es de las
+01:26:33 Raoul Bermudez: Tengo que ver dónde.
+01:26:34 Kike: primeras cosas así.
+01:26:37 Raoul Bermudez: Sí sí, totalmente este. Hay que hay que insistir con los inversos porque es una deuda que tenemos con el consumidor al consumidor quiere saber cuál puede usar un aire inverter nosotros no nosotros lo estamos diciendo es un caso de error.
+01:26:52 Kike: Sí, no, Y fíjate que insistiéndole ellos oyen, Fíjate que José Miguel estaba negado con el NTC y tal yo le dije Lo convencí con el tema de la competencia. Le dije c*** este Miguel a nosotros nos copian toda vaina. Llega cualquiera de estos cristianos o no cristianos y nos copia Y encima lo dice y nosotros de p****** que no lo dijimos. somos los campeones
+01:27:25 Raoul Bermudez: Tal cual igual que con el nombre si ellos registraron nombre y nosotros lo pusimos el empaque y no lo registramos y ellos lo registran, vamos a quedar como bueno horrible.
+01:27:35 Kike: Así es.
+01:27:38 Raoul Bermudez: Bueno entonces Fíjate que la Okay vamos a ponerlo aquí lo de el mejor para dos puntos y más grande inverso
+01:27:45 Kike: Es Sí bueno ellos ellos habían dicho que no no, pero yo les insistiría Yo después de presentarles, esto le dirá, mira lo de inverter, vamos, vamos a retomarlo Porque es importante.
+01:27:58 Raoul Bermudez: Sí, totalmente ellos ellos, Porque dijeron que inverter no, porque ellos lo ven como que decir inverter. Es algo que ya todo el mundo está haciendo y nosotros no somos los primeros ni los innovadores en inverso porque ya pasó la ola c*** pero es una deuda y además la deuda está mejor saldada porque como soy el más rápido soy el
+01:28:13 Kike: claro
+01:28:17 Raoul Bermudez: mejor para inverse, le damos la vuelta.
+01:28:20 Kike: Ahí también hay otra cosa ellos creen que hay un tipo que está pendiente de todo lo que dicen y dejan de decir en el mercado.
+01:28:28 Raoul Bermudez: nada que ver
+01:28:28 Kike: El consumidor no es así. El consumidor no le paga bolas a esta categoría salvo cuando la necesita y cuando la necesita c*** necesita información que lo ayude a tomar la decisión. este que
+01:28:45 Raoul Bermudez: Totalmente por eso la palabra inversa es más como funciona la mente y el ojo el ojo humano y yo estoy buscando algo para equipo inverter yo no voy a leer todo lo que dicen todos lados. Yo voy a sesgar mi mente para que busque la palabra inverter y donde yo voy de inverter y yo no voy a ver lo demás yo la palabra
+01:29:01 Kike: lo primerito
+01:29:05 Raoul Bermudez: inverte la voy a reconocer.
+01:29:09 Kike: así
+01:29:10 Raoul Bermudez: Porque es lo que estoy buscando y el cerebro trabaja diferente de eso no sé si tú has visto esos ejercicios que ponen palabras que le faltan muchísimas letras y uno puede leerlo porque el cerebro construye construye lo completa
+01:29:19 Kike: Es sí, sí, sí, sí lo completa lo completa automáticamente.
+01:29:24 Raoul Bermudez: automáticamente entonces si yo estoy buscando inverter. Y veo algo que dice entonces voy a leer lo demás, porque pero inmediatamente ubico inverso estoy enfocado al cerebro se enfoca en eso Bueno sí hay que lo
+01:29:34 Kike: así
+01:29:39 Raoul Bermudez: que pasa es que tú tienes tanta experiencia con ellos de tantos años, que ya sabes por dónde van los tiros por eso, pero hay que irlo educando en este sentido.
+01:29:46 Kike: sí, sí sí, no, no, pero fíjate ellos no son mercadólogos y Pero son unos tipos inteligentes y entonces hablando y diciéndole el por qué
+01:29:56 Raoul Bermudez: claro
+01:29:59 Kike: Sí el Por qué no y buscando este la manera de que entiendan. Lo aceptan tú no, tú no sabes lo que me costó a mí para que le pusieran al MS Cómo es que en la nevera smn. Para que le pusieran neveras, no sabes lo que me costó.
+01:30:23 Raoul Bermudez: para conocer la palabra
+01:30:26 Kike: Y fue el único al principio fue el único que cambiaron y cuando las ventas
+01:30:26 Raoul Bermudez: Imagínate yo creo que por ahí el más exitoso.
+01:30:35 Kike: explotaron fue que c*** Tenías razón y tal No sé Bueno ahora vamos con televisión. Y ahora vamos con aire acondicionado.
+01:30:47 Raoul Bermudez: Bueno, Y ahorita está ahorita Luis González quiere poner uno para televisores
+01:30:47 Kike: pero
+01:30:51 Raoul Bermudez: hasta 32 pulgadas para en el mundial reventarla con lo de hasta 32 pulgadas, porque es mucho volumen para venderlo barato y poner otro que sea para los televisores más grandes este hasta 32 pulgadas o hasta 40 pulgadas Y entonces sacar una segmentación de para televisores hasta 40 pulgadas más económico para vender como pan caliente. Bueno entonces
+01:31:14 Kike: pero No, no, que eso, o sea, vamos a insistirle con inverter este.
+01:31:23 Raoul Bermudez: Dime Okay no Perfecto perfecto.
+01:31:23 Kike: a ver, a ver si
+01:31:26 Raoul Bermudez: De hecho lo que yo puedo hacer es ir recorriendo esta estas propuestas hasta la que más nos guste hacer la que recomendamos. La que recomendamos va a decir inverter, va a decirlo el moschil va a decirlo de termosil NTC tal cual lo estás poniendo tú es Sin poner otra Bueno sí, sí, podríamos poner tecnológico con tecnología thermosil NTC listo. Y lo exclusiva lo pongo como para que después que registremos la vaina para que se entienda que después que registramos podemos poner exclusivo y nos da otra oportunidad de comunicación.
+01:32:02 Kike: Sí así es
+01:32:04 Raoul Bermudez: Ojo Mira Tengo esta que viene ahorita a ver qué te parece.
+01:32:11 Kike: Buenísima.
+01:32:18 Raoul Bermudez: A mí me gusta más que decir que menos ante parpadeos de menos de 30 milisegundos. Estoy poniendo el más rápido el mejor para tecnología inversa.
+01:32:29 Kike: Claro, no buenísimo.
+01:32:31 Raoul Bermudez: Yo pondría esta opción como la última y decir bueno y aquí le le cambiaría, le pondría lo de termo shield. con NTC pero en realidad termocil exclusiva con NTC ayer al final exclusiva con NTC Esto yo sería como que mira a mí esta me encanta porque el flicker para el técnico Me parece perfecto o el técnico sabe perfectamente lo que es un flicker de hecho hablan más de flicker que de parpadeo Honestamente parpadeo, puede ser algo más para el consumidor final, pero para el técnico flicker es fundamental.
+01:33:11 Kike: claro
+01:33:12 Raoul Bermudez: Y aquí si le pongo milisegundos cuando para no ponerlo de cero coma cero hace como que pega más, porque es más.
+01:33:22 Kike: Y puede poner también otra opción anti flicker?
+01:33:26 Raoul Bermudez: Sí sí, claro, es que ahí sí, pero pero pero bueno, me gusta explicar. Me
+01:33:27 Kike: bueno
+01:33:32 Raoul Bermudez: encanta de lo que pasa que estás describiendo. fíjate, estás escribiendo es más difícil que te lo aceptes por eso los que están aquí son las que tienen más la aceptación por ser, pero podemos poner eso, pero esta estoy más esta tiene mucho más posibilidades porque flicker Girl Eres como el Guardián del flicker, es como un nombre, pues flicker es como es como un hombre propio Entonces no estoy que es un anticiplique ese es el problema de triplique, estoy escribiendo otra cosa.
+01:34:03 Kike: Sí yo arrancaría con solamente el de NTC Para efectos de esta presentación y no metería a ningún otro por ahora. Para que compren la idea y después Mira esto se aplica también a la velocidad de respuesta.
+01:34:28 Raoul Bermudez: Sí claro, claro, o sea, aquí tenemos que poner el paraguas de lo que significa la protección de la propiedad intelectual del desarrollo de software de los algoritmos y las tecnologías colocadas porque es que yo puedo comprar un NTC pero ese es NTC en el aire no hace nada cuando yo coloco un NTC y digo lo voy a colocar en esta pata del relé, que es la que más se calienta voy a hacer un software para que cuando llegue a tal temperatura me abra el circuito Y eso va a tener una respuesta de tiempo inverso, porque mientras más rápido se calienta más rápido actúa. Eso es un algoritmo. Eso es una propiedad intelectual que en Venezuela el tema propiedad intelectual es muy difícil, pero si la registro con un nombre es más fácil de defender.
+01:35:13 Kike: Sí, la otra cosa es que tú estás siendo como marca innovadora también en crear estos nombres de fantasía. En el mercado todo el mundo llama supervisor de voltaje protector de voltaje.
+01:35:24 Raoul Bermudez: total
+01:35:31 Kike: Tú eres el primero que estás poniendo tecnología anti. novando hasta en el lenguaje eso crea imagen de Innovación
+01:35:39 Raoul Bermudez: totalmente
+01:35:45 Kike: eso trae un léxico nuevo que también es Innovación
+01:35:51 Raoul Bermudez: Y total. Totalmente del léxico nuevo es una forma de innovar, estamos innovando nombres
+01:35:59 Kike: Así es.
+01:36:01 Raoul Bermudez: asociando una tecnología que es tan difícil de explicar que no la puedo poner los empaques. Yo no puedo poner toda la descripción de lo que hace una tecnología un empaque Porque primero no lo van a leer segundo, no lo van a entender y tercero no es desde el punto de vista impacto visual ni nada Ahora yo lo pongo. Y después explico y lo pongo en código QR explique es otra cosa.
+01:36:25 Kike: Claro, no, no, chévere.
+01:36:27 Raoul Bermudez: bueno, Me alegra mucho que te guste y me alegra mucho que no veas el problema de los anglicismos más bien, ni siquiera vamos a hablar de ese tema este lo veo más por el lado mercadeo Esto es lo bueno Esto es la misma la misma versión de Cómo se llama de Jesús María la la de la el beneficio.
+01:36:47 Kike: el lenguaje al consumidor final el beneficio al consumidor final
+01:36:52 Raoul Bermudez: Sí que habría aquí habría que poner aquí, podríamos poner también lo de flicker flickergard o pudiéramos poner el más rápido. El el mejor para el mejor para equipos inverso O sea si vamos al consumidor el caso de El siempre me confundo con la sigla erre.
+01:37:11 Kike: R es el enchufable?
+01:37:12 Raoul Bermudez: Okay entonces para el enchufable yo en vez de poner más rápido está en parpadeo aquí yo pondría el mejor para proteger equipos inversos y es verdad
+01:37:21 Kike: Así es.
+01:37:24 Raoul Bermudez: Entonces el claine uno es mejor es el mejor para proteger equipos inverter porque es el enchufable porque es el que el que busca inverso lo va a comprar Ese directo y aquí en vez de Bueno aquí tengo tres opciones diferentes para el claim dos que es donde es el beneficio del beneficio del NTC respaldo térmico y control Breaker protege tu instalación ante corrientes extremas Esta es la que más me cuadra para el consumidor final.
+01:37:49 Raoul Bermudez: De corrientes extremas o protege ante corrientes extremas evitando daños evitando daños a la instalación y al hogar, podríamos poner.
+01:38:01 Kike: Sí pero eso Ya es para la parte de atrás, no? Porque en la parte de adelante No te cabe tanta.
+01:38:10 Raoul Bermudez: Pero pero esto sí está en la parte de adelante, no protege tu instalación ante corriente extrema y en la parte de atrás podemos la explicación y última línea de defensa eléctrica. Tiene algo que me gusta que es corto y que es como última línea de defensa eléctrica como bueno, porque es eso. Yo me levanto entre estas dos entre estas dos me debas para el frente atrás podemos poner toda la explicación.
+01:38:36 Raoul Bermudez: Este Bueno aquí aquí están lo de las yo no voy a entrar mañana en detalle del retiro.
+01:38:42 Kike: No, en el retiro este.
+01:38:45 Raoul Bermudez: Pero porque va a depender de lo que pongamos
+01:38:46 Kike: Ahí ya. Está condicionado por lo que pongas adelante.
+01:38:56 Raoul Bermudez: Pero bueno hay unos muy buenos del retiro, que ya recoge lo más importante del equipo de la innovación y adicionalmente Estos son para nosotros puntos de partida para crear historias puntos de partida para crear mensajes de Carruseles en instagram, puntos de partida para videos o sea, esto es como que bueno porque aquí está más explicado lo que está adelante más más explicado Y a partir de todos y cada uno de ellos yo puedo sacar hasta hasta un Carrusel
+01:39:27 Kike: Está bien.
+01:39:29 Raoul Bermudez: Este no sé si hay algo más. Ah bueno aquí nosotros era como que la posición del equipo, pues ahí que hablamos que tú y yo recomendamos esto aquí yo puedo recoger lo que hemos hablado hoy Y colocar aquí como que las conclusiones Esta es la recomendación.
+01:39:46 Kike: sí perfecto
+01:39:48 Raoul Bermudez: Y poner aquí la la versión que nosotros consideramos que es la mejor.
+01:39:52 Kike: La que recomendamos.
+01:39:54 Raoul Bermudez: La que recomendamos o dos una que no hablemos de y otra que si hablemos de Porque si les gusta la idea en el transcurso de la presentación, si les gustó la idea de registrar, Si vemos que se entusiasman decimos bueno, tenemos otra alternativa, que sería una lámina, aquí aparte donde Si les gusta esa idea de una vez vamos.
+01:40:17 Kike: ya
+01:40:18 Raoul Bermudez: O sea, es algo flexible dentro de la dentro de la presentación. Y aquí las preguntas abiertas que también es vale la pena explorar el enfoque sistemático del bautizado de innovación Es decir de registrarlo ponerle nombre y registrarlo por para qué innovaciones de genteca tendrá más sentido empezar y en caso de esto es una conversación que si se da chévere, si no se da bueno, está lámina, pasará otro momento.
+01:40:43 Raoul Bermudez: Que era lo que tú decías bueno, si se abren de una vez en otro momento hablamos Mira tenemos todo este paquete que podemos pensar en meterlo en registro.
+01:40:51 Kike: Claro, no, que que o sea, Cuáles son los beneficios de eso para la empresa para la y para la marca bueno, número uno es otra capa de protección contra las copias número dos estás innovando en el lenguaje. Tú estás trayendo este términos nuevos este que son sinónimos, tú vas a hacer que sean sinónimos de beneficios específicos de tus productos en un lenguaje que es único tuyo. Y que es facilísimamente entendible por el el Cómo se llama el público técnico y que cualquier otro que vaya a tratar de usarlo, tú lo vas a tener protegido. Por sapi por este por registro.
+01:41:46 Kike: Pero además este aunque no lo tenga cualquiera que trate de usarlo es una copia.
+01:41:56 Raoul Bermudez: tal cual
+01:41:57 Kike: Tú fuiste el innovador?
+01:41:59 Raoul Bermudez: Es así.
+01:42:03 Kike: Bueno, no chévere. Muy bueno.
+01:42:06 Raoul Bermudez: Mira yo siempre, Gracias Es que yo tenía que ver esto contigo porque yo decía bueno, c***, déjame rebotar esto con Kike primero para hacer un equipo de venta y Pero es que yo tampoco sabía si el tema de los anglicismos, por ejemplo era algo que ya se había dicho que no, yo no tengo la historia, entonces había que convencer primero que el anglicismo Sí Por qué este yo no sabía si ellos el tema de la protección por de marca es algo que ellos están dispuestos o no hacer y ya los a lo mejor ya lo habían pensado y era buenísimo y eso pasaba liso o había que ir poco a poco yo todo esto tenía y además Esto es algo que que construimos entre los dos y tenemos que que mantenernos así porque es que yo de verdad que aquí no no tengo ni la experiencia ni ni el conocimiento de cómo son ellos y yo creo que hay muy buenas ideas que sería una lástima no llevarlas a cabo y el secreto es venderlas adecuadamente porque las compres
+01:42:58 Kike: Sí yo y yo no le tendría miedo a los anglicismos para nada. Yo mira Yo trabajé en gran parte.
+01:43:04 Raoul Bermudez: Le hablo, me hablo de eso ni hablo de eso ni hablo de eso ponemos los nombres y listo.
+01:43:08 Kike: Si ellos dicen algo yo intervengo este en toda América Latina yo vi estudios donde este las poblaciones. Ven a los términos en inglés como superiores. eso lo llaman en en las compañías de publicidad internacionales el efecto malinche Conoces el término?
+01:43:38 Raoul Bermudez: No, pero me imagino que tiene que ver que lo que hacemos aquí que se dice en español nunca va a ser tan bueno como lo que se hace en algo que se habla inglés en Estados Unidos por ejemplo.
+01:43:46 Kike: Así es eso ese término lo acuñaron en México malinche era el nombre de la amante Azteca de Hernán Cortés
+01:43:56 Raoul Bermudez: Okay.
+01:43:57 Kike: que fue la que lo ayudó a a j**** a Moctezuma y conquistar fácilmente el el Imperio Azteca Este y viene de eso es decir. Mira Nosotros siempre pensamos que lo que viene del Norte es mejor.
+01:44:16 Raoul Bermudez: total
+01:44:17 Kike: Lo que tiene nombre gringo y yo he estado O sea en Argentina en todos lados y eso que los argentinos son bastante antiamericanos. pero Todo lo que tiene un hombre que suena medio en inglés automáticamente expuesto por encima de todo lo que está en español.
+01:44:40 Raoul Bermudez: Así criticas a los gringos, si vas a comprar algo para ti, te dice algo tecnología algo en inglés o no sé lo que sea dice Bueno yo lo compraré los gringos son una m***** pero hacen cosas buenas.
+01:44:50 Kike: así es así
+01:44:57 Raoul Bermudez: Bueno entonces sabes que voy a hacer, te voy a mandar la primera presentación la de las marcas porque si lo consideras conveniente si crees que vale la pena y querés Consultar con tu amigo Ah bueno no sé porque como es el abogado de gente Bueno no sé tú manejaslo como tú quieras, te voy a mandar las dos presentaciones igual y voy a hacer las versiones a partir de lo que conversamos hoy.
+01:45:19 Kike: Dale dale okay.
+01:45:20 Raoul Bermudez: Te mando esta para que las tenga y cuando tengas las nuevas que seguramente se va hoy en la noche o mañana. Con todo lo que hemos conversado te la envío.
+01:45:31 Kike: ya
+01:45:32 Raoul Bermudez: Que va a ser una sola donde vamos a hacer picking de la primera parte de lo que nos convenga y vamos a ver cómo la ordenamos.
+01:45:39 Kike: ver okay
+01:45:41 Raoul Bermudez: Y que un millón de gracias Un millón, de gracias.
+01:45:42 Kike: Acordado no vale De nada, Mira y cómo te fue con la agencia.
+01:45:47 Raoul Bermudez: Ah sí ya ya, ya, ya ellos ellos tienen un en este momento tienen una especie de están indagando nuevos territorios visuales. Volvieron a hacer un cambio en el equipo Lorenzo estuvo en la reunión.
+01:46:03 Kike: c***, No puede ser, no, pero no te dieron los contenidos. Estamos desde diciembre con esa vaina O sea no, no te dieron ni un contenido.
+01:46:13 Raoul Bermudez: Ok te explico ellos que me presentaron Primero me presentaron la la presentación que ya tuviste de de los indicadores que no me parece gran cosa.
+01:46:23 Kike: Nada, No no me pareció nada buena.
+01:46:29 Raoul Bermudez: De hecho yo les comenté Mira nuestros competidores más fuertes son Breaker Mati protector y bueno los más conocidos que son que están peleando en participación de Mercado Esos son los que me interesa ver de primero en la comparación Cómo está la las redes sociales de Excel Line y cómo están las redes sociales de Breaker Mati de arte de protector lo más importante eso es lo primero que yo quiero ver porque cuando yo como dueño empresa voy a ver algo, Yo quiero ver mis competidores que están haciendo y los Quiero ver los competidores serio Porque por ejemplo hay tickets.
+01:47:11 Raoul Bermudez: Que tenemos una una vainas y grandísimas en las redes. Yo Piqué para nosotros no es en este momento y que yo sepa no es ningún tipo de competencia Entonces tú me vas a presentar tickets Y me vas a hablar de picking, que es el que más está haciendo Y tal Pero para mí que no me dice nada el punto de vista del negocio, el punto de vista del negocio son estos que te estoy diciendo, entonces me vas a cambiar la presentación y me vas a poner primero esas comparaciones con los que están duros en el mercado y eso me va a decir algo muy interesante, me va a decir que están haciendo cómo lo están haciendo, qué están diciendo?
+01:47:41 Kike: Bueno, esa es una de las cosas que yo he hecho de menos Ahí es bueno, háblame a largo plazo, no, no del último mes o sea, protector tiene una estrategia consistente en el tiempo hay palabras que ellos remarcan continuamente Cuáles son este hay temas tienen un eslogan tienen un look tienen, o sea, un análisis de todo eso, o sea, tienen una estrategia, hay ahí. Dicen que no tienen ninguna estrategia clara ninguno.
+01:48:15 Kike: Pero se basan para decir eso en en marzo que fue el que hicieron un poquito más completo. Pero yo quisiera ver en el tiempo, o sea, estamos trabajando desde octubre del año pasado de octubre para acá, Cómo se han comportado esas esas marcas. sino a mí me pareció el el análisis muy superficial y inoperable información que tú me das que no se puede convertir en estrategia no sirve para
+01:48:56 Raoul Bermudez: tal cual De hecho yo les comenté, Mira yo quiero Primero quiero ver a mis competidores duros que están haciendo que no están haciendo qué están publicando Cuántos like, tienen Cuántos comentarios tienen cuánto Cuántos posponen, cuántos Ríos Cuántos carros se debe Cuántos videos, Cuántas historias también toda esa información, pero me la vas a dar detallada de los competidores duros que te estoy diciendo y le dije prepárame eso para la presentación y le dije y no solamente quiero le dije no solo vente Quiero ver una foto quiero ver tendencias Quiero ver la tendencia de cómo vienen todos esos indicadores en gráficos de tendencia. Mira como viene toda mi competencia y como vengo yo y yo quiero verlo eso en línea de tendencia de cómo va la evolución en el tiempo. Eso también se los dije De hecho tengo que pasar por escrito porque seguramente si no se los paso por escrito se van a olvidar lo otro es a ver desde el punto de vista de de diseño.
+01:49:56 Raoul Bermudez: Qué es lo que sí hicieron ellos vieron el el look and feel de de todos estos competidores, dijeron? Mira, estos son casi todos una especie de productos de catálogo online, básicamente lo que hablan del producto hablan de las bondades del producto y la imagen que tú ves, siempre son fotos de los productos, o sea, son como Online o un poco más de explicación el único no me acuerdo cuál fue creo que es Breaker matic. Era el único que tenía algo de personalización donde ponía a hablar a sus empleados con sus logos de camisas y eso a hablar, o sea, y a darle las gracias.
+01:50:32 Kike: Protector tiene te hizo que comunica que están en Venezuela o sea, siempre ponen a los empleados que no son los que yo pondría porque tú los ves y se ve que son obreros. Yo hubiera puesto ingenieros. Pero ese es protector.
+01:50:51 Raoul Bermudez: sí Okay ellos me dijeron algo Yo no me acuerdo si era pretexto de los dos que sí lo humanizan protector y me dijo que que pone eso que pone a los empleados y Bueno en realidad la personalización debe ser a tu a tu Target principal que son los técnicos yo lo que pondría es al técnico y técnico y técnico que
+01:51:14 Kike: claro
+01:51:15 Raoul Bermudez: hablen bien de ti.
+01:51:18 Kike: Pero si tú vas a poner a tus empleados no pongas un obrerito soldando a mano con estaño una Una vaina porque son a mí me comunica. una cosa bien rudimentaria
+01:51:34 Raoul Bermudez: Es verdad.
+01:51:34 Kike: Ponme a un ingeniero al lado de una máquina sofisticada y entonces te creo que tienes tecnología. pero bueno Este o sea, pero protector por lo menos Tiene una línea que está comunicando Yo estoy en Venezuela yo soy venezolano, es lo que me queda a mí de de lo que veo un protector a través del tiempo. Las demás marcas Me parece que todos están más perdidos que el hijo del hombre afortunadamente.
+01:52:05 Raoul Bermudez: Sí sí, correcto y ojo y los que menos publican Honestamente los que menos publican los que menos interacción tienen en redes y los que los números son más bajitos son estas marcas de Breaker Matrix protector esteq ellos no fuerte de ellos, no para nada tiene que ver con las redes ojo no significa que nosotros sí debamos hacerlo y vamos a hacerlo bien, Yo estoy de acuerdo con eso y hacerlo muy bien.
+01:52:29 Kike: Es la oportunidad porque en algún momento van a descubrir. Que que es un canal de comunicación importante. Y ojalá se den cuenta porque nos vean a nosotros ya encaminados bien.
+01:52:45 Raoul Bermudez: Exacto seguir siendo líderes en eso también y si nos copian bueno Es lo normal, pero son los primeros nosotros y hacerlo bien. Ahora fíjate algo que para continuar con el que venía de lo de la parte gráfica Ellos sí hicieron algo y sí me mostraron imágenes no videos me mostraron imágenes de algo que ya tienen trabajado con un una una un nuevo campeón O sea la interacción de las imágenes es muy diferente a todo el paisaje de todos los competidores y de nosotros mismos ahí hay unos unos énfasis en imágenes colores formas que me llaman la atención, o sea cuando lo ves No en detalle, sino cuando lo ves así tú dices esto se ve algo diferente.
+01:53:30 Raoul Bermudez: Tiene cosas interesantes en paleta de colores no es que estén cambiando la marca, sino otros paletas de colores formas, digamos lo que la parte de de formas y colores es diferente Eso me llamó la atención. Me pareció a mí me gustó Pero bueno, eso es algo ideal, Mira esto ustedes tienen.
+01:53:45 Kike: Pero pero cuando lo van a aplicar los contenidos que les dimos.
+01:53:50 Raoul Bermudez: A ver, Ajá esa parte, te explico ellos. Me dijeron Mira Raúl ya esto que estamos presentando aquí, ya hemos hecho contenido de lo que está pendiente algunas cosas que eran videos este las pusimos mezcladas Carrusel que vas pasando y de repente uno de lo que pasaste es un video más corto y sigue, o sea, están mezclando Carruseles con video otros están dejando videos comple. me dijeron que ella Este tienen eso, pero que quieren mostrarlo después de hacer unos ajustes que estaban como que en base a la experiencia anterior de los detalles que no estaban bien y que había que corregir y corregir y corregir ellos ahora ellos mismos están como en este caso Manuel está como mirando que hay unas cosas ahí de detalles que hay que corregirlo no queremos que pase lo de antes de que ustedes vean algo que no esté lo más digamos la parte de control de calidad de nosotros Entonces yo les dije Bueno mira yo necesito que este este yo le llamo territorio visual estos nuevos territorios visuales que ustedes están mostrando a mí me puede gustar, pero esto lo tiene que ver la empresa eso lo tiene que ver Quique esto lo tiene que ver la gerente de marca de comunicaciones para gastar todos en la misma página entonces quedamos en que ellos iban a preparar una presentación con lo de la inteligencia competitiva más los nuevos territorios visuales más la pieza que puedan tener lista para el martes, entonces me preguntaron si tú podías el martes y Si podías a las 11 y media hora de Venezuela para hacernos esa presentación.
+01:55:19 Kike: perfecto Pero esa me la Esa me la habían prometido para el lunes pasado.
+01:55:22 Raoul Bermudez: Okay sí porque
+01:55:29 Kike: Este es lo que c***. Me sorprende el caradurismo Este pero bueno. Vamos a ver si el lunes el martes a las 11:30. Yo lo consideraría el último chance, o sea.
+01:55:53 Raoul Bermudez: Bueno yo les dije mira hagan estos ajustes en la presentación me tienes que decir primero Cómo está la competencia como estamos nosotros mostrarme los territorios visuales decir que todo es un catálogo pero Muéstrame porque todo es un catálogo de productos porque la personalización es mínima y después Muéstrame porque estás cambiando a este territorio visual nuevo que también me puede gustar eso es algo tiene que ser aprobado no por mí y después Muéstrame lo que vas a ejecutar con ese territorio visual Entonces ellos me dijeron que ahí vamos a organizar algo un poco diferente a lo que a lo que me presentaron a mí en la agencia acomodando para que se vea como que más hilación en lo que me están diciendo y Bueno le hacemos la presentación a ti a, o sea van a estar ellos por parte de la agencia va a estar un muchacho, que al que está construyendo los reportes.
+01:56:45 Raoul Bermudez: Va a estar Manuel y va a estar otro otra muchacha que creo que es la que sustituye a la que se fue esa niña.
+01:56:52 Kike: Luis Abel
+01:56:53 Raoul Bermudez: no me acuerdo nunca esa misma y no sé si Lorenzo va a estar, Ojalá este también entonces bueno, yo le dije para que estuvieras tú y estuviera Kevin pero me interesa que esté también porque el nivel de
+01:57:05 Kike: Sí sí, claro.
+01:57:07 Raoul Bermudez: Claro claro, entonces Bueno ya ya le dije a Manuel para todos ahorita le voy a confirmar porque ayer me escribí con él y le dije Mira pues me dijo que a las 11:30 del martes, Déjame chequear con Quique y te respondo Entonces ahorita. Le voy a responder, creo que hay que a las 11:30 el martes.
+01:57:24 Kike: Debe que sin falta y no joda, que cumpla todo lo que prometieron, dile Le puedes decir aquí que le prometieron esto esto que tú me estás prometiendo ahorita Lorenzo se lo prometió para el lunes pasado.
+01:57:40 Raoul Bermudez: Porque te lo te lo prometió a ti de No aquí, que te vamos a hacer una presentación y no lo tenía listo.
+01:57:43 Kike: Sí, vamos a trabajar el fin de semana Italia y no sé que vayan y tal este. bueno
+01:57:52 Raoul Bermudez: Ojo, básicamente yo les servía a ellos como un curador de contenido de lo que van a presentar dije no, pero Mírame si vas a cambiar el territorio visual, Muéstrame Por qué. Muéstrame que está haciendo los otros Y cómo son los números de esos otros actores de que no le está dando resultado Y por qué y a nosotros Bueno a nosotros tampoco que nos está dando tanto resultado para hacer la propuesta estratégica que me vas a hacer.
+01:58:19 Kike: Sí fíjate bueno Yo veo los números nuestros y son irrisorios lo que hemos crecido Pero también es queremos publicado y no hemos publicado porque ellos
+01:58:29 Raoul Bermudez: claro
+01:58:31 Kike: tenemos ocho meses y no hemos sacado nada con ellos.
+01:58:36 Raoul Bermudez: Nada, nada. Bueno, ojo, déjame decirte que en la última presentación de mi One page a la junta este yo les dije Mira vamos a darles hasta finales de mayo. Entonces Jesús María no, ya para qué vamos a ver No no, ya vamos a cortarlo ya yo y yo le dije, pero mira, nosotros no les estamos pagando. Ellos tienen algo que tienen que entregarnos de un trabajo que se les dio para que no se hicieran y que bueno le pagaremos siempre y cuando lo que entreguen sea de la calidad como nosotros en la otra satisfacción Y qué le vamos a pagar
+01:59:07 Kike: de nuestra satisfacción
+01:59:11 Raoul Bermudez: Bueno yo se comprometieron a diez piezas al mes ocho piezas que no me acuerdo ahorita sí al mes no era así como diez piezas al mes diez publicaciones Bueno cuando nos den las vías publicaciones al mes que sean de nuestra entera satisfacción le pagaremos un mes.
+01:59:27 Kike: claro
+01:59:28 Raoul Bermudez: Ya ya así de sencillo Entonces yo le dije a la allí a Jesús María y bueno José Miguel no creen agencia no creen en instagram, no creo en nada Pero no importa pero bueno.
+01:59:38 Kike: Y Martín tampoco.
+01:59:41 Raoul Bermudez: Martín tampoco, pero fíjate eso es que te estoy contando esto porque es precisamente lo que te quiero decir de lo que me dijo Martín en este momento cuando yo le digo Mira no tenemos nada que perder porque ya yo había convencido Martín de que no teníamos Nada que perder de que no le no le íbamos a pagar hasta que no nos entregaron lo que nos deben y si es bueno, es bueno chévere Yo le dije yo dudo que yo Dudo que nos vaya a satisfacer, pero vamos a darle el beneficio de la duda. Vamos a darle hasta finales de mayo.
+02:00:08 Raoul Bermudez: Este que es bastante tiempo Este y lo mismo le dije a Jesús María en ese momento es que no tenemos, no, pero ya hay que cortarlo para que vamos a meter más dinero sobre dinero que ya se perdió, no, no se está perdiendo y le estamos pagando, vamos a la final, pero al final de Mayo es mucho. c***, vamos a nosotros a ver hacer todo lo posible y ojalá, ojalá den un resultado que para nosotros sea satisfactorio en ese momento le pagaremos sino nosotros nos vamos preparando, vamos, buscando alternativas este conversamos con Quique a ver qué podemos hacer, pero pero no tenemos nada que perder entonces ahí fue que los convencidos y darle hasta el final de mayo, porque pero Martín aquí es donde vengo Martín en ese momento dijo algo muy importante, dijo mire señor, vamos a hacer honestos en esta mesa que estamos aquí todos. Nosotros no hay nadie que sepa de lo que hay que publicar lo que no hay que publicar de mercadeo de marca aquí lo único que sabe esa vaina es Kike que es el experto el más arrecho de todo en esta mesa no hay nadie y si nosotros nos pone hacer con nuestro equipo hacer producción hacer video hacer vainas.
+02:01:16 Raoul Bermudez: Bueno yo no te digo que algunas cosas no se puedan hacer, pero si nosotros mismos para tomar la decisión si algo Nos gusta o no nos gusta Si va o no va, no nos ponemos de acuerdo, ni sabemos de eso, c*** una agencia sí nos puede ayudar. Además Tenemos aquí que como quieren decir a la hora del pedo y que nos ayuda pero pero por otro lado hacer hacer contenido y hacer publi.
+02:01:38 Raoul Bermudez: Y hacer video y hacer vaina internamente y llevar indicadores internamente con el equipo, c***, el equipo está haciendo muchas cosas Entonces tampoco tenemos a la gente hacerlo como que le hizo clic la vaina de lo que habíamos hablado antes y tal Y en esos momentos, Fíjate que más bien ayudó a venderle a los otros, vamos a esperarnos, vamos a dar la oportunidad Y tenemos aquí que que nos ayude.
+02:02:01 Kike: Bueno, chévere, pues hagamos eso.
+02:02:07 Raoul Bermudez: Sí, listo, entonces bueno Te paso las presentaciones como las tengo ahorita las trabajo con lo que hablamos para tener la siguiente versión tener una sola y cuando las tenga listas te las paso seguramente será mañana y bueno, ya sabes que el martes a las 11:30 le voy a decir a su muchacho y seguimos bueno, Quique Muchas gracias, veo que la reunión no se me cayó de sal porque estoy pagando algo ahí en Google Y entonces me agarró y me da más tiempo.
+02:02:33 Kike: Está bien.
+02:02:35 Raoul Bermudez: Chao, cuídate.
+02:02:36 Kike: Buenísimo, chao.
+02:02:38 Raoul Bermudez: Un abrazo Disfruta tu estadía y tus nietos.
+02:02:42 Kike: Garache Otro abrazo para ti, chao.
+02:02:46 Raoul Bermudez: Chao, saluda a tu esposa por cierto, muy agradable y muy simpática que hablé con ella el otro día.
+02:02:50 Kike: Ah sí seguro ahorita está ya, yo voy para allá ahora.
+02:02:52 Raoul Bermudez: dice que ya conozco Okay Dice que ya me conoce ya me conoce la voz y cuando yo ya sé que
+02:03:00 Kike: sí
+02:03:01 Raoul Bermudez: Hasta luego.
+02:03:02 Kike: ya
+  
