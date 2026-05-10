@@ -1,0 +1,974 @@
+﻿[
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "grf-base-hde-v3-c",
+        "ext":  ".pdf",
+        "size_kb":  1440.4,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\37. GRF-S (base fotocontrol)\\HDE-Hoja de especificaciones\\VE\\Anterior\\GRF-BASE_HDE_V3_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "grf-base-hde-v3-n",
+        "ext":  ".pdf",
+        "size_kb":  961.2,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\37. GRF-S (base fotocontrol)\\HDE-Hoja de especificaciones\\VE\\Anterior\\GRF-BASE_HDE_V3_N.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline",
+        "slug":  "man-gef-100-gd-man-ch-v3",
+        "ext":  ".pdf",
+        "size_kb":  6001.7,
+        "copies":  4,
+        "path":  "D:\\01. Exceline\\32. GEF\\MAN-Manual de InstalaciÃ³n\\Manual GEF v3 150216\\MAN GEF-100 GD-MAN-CH-V3.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "he-gfe-mv-gd-he04-ve-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  2075.0,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\24. GFE-MV3M\\HDE-Hoja de Especificaciones\\VE\\HE GFE-MV GD-HE04-VE-V1_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "he-gfe-mv-gd-he04-ve-v1-n",
+        "ext":  ".pdf",
+        "size_kb":  1938.1,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\24. GFE-MV3M\\HDE-Hoja de Especificaciones\\VE\\HE GFE-MV GD-HE04-VE-V1_N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-289-01-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  813.8,
+        "copies":  4,
+        "path":  "D:\\01. Exceline\\21. GBS-LA-750\\HDE Hoja de especificaciones\\GD-HE-289-01-V2_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-289-01-v2-n",
+        "ext":  ".pdf",
+        "size_kb":  60235.4,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\21. GBS-LA-750\\HDE Hoja de especificaciones\\GD-HE-289-01-V2_N.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline",
+        "slug":  "gbs-la750-man-v5-c",
+        "ext":  ".pdf",
+        "size_kb":  10202.2,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\21. GBS-LA-750\\MAN-Manual de instalaciÃ³n\\GBS-LA750_MAN_V5_C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline",
+        "slug":  "gd-man-289-ch-v2",
+        "ext":  ".pdf",
+        "size_kb":  1816.3,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\21. GBS-LA-750\\MAN-Manual de instalaciÃ³n\\Anterior\\GD-MAN-289-CH-V2.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline",
+        "slug":  "gd-man-289-ch-v3-montaje",
+        "ext":  ".pdf",
+        "size_kb":  1882.0,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\21. GBS-LA-750\\MAN-Manual de instalaciÃ³n\\Anterior\\GD-MAN-289-CH-V3 montaje.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he189-01-v1",
+        "ext":  ".pdf",
+        "size_kb":  835.2,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\17. GSM-MT\\GSM-MT120 SE\\HDE-Hoja de especificaciones\\Anterior\\GD-HE189-01-V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-c-t-s-01-v1",
+        "ext":  ".pdf",
+        "size_kb":  866.9,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\17. GSM-MT\\GSM-MT120\\HDE-Hoja de especificaciones\\ANTERIOR\\GD-HE-C,T,S-01-V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-regleta-01-v1",
+        "ext":  ".pdf",
+        "size_kb":  506.6,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\16. GMT-6-Regletas\\HDE-Hoja especificaciones\\Versiones anteriores\\GD-HE-REGLETA-01-V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-regleta-01-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  1857.2,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\16. GMT-6-Regletas\\HDE-Hoja especificaciones\\Versiones anteriores\\GD-HE-REGLETA-01-V2_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-regleta-01-v2-n",
+        "ext":  ".pdf",
+        "size_kb":  1610.4,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\16. GMT-6-Regletas\\HDE-Hoja especificaciones\\Versiones anteriores\\GD-HE-REGLETA-01-V2_N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "hoja-de-especificiones-gsm-re-120-220-1",
+        "ext":  ".pdf",
+        "size_kb":  3901.7,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\Otras-versiones\\MX\\GSM-RE GD-HE120ï€¢220-MX-V2\\HE PDF\\HOJA DE ESPECIFICIONES GSM-RE 120-220 (1).pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "he-gsm-re-gd-he120-220-ve-v1",
+        "ext":  ".pdf",
+        "size_kb":  2553.7,
+        "copies":  4,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\Otras-versiones\\Anterior\\Final\\HE GSM-RE GD-HE120ï€¢220-VE-V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "hoja-de-especificaciones-gsm-re",
+        "ext":  ".pdf",
+        "size_kb":  1670.7,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\Otras-versiones\\Anterior\\Hasta el 2008\\Hoja de especificaciones GSM-RE.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-re220cs-2-hde-v4-c",
+        "ext":  ".pdf",
+        "size_kb":  7060.0,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\GSM-RECS\\Versiones anteriores\\GSM-RE220CS-2_HDE_V4_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-re220cs-2-hde-v4-n",
+        "ext":  ".pdf",
+        "size_kb":  3257.2,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\GSM-RECS\\Versiones anteriores\\GSM-RE220CS-2_HDE_V4_N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-recs-hde-v3-c",
+        "ext":  ".pdf",
+        "size_kb":  452.5,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\GSM-RECS\\Versiones anteriores\\GSM-RECS_HDE_V3_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-recs-hde-v3-n",
+        "ext":  ".pdf",
+        "size_kb":  1528.6,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\15. GSM-RE.3\\HDE-Hoja de especificaciones\\GSM-RECS\\Versiones anteriores\\GSM-RECS_HDE_V3_N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-267-01-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  5211.5,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\14. GSM-RF.3\\HDE-Hoja de especificaciones\\Otras-Versiones\\GD-HE-267-01-V2-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-261-01-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  34338.7,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\13. GSM-RB.3\\HDE - Hoja de especificaciones\\Otras-versiones\\GD-HE-261-01-V2-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-269-01-v2",
+        "ext":  ".pdf",
+        "size_kb":  12870.8,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\12. GSM-MB.3\\HDE-Hoja de especificaciones\\Otras-versiones\\GD-HE-269-01-V2.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-140-01-v1",
+        "ext":  ".pdf",
+        "size_kb":  782.0,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\11. GSM-EP\\HDE-Hoja de especificaciones\\EspaÃ±ol\\Otras-versiones\\GD-HE-140-01-V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-ep-hde-v3",
+        "ext":  ".pdf",
+        "size_kb":  69510.7,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\11. GSM-EP\\HDE-Hoja de especificaciones\\EspaÃ±ol\\Otras-versiones\\GSM-EP_HDE_V3.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-ep-hde-v3-n",
+        "ext":  ".pdf",
+        "size_kb":  31537.3,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\11. GSM-EP\\HDE-Hoja de especificaciones\\EspaÃ±ol\\Otras-versiones\\GSM-EP_HDE_V3_N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-ep-hde-v3-n-comentarios",
+        "ext":  ".pdf",
+        "size_kb":  31521.7,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\11. GSM-EP\\HDE-Hoja de especificaciones\\EspaÃ±ol\\Otras-versiones\\GSM-EP_HDE_V3_N_comentarios.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-ep-hde-v4-c",
+        "ext":  ".pdf",
+        "size_kb":  20313.0,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\11. GSM-EP\\HDE-Hoja de especificaciones\\EspaÃ±ol\\Otras-versiones\\GSM-EP_HDE_V4_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-ep-hde-v4-n-c",
+        "ext":  ".pdf",
+        "size_kb":  18888.4,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\11. GSM-EP\\HDE-Hoja de especificaciones\\EspaÃ±ol\\Otras-versiones\\GSM-EP_HDE_V4_N_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-307-01-v2",
+        "ext":  ".pdf",
+        "size_kb":  1236.3,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\10. GSM-AS BS\\HDE-Hoja de especificaciones\\Otras-versiones\\GD-HE-307-01-V2.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-213-01-v2",
+        "ext":  ".pdf",
+        "size_kb":  726.7,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\09. GSM-LPM\\HDE-Hoja de Especificaciones\\Otras-versiones\\GD-HE-213-01-V2.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-mw-hde-v6-c",
+        "ext":  ".pdf",
+        "size_kb":  659.7,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\08. GSM-MW\\HDE-Hoja de especificaciones\\GSM-MW_HDE_V6_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-205-01-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  683.6,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\08. GSM-MW\\HDE-Hoja de especificaciones\\Otras-versiones\\GD-HE-205-01-V2-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-pc-hde-v5-c",
+        "ext":  ".pdf",
+        "size_kb":  695.6,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\07. GSM-PC\\HDE-Hoja de especificaciones\\GSM-PC_HDE_V5_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-186-01-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  3155.6,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\07. GSM-PC\\HDE-Hoja de especificaciones\\Otras-Versiones\\GD-HE-186-01-V2-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-np-hde-v7-c",
+        "ext":  ".pdf",
+        "size_kb":  664.4,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\06. GSM-NP\\HDE -Hoja de especificaciones\\GSM-NP_HDE_V7_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-n-hde-v7-c",
+        "ext":  ".pdf",
+        "size_kb":  608.1,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\05. GSM-N\\HDE-Hoja de especificaciones\\GSM-N_HDE_V7_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-122-01-v4",
+        "ext":  ".pdf",
+        "size_kb":  675.0,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\05. GSM-N\\HDE-Hoja de especificaciones\\Otras-versiones\\GD-HE-122-01-V4.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "hoja-de-especificaciones-gsm-n",
+        "ext":  ".pdf",
+        "size_kb":  1312.8,
+        "copies":  4,
+        "path":  "D:\\01. Exceline\\05. GSM-N\\HDE-Hoja de especificaciones\\Otras-versiones\\GSM-N GD-HE122-VE-V1\\HE PDF\\Hoja de especificaciones GSM-N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-mp-hde-v6-c",
+        "ext":  ".pdf",
+        "size_kb":  675.6,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\04. GSM-MP\\HDE-Hoja de especificaciones\\GSM-MP_HDE_V6_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-lv-hde-v5-c",
+        "ext":  ".pdf",
+        "size_kb":  544.0,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\03. GSM-LV\\HDE-Hoja de especificaciones\\GSM-LV_HDE_V5_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-179-01-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  676.8,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\03. GSM-LV\\HDE-Hoja de especificaciones\\Otras-versiones\\GD-HE-179-01-V1-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gsm-e-hde-v5-c",
+        "ext":  ".pdf",
+        "size_kb":  598.7,
+        "copies":  2,
+        "path":  "D:\\01. Exceline\\02. GSM-E\\HDE-Hoja de especificaciones\\GSM-E_HDE_V5_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-170-01-v2",
+        "ext":  ".pdf",
+        "size_kb":  688.2,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\02. GSM-E\\HDE-Hoja de especificaciones\\Otras-versiones\\GD-HE-170-01-V2.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline",
+        "slug":  "gd-he-206-01-v1",
+        "ext":  ".pdf",
+        "size_kb":  9803.5,
+        "copies":  1,
+        "path":  "D:\\01. Exceline\\01. GSM-TV\\HDE-Hoja de especificaciones\\Otras-Versiones\\GD-HE-206-01-V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "20231006-gcm-f250-hde-rev-am",
+        "ext":  ".pdf",
+        "size_kb":  2277.8,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\16. GCM-F\\GCM-F250\\HDE-Hoja de especificaciones\\Revisiones\\20231006_GCM-F250_HDE_Rev AM.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "20231017-gcm-f250-hde-rv1",
+        "ext":  ".pdf",
+        "size_kb":  2209.0,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\16. GCM-F\\GCM-F250\\HDE-Hoja de especificaciones\\Revisiones\\20231017_GCM-F250_HDE_Rv1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "20231004-gcm-a250-hde-rev-am",
+        "ext":  ".pdf",
+        "size_kb":  2417.2,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\15. GCM-A\\GCM-A250\\HDE-Hoja de especificaciones\\Revisiones\\20231004_GCM-A250_HDE_Rev AM.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "20231017-gcm-a250-hde-rv-1",
+        "ext":  ".pdf",
+        "size_kb":  2209.2,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\15. GCM-A\\GCM-A250\\HDE-Hoja de especificaciones\\Revisiones\\20231017_GCM-A250_HDE_Rv_1.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline-profesional",
+        "slug":  "gsm-c-man-r-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  1152.4,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\29. GSM-C\\MAN - Manual\\Versiones anteriores\\GSM-C_MAN_R_V1_C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline-profesional",
+        "slug":  "gsm-c-man-t-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  1277.7,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\29. GSM-C\\MAN - Manual\\Versiones anteriores\\GSM-C_MAN_T_V1_C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "exceline-profesional",
+        "slug":  "gsm-c-man-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  525.4,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\29. GSM-C\\MAN - Manual\\Versiones anteriores\\GSM-C_MAN_V1_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gsm-c-hde-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  17765.8,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\29. GSM-C\\HDE - Hoja de Especificaciones\\Versiones Anteriores\\GSM-C_HDE_V1_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gvf-hi-100-200-hde-v2",
+        "ext":  ".pdf",
+        "size_kb":  1265.5,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\27. GVF-HI (nuevo)\\HDE-Hoja de especificaciones\\GVF-HI-100-200_HDE_V2.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gql-hde-v3-c",
+        "ext":  ".pdf",
+        "size_kb":  557.2,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\23. GQL\\HDE-Hoja de especificaciones\\otras_vesiones\\GQL_HDE_V3_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gql-hde-v3-c-comentarios",
+        "ext":  ".pdf",
+        "size_kb":  558.2,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\23. GQL\\HDE-Hoja de especificaciones\\otras_vesiones\\GQL_HDE_V3_C_comentarios.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gql-hde-v4-c",
+        "ext":  ".pdf",
+        "size_kb":  2199.5,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\23. GQL\\HDE-Hoja de especificaciones\\otras_vesiones\\GQL_HDE_V4_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gqc-hde-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  3300.0,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\22. GQC\\HDE-Hoja de especificaciones\\Versiones anteriores\\GQC_HDE_V1_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "20250626-gtp-a-hde-v4-rev-am-ja-lr",
+        "ext":  ".pdf",
+        "size_kb":  2494.1,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\10. GTP-A\\HDE-Hoja de Especificaciones\\20250626_GTP-A_HDE_V4_Rev AM JA LR.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gd-he-183-01-v3-c",
+        "ext":  ".pdf",
+        "size_kb":  720.5,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\07. GCF (Fotocontrol)\\HDE-Hoja Especificaciones\\VE\\Versiones Anteriores\\GD-HE-183-01-V3_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gd-he-167-01-v1-c",
+        "ext":  ".pdf",
+        "size_kb":  1330.8,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\6. GTC-B1C MV\\HDE-Hoja de especificaciones\\Anterior\\GD-HE-167-01-V1-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gtc-b1v-mv-hde-v3-c",
+        "ext":  ".pdf",
+        "size_kb":  3475.4,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\6. GTC-B1C MV\\HDE-Hoja de especificaciones\\Anterior\\GTC-B1V-MV_HDE_V3_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gtc-b1v-mv-hde-v3-c-n",
+        "ext":  ".pdf",
+        "size_kb":  2504.4,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\6. GTC-B1C MV\\HDE-Hoja de especificaciones\\Anterior\\GTC-B1V-MV_HDE_V3_C_N.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gra-mv-hoja-de-especif-peq",
+        "ext":  ".pdf",
+        "size_kb":  829.2,
+        "copies":  1,
+        "path":  "D:\\02. Exceline-Profesional\\5. GRA-MV\\HDE-Hoja de especificaciones\\Anterior\\GRA-MV Hoja de Especif peq.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gsm-l-hde-v5-c",
+        "ext":  ".pdf",
+        "size_kb":  7166.7,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\2. GSM-L\\HDE-Hoja de especificaciones\\Versiones anteriores\\GSM-L_HDE_V5_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "exceline-profesional",
+        "slug":  "gsm-l-hde-v5-c-n",
+        "ext":  ".pdf",
+        "size_kb":  1869.4,
+        "copies":  2,
+        "path":  "D:\\02. Exceline-Profesional\\2. GSM-L\\HDE-Hoja de especificaciones\\Versiones anteriores\\GSM-L_HDE_V5_C_N.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "eca500-11-man-despl-v6-outlines",
+        "ext":  ".pdf",
+        "size_kb":  27004.1,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\Productos Clientes\\ECA (ICM)\\ECA500 Series\\MAN - Manual\\Versiones anteriores\\Versiones ICM Controls\\ECA500-11_MAN_DESPL_V6 OUTLINES.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "io-link-rs485-man-us-v3-outlines",
+        "ext":  ".pdf",
+        "size_kb":  3675.2,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\Productos Clientes\\ECA (ICM)\\ECA500 Series\\MAN - Manual\\Versiones anteriores\\Versiones ICM Controls\\IO-LINK-RS485_MAN_US_V3_OUTLINES.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "guct-c-ct-gd-man8005-co-v1",
+        "ext":  ".pdf",
+        "size_kb":  3600.7,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\MAN-Manual de InstalaciÃ³n\\EspaÃ±ol\\Final\\GUCT+ c-CT GD-MAN8005-CO-V1.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-instalacion-guct-c-ct-1",
+        "ext":  ".pdf",
+        "size_kb":  1028.9,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\MAN-Manual de InstalaciÃ³n\\EspaÃ±ol\\PDF\\Manual Instalacion GUCT+ c-CT  (1).pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-instalacion-guct-c-ct-2",
+        "ext":  ".pdf",
+        "size_kb":  3583.8,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\MAN-Manual de InstalaciÃ³n\\EspaÃ±ol\\PDF\\Manual Instalacion GUCT+ c-CT  (2).pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-instalacion-guct-c-ct-3",
+        "ext":  ".pdf",
+        "size_kb":  1057.4,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\MAN-Manual de InstalaciÃ³n\\EspaÃ±ol\\PDF\\Manual Instalacion GUCT+ c-CT (3).pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "guct-c-ct-gd-he8005-co-v-01",
+        "ext":  ".pdf",
+        "size_kb":  4731.0,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\HDE-Hoja de Especificaciones\\EspaÃ±ol\\PDF\\GUCT+ c-CT GD-HE8005-CO-V.01.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "guct-c-ct-gd-he8005-co-v-02",
+        "ext":  ".pdf",
+        "size_kb":  4592.3,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\HDE-Hoja de Especificaciones\\EspaÃ±ol\\PDF\\GUCT+ c-CT GD-HE8005-CO-V.02.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "guct-c-ct-gd-he8005-co-v-03",
+        "ext":  ".pdf",
+        "size_kb":  478.0,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\HDE-Hoja de Especificaciones\\EspaÃ±ol\\PDF\\GUCT+ c-CT GD-HE8005-CO-V.03.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "guct-c-ct-gd-he8005-co-v1",
+        "ext":  ".pdf",
+        "size_kb":  4.0,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GUCT +C-CT\\Anteriores\\HDE-Hoja de Especificaciones\\EspaÃ±ol\\Final\\._GUCT+ c-CT GD-HE8005-CO-V1.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-051-02-v1-us",
+        "ext":  ".pdf",
+        "size_kb":  3664.1,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GUCT\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\GD-MAN-051-02-V1-US.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "guct-hde-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  1821.2,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GUCT\\HDE-Hoja de especificaciones\\Ingles\\GUCT_HDE-V2_US_c.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "gd-he-051-01-v1-us-c",
+        "ext":  ".pdf",
+        "size_kb":  1859.6,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GUCT\\HDE-Hoja de especificaciones\\Ingles\\Otras-versiones\\GD-HE-051-01-V1-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gspt-mv-man-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  6604.9,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT-MV\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\GSPT-MV_MAN-V2_C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-de-instalacion-gsp-ingles",
+        "ext":  ".pdf",
+        "size_kb":  5516.4,
+        "copies":  3,
+        "path":  "D:\\03. Genius\\GSPT-MV\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-versiones\\MANUAL DE INSTALACION GSP-Ingles.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-054-01-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  5679.5,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GSPT\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-versiones\\GD-MAN-054-01-V2-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "i-gspt-mv-lr-10mar",
+        "ext":  ".pdf",
+        "size_kb":  9919.9,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GSPT-MV\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\otra-versiÃ³n\\I_GSPT-MV - LR 10MAR.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "gspt-mv-hde-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  2413.4,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT-MV\\HDE-Hoja de especificaciones\\EspaÃ±ol\\GSPT-MV_HDE_V2_C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gspt-man-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  3542.1,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\GSPT_MAN-V2_C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-053-01-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  5679.5,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-versiones\\GD-MAN-053-01-V2-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-053-02-v1-us",
+        "ext":  ".pdf",
+        "size_kb":  3683.2,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GSPT\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-versiones\\GD-MAN-053-02-V1-US.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-gspt-01-v1",
+        "ext":  ".pdf",
+        "size_kb":  9180.9,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\otras_versiones\\GD-MAN-GSPT-01-V1.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "i-gspt",
+        "ext":  ".pdf",
+        "size_kb":  5379.2,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GSPT\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\otras_versiones\\I_GSPT.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "gspt-hde-v2-c",
+        "ext":  ".pdf",
+        "size_kb":  2194.6,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT\\HDE-Hoja de especificaciones\\EspaÃ±ol\\GSPT_HDE_V2_C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "gspt-hde-v3-us-c",
+        "ext":  ".pdf",
+        "size_kb":  1724.8,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GSPT\\HDE-Hoja de especificaciones\\Ingles\\GSPT_HDE_V3_US _c.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-inst-goct-final",
+        "ext":  ".pdf",
+        "size_kb":  4038.3,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GOCT\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\Manual Inst GOCT Final.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-050-01-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  2475.0,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GOCT\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\GD-MAN-050-01-V2-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "goc-manual-v1",
+        "ext":  ".pdf",
+        "size_kb":  2392.2,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GOCT\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\GOC MANUAL V1.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "hoja-de-especificacion-goc",
+        "ext":  ".pdf",
+        "size_kb":  2572.7,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GOCT\\HDE-Hoja de especificaciones\\Ingles\\Otras-Versiones\\HOJA DE ESPECIFICACION  GOC.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-8003-01-v1-us-c",
+        "ext":  ".pdf",
+        "size_kb":  6631.1,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GIII+MV\\MAN-Manual de instalaciÃ³n\\Ingles\\GD-MAN-8003-01-V1-US-C.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "gd-he-8003-01-v1-us-c",
+        "ext":  ".pdf",
+        "size_kb":  2239.9,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GIII+MV\\HDE-Hoja de especificaciÃ³n\\Ingles\\Otras-Versiones\\GD-HE-8003-01-V1-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-052-01-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  6572.1,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GIII+\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\GD-MAN-052-01-V2-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "giii-gd-man-052-01-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  6717.4,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GIII+\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\GIII_GD-MAN-052-01-V2-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-de-instalacion-giii-ingles-pag-8-10",
+        "ext":  ".pdf",
+        "size_kb":  2795.4,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GIII+\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\MANUAL DE INSTALACION  GIII Ingles pag 8-10.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-de-instalacion-giii-ingles-pag-1-3",
+        "ext":  ".pdf",
+        "size_kb":  2987.1,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GIII+\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\MANUAL DE INSTALACION  GIII-Ingles pag 1-3.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-de-instalacion-giii-ingles-pag-4-7",
+        "ext":  ".pdf",
+        "size_kb":  3598.7,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GIII+\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\MANUAL DE INSTALACION GIII Ingles  pag. 4-7.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "gd-man-049-01-v2-us-c",
+        "ext":  ".pdf",
+        "size_kb":  4144.2,
+        "copies":  2,
+        "path":  "D:\\03. Genius\\GII+\\MAN-Manual de instalaciÃ³n\\Ingles\\Otras-Versiones\\GD-MAN-049-01-V2-US-C.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "guia-de-instalacion-gi-final",
+        "ext":  ".pdf",
+        "size_kb":  519.9,
+        "copies":  4,
+        "path":  "D:\\03. Genius\\GI+\\MAN-Manual de instalaciÃ³n\\EspaÃ±ol\\Versiones-Anteriors\\Guia de Instalacion GI+ Final.pdf"
+    },
+    {
+        "category":  "MAN",
+        "linea":  "genius",
+        "slug":  "manual-de-instalacion-gi-tamano-carta",
+        "ext":  ".pdf",
+        "size_kb":  3571.6,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GI+\\MAN-Manual de instalaciÃ³n\\Ingles\\MANUAL DE INSTALACION  GI -  TamaÃ±o Carta.pdf"
+    },
+    {
+        "category":  "HDE",
+        "linea":  "genius",
+        "slug":  "hoja-de-especificacion-gi",
+        "ext":  ".pdf",
+        "size_kb":  2382.9,
+        "copies":  1,
+        "path":  "D:\\03. Genius\\GI+\\HDE-Hoja de especificaciones\\Ingles\\HOJA DE ESPECIFICACION  GI.pdf"
+    }
+]
