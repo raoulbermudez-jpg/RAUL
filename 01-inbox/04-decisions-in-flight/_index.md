@@ -16,6 +16,8 @@ Carpeta donde **vive el material físico** de cada decisión in-flight. La fuent
 
 ## Estructura por decisión
 
+### Decisiones nuevas (prospectivas — convención completa)
+
 ```
 <project-id>/
 └── <decision-id>/
@@ -26,6 +28,18 @@ Carpeta donde **vive el material físico** de cada decisión in-flight. La fuent
     └── response.md         ← (vacío hasta que llega respuesta)
 ```
 
+### Decisiones migradas retroactivamente (convención mínima)
+
+Decisiones que ya estaban in-flight antes del 2026-05-09 (Phase 3 step 3) se migran con **solo `context.md`**, que apunta a las rutas reales donde vive el material original (project folder, governance log, memoria, etc.). Los archivos `package.md` / `options.md` / `recommendation.md` / `response.md` NO se fabrican retroactivamente.
+
+```
+<project-id>/
+└── <decision-id>/
+    └── context.md          ← incluye frontmatter con migration_type: "retroactive" + rutas al material original
+```
+
+Cuando llegue response a una decisión migrada, se crea `response.md` directamente (sin reconstruir el package).
+
 ## Cómo se usa
 
 1. **Agente solicitante** (Bruna / Aurelio / Vael / etc.) crea `<project-id>/<decision-id>/` y los 4 archivos iniciales (context, package, options, recommendation).
@@ -33,13 +47,17 @@ Carpeta donde **vive el material físico** de cada decisión in-flight. La fuent
 3. **Si el decisor es externo (JUNTA-GENT, SAPI-VE, etc.)**: agente copia `package.md` al `_outgoing/` del canal correspondiente (`05-from-junta/_outgoing/`, `06-from-regulators/_outgoing/`, etc.).
 4. **Cuando llega respuesta**: InboxBot la deposita en el canal correspondiente; agente solicitante (o Owner manualmente) la copia a `response.md` aquí, actualiza `PENDING-DECISIONS-REGISTRY.md` a `RESPONDED`, y reanuda la cadena.
 
-## Items activos (sembrar manualmente o autogenerar desde registry)
+## Items activos
 
-| Decision-ID | Project | Estado | Decisor | Path |
+| Decision-ID | Project | Estado | Decisor(es) | Path |
 |---|---|---|---|---|
-| (vacío al inicio — se llena cuando agentes empiezan a usar el sistema) | | | | |
+| DEC-2026-05-06-001 | GME protector monofásico | PENDING | OWNER + IND-GENT | [`gme/DEC-2026-05-06-001/`](gme/DEC-2026-05-06-001/context.md) |
+| DEC-2026-05-06-002 | GME claim "primero LATAM" | SUSPENDED-UPSTREAM | OWNER | [`gme/DEC-2026-05-06-002/`](gme/DEC-2026-05-06-002/context.md) |
+| DEC-2026-05-08-001 | Marcas anglicismos junta | PARTIALLY-RESPONDED | JUNTA-GENT + SAPI-VE | [`marcas-anglicismos-junta/DEC-2026-05-08-001/`](marcas-anglicismos-junta/DEC-2026-05-08-001/context.md) |
+| DEC-2026-05-03-001 | COVENIN 3445 (Argumento 8) | PENDING | SENCAMER + FONDONORMA + LEGAL-EXT | [`covenin-3445/DEC-2026-05-03-001/`](covenin-3445/DEC-2026-05-03-001/context.md) |
+| DEC-2026-05-08-D1-D5 | GST Labels (umbrella) | PENDING | OWNER | [`gst-r-etiquetas/DEC-2026-05-08-D1-D5/`](gst-r-etiquetas/DEC-2026-05-08-D1-D5/context.md) |
 
-> Para sembrar entries de las decisiones ya in-flight (DEC-2026-05-04-001 GSM, DEC-2026-05-06-001 GME, etc.), se requiere migración manual de los packages existentes que viven en `03-projects/<dominio>/<proyecto>/`. Pendiente decisión Owner sobre si esa migración es retroactiva o solo prospectiva.
+Las 5 fueron migradas retroactivamente el 2026-05-09 (Phase 3 step 3, colateral 2) como decisión hybrid: solo decisiones in-flight reciben workspace; las cerradas (DEC-2026-05-04-001 RESPONDED, DEC-2026-04-29-001 CLOSED-WITHDRAWN) quedan referenciadas solo en registry.
 
 ## Items cerrados (RESPONDED / EXPIRED / CLOSED-*)
 
