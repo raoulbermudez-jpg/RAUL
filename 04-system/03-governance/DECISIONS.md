@@ -604,4 +604,45 @@ Nota específica para sub-decisión 7 (hybrid migration): alternativas eran solo
 
 ---
 
+## 2026-05-10 — Formalización del pattern A.5 (Owner post-CSC derivative) + creación del catálogo vivo `GOVERNANCE-PATTERNS.md`
+
+**Decisión:** formalizar A.5 — Owner post-CSC derivative — como nuevo patrón operativo de governance, y crear `04-system/03-governance/GOVERNANCE-PATTERNS.md` como catálogo vivo SSoT que reemplaza la sección A del proposal Phase 2 como referencia activa (el proposal queda como histórico).
+
+**Contexto y motivación:**
+
+Pregunta operativa del Owner durante sesión 2026-05-10 destapó una situación recurrente no cubierta por los 4 patrones originales: Owner toma un deliverable producido por la cadena CSC (típicamente decks de Vivienne, pero generalizable a outputs de Solenne / Atlas / Nerea), lo modifica con base en input post-CSC (reuniones con colaboradores, conversaciones informales, intuición / reframe basado en contexto que la cadena no tenía), y presenta esa versión modificada — NO la versión CSC original.
+
+Sin formalizar este flujo, el sistema asume erróneamente que la versión CSC es lo presentado: agentes vinculan decisiones a la versión incorrecta, claims nuevos introducidos por Owner mid-modification no pasan por gate de Bruna, y la trazabilidad del proceso real se pierde.
+
+A.5 es distinto de A.2 (Owner-driven alternative) — A.2 inserta una alternativa ANTES o EN LUGAR de la cadena CSC; A.5 ADAPTA un output que la cadena ya produjo. La distinción importa porque el routing es diferente (A.2 va por Bruna→Vera→Orlan pre-CSC; A.5 va por Bruna post-derivative solo si introduce claims nuevos).
+
+**Alternativas consideradas:**
+
+- **Extender A.2 para cubrir derivatives.** ❌ Rechazado: A.2 es "Owner desafía análisis CSC con propuesta nueva"; A.5 es "Owner refina output CSC pre-presentación". Mezclar pierde semántica útil para routing.
+- **Documentar A.5 directamente en el proposal Phase 2** (revisar como v1.1). ❌ Rechazado: el proposal es histórico de la propuesta original; revisarlo retroactivamente borra la distinción entre lo propuesto y lo aprendido en implementación. Mejor catálogo vivo separado.
+- **Documentar A.5 solo en memoria sin doc canónico.** ❌ Rechazado: memoria es per-installation; los patrones de governance son SSoT del repo y necesitan home estable y versionable.
+- **Cubrir el caso ad-hoc cada vez que aparezca, sin patrón formal.** ❌ Rechazado: la pregunta del Owner emergió porque está pasando — sin patrón formal, cada caso se improvisará distinto y se pierden las garantías (Bruna review de claims nuevos, vinculación correcta de decisiones al DELTA).
+
+**Implicaciones:**
+
+- **Nuevo doc canónico:** `04-system/03-governance/GOVERNANCE-PATTERNS.md` v1.0. Incluye A.1-A.4 como resúmenes con link al proposal (para detalle completo) + A.5 con detalle full. A partir de aquí, este doc es el SSoT del catálogo de patrones; futuros A.6+ se agregan aquí.
+- **Cross-ref en proposal Phase 2 §A:** nota agregada apuntando al catálogo vivo.
+- **A.5 en operación:**
+  - Output Owner-modificado vive en `03-projects/<dominio>/<project-id>/04-published-and-hand-off/` con sufijo `_owner-presented`.
+  - Binario .pptx/.pdf/.docx gitignored como siempre; DELTA.md commiteado.
+  - DELTA.md usa `delta-document-template.md` con frontmatter `pattern_applied: A.5`, campo `basado_en` linkeando a versión CSC original.
+  - Si introduce claims nuevos → Bruna BR-3 quick antes de presentar; si no hay tiempo, escalar a A.3 (Crisis) con `status: CRISIS-DRAFT` + post-mortem 72h.
+  - Si presentación va a decisor formal → activar A.1 (Pause+Resume) con `pieza_presentada` apuntando al DELTA.
+- **Mecanismo de extensión documentado:** sección "Cómo proponer un patrón nuevo" en `GOVERNANCE-PATTERNS.md` da el flujo para A.6+.
+- **Memoria actualizada:** `feedback_phase3_governance_pause_resume.md` extendida para mencionar A.5 como complemento del flujo Pause+Resume.
+
+**Estado:**
+
+- `GOVERNANCE-PATTERNS.md` creado con A.1-A.5 documentados.
+- Cross-ref en proposal Phase 2 §A agregado.
+- Memoria actualizada (vive fuera del repo en `C:\Users\User\.claude\projects\C--Raul\memory\`).
+- **Pendiente cuando aparezca el primer caso real:** ejecutar A.5 end-to-end (Owner modifica un deck, crea DELTA, presenta, registra outcome). Será el primer test del patrón.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

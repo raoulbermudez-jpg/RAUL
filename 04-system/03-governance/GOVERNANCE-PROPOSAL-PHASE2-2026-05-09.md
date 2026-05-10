@@ -43,6 +43,8 @@ Esta propuesta agrega **infraestructura de coordinación** que envuelve el siste
 
 ## A. Cuatro patrones operativos formalizados
 
+> **Nota (post-implementación, 2026-05-10):** este proposal documenta los 4 patrones originales A.1-A.4. El catálogo vivo de patrones — incluyendo A.5 (Owner post-CSC derivative) y futuros A.6+ — vive en [`GOVERNANCE-PATTERNS.md`](GOVERNANCE-PATTERNS.md). Este doc queda como histórico de la propuesta original; consultar el catálogo vivo para la lista completa y vigente.
+
 ### A.1 — Patrón "Pause + Resume" (decisión externa bloqueante)
 
 **Cuando aplica:** un agente productor (Bruna, Aurelio, Vael, Atlas, etc.) llega a un punto donde no puede continuar sin input/aprobación de un humano no-Owner (junta, regulador, I&D externo, etc.).
