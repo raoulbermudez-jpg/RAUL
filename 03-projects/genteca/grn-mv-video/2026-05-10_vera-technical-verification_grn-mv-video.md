@@ -257,3 +257,81 @@ Al volver la tension: el rele retoma el estado memorizado SIEMPRE Y CUANDO el es
 - Las escalaciones E1, E2 y E3 quedan CERRADAS con palabra del Owner. Persisten E4 y E5 (distancias) como escalaciones a ingenieria para futura revision tecnica de docs, pero no son bloqueantes para el video.
 - La interpretacion de Q3 (LEDs), Q4 (perilla) y Q5 (terminales) permanece valida — el Owner no las contradijo.
 - La interpretacion de Q5 sobre la sonda REF en el punto mas bajo del pozo permanece valida y es la guia para Nerea.
+
+---
+
+## ANA UPDATE — 2026-05-11
+
+Ana Mendez entrego dos documentos actualizados que superan a la documentacion previamente disponible en KB. Estos son ahora la fuente autoritativa de specs tecnicos para el GRN-MV. Mantenemos los Owner Override de la seccion anterior; lo que cambia son los specs publicados y la posicion fisica de los componentes en el pozo.
+
+**Documentos autoritativos:**
+- GRN-MV_HDE_V7_C_Rev RB3 (12-ago-2025) — Hoja de Especificaciones con tabla completa de specs.
+- GRN-MV_MAN_V2_IMP_Rev RB3 (14-jul-2025) — Manual de Instalacion con diagramas corregidos.
+
+Ruta en Drive: G:\Mi unidad\RAUL\colaboradores\Genteca\Ana-Mendez\01_De_Ana_Para_Raoul\
+
+### Correccion 3 — Posicion fisica de bomba y sondas en pozo (ANULA interpretacion previa de Q5)
+
+**Verdad operativa segun Owner (2026-05-11):**
+
+En aplicacion de pozo con bomba sumergible:
+- La bomba sumergible esta en el fondo del pozo (sumergida).
+- Las tres sondas (REF, MIN, MAX) estan ubicadas **por encima de la bomba**.
+- La sonda REF es la mas larga: su punta queda cerca del nivel de la bomba, siempre sumergida (referencia electrica de masa).
+- La sonda MIN esta por encima de la bomba: cuando MIN deja de estar sumergida, el rele apaga la bomba para evitar trabajo en seco.
+- La sonda MAX esta por encima de MIN: cuando MAX queda sumergida, el rele arranca la bomba (validacion de 10 s).
+- El nivel del agua del pozo en estado de reposo puede estar **por encima de MAX**. MAX no es la altura maxima del pozo, es el umbral a partir del cual el pozo tiene agua suficiente para que la bomba opere.
+- La separacion fisica entre MIN y MAX define la banda de histeresis del ciclo: una vez arrancada la bomba, esta se mantiene en funcionamiento mientras MIN siga sumergida, aunque MAX ya no lo este.
+
+**Logica de operacion confirmada:**
+
+| Estado de sondas (vaciado) | Estado del rele/bomba |
+|----------------------------|------------------------|
+| MAX sumergida (entra a sumergida) | Rele activa salida tras 10 s → bomba ON |
+| MAX y MIN ambas sumergidas | Bomba continua ON |
+| MAX sin contacto, MIN sumergida | Bomba continua ON (histeresis) |
+| MIN sin contacto (deja de estar sumergida) | Rele desactiva salida tras 10 s → bomba OFF |
+| MIN y MAX ambas sin contacto | Bomba permanece OFF |
+| Subiendo: MIN vuelve a estar sumergida pero MAX aun no | Bomba permanece OFF (esperando MAX) |
+| Subiendo: MAX queda sumergida | Rele activa salida tras 10 s → bomba ON |
+
+### Correccion 4 — Specs publicados en HDE V7 RB3 (CIERRA BD-2 a BD-5)
+
+La tabla de especificaciones tecnicas de HDE V7 RB3 esta completa y resuelve las discrepancias previas:
+
+| Parametro | Valor publicado en HDE V7 RB3 | Estado anterior |
+|-----------|-------------------------------|-----------------|
+| Voltaje nominal | 120/220 V~ | Confirmado |
+| Rango voltaje de operacion | 85 a 305 V~ | NUEVO (no publicado antes) |
+| Frecuencia | 50/60 Hz | NUEVO |
+| Sensibilidad de activacion ajustable | 2,5 a 300 kΩ | Confirmado (era 100K en V4, 300K en GLA R V2) |
+| Voltaje maximo en sondas (electrodos) | **12 V~** | CIERRA BD-2 (era 38V vs 12V) |
+| Corriente maxima en sondas | 1 mA | Confirmado |
+| Distancia maxima sonda-tablero | **300 m** | CIERRA BD-4 |
+| Distancia maxima entre REF y MAX | **70 m** | CIERRA BD-5 |
+| Capacidad contactos rele SPDT | **3,5 A @ 250 V~** | CIERRA BD-3 (era 3,5 vs 16A) |
+| Numero maximo de operaciones | 100.000 | NUEVO |
+| Cableado | 10 a 24 AWG | NUEVO |
+| Material carcasa | ABS y Nylon, ignifugo | Confirmado |
+| Temperatura ambiental | -5 a 55 °C | NUEVO |
+| Humedad relativa | 85 % | NUEVO |
+| Dimensiones | 60 x 100 x 38,9 mm | Confirmado |
+| Peso | 0,098 kg (0,216 lb) | Confirmado |
+
+### Brechas restantes (despues de Ana Update)
+
+| # | Brecha | Estado |
+|---|--------|--------|
+| BD-1 | 10 s operativo no aparece como campo en HDE V7 RB3 ("Tiempo de deteccion del nivel" no esta en tabla) | ABIERTA — escalar para proxima revision |
+| BD-6 (nueva) | Posicion fisica relativa de bomba y sondas en pozo no esta formalizada en ningun diagrama del HDE / MAN actuales | ABIERTA — recomendable agregar diagrama de instalacion en pozo a proxima revision del manual |
+
+### Implicancias para el guion del video
+
+El guion v2.1 debe actualizarse a v2.2 con:
+- Diagrama corregido: bomba sumergible en el fondo, MIN y MAX por encima de la bomba, REF al nivel de la bomba (sonda mas larga).
+- Nivel del agua puede estar por encima de MAX en estado de reposo.
+- Lenguaje preciso: "sonda queda sumergida" / "sonda deja de estar sumergida" en lugar de "el agua llega hasta" / "el agua baja hasta".
+- Mostrar la banda de histeresis MIN-MAX explicitamente en Escenas 6 y 8.
+- Anadir specs defendibles en cierre: 85-305 V~ + 300 m sonda-tablero.
+
+El guion v2.2 (2026-05-11) integra todas estas correcciones. v2.1 queda como historico.
