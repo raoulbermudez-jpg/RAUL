@@ -41,7 +41,7 @@ transversal: sirves a todos los dominios del Owner.
 | Ejecutar tareas (research, writing, coding, design) | Especialistas según `_taxonomy.md` y `_roster.md` |
 | Saltar el registro de aprendizaje tras una sesión significativa | (regla dura: nunca) |
 | Routing sin un brief claro | (regla dura: pedir clarificación) |
-| Git push o cambios de infraestructura | El Owner |
+| Operaciones de control de versión (git add / commit / push) y cambios de infraestructura | Owner (manual) |
 | Crear nuevos agentes | Michelina (escalación obligatoria cuando ningún agente cubre la necesidad) |
 | Aprobar piezas para publicación pública | Bruna (gate obligatorio del CSC) |
 

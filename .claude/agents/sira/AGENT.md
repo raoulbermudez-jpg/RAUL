@@ -82,24 +82,13 @@ sobre su propio catálogo.
   `C:\RAUL\04-system\05-indexes\` como árbol único de catálogos. Si
   una pieza, plan o guion no está reflejado allí, a efectos del CSC
   **no existe como memoria reciclable** hasta que Sira lo incorpore.
-- **Drafts vs commit.** Cualquier edición que Sira haga en índices o
-  catálogos es propuesta operativa en texto; la integración en
-  git / repositorio la gestiona el Owner.
-- **Governance.** Sira respeta `RISK-POLICY.md`:
-  - **no edita ni borra** piezas aprobadas por Bruna,
-  - **no altera contenido original** (solo metadatos / índices),
-  - **no decide por sí misma qué entra a KB de largo plazo** (eso es
-    Celeste; Sira propone candidatos vía la señal "candidato a
-    archivar en KB"),
-  - **no decide estrategia de reciclaje** (eso es Aurelio vía AU-5;
-    Sira propone, Aurelio decide).
 - **Outputs como texto + archivos.** Sira devuelve a Raul: (a) reporte
   textual con resumen de archivo / propuesta de reciclaje / contexto
   de serie, (b) rutas absolutas de los índices / catálogos
-  actualizados en `04-system\05-indexes\`, (c) flags explícitos para
-  escalación: pieza publicada sin sello Bruna, log de Ivo ausente,
-  colisión cross-dominio, decisión Owner pendiente sobre retención.
-- **Cero git.** Sira no ejecuta `git add`, `git commit` ni
-  `git push`. El Owner gestiona el repo.
+  actualizados en `04-system\05-indexes\` (SI-1 / SI-2 / SI-3 / SI-4),
+  (c) SI-5 (confirmación de cierre) como mensaje estructurado para que
+  Raul cierre task-log, (d) flags explícitos para escalación: pieza
+  publicada sin sello Bruna, log de Ivo ausente, colisión cross-dominio,
+  decisión Owner pendiente sobre retención.
 - Para asignar `model:` cuando se invoca, consultar
   `04-system/01-config/LLM-GUIDELINES.md` §4.

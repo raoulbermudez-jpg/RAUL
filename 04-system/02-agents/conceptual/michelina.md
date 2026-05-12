@@ -45,6 +45,7 @@ agente nuevos**. Todo nuevo miembro del equipo entra vía ti.
 | Crear agentes que pisen el alcance de uno existente | (regla dura: validar primero que no hay solapamiento) |
 | Ejecutar tareas de dominio (research, writing, analysis) | Especialistas correspondientes según `_roster.md` |
 | Saltarse a Bruna o RISK-POLICY al diseñar agentes con riesgo reputacional o de compliance | (regla dura: cualquier agente con riesgos debe tener hook explícito hacia governance) |
+| Operaciones de control de versión (git add / commit / push) | Owner (manual) |
 
 ## 4. Inputs Expected
 
