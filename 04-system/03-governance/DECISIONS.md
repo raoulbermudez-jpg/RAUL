@@ -645,4 +645,31 @@ A.5 es distinto de A.2 (Owner-driven alternative) — A.2 inserta una alternativ
 
 ---
 
+## 2026-05-12 — Cierre item #2 NIGHT_RECOVERY: no procesar 691 archivos `contenido-corto`
+
+**Decisión:** ratificar y formalizar la decisión "no recuperar" sobre los 691 archivos listados en `04-system/06-logs/skipped_contenido_corto.txt`. Ninguno de los 691 fragmentos cortos extraídos del pendrive D: se procesará vía pipeline OCR/Haiku ni se ingresará a `02-knowledge-base/02-domains/01-genteca/specs/`.
+
+**Contexto y motivación:**
+
+Durante la sesión de recovery nocturna 2026-05-09→10 se filtraron del pipeline 691 archivos `.txt` ubicados en `01-inbox/03-raw-sources/genteca/pendrive-D/` (gitignored) cuyo contenido era demasiado corto para clasificarse como spec (≤ ~350 chars típicamente, muchos < 100). NIGHT_RECOVERY_SUMMARY_2026-05-10.md §"Lo que NO se hizo" item #2 propuso la heurística "no recuperar — su info útil ya vive en el HDE canónico" pero quedó como decisión Owner pendiente.
+
+Sampling validatorio 2026-05-12 sobre 5 archivos representativos (`bm-gsm-mp-gd-gla171-ch-v1.txt`, `back-label-gd-lab241-gsm-np-ch.txt`, `bm-gsm-e-gd-gla170-ch-v1.txt`, `bm-gef-10-gd-box309-ch-v2.txt`, `10-1-front-gsm-lp-gd-gla213-ve-v1.txt`) confirma que el contenido es exclusivamente metadata de producción de impresión: "ARTWORK TO BE PRINTED", "DIE-CUT SHEET", dimensiones físicas (143×221 mm, 23.76×38.881 mm), tolerancia (0,3mm), escala (100%), fecha de planchas, código Pantone (151, Black Litho 90), unidad MM. **Cero información técnica de producto** (modelo, voltaje, curva, normas). La info utilitaria de etiqueta (nombre comercial, voltaje nominal, indicaciones de uso) ya vive en HDE canónicas del KB Genteca specs.
+
+**Alternativas consideradas:**
+
+- **Recuperar todos vía OCR/Haiku.** ❌ Rechazado: zero KB value confirmado por sampling; el costo Haiku × 691 sin retorno es desperdicio. Además los .txt no necesitan OCR (ya son texto), pero su contenido es metadata de impresión, no spec.
+- **Recuperar subset por filtro semántico** (e.g., solo los > 300 chars). ❌ Rechazado: el sampling incluyó el de 327 chars (10-1-front-gsm-lp-gd-gla213) y también es 100% metadata de impresión. La longitud no correlaciona con contenido útil.
+- **Mover físicamente los .txt a `05-archive/`.** ❌ Rechazado: `01-inbox/03-raw-sources/` ya está gitignored y los `.txt` no contaminan el repo. Mover ahora añade fricción sin beneficio. Cuando el Owner archive el pendrive-D completo (post-procesamiento), la limpieza es trivial.
+- **Sacar del disco (rm).** ❌ Rechazado: misma razón — son fuentes crudas del pendrive D: y vale conservarlas hasta que el Owner decida archivar el pendrive completo.
+
+**Implicaciones:**
+
+- `04-system/06-logs/skipped_contenido_corto.txt` queda como evidencia auditada de los 691 paths excluidos.
+- Heurística operativa para próximos pipelines: archivos `.txt` extraídos de PDFs de artes/etiquetas (`bm-*`, `back-label-*`, `*-front-*`, `*-gla*`, `*-lab*`, `*-box*`) son ruido de producción gráfica, no specs — saltar automáticamente.
+- Items #3 (1325 imagen-solo ETQ/GLA/PAD) y #4 (33 'otros' borderline) del NIGHT_RECOVERY siguen pendientes Owner, no afectados por esta decisión.
+
+**Estado:** Cerrado 2026-05-12. Item #2 del NIGHT_RECOVERY_SUMMARY_2026-05-10.md resuelto.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
