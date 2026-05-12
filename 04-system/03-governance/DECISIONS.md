@@ -758,4 +758,41 @@ Sampling de contenido en 6 archivos representativos de categoría B (`gd-inj-258
 
 ---
 
+## 2026-05-12 — Cierre item #5 NIGHT_RECOVERY: limpieza histórica `progress.json errors[]` (ejecutada 2026-05-10, formalizada hoy)
+
+**Decisión:** ratificar la limpieza ya ejecutada sobre `04-system/06-logs/fase4_progress.json` que removió 355 entradas históricas duplicadas del array `errors[]`. NIGHT_RECOVERY queda 100% cerrado (items #1 a #5 todos resueltos).
+
+**Contexto y motivación:**
+
+Durante la noche de recovery 2026-05-09→10, el incidente Anthropic API "credit balance too low" (Error 400) afectó a 355 archivos cuando se intentó procesarlos vía Haiku Fase 4. Tras recargar créditos, los 355 se reprocesaron exitosamente y entraron en `done[]`, pero el pipeline NO removió sus entradas del `errors[]` original — quedaron duplicadas en ambos arrays (ruido histórico, no afecta funcionalidad pero degrada legibilidad del log).
+
+NIGHT_RECOVERY_SUMMARY_2026-05-10.md §"Lo que NO se hizo" item #5 recomendó "limpieza simple cuando lo decidas". El summary se escribió 03:32 — pero entre 02:42 y 03:36 (cleanup script ejecutado en esa ventana) el `errors[]` fue purgado a 0, antes de que se acuñara la recomendación. Documento se redactó sin actualizar.
+
+Validación 2026-05-12:
+- `fase4_progress.json.pre_cleanup_bak` (snapshot 2026-05-10 02:42): `done=2044`, `errors=355`.
+- `fase4_progress.json` (current, 2026-05-10 03:36): `done=2044`, `errors=0`.
+- Cross-check: 355/355 archivos del `errors[]` histórico están presentes en el `done[]` actual. **0 orphans.**
+- Root cause uniforme: 100% de las 355 entradas tenían el mismo error 400 `invalid_request_error: Your credit balance too low` — confirma incidente único.
+
+**Alternativas consideradas:**
+
+- **Re-ejecutar el cleanup ahora.** ❌ Innecesario — el cleanup ya pasó y dejó el archivo correcto.
+- **Borrar los `.pre_*_bak` del disco.** ❌ Rechazado por ahora: están gitignored (`04-system/06-logs/*.pre_*_bak` desde commit `f27313a`), no contaminan el repo, y son evidencia de rollback útil hasta que el pendrive D: completo se archive. Cuando se archive el pendrive, limpiar también los baks.
+- **Mejorar el script `fase4_kb_formatter.py`** para que purge automáticamente `errors[]` cuando una entrada se mueve a `done[]`. ⚠ Mejora deseable pero no urgente — el patrón actual permite forensia post-incidente. Candidato a refactor si se planean más batches grandes.
+
+**Implicaciones:**
+
+- NIGHT_RECOVERY_SUMMARY_2026-05-10.md como log histórico queda intencionalmente sin actualizar — refleja el estado al momento de redacción (03:32), incluido el item #5 ya pre-ejecutado. La trazabilidad real vive en este DECISIONS.md + en los `.pre_*_bak` (gitignored, on-disk).
+- **NIGHT_RECOVERY completamente cerrado.** Estado final consolidado:
+  - **Item #1** — 383 specs `_otro_` renombrados a `_hoja-especificaciones_` (commit `d1d3cfb`).
+  - **Item #2** — 691 contenido-corto, no recuperar (commit `baaf354`).
+  - **Item #3** — 1325 imagen-solo, no recuperar como specs (commit `b912281`).
+  - **Item #4** — 33 'otros' borderline, 0 recoverable (commit `4d19f21`).
+  - **Item #5** — 355 errors históricos purgados (este entry).
+- KB Genteca specs: 2.116 → 2.237 .md (+121 desde el recovery). Sin gaps detectados.
+
+**Estado:** Cerrado 2026-05-12. Recovery 2026-05-10 completo. Próximo work item identificado pero no iniciado: sweep de subtipos en `pendrive_D_assets_catalog.md` (mejorar `type: uncoded` → label / box / promo-sheet / blister / bag / pad / etc.). A activar cuando aparezca demanda operativa.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
