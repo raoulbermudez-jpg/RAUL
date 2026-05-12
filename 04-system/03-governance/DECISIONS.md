@@ -672,4 +672,48 @@ Sampling validatorio 2026-05-12 sobre 5 archivos representativos (`bm-gsm-mp-gd-
 
 ---
 
+## 2026-05-12 — Cierre item #3 NIGHT_RECOVERY: no procesar 1325 archivos `imagen-solo` como specs
+
+**Decisión:** ratificar y formalizar la decisión "no recuperar como specs" sobre los 1325 archivos listados en `04-system/06-logs/skipped_imagen_solo.txt`. Ninguno se ingresará a `02-knowledge-base/02-domains/01-genteca/specs/`. Su soporte artístico ya vive en `04-system/06-logs/pendrive_D_assets_catalog.md` y `pendrive_D_inventory.json` como assets gráficos.
+
+**Contexto y motivación:**
+
+Durante el inventario del pendrive D: el pipeline `pendrive_pipeline.py` detectó 1325 archivos PDF que, al inspeccionarse, NO contenían capa de texto extraíble — son artes vectoriales / scans sin OCR layer (etiquetas, packaging, promo sheets, blisters, bags, tampografía). Para cada uno, el pipeline generó un stub `.txt` en `01-inbox/03-raw-sources/genteca/pendrive-D/` con el formato:
+
+```
+[PDF_IMAGEN_SOLO]
+Archivo: <nombre>.pdf
+Linea: exceline|exceline-profesional|genius
+Tamaño: <KB>
+```
+
+Los stubs son señalizadores, NO contenido. NIGHT_RECOVERY_SUMMARY_2026-05-10.md §"Lo que NO se hizo" item #3 propuso "no recuperar como specs — pertenecen al catálogo de assets" pero quedó como decisión Owner pendiente.
+
+Sampling validatorio 2026-05-12 sobre 4 archivos representativos (`20240119-diagramas.txt`, `back-promo-sheet-gsm-mt-120-t.txt`, `blister-frontal-gsm-mt-120-se.txt`, `20231107-gfe-mv-bag-v8-c-rv1.txt`) confirma:
+
+- Los stubs son 88-100 chars cada uno (puro metadata, sin texto técnico).
+- Los soportes artísticos subyacentes (`.ai`, `.jpg`, `.FH9`) **están cataloged** en `pendrive_D_assets_catalog.md`:
+  - `GFE-MV_BAG_V8.ai` + `_C.ai` (líneas 3165-3166)
+  - `Back Promo Sheet GSM-MT 120 T.FH9` + `.ai` + `_CH.ai` (líneas 1622-1624)
+  - `Blister Frontal GSM-MT 120 SE.jpg` (línea 1632)
+- Tipo gráfico: etiquetas (ETQ / GLA / LAB), empaque (BOX / BAG / Blister), promo sheets, tampografía (PAD). NO contienen specs técnicas — esas viven en HDE canónicas ya en KB.
+
+**Alternativas consideradas:**
+
+- **OCR forzado vía Tesseract image-mode.** ❌ Rechazado: las artes son vectoriales sin texto bitmap renderizable a OCR útil; lo poco que extraería son códigos de impresión (Pantone, dimensiones) ya descartados en item #2.
+- **Visión multimodal (Claude vision sobre los PDFs).** ❌ Rechazado por ahora: la información técnica del producto ya está cubierta por HDE canónicas; pasar 1325 PDFs por modelo multimodal cuando el output sería redundante es desperdicio. Reconsiderar solo si aparece un caso donde el arte de etiqueta contenga info no presente en HDE (no se ha visto).
+- **Mover los stubs `.txt` a `05-archive/`.** ❌ Rechazado: `01-inbox/03-raw-sources/` ya está gitignored; los stubs no contaminan el repo. Cuando el Owner archive el pendrive D: completo (post-procesamiento), la limpieza es trivial.
+- **Refinar el `type` en el assets catalog** (actualmente muchos quedaron como `uncoded` cuando deberían ser `label`, `promo-sheet`, `blister`, `bag`). ⚠ Identificado como gap menor de calidad de catalogación, NO bloquea el cierre de este item. Candidato a sweep batch separado si/cuando se priorice navegación del catálogo de assets.
+
+**Implicaciones:**
+
+- `04-system/06-logs/skipped_imagen_solo.txt` queda como evidencia auditada de los 1325 paths excluidos.
+- Los soportes artísticos de los productos cubiertos viven en `pendrive_D_assets_catalog.md` / `.json` y son recuperables por path completo desde el pendrive D: cuando se necesite arte original (e.g., redlines de Oz, briefs a Ozwaldo).
+- Heurística operativa para próximos pipelines: PDFs marcados `[PDF_IMAGEN_SOLO]` se saltan del flujo specs y se asume que su catalogación en assets es suficiente. Si el pipeline encuentra un imagen-solo PDF no cataloged en assets, debe levantarlo como gap (no como spec candidate).
+- **Gap menor identificado (no bloquea):** muchas entradas del assets catalog tienen `type: uncoded`. Sería deseable un sweep batch que clasifique por subtipo gráfico (label, box, promo-sheet, blister, bag, pad) usando heurística de nombre. Candidato a abrir como item separado del recovery.
+
+**Estado:** Cerrado 2026-05-12. Item #3 del NIGHT_RECOVERY_SUMMARY_2026-05-10.md resuelto.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
