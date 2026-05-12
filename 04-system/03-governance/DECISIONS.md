@@ -952,4 +952,86 @@ Documentado en `raul.md` §6.5. Cuando una tarea Owner se descompone en N sub-ta
 
 ---
 
+## 2026-05-12 — Cierre de primera auditoría /RAUL/ + 5 decisiones Owner sobre brechas detectadas
+
+**Decisión:** documentar formalmente las 5 decisiones Owner tomadas en cierre de la auditoría baseline 2026-05-12 (score 3.7/5, 19 brechas detectadas). Las decisiones convierten las 4 brechas Altas + el paquete de 5 brechas "no actuar" en plan de remediación accionable.
+
+**Contexto y motivación:**
+
+Tras la primera auditoría real /RAUL/ con framework v1.0 (reporte completo en `04-system/03-governance/audits/2026-05-12_first-self-audit_v1.md`), 5 preguntas críticas emergieron requiriendo decisión Owner para establecer ruta de abordaje. Las decisiones se tomaron secuencialmente en sesión 2026-05-12 con análisis detallado en cada caso. Esta entrada consolida las 5 decisiones como SSOT auditable.
+
+**Decisiones específicas:**
+
+### Decisión 1 — B-003 Frontmatter enriquecido: **DIFERIR**
+
+Mantener convenciones `confidence` / `source_type` / `sensitivity` como opcionales en `FRONTMATTER-CONVENTIONS.md`. NO aplicar ahora. Re-evaluar cuando active 2do dominio (Plenus, ver Decisión 2). Razón: limbo declarativo sin uso real no aporta valor; el 2do dominio forzará la decisión naturalmente con casos concretos (Plenus = health/longevidad claims donde `confidence` y `source_type` se vuelven obvios).
+
+### Decisión 2 — B-001 Activación 2do dominio: **PLENUS**
+
+Plenus-metabolica como 2do dominio a activar tras Genteca. Razones (decisión Owner — divergió de recomendación Raul que era Panama):
+
+- Plenus es B2B como Genteca → máxima reusabilidad de patrones validados.
+- Aparentemente hay actividad real Plenus que justifica activación operativa.
+- Plenus health/longevidad/claims metabólicos forzará decisión sobre `confidence` + `source_type` (Decisión 1 retroactivamente).
+
+**No es activación inmediata** — sesión separada futura. No bloquea continuar la sesión actual.
+
+### Decisión 3 — B-008 Registry decisiones in-flight: **NO ESCALATED; destrabar bloqueos concretos**
+
+Mantener los 5 estados actuales (todos correctos). Actualizar columna `Owner notes` del registry con next-action por decisión. Plan de remediación destrabando upstream:
+
+- DEC-2026-05-06-001 GME: agendar discusión engineering esta semana
+- DEC-2026-05-06-002 GME claim: pedir OL-3 segunda iteración a Orlan + specs a Vera
+- DEC-2026-05-08-001 Anglicismos: atacar 3 escalaciones críticas Owner pre-Junta
+- DEC-2026-05-03-001 COVENIN: mantener PENDING (SLA regulators externos es semanas-meses)
+- DEC-2026-05-08-D1-D5 GST: materializar sub-scope cuando llegue input Oz
+
+Razón: la "desactualización" detectada por audit es backlog Owner válido, no decisiones huérfanas. Aplicar ESCALATED sin next-level real (Owner es decisor en varios casos) sería ceremonia vacía.
+
+### Decisión 4 — B-012 Cadencia mantenimiento: **INTEGRADO PRE-AUDITORÍA cada 90 días**
+
+Cycle mantenimiento (1 hora) + Auditoría (2 horas) = 3 horas cada 90 días. Doble propósito: limpia housekeeping antes de auditar para revelar problemas estructurales reales. Próximos cycles:
+
+- 2026-06-12 (Cycle 2): validación post-remediación auditoría 1
+- 2026-08-12 (Cycle 3): madurez framework + decisión v2.0
+- 2026-11-12 (Cycle 4): operación normal
+
+Bloques del cycle mantenimiento (15 min cada uno):
+1. Memoria + DECISIONS + Registry (revisar entradas viejas, archivar memorias inactivas, marcar decisiones obsoletas)
+2. Inbox + Knowledge (revisar owner-to-raul, destilar raw-sources, spot-check 3 wiki pages)
+3. Operaciones + Riesgos (task-log último ciclo, verificar backups, spot-check 1 agente)
+4. Sintetizar + agendar (1-líneas outcome, 1-3 next-actions, agendar próximo)
+
+Razón: rigor sin calendar burden recurrente. Si emerge necesidad cycle más frecuente, ajustar tras 2-3 cycles ejecutados con datos.
+
+### Decisión 5 — Deferral de 5 brechas con 2 anotaciones
+
+Confirmado deferral, con 2 anotaciones específicas:
+
+| Brecha | Status final |
+|---|---|
+| **B-004** Sin per-execution structured logging | Deferral indefinido. Costo > beneficio para single-Owner actual. Re-evaluar cuando escale a multi-Owner / team. |
+| **B-005** Multi-LLM no validado empíricamente | **Candidato para pilot futuro** (anotación nueva, no "no actuar"). Sin fecha. Vale la pena hacer derivación piloto algún día para validar trabajo arquitectónico. |
+| **B-007** `last_touched` no retroactivo | Deferral indefinido. Aplicar forward; aceptar discrepancia inicial. Inferencia masiva podría hacer más daño que bien. |
+| **B-015** SSOT principle aplicación reciente sin validación | Deferral indefinido. Se valida con uso natural; no requiere intervención. |
+| **B-017** Domain boundaries implícitas | **Acción atada a activación Plenus** (anotación nueva). Automáticamente se vuelve actionable cuando Plenus arranque (Decisión 2). Crear `02-knowledge-base/05-glossary-and-tables/domain-boundaries.md` en ese momento. |
+
+**Alternativas consideradas:**
+
+- **Aplicar todas las remediaciones ahora** en lugar de diferir. ❌ Rechazado: las 4 Altas requieren tiempo significativo (especialmente B-004 logging, B-003 frontmatter retroactivo) sin generar valor proporcional para escala actual.
+- **Ignorar la auditoría** (mantener uso reactivo). ❌ Rechazado: defraudaría el ejercicio de auditoría que acabamos de hacer; convertiría el framework en ceremonia.
+- **Subset diferente de remediaciones** (priorizar B-003 frontmatter sobre B-001 activación dominios). ❌ Rechazado: B-001 desbloquea naturalmente B-003 + B-017 cuando se ejecute; mejor orden secuencial.
+
+**Implicaciones:**
+
+- **Próximos pasos concretos:** sesión separada para activación Plenus (Decisión 2). Próximo cycle mantenimiento+auditoría: 2026-06-12.
+- **Registry update inmediato:** columna Owner notes actualizada en las 5 decisiones in-flight (Decisión 3 implementada esta sesión).
+- **Audit framework v1.0 validado:** primera aplicación real generó plan de remediación accionable. El framework probó utilidad en el primer cycle (criterio de éxito §9 del framework).
+- **Sin cambios al framework** hasta cycle 2026-06-12. Feedback identificado en §6 del audit report queda como input para v1.1.
+- **3 frentes operativos pendientes** (escalaciones SAPI, GST July, GME engineering) siguen en backlog Owner — la auditoría los confirmó pero no aceleró. Se atacan en sesión operativa separada (no esta sesión arquitectónica).
+
+**Estado:** Activa desde 2026-05-12. Implementación parcial inmediata: registry actualizado, audit report referenciable. Implementación diferida: activación Plenus, cycle mantenimiento próximo, deferrals confirmados.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
