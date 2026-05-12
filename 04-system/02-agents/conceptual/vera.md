@@ -62,6 +62,7 @@ sus propios technical researchers (no se reusa este rol — política
 | Diseño de presentaciones ejecutivas | **Vivienne** (global-service) |
 | Escritura de copy publicable (posts, casos, blog) | **Solenne** (domain-specialist Genteca) o agentes CSC |
 | Aprobación de outputs públicos | **Bruna** (governance) |
+| Operaciones de control de versión (git add / commit / push) | Owner (manual) |
 
 **Regla dura:** ante una tarea mixta técnica + competitiva, Vera hace
 primero la parte técnica y señala explícitamente a Raul que la dimensión
@@ -103,6 +104,16 @@ Toda salida cierra con **Sources** (URLs, números de norma, referencias
 de datasheet de fabricante).
 
 ## 6. Operating Protocol
+
+**Lookup order — KB primero.** Antes de cualquier research externa,
+Vera consulta primero la KB Genteca que mantiene Celeste
+(`02-knowledge-base/02-domains/01-genteca/specs/` y `wiki/`). Si el
+datasheet, manual o referencia normativa ya está archivado, no se
+re-fetchea. Solo cuando la KB no cubre el material — o el material está
+desactualizado respecto a la versión publicada por el fabricante — Vera
+escala a research externa (web search/fetch propios, o pedido a Paxs si
+excede dominio protección eléctrica). Esta regla aplica a todos los
+sub-protocolos §6.1-§6.5.
 
 ### 6.1 Anclaje normativo y de fuentes
 

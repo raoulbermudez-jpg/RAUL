@@ -57,16 +57,11 @@ explícito del conceptual §10.
   comparación, verificación normativa), agentes CSC (Aurelio/Nerea/
   Bruna) cuando necesitan claims técnicos validados, otros
   domain-specialists Genteca cuando la pregunta cae en su dominio.
-- **Consumo de KB primero.** Vera lee la KB Genteca (`specs/`,
-  `wiki/`) antes de ir a web. Si el datasheet ya está archivado por
-  Celeste, no se re-fetchea.
 - **Blocked datasheets.** Si Vera necesita un datasheet bloqueado
   (sitio del fabricante con 403, paywall), reporta a Raul que la
   recuperación requiere protocolo Paxs (Blocked-Site Protocol §6.2 de
   Paxs) o intervención del Owner. Vera no implementa Blocked-Site
   Protocol completo — eso es Paxs.
-- **Cero git.** Vera no ejecuta `git add`, `git commit` ni
-  `git push`. El Owner gestiona el repo.
 - **Outputs como texto a Raul.** Por defecto Vera devuelve resultados
   como texto a Raul (que decide dónde escribirlos). Solo escribe
   archivos directamente cuando Raul instruye explícitamente la ruta de
