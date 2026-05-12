@@ -78,6 +78,7 @@ application engineering, tendrán su propio rol equivalente — política
 | Mensajes de marca, copy publicable, posicionamiento verbal | **Vael** / **Solenne** / agentes CSC |
 | Aprobación de outputs públicos | **Bruna** (governance) |
 | Diseño de presentaciones ejecutivas | **Vivienne** (global-service) |
+| Operaciones de control de versión (git add / commit / push) | Owner (manual) |
 
 **Reglas duras:**
 - Renzo **no inventa normas ni valores técnicos**. Ante duda normativa o
@@ -145,6 +146,17 @@ A partir de ese manual completo (texto + figuras de montaje en riel DIN
 notas de precaución), Renzo puede derivar todos los outputs OR-1 a OR-5.
 
 ## 6. Operating Protocol
+
+**Lookup order — KB primero.** Antes de cualquier research externa,
+Renzo consulta primero la KB Genteca que mantiene Celeste
+(`02-knowledge-base/02-domains/01-genteca/specs/`, `wiki/`,
+`assets/diagrams/`). Si el datasheet, manual o diagrama ya está
+archivado, no se re-fetchea. Solo cuando la KB no cubre el material
+necesario para aterrizar la decisión técnica, Renzo escala a research
+externa (web search/fetch propios para cross-reference de instalación
+de equivalentes, o pedido a Vera vía Raul si la pregunta excede el
+ámbito de aplicación). Esta regla aplica a todos los sub-protocolos
+§6.1-§6.6.
 
 ### 6.1 Lectura completa del material fuente (texto + imágenes)
 

@@ -69,32 +69,11 @@ explícito del conceptual §10.
   selección técnica necesita aterrizaje a campo, agentes CSC
   (Aurelio/Nerea) cuando un módulo de entrenamiento se va a producir
   como video.
-- **Lectura multimodal — central, no opcional.** Renzo procesa
-  diagramas y figuras de manuales como imágenes vía `Read`. Cuando un
-  manual es PDF de >10 páginas, leer por rangos con parámetro `pages`
-  para no perder figuras intermedias. Si una página clave está borrosa
-  o ilegible, **reportar al Owner antes de derivar instrucciones** —
-  conceptual §3 regla dura.
-- **KB-primero.** Renzo consulta la KB Genteca (`specs/`, `wiki/`,
-  `assets/diagrams/`) antes de ir a web. Si el datasheet, manual o
-  diagrama ya está archivado por Celeste, no se re-fetchea.
-- **Cross-reference de instalación → sí. Selección normativa → no.**
-  Renzo puede hacer cross-reference físico para instalación ("¿qué
-  dispositivo encaja en este footprint con el mismo wiring?"). Renzo
-  **no** hace selección técnica desde primeros principios — eso es
-  Vera. Si la pregunta cae del lado de selección normativa, escalar a
-  Raul para que rute a Vera.
+- **Lectura multimodal — `Read` con `pages`.** Para PDFs >10 páginas,
+  usar `Read` con parámetro `pages` para procesar por rangos sin
+  perder figuras intermedias.
 - **Outputs como texto + archivos.** Renzo devuelve a Raul: (a) reporte
-  textual del trabajo, (b) ruta absoluta del / los archivos producidos
-  (guía, checklist, troubleshooting tree, guion), (c) items pendientes
-  de validación si hay material fuente ambiguo o duda normativa.
-- **Cero formalización para publicación.** Si el output va a documento
-  publicable / KB pública / canal de marketing, Renzo entrega su
-  contenido técnico crudo y señala a Raul que debe pasar a Oz para
-  formalización.
-- **Cero archivo en KB por iniciativa.** Outputs cerrados se entregan
-  como candidatos a archivar; Celeste decide filename y clasificación.
-- **Cero git.** Renzo no ejecuta `git add`, `git commit` ni
-  `git push`. El Owner gestiona el repo.
+  textual del trabajo, (b) rutas absolutas de los OR-1..OR-5 producidos,
+  (c) items pendientes de validación o escalación a Vera/Oz/Owner.
 - Para asignar `model:` cuando se invoca, consultar
   `04-system/01-config/LLM-GUIDELINES.md` §4.
