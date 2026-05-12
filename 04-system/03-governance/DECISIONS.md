@@ -716,4 +716,46 @@ Sampling validatorio 2026-05-12 sobre 4 archivos representativos (`20240119-diag
 
 ---
 
+## 2026-05-12 — Cierre item #4 NIGHT_RECOVERY: 33 'otros' borderline — ninguno requiere recuperación
+
+**Decisión:** ratificar la decisión "no recuperar" sobre los 33 archivos listados en `04-system/06-logs/skipped_otros.txt`. Tras clasificación + sampling exhaustivo, **0 archivos requieren ingreso a KB** — 4 ya están cubiertos por el filtro `ya-en-kb` original (confirmando que el filtro funcionó) y 29 son label / artwork / code fragments cuya información utilitaria ya vive en HDE canónicas del KB Genteca specs.
+
+**Contexto y motivación:**
+
+NIGHT_RECOVERY_SUMMARY_2026-05-10.md §"Lo que NO se hizo" item #4 marcó 33 archivos como "borderline 300 chars" con la nota "filtro `ya-en-kb` funciona bien, no recuperar" — quedaba pendiente Owner ratificar.
+
+Validación 2026-05-12 vía script `04-system/07-temp/scripts/classify_otros_borderline.py` clasificó los 33 + chequeó cobertura en KB:
+
+**Categoría A — Ya covered en KB (4 archivos, confirma filter funcionó):**
+- `gcm-f125-hde-v2.txt` (4773c) → `2026-04-18_hoja-especificaciones_gcm-f125-hde-v2.md`
+- `gct-d-gui-v1.txt` (3744c) → `2026-04-18_guia-programacion_gct-d-gui-v1.md`
+- `gct-s-gui-v1.txt` (4095c) → `2026-04-18_guia-programacion_gct-s-gui-v1.md`
+- `gqc-breakers-superficiales.txt` (5086c) → `2026-04-18_hoja-especificaciones_gqc-breakers-superficiales.md`
+
+**Categoría B — Label / artwork / code fragments (29 archivos, todos <400 chars):**
+- 9 etiquetas de la serie GCM-A250 por amperaje (040, 050, 063, 080, 100, 125, 160, 200, 250) — info de amperaje específico ya cubierta por HDE del breaker GCM-A250 family.
+- 3 etiquetas GSM-RE family (`gsmre120as`, `gsmre220cs`, `gsmre220ms`) — voltajes/HP ya en HDE canónica GSM-RE.
+- 3 box artwork files (`gqc-box-v4`, `gql-box-v6`, `20240614-gql-box-v7-rv2`) — empaque, no specs.
+- 2 etiquetas inj (`gd-inj-258`) — código injection mold.
+- 4 codes/SKU lists (`gsm-l120-cod-v1`, `gsm-l220-cod-v1`, `gst-r-208-220c-gd-cod210-1-v1`, `gtc-mr3-cod-v1`, `codigos-individuales-gql`) — EAN/SKU codes, no specs.
+- 8 misceláneos: engineering drawings (`20240528-grf-v20`), circuit labels (`etiqueta-de-circuito-gcf`, `gd-bc-163-01-v1-e`), box props (`gcm-a-box-prop-v4`, `gcm-a-box-prop-v4-comentario`), front etq (`gcm-a-etq-front-v1`), GLA file (`gd-lab-gla-179-01-v1`), side label (`gd-lab-093-side-label-gsm-mt120c`).
+
+Sampling de contenido en 6 archivos representativos de categoría B (`gd-inj-258`, `etiqueta-de-circuito-gcf`, `gsmre120as`, `gsmre220cs`, `gsmre220ms`, `gd-bc-163-01-v1-e`) confirma: todos son metadata de impresión / etiqueta / SKU. La info eléctrica de etiqueta (voltaje nominal, rango, HP, timer) es **redundante con HDE canónica** del producto correspondiente.
+
+**Alternativas consideradas:**
+
+- **Recuperar las 3 etiquetas GSM-RE** (`gsmre120as`, `gsmre220cs`, `gsmre220ms`) por su info eléctrica utilitaria. ❌ Rechazado: GSM-RE220C / GSM-RE220M / GSM-RE120A tienen HDE canónica en KB con la misma data + más contexto. Duplicar como spec degrada el corpus.
+- **Recuperar `codigos-individuales-gql.txt`** como "spec de SKU". ❌ Rechazado: SKU/EAN codes no son spec técnica; si se necesitan, viven mejor en un catálogo de productos / ERP, no en KB Genteca specs.
+- **Mejorar la heurística de clasificación** del pipeline para que detecte automáticamente label fragments por content pattern (no solo filename tokens). ⚠ Identificado como mejora futura — el script de validación 2026-05-12 muestra que filename heuristics (regex sobre `-etq-`, `-lab-`, `-cod-`, etc.) capturan solo 22/29 fragments; los 7 restantes (gsmre*, codigos-individuales, etiqueta-de-circuito, gd-bc-*, 20240528-grf-v20, gd-inj-*) requieren content-based detection. Candidato a refinamiento de `pendrive_pipeline.py` si se planea otro batch.
+
+**Implicaciones:**
+
+- `04-system/06-logs/skipped_otros.txt` queda como evidencia auditada de los 33 paths excluidos.
+- Confirma que el filtro `ya-en-kb` del pipeline original funcionó correctamente (cazó 4 duplicados verdaderos sin falsos negativos en este subset).
+- Heurística operativa derivada: para próximos pipelines, archivos < 500 chars con tokens de etiqueta/box/cod/SKU/inj/promo en filename O content pattern matching "PROTECTOR DE VOLTAJE / TOLERANCE / DESIGNER / FILE: / SCALE:" son label fragments — saltar.
+
+**Estado:** Cerrado 2026-05-12. Item #4 del NIGHT_RECOVERY_SUMMARY_2026-05-10.md resuelto. Items #2, #3, #4 cerrados; queda #5 (limpieza histórica `progress.json errors[]`) pendiente Owner.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
