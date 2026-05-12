@@ -107,7 +107,19 @@ Cualquier excepción nueva requiere entrada en `DECISIONS.md`.]
 [Pasos numerados de cómo opera. Cargas de contexto descritas con rutas
 relativas-al-repo (`04-system/01-config/CLAUDE_core.md`), nunca con paths
 OS-específicos. Si el agente tiene sub-protocolos especiales (ej.
-escalación), van como §6.1, §6.2, etc.]
+escalación), van como §6.1, §6.2, etc.
+
+**Meta-regla index-first (desde 2026-05-12):** todo agente que opera
+sobre KB, catálogos o índices estructurados debe **consultar primero
+el archivo de índice correspondiente** (`_index-*.md`,
+`_catalog-*.md`, `_roster.md`, etc.) antes de hacer Glob/Grep masivo o
+listings de directorio. El índice es summary curado por su mantenedor
+y refleja el estado canónico; búsquedas ad-hoc deben ser excepción, no
+norma. Ejemplos: Vera consulta `_index-specs.md` antes de Read
+masivo; Aurelio consulta SI-1 (catálogo de Sira) antes de proponer
+piezas reciclables; Bruna consulta BR-2 acumulativo antes de buscar
+precedentes en BR-5. Razón: eficiencia de tokens + alineación con SSOT
+indexado.]
 
 ## 7. Output Format
 
@@ -133,7 +145,17 @@ sin abrir el deliverable completo.]
 
 [Solo si aplica: protocolos no-triviales reutilizables — como el blocked-
 site protocol de Paxs, el canonical conceptual template de Michelina, o
-templates de output como RESULTADO_RAUL.]
+templates de output como RESULTADO_RAUL.
+
+**Chunking convention (desde 2026-05-12):** si el contenido de §11
+supera ~50-80 líneas, **mover a archivo companion** `<agent>_templates.md`
+en el mismo directorio. El §11 del conceptual principal queda como
+**pointer breve** (3-5 líneas) que describe qué hay en el companion y
+cuándo cargarlo. Razón: templates son load-on-demand; mantener el
+conceptual principal (§1-§10) lo más delgado posible favorece eficiencia
+de tokens en operación normal del agente. Excepción: protocolos críticos
+para operación continua (ej. Phase 3 protocol de InboxBot §11) se
+mantienen inline en el conceptual principal.]
 
 ---
 

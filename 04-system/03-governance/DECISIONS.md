@@ -846,4 +846,110 @@ Imágenes (PNG/JPG/SVG), diagramas técnicos, fotos, screenshots, visualizacione
 
 ---
 
+## 2026-05-12 — Sistema de memoria en 2 tiers (HOT + ARCHIVE) con política de archivado
+
+**Decisión:** estructurar la memoria persistente del sistema /RAUL/ en dos tiers — `MEMORY.md` (HOT, auto-load por conversación) y `MEMORY_ARCHIVE.md` (COLD, on-demand) — con política de archivado prospectiva que mueve entradas inactivas >6 meses al ARCHIVE.
+
+**Contexto y motivación:**
+
+- Estado pre-decisión: `MEMORY.md` único archivo auto-load por conversación. Con 33 entradas activas (mayo 2026) ya ocupa ~2K tokens; con crecimiento natural a 12 meses se proyectaba a ~60-80 entradas (~4-5K tokens auto-load constante).
+- Una porción significativa de esas entradas son **recordatorios de proyectos cerrados** o **patrones validados que ya están internalizados** — siguen siendo referencia útil pero no requieren auto-load en cada sesión.
+- El principio de **economía de tokens** del sistema (ver `CONTEXT_core.md`) presionaba por una solución más granular que "todo o nada".
+- Surgió en sesión de optimización de eficiencia post-Plan-Maestro Modelo A, junto con otras 5 mejoras (chunking de conceptuales largos, index-first pattern, cache-friendly delegation, smart context selection, pruning policy).
+
+**Decisión específica:**
+
+1. **HOT layer (`MEMORY.md`):** auto-load por conversación. Contiene solo entradas tocadas <6 meses o marcadas `always_load: true` en frontmatter.
+2. **COLD layer (`MEMORY_ARCHIVE.md`):** NO auto-load. Raul / agentes lo Read explícitamente cuando una tarea actual requiera contexto histórico (5 triggers documentados en cabecera del archivo).
+3. **Convención frontmatter:** todas las memorias llevan campo `last_touched: YYYY-MM-DD` que se actualiza al recordar/referenciar. Campo `always_load: true` opcional para forzar HOT.
+4. **Política de archivado:** revisión mensual (manual inicialmente; cron después) examina MEMORY.md y mueve bullets de entradas con `last_touched >6 meses` y `always_load != true` al ARCHIVE. Solo se mueve el bullet de índice; el archivo de memoria subyacente queda en su path original.
+5. **Entradas nuevas:** default a HOT (MEMORY.md). El autor puede marcar `always_load: true` si la entrada es referencia operativa constante.
+
+**Alternativas consideradas:**
+
+- **Status quo (un solo MEMORY.md sin tiers).** ❌ Rechazado: crecimiento natural penaliza eficiencia de tokens a 12+ meses; eventualmente forzaría auditorías masivas en lugar de mantenimiento continuo.
+- **Eliminación periódica de memorias viejas.** ❌ Rechazado: pierde auditabilidad. Una memoria de hace 12 meses puede ser exactamente lo que se necesita cuando un proyecto se reactiva.
+- **3 tiers (HOT / WARM / COLD).** ❌ Rechazado por ahora: complejidad incremental sin payoff claro vs. 2 tiers. Si emerge necesidad real con uso, se evalúa.
+- **Sub-archivos por dominio (`MEMORY_genteca.md`, `MEMORY_plenus.md`, etc.).** ❌ Rechazado: el dominio ya se filtra por contenido de la memoria; añadir capa de archivos por dominio fragmenta sin ganar mucho. Algunas memorias son cross-dominio (feedback, reference).
+
+**Implicaciones:**
+
+- **Setup inicial 2026-05-12:** MEMORY_ARCHIVE.md creado vacío. Todas las 33 entradas actuales son <6 meses, todas quedan en HOT. Primer ciclo real de archivado: ~2026-10-12 (cuando entradas más viejas de 2026-04 cumplan 6 meses inactivas).
+- **Memorias retroactivas:** NO se les asigna `last_touched` masivamente. La convención aplica forward; entradas existentes asumen `last_touched ≈ creation_date` hasta el próximo update natural.
+- **Agentes que consumen memoria:** Raul, Aurelio, Sira y otros que referencien memoria deben actualizar `last_touched` cuando referencien una entrada (responsabilidad behavioral; no automatizado todavía).
+- **Documentación:** cabecera de `MEMORY.md` + `MEMORY_ARCHIVE.md` explican el sistema self-documenting. `CONTEXT_core.md` actualizado con párrafo "Economía de tokens" extendido.
+- **Script de archivado:** pendiente. Inicialmente manual; cuando se valide la política con 1-2 ciclos, se automatiza.
+- **Ganancia esperada:** ~30-50% reducción en tokens auto-loaded por conversación a 12+ meses.
+
+**Estado:** Activa desde 2026-05-12. Implementación inicial (creación de archivos + documentación) completada. Primer ciclo de revisión de archivado planificado para 2026-10-12 o cuando MEMORY.md exceda ~50 entradas.
+
+---
+
+## 2026-05-12 — Conceptuales largos chunked + meta-reglas de eficiencia operativa
+
+**Decisión:** aplicar 5 mejoras operativas de eficiencia de tokens al sistema /RAUL/, formalizadas en este DECISIONS más actualizaciones en `_template-conceptual.md` y `raul.md` (conceptual del orchestrator):
+
+1. **Chunking de conceptuales >500 líneas:** §11 (Special Protocols / Templates / Tareas típicas) extraída a archivos companion `<agent>_templates.md` cuando §11 supere ~50-80 líneas. Aplica a 6 agentes (aurelio, sira, vael, oz, solenne, bruna). Conceptual principal mantiene pointer breve en §11.
+2. **Meta-regla index-first** añadida a `_template-conceptual.md` §6: todos los agentes consultan índices estructurados (`_index-*.md`, `_catalog-*.md`, `_roster.md`) antes de Glob/Grep masivo o listings.
+3. **Triage conservador de Raul** (§6.4 nueva en `raul.md`): 5 criterios para skip subagent invocation en casos triviales sin violar la cardinal rule.
+4. **Cache-friendly delegation pattern** (§6.5 nueva en `raul.md`): agrupar invocaciones contiguas del mismo subagente dentro de la ventana 5min del prompt cache.
+5. **Excepción a chunking:** InboxBot §11 (Phase 3 decision-response protocol) se mantiene inline en el conceptual principal porque es protocolo operativo crítico, no "templates opcionales".
+
+**Contexto y motivación:**
+
+Surge en sesión de optimización 2026-05-12 post-cierre del Plan Maestro Modelo A. El sistema está completo arquitectónicamente; las mejoras buscan reducir consumo de tokens en operación cotidiana sin perder funcionalidad. Acompañan a la decisión paralela de **2-tier memory system** (entrada del mismo día arriba).
+
+Las mejoras combinadas son condición previa para extraer un **starter-kit clonable** (sesión siguiente) — el repo template debe heredar la versión más eficiente del sistema, no la versión sin optimizar.
+
+**Decisión específica por mejora:**
+
+### Chunking (mejora #1)
+
+Patrón canónico documentado en `_template-conceptual.md` §11:
+
+- **Si §11 contiene >50-80 líneas de templates / casos típicos / protocolos reusables:** extraer a `<agent>_templates.md` en mismo directorio. §11 del conceptual principal queda como pointer 3-5 líneas que describe qué hay y cuándo cargar.
+- **Excepción:** protocolos operativos críticos para ejecución continua (ej. InboxBot §11 Phase 3 protocol) permanecen inline.
+
+Aplicación 2026-05-12: aurelio (519→472+67), sira (523→428+115), vael (729→649+100), oz (736→406+350), solenne (771→664+127), bruna (812→697+136). Ahorro estimado ~70K tokens distribuidos cuando los agentes operan sin necesidad de §11.
+
+### Meta-regla index-first (mejora #2)
+
+Documentada en `_template-conceptual.md` §6. Aplica a todo agente que opera sobre KB/catálogos/índices. Ejemplos válidos ya implementados:
+- Vera consulta `_index-specs.md` antes de Read masivo
+- Aurelio consulta SI-1 (catálogo Sira) antes de propuestas de reciclaje
+- Bruna consulta BR-2 acumulativo antes de buscar precedentes BR-5
+
+### Triage conservador de Raul (mejora #3)
+
+Documentado en `raul.md` §6.4. 5 criterios:
+1. Pregunta trivial sobre el sistema → responder directo, no delegar
+2. Respuesta ya en MEMORY.md HOT → contestar referenciando, no invocar
+3. Contexto histórico >6 meses → leer MEMORY_ARCHIVE.md antes de delegar
+4. Tarea de dominio → carga quirúrgica selectiva (solo `CLAUDE_<dominio>.md` cuando el dominio es claro)
+5. Todo lo demás → delegar normalmente (cardinal rule prevalece)
+
+**Conservador, no agresivo:** cuando hay duda, delegar. El triage no rompe la cardinal rule "Raul nunca ejecuta" — solo evita invocaciones innecesarias cuando la respuesta es genuinamente trivial.
+
+### Cache-friendly delegation (mejora #4)
+
+Documentado en `raul.md` §6.5. Cuando una tarea Owner se descompone en N sub-tareas que tocan el mismo agente, agrupar las invocaciones contiguamente en lugar de intercalar con otros agentes. Excepción: dependencias secuenciales se respetan.
+
+**Alternativas consideradas:**
+
+- **No chunking — mantener todos los §11 inline.** ❌ Rechazado: penaliza eficiencia de tokens en operación cotidiana cuando templates no se necesitan. Conceptuales como Bruna (812) y Solenne (771) cargan ~60K tokens cada invocación cuando lo típico es operación que no requiere ver casos típicos / workflows.
+- **Triage agresivo de Raul (intentar resolver primero, delegar solo si no puede).** ❌ Rechazado: riesgo alto de drift hacia ejecución directa, viola la cardinal rule del sistema.
+- **No documentar cache-friendly pattern.** ❌ Rechazado: Anthropic's prompt cache existe y es 50-70% más barato; ignorarlo es dejar valor en la mesa.
+
+**Implicaciones:**
+
+- **Para agentes consumidores de conceptuales chunked:** Raul (o cualquier orchestrator) carga el conceptual principal por default. Solo si el task requiere `<agent>_templates.md`, lo carga explícitamente.
+- **Para sesiones existentes activas:** sin impacto. Las sesiones continuas con cache caliente no notan diferencia hasta refresh.
+- **Para Plan Maestro Modelo A:** completamente compatible. Modelo A define separación conceptual/runtime; este chunking extiende esa separación dentro del conceptual mismo (core §1-§10 vs templates §11).
+- **Para `_template-conceptual.md`:** versión efectiva v2 (con chunking rule + index-first rule). Futuros agentes nuevos siguen el patrón.
+- **Para starter-kit:** todas estas mejoras viajan al kit extraído. Cualquier persona que clone el sistema arranca ya en la versión eficiente.
+
+**Estado:** Activa desde 2026-05-12. Implementación completa: 6 conceptuales chunked, `_template-conceptual.md` actualizado con 2 meta-reglas, `raul.md` actualizado con §6.4 + §6.5. Próxima evaluación: cuando se haya acumulado uso para medir ganancia real vs estimada.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

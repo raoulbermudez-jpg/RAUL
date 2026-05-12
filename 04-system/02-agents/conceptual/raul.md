@@ -108,6 +108,52 @@ responsabilidad.
 Si ningún agente cubre la necesidad → **Michelina primero, siempre**.
 Nunca saltarse este paso.
 
+### 6.4 Triage conservador antes de delegar (eficiencia de tokens)
+
+Antes de invocar un subagente, aplicar este triage:
+
+1. **¿Es pregunta trivial sobre el sistema mismo?** (Ej: "¿qué agentes
+   hay?", "¿qué hizo InboxBot anoche?", "¿dónde está X?", "¿cómo
+   funciona el sistema de memoria?"). → Responder directo desde
+   contexto core + MEMORY.md HOT + read de archivos meta del sistema.
+   **No invocar subagente.**
+2. **¿La respuesta ya está en MEMORY.md HOT?** → Si sí, contestar
+   referenciando la entrada de memoria. Solo invocar subagente si la
+   tarea requiere producir output nuevo (no solo recordar).
+3. **¿La pregunta requiere contexto histórico (>6 meses)?** → Leer
+   `MEMORY_ARCHIVE.md` antes de delegar. La búsqueda en ARCHIVE puede
+   ahorrar invocaciones innecesarias.
+4. **¿La pregunta es de dominio?** → Aplicar carga quirúrgica de §6.1
+   (solo cargar `CLAUDE_<dominio>.md` si el dominio es claro;
+   `OWNER_PROFILE.md` solo si voy a escribir en su voz).
+5. **Para todo lo demás → delegar normalmente.** Cardinal rule
+   prevalece: cualquier ejecución (research, writing, design, etc.) va
+   al subagente apropiado.
+
+Este triage es **conservador, no agresivo**: cuando hay duda, delegar.
+El triage evita invocaciones cuando la respuesta es genuinamente
+trivial o ya está cacheada en memoria. Para tareas de dominio reales,
+la cardinal rule "Raul nunca ejecuta" prevalece sin excepción.
+
+### 6.5 Cache-friendly delegation pattern
+
+El prompt cache de Anthropic tiene TTL ~5 min. Workflows con
+invocaciones del mismo agente dentro de esa ventana ahorran 50-70% en
+tokens de re-carga de runtime adapter.
+
+**Regla operativa:** cuando una tarea Owner se descompone en N
+sub-tareas que tocan el mismo agente, **agrupar las invocaciones
+contiguamente** en lugar de intercalar con otros agentes. Ejemplo:
+
+- ✅ **Bueno:** Vera (3 consultas técnicas seguidas) → Orlan (2
+  benchmarks seguidos) → Vael (1 framework)
+- ❌ **Malo:** Vera → Orlan → Vera → Orlan → Vael (alterna y rompe
+  cache de cada uno)
+
+Excepción: cuando las sub-tareas tienen dependencia secuencial (output
+de Vera necesario para Orlan), respetar la dependencia. La regla
+aplica solo cuando las sub-tareas son independientes.
+
 ## 7. Output Format
 
 ### 7.1 Para invocación vía InboxBot

@@ -38,7 +38,7 @@ Principios clave:
 - **LLM Wiki**: el objetivo no es solo buscar en PDFs, sino compilar conocimiento en `.md` estructurados dentro de `02-knowledge-base/`. El material de `01-inbox/03-raw-sources/` se destila a artículos y SOPs que persisten.
 - **App-less**: el sistema de archivos es la “base de datos”. No se depende de herramientas tipo Notion/Obsidian como verdad principal.
 - **Contexto por dominio**: para tareas específicas de un dominio, se puede complementar este contexto core con archivos `CLAUDE_<dominio>.md` / `CONTEXT_<dominio>.md` y con los `.md` relevantes de la wiki de ese dominio.
-- **Economía de tokens**: usar este contexto core como base, y añadir solo el contexto de dominio y documentos estrictamente necesarios para cada tarea.
+- **Economía de tokens**: usar este contexto core como base, y añadir solo el contexto de dominio y documentos estrictamente necesarios para cada tarea. La memoria persistente del sistema opera en **2 tiers** (desde 2026-05-12): **`MEMORY.md`** (HOT, auto-load por conversación, entradas tocadas <6 meses o marcadas `always_load: true`) y **`MEMORY_ARCHIVE.md`** (COLD, on-demand, leer explícitamente solo cuando una tarea actual requiera contexto histórico). Política de archivado mensual mueve entradas HOT inactivas → ARCHIVE. Memorias llevan frontmatter `last_touched: YYYY-MM-DD` que se actualiza al recordar/referenciar.
 - **Mapa operativo explícito**: para orientarse rápido, usar los índices en `04-system/05-indexes/`:
   - `domains-index.md` para ver dominios activos y su estado.
   - `projects-index.md` para ver proyectos activos y su etapa.
