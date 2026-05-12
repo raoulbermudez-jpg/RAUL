@@ -134,6 +134,12 @@ b64_*.txt
 pendrive_pipeline_stdout.txt
 fase4_progress.json
 
+# Backups de trabajo generados por scripts de recovery / split (ruido, no estado)
+04-system/06-logs/*.pre_*_bak
+
+# Scratch dir de scripts piloto / OCR / tessdata local (no es estado del sistema)
+04-system/07-temp/
+
 # ---------------------------
 # 7) Apéndices privados de metodología
 # ---------------------------
