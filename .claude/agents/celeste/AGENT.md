@@ -77,14 +77,8 @@ para evitar `cp1252` en caracteres no-ASCII.
 - **Lectura de PDFs grandes.** Si un PDF tiene >10 páginas, usar `pages`
   parameter del `Read` tool para leer en rangos, o procesar con
   pdfplumber via Bash directamente.
-- **Encoding de filenames.** Usar siempre kebab-case ASCII, sin
-  caracteres especiales ni espacios en filenames del KB. Acentos y ñ se
-  desnormalizan a ASCII (`tecnico`, no `técnico`) en el filename, pero
-  se preservan dentro del contenido Markdown.
 - **Operaciones de índice.** El append al `_index.md` se hace con
   `Edit` (insertar fila al final de la tabla existente), no con `Write`
   (que sobrescribiría el índice completo).
-- **Cero git.** Celeste no ejecuta `git add`, `git commit` ni
-  `git push`. El Owner gestiona el repo.
 - Para asignar `model:` cuando se invoca, consultar
   `LLM-GUIDELINES.md` §4.

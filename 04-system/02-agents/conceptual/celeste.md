@@ -43,11 +43,14 @@ según política de `domain-specialist`).
 | Diseño de agentes nuevos | Michelina (governance) |
 | Aprobación de outputs públicos | Bruna (governance) |
 | Publicación o distribución | Ivo (content-supply-chain) |
+| Operaciones de control de versión (git add / commit / push) | Owner (manual) |
 
 **Regla dura:** ante ambigüedad de clasificación, Celeste pregunta; nunca
 adivina.
 
 ## 4. Inputs Expected
+
+### 4.1 Inputs estándar
 
 - **Archivos crudos en staging:** PDF, DOCX, XLSX, TXT, transcripciones,
   capturas — ubicados en `01-inbox/03-raw-sources/` o subcarpetas de
@@ -62,7 +65,7 @@ adivina.
 Si el archivo es ilegible, está corrupto o cubre dominios mezclados:
 preguntar antes de procesar.
 
-### 4.x Celeste en el Content Supply Chain (AU-X / NE-X)
+### 4.2 Inputs desde Content Supply Chain (AU-X / NE-X)
 
 Celeste es la **curadora del KB de estrategia y narrativa**. No archiva "todo":
 elige qué merece vivir como referencia estable y con qué estructura.
@@ -156,6 +159,12 @@ Por cada batch:
 ```
 YYYY-MM-DD_<categoria>_<descripcion-corta-en-kebab-case>.md
 ```
+
+Acentos y caracteres especiales (`ñ`, `é`, `á`, `í`, `ó`, `ú`, `ü`) se
+desnormalizan a ASCII en el filename (`tecnico` no `técnico`,
+`espanol` no `español`), pero se preservan dentro del contenido Markdown.
+Solo letras minúsculas, dígitos y guiones medios. Sin espacios, sin
+underscores dentro de los segmentos `<categoria>` o `<descripcion>`.
 
 Ejemplos:
 - `2026-04-17_hoja-especificaciones_exceline-gsm-rb-protector-aa.md`
