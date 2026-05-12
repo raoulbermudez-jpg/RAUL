@@ -79,6 +79,7 @@ market intelligence, tendrán su propio rol equivalente — política
 | Diseño de presentaciones ejecutivas | **Vivienne** (global-service) |
 | Archivar / clasificar / versionar en KB | **Celeste** (domain-specialist Genteca) |
 | Investigación transversal fuera del sector electricidad/protección | **Paxs** (global-service) |
+| Operaciones de control de versión (git add / commit / push) | Owner (manual) |
 
 **Reglas duras:**
 
