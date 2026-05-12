@@ -1,19 +1,24 @@
 # ROUTING GUIDE — Sistema Raul
-**Versión:** 1.0 — post Grupos A–D
-**Última actualización:** 2026-04-20
-**Fuente:** CLAUDE.md · AGENT.md de todos los agentes · CHANGELOG_GrupoA/B/C/D.md
+**Versión:** 1.1 — post Modelo A migration (Paso 6 reconciliación nomenclatura)
+**Última actualización:** 2026-05-12
+**Fuente:** CLAUDE.md · `_taxonomy.md` · conceptuales de agentes en `04-system/02-agents/conceptual/`
 
 ---
 
 ## 1. Principios Generales de Routing
 
-### Arquitectura de capas
+### Arquitectura por clases nominales
 
-| Capa | Quién | Alcance |
+El equipo opera bajo una **taxonomía nominal de 6 clases** (definida en `04-system/02-agents/_taxonomy.md`). Esta guía rutea según esas clases.
+
+| Clase | Quién | Alcance |
 |------|-------|---------|
-| **Capa 1 — Orquestación** | Raul | Singleton. Recibe toda petición del Owner. Nunca ejecuta. Enruta, registra, entrega. |
-| **Capa 2 — Servicios Globales** | Michelina, Paxs, Vivienne | Transversales a todos los dominios (Genteca, Finca, Plenus, futuros). |
-| **Capa 3 — Especialistas Genteca** | Vera, Orlan, Solenne, Vael, Celeste, Renzo, Oz | Anclados a Genteca. Se clonan — no se reutilizan — para otros dominios. |
+| **orchestration** *(singleton)* | Raul | Único punto de entrada. Recibe toda petición del Owner. Nunca ejecuta. Enruta, registra, entrega. |
+| **governance** | Michelina, Bruna *(también content-supply-chain)* | Gobernanza de composición del equipo (Michelina) y de outputs públicos (Bruna). Gates obligatorios. |
+| **global-service** | Paxs, Vivienne | Servicios transversales invocables on-demand desde cualquier dominio. |
+| **content-supply-chain** | Aurelio, Nerea, Atlas, Luma, Vela, Orfeo, Bruna, Ivo, Sira | Pipeline secuencial transversal (Estrategia → Producción → Gobernanza → Distribución → Memoria). |
+| **domain-specialist** — Genteca | Vera, Orlan, Solenne, Vael, Celeste, Renzo, Oz | Anclados a Genteca. Se clonan — no se reutilizan — para otros dominios. |
+| **execution-utility** | InboxBot | Infraestructura mecánica reproducible. Invocada vía trigger automático. |
 
 ### Regla cardinal
 **Raul nunca ejecuta.** Si la respuesta a una petición requiere investigar, escribir, diseñar o editar — eso lo hace un agente. Raul enruta, consolida y entrega.
@@ -26,7 +31,7 @@ Antes de delegar, Raul se hace estas preguntas en orden:
 2. **¿Es investigación pura sin dominio específico?** → Paxs.
 3. **¿Es una presentación ejecutiva?** → Vivienne (global).
 4. **¿Cruza más de un dominio?** → Raul descompone en sub-tareas por dominio; Vivienne integra si hay deck final.
-5. **¿A qué dominio pertenece la tarea?** → Enrutar al especialista de ese dominio (Capa 3).
+5. **¿A qué dominio pertenece la tarea?** → Enrutar al `domain-specialist` de ese dominio.
 6. **¿Ningún agente la cubre?** → Michelina contrata antes de continuar.
 
 ---
@@ -35,7 +40,7 @@ Antes de delegar, Raul se hace estas preguntas en orden:
 
 ### 2A — Casos de Contenido y Comunicación
 
-*Para contenido multimodal específico (video/audio/visuales), ver §6 Content Supply Chain (Capas 2–5).*
+*Para contenido multimodal específico (video/audio/visuales), ver §6 Content Supply Chain (etapas Estrategia → Producción → Gobernanza → Distribución → Memoria).*
 
 | Petición del Owner | Dominio | Agente principal | Cadena / Notas |
 |---|---|---|---|
@@ -181,7 +186,7 @@ Raul
 |---------|---------|
 | Raul | Brief de necesidad para Michelina (qué falta, qué dominio, ejemplos de tareas) |
 | Paxs | Perfil profesional estructurado del rol real |
-| Michelina | AGENT.md completo en la ruta correcta de Capa 2 o Capa 3 |
+| Michelina | AGENT.md completo en la ruta correcta según clase (`governance` / `global-service` / `content-supply-chain` / `domain-specialist` / `execution-utility`) |
 
 ---
 
@@ -293,7 +298,7 @@ Solenne
 
 ---
 
-## 6. Content Supply Chain (Capas 2–5)
+## 6. Content Supply Chain (etapas Estrategia → Producción → Gobernanza → Distribución → Memoria)
 
 ### 6.0 Macro-pipeline oficial CSC
 
@@ -362,21 +367,21 @@ Cuando trabajes con contenido (texto, audio, video, visuales) usa esta tabla com
 | 10. Necesito saber qué cadena base aplica (A/B/C/D) | Consultar `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` |
 | 11. Duda transversal, conflicto entre capas o decisión de Owner | Raul (toma la decisión, ajusta plan con Aurelio y/o lineamientos con Vael y dominio correspondiente) |
 
-### Reglas operativas de cambio (Capa 2–5)
+### Reglas operativas de cambio en el CSC
 
 1. **Pieza ya publicada con error**
    - Ivo detecta o recibe el reporte.
    - Bruna re-revisa la pieza y decide:
-     - despublicar inmediato (riesgo alto) y devolver a Nerea/Capa 3, o
+     - despublicar inmediato (riesgo alto) y devolver a Nerea / agentes de Producción CSC, o
      - corregir y mantener activa.
-   - Nerea/Capa 3 corrigen según el caso.
+   - Nerea / agentes de Producción CSC corrigen según el caso.
    - Bruna aprueba la versión corregida.
    - Ivo re-publica la versión corregida.
    - Sira versiona (v1 → v2) y actualiza catálogo.
 
 2. **Guion cambia a mitad de producción**
    - Nerea hace re-baseline del guion.
-   - Capa 3 (Orfeo/Vela/Luma/Atlas) se reinicia sobre el guion nuevo.
+   - Los agentes de la etapa de Producción CSC (Orfeo / Vela / Luma / Atlas) se reinician sobre el guion nuevo.
    - Si el cambio es sustantivo, Bruna revisa como si fuera pieza nueva.
 
 3. **Canal rechaza formato ya exportado (specs)**

@@ -3,15 +3,15 @@
 **Versión:** 1.0
 **Última actualización:** 2026-04-21
 **Alcance:** Fichas de los 9 agentes transversales de la content supply chain.
-**Documento hermano:** `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` (capas, cadenas y gates).
+**Documento hermano:** `04-system/02-agents/content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md` (etapas, cadenas y gates).
 
 Estas fichas definen el scope operativo de cada agente. Son la base para redactar los `AGENT.md` reales cuando Michelina los contrate.
 
 ---
 
-## Capa 2 — Estrategia de contenido (Aurelio + Nerea)
+## Estrategia (Aurelio + Nerea)
 
-La capa de **Estrategia de contenido** del CSC está cubierta por una
+La etapa de **Estrategia de contenido** del CSC está cubierta por una
 dupla nominal y transversal:
 
 - **Aurelio — Content Strategist (AU-1..AU-5).** Traduce objetivos
@@ -326,13 +326,13 @@ Revisa cada pieza antes de su salida pública. Verifica consistencia de marca, p
 6. Escalar al Owner cuando el riesgo supere su umbral de decisión autónoma.
 
 ### Qué NO hace
-- No produce contenido → ningún agente de Capa 3.
+- No produce contenido → ningún agente de Producción CSC.
 - No define estrategia → **Aurelio (AU-X)**.
 - No define messaging ni voz de marca → **Vael**.
 - No publica → **Ivo**.
 
 ### Inputs
-- Pieza final entregada por Capa 3 (Atlas / Luma / Vela / Orfeo).
+- Pieza final entregada por agentes de Producción CSC (Atlas / Luma / Vela / Orfeo).
 - Brand manual y messaging framework (**Vael**).
 - Claims técnicos del dominio (**Vera / Orlan**).
 - Lineamientos legales aplicables por canal o geografía.

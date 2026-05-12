@@ -176,7 +176,7 @@ Esta carpeta emergió en la práctica como la capa de memoria editorial del sist
 |---|---|---|---|
 | `wiki/` | Artículos compilados y curados sobre el dominio (fundamentos, guías, patrones, lecciones aprendidas) | Paxs + especialistas del dominio compilando desde `01-inbox/03-raw-sources/` y proyectos cerrados | Todos los agentes como contexto persistente |
 | `specs/` | Hojas de especificación de producto, datasheets, catálogos comerciales, manuales | Celeste (intake de raw → formato estable) | Vera/Orlan/Oz y agentes que necesitan datos exactos |
-| `assets/` | Material visual específico del dominio (fotos, diagramas, mockups, iconografía de marca) | Dominio (Ozwaldo en Genteca, equivalentes en otros) | Capa 3 de producción (Atlas, Luma) y comunicación |
+| `assets/` | Material visual específico del dominio (fotos, diagramas, mockups, iconografía de marca) | Dominio (Ozwaldo en Genteca, equivalentes en otros) | Agentes `content-supply-chain` de Producción (Atlas, Luma) y comunicación |
 
 Un dominio puede tener solo `wiki/` (ej. marca personal sin specs), `wiki/ + assets/` (ej. Finca), o los tres (Genteca, Plenus, Teca).
 
