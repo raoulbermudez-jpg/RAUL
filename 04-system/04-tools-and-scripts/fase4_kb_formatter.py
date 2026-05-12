@@ -114,6 +114,8 @@ SYSTEM = """Eres un procesador de documentos técnicos para la Knowledge Base de
 
 Recibirás texto extraído de un documento de la línea Exceline, Exceline Profesional o Genius.
 
+Si el texto comienza con líneas entre corchetes (ej. [OCR_TESSERACT...], [SOURCE_PDF: ...], [VERSION_STATUS: vigente|historica]), son metadatos del extractor — NO los incluyas en el body, pero usa [VERSION_STATUS] para el frontmatter.
+
 Genera un archivo Markdown con este formato EXACTO:
 
 ---
@@ -123,6 +125,7 @@ source: "[nombre archivo original]"
 product_line: "[línea indicada]"
 document_type: "[hoja-especificaciones|catalogo|manual|nota-aplicacion|guia-programacion|otro]"
 product_code: "[código del producto, ej: GSM-LPM, GST-RR, o N/A]"
+version_status: "[vigente|historica — usar 'historica' si el header dice VERSION_STATUS: historica; en cualquier otro caso 'vigente']"
 date_processed: "[FECHA_HOY]"
 ---
 
@@ -132,6 +135,7 @@ date_processed: "[FECHA_HOY]"
 
 Reglas:
 - Elimina artefactos de OCR obvios: letras sueltas verticales, texto espejado, coordenadas de diseño gráfico
+- Elimina marcadores `--- PAGE N ---` del body
 - Mantén TODA la información técnica: características, especificaciones, normas, rangos, tablas
 - Usa headers ## para secciones si el original las tiene
 - NO inventes ni agregues información que no esté en el texto fuente
@@ -139,7 +143,7 @@ Reglas:
 
 
 def build_user_msg(raw: str, linea: str, today: str) -> str:
-    return f"LINEA: {LINEA_LABEL.get(linea, linea)}\nFECHA_HOY: {today}\n\n{raw[:6000]}"
+    return f"LINEA: {LINEA_LABEL.get(linea, linea)}\nFECHA_HOY: {today}\n\n{raw[:50000]}"
 
 
 # ── Procesar un archivo ────────────────────────────────────────────────────────
@@ -163,7 +167,7 @@ def process_file(client, staging_path: Path, linea: str, today: str) -> tuple[st
     msg = build_user_msg(raw, linea, today)
     response = client.messages.create(
         model=MODEL,
-        max_tokens=2048,
+        max_tokens=8192,
         system=SYSTEM,
         messages=[{"role": "user", "content": msg}],
     )

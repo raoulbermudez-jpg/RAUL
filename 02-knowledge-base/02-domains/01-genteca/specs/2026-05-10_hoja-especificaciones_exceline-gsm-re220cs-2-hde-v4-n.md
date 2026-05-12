@@ -1,0 +1,115 @@
+---
+title: "Protector de Voltaje para Aires Acondicionados y Refrigeradores GSM-RE220CS"
+type: Technical
+source: "GSM-RE220CS-2_HDE_V4_N.pdf"
+product_line: "Exceline"
+document_type: "hoja-especificaciones"
+product_code: "GSM-RE220CS"
+version_status: "historica"
+date_processed: "2026-05-10"
+---
+
+# Protector de Voltaje para Aires Acondicionados y Refrigeradores GSM-RE220CS
+
+## Descripción del Producto
+
+El protector de voltaje para Aires Acondicionados y Refrigeradores GSM-RE220CS de EXCELINE ofrece protección contra alto y bajo voltaje, parpadeos (Flicks) y apagones. Ideal para proteger equipos de aire acondicionado de ventana, vitrinas comerciales, enfriadores e hidrojets en 220 V~. El GSM-RE220CS cuenta con un temporizador de conexión que permite una conexión rápida y segura del equipo protegido al garantizar que el tiempo de recuperación que necesita para funcionar correctamente haya transcurrido.
+
+Esta protección se logra mediante la medición constante y precisa del voltaje en la línea eléctrica, desconectando la carga tan pronto se detecte una variación de voltaje que ponga en riesgo al equipo protegido. Si la carga es desconectada por una irregularidad en el suministro eléctrico, el GSM-RE220CS solo reconectará después de que el valor del voltaje regrese al rango adecuado de trabajo.
+
+El GSM-RE220CS posee una toma para conectar la carga a proteger en su parte frontal así como un interruptor I/O (on/off) para encenderlo o apagarlo; además, cuenta con indicadores luminosos de ciclo de espera/voltaje normal, sobre voltaje, y bajo voltaje.
+
+La parte posterior está provista de un enchufe para conectar el protector al suministro. Estas prestaciones permiten una facilidad de instalación inigualable.
+
+Diseñado y verificado bajo las normas IEC de compatibilidad electromagnética y construido con materiales de altísima calidad, el GSM-RE220CS es la mejor y más confiable alternativa de protección para cualquier aplicación profesional.
+
+## Características Generales
+
+- Protección contra sobre voltaje y bajo voltaje
+- Protección contra parpadeos (Flicks)
+- Protección contra apagones y ciclado corto
+- Temporizador de conexión de 3 minutos
+- LEDs indicadores de falla y estado del protector: SOBRE VOLTAJE, BAJO VOLTAJE, CICLO DE ESPERA, VOLTAJE NORMAL e INESTABILIDAD
+- Interruptor I/O (on/off)
+- Enchufable
+- Tamaño compacto
+- Carcasa en material plástico más robusto
+- Adaptador para tomas chinas (GB1002) de 10A y 16A
+
+## Normas Aplicadas
+
+### Diseñado según Norma:
+- Nema 5-15
+- Nema 6-15 RA
+- COVENIN 3445
+- COVENIN 731
+- GB 2099
+- GB 1002
+
+### Verificado según Normas:
+- IEC 1000-4-2 Descargas Electrostáticas
+- IEC 1000-4-3 Campos de Radiofrecuencia
+- IEC 1000-4-4 Transientes Eléctricas Rápidas
+- IEC 1000-4-5 Inmunidad a Picos de Alta Energía
+- IEC 60083 Estándar para receptáculos y tomas para equipos domésticos, países miembros de IEC
+
+## Funciones Generales y Rango de Aplicaciones
+
+- **Sobre Voltaje**: Fijo (ver especificaciones)
+- **Bajo Voltaje**: Fijo (ver especificaciones)
+- **Temporizado de Conexión**: Fijo 3 min (mínimo tiempo apagado) con sistema aleatorio para evitar que dos o más equipos protegidos arranquen en simultáneo
+- **Protege artefactos de**: 220 V~
+
+## Características Físicas
+
+### Indicadores Frontales
+- Indicador de Voltaje Normal
+- Indicador de Espera
+- Indicador de Sobre Voltaje
+- Indicador de Bajo Voltaje
+- Interruptor ON/OFF
+- Receptáculo para el equipo
+
+### Vistas y Medidas
+- Medidas: 120 x 80 x 38,2 mm
+- Peso: 0,121 kg (0,27 lb)
+
+## Información de Seguridad
+
+**⚠ ATENCIÓN - REVISE SU ENCHUFE Y TOMACORRIENTE**
+
+Si están flojos o en mal estado se produce una mala conexión y pueden dañar el protector y el equipo doméstico a proteger.
+
+**⚠ ALERTA - RIESGO DE CHOQUE ELÉCTRICO**
+
+Antes de una eventual reparación o mantenimiento por parte de personal técnico calificado, se deberá desenchufar el protector y el equipo.
+
+**⚠ ATENCIÓN - PARA SU SEGURIDAD y efectos de la Garantía**
+
+No exceda la capacidad máxima de corriente del protector.
+
+## Especificaciones Técnicas
+
+| Característica | Especificación |
+|---|---|
+| Voltaje nominal | 220 V~ |
+| Voltaje máximo permitido (fijo) | 264 V~ |
+| Voltaje mínimo (fijo) | 170 V~ |
+| Capacidad de salida según modelo | 16k @ 48.000 BTU |
+| Frecuencia de operación | 60 Hz |
+| Temporizado de conexión (después de una falla de voltaje) | 3 min (Mínimo tiempo apagado) |
+| Temperatura de operación | -5 a +55 °C |
+| Humedad relativa | 85 % |
+| Medidas | 120 x 80 x 38,2 mm |
+| Peso | 0,121 Kg (0,27 Ib) |
+| Material de la carcasa | PC 122, UL94V0 |
+
+## Cómo Ordenar
+
+**GSM-RE220CS**
+- 220 V~, Enchufe GB 16 A
+- Carga máxima 16 A
+
+## Nota
+
+Las especificaciones y descripciones mostradas en este documento están sujetas a cambio sin previo aviso.
