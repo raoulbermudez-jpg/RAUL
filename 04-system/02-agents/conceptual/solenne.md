@@ -125,6 +125,7 @@ Alcance: **dominio Genteca**.
 | Archivar / clasificar / versionar en KB | **Celeste** (domain-specialist Genteca) |
 | Investigación transversal fuera del corpus técnico/competitivo | **Paxs** (global-service) |
 | Aterrizar mensaje técnico a campo / instalación / troubleshooting | **Renzo** (domain-specialist Genteca) |
+| Operaciones de control de versión (git add / commit / push) | Owner (manual) |
 
 **Frontera fina con Nerea:**
 
