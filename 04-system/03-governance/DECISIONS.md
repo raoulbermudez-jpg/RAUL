@@ -795,4 +795,55 @@ Validación 2026-05-12:
 
 ---
 
+## 2026-05-12 — Principio "Portable text format as SSOT, binary as runtime-dependent derivative"
+
+**Decisión:** establecer como principio arquitectónico transversal del sistema /RAUL/ que, cuando un agente produce un deliverable con representación binaria o proprietaria (PowerPoint, Word, Google Docs, Excel display, PDF generado), el SSOT canónico es la **representación textual portable más rica que preserve el contenido** (típicamente Markdown estructurado). Los formatos binarios son **derivados runtime-dependientes** generados a demanda según las herramientas disponibles en la plataforma de ejecución.
+
+**Contexto y motivación:**
+
+- Surge durante la migración Modelo A Tier 3 (Vivienne) — su conceptual listaba `.pptx via python-pptx`, Markdown outline y Google Slides-ready en igualdad jerárquica, lo que rompía la separación SSOT/runtime validada en los 5 agentes anteriores (Celeste, Vera, Solenne, Orlan, Renzo).
+- El template canónico (`04-system/02-agents/conceptual/_template-conceptual.md`) ya señala explícitamente que el conceptual debe describir outputs en términos de "capability portable, no de tooling" (ej: *"estructura de slides en formato portable"* en lugar de *".pptx via python-pptx"*).
+- La regla generaliza naturalmente más allá de Vivienne: cualquier futuro agente Plenus/Finca/Teca que produzca Word/Excel/Sheets enfrentaría el mismo problema. Resolverlo una vez evita fricción agente-por-agente.
+- Garantiza el norte arquitectónico vendor-neutral / multi-LLM: cambiar de Claude Code a Gemini / Perplexity / etc. requiere reescribir solo el runtime (~70-80 líneas), no el conceptual entero.
+
+**Aplicación — formatos cubiertos por la regla general:**
+
+| Formato | SSOT canónico | Derivado runtime-dependiente |
+|---|---|---|
+| PowerPoint (.pptx) | Markdown outline (slide-by-slide con title + bullets + speaker note) | `.pptx` via python-pptx (Claude Code) o equivalentes en otros LLMs |
+| Word (.docx) | Markdown estructurado (headings + paragraphs + lists + tables) | `.docx` via python-docx / Pandoc |
+| Google Docs (estado final, no live) | Markdown estructurado | Paste en Google Docs (manual o vía MCP) |
+| PDF generado (reports, application notes, brochures) | Markdown estructurado | `.pdf` via Pandoc / wkhtmltopdf |
+| HTML / web copy | Markdown estructurado | HTML rendering específico del canal |
+
+**Excepciones documentadas — Markdown NO sirve como SSOT en estos casos:**
+
+1. **Excel computacional** (con fórmulas, múltiples hojas, referencias entre celdas, formatos condicionales, charts embebidos) — Markdown tables solo capturan datos visibles, no la topología ni la lógica de cálculo. **SSOT correcto:** CSV (datos crudos) + YAML/JSON estructurado (modelo: hojas, fórmulas, refs, formato). Aplica a deliverables tipo modelo financiero, calculadora de selección, BOM con cálculos. **NO aplica** a Excel meramente display (ej. tabla comparativa exportada): esos siguen la regla general.
+
+2. **PDFs anotados / redlines** (workflow Oz) — el deliverable ES la anotación encima del PDF original; no hay representación textual fiel del resultado visual final. **SSOT correcto:** PDF original + set de anotaciones estructurado (típicamente JSON con coordenadas + texto + author + timestamp). Oz ya opera bajo este patrón con PyMuPDF.
+
+3. **Google Docs / Sheets en colaboración activa** (live, con comentarios pendientes y revisiones en curso) — el formato cloud ES el medio mientras el documento está "vivo" porque captura el contexto colaborativo (quién comentó qué, hilos de discusión, sugerencias pendientes). **SSOT correcto:** el formato cloud mismo MIENTRAS el documento esté en estado activo. Cuando se "cierra" (decisión final tomada, comentarios resueltos, revisión completada), se exporta a Markdown como SSOT persistente y el cloud doc queda como histórico.
+
+**Caso aparte — formatos visuales irreducibles:**
+
+Imágenes (PNG/JPG/SVG), diagramas técnicos, fotos, screenshots, visualizaciones de datos cuando el visual ES el contenido (no una decoración del texto). **No aplican el principio** porque el binario visual no tiene representación textual fiel. **SSOT correcto:** la imagen misma + metadata textual estructurado (caption, source/origen, version, alt-text, fecha de captura, tool de generación). Atlas (carruseles, infografías), Renzo (diagramas eléctricos como input multimodal), Oz (composiciones gráficas) operan bajo este caso.
+
+**Alternativas consideradas:**
+
+- **Mantener triple-output co-igual en cada agente que produzca binarios** (status quo Vivienne). ❌ Rechazado: rompe SSOT, contamina el conceptual con vendor-specific tooling, hace la migración a otros LLMs más costosa, y crea inconsistencia con el resto de la cadena (Solenne→producción ya separa estructura textual de derivativos visuales).
+- **`.pptx` / `.docx` como SSOT con Markdown como derivativo opcional.** ❌ Rechazado: invierte la jerarquía, hace los outputs no diffeable en git, requiere herramientas binarias para auditar contenido, y no es portable entre LLMs.
+- **Documentar la regla en cada conceptual individualmente.** ❌ Rechazado: repetición masiva, alta probabilidad de drift entre agentes, cualquier ajuste futuro requiere migración multi-archivo. Una entrada arquitectónica + un párrafo guía en el template canónico cubre todo el sistema.
+
+**Implicaciones:**
+
+- **Vivienne (migración inminente):** §5 Outputs Produced del conceptual define **un output canónico** = "estructura de slides en formato portable (Markdown estructurado por slide)". `.pptx` y Google Slides quedan como derivados runtime-dependientes mencionados en §5 con marca explícita y mapeados en el runtime (`Bash` + `python-pptx` para Claude Code).
+- **Agentes ya migrados (Celeste, Vera, Solenne, Orlan, Renzo):** sin cambios. Todos producen ya en Markdown nativo; la regla aplica retroactivamente como confirmación, no como acción.
+- **Agentes pendientes de migración (atlas, aurelio, bruna, ivo, luma, nerea, orfeo, oz, sira, vael, vela):** auditoría debe verificar §5 Outputs Produced contra esta regla y aplicar excepciones cuando corresponda (ej. Oz cae bajo excepción #2 con annotated PDFs).
+- **Futuros agentes (Plenus, Finca, Teca, marca-personal):** Michelina aplica esta regla al definir §5 de cualquier nuevo conceptual. Si el rol genuinamente requiere SSOT binario (raro — usualmente cae en una de las 3 excepciones documentadas), debe documentarse como excepción adicional con entrada en este DECISIONS.
+- **Template `_template-conceptual.md`:** se actualiza §5 (Outputs Produced) con párrafo guía que apunta a esta entrada como SSOT del principio.
+
+**Estado:** Activa desde 2026-05-12. Aplicada inmediatamente a Vivienne (migración Modelo A Tier 3). Cualquier excepción nueva (formato no cubierto en las 3 excepciones documentadas) requiere entrada adicional en `DECISIONS.md` antes de implementarse.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

@@ -79,7 +79,28 @@ falta información.]
 
 [Qué entrega — descrito en términos de capability portable, no de tooling.
 Ej: "estructura de slides en formato portable" en lugar de ".pptx via
-python-pptx".]
+python-pptx".
+
+**Principio SSOT vigente** (ver entrada 2026-05-12 en
+`04-system/03-governance/DECISIONS.md` — "Portable text format as SSOT,
+binary as runtime-dependent derivative"): cuando un agente produce un
+deliverable con representación binaria o proprietaria (PowerPoint, Word,
+Google Docs, Excel display, PDF generado, HTML), el SSOT canónico es la
+representación textual portable más rica que preserve el contenido
+(típicamente Markdown estructurado). Los formatos binarios son
+**derivados runtime-dependientes** mencionados en §5 con marca explícita
+y mapeados al tooling concreto en el runtime adapter, no en el
+conceptual.
+
+**3 excepciones documentadas** donde Markdown NO sirve como SSOT:
+(1) Excel computacional con fórmulas → CSV + YAML/JSON estructurado;
+(2) PDFs anotados / redlines → PDF original + JSON de anotaciones;
+(3) Cloud docs en colaboración activa → formato cloud mismo mientras
+está "vivo", export a Markdown al cerrarse. Formatos visuales
+irreducibles (imágenes, diagramas) son **caso aparte** — el binario ES
+el contenido, SSOT = imagen + metadata textual.
+
+Cualquier excepción nueva requiere entrada en `DECISIONS.md`.]
 
 ## 6. Operating Protocol
 
