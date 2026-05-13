@@ -1,9 +1,12 @@
 # Gama — Notoriedad y Precio 2026
 
-**Cliente final:** Gama (cadena Excelsior Gama, Caracas) — PENDIENTE confirmar si es directo o vía agencia / vía Cora.
+**Cliente final:** Gama (cadena Excelsior Gama, Caracas) — directo (equipo de mercadeo + comité ejecutivo).
 **Origen del encargo:** Cora Urrea (cora.urrea@gmail.com) — material colocado en `G:\Mi unidad\RAUL\colaboradores\Genteca\Cora-Urrea\01_De_Cora_Para_Raoul\Notoriedad\` el 2026-05-13.
-**Dominio:** `consultoria-externa/` (nueva — propuesta de Raoul + Claude 2026-05-13, pendiente ratificación).
-**Status:** `00-brief` — esperando respuestas de Cora y de Owner para cerrar plan.
+**Dominio:** `consultoria-externa/` (nuevo, ratificado por Owner 2026-05-13).
+**Encuadre comercial:** **PAGADO** (corrige asunción previa de pro bono). Cora tiene contrato con Gama.
+**Confidencialidad:** **NDA firmado por Cora, extensible a todos los involucrados** (Raoul + Claude). Data tratada como confidencial. No commitear Excel originales ni outputs crudos al repo.
+**Deadline V1:** 2026-06-16.
+**Status:** `00-brief` cerrado tras respuestas Cora 2026-05-13. Plan v1 entregado a Cora vía Drive (`02_De_Raoul_Para_Cora/Notoriedad/`). Esperando confirmación Cora para arrancar Fase 1.
 
 ## Objetivo (parafraseado de instrucciones de Cora)
 

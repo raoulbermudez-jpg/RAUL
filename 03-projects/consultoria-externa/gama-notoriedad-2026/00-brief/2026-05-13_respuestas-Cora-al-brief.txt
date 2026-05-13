@@ -1,0 +1,98 @@
+Cora — antes de meterme en el análisis y la presentación quiero cerrarte un par de cosas para no producir algo que no es. Son varias preguntas pero la mayoría son de marcar opción o una línea. Si prefieres me contestas todo en un correo seguido, no hace falta que llenes esto literalmente; es solo un guion para no olvidar nada.
+Las preguntas están agrupadas en 6 bloques: cliente y deadline, scope analítico, atributos de marca, comparabilidad 2025↔2026, formato del entregable, y varios.
+1. Cliente, audiencia y deadline
+Para saber a qué tono y profundidad apuntamos.
+1.1¿Para quién es el entregable final?
+Gama directo (mercadeo, junta, CEO), agencia intermedia, otro cliente tuyo, o uso interno tuyo.
+Para GAMA, versión extendida al equipo de mercado, y un resumen ejecutivo para el comité ejecutivo
+
+1.2¿Quién va a leer/presentar el deck?
+Junta directiva, equipo de mercadeo, CEO, comité comercial. Define cuánto contexto poner y cuán técnica puede ser la jerga.
+Equipo de mercadeo y Comité ejecutivo
+1.3¿Hay deadline duro?
+Debo tener la primera versión el 16/06 
+1.4¿Es trabajo pagado, pro bono, o intercambio?
+No me interesa el monto, solo entender si hay compromiso comercial detrás (afecta nivel de revisión interna y formalidad del documento).
+Es pagado
+1.5¿Hay NDA o restricción de manejo de la data?
+Lo pregunto porque mi flujo de trabajo guarda copias locales y a veces uso herramientas con nube. Si la data tiene restricciones, las respeto.
+Yo firme un contrato de confidencialidad
+
+2. División de trabajo y scope analítico
+Para no duplicar esfuerzo ni dejar huecos.
+2.1¿Quién hace qué?
+Marca todas las que aplican.
+Cora hace el análisis estadístico, Raoul hace el deckRaoul hace análisis + deck completoCora hace todo el análisis, Raoul solo arma la narrativa Minto
+Trabajo en paralelo y consolidamos . Quiero ver que sale para poder completar
+2.2¿Hay informe interno previo de 2025 que pueda usar como referencia estructural?
+Si ya existe un deck 2025 con la estructura que les funcionó, lo replico (con ajustes) y ahorramos discusión sobre layout.
+Si te lo comparto
+2.3Sobre la instrucción "combinar NSE C+ y C": ¿el segmento D y E queda fuera del deck o entra como contexto?
+C+/C es el segmento principal, D/E queda fueraC+/C es principal pero D/E se reporta como contexto comparativoTodos los NSE entran con peso similar
+El segmento CD se reporta como complemento comparativo
+
+2.4¿"Compara Total vs C+/C" significa Total = todos los NSE (C+/C/D/E)?
+Quiero estar seguro de qué se compara contra qué. Si "Total" en realidad es solo "C+/C+D" o algo así, dímelo.
+Se compara C+/C y total muestra
+2.5¿Hay 1-3 preguntas de negocio específicas que el estudio debe responder?
+Ej: "¿Estamos perdiendo el segmento C+ frente a Plaza?" / "¿La percepción de precio mejoró post-ajuste de mayo?" / "¿En qué categorías deberíamos defender mejor el precio?" — Si las tenemos, la pirámide de Minto se construye sola alrededor de eso.
+La competencia es muy dura, necesita entender las fortalezas y oportunidades para crecer en el mercado, asumiendo que son un poco mas caros que el primedio. 
+2.6Misiones de compra (P26) y categorías habituales (P30): ¿son foco principal o complementarias?
+Son compleentarios
+3. Atributos relevantes para la marca
+Para construir la matriz de posicionamiento — necesito que Gama (o tú) defina cuáles son los atributos "relevantes". Yo no debería inventarlos.
+3.1¿La matriz de posicionamiento usa los 10 atributos de 2026, o un subset priorizado?
+En 2026 los atributos son: limpieza y orden / variedad de categorías / seguridad / rapidez en caja / mejor precio / tienda atractiva / promociones atractivas / mayor calidad / mejor atención / hacer valer mi dinero.
+Usar los 10Usar un subset (especificar abajo)
+Usar los 10
+3.2¿Hay atributos que estratégicamente Gama está empujando y donde el deck debe poner el foco?
+Ej: si la estrategia 2026 es "hacer valer mi dinero", todo el deck debería iluminar ese ángulo. Si no me lo dices, le doy peso parejo.
+Todos tienen el mismo peso
+3.3¿Hay competidor focal (uno o dos) o comparamos contra los 10?
+Posición de Gama vs Páramo / Central Madeirense / Plaza / Forum / Río / Plan Suárez / Luz / La Muralla / Híper Líder.
+Importante el top 5, o al menos los que están mejor que Gama
+4. Comparabilidad 2025 ↔ 2026
+Tres puntos donde la comparación se complica y necesito tu lectura.
+Lo que veo: 2025 tiene n=785 con 18+ zonas de Caracas; 2026 tiene n=402 y no se ve geografía en la tabla. 2025 tiene 20 atributos y 20 categorías de precio; 2026 tiene 10 atributos y 15 categorías. Eso limita qué se puede comparar 1:1.
+4.1¿2026 se levantó en la misma geografía que 2025, en un subset, o en otra cobertura?
+Si es un subset, ¿cuál? Eso me permite filtrar 2025 a esa misma zona y comparar manzanas con manzanas.
+Cobertura similar, no debemos hacer análisis por zonas
+4.2¿Hay margen de error estimado (intervalo de confianza) para cada ola?
+Con n=402 vs n=785, una diferencia de 5pp puede no ser significativa. Si sé el margen lo reporto correctamente.
+Ola 1: 3.9%
+Ola 2: 4.89%
+4.3¿Cómo prefieres que reporte las diferencias 2025↔2026?
+Solo diferencias estadísticamente significativasTodas las diferencias, marcando cuáles son significativasTodas, sin tema de significancia (descriptivo)
+Todas, descripticas
+4.4Las preguntas exclusivas de 2025 (delivery, área gourmet, comportamiento P36-P43) — ¿quieres que las incluya como anexo histórico, o las dejamos completamente fuera porque no hay comparable 2026?
+Las preguntas que aparecen en 2025 y no en 2026 quedan fuera del analisis
+4.5Las preguntas nuevas de 2026 (P33 nivel de precio Gama, P34 evolución 6 meses) — ¿hay alguna pregunta análoga en 2025 que yo no haya identificado?
+Las preguntas nuevas del 2026 no tienen comparativo en la anterior
+5. Formato del entregable
+Para que "editable" signifique lo mismo para los dos.
+5.1¿PPT, Google Slides, Keynote, otro?
+PowerPoint (.pptx)Google SlidesOtro (especificar)
+En PPT
+5.2¿"Editable" significa: gráficos nativos PPT con tabla de datos detrás (modificables), o gráficos importados de Excel con link vivo?
+Graficos nativos ppt con tablas modificables
+5.3¿Existe template visual de Gama (colores, tipografía, plantilla) que debo respetar?
+Diseño sobrio, color relevante para la marca: rojo
+5.4Largo aproximado del deck.
+10-15 slides (ejecutivo)20-30 slides (estándar)40+ slides (detallado con anexos)Sin límite, el que pida la historia
+Todos los slides que requiera la historia
+5.5¿Deck en español (asumo que sí) o bilingüe?
+En español
+6. Varios
+Misceláneo importante.
+6.1¿Hay benchmarks externos o KPIs internos de Gama que tenga que anclar?
+Ej: "TOM histórica de Gama 12%" — me sirve para decir "subió/bajó" en vez de solo "es X".
+Nop, solo los datos del 2025
+6.2¿Cómo prefieres recibir el draft intermedio? ¿Una sola entrega final o V0 → revisión → V1?
+Prefiero un intermedio
+6.3¿Hay alguien más involucrado en esta entrega (de tu lado o del cliente) que deba estar en CC?
+No
+6.4¿Esto es un encargo puntual o vamos a hacer la próxima ola también (¿2027?)?
+Si es recurrente, invierto en plantillas reutilizables; si es one-shot, voy directo.
+Es probable que tener una ola 2027
+6.5Cualquier cosa que yo no esté preguntando y deba saber.
+Ellos han enfrentado la entrada de nuevos competidores con foco en precio, en las mismas zonas. Eso hace que la vigilancia sea cercana

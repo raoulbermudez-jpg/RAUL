@@ -94,7 +94,8 @@ Notas:
 
 - El `<shortname>` se deriva del nombre real de la subcarpeta `01_De_X_Para_Raoul/` — puede no coincidir exactamente con `<nombre>` del directorio padre (ej. parent `Cora-Urrea/`, subfolder `01_De_Cora_Para_Raoul/` → shortname=`Cora`).
 - Excluir del scan carpetas con prefijo `_` en `colaboradores\<dominio>\` (son especiales, no colaboradores reales — ej. `_memoria-tareas-pendientes/`).
-- Estructura actual de dominios: `Genteca/` (7 colaboradores + `_memoria-tareas-pendientes/`), `Academicos/` (1 colaborador).
+- Estructura actual de dominios: `Genteca/` (7 colaboradores + `_memoria-tareas-pendientes/`), `Academicos/` (1 colaborador), `consultoria-externa/` (Cora-Urrea — primario, también opera bajo `Genteca/` por historia).
+- **`<dominio>` en el path de Drive es organización de archivos, NO clasificación autoritativa del proyecto.** Un colaborador puede vivir bajo `Genteca/` por historia y traer tareas que pertenecen a `consultoria-externa/` o cualquier otro dominio. El dominio del proyecto lo decide Raul desde el contenido de la tarea (conceptual raul.md §2). InboxBot solo entrega el contenido al orquestador, no infiere dominio.
 
 ### Runtime-specific notes
 
