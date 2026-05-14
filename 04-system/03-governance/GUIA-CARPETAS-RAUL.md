@@ -1,7 +1,7 @@
 # Guía de carpetas RAUL — qué es cada una y cómo se usa
 
-**Versión:** 1.0
-**Fecha:** 2026-05-04
+**Versión:** 1.1
+**Fecha:** 2026-05-14 (v1.1 — añadidos `00-cola/` y `_ESTADO.md` tras el rediseño de InboxBot a capture-only; ver `OPERATIVA-REMOTA-Y-COLABORADORES.md` v2.0)
 **Propósito:** mapa único de todas las carpetas con "Raul" en el sistema, qué hace cada una, cuál tocas tú vs. cuál es del runtime, y dónde vive cada tipo de archivo (raw, curado, KB, portafolio Genteca).
 
 Lectura recomendada cuando dudes "¿dónde está X?" o "¿puedo borrar esto?".
@@ -90,13 +90,22 @@ C:\RAUL\
 
 **Cómo (resumen, detalle completo en `OPERATIVA-REMOTA-Y-COLABORADORES.md`):**
 
-| Acción | Carpeta | Formato preferido |
+| Acción | Carpeta | Notas |
 |---|---|---|
-| Dejar tarea desde celular | `RAUL/01-inbox/01-owner-to-raul/` | `.txt` o `.md` directos (no `.gdoc` si puedes evitarlo) |
-| Recibir entregables | `RAUL/01-inbox/02-deliverables-to-owner/` | Lo que el sistema produzca (`.md`, `.pdf`, `.pptx`, `.svg`) |
-| Ver tareas ya procesadas (histórico) | `RAUL/01-inbox/01-owner-to-raul/_archived/` | Lo que sea, archivado con prefijo de fecha |
+| Dejar tarea desde celular | `RAUL/01-inbox/01-owner-to-raul/` | Cualquier formato sirve para la captura; InboxBot solo registra nombre y tipo |
+| Consultar el estado de todo | `RAUL/01-inbox/_ESTADO.md` | **Un solo archivo** — cola del Owner, actividad de colaboradores, flags. Lo regenera InboxBot cada ciclo |
+| Recibir entregables | `RAUL/01-inbox/02-deliverables-to-owner/` | Lo que Raul-desktop produzca (`.md`, `.pdf`, `.pptx`, `.svg`) |
+| (Interno) Cola de trabajo | `RAUL/01-inbox/00-cola/` | InboxBot deja un `TICKET_*.md` por ítem; Raul-desktop los consume. No necesitas abrirla — el `_ESTADO.md` la resume |
 
-**Frecuencia InboxBot:** cada 4 h por defecto (configurable en Routines de Claude Code Desktop).
+**Modelo capture-only (desde el rediseño v5.0 de InboxBot, 2026-05-14):** lo
+que dejas remotamente queda **encolado, no procesado**. InboxBot captura,
+encola y notifica; el trabajo real lo hace Raul cuando abres una sesión
+desktop. Los canales de gobernanza (`04-decisions-in-flight/`,
+`05-from-junta/`, etc.) **no son parte del modelo remoto** — son
+desktop/repo.
+
+**Frecuencia InboxBot:** cada 2 h en ventana 6:00–23:00 Caracas (10
+disparos diarios). Configurable en Routines de Claude Code Desktop.
 
 ### 2.3 Cuándo y cómo usar `G:\Mi unidad\RAUL\colaboradores\` (y `RAUL-Exchange\Panama\`)
 
@@ -137,7 +146,7 @@ G:\Mi unidad\RAUL-Exchange\               ← legacy, mantenido solo para Panama
 
 **Naming asimétrico:** la carpeta padre del colaborador puede ser `<Nombre-Apellido>` (ej. `Cora-Urrea/`) mientras el subfolder usa solo `<Nombre>` (ej. `01_De_Cora_Para_Raoul/`). InboxBot deriva el shortname del subfolder.
 
-**Cuándo activar canal de colaborador en InboxBot:** AGENT.md ya tiene canal "Colaboradores" activable cuando exista la subcarpeta `inbox/` del colaborador. InboxBot escanea automáticamente los `inbox/` y procesa archivos nuevos.
+**Cómo InboxBot trata los canales de colaborador:** escanea todos los `01_De_X_Para_Raoul/` igual que el inbox del Owner. Cuando un colaborador deja un archivo, InboxBot lo **captura** como ticket (`fuente: colaborador:<nombre>`) y lo refleja en la sección "Actividad de colaboradores" del `_ESTADO.md`. **No procesa, no escribe en `02_De_Raoul_Para_X/`, no infiere dominio.** El procesamiento y la respuesta los hace Raul en sesión desktop.
 
 **Reglas:**
 - Cada colaborador ve **solo su carpeta personal** (sharing individual desde Drive web).
@@ -293,7 +302,10 @@ R: `C:\RAUL\01-inbox\03-raw-sources\genteca\` — separados por tema (gsm-labels
 R: Celeste decide qué entra a KB; Sira indexa y nombra. Tú apruebas mover si están de acuerdo.
 
 **P: Si subo algo desde el celular, ¿dónde llega?**
-R: Si lo subiste a `Mi unidad/RAUL/01-inbox/01-owner-to-raul/` en la app Drive móvil → llega al canal vivo de InboxBot, que lo procesa en el próximo ciclo (max 4 h).
+R: Si lo subiste a `Mi unidad/RAUL/01-inbox/01-owner-to-raul/` → InboxBot lo **captura y encola** en el próximo ciclo (máx ~2 h): crea un ticket en `00-cola/` y lo refleja en `_ESTADO.md`. Queda **encolado, no procesado** — el trabajo real lo hace Raul cuando abres una sesión desktop.
+
+**P: ¿Dónde veo el estado de lo que dejé?**
+R: `Mi unidad/RAUL/01-inbox/_ESTADO.md` — un solo archivo, regenerado por InboxBot cada ciclo, con la cola del Owner, la actividad de colaboradores y flags de higiene.
 
 **P: ¿Puedo borrar `OneDrive\RAUL-backup\`?**
 R: No. Es backup nightly del KB con 30 días de historial. Si tu disco falla, lo necesitas.

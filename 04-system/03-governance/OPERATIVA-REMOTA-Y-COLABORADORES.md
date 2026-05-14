@@ -1,214 +1,237 @@
-# Instructivo operativa remota /RAUL/ — Owner desde celular + RAUL/colaboradores con colaboradores
+# Operativa remota /RAUL/ — Owner desde celular + colaboradores
 
-**Versión:** 1.0
-**Fecha:** 2026-05-04
-**Aplica a:** Owner (Raoul Bermúdez) + colaboradores Genteca/Panamá/futuros dominios.
+**Versión:** 2.0
+**Fecha:** 2026-05-14
+**Aplica a:** Owner (Raoul Bermúdez) + colaboradores Genteca / Academicos / futuros dominios.
 
-Este documento responde tres preguntas operativas del día a día:
+> **v2.0 — rediseño del modelo remoto.** Refleja el rediseño de InboxBot a
+> capture-only (conceptual v5.0, 2026-05-14). El cambio central: **InboxBot
+> ya no procesa nada remotamente** — solo captura, encola y notifica. El
+> procesamiento real ocurre cuando el Owner abre una sesión desktop. Ver
+> `04-system/02-agents/conceptual/inboxbot.md` y la entrada 2026-05-14 en
+> `DECISIONS.md`.
 
-1. ¿Dónde coloco las tareas para que el sistema /RAUL/ las procese cuando estoy fuera del PC?
-2. ¿Dónde recibo los entregables que el sistema produce?
-3. ¿Cómo trabajo con los colaboradores externos vía Drive (RAUL/colaboradores)?
+Este documento responde:
+
+1. ¿Dónde dejo tareas cuando estoy fuera del PC, y qué pasa con ellas?
+2. ¿Cómo trabajo cuando estoy remoto vs cuando estoy en el desktop?
+3. ¿Cómo trabajo con los colaboradores externos vía Drive?
 
 ---
 
-## Parte 1 — Operación remota Owner ↔ /RAUL/ (desde celular)
+## Parte 1 — Los dos modos de trabajo: remoto y desktop
 
-### 1.1 Canales canónicos vivos
+El sistema /RAUL/ tiene **dos entornos de ejecución distintos**, y entender
+la diferencia es la clave de todo:
 
-Toda la operación del sistema /RAUL/ desde fuera del PC corre sobre **Google Drive**, en la cuenta personal `raoul.bermudez@gmail.com`. OneDrive **no es canal de InboxBot** y la ruta legacy `C:\Users\User\Mi unidad\RAUL\` es una cueva muerta (no sincroniza con la nube).
-
-| Canal | Ruta filesystem (PC) | Equivalente en app móvil Drive |
+| | **Modo desktop** | **Modo remoto** |
 |---|---|---|
-| **Inbox del Owner (tú colocas tareas aquí)** | `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` | `Mi unidad/RAUL/01-inbox/01-owner-to-raul/` |
-| **Outbox del Owner (entregables del sistema)** | `G:\Mi unidad\RAUL\01-inbox\02-deliverables-to-owner\` | `Mi unidad/RAUL/01-inbox/02-deliverables-to-owner/` |
-| **Archivado de tareas procesadas** | `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\_archived\` | (visible desde móvil — referencia histórica) |
+| Quién opera | Raul (orquestador) + especialistas, en sesión Claude Code | InboxBot, como rutina automática en la nube |
+| Qué alcanza | Todo el repositorio `C:\RAUL\` + la nube | **Solo** la nube (`G:\Mi unidad\RAUL\`) |
+| Qué puede hacer | Procesar, delegar, producir entregables, escribir al KB, gobernar, commitear | **Solo capturar**: detectar lo que entró, encolarlo, notificar |
+| Cuándo | Cuando el Owner abre una sesión | Cada 2h en ventana diurna (trigger automático) |
+
+**Por qué esta separación:** InboxBot corre en un entorno que **no tiene
+acceso al repositorio**. No puede leer el KB, no puede delegar a
+especialistas reales, no puede escribir a `02-knowledge-base/` ni
+`03-projects/`. Pretender que sí podía fue la causa de las escrituras
+fantasma de mayo 2026. El rediseño v5.0 lo acota a lo que su entorno
+**sí** puede hacer con honestidad: capturar y encolar.
+
+### 1.1 Canales canónicos vivos (Google Drive)
+
+Toda la operación remota corre sobre **Google Drive**, cuenta
+`raoul.bermudez@gmail.com`. OneDrive **no es canal**. La ruta legacy
+`C:\Users\User\Mi unidad\RAUL\` es una cueva muerta (no sincroniza).
+
+| Canal | Ruta filesystem (PC) | Para qué |
+|---|---|---|
+| **Inbox del Owner** | `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` | Aquí **dejas** tareas desde el celular |
+| **Outbox del Owner** | `G:\Mi unidad\RAUL\01-inbox\02-deliverables-to-owner\` | Aquí **recibes** los entregables que Raul produjo en sesión desktop |
+| **Tablero de estado** | `G:\Mi unidad\RAUL\01-inbox\_ESTADO.md` | Aquí **consultas** el estado de todo, en un solo archivo |
+| Cola de trabajo | `G:\Mi unidad\RAUL\01-inbox\00-cola\` | Interno — InboxBot deja aquí un ticket por ítem capturado; Raul-desktop los consume. No necesitas abrirla; el tablero la resume |
+
+**Mental model remoto = 3 cosas.** Dejas en `01-owner-to-raul/`, recibes
+en `02-deliverables-to-owner/`, consultas `_ESTADO.md`. Nada más. Los
+canales de gobernanza (decisiones, junta, reguladores, third-parties) y
+`03-raw-sources/` **no son parte del mundo remoto** — son desktop/repo.
 
 ### 1.2 Cómo dejar una tarea desde el celular
 
-**Pasos:**
+1. App **Google Drive** (la app Drive, no Docs ni Files), cuenta `raoul.bermudez@gmail.com`.
+2. Navega a `Mi unidad / RAUL / 01-inbox / 01-owner-to-raul`.
+3. "+" → **Subir** o **Crear nuevo**. Cualquier formato sirve para la
+   captura — `.txt`/`.md` siguen siendo lo más cómodo, pero ya **no es
+   crítico**: InboxBot solo captura el nombre y el tipo; la lectura a fondo
+   la hace Raul en sesión desktop con el tooling completo.
+4. **Nombre descriptivo**, sin caracteres especiales. Bueno:
+   `2026-05-14_GSM_brief_inverter.txt`. Malo: `Doc1`, `Untitled`.
+5. **Contenido**, como si me hablaras: qué quieres, para quién, para
+   cuándo, qué insumos consultar, agente sugerido si tienes preferencia.
 
-1. Abre la app **Google Drive** en el celular (no Google Docs ni Files, la app Drive específica).
-2. Verifica que estás logueado en la cuenta `raoul.bermudez@gmail.com`.
-3. Navega a `Mi unidad / RAUL / 01-inbox / 01-owner-to-raul`.
-4. Toca el botón "+" abajo a la derecha → **Subir** (o **Crear nuevo**).
-5. **Formato preferido:** `.txt` o `.md` directos.
-   - Apps recomendadas para escribir en el celular y subir directo a Drive: Markor (Android, gratis), iA Writer, Obsidian móvil, o Bloc de notas Android (que crea `.txt`).
-   - Evita "Crear → Documento de Google" si la tarea es texto simple — eso genera un `.gdoc` que es un puntero a Drive web, no un archivo de texto. InboxBot v3.2 puede manejarlo via Drive MCP, pero `.txt`/`.md` es más robusto.
-6. **Nombre del archivo:** descriptivo, sin caracteres especiales. Ejemplos buenos:
-   - `2026-05-10_GSM_brief_inverter_competencia.txt`
-   - `urgente_revisar_email_keiddys.md`
-   - Ejemplos malos: `Doc1`, `Untitled`, `nota`.
-7. **Contenido del archivo:** redacta la tarea como si me hablaras directamente. Lo más útil:
-   - Qué quieres que produzca (entregable concreto).
-   - Para quién es (audiencia).
-   - Para cuándo (urgencia).
-   - Qué insumos debo consultar (rutas, archivos, contactos).
-   - Si tienes preferencia por algún agente o formato, dilo.
+### 1.3 Qué pasa con la tarea — el flujo capture-only
 
-**Ejemplo de contenido tipo brief:**
+Cuando dejas algo en `01-owner-to-raul/`:
 
-```
-Tarea: revisar copy del email a Ana Méndez sobre brief MPR
+1. **InboxBot** (próximo ciclo, máx ~2h) lo detecta.
+2. **Captura** el ítem: crea un `TICKET_*.md` en `00-cola/` con metadata
+   (fuente, archivos, tipo, timestamp) + una línea literal. Estado:
+   `PENDIENTE-RAUL`. **No lee el contenido a fondo, no interpreta, no
+   procesa.**
+3. **Acusa recibo:** deja un marcador `CAPTURADO_*.txt` junto a tu archivo
+   (significa "capturé y encolé esto" — **no** "está hecho").
+4. **Regenera `_ESTADO.md`** — el tablero único con todo lo pendiente.
+5. **Prepara un borrador Gmail** ([InboxBot] Ciclo de captura...) con el
+   digest. Borrador — no se envía solo.
+6. **Loguea el ciclo** en `00-cola/_log-ciclos.md` (heartbeat — incluso si
+   no había nada nuevo, deja constancia de que corrió).
 
-Contexto: Tengo borrador en C:\RAUL\03-projects\genteca\... revisarlo y
-proponer 2 alternativas — una más directa y otra más diplomática.
+**La tarea queda ENCOLADA, no resuelta.** El trabajo real —leer,
+delegar, producir el entregable, escribir al repo— ocurre cuando abres
+una **sesión desktop**: ahí Raul lee la cola, te muestra el digest, trian
+juntos, y produce los entregables reales en `02-deliverables-to-owner/`.
 
-Audiencia: Ana Méndez (Genteca, gerente).
+### 1.4 Cuando vuelves al desktop — el ritual de cola
 
-Para cuándo: hoy en la tarde si es posible, mañana máximo.
+Al abrir una sesión Claude Code, lo primero que hace Raul es **leer la
+cola de trabajo** y presentarte un digest: "Desde la última sesión
+InboxBot capturó N ítems: [...]. ¿Los triamos?". Para cada ticket que
+atiendan, Raul transiciona su estado (`PENDIENTE-RAUL` →
+`EN-PROCESO-RAUL` → `RESUELTO`) y produce el entregable real. Si abres
+sesión y no mencionas la cola, Raul igual la trae a colación.
 
-Agente sugerido: Solenne.
+### 1.5 Cómo recibir y leer los entregables
 
-Pregunta abierta: ¿debería incluir la mención del CC a Oz o no? Tu juicio.
-```
+App Drive móvil → `Mi unidad / RAUL / 01-inbox / 02-deliverables-to-owner /`.
+Markdown lo abre como texto plano (o usa Markor / Obsidian para vista
+renderizada); PDF/PPTX se abren nativos; SVG → "Abrir con" → Chrome.
 
-### 1.3 Cómo se procesa la tarea
+### 1.6 Frecuencia de InboxBot
 
-1. **InboxBot** corre cada **4 horas** (o según frecuencia que tengas configurada en Routines de Claude Code Desktop).
-2. Detecta archivos nuevos en `01-owner-to-raul/`, los pasa a Raul (orquestador).
-3. Raul delega al agente especialista correspondiente.
-4. El resultado se deposita en `02-deliverables-to-owner/` con nombre `YYYY-MM-DD_[agente]_[task_id]_[STATUS].md`.
-5. InboxBot crea un `DONE_[task_id].txt` en el inbox y **mueve el archivo fuente** a `_archived/` con prefijo de fecha (v3.2 del agente). El inbox queda limpio.
-6. **Gmail draft** se crea automáticamente como aviso (asunto: `[InboxBot] resumen tarea`). Lo encontrarás en tu app Gmail → Borradores.
+**Configuración vigente:** cada 2h en ventana **6:00–23:00 Caracas**, 10
+disparos diarios. Fuera de esa ventana, en pausa. Routine `raul-inboxbot`,
+trigger `trig_01RgGGbpCvckUzSwkyGMDNtm`, cron UTC
+`0 0,2,3,10,12,14,16,18,20,22 * * *`. Gestión vía `/schedule` o el panel
+de Routines.
 
-### 1.4 Cómo recibir y leer los entregables desde el celular
-
-**Pasos:**
-
-1. App Drive móvil → `Mi unidad / RAUL / 01-inbox / 02-deliverables-to-owner /`.
-2. Los entregables están organizados por workstream. Cada entrega típica es una carpeta con README de lectura prioritaria.
-3. Para abrir Markdown desde el celular:
-   - Drive lo abre como texto plano.
-   - Para vista renderizada: app Markor (Android), o copia el contenido a Obsidian móvil si quieres edición.
-4. Para abrir PDF / PPTX: la app Drive los abre nativamente.
-5. Para abrir SVG (mockups Atlas): tap "Abrir con" → Chrome móvil. Renderiza el SVG como imagen.
-
-### 1.5 Frecuencia de InboxBot — cómo ajustarla
-
-**Ubicación:** Claude Code Desktop → Routines.
-
-**Configuración vigente (desde 2026-05-06):** cada 2 horas en ventana **6:00–23:00 hora local Caracas**, con disparo extra a las 23:00 para cubrir el techo. **10 disparos diarios** (6, 8, 10, 12, 14, 16, 18, 20, 22, 23). Fuera de esa ventana (23:00–06:00) la rutina queda en pausa — sin disparos nocturnos para no consumir cuota de tokens en horas sin actividad del Owner.
-
-**Routine remoto vigente:** `raul-inboxbot` (trigger ID `trig_01RgGGbpCvckUzSwkyGMDNtm`). Cron expression UTC: `0 0,2,3,10,12,14,16,18,20,22 * * *`. Gestión vía `https://claude.ai/code/routines/trig_01RgGGbpCvckUzSwkyGMDNtm` o desde Claude Code con `/schedule`.
-
-**Recomendaciones de intervalo (configurables según escenario):**
-
-| Escenario | Intervalo sugerido | Ventana |
-|---|---|---|
-| **Operación normal (default vigente)** | **2 h** | 6:00–23:00 |
-| Día con varias tareas urgentes desde celular | 1 h | 6:00–23:00 |
-| Vacaciones o periodos de baja actividad | 4 h o pausar | 8:00–20:00 |
-| Modo standby total | Pausar | — |
-
-**Prompt recomendado del Routine:**
+**Prompt del Routine** (no cambió con el rediseño v5.0 — solo cambió lo
+que el algoritmo hace al disparar):
 
 ```
 Ejecuta InboxBot. Lee y sigue C:\RAUL\.claude\agents\inboxbot\AGENT.md
 ```
 
-Ese prompt simple deja a `AGENT.md` como única fuente de verdad. No hardcodear rutas en el Routine — si las rutas cambian (ej. nueva carpeta de canal), solo se actualiza `AGENT.md` y el Routine sigue funcionando.
+| Escenario | Intervalo | Ventana |
+|---|---|---|
+| Operación normal (default) | 2 h | 6:00–23:00 |
+| Varias tareas urgentes desde celular | 1 h | 6:00–23:00 |
+| Baja actividad / vacaciones | 4 h o pausar | 8:00–20:00 |
 
-### 1.6 Verificar que InboxBot está funcionando
+### 1.7 Verificar que InboxBot está vivo
 
-**Test sencillo cada cierto tiempo:**
-
-1. Crea desde el celular un `.txt` mínimo en `01-owner-to-raul/` con contenido tipo *"Test InboxBot YYYY-MM-DD: si lees esto, responde con ack."*.
-2. Espera al próximo ciclo (max 4 h con configuración default).
+1. Sube un `.txt` mínimo a `01-owner-to-raul/`.
+2. Espera al próximo ciclo (máx ~2h).
 3. Verifica:
-   - El `.txt` debe haberse movido a `_archived/` con prefijo de fecha.
-   - Debe existir `DONE_test-inboxbot-YYYY-MM-DD.txt` en el inbox.
-   - Debe existir entregable en `02-deliverables-to-owner/`.
-   - Debe existir borrador Gmail con asunto `[InboxBot] Test InboxBot`.
-4. Si alguno de los tres falla → revisar `C:\RAUL\04-system\03-governance\inboxbot-tasklog.md` para diagnosticar.
+   - Aparece un `TICKET_*.md` nuevo en `00-cola/`.
+   - Aparece un `CAPTURADO_*.txt` junto a tu archivo.
+   - `_ESTADO.md` se regeneró (timestamp reciente, tu ítem en "Cola del Owner").
+   - Hay una fila nueva en `00-cola/_log-ciclos.md`.
+   - Hay un borrador Gmail `[InboxBot] Ciclo de captura...`.
+4. Si algo falla → revisar `00-cola/_log-ciclos.md` (el heartbeat
+   distingue "no había nada" de "el trigger no disparó").
 
-### 1.7 Errores comunes y soluciones
+### 1.8 Errores comunes
 
 | Síntoma | Causa probable | Solución |
 |---|---|---|
-| Tarea colocada desde celular no se procesa después de 4 h | Routine no está activa o frecuencia mayor | Verificar Routines en Claude Code Desktop |
-| Tarea aparece en G: pero queda sin DONE marker | El archivo es `.gdoc` y Drive MCP no estaba disponible | Subir como `.txt`/`.md` o ejecutar manualmente |
-| No veo entregable en el celular | Drive no terminó de sincronizar | Forzar sync (jalar hacia abajo en la app Drive) |
-| InboxBot no encuentra el archivo aunque lo veo en G: | Cargaste el archivo en `C:\Users\User\Mi unidad\` (cueva legacy) | Usar siempre app Drive móvil o ruta `G:\Mi unidad\` desde PC |
+| Dejé una tarea y no aparece ticket tras 2h+ | Routine inactiva, o archivo en cueva legacy | Verificar Routines; usar siempre la app Drive (ruta `G:\Mi unidad\`) |
+| El ticket existe pero sigue `PENDIENTE-RAUL` hace días | Normal — no hubo sesión desktop aún | El procesamiento real espera a que abras sesión. `_ESTADO.md` lo destaca como "añejo" si pasa el umbral |
+| Veo `_log-ciclos.md` con filas pero "ítems: 0" | Normal — InboxBot corrió y no había nada nuevo | Ninguna — el heartbeat es por diseño |
+| Esperaba un entregable y no está | InboxBot no produce entregables — solo captura | El entregable lo produce Raul en sesión desktop. Revisa el estado del ticket en `_ESTADO.md` |
 
 ---
 
 ## Parte 2 — Trabajo con colaboradores vía RAUL/colaboradores
 
-### 2.1 Qué es RAUL/colaboradores
+### 2.1 Qué es
 
-**RAUL/colaboradores** es la estructura de Drive compartido entre el Owner y cada colaborador externo (empleado de Genteca, contratista, contraparte de Panamá, etc.). Existe como una jerarquía de carpetas en la cuenta `raoul.bermudez@gmail.com`, donde cada colaborador tiene su propia carpeta con dos sub-canales: `inbox` y `outbox`.
+Estructura de Drive compartido entre el Owner y cada colaborador externo.
+Cada colaborador tiene su carpeta en
+`RAUL/colaboradores/<Dominio>/<Nombre-Apellido>/` con **tres subcarpetas
+fijas**:
 
-**Convención de nombres (importante):**
+```
+<Nombre-Apellido>/
+├── 01_De_<Nombre>_Para_Raoul/   ← el colaborador deja cosas para el Owner
+├── 02_De_Raoul_Para_<Nombre>/   ← el Owner deja cosas para el colaborador
+└── 03_Archivo/                   ← histórico de mensajes ya procesados
+```
 
-- **`outbox/` del colaborador**: Owner deposita archivos para que el colaborador los descargue. El colaborador ve este folder como **"recibido del Owner"**.
-- **`inbox/` del colaborador**: Colaborador deposita archivos para que el Owner los reciba. El colaborador ve este folder como **"para enviar al Owner"**.
-
-Esta convención es desde la perspectiva del **Owner que pone/recibe**. Para el colaborador, es invertido (lo que está en `outbox` es lo que él recibe; lo que está en `inbox` es lo que él envía).
+Convención desde la perspectiva del nombre: `01_De_X_Para_Raoul` = "de X
+hacia Raoul", `02_De_Raoul_Para_X` = "de Raoul hacia X".
 
 ### 2.2 Estructura actual
 
-**Genteca** (root: `RAUL/colaboradores/Genteca/`):
+**Genteca** (`RAUL/colaboradores/Genteca/`): Oswaldo, Ana-Mendez,
+Liliam-Ramirez, Rhinoska-Celis, Valeria-Ostos, Julio-Heredia, Cora-Urrea.
+Más `_memoria-tareas-pendientes/` (carpeta especial, no es colaborador —
+prefijo `_`).
 
-| Persona | Email | Carpeta personal |
-|---|---|---|
-| Oz | ogutierrez@genteca.com.ve | `Oz/inbox/`, `Oz/outbox/` |
-| Ana Méndez | amendez@genteca.com.ve | `Ana-Mendez/inbox/`, `Ana-Mendez/outbox/` |
-| Liliam Ramírez | lramirez@genteca.com.ve | `Liliam-Ramirez/inbox/`, `Liliam-Ramirez/outbox/` |
-| Rhinoska Celis | Rcelis@genteca.com.ve | `Rhinoska-Celis/inbox/`, `Rhinoska-Celis/outbox/` |
-| Valeria Ostos | vostos@genteca.com.ve | `Valeria-Ostos/inbox/`, `Valeria-Ostos/outbox/` |
-| Julio Heredia | jheredia@genteca.com.ve | `Julio-Heredia/inbox/`, `Julio-Heredia/outbox/` |
-| Cora Urrea | cora.urrea@gmail.com | `Cora-Urrea/inbox/`, `Cora-Urrea/outbox/` |
-| MPR Juan de Abreu | jdeabreu@grupompr.com | `MPR-JuanDeAbreu/inbox/`, `MPR-JuanDeAbreu/outbox/` |
+**Academicos** (`RAUL/colaboradores/Academicos/`): Daniel-Rubio.
 
-**Panamá** (root: `RAUL/colaboradores/Panama/`):
+(Emails y roles en la memoria `reference_genteca_contacts.md`. IDs de
+carpetas Drive en `reference_drive_exchange_ids.md`.)
 
-| Carpeta | Uso |
-|---|---|
-| `EmbassyClub/inbox/` y `outbox/` | Intercambio operativo apartamento |
-| `Contratos/` | Documentos legales |
-| `Finanzas/` | Estados, recibos |
-| `Reparaciones/` | Cotizaciones, fotos, facturas |
-| `Analisis-Mercado/` | Investigación inmobiliaria |
+> **Nota de higiene 2026-05-14:** `Daniel-Rubio/` tiene la subcarpeta del
+> Owner mal nombrada (`01_De_Raoul_Para_Daniel` — debería ser
+> `02_De_Raoul_Para_Daniel`). Pendiente de corrección manual del Owner —
+> ver el cierre del incidente
+> `incidents/2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md`.
 
-(IDs específicos de cada carpeta están en memoria persistente: `reference_drive_exchange_ids.md`).
+### 2.3 Cómo se capturan los archivos de un colaborador
 
-### 2.3 Cómo onboardear a un colaborador nuevo
+InboxBot escanea **todos** los `01_De_X_Para_Raoul/` de todos los
+dominios igual que escanea el inbox del Owner. Cuando un colaborador deja
+un archivo:
 
-**Pasos del Owner:**
+1. InboxBot lo **captura** como un ticket (`fuente: colaborador:<nombre>`)
+   en `00-cola/`, igual que un ítem del Owner.
+2. La actividad del colaborador aparece en la sección "Actividad de
+   colaboradores" del `_ESTADO.md` — así el Owner ve, en un solo lugar,
+   qué llegó de quién sin abrir carpeta por carpeta.
+3. El procesamiento real (leer, delegar, producir respuesta) lo hace Raul
+   en sesión desktop. El entregable, si lo hay, lo escribe Raul en el
+   `02_De_Raoul_Para_<X>/` del colaborador.
 
-1. **Crear carpeta personal** en `RAUL/colaboradores/[Dominio]/[Nombre-Apellido]/` con dos subcarpetas: `inbox/` y `outbox/`.
-   - Nombrado: capitalizado y guion, sin espacios. Ej: `Maria-Lopez`.
-   - Si requiere convención de domain pack: `RAUL/colaboradores/Genteca/Maria-Lopez/`.
-2. **Compartir SOLO esa carpeta** con el colaborador desde Drive web. Dos modalidades según política del dominio del colaborador:
-   - **Modalidad nominativa (preferida):** Click derecho en la carpeta `Maria-Lopez/` → Compartir → introducir email del colaborador → permiso **Editor** → Enviar. Aplicable cuando el dominio del colaborador acepta invitaciones de Google Drive externas (ej. cuentas Gmail personales como Cora-Urrea, dominios sin restricciones como grupompr.com).
-   - **Modalidad por link (fallback):** Cuando el dominio del colaborador bloquea sharing nominativo a externos (caso confirmado: **Genteca** — política de dominio Microsoft 365 / Google Workspace impide aceptar invitaciones nominativas a cuentas externas a `genteca.com.ve`), se usa "Cualquier persona con el enlace" → permiso **Editor** → copiar enlace y enviárselo al colaborador por WhatsApp/email. Limitación: el link es transferible; quien lo tenga puede entrar. Aceptable para colaboración 1:1 con persona de confianza.
-   - **No compartas el folder maestro `RAUL/colaboradores/`** ni el folder del dominio. Solo la carpeta de la persona — así no ve carpetas de otros colaboradores, sin importar la modalidad usada.
-3. **Enviar al colaborador el instructivo del colaborador** (sección 2.5 abajo, copiable como email o PDF).
-4. **Registrar la relación** en `C:\RAUL\04-system\03-governance\colaboradores.md` (crear si no existe) con: nombre, email, carpeta, dominio, fecha de onboarding, propósito del intercambio.
-5. Confirmar que la memoria persistente `reference_drive_exchange_ids.md` tiene el ID de la nueva carpeta. Si no, anotarlo manualmente la próxima sesión Claude Code.
+**InboxBot nunca escribe en `02_De_Raoul_Para_X/`** — eso es de Raul-desktop.
+**InboxBot nunca infiere el dominio** desde la ubicación de la carpeta
+(la ubicación no es contrato — incidente Cora 2026-05-13). Solo etiqueta
+el ticket con la fuente; el dominio lo decide Raul desde el contenido.
 
-### 2.4 Flujo del día a día con un colaborador
+### 2.4 Onboarding de un colaborador nuevo
 
-**Caso A — Owner pide algo al colaborador:**
+1. Crear `RAUL/colaboradores/<Dominio>/<Nombre-Apellido>/` con las tres
+   subcarpetas `01_De_<Nombre>_Para_Raoul/`, `02_De_Raoul_Para_<Nombre>/`,
+   `03_Archivo/`.
+2. Compartir **solo esa carpeta** (no el folder maestro ni el de dominio):
+   - **Nominativa (preferida):** email del colaborador → Editor. Aplica
+     cuando el dominio acepta shares externos (Gmail personal, grupompr.com).
+   - **Por link (fallback):** "Cualquiera con el enlace" → Editor. Para
+     dominios que bloquean shares nominativos a externos (caso Genteca).
+3. Enviar el instructivo copiable (§2.6).
+4. Registrar en `colaboradores.md` y anotar el ID de carpeta en
+   `reference_drive_exchange_ids.md`.
 
-1. Owner deposita archivo en **`outbox/` del colaborador** (ej. brief, documento a revisar, planilla).
-2. Owner avisa al colaborador (email, WhatsApp, Slack — fuera de Drive). Drive no notifica automáticamente cambios en folders compartidos a no ser que el colaborador active alertas.
-3. Colaborador descarga, trabaja, sube respuesta al **`inbox/`** del mismo folder.
-4. Owner revisa cuando el colaborador avisa que terminó.
-5. Owner mueve el archivo a un folder de archivado interno o lo procesa según corresponda.
+### 2.5 Flujo del día a día
 
-**Caso B — Colaborador inicia intercambio (ej. envía documento espontáneo):**
+**Owner pide algo:** deja el archivo en `02_De_Raoul_Para_<X>/`, avisa por
+WhatsApp/email (Drive no notifica solo). El colaborador trabaja y sube la
+respuesta a `01_De_<X>_Para_Raoul/`.
 
-1. Colaborador sube a su **`inbox/`** (su perspectiva: "estoy enviando esto al Owner").
-2. Colaborador avisa al Owner.
-3. InboxBot puede recoger archivos del `inbox/` de colaboradores **si AGENT.md tiene ese canal activo** (línea 18 de AGENT.md: "Activo (cuando exista la subcarpeta)").
-4. Si InboxBot lo procesa: el archivo se mueve a `_archived/` dentro del `inbox/` del colaborador y un DONE marker aparece allí.
-5. Si requiere acción del Owner: el resultado va al outbox del Owner como entregable normal.
+**Colaborador inicia:** sube a `01_De_<X>_Para_Raoul/`, avisa al Owner.
+InboxBot lo captura en el próximo ciclo; Raul lo procesa en sesión desktop.
 
-### 2.5 Instructivo COPIABLE para enviar al colaborador
-
-(Texto que el Owner puede copiar a un email o PDF cuando comparta la carpeta con un nuevo colaborador.)
+### 2.6 Instructivo COPIABLE para el colaborador
 
 ---
 
@@ -216,114 +239,98 @@ Esta convención es desde la perspectiva del **Owner que pone/recibe**. Para el 
 >
 > Hola [Nombre],
 >
-> Te he compartido una carpeta en mi Google Drive llamada `[Tu-Nombre]`. La uso para intercambiar archivos contigo de forma organizada — más limpio que email para documentos grandes o múltiples versiones.
+> Te compartí una carpeta en mi Google Drive llamada `[Tu-Nombre]`. La uso
+> para intercambiar archivos contigo de forma ordenada.
 >
-> ## Cómo funciona
+> Dentro verás tres subcarpetas:
 >
-> Dentro de tu carpeta verás dos subcarpetas:
->
-> - **`outbox/`** — aquí yo te dejo cosas. Lo que veas aquí es **lo que recibes de mí** (briefs, documentos para revisar, planillas, archivos para tu trabajo).
-> - **`inbox/`** — aquí tú me dejas cosas. Lo que subas aquí **me llega a mí**.
->
-> Piénsalo así:
-> - **`outbox/` = "lo que sale de mí hacia ti"**
-> - **`inbox/` = "lo que entra a mí desde ti"**
+> - **`01_De_[TuNombre]_Para_Raoul/`** — aquí **tú me dejas cosas a mí**.
+>   Lo que subas aquí me llega.
+> - **`02_De_Raoul_Para_[TuNombre]/`** — aquí **yo te dejo cosas a ti**
+>   (briefs, documentos para revisar, archivos para tu trabajo).
+> - **`03_Archivo/`** — histórico de lo ya procesado. No necesitas tocarlo.
 >
 > ## Cómo trabajar
 >
-> 1. **Cuando yo te pida algo:** revisas `outbox/`, descargas el archivo, trabajas, y subes la respuesta a `inbox/`. Avísame por WhatsApp / email cuando termines.
-> 2. **Cuando tú quieras enviarme algo:** súbelo a `inbox/` y avísame. No hace falta que esperes a que yo te pida nada.
-> 3. **Nombres de archivo:** usa fechas YYYY-MM-DD al inicio si son versiones (ej. `2026-05-10_propuesta-v2.pdf`). Ayuda a no confundir versiones.
-> 4. **No hace falta borrar archivos viejos** — yo me encargo del archivado. Pero si quieres limpiar lo tuyo, puedes.
+> 1. **Cuando yo te pida algo:** lo encuentras en `02_De_Raoul_Para_...`,
+>    trabajas, y subes la respuesta a `01_De_..._Para_Raoul`. Avísame por
+>    WhatsApp/email cuando termines.
+> 2. **Cuando quieras enviarme algo:** súbelo a `01_De_..._Para_Raoul` y
+>    avísame. No hace falta esperar a que te pida nada.
+> 3. **Nombres de archivo:** usa fecha `YYYY-MM-DD` al inicio si son
+>    versiones (ej. `2026-05-14_propuesta-v2.pdf`).
+> 4. **No borres archivos viejos** — yo me encargo del archivado.
 >
 > ## Lo que NO debes hacer
 >
 > - No compartas la carpeta con terceros sin avisarme.
-> - No subas información sensible que no esté pensada para mí (PII, contraseñas, etc.).
-> - No cambies el nombre de las subcarpetas `inbox/` y `outbox/` — el sistema automatizado las busca por nombre exacto.
+> - No subas información sensible no pensada para mí (contraseñas, PII).
+> - No renombres las subcarpetas — el sistema automatizado las busca por
+>   nombre exacto.
 >
-> ## Notificaciones
->
-> Drive no avisa por defecto cuando hay archivos nuevos. Si quieres recibir notificación:
-> - En Drive web → click derecho en la carpeta → Configuración → Activar notificaciones.
-> - O simplemente revisa cuando te avise por WhatsApp / email.
->
-> Cualquier duda, escríbeme.
+> Drive no avisa por defecto de archivos nuevos; revisa cuando te escriba.
 >
 > Saludos,
 > Raoul Bermúdez
 
 ---
 
-### 2.6 Reglas de seguridad y orden
+### 2.7 Reglas de seguridad y orden
 
-1. **Cada colaborador ve SOLO su propia carpeta.** Nunca compartir `RAUL/colaboradores/` ni el folder de dominio.
-2. **No mezclar dominios** dentro de una carpeta de colaborador. Si Ana Méndez trabaja para Genteca, su carpeta vive en `RAUL/colaboradores/Genteca/Ana-Mendez/`. Si en algún futuro trabaja también para Plenus, se crea folder separado `RAUL/colaboradores/Plenus/Ana-Mendez/`.
-3. **Documentos confidenciales** (legales, financieros) van en folders dedicados (ej. `Panama/Contratos/`), no en folders de colaborador, porque los folders de colaborador son territorio compartido.
-4. **Auditoría periódica** (sugerido cada 6 meses): revisar quién tiene acceso a qué desde Drive web → Configuración compartida. Revocar accesos de personas que ya no colaboran.
-5. **Ofboarding:** cuando un colaborador deja la organización: revocar acceso desde Drive web → mover su carpeta a `RAUL/colaboradores/_archived/[Nombre]_offboarded_YYYY-MM-DD/` → registrar en `colaboradores.md`.
+1. Cada colaborador ve **solo su propia carpeta**. Nunca compartir el
+   folder maestro ni el de dominio.
+2. No mezclar dominios en una carpeta de colaborador.
+3. Documentos confidenciales (legales, financieros) van en folders
+   dedicados, no en folders de colaborador.
+4. Auditoría de accesos cada ~6 meses.
+5. Offboarding: revocar acceso → mover a
+   `RAUL/colaboradores/_archived/<Nombre>_offboarded_YYYY-MM-DD/` →
+   registrar en `colaboradores.md`.
 
-### 2.7 Bridge con almacenamiento corporativo del colaborador (caso SharePoint Genteca)
+### 2.8 Bridge con almacenamiento corporativo del colaborador
 
-Algunos colaboradores trabajan en sistemas corporativos donde los documentos vivos NO están en Drive (ej. SharePoint corporativo, Box, Dropbox empresarial). El sistema /RAUL/ **no accede directamente** a esos sistemas — solo a Drive del Owner. La solución es que el **Owner opere el bridge manualmente**: navega al sistema corporativo del colaborador con su navegador, descarga lo que necesita procesar, y lo copia a la carpeta apropiada en `G:\Mi unidad\RAUL/colaboradores\` para que entre al flujo normal del sistema.
+Algunos colaboradores trabajan en sistemas corporativos (SharePoint, Box)
+que el sistema /RAUL/ **no puede leer**. La solución: el **Owner opera el
+bridge manualmente** — descarga del sistema corporativo y copia a la
+carpeta `01_De_<X>_Para_Raoul/` del colaborador en Drive.
 
-**Caso de referencia: SharePoint Genteca compartido con Liliam Ramírez y Owner.**
-
-- Liliam tiene cuota OneDrive Genteca al tope, así que no puede usar Drive corporativo Genteca como canal.
-- Informática Genteca compartió una carpeta SharePoint con Liliam y con el Owner (vía link, porque el dominio Genteca no permite sharing nominativo a externos): `https://genteca365-my.sharepoint.com/:f:/g/personal/soporte_genteca_com_ve/IgBcHEbNvBOTQY79tEQLMkHMAbfF2P42C2arOdhlt4LFSKw?e=HO9uWe`.
-- El sistema /RAUL/ **no puede leer ni escribir** esa carpeta (autenticación Microsoft corporativa que el sistema no posee).
-- **Bridge:** el Owner abre el link en su navegador, descarga los archivos que quiere procesar, los copia a `G:\Mi unidad\RAUL/colaboradores\Genteca\Liliam-Ramirez\01_De_Liliam_Para_Raoul\` (o subcarpeta lógica según corresponda). Drive Desktop streaming sincroniza solo a la nube. A partir de ahí el flujo es el normal del sistema.
-- Liliam NO interactúa con `RAUL/colaboradores`. Su trabajo vive en SharePoint. El Owner es el único actor del bridge.
-
-**Cuándo aplica este patrón (Owner como bridge único):**
-- El colaborador no necesita ver lo que el sistema produce — solo entrega documentos como parte de su trabajo normal en sistema corporativo.
-- El Owner consume esos documentos pero las respuestas/entregables del sistema NO regresan al colaborador (o regresan por otro canal: email, reunión, etc.).
-- El sistema corporativo del colaborador queda como source-of-truth; las copias en `RAUL/colaboradores` son staging del Owner, no archivos compartidos.
-
-**Lo que NO se debe hacer:**
-- Asumir que el sistema accede al SharePoint corporativo. Cualquier flujo automatizado debe pasar por la copia manual del Owner.
-- Dejar archivos divergentes en SharePoint y en Drive sin claridad de cuál es la versión vigente. La regla por defecto: SharePoint es source-of-truth, Drive es staging.
+**Caso de referencia:** SharePoint Genteca compartido con Liliam Ramírez.
+Liliam trabaja en SharePoint; el Owner descarga lo que necesita procesar y
+lo copia a `colaboradores/Genteca/Liliam-Ramirez/01_De_Liliam_Para_Raoul/`.
+SharePoint es source-of-truth; la copia en Drive es staging.
 
 ---
 
-### 2.8 Diferencia entre inbox del Owner (Parte 1) e inbox de colaborador
+## Parte 3 — Resumen accionable
 
-**Importante no confundir:**
+### Para el Owner desde el celular (modo remoto)
 
-| Folder | Quién deposita | Quién lee | Procesado por InboxBot? |
-|---|---|---|---|
-| `Mi unidad/RAUL/01-inbox/01-owner-to-raul/` | Owner (yo) | InboxBot → Raul → especialistas | Sí, default cada 4 h |
-| `RAUL/colaboradores/[Dominio]/[Nombre]/inbox/` | Colaborador | InboxBot (si activo) → Raul → ... | Sí, si AGENT.md tiene activado canal colaboradores |
-| `RAUL/colaboradores/[Dominio]/[Nombre]/outbox/` | Owner (manualmente) o Raul (vía InboxBot tras procesar) | Colaborador (lee desde Drive web/móvil) | No procesa, solo deposita |
+1. **Dejar tareas** → app Drive → `Mi unidad/RAUL/01-inbox/01-owner-to-raul/`.
+2. **Consultar estado** → `Mi unidad/RAUL/01-inbox/_ESTADO.md` — un solo
+   archivo con todo: cola del Owner, actividad de colaboradores, flags.
+3. **Recibir entregables** → `Mi unidad/RAUL/01-inbox/02-deliverables-to-owner/`.
+4. **Aviso por Gmail** → Borradores → `[InboxBot]`.
 
-El inbox del Owner es el **canal directo de tareas tuyas**. Los inbox de colaboradores son canales **para que ellos te envíen cosas a ti** (no son tareas tuyas, son insumos externos que tú decidirás qué hacer con ellos).
+   Recuerda: lo que dejas remotamente queda **encolado**, no resuelto. El
+   trabajo real espera a tu próxima sesión desktop.
 
----
+### Para el Owner en el desktop (modo desktop)
 
-## Parte 3 — Resumen accionable de una sola página
+1. Abrir sesión Claude Code → Raul lee la cola y te muestra el digest.
+2. Triar los tickets pendientes, procesar los que toquen.
+3. Raul produce los entregables reales y transiciona el estado de los tickets.
 
-### Para el Owner desde el celular
+### Para colaboradores
 
-1. **Tareas para el sistema** → app Drive móvil → `Mi unidad/RAUL/01-inbox/01-owner-to-raul/` → subir `.txt` o `.md`.
-2. **Recibir entregables** → app Drive móvil → `Mi unidad/RAUL/01-inbox/02-deliverables-to-owner/` → buscar carpeta con fecha más reciente → leer `00_README_lee_primero.md`.
-3. **Aviso por Gmail** → app Gmail → Borradores → buscar `[InboxBot]`.
+1. **Envían** al Owner en `01_De_<X>_Para_Raoul/`.
+2. **Reciben** del Owner en `02_De_Raoul_Para_<X>/`.
+3. Aviso por canal externo (Drive no notifica solo).
 
-### Para colaboradores (desde su Drive)
+### Rutas que NO se usan
 
-1. **Reciben** archivos del Owner en su `outbox/`.
-2. **Envían** archivos al Owner en su `inbox/`.
-3. Aviso por canal externo (WhatsApp/email), Drive no notifica por sí mismo.
-
-### Rutas que NO debes usar
-
-- `C:\Users\User\Mi unidad\RAUL\` (cueva legacy Backup & Sync)
-- `C:\Users\User\OneDrive\RAUL\` (OneDrive no es canal del sistema)
-
-### Frecuencia de InboxBot
-
-- Default 4 h. Configurable en Claude Code Desktop → Routines.
-- Test sencillo cada cierto tiempo (sección 1.6) para verificar que sigue vivo.
+- `C:\Users\User\Mi unidad\RAUL\` (cueva legacy Backup & Sync).
+- `C:\Users\User\OneDrive\RAUL\` (OneDrive no es canal del sistema).
 
 ---
 
-*Documento mantenido en* `C:\RAUL\04-system\03-governance\OPERATIVA-REMOTA-Y-COLABORADORES.md`. *Cualquier cambio sustantivo en rutas, frecuencia o convenciones se actualiza aquí + se refleja en `inboxbot/AGENT.md` si aplica.*
+*Documento mantenido en* `C:\RAUL\04-system\03-governance\OPERATIVA-REMOTA-Y-COLABORADORES.md`. *Cambios en rutas, frecuencia o convenciones se actualizan aquí + se reflejan en `inboxbot/AGENT.md` y `raul/AGENT.md` si aplica.*

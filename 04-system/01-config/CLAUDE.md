@@ -84,7 +84,7 @@ Agentes de infraestructura que ejecutan una función mecánica del sistema, sin 
 
 | Name | Role | When to engage |
 |------|------|----------------|
-| **InboxBot** ⭐ | Automated Multi-Channel Messenger (IB-1..IB-5) | Trigger automático cada 2h. Escucha canales remotos (Drive owner/colaboradores/Junta/regulators/third-parties), invoca a Raul, entrega resultados, gestiona reentry de decision-responses (Phase 3 governance). |
+| **InboxBot** ⭐ | Capture & Queue Utility (IB-1..IB-5) | Trigger automático cada 2h. Escanea canales remotos (Drive: inbox del Owner + `01_De_X_Para_Raoul/` de colaboradores), **captura** cada ítem nuevo como ticket en la cola de trabajo (`01-inbox/00-cola/`), regenera el tablero `_ESTADO.md`, notifica al Owner. **No procesa, no invoca a Raul, no escribe al repo** — capture-only (conceptual v5.0). Raul-desktop consume la cola. |
 
 *(Roster completo y reglas operativas → [`04-system/02-agents/_roster.md`](../02-agents/_roster.md). Definición canónica de clases → [`04-system/02-agents/_taxonomy.md`](../02-agents/_taxonomy.md).)*
 

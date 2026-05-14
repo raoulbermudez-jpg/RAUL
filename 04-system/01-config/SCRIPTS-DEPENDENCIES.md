@@ -178,12 +178,7 @@ Snapshot histórico pre-fix (referencia):
 
 ### 1. InboxBot AGENT.md
 
-`.claude/agents/inboxbot/AGENT.md:130` referencia hardcoded:
-```
-C:\RAUL\04-system\03-governance\inboxbot-tasklog.md
-```
-
-Si se reorganiza `03-governance/`, hay que editar AGENT.md.
+`.claude/agents/inboxbot/AGENT.md` contiene paths absolutos hardcoded de los canales de Drive (`G:\Mi unidad\RAUL\01-inbox\...`) y la trigger config. Desde el rediseño v5.0 (capture-only, 2026-05-14) InboxBot **ya no escribe al repo** — todos sus outputs (tickets en `00-cola/`, `_log-ciclos.md`, `_ESTADO.md`, marcadores) viven en la nube de Drive. Si se reorganizan esas carpetas de Drive, hay que editar AGENT.md.
 
 **Restricción crítica (memoria):** `.claude/agents/<agente>/AGENT.md` debe modificarse con **Read+Edit, NUNCA con Write**. Write produce loops de permisos.
 

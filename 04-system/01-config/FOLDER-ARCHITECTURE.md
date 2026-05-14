@@ -514,12 +514,15 @@ Configuración concreta de Drive Desktop: mapear las carpetas listadas como **bi
 
 ### 10.4 InboxBot
 
-InboxBot es un **agente Claude** (no script Python), invocado por un Remote Trigger periódico (recomendado: cada 4h). Su ficha runtime vive en `.claude/agents/inboxbot/AGENT.md` y la conceptual en `04-system/02-agents/conceptual/inboxbot.md`.
+InboxBot es un **agente Claude** (no script Python) **capture-only** (conceptual v5.0, 2026-05-14), invocado por un Remote Trigger periódico (vigente: cada 2h, ventana 6:00–23:00 Caracas). Su ficha runtime vive en `.claude/agents/inboxbot/AGENT.md` y la conceptual en `04-system/02-agents/conceptual/inboxbot.md`.
 
-- **Lectura:** `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` + subdirectorios `G:\Mi unidad\RAUL\colaboradores\<nombre>\inbox\`
-- **Escritura:** marcadores `DONE_[TASK_ID].txt` en carpeta de origen + entrega en `02-deliverables-to-owner\` o `colaboradores\<nombre>\outbox\` + draft de Gmail
+InboxBot corre en entorno remoto **sin acceso al filesystem del repo**. Solo captura — no procesa, no invoca a Raul, no escribe al repo, no produce entregables.
+
+- **Lectura (canales monitoreados):** `G:\Mi unidad\RAUL\01-inbox\01-owner-to-raul\` + los `01_De_<X>_Para_Raoul\` de cada colaborador en `G:\Mi unidad\RAUL\colaboradores\<dominio>\<nombre>\`
+- **Escritura (todo en la nube):** ticket por ítem en `01-inbox\00-cola\TICKET_*.md` (estado `PENDIENTE-RAUL`) + marcador `CAPTURADO_*` junto al fuente + heartbeat en `00-cola\_log-ciclos.md` + tablero regenerado `01-inbox\_ESTADO.md` + draft de Gmail
+- **Hand-off a Raul:** asíncrono vía la cola de trabajo. Raul-desktop la consume al inicio de sesión (ritual `raul.md` §6.0), transiciona el estado de los tickets y produce los entregables reales.
 - **Trigger ID activo:** registrar en `DECISIONS.md` cualquier re-creación.
-- Detalle operativo en `MIGRATION-PLAN.md` fase 4 y en la AGENT.md del agente.
+- Detalle operativo en la AGENT.md del agente y en `OPERATIVA-REMOTA-Y-COLABORADORES.md` v2.0.
 
 ### 10.5 Backup
 

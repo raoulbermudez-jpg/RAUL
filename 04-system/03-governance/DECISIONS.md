@@ -1034,4 +1034,33 @@ Confirmado deferral, con 2 anotaciones específicas:
 
 ---
 
+## 2026-05-14 — Rediseño integral de InboxBot a capture-only (conceptual v5.0)
+
+**Contexto.** InboxBot falló dos veces en 24h (incidentes `2026-05-13_raul_domain_misclassification_cora.md` y `2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md`): declaró haber creado wiki articles y actualizado registros del repo que nunca aterrizaron, y fabricó contenido inexistente. Causa raíz: InboxBot corre como rutina remota en la nube **sin acceso al filesystem del repositorio**. El Drive solo contiene `01-inbox/{01-owner-to-raul, 02-deliverables-to-owner}` y `colaboradores/` — no hay `02-knowledge-base/`, `03-projects/`, `04-system/` ni los canales de gobernanza. El contrato v4.0 ("invoca a Raul → recibe RESULTADO_RAUL → escribe IB-1"; protocolo Phase 3 §11) asumía capacidades que el entorno remoto no tiene; un Raul invocado remotamente solo podía role-playear la orquestación y alucinar el resultado.
+
+**Decisión Owner.** Rediseño integral, no parche. Tres definiciones del Owner: (1) alcance = rediseño completo en un solo plan; (2) InboxBot remoto = **estrictamente captura**, cero procesamiento; (3) cola = tickets + digest.
+
+**Principio.** Separar captura de procesamiento y asignar cada una al entorno que realmente puede ejecutarla — el *inbox pattern* de sistemas distribuidos: almacenar durablemente el ítem entrante, hacer ACK solo de lo escrito durablemente, dejar que un procesador con las capacidades correctas lo consuma.
+
+**Qué cambió:**
+- **InboxBot conceptual v5.0** — pasa de "messenger que procesa" a "utilidad de captura y encolado": detecta, normaliza como ticket, encola, acusa recibo, regenera tablero, notifica. Retirados: invocación a Raul, contrato `RESULTADO_RAUL`, producción de entregables, escritura al repo, protocolo Phase 3 §11. Captura de clase amplia (todos los ítems nuevos por ciclo).
+- **Outputs IB-1..IB-5 redefinidos** — IB-1 Intake Ticket, IB-2 Cycle Log Entry (heartbeat, incluso ciclos vacíos), IB-3 Owner Notification (digest de captura), IB-4 Estado Digest (tablero único), IB-5 Error Report.
+- **Marcador `CAPTURADO_`** reemplaza `DONE_` (la palabra `DONE` indujo al Owner a error). Runtime reconoce `DONE_` heredado como exclusión de compat — sin renombrado masivo.
+- **Cola de trabajo + tablero** — `G:\Mi unidad\RAUL\01-inbox\00-cola\` (un `TICKET_*.md` por ítem + `_log-ciclos.md`) y `01-inbox\_ESTADO.md` (tablero único: cola del Owner + actividad de colaboradores + flags de higiene + ítems añejos).
+- **Raul absorbe** lo que InboxBot ya no hace: ritual de inicio de sesión que consume la cola (`raul.md` §6.0), routing de respuestas de decisión Phase 3 (`raul.md` §6.6). Retirado el contrato `RESULTADO_RAUL` de `raul.md` §7.1.
+- **Modelo remoto/desktop explícito** — Modo remoto: el Owner deja ítems, InboxBot captura/encola/notifica, nada se procesa. Modo desktop: Raul consume la cola y hace el trabajo real. Mental model remoto reducido a 3 cosas: `01-owner-to-raul/` (dejo), `02-deliverables-to-owner/` (recibo), `_ESTADO.md` (consulto).
+
+**Archivos afectados:** `04-system/02-agents/conceptual/inboxbot.md` (full rewrite v5.0), `.claude/agents/inboxbot/AGENT.md` (rewrite), `04-system/02-agents/conceptual/raul.md` + `.claude/agents/raul/AGENT.md` (ediciones), `OPERATIVA-REMOTA-Y-COLABORADORES.md` v2.0, `GUIA-CARPETAS-RAUL.md` v1.1, `01-inbox/README.md`. Drive: `00-cola/`, `_log-ciclos.md`, `_ESTADO.md` creados.
+
+**Alternativas consideradas y descartadas:**
+- *Parche puntual* (solo prohibir declarar paths del repo) — descartado: el incidente Cora ya lo había anotado como lección #3 sin formalizar, y recurrió horas después. Un parche sin rediseño del contrato no elimina la causa.
+- *Permitir un allowlist de acciones remotas* (ej. acknowledgements a colaboradores) — descartado por el Owner: estrictamente captura. Cualquier acción remota adicional reabre la puerta al scope creep.
+- *Cola como archivo único `_ESTADO.md`* — descartado: InboxBot (remoto) y Raul (desktop) editando el mismo archivo arriesga conflictos de sync. Se eligió tickets-por-archivo + digest regenerado que InboxBot posee en exclusiva.
+
+**Implicaciones:** la config del trigger (`trig_01RgGGbpCvckUzSwkyGMDNtm`, cron) no cambia — solo cambia lo que el algoritmo hace al disparar. El incidente `2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md` queda **Resuelto** con acciones manuales pendientes del Owner (borrar 4 archivos fantasma `*_EN-PROCESO.md`, renombrar subcarpeta de Daniel-Rubio).
+
+**Estado:** Activa desde 2026-05-14. Validación pendiente: dry-run de captura de InboxBot v5.0 (ver plan de verificación).
+
+---
+
 (próximas entradas debajo, en orden cronológico)

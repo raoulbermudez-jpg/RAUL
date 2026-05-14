@@ -30,7 +30,7 @@ comportamiento de cada agente vive en `conceptual/<agente>.md`.
 | **Celeste** | `domain-specialist` | Genteca | Knowledge Base Librarian + KB Curator (estrategia/narrativa) | `conceptual/celeste.md` |
 | **Renzo** | `domain-specialist` | Genteca | Application Engineer | `conceptual/renzo.md` |
 | **Oz** | `domain-specialist` | Genteca | Technical Documentation Editor | `conceptual/oz.md` |
-| **InboxBot** | `execution-utility` | transversal | Multi-channel messenger | `conceptual/inboxbot.md` |
+| **InboxBot** | `execution-utility` | transversal | Capture & Queue utility | `conceptual/inboxbot.md` |
 
 ---
 
@@ -114,8 +114,9 @@ activos al cierre de esta versión del roster.)*
 
 ### `execution-utility`
 
-- **InboxBot** — mensajero entre canales remotos (Drive) y Raul. Trigger
-  cada 4h.
+- **InboxBot** — utilidad capture-only (v5.0): captura ítems de los
+  canales remotos (Drive) y los encola como tickets para Raul-desktop. No
+  procesa. Trigger cada 2h, ventana 6:00–23:00 Caracas.
 
 ---
 
