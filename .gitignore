@@ -14,6 +14,7 @@
 01-inbox/01-owner-to-raul/
 01-inbox/02-deliverables-to-owner/
 01-inbox/03-raw-sources/
+01-inbox/04-interactions/
 
 # Permitimos sólo documentación de estructura si algún día hubiera README.md
 # (no hace falta regla extra: README.md nuevo se añadirá explícitamente con git add si lo necesitas).

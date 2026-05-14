@@ -10,6 +10,7 @@ Entrada y salida operativa del sistema. Separado por dirección y propósito.
 - `01-owner-to-raul/` — Owner → sistema. Briefs, pedidos, archivos que el Owner deposita remotamente (Drive, móvil). El canal vivo es el mirror de Drive; InboxBot lo escanea y **captura** cada ítem como ticket en `00-cola/` (no procesa — captura).
 - `02-deliverables-to-owner/` — Raul → Owner. Entregables finales o borradores para revisión, producidos por Raul en sesión desktop.
 - `03-raw-sources/` — Insumos crudos (PDFs, transcripciones, capturas, artículos web) pendientes de compilar a `02-knowledge-base/` o a un proyecto en `03-projects/`. Canal desktop/repo — no es parte del modelo remoto.
+- `04-interactions/` — **Captura de interacciones humanas.** Drop zone de artefactos crudos de interacción que no pasaron por el canal de archivos: notas de voz, transcripciones, chats exportados, fotos de notas manuscritas. Se destilan a Notas de Interacción en sesión desktop. Gitignored. Ver `02-knowledge-base/01-foundations/PROPUESTA_capa-de-captura-de-interacciones_v1.md` y el README del canal.
 - `_ESTADO.md` — **Tablero de estado** (en el mirror de Drive). Archivo único que el Owner consulta desde remoto: cola del Owner + actividad de colaboradores + flags de higiene + ítems añejos. Lo regenera InboxBot cada ciclo.
 
 ### Canales de governance (Phase 3 — desde 2026-05-09)

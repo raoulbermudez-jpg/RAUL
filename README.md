@@ -2,6 +2,14 @@
 
 Personal Knowledge Assistant (PKA) local-first, vendor-neutral, multi-LLM.
 
+## Si vas a clonar este repo para montar tu propio PKA
+
+Empieza por la **Guía del Owner**: `02-knowledge-base/01-foundations/GUIA-OWNER_sistema-PKA-clonado.md`.
+Explica qué acabas de recibir, cómo piensa el sistema, el modelo de interacción
+persona a persona, las buenas prácticas y tus primeros pasos al clonar. La
+metodología completa para construir un PKA vive en
+`02-knowledge-base/00-raul-intelligence/methodology/Hoja_De_Ruta_Raul.md`.
+
 ## Estructura raíz
 
 - `01-inbox/` — Entrada y salida operativa (Owner ↔ Raul + raw sources).

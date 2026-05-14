@@ -1063,4 +1063,36 @@ Confirmado deferral, con 2 anotaciones específicas:
 
 ---
 
+## 2026-05-14 — Aprobación de la capa de captura de interacciones multicanal (fase mínima)
+
+**Decisión:** el Owner aprueba íntegramente la propuesta `02-knowledge-base/01-foundations/PROPUESTA_capa-de-captura-de-interacciones_v1.md` y autoriza el arranque de su **fase mínima**.
+
+**Contexto y motivación:**
+
+El sistema /RAUL/ captura bien un solo canal de interacción humana — el intercambio de archivos por Drive. La mayoría del insumo de valor (definiciones, solicitudes, decisiones, **cambios de opinión**) nace en canales que el sistema no ve: conversaciones, llamadas, reuniones, WhatsApp, notas manuscritas. Ese insumo se pierde o se degrada en la memoria humana — selectiva y poco confiable a seis meses — y genera malentendidos. La decisión extiende el anti-patrón ya documentado en la metodología (`Hoja_De_Ruta_Raul.md` §2.10: no depender de la memoria del operador) del *aprendizaje* a la *interacción*.
+
+**Decisión específica — qué se aprueba (las 3 preguntas de §12 de la propuesta):**
+
+1. **El principio:** capa de captura como **disciplina de triaje, no de grabación**. Modelo de captura por niveles (Tier 0 canales que ya son texto / Tier 1 captura rápida cruda / Tier 2 Nota de Interacción deliberada) + la Nota de Interacción como artefacto canónico ligero + el filtro de señal de cinco categorías (definición / solicitud-compromiso / cambio / decisión / señal de relación).
+2. **El arranque de la fase mínima:** carpeta `01-inbox/04-interactions/` + plantilla de Nota de Interacción + adopción de la disciplina del filtro. **Cero automatización, cero agentes nuevos.**
+3. **La integración como metodología:** una vez validada la fase mínima con uso real (2-4 semanas), la propuesta se integra como §14 de `Hoja_De_Ruta_Raul.md` para que viaje con el patrón a cualquier PKA clonado.
+
+**Alternativas consideradas:**
+
+- *Grabar todo (transcripts completos de cada canal).* Rechazado en la propuesta: la sobre-captura no resuelve la sub-captura, la desplaza al pantano — la señal queda enterrada bajo el ruido.
+- *Arrancar directamente con automatización / agente "Escriba de Interacciones".* Diferido: solo el uso real de la fase mínima revela si el filtro de señal está bien calibrado. Construir las 4 fases en abstracto repite el anti-patrón §10.5 de la metodología.
+
+**Implicaciones — fase mínima implementada esta sesión (2026-05-14):**
+
+- Creado el canal `01-inbox/04-interactions/` con su README. Es buzón de artefactos crudos — gitignored como `03-raw-sources/`.
+- `.gitignore` actualizado (sección 1, buzones operativos).
+- `01-inbox/README.md` actualizado — `04-interactions/` añadido a "Canales originales".
+- Plantilla creada: `04-system/04-tools-and-scripts/templates/interaction-note-template.md`.
+- **Fases siguientes NO ejecutadas** (requieren validar la fase mínima primero): Fase 1 = InboxBot extiende escaneo a `04-interactions/` + rutas semi-automáticas Tier 0; Fase 2 = agente "Escriba de Interacciones" (Fase 5+ de la metodología); Fase 3 = integración con memoria de governance.
+- Disciplina pendiente de adopción por el Owner: aplicar el filtro de señal y producir Notas de Interacción en sesión desktop a partir de los artefactos crudos.
+
+**Estado:** Activa desde 2026-05-14. Fase mínima implementada. Validación pendiente: 2-4 semanas de uso real para calibrar el filtro de señal antes de autorizar Fase 1. Re-evaluar e integrar como §14 de la metodología tras esa validación.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
