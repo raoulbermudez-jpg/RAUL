@@ -1,9 +1,9 @@
 # Propuesta — Capa de captura de interacciones multicanal
 
-**Versión:** v1 — propuesta
+**Versión:** v1.1 — aprobada y calibrada
 **Fecha:** 2026-05-14
-**Tipo:** propuesta de asesoría para decisión del Owner
-**Estado:** **PROPUESTA. No implementar hasta decisión del Owner.** Si se aprueba, se integra como sección nueva de la metodología (`Hoja_De_Ruta_Raul.md`, §14 sugerida) y como capacidad recomendada para cualquier PKA clonado del patrón.
+**Tipo:** propuesta de asesoría — aprobada e implementada (fase mínima)
+**Estado:** **APROBADA** por el Owner el 2026-05-14 (ver `DECISIONS.md`). Fase mínima implementada y calibrada tras el dry-run del mismo día (ver Changelog). Pendiente: integrar como §14 de la metodología (`Hoja_De_Ruta_Raul.md`) tras 2-4 semanas de uso real.
 **Origen:** solicitada por el Owner el 2026-05-14 como asesoría para implementación posterior.
 
 ---
@@ -122,6 +122,8 @@ Contexto mínimo. Suficiente para entender la nota dentro de seis meses.
 - ...
 ```
 
+**Estados de una Nota** (campo `estado` del frontmatter): `capturada` (artefacto crudo en el canal, sin destilar) → `triada` (destilada y su contenido enrutado; puede tener acciones abiertas) → `accionada` (todas las acciones cerradas) → `archivada` (sin acciones abiertas ni valor de consulta activa). La nota destilada se guarda en `01-inbox/04-interactions/_notas/`.
+
 **Por qué este formato y no otro:**
 
 - **Frontmatter trazable** — fecha, canal, participantes, dominio, estado. Cumple el principio de trazabilidad obligatoria (§2.5 de la metodología): de cualquier nota se sabe de dónde salió, cuándo, con quién y en qué estado está.
@@ -136,6 +138,8 @@ Contexto mínimo. Suficiente para entender la nota dentro de seis meses.
 ### 6.1 Nuevo canal de entrada: `01-inbox/04-interactions/`
 
 Un canal hermano de `03-raw-sources/`, dedicado a artefactos crudos de interacción: notas de voz, transcripts, chats exportados, fotos de notas manuscritas, screenshots. Gitignored, igual que los demás buzones. Es el "drop zone" único para los tres niveles de captura.
+
+**Estructura interna:** la raíz del canal recibe los artefactos **crudos**; el subfolder **`_notas/`** guarda las **Notas de Interacción destiladas**. El prefijo `_` mantiene las notas fuera del escaneo de InboxBot (Fase 1), de modo que una nota destilada no se re-encola como ticket.
 
 ### 6.2 El flujo: crudo → destilado → triaje → destino
 
@@ -162,6 +166,8 @@ Nota de Interacción     artefacto crudo permanece como fuente
    ├─ Señal de relación  ──►  memoria de personas (people.md)
    └─ Solo registro      ──►  la nota se archiva — y eso también es valor
 ```
+
+La Nota de Interacción destilada se guarda en `01-inbox/04-interactions/_notas/`; el artefacto crudo permanece en la raíz del canal como fuente referenciada.
 
 El último ramal es importante: **una interacción capturada que no se acciona no es desperdicio.** Quedó registrada, fechada, trazable. Si dentro de seis meses surge "pero acordamos X", la nota existe. El registro *es* el valor, aunque no haya acción.
 
@@ -205,6 +211,7 @@ El corazón de la propuesta. Sin un filtro claro, la capa de captura colapsa en 
 - Cortesías, saludos, charla sin compromiso.
 - Actualizaciones de estado que no cambian nada ("voy avanzando bien").
 - Cosas que ya están capturadas en otro canal (no dupliques el archivo de Drive en una nota).
+- **Interacciones Owner↔sistema** — las decisiones que tomas en sesión con el PKA no son human↔human; van a `DECISIONS.md` o a la memoria de governance, no a una Nota de Interacción. El alcance de la capa es **estrictamente human↔human**.
 - Tu propio pensamiento en voz alta que no involucró a otro humano — eso es otra cosa (va a tareas o a memoria, no a Notas de Interacción).
 
 **Test operativo:** ¿esta interacción creó o cambió un compromiso, una definición, un plan, una decisión o una relación? Si no, no necesita Nota de Interacción. La mayoría de las interacciones de un día **no** la necesitan — y eso es correcto. El filtro protege contra la fatiga de captura tanto como contra el pantano.
@@ -262,14 +269,31 @@ Si se aprueba, la recomendación es **integrar esta propuesta como §14 de la `H
 
 ---
 
-## 12. Decisión solicitada al Owner
+## 12. Decisión del Owner
 
-1. **¿Se aprueba el principio?** Capa de captura como disciplina de triaje (no grabación), con el modelo por niveles y la Nota de Interacción como artefacto canónico.
-2. **¿Se aprueba arrancar la fase mínima?** Carpeta + plantilla + filtro, sin automatización ni agentes.
-3. **¿Se integra como §14 de la metodología** una vez validada la fase mínima, para que viaje con el patrón a otros owners?
+**Aprobada íntegramente el 2026-05-14.** Las tres preguntas — (1) el principio de captura como disciplina de triaje, (2) el arranque de la fase mínima, (3) la integración futura como §14 de la metodología — fueron aprobadas. Registro en `DECISIONS.md` (entrada 2026-05-14).
 
-Si se aprueba, los siguientes pasos concretos son: crear `01-inbox/04-interactions/` y su entrada en `.gitignore`, colocar la plantilla de Nota de Interacción en `04-system/04-tools-and-scripts/templates/`, y registrar la decisión en `DECISIONS.md`. Mientras tanto, esta propuesta queda registrada en `PENDING-DECISIONS-REGISTRY.md`.
+**Fase mínima implementada el 2026-05-14:** canal `01-inbox/04-interactions/` (+ subfolder `_notas/`), plantilla en `04-system/04-tools-and-scripts/templates/interaction-note-template.md`, entrada en `.gitignore` y en `DECISIONS.md`. Calibrada el mismo día tras un dry-run con dos Notas de Interacción reales (ver Changelog).
+
+**Pendiente:** 2-4 semanas de uso real para calibrar el filtro de señal antes de autorizar la Fase 1; luego integrar como §14 de `Hoja_De_Ruta_Raul.md`.
 
 ---
 
-*Propuesta elaborada como asesoría. No modifica el sistema. Las decisiones de §12 son del Owner.*
+*Propuesta elaborada como asesoría. Aprobada e implementada en fase mínima el 2026-05-14.*
+
+---
+
+## Changelog
+
+### v1.1 — 2026-05-14 (aprobada y calibrada)
+
+- Estado: PROPUESTA → APROBADA por el Owner. Fase mínima implementada el mismo día.
+- Calibración tras un dry-run con dos Notas de Interacción reales (la aprobación de esta propuesta + el handoff a Valeria del 2026-05-13):
+  - **Alcance confirmado estrictamente human↔human.** Las interacciones Owner↔sistema (decisiones tomadas en sesión con el PKA) quedan explícitamente fuera — van a `DECISIONS.md`. Añadido a §7 y al README del canal. El enum `canal` no necesita un valor para sesiones Owner↔sistema.
+  - **Subfolder `_notas/`.** Las Notas de Interacción destiladas viven en `01-inbox/04-interactions/_notas/`, separadas de los artefactos crudos en la raíz del canal. El prefijo `_` las mantiene fuera del escaneo de InboxBot. Añadido a §6.1 y §6.2.
+  - **Criterios de `estado` definidos.** `capturada` → `triada` → `accionada` → `archivada`, cada uno con criterio explícito. Añadido a §5 y a la plantilla.
+- Ningún hallazgo del dry-run fue bloqueante: calibración, no defecto.
+
+### v1 — 2026-05-14 (propuesta)
+
+- Versión inicial, solicitada por el Owner como asesoría. Modelo de captura por niveles + Nota de Interacción como artefacto canónico + filtro de señal de 5 categorías.

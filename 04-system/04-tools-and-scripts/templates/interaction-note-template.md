@@ -1,11 +1,11 @@
 ---
 tipo: nota-de-interaccion
 fecha: YYYY-MM-DD
-canal:                # conversacion | llamada | reunion | email | whatsapp | videollamada | nota-manuscrita
+canal:                # human↔human: conversacion | llamada | reunion | email | whatsapp | videollamada | nota-manuscrita
 participantes: []
 dominio: []           # genteca | plenus | finca | teca | marca-personal | transversal
-artefacto_crudo:      # ruta al archivo en 01-inbox/04-interactions/, si existe
-estado: capturada     # capturada | triada | accionada | archivada
+artefacto_crudo:      # ruta al artefacto crudo en 01-inbox/04-interactions/, si existe
+estado: capturada     # capturada → triada → accionada → archivada (ver criterios abajo)
 ---
 
 # Nota de Interacción — <título corto>
@@ -16,6 +16,16 @@ estado: capturada     # capturada | triada | accionada | archivada
 > Una Nota de Interacción es una **destilación**, no un acta ni un transcript.
 > 5-10 líneas. Si se siente como trabajo pesado, está mal hecha — o la
 > interacción no ameritaba una nota.
+>
+> **Alcance:** solo interacciones **human↔human**. Las decisiones tomadas en
+> sesión con el PKA (Owner↔sistema) van a `DECISIONS.md` o a memoria, no aquí.
+>
+> **Estados:** `capturada` = artefacto crudo en el canal, sin destilar ·
+> `triada` = destilada y su contenido enrutado (puede tener acciones abiertas) ·
+> `accionada` = todas las acciones ejecutables cerradas · `archivada` = sin
+> acciones abiertas ni valor de consulta activa.
+>
+> La nota destilada se guarda en `01-inbox/04-interactions/_notas/`.
 
 ## Qué pasó
 

@@ -1091,7 +1091,9 @@ El sistema /RAUL/ captura bien un solo canal de interacción humana — el inter
 - **Fases siguientes NO ejecutadas** (requieren validar la fase mínima primero): Fase 1 = InboxBot extiende escaneo a `04-interactions/` + rutas semi-automáticas Tier 0; Fase 2 = agente "Escriba de Interacciones" (Fase 5+ de la metodología); Fase 3 = integración con memoria de governance.
 - Disciplina pendiente de adopción por el Owner: aplicar el filtro de señal y producir Notas de Interacción en sesión desktop a partir de los artefactos crudos.
 
-**Estado:** Activa desde 2026-05-14. Fase mínima implementada. Validación pendiente: 2-4 semanas de uso real para calibrar el filtro de señal antes de autorizar Fase 1. Re-evaluar e integrar como §14 de la metodología tras esa validación.
+**Calibración del dry-run (2026-05-14):** smoke test con dos Notas de Interacción reales (la aprobación de esta propuesta + el handoff a Valeria del 2026-05-13). Tres ajustes incorporados a la propuesta (v1.1), la plantilla y el README del canal: (1) alcance confirmado **estrictamente human↔human** — las decisiones Owner↔sistema van a `DECISIONS.md`, no a Notas; (2) subfolder `01-inbox/04-interactions/_notas/` para las Notas destiladas, separadas de los artefactos crudos en la raíz; (3) criterios explícitos para el campo `estado` (`capturada` → `triada` → `accionada` → `archivada`). Ninguno fue bloqueante — calibración, no defecto.
+
+**Estado:** Activa desde 2026-05-14. Fase mínima implementada y calibrada (dry-run mismo día). Validación pendiente: 2-4 semanas de uso real para calibrar el filtro de señal antes de autorizar Fase 1. Re-evaluar e integrar como §14 de la metodología tras esa validación.
 
 ---
 
