@@ -1,6 +1,6 @@
 # Propuesta — Capa de captura de interacciones multicanal
 
-**Versión:** v1.1 — aprobada y calibrada
+**Versión:** v1.2 — aprobada y calibrada
 **Fecha:** 2026-05-14
 **Tipo:** propuesta de asesoría — aprobada e implementada (fase mínima)
 **Estado:** **APROBADA** por el Owner el 2026-05-14 (ver `DECISIONS.md`). Fase mínima implementada y calibrada tras el dry-run del mismo día (ver Changelog). Pendiente: integrar como §14 de la metodología (`Hoja_De_Ruta_Raul.md`) tras 2-4 semanas de uso real.
@@ -100,7 +100,7 @@ fecha: YYYY-MM-DD
 canal: conversacion | llamada | reunion | email | whatsapp | videollamada | nota-manuscrita
 participantes: [nombres]
 dominio: [genteca | plenus | ... | transversal]
-artefacto_crudo: [ruta al archivo en 01-inbox/04-interactions/, si existe]
+artefacto_crudo: [ruta al crudo en 01-inbox/04-interactions/_procesadas/, si existe]
 estado: capturada | triada | accionada | archivada
 ---
 
@@ -139,7 +139,7 @@ Contexto mínimo. Suficiente para entender la nota dentro de seis meses.
 
 Un canal hermano de `03-raw-sources/`, dedicado a artefactos crudos de interacción: notas de voz, transcripts, chats exportados, fotos de notas manuscritas, screenshots. Gitignored, igual que los demás buzones. Es el "drop zone" único para los tres niveles de captura.
 
-**Estructura interna:** la raíz del canal recibe los artefactos **crudos**; el subfolder **`_notas/`** guarda las **Notas de Interacción destiladas**. El prefijo `_` mantiene las notas fuera del escaneo de InboxBot (Fase 1), de modo que una nota destilada no se re-encola como ticket.
+**Estructura interna — división por estado, no por tipo:** la raíz del canal recibe los artefactos **crudos pendientes de destilar** (la raíz siempre muestra solo lo que falta procesar — escala a cualquier volumen de reuniones); el subfolder **`_procesadas/`** recibe los crudos **ya destilados** (fuente dormida, referenciada por su nota); el subfolder **`_notas/`** guarda las **Notas de Interacción destiladas**. El prefijo `_` mantiene ambos subfolders fuera del escaneo de InboxBot, de modo que ni una nota destilada ni un crudo ya procesado se re-encolan como ticket. Se eligió división por **estado** (pendiente / procesado) y no por **tipo de artefacto** (`transcripciones/`, `notas-voz/`, ...): a volumen alto el problema es saber qué falta destilar, no de qué tipo es cada cosa — y dividir por tipo reintroduce la proliferación de carpetas que el rediseño de InboxBot v5.0 eliminó.
 
 ### 6.2 El flujo: crudo → destilado → triaje → destino
 
@@ -156,7 +156,7 @@ Interacción humana
 [sesión desktop] el Owner (con ayuda del PKA) destila
    │                    │
    ▼                    ▼
-Nota de Interacción     artefacto crudo permanece como fuente
+Nota de Interacción     artefacto crudo → _procesadas/ (fuente dormida)
    │
    ▼
 [triaje] el contenido destilado se enruta a su destino:
@@ -167,7 +167,7 @@ Nota de Interacción     artefacto crudo permanece como fuente
    └─ Solo registro      ──►  la nota se archiva — y eso también es valor
 ```
 
-La Nota de Interacción destilada se guarda en `01-inbox/04-interactions/_notas/`; el artefacto crudo permanece en la raíz del canal como fuente referenciada.
+La Nota de Interacción destilada se guarda en `01-inbox/04-interactions/_notas/`; el artefacto crudo se mueve a `01-inbox/04-interactions/_procesadas/` como fuente referenciada — la raíz del canal queda solo con lo pendiente de destilar.
 
 El último ramal es importante: **una interacción capturada que no se acciona no es desperdicio.** Quedó registrada, fechada, trazable. Si dentro de seis meses surge "pero acordamos X", la nota existe. El registro *es* el valor, aunque no haya acción.
 
@@ -284,6 +284,12 @@ Si se aprueba, la recomendación es **integrar esta propuesta como §14 de la `H
 ---
 
 ## Changelog
+
+### v1.2 — 2026-05-14 (estructura por estado)
+
+- **Subfolder `_procesadas/` añadido.** Calibración tras el Owner confirmar que las transcripciones de reuniones serán su modo de captura **dominante** (verbal interaction → decisiones y solicitudes). A volumen alto, el diseño "el crudo permanece en la raíz como fuente" no escala: la raíz se vuelve ruidosa y se pierde la señal de qué falta destilar.
+- **División por estado, no por tipo.** La raíz = crudos **pendientes** de destilar; `_procesadas/` = crudos **ya destilados** (fuente dormida); `_notas/` = notas destiladas. Se descartó dividir por tipo de artefacto (`transcripciones/`, `notas-voz/`, ...) porque reintroduce proliferación de carpetas y no resuelve el problema real (saber qué falta procesar). El patrón coincide con `_archived/` / `03_Archivo/` del resto del sistema.
+- Actualizado §6.1, §6.2, §5 (campo `artefacto_crudo`) + README del canal.
 
 ### v1.1 — 2026-05-14 (aprobada y calibrada)
 

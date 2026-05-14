@@ -4,9 +4,11 @@
 
 ## Subcarpetas
 
-- `brand/` — Identidad de marca y estrategia digital de Exceline / Genius. **Poblado 2026-04-30.**
+- `brand/` — Identidad de marca, estrategia y procesos de comunicaciones de Exceline / Genius. **Poblado 2026-04-30; ampliado 2026-05-13.**
   - `01-identidad-de-marca.md` — logos, Pantones, tipografías, atributos, esloganes, usos, fotografía.
   - `02-estrategia-digital-y-audiencias.md` — diagnóstico IG, benchmarking, audiencias, posicionamiento, pilares, framework digital, campaña AA/Refr.
+  - `03-comunicaciones-organigrama-y-procesos-2026.md` — organigrama del área, 8 funciones, checklist 13 materiales por producto nuevo, soporte ESC, Trade Marketing / Plan Tienda Ideal, portal web, redes sociales.
+  - `04-estrategia-2026-marca-y-comunicaciones.md` — marco 4P, posicionamiento formal Exceline + Exceline Profesional, cadena de influencia × medio, calendario de lanzamientos 2026, 11 campañas estacionales, eventos del sector.
 - `market/` — Market intelligence específico de Genteca (competidores, HMI, tendencias, benchmarking). Provisional bajo el dominio; se reevaluará promover a `03-cross-cutting/02-marketing-tecnico.md` si crece el marketing transversal (ver `FOLDER-ARCHITECTURE.md` §9).
 - `tech/` — **Poblado 2026-05-07.** Artículos técnicos compilados desde el atlas legacy de marzo 2026 tras auditoría Vera. Ver `tech/_index.md` para detalle. Incluye: fundamentos de motores trifásicos, protecciones eléctricas, aplicaciones (bombeo/refrigeración/ventiladores/transportadores), protocolo de selección de producto Genteca, y argumentos de venta técnicos (uso interno pendiente gate Bruna).
 - `references/` — **Poblado 2026-05-07.** Bibliografía técnica curada (22 fuentes académicas y técnicas con ~95% acceso abierto) sobre motores trifásicos y sus protecciones. Ver `references/_index.md`.

@@ -4,7 +4,7 @@ fecha: YYYY-MM-DD
 canal:                # human↔human: conversacion | llamada | reunion | email | whatsapp | videollamada | nota-manuscrita
 participantes: []
 dominio: []           # genteca | plenus | finca | teca | marca-personal | transversal
-artefacto_crudo:      # ruta al artefacto crudo en 01-inbox/04-interactions/, si existe
+artefacto_crudo:      # ruta al crudo en 01-inbox/04-interactions/_procesadas/, si existe
 estado: capturada     # capturada → triada → accionada → archivada (ver criterios abajo)
 ---
 
@@ -25,7 +25,9 @@ estado: capturada     # capturada → triada → accionada → archivada (ver cr
 > `accionada` = todas las acciones ejecutables cerradas · `archivada` = sin
 > acciones abiertas ni valor de consulta activa.
 >
-> La nota destilada se guarda en `01-inbox/04-interactions/_notas/`.
+> La nota destilada se guarda en `01-inbox/04-interactions/_notas/`. Al destilar,
+> el artefacto crudo se mueve de la raíz del canal a `01-inbox/04-interactions/_procesadas/`
+> — la raíz queda solo con lo pendiente de destilar.
 
 ## Qué pasó
 

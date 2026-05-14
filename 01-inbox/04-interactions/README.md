@@ -9,13 +9,24 @@ Creado 2026-05-14 — fase mínima de la capa de captura de interacciones. Ver
 `02-knowledge-base/01-foundations/PROPUESTA_capa-de-captura-de-interacciones_v1.md`
 y la entrada 2026-05-14 en `04-system/03-governance/DECISIONS.md`.
 
-## Estructura
+## Estructura — división por estado, no por tipo
 
-- **Raíz del canal** — artefactos **crudos**: notas de voz, transcripciones,
-  chats exportados, screenshots, fotos de notas manuscritas.
+- **Raíz del canal** — artefactos **crudos PENDIENTES de destilar**: notas de voz,
+  transcripciones, chats exportados, screenshots, fotos de notas manuscritas. La
+  raíz siempre muestra solo lo que falta procesar — escala a cualquier volumen de
+  reuniones.
+- **`_procesadas/`** — artefactos crudos **ya destilados**. Tras crear su Nota de
+  Interacción en sesión desktop, el crudo se mueve aquí: queda como fuente
+  referenciada por la nota, fuera de la vista de "pendientes". El prefijo `_` lo
+  mantiene fuera del escaneo de InboxBot.
 - **`_notas/`** — las **Notas de Interacción** destiladas. El prefijo `_` las
-  mantiene fuera del escaneo de InboxBot (Fase 1): una nota destilada no se
-  re-encola como ticket.
+  mantiene fuera del escaneo de InboxBot: una nota destilada no se re-encola como
+  ticket.
+
+> Se eligió dividir por **estado** (pendiente / procesado) y no por **tipo**
+> (`transcripciones/`, `notas-voz/`, ...): a volumen alto el problema es saber qué
+> falta destilar, no de qué tipo es cada artefacto; y dividir por tipo reintroduce
+> la proliferación de carpetas que el rediseño de InboxBot eliminó.
 
 ## Qué va aquí (raíz)
 
@@ -45,7 +56,8 @@ el artefacto tal cual — la destilación se hace después, en sesión desktop.
 3. **Se destila** → Nota de Interacción en `_notas/` (plantilla en
    `04-system/04-tools-and-scripts/templates/interaction-note-template.md`).
 4. **Triaje:** el contenido destilado se enruta a su destino. El artefacto crudo
-   permanece en la raíz como fuente referenciada por la nota.
+   se mueve a `_procesadas/` — queda como fuente referenciada por la nota, fuera
+   de la vista de "pendientes".
 
 ## Filtro de señal — qué amerita destilarse
 
