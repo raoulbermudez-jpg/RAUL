@@ -128,6 +128,11 @@ venv/
 # Worktrees temporales de subagentes Claude Code (isolation feature)
 .claude/worktrees/
 
+# Lock transient de scheduler interno de Claude Code — puede quedar huérfano
+# si la sesión se cae sin cleanup; se diagnostica y elimina manualmente cuando
+# pasa (ver memoria feedback_claude_scheduler_stale_lock_diagnostic.md).
+.claude/scheduled_tasks.lock
+
 # Archivos de encoding temporal (generados al subir binarios a Drive)
 b64_*.txt
 
