@@ -149,6 +149,13 @@ fase4_progress.json
 
 **/methodology/_private/
 
+# Perfiles operativos de actores humanos con quienes interactúa el Owner.
+# Caracterizaciones por persona (estilo, fortalezas, debilidades, patrones de
+# decisión, idiolectos) destiladas a partir de las Notas de Interacción.
+# Estrictamente privado — introspección operativa del Owner, no compartido,
+# no citado afuera. Ver project_perfiles_humanos_capa_interaccion (memoria).
+02-knowledge-base/00-raul-intelligence/perfiles-de-interaccion/
+
 # ---------------------------
 # 8) Otros directorios auxiliares
 # ---------------------------
