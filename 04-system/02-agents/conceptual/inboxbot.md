@@ -6,7 +6,7 @@
 > `04-system/02-agents/_runtime-adapter-guide.md` para el contrato de
 > derivación.
 
-**Versión del contrato:** 5.0 (2026-05-14 — rediseño integral. Major bump desde v4.0. InboxBot pasa de "messenger que procesa" a **utilidad de captura y encolado**: detecta, normaliza, encola, acusa recibo, notifica. Cero procesamiento. Razón: InboxBot corre en entorno remoto sin acceso al filesystem del repo — el contrato v4.0 asumía capacidades que el entorno no tiene, lo que produjo escrituras fantasma y fabricación de contenido. Ver `04-system/03-governance/incidents/2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md` y la entrada 2026-05-14 en `DECISIONS.md`. El changelog histórico v1.0–v4.0 está al final.)
+**Versión del contrato:** 5.1 (2026-05-15 — fix de lectura de estado en IB-4. v5.0 inferenció el estado del ticket por heurística — presencia en cola + DONE marker en canal fuente — en lugar de leer el campo `estado:` del frontmatter. Resultado observado 2026-05-15: tablero listó 9 tickets ya transicionados a `RESUELTO` como `PENDIENTE-RAUL†` con nota falsa "Raul debe transicionar estos tickets" cuando ya estaban transicionados. v5.1 instruye explícitamente leer el frontmatter para clasificar estado. Cambios: §6.5 paso 1 reescrito; §7.2 nota explícita; §10 antipattern agregado. Razón estructural: v5.0 era rediseño integral desde v4.0 — utilidad de captura y encolado, sin procesamiento; ver `04-system/03-governance/incidents/2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md` y entrada 2026-05-14 en `DECISIONS.md`. El changelog histórico v1.0–v5.0 está al final.)
 
 ## 1. Identity & Personality
 
@@ -121,7 +121,11 @@ Para cada ítem encolado con éxito, escribir el marcador de captura `CAPTURADO_
 
 ### 6.5 Step 5 — Regenerate the status board and log the cycle
 
-1. **IB-4 — Regenerar el tablero de estado** completo: escanear la cola de trabajo (tickets `PENDIENTE-RAUL` y `EN-PROCESO-RAUL`), la actividad de todos los canales de colaboradores, las violaciones de convención detectadas, y los ítems añejos. Sobrescribir el tablero. InboxBot es dueño exclusivo de este archivo.
+1. **IB-4 — Regenerar el tablero de estado** completo:
+   - **Clasificación de estado de cada ticket:** para cada `TICKET_*.md` en la cola, **leer el campo `estado:` del frontmatter** del archivo (vía el tool de lectura disponible en el runtime: snippet de búsqueda Drive, descarga del contenido, o equivalente). **NO inferir el estado por presencia en folder, nombre del archivo, ni por existencia de marcadores `DONE_` o `CAPTURADO_` en el canal fuente.** Los markers en el canal fuente son señal complementaria que puede reportarse en columna separada ("DONE en canal"), pero la columna "Estado" del ticket sale **siempre y únicamente** del frontmatter `estado:`.
+   - **Filtro de cola activa:** incluir en "Cola del Owner" únicamente los tickets cuyo `estado:` es `PENDIENTE-RAUL` o `EN-PROCESO-RAUL`. **Excluir** los `RESUELTO` de la tabla principal. Opcionalmente, si hubo ≥1 transición a `RESUELTO` desde el ciclo anterior, añadir sección "5. Tickets recientemente cerrados" con lista breve (ticket_id, `resuelto:`, `done_marker_fuente:`) — solo informativa.
+   - **Resto del tablero:** escanear la actividad de todos los canales de colaboradores, las violaciones de convención detectadas, y los ítems añejos.
+   - Sobrescribir el tablero. InboxBot es dueño exclusivo de este archivo. (Si el entorno runtime no soporta overwrite real — Drive MCP sin update por ID — el bot debe **registrar explícitamente la limitación** en una nota operativa del tablero y listar los IDs de versiones stale para que Raul-desktop las limpie.)
 2. **IB-2 — Appendear una fila al log de ciclos**: heartbeat con canales escaneados, ítems encontrados, tickets creados, errores. **Siempre**, incluso si el ciclo fue vacío.
 
 ### 6.6 Step 6 — Notify
@@ -168,7 +172,10 @@ Archivo único sobrescrito cada ciclo. Secciones:
 ## 1. Cola del Owner
 | Ticket | Capturado | Estado | Antigüedad |
 |---|---|---|---|
-[tickets PENDIENTE-RAUL y EN-PROCESO-RAUL, más antiguo primero]
+[tickets cuyo frontmatter `estado:` es PENDIENTE-RAUL o EN-PROCESO-RAUL,
+ más antiguo primero. **Leer del frontmatter de cada ticket — no inferir
+ por presencia en folder o por DONE markers en fuente.** Los RESUELTO se
+ excluyen de esta tabla; pueden aparecer en sección 5 opcional.]
 
 ## 2. Actividad de colaboradores
 | Colaborador | Ítems nuevos sin capturar | Última actividad |
@@ -279,6 +286,8 @@ El prefijo de timestamp garantiza unicidad incluso si dos archivos comparten nom
 - Procesar archivos desde una ruta no canónica "porque ahí están".
 - Enviar la notificación al Owner (la regla es **preparar borrador, nunca enviar**).
 - Saltarse el heartbeat del log en un ciclo vacío (deja indistinguible "no había nada" de "el trigger no disparó" — incidente 2026-05-07).
+- **Inferir el estado de un ticket por su presencia en `00-cola/`, por su nombre, o por la existencia de un `DONE_` marker en el canal fuente, en lugar de leer el campo `estado:` del frontmatter** (incidente 2026-05-15 — el bot listó 9 tickets ya transicionados a `RESUELTO` como `PENDIENTE-RAUL` con nota falsa instruyendo al Owner a transicionarlos cuando ya lo estaban; ver v5.1 en changelog).
+- Reescribir o "corregir" el campo `estado:` de un ticket (eso es exclusivo de Raul-desktop; el bot solo lee, nunca edita el estado).
 - Hacer git operations.
 - Escribir credenciales o tokens visibles en cualquier output.
 
@@ -290,6 +299,7 @@ No aplica protocolos especiales. Los tres formatos de salida reutilizables —In
 
 | Versión | Fecha | Cambio principal |
 |---|---|---|
+| **v5.1** | 2026-05-15 | **Fix de lectura de estado en IB-4.** v5.0 dejaba ambiguo cómo determinar el estado de un ticket al regenerar el tablero; el bot infería `PENDIENTE-RAUL` por presencia en folder + DONE en canal fuente. Resultado: 9 tickets ya transicionados a `RESUELTO` por Raul-desktop fueron listados como `PENDIENTE-RAUL` con instrucción falsa al Owner. Fix: §6.5 paso 1 reescrito con instrucción explícita "leer frontmatter `estado:` de cada ticket"; §7.2 nota inline; §10 antipattern agregado. Sin cambio de scope ni de tools. |
 | **v5.0** | 2026-05-14 | **Rediseño integral a capture-only.** InboxBot pasa de "messenger que procesa" a "utilidad de captura y encolado". Retirado: invocación a Raul, contrato `RESULTADO_RAUL`, producción de entregables (IB-1 Task Delivery), escritura al repo, protocolo Phase 3 §11. Introducido: cola de trabajo + tickets (IB-1), tablero de estado (IB-4), log de ciclos con heartbeat (IB-2), marcador `CAPTURADO_` (reemplaza `DONE_`). Captura de clase amplia (todos los ítems nuevos por ciclo, no uno). Razón: el entorno remoto de InboxBot no tiene acceso al repo — el contrato v4.0 producía escrituras fantasma y fabricación de contenido (incidentes 2026-05-13). |
 | v4.0 | 2026-05-12 | Migración a Modelo A: separación contrato vs configuración. Nomenclatura IB-1..IB-5. Phase 3 protocol consolidado en §11. |
 | v3.3 | 2026-05-10 | Phase 3 governance: detección de decision-responses, parseo de decision-id, status AWAITING-DECISION, reentry pattern. |

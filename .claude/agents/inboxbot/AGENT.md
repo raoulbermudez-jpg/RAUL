@@ -9,11 +9,15 @@ viven en el conceptual. Este archivo solo aporta el wiring específico
 de Claude Code: paths absolutos, herramientas concretas y trigger
 config.
 
-**Contrato v5.0 (capture-only).** InboxBot detecta, normaliza, encola,
-acusa recibo, regenera el tablero y notifica. **No procesa, no invoca a
-Raul, no escribe al repositorio, no produce entregables.** El entorno
-remoto de InboxBot solo alcanza la nube canónica (Google Drive) — nunca
-el filesystem del repo `C:\RAUL\`.
+**Contrato v5.1 (capture-only, con lectura de frontmatter para IB-4).**
+InboxBot detecta, normaliza, encola, acusa recibo, regenera el tablero y
+notifica. **No procesa, no invoca a Raul, no escribe al repositorio, no
+produce entregables.** El entorno remoto de InboxBot solo alcanza la nube
+canónica (Google Drive) — nunca el filesystem del repo `C:\RAUL\`.
+
+**Cambio v5.1 (2026-05-15):** al regenerar IB-4, leer el frontmatter
+`estado:` de cada ticket `.md` para clasificar — no inferir por presencia
+en folder ni por DONE markers en canal fuente. Ver SSOT §6.5.
 
 ## Implementation notes for Claude Code
 
@@ -39,18 +43,21 @@ el filesystem del repo `C:\RAUL\`.
 
 ### Tool mappings
 
-| Capability conceptual | Tool Claude Code |
-|---|---|
-| Listar archivos en canales (filtrar `CAPTURADO_*`, `_*`, `desktop.ini`, archivados) | `Glob` |
-| Leer la línea literal de un archivo de texto plano para el ticket | `Read` |
-| Escanear la cola de trabajo y carpetas de colaboradores para el tablero | `Glob` + `Grep` |
-| Escribir IB-1 (ticket), IB-4 (tablero), IB-5 (error), marcadores `CAPTURADO_` | `Write` |
-| Appendear IB-2 (fila al log de ciclos) | `Edit` |
-| Preparar IB-3 (borrador de notificación al Owner) | `mcp__claude_ai_Gmail__create_draft` |
+| Capability conceptual | Tool Claude Code (entorno con filesystem G:\) | Tool MCP (entorno remoto sin filesystem) |
+|---|---|---|
+| Listar archivos en canales (filtrar `CAPTURADO_*`, `_*`, `desktop.ini`, archivados) | `Glob` | `mcp__claude_ai_Google_Drive__search_files` |
+| Leer la línea literal de un archivo fuente de texto plano para construir el ticket (IB-1) | `Read` (limitado a primeras palabras) | `mcp__claude_ai_Google_Drive__read_file_content` o `contentSnippet` de search_files |
+| **Leer el frontmatter `estado:` de cada `TICKET_*.md` en la cola para clasificar (paso §6.5 paso 1 — IB-4, v5.1)** | `Grep` patrón `^estado:` sobre `TICKET_*.md` | `contentSnippet` de `search_files` (devuelve frontmatter inline) o `read_file_content` para descarga completa |
+| Escanear actividad de carpetas de colaboradores para el tablero | `Glob` | `mcp__claude_ai_Google_Drive__search_files` |
+| Escribir IB-1 (ticket), IB-4 (tablero), IB-5 (error), marcadores `CAPTURADO_` | `Write` | `mcp__claude_ai_Google_Drive__create_file` |
+| Appendear IB-2 (fila al log de ciclos) | `Edit` | `mcp__claude_ai_Google_Drive__create_file` (limitación: si MCP no soporta update, registrar en nota operativa del tablero y crear archivo nuevo) |
+| Preparar IB-3 (borrador de notificación al Owner) | — | `mcp__claude_ai_Gmail__create_draft` |
 
-**Tools NO asignadas a InboxBot v5.0** (cambio vs v4.0):
+**Tools NO asignadas a InboxBot** (sigue valiendo desde v5.0):
 - `Agent` — InboxBot **no invoca a Raul ni a ningún agente**. El hand-off es asíncrono vía la cola de trabajo.
-- Drive MCP de extracción de contenido — InboxBot **no lee a fondo**. Captura nombre y tipo; la lectura profunda (incluida la resolución de `.gdoc`) es trabajo de Raul-desktop.
+- Lectura a fondo del **contenido** de archivos fuente (no del frontmatter de tickets) — InboxBot captura nombre y tipo. La lectura profunda del archivo original (incluida la resolución de `.gdoc`) es trabajo de Raul-desktop.
+
+**Excepción acotada v5.1:** la regla "no lee a fondo" del SSOT §3 sigue valiendo para los archivos **fuente** depositados por el Owner / colaboradores. La lectura del **frontmatter de los tickets `.md` propios del bot** está autorizada en §6.5 paso 1 — es necesaria para clasificar estado correctamente y no se considera "lectura a fondo" porque solo abre el bloque YAML inicial.
 
 Asignar exclusivamente las tools listadas. Sobre-equipar es antipattern.
 
