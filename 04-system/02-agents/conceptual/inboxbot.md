@@ -6,7 +6,7 @@
 > `04-system/02-agents/_runtime-adapter-guide.md` para el contrato de
 > derivación.
 
-**Versión del contrato:** 5.1 (2026-05-15 — fix de lectura de estado en IB-4. v5.0 inferenció el estado del ticket por heurística — presencia en cola + DONE marker en canal fuente — en lugar de leer el campo `estado:` del frontmatter. Resultado observado 2026-05-15: tablero listó 9 tickets ya transicionados a `RESUELTO` como `PENDIENTE-RAUL†` con nota falsa "Raul debe transicionar estos tickets" cuando ya estaban transicionados. v5.1 instruye explícitamente leer el frontmatter para clasificar estado. Cambios: §6.5 paso 1 reescrito; §7.2 nota explícita; §10 antipattern agregado. Razón estructural: v5.0 era rediseño integral desde v4.0 — utilidad de captura y encolado, sin procesamiento; ver `04-system/03-governance/incidents/2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md` y entrada 2026-05-14 en `DECISIONS.md`. El changelog histórico v1.0–v5.0 está al final.)
+**Versión del contrato:** 5.2 (2026-05-15 — fix de timestamps inventados en IB-2. v5.1 dejaba ambiguo el origen del timestamp del heartbeat; el bot razonaba su timestamp **desde el slot del cron** (`"soy programado para 14:00Z, por lo tanto soy 14:00Z"`) en lugar de leer el reloj real del entorno. Resultado observado 2026-05-15: 4 ciclos consecutivos escribieron timestamps con offset +12 a +16 horas hacia el futuro respecto a su tiempo real de ejecución (e.g. archivo escrito a 15T03:36Z reportó timestamp `15T20:00Z`). Además el bot saltó slots cron inventando "ciclos que ocurrieron" en horarios donde no había corrido. v5.2 instruye explícitamente leer el reloj NOW UTC y appendear una sola fila por ejecución real. Cambios: §6.5 paso 2 reescrito; §7.3 nota inline; §10 antipattern agregado. Razón estructural: v5.1 fixeó lectura de estado en IB-4; v5.0 fue rediseño integral desde v4.0 — utilidad de captura y encolado, sin procesamiento; ver `04-system/03-governance/incidents/2026-05-13_inboxbot_phantom-writes-and-scope-overreach.md` y entrada 2026-05-14 en `DECISIONS.md`. El changelog histórico v1.0–v5.1 está al final.)
 
 ## 1. Identity & Personality
 
@@ -126,7 +126,11 @@ Para cada ítem encolado con éxito, escribir el marcador de captura `CAPTURADO_
    - **Filtro de cola activa:** incluir en "Cola del Owner" únicamente los tickets cuyo `estado:` es `PENDIENTE-RAUL` o `EN-PROCESO-RAUL`. **Excluir** los `RESUELTO` de la tabla principal. Opcionalmente, si hubo ≥1 transición a `RESUELTO` desde el ciclo anterior, añadir sección "5. Tickets recientemente cerrados" con lista breve (ticket_id, `resuelto:`, `done_marker_fuente:`) — solo informativa.
    - **Resto del tablero:** escanear la actividad de todos los canales de colaboradores, las violaciones de convención detectadas, y los ítems añejos.
    - Sobrescribir el tablero. InboxBot es dueño exclusivo de este archivo. (Si el entorno runtime no soporta overwrite real — Drive MCP sin update por ID — el bot debe **registrar explícitamente la limitación** en una nota operativa del tablero y listar los IDs de versiones stale para que Raul-desktop las limpie.)
-2. **IB-2 — Appendear una fila al log de ciclos**: heartbeat con canales escaneados, ítems encontrados, tickets creados, errores. **Siempre**, incluso si el ciclo fue vacío.
+2. **IB-2 — Appendear UNA SOLA fila al log de ciclos** correspondiente a **esta ejecución**:
+   - **Timestamp del heartbeat:** leer el reloj del entorno en formato ISO 8601 UTC (`YYYY-MM-DDTHH:MM:SSZ`) en el momento de escribir la fila. **NO inferir el timestamp del slot teórico del cron** (ej.: no asumir "soy programado para 14:00Z, por lo tanto soy 14:00Z"). El slot cron es la programación; el timestamp del heartbeat es **cuándo realmente corriste**, que puede diferir por latencia, retries, slot saltado o ejecución manual fuera de schedule.
+   - **Exactamente UNA fila por ejecución.** Esta fila reporta los canales escaneados, ítems encontrados, tickets creados y errores **de esta corrida**. **NO inventar filas de ciclos futuros** ("predecir" los próximos slots cron). **NO inventar filas de ciclos pasados** que el bot cree haber ejecutado pero no están ya registradas en el log que se está editando.
+   - **Si el bot no puede leer el reloj con confianza** (entorno sin clock disponible, edge case), agregar caveat explícito en el timestamp (ej. `~aprox`, `unknown_clock`) en lugar de inventar un valor confiado. El antipattern es **timestamp inventado sin caveat**, no la honestidad sobre la incertidumbre.
+   - **Siempre escribir el heartbeat**, incluso si el ciclo fue vacío (0 ítems encontrados). Ese es el valor del log: distinguir "no había nada que capturar" de "el trigger no disparó".
 
 ### 6.6 Step 6 — Notify
 
@@ -193,11 +197,13 @@ no corrige]
 
 ### 7.3 IB-2 — Cycle Log Entry
 
-Fila append-only en el log de ciclos (en la nube):
+Fila append-only en el log de ciclos (en la nube). **Una sola fila por ejecución real**, con timestamp del reloj NOW UTC en el momento de escribir (no del slot cron teórico — ver §6.5 paso 2):
 
 ```
-| <timestamp> | canales: <n> | ítems: <n> | tickets creados: <lista de TICKET_ID o "ninguno"> | errores: <n o "ninguno"> |
+| <timestamp ISO 8601 UTC> | canales: <n> | ítems: <n> | tickets creados: <lista de TICKET_ID o "ninguno"> | errores: <n o "ninguno"> |
 ```
+
+`<timestamp>` es **el momento real de ejecución** (lectura del reloj del entorno), no el slot programado del cron. Si el bot ejecuta a las `T03:36Z` por una corrida manual, el heartbeat dice `T03:36Z`, NO `T20:00Z` (el siguiente slot programado).
 
 ### 7.4 IB-3 — Owner Notification (borrador)
 
@@ -288,6 +294,9 @@ El prefijo de timestamp garantiza unicidad incluso si dos archivos comparten nom
 - Saltarse el heartbeat del log en un ciclo vacío (deja indistinguible "no había nada" de "el trigger no disparó" — incidente 2026-05-07).
 - **Inferir el estado de un ticket por su presencia en `00-cola/`, por su nombre, o por la existencia de un `DONE_` marker en el canal fuente, en lugar de leer el campo `estado:` del frontmatter** (incidente 2026-05-15 — el bot listó 9 tickets ya transicionados a `RESUELTO` como `PENDIENTE-RAUL` con nota falsa instruyendo al Owner a transicionarlos cuando ya lo estaban; ver v5.1 en changelog).
 - Reescribir o "corregir" el campo `estado:` de un ticket (eso es exclusivo de Raul-desktop; el bot solo lee, nunca edita el estado).
+- **Razonar el timestamp del heartbeat desde el slot teórico del cron en lugar de leer el reloj del entorno** ("soy programado para 14:00Z, por lo tanto soy 14:00Z"). El timestamp debe ser **NOW UTC del momento de escribir la fila** (incidente 2026-05-15 — 4 ciclos consecutivos escribieron timestamps con offset +12 a +16 horas hacia el futuro; ver v5.2 en changelog).
+- **Inventar filas de heartbeat para ciclos futuros o pasados que no son la ejecución actual.** El log es estrictamente "una fila por ejecución real". Predecir los próximos slots cron o reconstruir ciclos perdidos son **alucinación**, no heartbeat.
+- **Escribir un timestamp confiado cuando el reloj no está disponible.** Si hay incertidumbre, agregar caveat (`~aprox`, `unknown_clock`). El antipattern es la confianza falsa, no la incertidumbre honesta.
 - Hacer git operations.
 - Escribir credenciales o tokens visibles en cualquier output.
 
@@ -299,6 +308,7 @@ No aplica protocolos especiales. Los tres formatos de salida reutilizables —In
 
 | Versión | Fecha | Cambio principal |
 |---|---|---|
+| **v5.2** | 2026-05-15 | **Fix de timestamps inventados en IB-2.** v5.1 dejaba ambiguo el origen del timestamp del heartbeat. El bot razonaba su timestamp **desde el slot del cron** ("soy programado para 14:00Z, por lo tanto soy 14:00Z") en lugar de leer el reloj real. Diagnóstico: 4 ciclos consecutivos escritos en ventana real 02:13Z–10:12Z escribieron timestamps `14:00Z, 16:00Z, 20:00Z, 22:00Z` — offset +12 a +16 h al futuro. Patrón complementario: el bot saltó slots cron e inventó filas de "ciclos" que nunca ocurrieron. Fix: §6.5 paso 2 reescrito instruyendo lectura del reloj NOW UTC + una sola fila por ejecución real; §7.3 nota explícita; §10 tres antipatterns nuevos (timestamp desde cron, filas inventadas, confianza falsa sin caveat). Sin cambio de scope ni de tools. |
 | **v5.1** | 2026-05-15 | **Fix de lectura de estado en IB-4.** v5.0 dejaba ambiguo cómo determinar el estado de un ticket al regenerar el tablero; el bot infería `PENDIENTE-RAUL` por presencia en folder + DONE en canal fuente. Resultado: 9 tickets ya transicionados a `RESUELTO` por Raul-desktop fueron listados como `PENDIENTE-RAUL` con instrucción falsa al Owner. Fix: §6.5 paso 1 reescrito con instrucción explícita "leer frontmatter `estado:` de cada ticket"; §7.2 nota inline; §10 antipattern agregado. Sin cambio de scope ni de tools. |
 | **v5.0** | 2026-05-14 | **Rediseño integral a capture-only.** InboxBot pasa de "messenger que procesa" a "utilidad de captura y encolado". Retirado: invocación a Raul, contrato `RESULTADO_RAUL`, producción de entregables (IB-1 Task Delivery), escritura al repo, protocolo Phase 3 §11. Introducido: cola de trabajo + tickets (IB-1), tablero de estado (IB-4), log de ciclos con heartbeat (IB-2), marcador `CAPTURADO_` (reemplaza `DONE_`). Captura de clase amplia (todos los ítems nuevos por ciclo, no uno). Razón: el entorno remoto de InboxBot no tiene acceso al repo — el contrato v4.0 producía escrituras fantasma y fabricación de contenido (incidentes 2026-05-13). |
 | v4.0 | 2026-05-12 | Migración a Modelo A: separación contrato vs configuración. Nomenclatura IB-1..IB-5. Phase 3 protocol consolidado en §11. |

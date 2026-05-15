@@ -9,15 +9,20 @@ viven en el conceptual. Este archivo solo aporta el wiring específico
 de Claude Code: paths absolutos, herramientas concretas y trigger
 config.
 
-**Contrato v5.1 (capture-only, con lectura de frontmatter para IB-4).**
+**Contrato v5.2 (capture-only; lectura de frontmatter en IB-4; timestamp real en IB-2).**
 InboxBot detecta, normaliza, encola, acusa recibo, regenera el tablero y
 notifica. **No procesa, no invoca a Raul, no escribe al repositorio, no
 produce entregables.** El entorno remoto de InboxBot solo alcanza la nube
 canónica (Google Drive) — nunca el filesystem del repo `C:\RAUL\`.
 
-**Cambio v5.1 (2026-05-15):** al regenerar IB-4, leer el frontmatter
-`estado:` de cada ticket `.md` para clasificar — no inferir por presencia
-en folder ni por DONE markers en canal fuente. Ver SSOT §6.5.
+**Cambios recientes:**
+- **v5.2 (2026-05-15):** al appendear IB-2, escribir UNA sola fila con
+  timestamp del reloj NOW UTC (`YYYY-MM-DDTHH:MM:SSZ`) — NO inferir del
+  slot teórico del cron; NO inventar ciclos futuros o pasados; si no hay
+  reloj confiable, agregar caveat. Ver SSOT §6.5 paso 2 y §7.3.
+- **v5.1 (2026-05-15):** al regenerar IB-4, leer el frontmatter
+  `estado:` de cada ticket `.md` para clasificar — no inferir por presencia
+  en folder ni por DONE markers en canal fuente. Ver SSOT §6.5 paso 1.
 
 ## Implementation notes for Claude Code
 
