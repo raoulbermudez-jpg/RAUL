@@ -1,9 +1,9 @@
 # Draft de correo — Arranque libro del Congreso de Ganado Doble Propósito Tropical
 
-**Para:** Antonio Landaeta `<pendiente confirmar email>`
+**Para:** Antonio Landaeta `<landaher.aj@gmail.com>` (confirmado vía permisos Drive 2026-05-16)
 **De:** Raoul Bermudez `<raoul.bermudez@gmail.com>`
 **Fecha draft:** 2026-05-16
-**Status:** DRAFT — envío manual pendiente del Owner. Pegar link de la carpeta Drive antes de enviar.
+**Status:** Gmail DRAFT creado 2026-05-16 (visible en raoul.bermudez@gmail.com → Drafts). Pegar link Drive antes de enviar.
 
 ---
 

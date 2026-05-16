@@ -5,13 +5,13 @@
 | Status | Inicialización (esperando confirmación de índice de capítulos por Antonio Landaeta) |
 | Fecha apertura | 2026-05-16 |
 | Dominio | Finca / CDPT |
-| Líder científico | Antonio Landaeta |
+| Líder científico | Antonio Landaeta (`landaher.aj@gmail.com`) |
 | Co-autor (Owner) | Raoul Bermudez — capítulos a confirmar |
 | Deadline editorial | TBD (a confirmar con Antonio) |
 
 ## Qué es
 
-Libro científico derivado del Congreso de Ganado Doble Propósito Tropical, parte del aporte científico del programa **CDPT** (sigla pendiente de expandir formalmente). Antonio Landaeta lidera la concepción editorial; el Owner colabora como co-autor en capítulos específicos a confirmar.
+Libro científico derivado del Congreso de Ganado Doble Propósito Tropical, parte del aporte científico del programa **CDPT — Compuesto Doble Propósito Tropical**. Antonio Landaeta lidera la concepción editorial; el Owner colabora como co-autor en capítulos específicos a confirmar.
 
 ## Estructura del workspace
 
@@ -37,10 +37,9 @@ IDs en `memory/reference_drive_exchange_ids.md`.
 
 ## Pendientes / bloqueantes
 
-1. **Antonio debe definir** índice tentativo de capítulos + autoría por capítulo + ventana editorial — correo solicitando esto en `99-comms/2026-05-16_email-antonio-arranque-libro.md` (pendiente envío manual del Owner)
-2. **Owner debe compartir** carpeta Drive `colaboradores/Finca/Antonio-Landaeta/` con Antonio (acción manual en Drive web — MCP sin endpoint de share)
-3. **Confirmar sigla CDPT** y rol exacto de Antonio (si distinto a "líder científico")
-4. **Confirmar email de Antonio** (no guardado todavía en `reference_drive_exchange_ids.md`)
+1. **Antonio debe definir** índice tentativo de capítulos + autoría por capítulo + ventana editorial — Gmail draft creado 2026-05-16 (asunto: "Carpeta de intercambio + arranque del libro del Congreso de Ganado Doble Propósito Tropical"); pendiente que el Owner pegue el link Drive y envíe.
+2. ✓ Drive compartido con Antonio (`landaher.aj@gmail.com`, rol writer) 2026-05-16.
+3. Confirmar rol exacto de Antonio (si distinto a "líder científico CDPT") cuando responda.
 
 ## Conexiones
 
