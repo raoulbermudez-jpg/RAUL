@@ -3,7 +3,7 @@ document_id: "PENDING-DECISIONS-REGISTRY"
 document_type: "governance-registry-kanban"
 author: "Claude Opus 4.7 + Owner"
 creation_date: "2026-05-09"
-last_updated: "2026-05-09"
+last_updated: "2026-05-15"
 purpose: "Kanban acumulativo (append-only) de decisiones in-flight que activan el patrón Pause+Resume. Permite a Owner / agentes / cron tasks ver el estado de cualquier decisión sin escanear inboxes."
 audience: ["Owner", "InboxBot", "Agentes que activan Pause+Resume (Bruna, Aurelio, Vael, Vera, Orlan, etc.)"]
 status: "active"
@@ -79,18 +79,20 @@ how_to_use: "Cualquier agente que active Pause+Resume DEBE crear una row aquí c
 
 ## Estadísticas (manual por ahora; auto-generadas eventualmente)
 
-**Snapshot 2026-05-09:**
+**Snapshot 2026-05-15** (refresh post-audit + housekeeping B-008):
 
-- Total decisiones registradas (siembra): **7** (de las cuales 1 es umbrella de 5 sub-decisiones)
-- En flight (PENDING + IN-DELIBERATION + ESCALATED + PARTIALLY-RESPONDED + SUSPENDED-UPSTREAM): **5**
-  - PENDING: 3 (DEC-2026-05-06-001, DEC-2026-05-03-001, DEC-2026-05-08-D1-D5)
-  - SUSPENDED-UPSTREAM: 1 (DEC-2026-05-06-002)
-  - PARTIALLY-RESPONDED: 1 (DEC-2026-05-08-001)
+- Total decisiones registradas: **7** (sin cambios vs siembra; 1 sigue siendo umbrella de 5 sub-decisiones)
+- En flight (PENDING + IN-DELIBERATION + ESCALATED + PARTIALLY-RESPONDED + SUSPENDED-UPSTREAM): **5** (sin cambios)
+  - PENDING: 3 (DEC-2026-05-06-001 → 9 días; DEC-2026-05-03-001 → 12 días; DEC-2026-05-08-D1-D5 → 11 días)
+  - SUSPENDED-UPSTREAM: 1 (DEC-2026-05-06-002 → 9 días)
+  - PARTIALLY-RESPONDED: 1 (DEC-2026-05-08-001 → 7 días)
 - Cerradas RESPONDED: **1** (DEC-2026-05-04-001)
 - Cerradas CLOSED-WITHDRAWN: **1** (DEC-2026-04-29-001)
 - CLOSED-CONFLICT: 0
 - CLOSED-NOT-VIABLE: 0
 - EXPIRED: 0
+
+**Nota refresh 2026-05-15:** ninguna decisión cumple criterio ESCALATED real tras 3 días post-audit (Owner es decisor en 3 de 5 — no aplica next-level externo; COVENIN tiene SLA regulators semanas-meses; GST tiene deadline efectivo julio 2026). Audit-review notes del 2026-05-12 en columna `Owner notes` siguen vigentes como next-actions backlog Owner. Próximo refresh sistemático: cycle mantenimiento 2026-06-12 (per Decisión 4 DECISIONS.md 2026-05-12).
 
 **Tiempo promedio respuesta por decisor:**
 
