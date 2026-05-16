@@ -161,31 +161,73 @@ CoraBridge recibió tu archivo **[título]** ([tipo: DATA-RAW / REFERENCE
 — CoraBridge · YYYY-MM-DD HH:MM Caracas
 ```
 
-**3e. Escribir respuesta en OUTBOUND**
+**3e. Escribir respuesta en OUTBOUND** (REFORZADO v2 — 2026-05-16 post dry-run)
 
-Drive MCP `create_file` en `parentId = '1bIyt6NtEQzEiFqHHZ9UlaNVWhD8xYVQ2'`.
+**Paso 3e.1 — Determinar `_vN` correcto ANTES de escribir.**
 
-Naming: `YYYY-MM-DD_CoraBridge_<slug>_v1.md`
-- Si ya existe un archivo con mismo slug del mismo día: incrementar `_v2`, `_v3`, etc. (nunca overwrite).
+Drive MCP `search_files` query: `parentId = '1bIyt6NtEQzEiFqHHZ9UlaNVWhD8xYVQ2' and title contains 'CoraBridge_<slug>'`
 
-Verificar que se escribió correctamente (response status).
+- Si la búsqueda devuelve **0 archivos**: el nombre será `YYYY-MM-DD_CoraBridge_<slug>_v1.md`
+- Si devuelve **N archivos**: el nombre será `YYYY-MM-DD_CoraBridge_<slug>_v(N+1).md`
+- NUNCA escribir con `_v1` si ya existe uno. Drive permite títulos duplicados pero **es bug** — siempre incrementar.
 
-**3f. Marcar fuente como atendido**
+**Paso 3e.2 — Llamar `create_file` con los parámetros EXACTOS:**
 
-Drive MCP `create_file` en INBOUND (`parentId = '1T9FqgLLyLowK6SLJy7GfRxCRclBuXbWW'`):
-- Nombre: `DONE_BRIDGE_<YYYY-MM-DD-HHMM>_<slug>.txt`
-- Contenido: 1-2 líneas — `Procesado por CoraBridge en cycle YYYY-MM-DDTHH:MM:SSZ. Respuesta: [nombre del archivo de OUTBOUND].`
+```
+parentId: 1bIyt6NtEQzEiFqHHZ9UlaNVWhD8xYVQ2
+title: <nombre calculado en 3e.1>
+textContent: <markdown completo, SIN escapar caracteres especiales>
+contentMimeType: "text/markdown"
+disableConversionToGoogleType: true
+```
+
+**CRÍTICO sobre escapado de markdown** (bug detectado en dry-run #1, 2026-05-16):
+- NUNCA preescapar `#`, `*`, `-`, `_`, `[`, `]` con backslash. Pasar el markdown tal cual.
+- **OBLIGATORIO usar `contentMimeType: "text/markdown"` y `disableConversionToGoogleType: true`** en cada llamada.
+- Sin estos dos parámetros, Drive convierte el `.md` a Google Doc y el contenido sale escapado (`\#`, `\*\*`) que Cora ve como texto literal feo en vez de markdown renderizado.
+
+**Paso 3e.3 — Verificar respuesta.**
+`create_file` devuelve `{id, mimeType, title}`. Confirmar:
+- `id` está presente (write OK)
+- `mimeType` == `"text/markdown"` (NO `application/vnd.google-apps.document`). Si volvió GDoc, falló el `disableConversionToGoogleType` — loggear bug y reintentar 1 vez; si persiste, log de error y continuar al siguiente candidato.
+- `title` == el nombre que calculaste
+
+Guardar el `id` y `title` para usarlos en 3f y 4.
+
+**3f. Marcar fuente como atendido (MANDATORIO + BLOQUEANTE)**
+
+**REGLA ATÓMICA**: Response + marker forman un par atómico. NO procesar el siguiente candidato hasta que ambos estén confirmados escritos.
+
+Drive MCP `create_file` en INBOUND:
+- `parentId: '1T9FqgLLyLowK6SLJy7GfRxCRclBuXbWW'`
+- `title: 'DONE_BRIDGE_<YYYY-MM-DD-HHMM>_<slug>.txt'` (timestamp = NOW real, no del archivo fuente)
+- `textContent: 'Procesado por CoraBridge en cycle <ISO timestamp>. Respuesta: <title de 3e.2>.'`
+- `contentMimeType: "text/plain"`
+- `disableConversionToGoogleType: true`
+
+Verificar que devolvió `id` y `mimeType: "text/plain"`. Si falla:
+- Loggear error en el `BRIDGE_LOG` del día
+- DETENER el ciclo (NO procesar más candidatos esa cycle) — sin marker confirmado se reprocesará y eso es el peor failure mode
+- Salir
 
 Este marker:
 - Hace que InboxBot v5 (que respeta DONE_ como exclusión heredada) lo skipee
 - Hace que CoraBridge no lo reprocese en siguientes ciclos
 - Le da al desktop una señal visible de que el bridge actuó
 
-### Paso 4 — Loggear el ciclo
+### Paso 4 — Loggear el ciclo (MANDATORIO SIEMPRE)
+
+**SIEMPRE escribir log al final del ciclo**, incluso si:
+- No hubo candidatos nuevos (escribir "ciclo sin novedades")
+- Hubo errores (escribir errores)
+- El test expiró (escribir TEST_EXPIRED)
 
 Drive MCP `create_file` en OUTBOUND:
-- Nombre: `BRIDGE_LOG_<YYYY-MM-DD>.md` (un archivo por día; si existe del día, considerar usar `_create` con timestamp en el nombre para no perder log: `BRIDGE_LOG_<YYYY-MM-DD>_HHMMSS.md`)
-- Contenido:
+- `parentId: '1bIyt6NtEQzEiFqHHZ9UlaNVWhD8xYVQ2'`
+- `title: 'BRIDGE_LOG_<YYYY-MM-DD>_<HHMMSS>.md'` (timestamp en nombre = NOW UTC; uno por ciclo para no perder logs si hay múltiples corridas el mismo día)
+- `contentMimeType: "text/markdown"`
+- `disableConversionToGoogleType: true`
+- `textContent`:
 ```
 # CoraBridge — Cycle YYYY-MM-DDTHH:MM:SSZ
 
@@ -193,9 +235,9 @@ Drive MCP `create_file` en OUTBOUND:
 - Candidatos (sin marker): M
 - Procesados este ciclo: P
 - Detalle:
-  - [nombre fuente] → tipo [X] → respuesta [nombre output] → delegado a [agente o N/A]
+  - [nombre fuente] → tipo [X] → respuesta [title del output] → delegado a [agente o N/A] → marker [DONE_BRIDGE_... OK/FAIL]
   - ...
-- Errores: [si los hay, listar]
+- Errores: [si los hay, listar con stacktrace si aplica]
 
 — CoraBridge
 ```
@@ -203,7 +245,25 @@ Drive MCP `create_file` en OUTBOUND:
 ### Paso 5 — Fin
 
 Salir limpio. No reintentar errores dentro del mismo ciclo — el próximo
-disparo (1h después) los retomará.
+disparo (1h después) los retomará si los markers no se escribieron.
+
+## 3bis. Lessons learned — dry-run #1 (2026-05-16)
+
+El primer manual run dejó hallazgos que están reflejados en los pasos
+3e, 3f y 4 anteriores (en sus secciones marcadas v2 / REFORZADO /
+MANDATORIO). Resumen para auditoría futura:
+
+| Bug | Síntoma observado | Causa raíz | Fix aplicado |
+|---|---|---|---|
+| 1. Duplicados `_v1` | 2 archivos con mismo título `_v1.md` para `tablas-por-segmentos` y `nuevo-bbdd` | Agente no chequeó existencia antes de escribir | Paso 3e.1: search OUTBOUND obligatorio antes de calcular `_vN` |
+| 2. Sin markers `DONE_BRIDGE_*` | INBOUND quedó sin markers tras procesar 5 archivos | Paso 3f ejecutado opcionalmente, no como bloqueante | Paso 3f marcado como par atómico bloqueante con response |
+| 3. Sin `BRIDGE_LOG_*` | OUTBOUND no tuvo log del ciclo | Paso 4 sin énfasis de obligatoriedad | Paso 4 marcado SIEMPRE, con timestamp en nombre |
+| 4. Markdown escapado (`\#`, `\*\*`, `\-`) | Cora vería texto literal con backslashes en vez de markdown renderizado | Drive MCP `create_file` con `text/plain` auto-convierte a Google Doc y escapa | Paso 3e.2: usar `contentMimeType: "text/markdown"` + `disableConversionToGoogleType: true` |
+
+Adicionalmente quedó pendiente para Owner manual (no hay tool delete
+en Drive MCP):
+- Limpiar 2 archivos duplicados en OUTBOUND (`tablas-por-segmentos_v1.md` y `nuevo-bbdd-notoriedad-2026_v1.md` cada uno tiene 2 con mismo nombre)
+- Decidir qué hacer con los 5 archivos `.md` con markdown escapado (re-generar con fix, o aceptar la versión legible)
 
 ## 4. Tool mappings
 
