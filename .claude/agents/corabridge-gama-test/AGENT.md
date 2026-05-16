@@ -241,7 +241,8 @@ invocación falla (subagente no encontrado, error de runtime), caer a
 | Item | Valor |
 |---|---|
 | Routine name | `corabridge-gama-test` |
-| Trigger ID | (asignado por API al crear; registrar aquí post-create) |
+| Trigger ID | `trig_01AnZuRF8TfrinP2YjJTRDjx` |
+| Web UI | `https://claude.ai/code/routines/trig_01AnZuRF8TfrinP2YjJTRDjx` |
 | Cron expression (UTC) | `0 11-23,0-3 * * *` |
 | Frecuencia efectiva (Caracas, UTC-4) | 17 disparos diarios — cada hora en punto, 7am–11pm |
 | Ventana activa | 7:00–23:00 hora Caracas (extiende hasta 03:00 UTC) |
