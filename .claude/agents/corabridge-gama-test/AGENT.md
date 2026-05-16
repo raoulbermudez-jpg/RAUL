@@ -222,9 +222,22 @@ Este marker:
 - Hubo errores (escribir errores)
 - El test expiró (escribir TEST_EXPIRED)
 
+**REGLA TIMESTAMP (v3 — Fix E, 2026-05-16):** el `<HHMMSS>` en el título
+DEBE ser **NOW real en UTC** capturado al inicio del ciclo via `Bash`
+(`date -u +%H%M%S`), **NUNCA el slot nominal del cron** (`170000` solo
+porque el cron disparó a las 17:00 UTC). Dos disparos del mismo slot
+pero ejecutados con delay (uno a 16:32Z, otro a 16:51Z) deben producir
+títulos distintos (`163248`, `165153`) — si ambos quedan como `170000`
+colisionan en Drive. Este bug es idéntico al que InboxBot fixeó en v5.2
+(commit a72b247). Patrón canónico:
+```bash
+NOW_UTC=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+NOW_TITLE=$(date -u +%Y-%m-%d_%H%M%S)
+```
+
 Drive MCP `create_file` en OUTBOUND:
 - `parentId: '1bIyt6NtEQzEiFqHHZ9UlaNVWhD8xYVQ2'`
-- `title: 'BRIDGE_LOG_<YYYY-MM-DD>_<HHMMSS>.md'` (timestamp en nombre = NOW UTC; uno por ciclo para no perder logs si hay múltiples corridas el mismo día)
+- `title: 'BRIDGE_LOG_<NOW_TITLE>.md'` (ej: `BRIDGE_LOG_2026-05-16_163248.md`)
 - `contentMimeType: "text/markdown"`
 - `disableConversionToGoogleType: true`
 - `textContent`:
@@ -247,23 +260,50 @@ Drive MCP `create_file` en OUTBOUND:
 Salir limpio. No reintentar errores dentro del mismo ciclo — el próximo
 disparo (1h después) los retomará si los markers no se escribieron.
 
-## 3bis. Lessons learned — dry-run #1 (2026-05-16)
+## 3bis. Lessons learned — dry-run #1 + post-v2 review (2026-05-16)
 
-El primer manual run dejó hallazgos que están reflejados en los pasos
-3e, 3f y 4 anteriores (en sus secciones marcadas v2 / REFORZADO /
-MANDATORIO). Resumen para auditoría futura:
+| Bug | Síntoma observado | Causa raíz | Fix aplicado | Status |
+|---|---|---|---|---|
+| 1. Duplicados `_v1` | 2 archivos con mismo título `_v1.md` para `tablas-por-segmentos` y `nuevo-bbdd` | Agente no chequeó existencia antes de escribir | Paso 3e.1: search OUTBOUND obligatorio antes de calcular `_vN` | ✓ fixed v2, validated 2026-05-16T16:51Z |
+| 2. Sin markers `DONE_BRIDGE_*` | INBOUND quedó sin markers tras procesar 5 archivos | Paso 3f ejecutado opcionalmente, no como bloqueante | Paso 3f marcado como par atómico bloqueante con response | ✓ fixed v2, validated |
+| 3. Sin `BRIDGE_LOG_*` | OUTBOUND no tuvo log del ciclo | Paso 4 sin énfasis de obligatoriedad | Paso 4 marcado SIEMPRE | ✓ fixed v2, validated |
+| 4. Markdown escapado (`\#`, `\*\*`, `\-`) | Cora vería texto literal con backslashes | (creído en v2) Drive MCP escapaba en upload | Paso 3e.2: `contentMimeType: "text/markdown"` + `disableConversionToGoogleType: true` | ⚠ **FALSE POSITIVE.** Ver nota al pie. |
+| **5 (E). Logs con título idéntico colisionan** | Dos `BRIDGE_LOG_2026-05-16_170000.md` distintos en OUTBOUND, escritos por dos fires del slot 17:00 UTC (uno a 16:32Z, otro a 16:51Z) | Agente usó el slot nominal del cron como timestamp en lugar de NOW real UTC. Bug idéntico al de InboxBot v5.1→v5.2 (commit a72b247) | **Paso 4 v3 (2026-05-16):** título DEBE construirse desde `date -u +%Y-%m-%d_%H%M%S` capturado al inicio del ciclo, NUNCA inferido del cron slot | ✓ fixed v3 |
 
-| Bug | Síntoma observado | Causa raíz | Fix aplicado |
-|---|---|---|---|
-| 1. Duplicados `_v1` | 2 archivos con mismo título `_v1.md` para `tablas-por-segmentos` y `nuevo-bbdd` | Agente no chequeó existencia antes de escribir | Paso 3e.1: search OUTBOUND obligatorio antes de calcular `_vN` |
-| 2. Sin markers `DONE_BRIDGE_*` | INBOUND quedó sin markers tras procesar 5 archivos | Paso 3f ejecutado opcionalmente, no como bloqueante | Paso 3f marcado como par atómico bloqueante con response |
-| 3. Sin `BRIDGE_LOG_*` | OUTBOUND no tuvo log del ciclo | Paso 4 sin énfasis de obligatoriedad | Paso 4 marcado SIEMPRE, con timestamp en nombre |
-| 4. Markdown escapado (`\#`, `\*\*`, `\-`) | Cora vería texto literal con backslashes en vez de markdown renderizado | Drive MCP `create_file` con `text/plain` auto-convierte a Google Doc y escapa | Paso 3e.2: usar `contentMimeType: "text/markdown"` + `disableConversionToGoogleType: true` |
+**Nota Bug 4 — FALSE POSITIVE (descubierto 2026-05-16 ~17:0xZ):**
 
-Adicionalmente quedó pendiente para Owner manual (no hay tool delete
-en Drive MCP):
-- Limpiar 2 archivos duplicados en OUTBOUND (`tablas-por-segmentos_v1.md` y `nuevo-bbdd-notoriedad-2026_v1.md` cada uno tiene 2 con mismo nombre)
-- Decidir qué hacer con los 5 archivos `.md` con markdown escapado (re-generar con fix, o aceptar la versión legible)
+Experimento controlado de Raul-desktop subió archivos `.md` con
+`text/markdown` + `disableConversion`, luego los leyó con DOS tools
+distintos del Drive MCP:
+
+- `read_file_content` (natural-language rep): devuelve `\#`, `\*\*`,
+  `\[link\]` — escape visible.
+- `download_file_content` (raw base64 → bytes): devuelve `#`, `**`,
+  `[link]` — limpio.
+
+El escape **no existe en el archivo** — es un artefacto de
+`read_file_content` que escapa markdown specials para que no se
+confundan con formato literal del MCP. Los outputs v1 (los 5 archivos
+del dry-run #1) y el v2 están **perfectamente bien**: Cora los abre en
+Drive y ve markdown renderizado, no `\#` literal. **No hay que
+regenerarlos.**
+
+El fix B en v2 (forzar `text/markdown` + `disableConversion`) sigue
+siendo la elección correcta — pero por motivos de portabilidad
+(mantener `.md` puro en lugar de auto-convertirse a GDoc), no por evitar
+el escape inexistente. Lo dejamos puesto.
+
+**Pendientes manuales (no hay tool delete en Drive MCP):**
+
+- Limpiar 2 archivos duplicados en OUTBOUND del dry-run #1
+  (`tablas-por-segmentos_v1.md` y `nuevo-bbdd-notoriedad-2026_v1.md`,
+  cada uno con 2 copias mismo nombre). Solución: borrar el más viejo
+  manualmente desde Drive UI.
+- Limpiar 2 BRIDGE_LOG con título idéntico (`BRIDGE_LOG_2026-05-16_170000.md`
+  ×2) o dejarlos — Drive UI los muestra como dos archivos distintos.
+- (Opcional) Borrar los 3 archivos `_EXPERIMENT_*.md/html/no-ext` que
+  Raul-desktop subió para la validación del verdict 2026-05-16 + el
+  `_EXPERIMENT_VERDICT_2026-05-16.md`.
 
 ## 4. Tool mappings
 
