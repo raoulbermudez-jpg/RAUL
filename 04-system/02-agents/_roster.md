@@ -15,6 +15,7 @@ comportamiento de cada agente vive en `conceptual/<agente>.md`.
 | **Bruna** | `governance` *(+ content-supply-chain)* | transversal | Brand & Risk Governance | `conceptual/bruna.md` |
 | **Paxs** | `global-service` | transversal | Senior Researcher | `conceptual/paxs.md` |
 | **Vivienne** | `global-service` | transversal | Presentation Designer | `conceptual/vivienne.md` |
+| **Cuanti** | `global-service` | transversal | Quantitative Survey Analyst (CU-1..CU-7) | `conceptual/cuanti.md` |
 | **Aurelio** | `content-supply-chain` | transversal | Content Strategist CSC (AU-1..AU-5) | `conceptual/aurelio.md` |
 | **Nerea** | `content-supply-chain` | transversal | Script & Narrative Architect CSC (NE-1..NE-5) | `conceptual/nerea.md` |
 | **Orfeo** | `content-supply-chain` | transversal | Motion Graphics & Visual Systems Production Lead (OR-1..OR-5) | `conceptual/orfeo.md` |
@@ -30,6 +31,8 @@ comportamiento de cada agente vive en `conceptual/<agente>.md`.
 | **Celeste** | `domain-specialist` | Genteca | Knowledge Base Librarian + KB Curator (estrategia/narrativa) | `conceptual/celeste.md` |
 | **Renzo** | `domain-specialist` | Genteca | Application Engineer | `conceptual/renzo.md` |
 | **Oz** | `domain-specialist` | Genteca | Technical Documentation Editor | `conceptual/oz.md` |
+| **Methos** | `domain-specialist` | consultoria-externa | Research Design & Methodology Lead (ME-1..ME-5) | `conceptual/methos.md` |
+| **Sinta** | `domain-specialist` | consultoria-externa *(+ Genteca secundario)* | Qualitative Synthesis & Brand Strategy Lead (IN-1..IN-6) | `conceptual/sinta.md` |
 | **InboxBot** | `execution-utility` | transversal | Capture & Queue utility | `conceptual/inboxbot.md` |
 
 ---
@@ -57,6 +60,12 @@ comportamiento de cada agente vive en `conceptual/<agente>.md`.
   Michelina.
 - **Vivienne** — diseñadora de presentaciones transversal. Toma contenido
   ya trabajado y lo convierte en decks ejecutivos.
+- **Cuanti** — analista cuantitativo de surveys transversal. Ejecuta el
+  análisis estadístico end-to-end: data engineering de raw data (xlsx/sav/
+  csv), tests descriptivos e inferenciales, modelado avanzado (logit, KDA/
+  Shapley, LCA, conjoint), análisis de precio (VW/Gabor-Granger), análisis
+  inter-ola y scripts reproducibles en Python. Produce CU-1..CU-7. Gate
+  obligatorio: CU-6 Caveats Memo → Bruna antes de cualquier output público.
 
 ### `content-supply-chain`
 
@@ -109,8 +118,29 @@ en `content-supply-chain/ARCHITECTURE_Content-Supply-Chain.md`.
 - **Renzo** — application engineer (diagramas, instalación, troubleshooting).
 - **Oz** — technical documentation editor (redlines, delta docs para Ozwaldo).
 
-*(Otros dominios — Plenus, Finca, Teca, marca-personal — sin especialistas
-activos al cierre de esta versión del roster.)*
+### `domain-specialist` — consultoria-externa
+
+- **Methos** — Research Design & Methodology Lead. Diseña estudios antes
+  de recolección (ME-1 Research Design Memo, ME-2 Instrument Design,
+  ME-3 Methodology Rationale, ME-5 Sample Size & Statistical Power Memo),
+  audita propuestas externas, y produce vigilancia de mejores prácticas
+  metodológicas (ME-4 trimestral). Primer agente en la cadena de cualquier
+  encargo de research nuevo. Domina Conjoint/MaxDiff/Van Westendorp/PSM/
+  Gabor-Granger/Latent Class/Keller CBBE/Ehrenberg-Bass/NPS/JTBD, sampling
+  theory (Cochran, Kish) y questionnaire design (Groves, Tourangeau).
+- **Sinta — Qualitative Synthesis & Brand Strategy Lead.** Toma evidencia
+  primaria de campo (verbatims abiertos, transcripts FGI/IDI) y outputs
+  de Cuanti (drivers, z-scores) y produce: codificación cualitativa
+  temática (IN-1), síntesis de research cuali (IN-2), framework mapping
+  de brand strategy con decision tree explícito (IN-3), triangulación
+  cuali+cuanti (IN-4), tesis Minto desde datos (IN-5), árbol de
+  recomendaciones priorizadas validadas vs. activos del cliente (IN-6).
+  Domina Keller CBBE, Sharp/Ehrenberg-Bass, Aaker, BAV, JTBD-Ulwick,
+  Braun & Clarke thematic analysis, Minto Pyramid. Gate obligatorio: Bruna
+  antes de cualquier deliverable hacia cliente externo.
+
+*(Plenus, Finca, Teca, marca-personal — sin especialistas activos al
+cierre de esta versión del roster.)*
 
 ### `execution-utility`
 
