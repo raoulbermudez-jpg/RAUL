@@ -1,9 +1,11 @@
 # CoraBridge — Ephemeral test routine (Gama Notoriedad 2026)
 
-> ⚠ **EPHEMERAL TEST ARTIFACT.** Creado 2026-05-16. Auto-expira
-> **2026-05-17 23:59 hora Caracas** (2026-05-18T03:59Z). Al expirar:
-> el routine remoto debe desactivarse (web UI) y este directorio puede
-> eliminarse del repo.
+> ⚠ **EPHEMERAL TEST ARTIFACT — VENTANA EXTENDIDA v4.** Creado 2026-05-16.
+> Expiry original: 2026-05-17 23:59 Caracas. **Extendido 2026-05-17 a
+> 2026-05-31 23:59 hora Caracas** (2026-06-01T03:59Z) porque la fase
+> wave-over-wave 2025↔2026 de Notoriedad Gama va más allá del test
+> original. Al expirar: el routine remoto debe desactivarse (web UI) y
+> este directorio puede eliminarse del repo.
 >
 > **NO tiene contraparte conceptual SSOT.** Es un adapter standalone
 > creado para una prueba de 36h del puente Cora↔Raoul vía Drive,
@@ -54,31 +56,53 @@ los outputs.
 
 ### Paso 0 — Verificar vida del test
 
-Leer fecha/hora UTC actual. Si `now > 2026-05-18T03:59Z`:
+Leer fecha/hora UTC actual. Si `now > 2026-06-01T03:59Z` (expiry v4 extendido):
 - Crear/appendear en log: `[YYYY-MM-DDTHH:MM:SSZ] CoraBridge — TEST EXPIRED — no se procesa nada.`
 - Salir.
 
-### Paso 1 — Listar INBOUND
+### Paso 1 — Listar INBOUND (v4: incluye 1 nivel de subcarpetas)
 
-Drive MCP `search_files` sobre `parentId = '1T9FqgLLyLowK6SLJy7GfRxCRclBuXbWW'`.
+**1.1 — Listar archivos directos en INBOUND root.**
 
-Excluir:
+Drive MCP `search_files` sobre `parentId = '1T9FqgLLyLowK6SLJy7GfRxCRclBuXbWW' and mimeType != 'application/vnd.google-apps.folder'`.
+
+**1.2 — Descubrir subcarpetas inmediatas.**
+
+Drive MCP `search_files` sobre `parentId = '1T9FqgLLyLowK6SLJy7GfRxCRclBuXbWW' and mimeType = 'application/vnd.google-apps.folder'`.
+
+Guardar la lista de `{folder_id, folder_name}` resultante. Excluir cualquier subcarpeta cuyo nombre empiece con `_` (carpetas meta).
+
+**1.3 — Listar archivos de cada subcarpeta (profundidad 1, NO recursivo).**
+
+Para cada subcarpeta descubierta en 1.2:
+- Drive MCP `search_files` sobre `parentId = '<folder_id>' and mimeType != 'application/vnd.google-apps.folder'`.
+- Guardar cada archivo con metadata: `{file, parent_id = folder_id, parent_name = folder_name}`.
+- **NO entrar a sub-sub-carpetas** (profundidad máxima = 1). Si Cora crea anidación más profunda, queda fuera de scope y se loggea como warning.
+
+**1.4 — Consolidar lista de candidatos.**
+
+Unir 1.1 (archivos en root, `parent_id = INBOUND_ID, parent_name = "<root>"`) + 1.3 (archivos en subcarpetas con su parent metadata).
+
+**Excluir de la lista consolidada:**
 - Archivos con prefijo `CAPTURADO_`, `DONE_`, `DONE_BRIDGE_`, `BRIDGE_LOG_`
 - Archivos con prefijo `_` (meta-files, locks)
-- Subcarpetas (mimeType = folder)
 - `desktop.ini`
 
-### Paso 2 — Filtrar candidatos a procesar
+### Paso 2 — Filtrar candidatos a procesar (v4: lookup de markers en parent del source)
 
 Para cada archivo candidato (no marker, no meta), construir su slug:
 - Slug = título normalizado: lowercase, espacios y caracteres especiales → `-`, sin extensión.
 - Ejemplo: `NUEVO GUIA DE PREGUNTAS NOTORIEDAD 2026.docx` → `nuevo-guia-de-preguntas-notoriedad-2026`
 
-Para cada archivo, verificar:
-1. ¿Existe `DONE_*<slug>*.txt` en INBOUND? → SKIP (ya procesado por desktop o por CoraBridge previa)
-2. ¿Existe `DONE_BRIDGE_*<slug>*.txt`? → SKIP (CoraBridge ya respondió)
-3. ¿Existe `CAPTURADO_*<slug>*.txt` con createdTime > now - 2h? → SKIP (recien capturado por InboxBot, dejar al desktop primero)
+**v4 NUEVA REGLA:** los markers `DONE_*` / `CAPTURADO_*` se buscan en el **mismo parent_id** donde vive el source, NO siempre en root INBOUND. Si el source está en `Notoriedad V2.0/`, sus markers también viven ahí.
+
+Para cada archivo, lanzar `search_files` con `parentId = <parent_id del source>` y verificar:
+1. ¿Existe `DONE_*<slug>*.txt` en ese mismo parent? → SKIP (ya procesado)
+2. ¿Existe `DONE_BRIDGE_*<slug>*.txt` en ese mismo parent? → SKIP (CoraBridge ya respondió)
+3. ¿Existe `CAPTURADO_*<slug>*.txt` con createdTime > now - 2h? → SKIP (recien capturado por InboxBot)
 4. En cualquier otro caso → CANDIDATO A PROCESAR
+
+**Adicionalmente — backward compat:** también buscar en INBOUND root marker con prefix `DONE_<subfolder_slug>_<slug>` por si una sesión desktop pre-v4 marcó allí. Si existe, SKIP. (Esta regla retira en v5 cuando no haya más markers legacy.)
 
 ### Paso 3 — Procesar candidatos
 
@@ -181,6 +205,14 @@ contentMimeType: "text/markdown"
 disableConversionToGoogleType: true
 ```
 
+**v4 NUEVA REGLA — incluir parent del source en el título cuando NO es root:**
+Si el source venía de una subcarpeta (ej. `Notoriedad V2.0/`), incluir el subfolder slug en el título del response para que Cora sepa de qué archivo es respuesta:
+- Source en root: `YYYY-MM-DD_CoraBridge_<slug>_vN.md` (igual que v3)
+- Source en `Notoriedad V2.0/`: `YYYY-MM-DD_CoraBridge_v20_<slug>_vN.md` (prefix `v20_` = subfolder slug)
+- Source en otra subcarpeta `<foo>/`: `YYYY-MM-DD_CoraBridge_<foo-slug>_<slug>_vN.md`
+
+El `_vN` final sigue siendo el versionado del response — calcúlalo igual con search en OUTBOUND filtrando por el título completo (con prefix de subfolder).
+
 **CRÍTICO sobre escapado de markdown** (bug detectado en dry-run #1, 2026-05-16):
 - NUNCA preescapar `#`, `*`, `-`, `_`, `[`, `]` con backslash. Pasar el markdown tal cual.
 - **OBLIGATORIO usar `contentMimeType: "text/markdown"` y `disableConversionToGoogleType: true`** en cada llamada.
@@ -198,10 +230,12 @@ Guardar el `id` y `title` para usarlos en 3f y 4.
 
 **REGLA ATÓMICA**: Response + marker forman un par atómico. NO procesar el siguiente candidato hasta que ambos estén confirmados escritos.
 
-Drive MCP `create_file` en INBOUND:
-- `parentId: '1T9FqgLLyLowK6SLJy7GfRxCRclBuXbWW'`
+**v4 NUEVA REGLA:** el marker se crea en el **mismo parent_id** donde vive el source, NO siempre en INBOUND root. Esto mantiene consistencia con la regla de lookup en Paso 2.
+
+Drive MCP `create_file`:
+- `parentId: <parent_id del source>` (puede ser INBOUND root o una subcarpeta tipo `Notoriedad V2.0/`)
 - `title: 'DONE_BRIDGE_<YYYY-MM-DD-HHMM>_<slug>.txt'` (timestamp = NOW real, no del archivo fuente)
-- `textContent: 'Procesado por CoraBridge en cycle <ISO timestamp>. Respuesta: <title de 3e.2>.'`
+- `textContent: 'Procesado por CoraBridge en cycle <ISO timestamp>. Source parent: <parent_name>. Respuesta: <title de 3e.2>.'`
 - `contentMimeType: "text/plain"`
 - `disableConversionToGoogleType: true`
 
@@ -244,12 +278,16 @@ Drive MCP `create_file` en OUTBOUND:
 ```
 # CoraBridge — Cycle YYYY-MM-DDTHH:MM:SSZ
 
-- Archivos en INBOUND escaneados: N
-- Candidatos (sin marker): M
+- Subcarpetas descubiertas en INBOUND root: K (listar nombres)
+- Archivos en INBOUND root: N_root
+- Archivos en subcarpetas (suma): N_sub
+- Total archivos escaneados: N_total
+- Candidatos (sin marker en su parent): M
 - Procesados este ciclo: P
 - Detalle:
-  - [nombre fuente] → tipo [X] → respuesta [title del output] → delegado a [agente o N/A] → marker [DONE_BRIDGE_... OK/FAIL]
+  - [parent_name/nombre fuente] → tipo [X] → respuesta [title del output] → delegado a [agente o N/A] → marker [DONE_BRIDGE_... OK/FAIL en <parent>]
   - ...
+- Warnings: [si hay sub-sub-carpetas no escaneadas, listarlas]
 - Errores: [si los hay, listar con stacktrace si aplica]
 
 — CoraBridge
@@ -269,6 +307,7 @@ disparo (1h después) los retomará si los markers no se escribieron.
 | 3. Sin `BRIDGE_LOG_*` | OUTBOUND no tuvo log del ciclo | Paso 4 sin énfasis de obligatoriedad | Paso 4 marcado SIEMPRE | ✓ fixed v2, validated |
 | 4. Markdown escapado (`\#`, `\*\*`, `\-`) | Cora vería texto literal con backslashes | (creído en v2) Drive MCP escapaba en upload | Paso 3e.2: `contentMimeType: "text/markdown"` + `disableConversionToGoogleType: true` | ⚠ **FALSE POSITIVE.** Ver nota al pie. |
 | **5 (E). Logs con título idéntico colisionan** | Dos `BRIDGE_LOG_2026-05-16_170000.md` distintos en OUTBOUND, escritos por dos fires del slot 17:00 UTC (uno a 16:32Z, otro a 16:51Z) | Agente usó el slot nominal del cron como timestamp en lugar de NOW real UTC. Bug idéntico al de InboxBot v5.1→v5.2 (commit a72b247) | **Paso 4 v3 (2026-05-16):** título DEBE construirse desde `date -u +%Y-%m-%d_%H%M%S` capturado al inicio del ciclo, NUNCA inferido del cron slot | ✓ fixed v3 |
+| **6 (F). Archivos en subcarpetas invisibles** | Cora dejó `BBDD V2.0` + `Guía marcada` en subcarpeta nueva `Notoriedad V2.0/` el 2026-05-17 ~11:55. CoraBridge corrió cada hora todo el día sin verlos. Logs reportaron "0 candidatos" durante 4 ciclos. Owner los descubrió a mano. | Paso 1 excluía explícitamente `mimeType = folder` y no enumeraba sub-niveles. Asumió arquitectura flat de INBOUND. | **v4 (2026-05-17):** Paso 1 reescrito con 1 nivel de profundidad (1.1 root + 1.2 enumerar subcarpetas + 1.3 listar en cada una). Paso 2 lookup de markers en parent del source. Paso 3e título incluye prefix de subfolder. Paso 3f marker en mismo parent. Paso 4 log reporta subcarpetas descubiertas y warnings si hay anidación >1. Expiry extendido a 2026-05-31. | ✓ fixed v4 |
 
 **Nota Bug 4 — FALSE POSITIVE (descubierto 2026-05-16 ~17:0xZ):**
 
@@ -346,14 +385,14 @@ invocación falla (subagente no encontrado, error de runtime), caer a
 | Cron expression (UTC) | `0 11-23,0-3 * * *` |
 | Frecuencia efectiva (Caracas, UTC-4) | 17 disparos diarios — cada hora en punto, 7am–11pm |
 | Ventana activa | 7:00–23:00 hora Caracas (extiende hasta 03:00 UTC) |
-| Vida del test | Activa: 2026-05-16 — Expira: 2026-05-17 23:59 Caracas (= 2026-05-18T03:59Z) |
+| Vida del test | Activa: 2026-05-16 — Expira: **2026-05-31 23:59 Caracas (= 2026-06-01T03:59Z) — extendido v4** |
 | Repo source | `https://github.com/raoulbermudez-jpg/RAUL` branch `main` |
 | MCP connectors | Google-Drive (UUID `b720994a-1f8b-4f25-ae35-961b9ca2b128`) |
 | Modelo | `claude-sonnet-4-6` (consistente con InboxBot, costo razonable) |
 
 ## 6. Cleanup post-test (checklist para Owner)
 
-Cuando concluya el test (lunes 2026-05-18 o después):
+Cuando concluya el test (v4: extendido a domingo 2026-05-31 o cuando se cierre la fase wave-over-wave 2025↔2026):
 
 - [ ] Desactivar el routine en web UI: `https://claude.ai/code/routines/<trigger_id>`
 - [ ] (Opcional) Eliminar este directorio `.claude/agents/corabridge-gama-test/`
