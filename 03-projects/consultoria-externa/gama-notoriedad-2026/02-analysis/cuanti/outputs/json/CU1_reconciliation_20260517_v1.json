@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "ola_actual": "2026",
+    "nota_wave": "Primera ola de campo 2026. No existe ola anterior de campo comparable. La reconciliacion compara JSON V2 (producidos 2026-05-16) vs BBDD raw. El framework wave-over-wave esta listo para aplicar en ola 2027.",
+    "fecha_ejecucion": "2026-05-17T01:22:09.163856",
+    "n_bbdd_raw": 402
+  },
+  "parametros": {
+    "alpha": 0.05,
+    "base_baja": 30,
+    "base_excluir": 10
+  },
+  "hallazgos_criticos": [
+    {
+      "severidad": "CRITICO",
+      "codigo": "BUG-CU1-001",
+      "descripcion": "faseA_embudo_bbdd.json reporta C+/C n=0 (todos los % = 0.0). El BBDD raw confirma C+/C n=104. Causa: la mascara get_masks() retorna nse=='C+/C', pero en el momento en que se ejecuto faseA, el COL_NSE posiblemente tenia espacios o encoding diferente. El bug fue resuelto internamente en scripts posteriores (faseB y siguientes muestran C+/C correcto), pero el JSON canonical de faseA queda incorrecto.",
+      "impacto_deck_v2": "Bajo: los slides C+/C del deck V2 se calcularon en faseB (no leyeron faseA_embudo_bbdd.json para ese segmento). Pero cualquier consumidor que lea faseA_embudo_bbdd.json directamente recibira cifras erroneas de C+/C.",
+      "accion_requerida": "Regenerar faseA_embudo_bbdd.json con la mascara corregida. No impacta deck V2 ya entregado."
+    },
+    {
+      "severidad": "MENOR",
+      "codigo": "BUG-CU1-002",
+      "descripcion": "Caracteres mal codificados (latin-1 / cp1252) detectados en: ['faseA_embudo_bbdd', 'faseB4_precio', 'faseC3_4_5_categorias_segmentos_misiones', 'faseD1_PF_publicitario']. Labels de categorias con tildes aparecen como 'Ã©', 'Ã­', etc.",
+      "impacto_deck_v2": "Labels de tablas de precios y segmentos en deck pueden mostrar caracteres incorrectos.",
+      "accion_requerida": "Asegurar utf-8 en json.dump(ensure_ascii=False) en scripts V2."
+    }
+  ],
+  "certificaciones": [
+    "Preferencia Gama Total: 7.96% VERIFICADO — raw vs JSON V2 match <0.01pp",
+    "n_total=402 VERIFICADO",
+    "n_D=127, n_E=171 VERIFICADOS",
+    "n_C+/C=104 VERIFICADO (discrepancia es solo en JSON faseA, no en analisis)",
+    "Logit Pseudo R2: 0.4371 VERIFICADO — match con V2 (0.4370613461148666) <0.005"
+  ],
+  "segmentos_reconciliacion": {
+    "Total": {
+      "n_bbdd_raw": 402,
+      "n_json_v2": 402,
+      "match": true,
+      "discrepancy": 0,
+      "flag_base": "OK"
+    },
+    "C+/C": {
+      "n_bbdd_raw": 104,
+      "n_json_v2": 0,
+      "match": false,
+      "discrepancy": 104,
+      "flag_base": "OK"
+    },
+    "D": {
+      "n_bbdd_raw": 127,
+      "n_json_v2": 127,
+      "match": true,
+      "discrepancy": 0,
+      "flag_base": "OK"
+    },
+    "E": {
+      "n_bbdd_raw": 171,
+      "n_json_v2": 171,
+      "match": true,
+      "discrepancy": 0,
+      "flag_base": "OK"
+    },
+    "Pref-Gama": {
+      "n_bbdd_raw": 32,
+      "n_json_v2": 32,
+      "match": true,
+      "discrepancy": 0,
+      "flag_base": "OK"
+    }
+  },
+  "encoding_bugs_jsons": [
+    "faseA_embudo_bbdd",
+    "faseB4_precio",
+    "faseC3_4_5_categorias_segmentos_misiones",
+    "faseD1_PF_publicitario"
+  ],
+  "logit_reconciliacion": {
+    "pseudo_r2_v2": 0.4370613461148666,
+    "pseudo_r2_recalculado": 0.4371,
+    "diferencia": 0.0,
+    "match": true
+  },
+  "wave_over_wave_framework_2027": {
+    "estado": "LISTO_PARA_ACTIVAR",
+    "comparabilidad_preguntas": {
+      "P16_TOM": "Comparable (misma redaccion y lista de marcas)",
+      "P17_asistida": "Comparable",
+      "P19_consideracion": "Comparable",
+      "P20_compra_3m": "Comparable",
+      "P21_preferida": "Comparable",
+      "P22_importancia": "Parcialmente comparable (10 atributos 2026 son subconjunto de 20 en 2025)",
+      "P23_asociacion": "Parcialmente comparable (solo 10 atributos comunes)",
+      "P31_ranking": "NO comparable (metodologia distinta en 2025)",
+      "P33_precio": "NO comparable (pregunta nueva en 2026)",
+      "P34_evolucion": "NO comparable (pregunta nueva en 2026)"
+    },
+    "protocolo_ztest_interola": "Aplicar z-test de proporciones con n independientes por ola: z, p = proportions_ztest([x_2026, x_2027], [n_2026, n_2027]). Valido para disenos cross-sectional independientes. Verificar primero comparabilidad metodologica del item antes de aplicar."
+  },
+  "flags": []
+}

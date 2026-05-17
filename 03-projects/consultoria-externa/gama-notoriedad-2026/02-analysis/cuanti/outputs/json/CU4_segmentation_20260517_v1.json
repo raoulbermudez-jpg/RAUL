@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "fecha_ejecucion": "2026-05-17T01:22:09.368450",
+    "nota": "Clustering jerarquico Ward (scipy). K-means formal y LCA pendientes de scikit-learn."
+  },
+  "parametros": {
+    "alpha": 0.05,
+    "base_baja": 30,
+    "n_clusters_eval": [
+      3,
+      4,
+      5
+    ]
+  },
+  "results": {
+    "matriz_segmentacion": {
+      "n_validos": 402,
+      "variables": [
+        "P22_IMPORTANCIA__Es_un_e",
+        "P22_IMPORTANCIA_Donde_en",
+        "P22_IMPORTANCIA_Es_segur",
+        "P22_IMPORTANCIA_Rapidez_",
+        "P22_IMPORTANCIA_La_tiend",
+        "P22_IMPORTANCIA_Tienen_p",
+        "P22_IMPORTANCIA__Donde_m",
+        "P22_IMPORTANCIA_Donde_pu",
+        "NSE",
+        "P33_precio",
+        "Pref_Gama"
+      ],
+      "nota_variables": "P22 Likert 1-5; NSE ordinal 1(E)-3(C+/C); P33 1(bajos)-3(altos); Pref_Gama binaria"
+    },
+    "evaluacion_clusters": {
+      "k3": {
+        "n_clusters": 3,
+        "r_squared_proxy": 0.2398,
+        "perfiles": {
+          "seg_1": {
+            "n": 119,
+            "pct_total": 29.6,
+            "flag": "OK",
+            "NSE_promedio": 1.81,
+            "pct_pref_gama": 0.8,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.14,
+              "P22_IMPORTANCIA_Donde_en": 4.13,
+              "P22_IMPORTANCIA_Es_segur": 4.07,
+              "P22_IMPORTANCIA_Rapidez_": 4.04,
+              "P22_IMPORTANCIA_La_tiend": 3.96,
+              "P22_IMPORTANCIA_Tienen_p": 4.13,
+              "P22_IMPORTANCIA__Donde_m": 4.06,
+              "P22_IMPORTANCIA_Donde_pu": 4.24
+            }
+          },
+          "seg_2": {
+            "n": 31,
+            "pct_total": 7.7,
+            "flag": "OK",
+            "NSE_promedio": 2.19,
+            "pct_pref_gama": 100.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.65,
+              "P22_IMPORTANCIA_Donde_en": 4.55,
+              "P22_IMPORTANCIA_Es_segur": 4.58,
+              "P22_IMPORTANCIA_Rapidez_": 4.87,
+              "P22_IMPORTANCIA_La_tiend": 4.55,
+              "P22_IMPORTANCIA_Tienen_p": 4.39,
+              "P22_IMPORTANCIA__Donde_m": 4.74,
+              "P22_IMPORTANCIA_Donde_pu": 4.74
+            }
+          },
+          "seg_3": {
+            "n": 252,
+            "pct_total": 62.7,
+            "flag": "OK",
+            "NSE_promedio": 1.8,
+            "pct_pref_gama": 0.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.82,
+              "P22_IMPORTANCIA_Donde_en": 4.75,
+              "P22_IMPORTANCIA_Es_segur": 4.74,
+              "P22_IMPORTANCIA_Rapidez_": 4.69,
+              "P22_IMPORTANCIA_La_tiend": 4.29,
+              "P22_IMPORTANCIA_Tienen_p": 4.5,
+              "P22_IMPORTANCIA__Donde_m": 4.71,
+              "P22_IMPORTANCIA_Donde_pu": 4.65
+            }
+          }
+        }
+      },
+      "k4": {
+        "n_clusters": 4,
+        "r_squared_proxy": 0.2796,
+        "perfiles": {
+          "seg_1": {
+            "n": 119,
+            "pct_total": 29.6,
+            "flag": "OK",
+            "NSE_promedio": 1.81,
+            "pct_pref_gama": 0.8,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.14,
+              "P22_IMPORTANCIA_Donde_en": 4.13,
+              "P22_IMPORTANCIA_Es_segur": 4.07,
+              "P22_IMPORTANCIA_Rapidez_": 4.04,
+              "P22_IMPORTANCIA_La_tiend": 3.96,
+              "P22_IMPORTANCIA_Tienen_p": 4.13,
+              "P22_IMPORTANCIA__Donde_m": 4.06,
+              "P22_IMPORTANCIA_Donde_pu": 4.24
+            }
+          },
+          "seg_2": {
+            "n": 31,
+            "pct_total": 7.7,
+            "flag": "OK",
+            "NSE_promedio": 2.19,
+            "pct_pref_gama": 100.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.65,
+              "P22_IMPORTANCIA_Donde_en": 4.55,
+              "P22_IMPORTANCIA_Es_segur": 4.58,
+              "P22_IMPORTANCIA_Rapidez_": 4.87,
+              "P22_IMPORTANCIA_La_tiend": 4.55,
+              "P22_IMPORTANCIA_Tienen_p": 4.39,
+              "P22_IMPORTANCIA__Donde_m": 4.74,
+              "P22_IMPORTANCIA_Donde_pu": 4.74
+            }
+          },
+          "seg_3": {
+            "n": 170,
+            "pct_total": 42.3,
+            "flag": "OK",
+            "NSE_promedio": 1.76,
+            "pct_pref_gama": 0.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.77,
+              "P22_IMPORTANCIA_Donde_en": 4.72,
+              "P22_IMPORTANCIA_Es_segur": 4.74,
+              "P22_IMPORTANCIA_Rapidez_": 4.71,
+              "P22_IMPORTANCIA_La_tiend": 4.48,
+              "P22_IMPORTANCIA_Tienen_p": 4.62,
+              "P22_IMPORTANCIA__Donde_m": 4.77,
+              "P22_IMPORTANCIA_Donde_pu": 4.91
+            }
+          },
+          "seg_4": {
+            "n": 82,
+            "pct_total": 20.4,
+            "flag": "OK",
+            "NSE_promedio": 1.89,
+            "pct_pref_gama": 0.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.93,
+              "P22_IMPORTANCIA_Donde_en": 4.8,
+              "P22_IMPORTANCIA_Es_segur": 4.74,
+              "P22_IMPORTANCIA_Rapidez_": 4.65,
+              "P22_IMPORTANCIA_La_tiend": 3.9,
+              "P22_IMPORTANCIA_Tienen_p": 4.23,
+              "P22_IMPORTANCIA__Donde_m": 4.57,
+              "P22_IMPORTANCIA_Donde_pu": 4.11
+            }
+          }
+        }
+      },
+      "k5": {
+        "n_clusters": 5,
+        "r_squared_proxy": 0.3129,
+        "perfiles": {
+          "seg_1": {
+            "n": 119,
+            "pct_total": 29.6,
+            "flag": "OK",
+            "NSE_promedio": 1.81,
+            "pct_pref_gama": 0.8,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.14,
+              "P22_IMPORTANCIA_Donde_en": 4.13,
+              "P22_IMPORTANCIA_Es_segur": 4.07,
+              "P22_IMPORTANCIA_Rapidez_": 4.04,
+              "P22_IMPORTANCIA_La_tiend": 3.96,
+              "P22_IMPORTANCIA_Tienen_p": 4.13,
+              "P22_IMPORTANCIA__Donde_m": 4.06,
+              "P22_IMPORTANCIA_Donde_pu": 4.24
+            }
+          },
+          "seg_2": {
+            "n": 31,
+            "pct_total": 7.7,
+            "flag": "OK",
+            "NSE_promedio": 2.19,
+            "pct_pref_gama": 100.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.65,
+              "P22_IMPORTANCIA_Donde_en": 4.55,
+              "P22_IMPORTANCIA_Es_segur": 4.58,
+              "P22_IMPORTANCIA_Rapidez_": 4.87,
+              "P22_IMPORTANCIA_La_tiend": 4.55,
+              "P22_IMPORTANCIA_Tienen_p": 4.39,
+              "P22_IMPORTANCIA__Donde_m": 4.74,
+              "P22_IMPORTANCIA_Donde_pu": 4.74
+            }
+          },
+          "seg_3": {
+            "n": 170,
+            "pct_total": 42.3,
+            "flag": "OK",
+            "NSE_promedio": 1.76,
+            "pct_pref_gama": 0.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.77,
+              "P22_IMPORTANCIA_Donde_en": 4.72,
+              "P22_IMPORTANCIA_Es_segur": 4.74,
+              "P22_IMPORTANCIA_Rapidez_": 4.71,
+              "P22_IMPORTANCIA_La_tiend": 4.48,
+              "P22_IMPORTANCIA_Tienen_p": 4.62,
+              "P22_IMPORTANCIA__Donde_m": 4.77,
+              "P22_IMPORTANCIA_Donde_pu": 4.91
+            }
+          },
+          "seg_4": {
+            "n": 56,
+            "pct_total": 13.9,
+            "flag": "OK",
+            "NSE_promedio": 1.73,
+            "pct_pref_gama": 0.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 5.0,
+              "P22_IMPORTANCIA_Donde_en": 4.82,
+              "P22_IMPORTANCIA_Es_segur": 4.71,
+              "P22_IMPORTANCIA_Rapidez_": 4.7,
+              "P22_IMPORTANCIA_La_tiend": 4.45,
+              "P22_IMPORTANCIA_Tienen_p": 4.48,
+              "P22_IMPORTANCIA__Donde_m": 4.61,
+              "P22_IMPORTANCIA_Donde_pu": 3.88
+            }
+          },
+          "seg_5": {
+            "n": 26,
+            "pct_total": 6.5,
+            "flag": "REFERENCIAL",
+            "NSE_promedio": 2.23,
+            "pct_pref_gama": 0.0,
+            "precio_percepcion_promedio": 2.0,
+            "importancia_promedio_P22": {
+              "P22_IMPORTANCIA__Es_un_e": 4.77,
+              "P22_IMPORTANCIA_Donde_en": 4.77,
+              "P22_IMPORTANCIA_Es_segur": 4.81,
+              "P22_IMPORTANCIA_Rapidez_": 4.54,
+              "P22_IMPORTANCIA_La_tiend": 2.73,
+              "P22_IMPORTANCIA_Tienen_p": 3.69,
+              "P22_IMPORTANCIA__Donde_m": 4.5,
+              "P22_IMPORTANCIA_Donde_pu": 4.62
+            }
+          }
+        }
+      }
+    },
+    "k_recomendado": 5,
+    "perfiles_k_recomendado": {
+      "seg_1": {
+        "n": 119,
+        "pct_total": 29.6,
+        "flag": "OK",
+        "NSE_promedio": 1.81,
+        "pct_pref_gama": 0.8,
+        "precio_percepcion_promedio": 2.0,
+        "importancia_promedio_P22": {
+          "P22_IMPORTANCIA__Es_un_e": 4.14,
+          "P22_IMPORTANCIA_Donde_en": 4.13,
+          "P22_IMPORTANCIA_Es_segur": 4.07,
+          "P22_IMPORTANCIA_Rapidez_": 4.04,
+          "P22_IMPORTANCIA_La_tiend": 3.96,
+          "P22_IMPORTANCIA_Tienen_p": 4.13,
+          "P22_IMPORTANCIA__Donde_m": 4.06,
+          "P22_IMPORTANCIA_Donde_pu": 4.24
+        }
+      },
+      "seg_2": {
+        "n": 31,
+        "pct_total": 7.7,
+        "flag": "OK",
+        "NSE_promedio": 2.19,
+        "pct_pref_gama": 100.0,
+        "precio_percepcion_promedio": 2.0,
+        "importancia_promedio_P22": {
+          "P22_IMPORTANCIA__Es_un_e": 4.65,
+          "P22_IMPORTANCIA_Donde_en": 4.55,
+          "P22_IMPORTANCIA_Es_segur": 4.58,
+          "P22_IMPORTANCIA_Rapidez_": 4.87,
+          "P22_IMPORTANCIA_La_tiend": 4.55,
+          "P22_IMPORTANCIA_Tienen_p": 4.39,
+          "P22_IMPORTANCIA__Donde_m": 4.74,
+          "P22_IMPORTANCIA_Donde_pu": 4.74
+        }
+      },
+      "seg_3": {
+        "n": 170,
+        "pct_total": 42.3,
+        "flag": "OK",
+        "NSE_promedio": 1.76,
+        "pct_pref_gama": 0.0,
+        "precio_percepcion_promedio": 2.0,
+        "importancia_promedio_P22": {
+          "P22_IMPORTANCIA__Es_un_e": 4.77,
+          "P22_IMPORTANCIA_Donde_en": 4.72,
+          "P22_IMPORTANCIA_Es_segur": 4.74,
+          "P22_IMPORTANCIA_Rapidez_": 4.71,
+          "P22_IMPORTANCIA_La_tiend": 4.48,
+          "P22_IMPORTANCIA_Tienen_p": 4.62,
+          "P22_IMPORTANCIA__Donde_m": 4.77,
+          "P22_IMPORTANCIA_Donde_pu": 4.91
+        }
+      },
+      "seg_4": {
+        "n": 56,
+        "pct_total": 13.9,
+        "flag": "OK",
+        "NSE_promedio": 1.73,
+        "pct_pref_gama": 0.0,
+        "precio_percepcion_promedio": 2.0,
+        "importancia_promedio_P22": {
+          "P22_IMPORTANCIA__Es_un_e": 5.0,
+          "P22_IMPORTANCIA_Donde_en": 4.82,
+          "P22_IMPORTANCIA_Es_segur": 4.71,
+          "P22_IMPORTANCIA_Rapidez_": 4.7,
+          "P22_IMPORTANCIA_La_tiend": 4.45,
+          "P22_IMPORTANCIA_Tienen_p": 4.48,
+          "P22_IMPORTANCIA__Donde_m": 4.61,
+          "P22_IMPORTANCIA_Donde_pu": 3.88
+        }
+      },
+      "seg_5": {
+        "n": 26,
+        "pct_total": 6.5,
+        "flag": "REFERENCIAL",
+        "NSE_promedio": 2.23,
+        "pct_pref_gama": 0.0,
+        "precio_percepcion_promedio": 2.0,
+        "importancia_promedio_P22": {
+          "P22_IMPORTANCIA__Es_un_e": 4.77,
+          "P22_IMPORTANCIA_Donde_en": 4.77,
+          "P22_IMPORTANCIA_Es_segur": 4.81,
+          "P22_IMPORTANCIA_Rapidez_": 4.54,
+          "P22_IMPORTANCIA_La_tiend": 2.73,
+          "P22_IMPORTANCIA_Tienen_p": 3.69,
+          "P22_IMPORTANCIA__Donde_m": 4.5,
+          "P22_IMPORTANCIA_Donde_pu": 4.62
+        }
+      }
+    },
+    "interpretaciones": {
+      "seg_1": {
+        "etiqueta": "Indiferente/multipropuesta (baja diferenciacion de marca)",
+        "descripcion_driver": "NSE_prom=1.8, %Pref_Gama=0.8%, Precio_perc=2.00/3"
+      },
+      "seg_2": {
+        "etiqueta": "Loyal-Gama (alta preferencia Gama, NSE mixto)",
+        "descripcion_driver": "NSE_prom=2.2, %Pref_Gama=100.0%, Precio_perc=2.00/3"
+      },
+      "seg_3": {
+        "etiqueta": "Indiferente/multipropuesta (baja diferenciacion de marca)",
+        "descripcion_driver": "NSE_prom=1.8, %Pref_Gama=0.0%, Precio_perc=2.00/3"
+      },
+      "seg_4": {
+        "etiqueta": "Indiferente/multipropuesta (baja diferenciacion de marca)",
+        "descripcion_driver": "NSE_prom=1.7, %Pref_Gama=0.0%, Precio_perc=2.00/3"
+      },
+      "seg_5": {
+        "etiqueta": "Indiferente/multipropuesta (baja diferenciacion de marca)",
+        "descripcion_driver": "NSE_prom=2.2, %Pref_Gama=0.0%, Precio_perc=2.00/3"
+      }
+    },
+    "lca_pendiente": {
+      "estado": "PENDIENTE",
+      "herramienta": "sklearn.mixture.BayesianGaussianMixture (proxy) o R poLCA",
+      "criterio": "BIC por numero de clases",
+      "variables_adicionales_recomendadas": [
+        "P23 asociaciones (10 binarias)",
+        "P21_preferida_Gama",
+        "P20_compra_3m"
+      ]
+    }
+  },
+  "flags": [
+    {
+      "codigo": "FLAG-CU4-001",
+      "descripcion": "Clustering Ward es exploratorio. Requiere validacion con k-means formal (scikit-learn) e interpretacion sustantiva de Insighter antes de publicar segmentos.",
+      "severidad": "CAVEAT"
+    },
+    {
+      "codigo": "FLAG-CU4-002",
+      "descripcion": "Todos los segmentos tienen n>30 en k=3,4,5 dado n_total=402. Sin embargo, al cruzar con subgrupos NSE por segmento, bases pueden caer bajo 30.",
+      "severidad": "INFORMATIVO"
+    }
+  ]
+}

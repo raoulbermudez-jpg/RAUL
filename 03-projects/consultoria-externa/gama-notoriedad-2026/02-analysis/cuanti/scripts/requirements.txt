@@ -1,0 +1,17 @@
+# requirements.txt — Cuanti V3 Gama Notoriedad 2026
+# Fecha: 2026-05-17
+#
+# Librarias DISPONIBLES (instaladas en el entorno actual):
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+statsmodels>=0.14
+openpyxl>=3.1         # engine para pandas read_excel
+
+# Librarias FALTANTES (zona amarilla — requieren autorizacion Owner para pip install):
+# scikit-learn>=1.3   # CU-3 RF, CU-4 k-means/LCA
+# shap>=0.44          # CU-3 SHAP values
+# matplotlib>=3.7     # plots SHAP y silhouette
+
+# Para reproducir el analisis completo sin CU-3 RF/SHAP ni CU-4 k-means formal:
+# Solo pandas, numpy, scipy, statsmodels son suficientes.

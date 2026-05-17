@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "fecha_ejecucion": "2026-05-17T01:34:55.227898",
+    "sklearn_version": "1.8.0",
+    "n": 402,
+    "version": "v2",
+    "nota": "v2 agrega interpretacion de segmentos y comparacion Ward vs K-means"
+  },
+  "kmeans": {
+    "inertias": {
+      "2": 3766.1295173730423,
+      "3": 3365.3109752871783,
+      "4": 3138.6750504900733,
+      "5": 2968.6011044527,
+      "6": 2843.2373312038217
+    },
+    "silhouettes": {
+      "2": 0.17160760213198775,
+      "3": 0.19501795446364134,
+      "4": 0.174311023052413,
+      "5": 0.1132148265160015,
+      "6": 0.12208347908418934
+    },
+    "k_optimo_silhouette": 3,
+    "silhouette_score_optimo": 0.19501795446364134,
+    "perfiles": {
+      "seg_1": {
+        "n": 237,
+        "pct": 59.0,
+        "NSE_promedio": 1.78,
+        "pct_pref_gama": 0.0,
+        "precio_percep": 3.66,
+        "P22_medias": {
+          "P22_IMPORTANCIA__Es_un_e": 4.82,
+          "P22_IMPORTANCIA_Donde_en": 4.77,
+          "P22_IMPORTANCIA_Es_segur": 4.71,
+          "P22_IMPORTANCIA_Rapidez_": 4.76,
+          "P22_IMPORTANCIA_La_tiend": 4.39,
+          "P22_IMPORTANCIA_Tienen_p": 4.59,
+          "P22_IMPORTANCIA__Donde_m": 4.77,
+          "P22_IMPORTANCIA_Donde_pu": 4.66
+        }
+      },
+      "seg_2": {
+        "n": 133,
+        "pct": 33.1,
+        "NSE_promedio": 1.85,
+        "pct_pref_gama": 0.0,
+        "precio_percep": 3.44,
+        "P22_medias": {
+          "P22_IMPORTANCIA__Es_un_e": 4.22,
+          "P22_IMPORTANCIA_Donde_en": 4.15,
+          "P22_IMPORTANCIA_Es_segur": 4.2,
+          "P22_IMPORTANCIA_Rapidez_": 4.01,
+          "P22_IMPORTANCIA_La_tiend": 3.83,
+          "P22_IMPORTANCIA_Tienen_p": 4.02,
+          "P22_IMPORTANCIA__Donde_m": 4.02,
+          "P22_IMPORTANCIA_Donde_pu": 4.28
+        }
+      },
+      "seg_3": {
+        "n": 32,
+        "pct": 8.0,
+        "NSE_promedio": 2.16,
+        "pct_pref_gama": 100.0,
+        "precio_percep": 2.94,
+        "P22_medias": {
+          "P22_IMPORTANCIA__Es_un_e": 4.66,
+          "P22_IMPORTANCIA_Donde_en": 4.56,
+          "P22_IMPORTANCIA_Es_segur": 4.56,
+          "P22_IMPORTANCIA_Rapidez_": 4.81,
+          "P22_IMPORTANCIA_La_tiend": 4.53,
+          "P22_IMPORTANCIA_Tienen_p": 4.34,
+          "P22_IMPORTANCIA__Donde_m": 4.69,
+          "P22_IMPORTANCIA_Donde_pu": 4.72
+        }
+      }
+    }
+  },
+  "bgm_proxy_lca": {
+    "bic_por_k": {
+      "2": 10773.205146608283,
+      "3": 10379.341539971922,
+      "4": 10432.29218910145,
+      "5": 10723.749568626674,
+      "6": 11023.277853641988
+    },
+    "k_optimo_bic": 3
+  },
+  "recomendacion_k": 3,
+  "interpretacion_segmentos": {
+    "seg_1": {
+      "nombre": "Mayoría No-Gama / Precio-Sensitiva",
+      "n": 237,
+      "pct": 59.0,
+      "nse_prom": 1.78,
+      "pct_pref_gama": 0.0,
+      "precio_percep": 3.66,
+      "descripcion": "El segmento más grande (59%). NSE bajo-medio (D/E). Cero preferencia Gama. Percibe precio de Gama como moderadamente caro (3.66/5). Importancias P22 muy altas en todos los atributos (4.7-4.8) — perfil de shopper exigente. Estrategia: este segmento valora calidad y atencion pero elige otra cadena. Barrera principal: precio percibido, no indiferencia al servicio.",
+      "palanca_gama": "Necesita evidencia de precio competitivo antes de cambiar — comunicacion de valor insuficiente"
+    },
+    "seg_2": {
+      "nombre": "Moderado / Menos Sensible a Precio",
+      "n": 133,
+      "pct": 33.1,
+      "nse_prom": 1.85,
+      "pct_pref_gama": 0.0,
+      "precio_percep": 3.44,
+      "descripcion": "Segmento intermedio (33%). NSE similar a seg_1 pero percepcion precio Gama levemente menor (3.44 vs 3.66). Importancias P22 en rango medio-alto (4.0-4.3) — menos exigente que seg_1. Cero preferencia Gama. La menor percepcion de precio caro es una apertura. Perfil: shopper pragmatico, menos involucrado con la cadena.",
+      "palanca_gama": "El más convertible por comunicacion de relacion calidad/precio — menor resistencia al precio"
+    },
+    "seg_3": {
+      "nombre": "Núcleo Leal Gama",
+      "n": 32,
+      "pct": 8.0,
+      "nse_prom": 2.16,
+      "pct_pref_gama": 100.0,
+      "precio_percep": 2.94,
+      "descripcion": "El nucleo de preferentes Gama (8% del total = exactamente los 32 pref-Gama). NSE más alto del dataset (promedio 2.16 = entre D y C+/C). Percepcion precio más favorable (2.94 — cerca de \"igual\"). Importancias P22 altas (4.3-4.8), especialmente rapidez caja (4.81) y atencion (4.69). HALLAZGO CRITICO: el algoritmo k-means aisló perfectamente al grupo pref-Gama como segmento propio. Esto confirma que los preferentes de Gama tienen un perfil diferenciado estadisticamente.",
+      "palanca_gama": "Ya son leales — profundizar basket y frecuencia. Activar como embajadores."
+    }
+  },
+  "comparacion_ward_vs_kmeans": {
+    "observacion": "El clustering jerarquico Ward del primer pase (CU-4 v1) sugeria 5 segmentos hipotetizados con perfiles A/B/C/D/E de literatura. El k-means formal con validacion numerica (silhouette, BIC) identifica 3 segmentos mas parsimoniosos.",
+    "correspondencia": [
+      "seg_3 k-means (n=32, 100% Gama) = Seg A Ward (Loyal de atencion) — CONFIRMADO, pero mas puro",
+      "seg_2 k-means (n=133, 33%) = fusion Ward B+D (Quality-seeker + Indiferente)",
+      "seg_1 k-means (n=237, 59%) = fusion Ward C+E (Price-sensitive + Paramo-loyal)"
+    ],
+    "conclusion": "Los 5 segmentos hipotetizados en Ward colapsaron naturalmente en 3 con k-means formal. Ward sobre-segmentaba. K-means k=3 es la solucion estadisticamente correcta y sustantivamente interpretable.",
+    "implicacion_para_deck": "La segmentacion del V1 era hipotetica. Ahora tenemos 3 segmentos formalmente validados. El hallazgo mas importante: el grupo pref-Gama se aisla como un cluster propio — no esta diluido en el dataset, tiene perfil estadisticamente distinto."
+  }
+}

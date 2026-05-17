@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "fecha_ejecucion": "2026-05-17T01:34:45.787793",
+    "sklearn_version": "1.8.0",
+    "shap_version": "0.51.0",
+    "n": 402,
+    "n_pref_gama": 32
+  },
+  "auc_comparacion": {
+    "auc_logit": 0.929,
+    "auc_rf_cv_mean": 0.8513,
+    "auc_rf_cv_std": 0.0538,
+    "diferencia_rf_minus_logit": -0.0777,
+    "no_linealidades_relevantes": false,
+    "interpretacion": "AUC RF (0.851 CV) < AUC Logit (0.929). El logit supera al RF en este dataset. Razon probable: n pequeño (n=402, solo 32 positivos) y variables binarias simples hacen que el logit sea más eficiente. No hay evidencia de no-linealidades relevantes.",
+    "nota_bug_flag": "CORRECCIÓN v2: el flag no_linealidades_relevantes se disparó por abs(diff)>0.05 en v1, sin distinguir signo. Con diff negativo (RF inferior), el flag correcto es False."
+  },
+  "shap_importances": {
+    "mayor_categorias": 0.05554733582877282,
+    "mayor_calidad": 0.035433934347173165,
+    "menor_precio": 0.013005132645744063,
+    "mejor_atienden": 0.10473957462252148,
+    "promociones": 0.0633407323144394,
+    "atractiva": 0.04700013428290153,
+    "limpio_ordenado": 0.0735449216422185,
+    "seguro": 0.05927833972179166,
+    "rapidez_caja": 0.03629254332736673,
+    "hacer_valer": 0.029561582615375503
+  },
+  "shap_ranking_top5": [
+    [
+      "mejor_atienden",
+      0.10473957462252148
+    ],
+    [
+      "limpio_ordenado",
+      0.0735449216422185
+    ],
+    [
+      "promociones",
+      0.0633407323144394
+    ],
+    [
+      "seguro",
+      0.05927833972179166
+    ],
+    [
+      "mayor_categorias",
+      0.05554733582877282
+    ]
+  ],
+  "gini_importances": {
+    "mayor_categorias": 0.11487699795651175,
+    "mayor_calidad": 0.08041899891595977,
+    "menor_precio": 0.027311918358911603,
+    "mejor_atienden": 0.19769426646974647,
+    "promociones": 0.10309232307058744,
+    "atractiva": 0.0764575495611942,
+    "limpio_ordenado": 0.1608504921861971,
+    "seguro": 0.10214552184705568,
+    "rapidez_caja": 0.08767281818851191,
+    "hacer_valer": 0.0494791134453241
+  },
+  "convergencia_logit_vs_shap": [
+    {
+      "rank_shap": 1,
+      "atributo": "mejor_atienden",
+      "mean_abs_shap": 0.1047,
+      "en_top3_logit": true
+    },
+    {
+      "rank_shap": 2,
+      "atributo": "limpio_ordenado",
+      "mean_abs_shap": 0.0735,
+      "en_top3_logit": true
+    },
+    {
+      "rank_shap": 3,
+      "atributo": "promociones",
+      "mean_abs_shap": 0.0633,
+      "en_top3_logit": true
+    }
+  ],
+  "conclusion": "Los top-3 SHAP coinciden con los top-3 logit. El logit supera al RF en AUC (0.929 vs 0.851 CV). Logit es el modelo principal confirmado — no hay no-linealidades que lo superen."
+}

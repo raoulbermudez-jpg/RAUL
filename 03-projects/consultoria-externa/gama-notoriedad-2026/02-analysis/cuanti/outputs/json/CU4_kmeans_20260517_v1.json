@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "fecha_ejecucion": "2026-05-17T01:34:55.227898",
+    "sklearn_version": "1.8.0",
+    "n": 402
+  },
+  "kmeans": {
+    "inertias": {
+      "2": 3766.1295173730423,
+      "3": 3365.3109752871783,
+      "4": 3138.6750504900733,
+      "5": 2968.6011044527,
+      "6": 2843.2373312038217
+    },
+    "silhouettes": {
+      "2": 0.17160760213198775,
+      "3": 0.19501795446364134,
+      "4": 0.174311023052413,
+      "5": 0.1132148265160015,
+      "6": 0.12208347908418934
+    },
+    "k_optimo_silhouette": 3,
+    "silhouette_score_optimo": 0.19501795446364134,
+    "perfiles": {
+      "seg_1": {
+        "n": 237,
+        "pct": 59.0,
+        "NSE_promedio": 1.78,
+        "pct_pref_gama": 0.0,
+        "precio_percep": 3.66,
+        "P22_medias": {
+          "P22_IMPORTANCIA__Es_un_e": 4.82,
+          "P22_IMPORTANCIA_Donde_en": 4.77,
+          "P22_IMPORTANCIA_Es_segur": 4.71,
+          "P22_IMPORTANCIA_Rapidez_": 4.76,
+          "P22_IMPORTANCIA_La_tiend": 4.39,
+          "P22_IMPORTANCIA_Tienen_p": 4.59,
+          "P22_IMPORTANCIA__Donde_m": 4.77,
+          "P22_IMPORTANCIA_Donde_pu": 4.66
+        }
+      },
+      "seg_2": {
+        "n": 133,
+        "pct": 33.1,
+        "NSE_promedio": 1.85,
+        "pct_pref_gama": 0.0,
+        "precio_percep": 3.44,
+        "P22_medias": {
+          "P22_IMPORTANCIA__Es_un_e": 4.22,
+          "P22_IMPORTANCIA_Donde_en": 4.15,
+          "P22_IMPORTANCIA_Es_segur": 4.2,
+          "P22_IMPORTANCIA_Rapidez_": 4.01,
+          "P22_IMPORTANCIA_La_tiend": 3.83,
+          "P22_IMPORTANCIA_Tienen_p": 4.02,
+          "P22_IMPORTANCIA__Donde_m": 4.02,
+          "P22_IMPORTANCIA_Donde_pu": 4.28
+        }
+      },
+      "seg_3": {
+        "n": 32,
+        "pct": 8.0,
+        "NSE_promedio": 2.16,
+        "pct_pref_gama": 100.0,
+        "precio_percep": 2.94,
+        "P22_medias": {
+          "P22_IMPORTANCIA__Es_un_e": 4.66,
+          "P22_IMPORTANCIA_Donde_en": 4.56,
+          "P22_IMPORTANCIA_Es_segur": 4.56,
+          "P22_IMPORTANCIA_Rapidez_": 4.81,
+          "P22_IMPORTANCIA_La_tiend": 4.53,
+          "P22_IMPORTANCIA_Tienen_p": 4.34,
+          "P22_IMPORTANCIA__Donde_m": 4.69,
+          "P22_IMPORTANCIA_Donde_pu": 4.72
+        }
+      }
+    }
+  },
+  "bgm_proxy_lca": {
+    "bic_por_k": {
+      "2": 10773.205146608283,
+      "3": 10379.341539971922,
+      "4": 10432.29218910145,
+      "5": 10723.749568626674,
+      "6": 11023.277853641988
+    },
+    "k_optimo_bic": 3
+  },
+  "recomendacion_k": 3
+}

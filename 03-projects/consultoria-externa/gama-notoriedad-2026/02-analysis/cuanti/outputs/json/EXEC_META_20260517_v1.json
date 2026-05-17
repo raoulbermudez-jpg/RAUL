@@ -1,0 +1,24 @@
+{
+  "ejecucion": "2026-05-17T01:22:09.382283",
+  "jsons_producidos": [
+    "CU1_reconciliation_20260517_v1.json",
+    "CU2_stat_pack_20260517_v1.json",
+    "CU3_drivers_20260517_v1.json",
+    "CU4_segmentation_20260517_v1.json",
+    "CU5_pricing_20260517_v1.json"
+  ],
+  "librerias_disponibles": [
+    "pandas",
+    "numpy",
+    "scipy",
+    "statsmodels"
+  ],
+  "librerias_faltantes": [
+    "scikit-learn",
+    "shap"
+  ],
+  "pendientes": [
+    "RF+SHAP (CU-3): pip install scikit-learn shap — autorizacion Owner requerida",
+    "K-means/LCA formal (CU-4): mismas librerias"
+  ]
+}

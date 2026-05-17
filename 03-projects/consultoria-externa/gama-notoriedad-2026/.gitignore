@@ -1,0 +1,11 @@
+# NDA — datos crudos de Gama / Cora no deben commitearse
+01-data-raw/
+*.xlsx
+*.xlsm
+*.xlsb
+# excepción: si genero algún xlsx derivado para entregar a Cora bajo 02-analysis/tablas-adicionales/, lo añado explícitamente con git add -f
+!02-analysis/tablas-adicionales/*.xlsx
+!99-comms/*.docx
+# cachés py
+__pycache__/
+*.pyc

@@ -1,0 +1,157 @@
+{
+  "p33": {
+    "Total": {
+      "n": 402,
+      "dist_n": {
+        "Mucho mas economicos": 6,
+        "Poco mas economicos": 56,
+        "Igual": 123,
+        "Poco mas caros": 152,
+        "Mucho mas caros": 65
+      },
+      "dist_pct": {
+        "Mucho mas economicos": 1.5,
+        "Poco mas economicos": 13.9,
+        "Igual": 30.6,
+        "Poco mas caros": 37.8,
+        "Mucho mas caros": 16.2
+      },
+      "neto_caro_n": 217,
+      "neto_caro_pct": 54.0,
+      "neto_caro_IC95": [
+        49.1,
+        58.8
+      ],
+      "neto_econo_n": 62,
+      "neto_econo_pct": 15.4
+    },
+    "C+/C": {
+      "n": 104,
+      "dist_n": {
+        "Mucho mas economicos": 3,
+        "Poco mas economicos": 9,
+        "Igual": 29,
+        "Poco mas caros": 42,
+        "Mucho mas caros": 21
+      },
+      "dist_pct": {
+        "Mucho mas economicos": 2.9,
+        "Poco mas economicos": 8.7,
+        "Igual": 27.9,
+        "Poco mas caros": 40.4,
+        "Mucho mas caros": 20.2
+      },
+      "neto_caro_n": 63,
+      "neto_caro_pct": 60.6,
+      "neto_caro_IC95": [
+        51.0,
+        69.4
+      ],
+      "neto_econo_n": 12,
+      "neto_econo_pct": 11.5
+    },
+    "D": {
+      "n": 127,
+      "dist_n": {
+        "Mucho mas economicos": 0,
+        "Poco mas economicos": 18,
+        "Igual": 46,
+        "Poco mas caros": 47,
+        "Mucho mas caros": 16
+      },
+      "dist_pct": {
+        "Mucho mas economicos": 0.0,
+        "Poco mas economicos": 14.2,
+        "Igual": 36.2,
+        "Poco mas caros": 37.0,
+        "Mucho mas caros": 12.6
+      },
+      "neto_caro_n": 63,
+      "neto_caro_pct": 49.6,
+      "neto_caro_IC95": [
+        41.1,
+        58.2
+      ],
+      "neto_econo_n": 18,
+      "neto_econo_pct": 14.2
+    },
+    "E": {
+      "n": 171,
+      "dist_n": {
+        "Mucho mas economicos": 3,
+        "Poco mas economicos": 29,
+        "Igual": 48,
+        "Poco mas caros": 63,
+        "Mucho mas caros": 28
+      },
+      "dist_pct": {
+        "Mucho mas economicos": 1.8,
+        "Poco mas economicos": 17.0,
+        "Igual": 28.1,
+        "Poco mas caros": 36.8,
+        "Mucho mas caros": 16.4
+      },
+      "neto_caro_n": 91,
+      "neto_caro_pct": 53.2,
+      "neto_caro_IC95": [
+        45.7,
+        60.5
+      ],
+      "neto_econo_n": 32,
+      "neto_econo_pct": 18.7
+    },
+    "Pref-Gama": {
+      "n": 32,
+      "dist_n": {
+        "Mucho mas economicos": 3,
+        "Poco mas economicos": 7,
+        "Igual": 11,
+        "Poco mas caros": 11,
+        "Mucho mas caros": 0
+      },
+      "dist_pct": {
+        "Mucho mas economicos": 9.4,
+        "Poco mas economicos": 21.9,
+        "Igual": 34.4,
+        "Poco mas caros": 34.4,
+        "Mucho mas caros": 0.0
+      },
+      "neto_caro_n": 11,
+      "neto_caro_pct": 34.4,
+      "neto_caro_IC95": [
+        20.4,
+        51.7
+      ],
+      "neto_econo_n": 10,
+      "neto_econo_pct": 31.2
+    }
+  },
+  "p34_total": {
+    "Mucho mas economicos": {
+      "n": 10,
+      "pct": 2.5
+    },
+    "Poco mas economicos": {
+      "n": 32,
+      "pct": 8.0
+    },
+    "Igual": {
+      "n": 179,
+      "pct": 44.5
+    },
+    "Poco mas caros": {
+      "n": 138,
+      "pct": 34.3
+    },
+    "Mucho mas caros": {
+      "n": 43,
+      "pct": 10.7
+    }
+  },
+  "ztest_caro_CpC_vs_E": {
+    "z": 1.192,
+    "p": 0.2331,
+    "diff_pp": 7.4,
+    "sig": "no_sig"
+  }
+}

@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "fecha_ejecucion": "2026-05-17T01:22:09.321924",
+    "n_total": 402,
+    "alpha": 0.05,
+    "base_baja": 30
+  },
+  "parametros": {
+    "alpha": 0.05,
+    "base_baja": 30
+  },
+  "results": {
+    "embudo_gama_por_genero": {
+      "TOM": {
+        "F": {
+          "pct": 44.1,
+          "n": 211,
+          "IC95": [
+            37.5,
+            50.8
+          ]
+        },
+        "M": {
+          "pct": 44.5,
+          "n": 191,
+          "IC95": [
+            37.6,
+            51.6
+          ]
+        },
+        "ztest_F_vs_M": {
+          "z": -0.086,
+          "p": 0.9314,
+          "diff_pp": -0.4,
+          "sig": "no_sig"
+        }
+      },
+      "Asistida": {
+        "F": {
+          "pct": 51.7,
+          "n": 211,
+          "IC95": [
+            44.9,
+            58.3
+          ]
+        },
+        "M": {
+          "pct": 49.2,
+          "n": 191,
+          "IC95": [
+            42.2,
+            56.2
+          ]
+        },
+        "ztest_F_vs_M": {
+          "z": 0.489,
+          "p": 0.6245,
+          "diff_pp": 2.4,
+          "sig": "no_sig"
+        }
+      },
+      "Consideracion": {
+        "F": {
+          "pct": 31.8,
+          "n": 211,
+          "IC95": [
+            25.8,
+            38.3
+          ]
+        },
+        "M": {
+          "pct": 31.9,
+          "n": 191,
+          "IC95": [
+            25.7,
+            38.8
+          ]
+        },
+        "ztest_F_vs_M": {
+          "z": -0.039,
+          "p": 0.9685,
+          "diff_pp": -0.2,
+          "sig": "no_sig"
+        }
+      },
+      "Compra3m": {
+        "F": {
+          "pct": 15.2,
+          "n": 211,
+          "IC95": [
+            11.0,
+            20.6
+          ]
+        },
+        "M": {
+          "pct": 20.4,
+          "n": 191,
+          "IC95": [
+            15.3,
+            26.7
+          ]
+        },
+        "ztest_F_vs_M": {
+          "z": -1.379,
+          "p": 0.1678,
+          "diff_pp": -5.3,
+          "sig": "no_sig"
+        }
+      },
+      "Preferida": {
+        "F": {
+          "pct": 8.5,
+          "n": 211,
+          "IC95": [
+            5.5,
+            13.1
+          ]
+        },
+        "M": {
+          "pct": 7.3,
+          "n": 191,
+          "IC95": [
+            4.4,
+            11.9
+          ]
+        },
+        "ztest_F_vs_M": {
+          "z": 0.444,
+          "p": 0.6569,
+          "diff_pp": 1.2,
+          "sig": "no_sig"
+        }
+      }
+    },
+    "embudo_gama_por_nse": {
+      "TOM": {
+        "C+/C": {
+          "pct": 60.6,
+          "n": 104,
+          "x": 63,
+          "IC95": [
+            51.0,
+            69.4
+          ],
+          "flag": "OK"
+        },
+        "D": {
+          "pct": 32.3,
+          "n": 127,
+          "x": 41,
+          "IC95": [
+            24.8,
+            40.8
+          ],
+          "flag": "OK"
+        },
+        "E": {
+          "pct": 43.3,
+          "n": 171,
+          "x": 74,
+          "IC95": [
+            36.1,
+            50.8
+          ],
+          "flag": "OK"
+        },
+        "ztest_CpC_vs_D": {
+          "z": 4.3,
+          "p": 0.0,
+          "diff_pp": 28.3,
+          "sig": "sig_95"
+        },
+        "ztest_D_vs_E": {
+          "z": -1.927,
+          "p": 0.0539,
+          "diff_pp": -11.0,
+          "sig": "tendencia_90"
+        },
+        "ztest_CpC_vs_E": {
+          "z": 2.783,
+          "p": 0.0054,
+          "diff_pp": 17.3,
+          "sig": "sig_95"
+        }
+      },
+      "Asistida": {
+        "C+/C": {
+          "pct": 38.5,
+          "n": 104,
+          "x": 40,
+          "IC95": [
+            29.7,
+            48.1
+          ],
+          "flag": "OK"
+        },
+        "D": {
+          "pct": 61.4,
+          "n": 127,
+          "x": 78,
+          "IC95": [
+            52.7,
+            69.4
+          ],
+          "flag": "OK"
+        },
+        "E": {
+          "pct": 49.7,
+          "n": 171,
+          "x": 85,
+          "IC95": [
+            42.3,
+            57.1
+          ],
+          "flag": "OK"
+        },
+        "ztest_CpC_vs_D": {
+          "z": -3.472,
+          "p": 0.0005,
+          "diff_pp": -23.0,
+          "sig": "sig_95"
+        },
+        "ztest_D_vs_E": {
+          "z": 2.008,
+          "p": 0.0446,
+          "diff_pp": 11.7,
+          "sig": "sig_95"
+        },
+        "ztest_CpC_vs_E": {
+          "z": -1.816,
+          "p": 0.0693,
+          "diff_pp": -11.2,
+          "sig": "tendencia_90"
+        }
+      },
+      "Consideracion": {
+        "C+/C": {
+          "pct": 37.5,
+          "n": 104,
+          "x": 39,
+          "IC95": [
+            28.8,
+            47.1
+          ],
+          "flag": "OK"
+        },
+        "D": {
+          "pct": 30.7,
+          "n": 127,
+          "x": 39,
+          "IC95": [
+            23.4,
+            39.2
+          ],
+          "flag": "OK"
+        },
+        "E": {
+          "pct": 29.2,
+          "n": 171,
+          "x": 50,
+          "IC95": [
+            22.9,
+            36.5
+          ],
+          "flag": "OK"
+        },
+        "ztest_CpC_vs_D": {
+          "z": 1.086,
+          "p": 0.2775,
+          "diff_pp": 6.8,
+          "sig": "no_sig"
+        },
+        "ztest_D_vs_E": {
+          "z": 0.274,
+          "p": 0.7841,
+          "diff_pp": 1.5,
+          "sig": "no_sig"
+        },
+        "ztest_CpC_vs_E": {
+          "z": 1.42,
+          "p": 0.1557,
+          "diff_pp": 8.3,
+          "sig": "no_sig"
+        }
+      },
+      "Compra3m": {
+        "C+/C": {
+          "pct": 26.0,
+          "n": 104,
+          "x": 27,
+          "IC95": [
+            18.5,
+            35.1
+          ],
+          "flag": "OK"
+        },
+        "D": {
+          "pct": 15.7,
+          "n": 127,
+          "x": 20,
+          "IC95": [
+            10.4,
+            23.1
+          ],
+          "flag": "OK"
+        },
+        "E": {
+          "pct": 14.0,
+          "n": 171,
+          "x": 24,
+          "IC95": [
+            9.6,
+            20.0
+          ],
+          "flag": "OK"
+        },
+        "ztest_CpC_vs_D": {
+          "z": 1.918,
+          "p": 0.0551,
+          "diff_pp": 10.2,
+          "sig": "tendencia_90"
+        },
+        "ztest_D_vs_E": {
+          "z": 0.412,
+          "p": 0.6802,
+          "diff_pp": 1.7,
+          "sig": "no_sig"
+        },
+        "ztest_CpC_vs_E": {
+          "z": 2.468,
+          "p": 0.0136,
+          "diff_pp": 11.9,
+          "sig": "sig_95"
+        }
+      },
+      "Preferida": {
+        "C+/C": {
+          "pct": 13.5,
+          "n": 104,
+          "x": 14,
+          "IC95": [
+            8.2,
+            21.3
+          ],
+          "flag": "OK"
+        },
+        "D": {
+          "pct": 7.1,
+          "n": 127,
+          "x": 9,
+          "IC95": [
+            3.8,
+            12.9
+          ],
+          "flag": "OK"
+        },
+        "E": {
+          "pct": 5.3,
+          "n": 171,
+          "x": 9,
+          "IC95": [
+            2.8,
+            9.7
+          ],
+          "flag": "OK"
+        },
+        "ztest_CpC_vs_D": {
+          "z": 1.61,
+          "p": 0.1074,
+          "diff_pp": 6.4,
+          "sig": "no_sig"
+        },
+        "ztest_D_vs_E": {
+          "z": 0.653,
+          "p": 0.5135,
+          "diff_pp": 1.8,
+          "sig": "no_sig"
+        },
+        "ztest_CpC_vs_E": {
+          "z": 2.381,
+          "p": 0.0172,
+          "diff_pp": 8.2,
+          "sig": "sig_95"
+        }
+      }
+    },
+    "preferida_IC95_marcas": {
+      "Paramo": {
+        "pct": 21.1,
+        "n": 85,
+        "IC95": [
+          17.4,
+          25.4
+        ],
+        "flag": "OK"
+      },
+      "Central Madeirense": {
+        "pct": 11.2,
+        "n": 45,
+        "IC95": [
+          8.5,
+          14.7
+        ],
+        "flag": "OK"
+      },
+      "Forum": {
+        "pct": 10.9,
+        "n": 44,
+        "IC95": [
+          8.3,
+          14.4
+        ],
+        "flag": "OK"
+      },
+      "Rio": {
+        "pct": 10.2,
+        "n": 41,
+        "IC95": [
+          7.6,
+          13.5
+        ],
+        "flag": "OK"
+      },
+      "Gama (Excelsior)": {
+        "pct": 8.0,
+        "n": 32,
+        "IC95": [
+          5.7,
+          11.0
+        ],
+        "flag": "OK"
+      },
+      "Plan Suarez": {
+        "pct": 7.0,
+        "n": 28,
+        "IC95": [
+          4.9,
+          9.9
+        ],
+        "flag": "REFERENCIAL"
+      },
+      "Luz": {
+        "pct": 8.0,
+        "n": 32,
+        "IC95": [
+          5.7,
+          11.0
+        ],
+        "flag": "OK"
+      }
+    },
+    "chi2_nse_x_preferida": {
+      "tabla_shape": [
+        3,
+        5
+      ],
+      "test": {
+        "chi2": 13.95,
+        "p": 0.0831,
+        "dof": 8,
+        "cramers_v": 0.132,
+        "sig": "no_sig"
+      }
+    },
+    "chi2_genero_x_preferida": {
+      "tabla_shape": [
+        2,
+        5
+      ],
+      "test": {
+        "chi2": 1.487,
+        "p": 0.8289,
+        "dof": 4,
+        "cramers_v": 0.061,
+        "sig": "no_sig"
+      }
+    },
+    "tom_gama_IC95_por_segmento": {
+      "Total": {
+        "pct": 44.3,
+        "n": 402,
+        "IC95": [
+          39.5,
+          49.2
+        ],
+        "flag": "OK"
+      },
+      "C+/C": {
+        "pct": 60.6,
+        "n": 104,
+        "IC95": [
+          51.0,
+          69.4
+        ],
+        "flag": "OK"
+      },
+      "D": {
+        "pct": 32.3,
+        "n": 127,
+        "IC95": [
+          24.8,
+          40.8
+        ],
+        "flag": "OK"
+      },
+      "E": {
+        "pct": 43.3,
+        "n": 171,
+        "IC95": [
+          36.1,
+          50.8
+        ],
+        "flag": "OK"
+      },
+      "Pref-Gama": {
+        "pct": 93.8,
+        "n": 32,
+        "IC95": [
+          79.9,
+          98.3
+        ],
+        "flag": "OK"
+      },
+      "Pref-Plan Suarez": {
+        "pct": 46.4,
+        "n": 28,
+        "IC95": [
+          29.5,
+          64.2
+        ],
+        "flag": "REFERENCIAL"
+      },
+      "Pref-Paramo": {
+        "pct": 43.5,
+        "n": 85,
+        "IC95": [
+          33.5,
+          54.1
+        ],
+        "flag": "OK"
+      }
+    },
+    "tom_gama_por_municipio": {
+      "Baruta": {
+        "pct": 51.6,
+        "n": 122,
+        "IC95": [
+          42.9,
+          60.3
+        ],
+        "flag": "OK"
+      },
+      "Libertador": {
+        "pct": 30.0,
+        "n": 80,
+        "IC95": [
+          21.1,
+          40.8
+        ],
+        "flag": "OK"
+      },
+      "Sucre": {
+        "pct": 53.2,
+        "n": 79,
+        "IC95": [
+          42.3,
+          63.8
+        ],
+        "flag": "OK"
+      },
+      "Chacao": {
+        "pct": 54.3,
+        "n": 70,
+        "IC95": [
+          42.7,
+          65.4
+        ],
+        "flag": "OK"
+      },
+      "El Hatillo": {
+        "pct": 22.6,
+        "n": 31,
+        "IC95": [
+          11.4,
+          39.8
+        ],
+        "flag": "OK"
+      },
+      "Altos Mirandinos": {
+        "pct": 20.0,
+        "n": 20,
+        "IC95": [
+          8.1,
+          41.6
+        ],
+        "flag": "REFERENCIAL"
+      },
+      "ztest_Baruta_vs_Sucre": {
+        "z": -0.211,
+        "p": 0.8325,
+        "diff_pp": -1.5,
+        "sig": "no_sig"
+      }
+    },
+    "precio_p33_por_nse": {
+      "Total": {
+        "n": 402,
+        "flag": "OK",
+        "dist": {
+          "Muy bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Medios": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Altos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Muy altos": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        "neto_caro": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            0.9
+          ]
+        },
+        "neto_econo": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            0.9
+          ]
+        }
+      },
+      "C+/C": {
+        "n": 104,
+        "flag": "OK",
+        "dist": {
+          "Muy bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Medios": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Altos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Muy altos": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        "neto_caro": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            3.6
+          ]
+        },
+        "neto_econo": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            3.6
+          ]
+        }
+      },
+      "D": {
+        "n": 127,
+        "flag": "OK",
+        "dist": {
+          "Muy bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Medios": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Altos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Muy altos": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        "neto_caro": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            2.9
+          ]
+        },
+        "neto_econo": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            2.9
+          ]
+        }
+      },
+      "E": {
+        "n": 171,
+        "flag": "OK",
+        "dist": {
+          "Muy bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Bajos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Medios": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Altos": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "Muy altos": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        "neto_caro": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            2.2
+          ]
+        },
+        "neto_econo": {
+          "pct": 0.0,
+          "n": 0,
+          "IC95": [
+            0.0,
+            2.2
+          ]
+        }
+      },
+      "ztest_caro_CpC_vs_E": {
+        "z": NaN,
+        "p": NaN,
+        "diff_pp": 0.0,
+        "sig": "no_sig"
+      },
+      "ztest_caro_CpC_vs_D": {
+        "z": NaN,
+        "p": NaN,
+        "diff_pp": 0.0,
+        "sig": "no_sig"
+      }
+    }
+  },
+  "flags": [
+    {
+      "codigo": "FLAG-CU2-001",
+      "descripcion": "Pref-Gama n=32 — REFERENCIAL en todos los sub-analisis. IC95 ±17pp. No proyectable."
+    },
+    {
+      "codigo": "FLAG-CU2-002",
+      "descripcion": "z-tests de embudo asumen independencia entre marcas en multi-select. Aproximacion estandar en market research; p-values orientativos."
+    },
+    {
+      "codigo": "FLAG-CU2-003",
+      "descripcion": "Chi2 NSE x Preferida: celda 'Gama' tiene n=32 (REFERENCIAL). El test global es valido pero interpretaciones por celda son indicativas."
+    }
+  ]
+}

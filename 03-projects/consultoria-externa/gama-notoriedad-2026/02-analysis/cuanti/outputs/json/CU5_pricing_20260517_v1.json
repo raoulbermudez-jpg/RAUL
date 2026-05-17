@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "fecha_ejecucion": "2026-05-17T01:22:09.381180"
+  },
+  "parametros": {
+    "alpha": 0.05,
+    "base_baja": 30
+  },
+  "results": {
+    "p33_percepcion_precio_gama": {
+      "Total": {
+        "n": 402,
+        "flag": "OK",
+        "dist_n": {
+          "Muy bajos": 0,
+          "Bajos": 0,
+          "Medios": 0,
+          "Altos": 0,
+          "Muy altos": 0
+        },
+        "dist_pct": {
+          "Muy bajos": 0.0,
+          "Bajos": 0.0,
+          "Medios": 0.0,
+          "Altos": 0.0,
+          "Muy altos": 0.0
+        },
+        "neto_caro_pct": 0.0,
+        "neto_caro_IC95": [
+          0.0,
+          0.9
+        ],
+        "neto_econo_pct": 0.0,
+        "ns_nc_n": 402
+      },
+      "C+/C": {
+        "n": 104,
+        "flag": "OK",
+        "dist_n": {
+          "Muy bajos": 0,
+          "Bajos": 0,
+          "Medios": 0,
+          "Altos": 0,
+          "Muy altos": 0
+        },
+        "dist_pct": {
+          "Muy bajos": 0.0,
+          "Bajos": 0.0,
+          "Medios": 0.0,
+          "Altos": 0.0,
+          "Muy altos": 0.0
+        },
+        "neto_caro_pct": 0.0,
+        "neto_caro_IC95": [
+          0.0,
+          3.6
+        ],
+        "neto_econo_pct": 0.0,
+        "ns_nc_n": 104
+      },
+      "D": {
+        "n": 127,
+        "flag": "OK",
+        "dist_n": {
+          "Muy bajos": 0,
+          "Bajos": 0,
+          "Medios": 0,
+          "Altos": 0,
+          "Muy altos": 0
+        },
+        "dist_pct": {
+          "Muy bajos": 0.0,
+          "Bajos": 0.0,
+          "Medios": 0.0,
+          "Altos": 0.0,
+          "Muy altos": 0.0
+        },
+        "neto_caro_pct": 0.0,
+        "neto_caro_IC95": [
+          0.0,
+          2.9
+        ],
+        "neto_econo_pct": 0.0,
+        "ns_nc_n": 127
+      },
+      "E": {
+        "n": 171,
+        "flag": "OK",
+        "dist_n": {
+          "Muy bajos": 0,
+          "Bajos": 0,
+          "Medios": 0,
+          "Altos": 0,
+          "Muy altos": 0
+        },
+        "dist_pct": {
+          "Muy bajos": 0.0,
+          "Bajos": 0.0,
+          "Medios": 0.0,
+          "Altos": 0.0,
+          "Muy altos": 0.0
+        },
+        "neto_caro_pct": 0.0,
+        "neto_caro_IC95": [
+          0.0,
+          2.2
+        ],
+        "neto_econo_pct": 0.0,
+        "ns_nc_n": 171
+      },
+      "Pref-Gama": {
+        "n": 32,
+        "flag": "OK",
+        "dist_n": {
+          "Muy bajos": 0,
+          "Bajos": 0,
+          "Medios": 0,
+          "Altos": 0,
+          "Muy altos": 0
+        },
+        "dist_pct": {
+          "Muy bajos": 0.0,
+          "Bajos": 0.0,
+          "Medios": 0.0,
+          "Altos": 0.0,
+          "Muy altos": 0.0
+        },
+        "neto_caro_pct": 0.0,
+        "neto_caro_IC95": [
+          0.0,
+          10.7
+        ],
+        "neto_econo_pct": 0.0,
+        "ns_nc_n": 32
+      }
+    },
+    "p33_ztests": {
+      "caro_CpC_vs_E": {
+        "z": NaN,
+        "p": NaN,
+        "diff_pp": 0.0,
+        "sig": "no_sig"
+      },
+      "caro_CpC_vs_D": {
+        "z": NaN,
+        "p": NaN,
+        "diff_pp": 0.0,
+        "sig": "no_sig"
+      },
+      "caro_D_vs_E": {
+        "z": NaN,
+        "p": NaN,
+        "diff_pp": 0.0,
+        "sig": "no_sig"
+      }
+    },
+    "p34_evolucion_precio": {
+      "Total": {
+        "n": 402,
+        "flag": "OK",
+        "dist_n": {
+          "Mas bajos": 0,
+          "Iguales": 0,
+          "Un poco mas altos": 0,
+          "Mucho mas altos": 0
+        },
+        "dist_pct": {
+          "Mas bajos": 0.0,
+          "Iguales": 0.0,
+          "Un poco mas altos": 0.0,
+          "Mucho mas altos": 0.0
+        }
+      },
+      "C+/C": {
+        "n": 104,
+        "flag": "OK",
+        "dist_n": {
+          "Mas bajos": 0,
+          "Iguales": 0,
+          "Un poco mas altos": 0,
+          "Mucho mas altos": 0
+        },
+        "dist_pct": {
+          "Mas bajos": 0.0,
+          "Iguales": 0.0,
+          "Un poco mas altos": 0.0,
+          "Mucho mas altos": 0.0
+        }
+      },
+      "D": {
+        "n": 127,
+        "flag": "OK",
+        "dist_n": {
+          "Mas bajos": 0,
+          "Iguales": 0,
+          "Un poco mas altos": 0,
+          "Mucho mas altos": 0
+        },
+        "dist_pct": {
+          "Mas bajos": 0.0,
+          "Iguales": 0.0,
+          "Un poco mas altos": 0.0,
+          "Mucho mas altos": 0.0
+        }
+      },
+      "E": {
+        "n": 171,
+        "flag": "OK",
+        "dist_n": {
+          "Mas bajos": 0,
+          "Iguales": 0,
+          "Un poco mas altos": 0,
+          "Mucho mas altos": 0
+        },
+        "dist_pct": {
+          "Mas bajos": 0.0,
+          "Iguales": 0.0,
+          "Un poco mas altos": 0.0,
+          "Mucho mas altos": 0.0
+        }
+      }
+    },
+    "p31_ranking_precio": {
+      "Gama (Excelsior)": {
+        "mean": 5.768656716417911,
+        "median": 6.0,
+        "pct_top3": 21.890547263681594,
+        "n_ranked": 402
+      },
+      "Paramo": {
+        "mean": 4.241293532338308,
+        "median": 4.0,
+        "pct_top3": 47.76119402985074,
+        "n_ranked": 402
+      },
+      "Central Madeirense": {
+        "mean": 4.057213930348259,
+        "median": 4.0,
+        "pct_top3": 45.024875621890544,
+        "n_ranked": 402
+      },
+      "ranking_completo_v2_certificado": {
+        "Plazas": {
+          "mean": 4.898009950248756,
+          "pct_top3": 35.07462686567165
+        },
+        "Central Madeirense": {
+          "mean": 4.057213930348259,
+          "pct_top3": 45.024875621890544
+        },
+        "Forum": {
+          "mean": 4.534825870646766,
+          "pct_top3": 40.049751243781095
+        },
+        "Rio": {
+          "mean": 5.007462686567164,
+          "pct_top3": 32.58706467661692
+        },
+        "Gama (Excelsior)": {
+          "mean": 5.768656716417911,
+          "pct_top3": 21.890547263681594
+        },
+        "Plan Suarez": {
+          "mean": 5.248756218905473,
+          "pct_top3": 29.1044776119403
+        },
+        "Paramo": {
+          "mean": 4.241293532338308,
+          "pct_top3": 47.76119402985074
+        },
+        "Luz": {
+          "mean": 6.303482587064677,
+          "pct_top3": 21.144278606965177
+        },
+        "La Muralla": {
+          "mean": 8.485074626865671,
+          "pct_top3": 4.72636815920398
+        },
+        "Hiper Lider": {
+          "mean": 6.455223880597015,
+          "pct_top3": 22.63681592039801
+        }
+      },
+      "interpretacion_gama": "Gama tiene mean_rank=5.77 (escala 1=mas economico, 10=mas caro). Solo 21.9% la ubica en top-3 de precio bajo. Paramo lidera precio: mean_rank=4.24, top-3=47.8%. Gama esta posicionada como precio medio-alto por percepcion del shopper."
+    },
+    "van_westendorp": {
+      "estado": "NO_MEDIDO_EN_OLA_2026",
+      "explicacion": "P31-P34 miden percepcion declarativa de precio (sin ancla monetaria). Van Westendorp PSM requiere 4 preguntas con puntos de precio reales: (1) precio tan bajo que desconfias la calidad, (2) precio economico, (3) precio caro pero aceptable, (4) precio tan caro que no compras. De P33 y P31 NO se pueden derivar curvas PSM ni rango de precio aceptable.",
+      "maximos_extraibles_de_datos_actuales": [
+        "Percepcion ordinal de precio (bajo/medio/alto) — P33",
+        "Ranking relativo entre cadenas — P31",
+        "Tendencia percibida de precios — P34",
+        "Diferencias por NSE en percepcion precio — via z-tests P33 x NSE"
+      ],
+      "recomendacion_2027": "Van Westendorp en 3 categorias KVI: Lacteos/charcuteria, Carne/pollo, Granos. Esto permite calcular RPA por categoria y cruzar vs precios reales en anaquel para identificar donde Gama esta sobre o bajo el precio aceptable."
+    }
+  },
+  "flags": [
+    {
+      "codigo": "FLAG-CU5-001",
+      "descripcion": "P33 es escala nominal sin ancla de precio. Los % describen percepcion relativa, no elasticidad real."
+    },
+    {
+      "codigo": "FLAG-CU5-002",
+      "descripcion": "P31 ranking forzado (1-10, obligatorio asignar). No interpretar como '% espontaneo que asocia con precio bajo'."
+    },
+    {
+      "codigo": "FLAG-CU5-003",
+      "descripcion": "Pref-Gama n=32 en P33 es REFERENCIAL. Los % de precio percibido por sus preferentes tienen IC95 ±17pp."
+    }
+  ]
+}
