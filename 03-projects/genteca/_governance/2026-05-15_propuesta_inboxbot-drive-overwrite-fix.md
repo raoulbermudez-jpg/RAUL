@@ -1,10 +1,20 @@
 ---
-status: propuesta
+status: aprobada-para-implementar
 fecha: 2026-05-15
+fecha_decision: 2026-05-17
+decision: B+A hybrid
 autor: Raul-desktop
 para: Owner
 relacionado: 04-system/02-agents/conceptual/inboxbot.md v5.2, raul.md §6.0
 ---
+
+## DECISIÓN — 2026-05-17
+
+**Aprobada implementar B+A hybrid.** La opción D (cambio de Drive MCP) fue investigada y descartada: verificación Paxs 2026-05-17 confirmó vía 3 GitHub issues (#52586 open, #22726 closed "not planned", #53489) que Anthropic Cloud Routines NO aceptan custom HTTP MCP connectors con URL arbitraria. El routine de InboxBot está bound al catálogo pre-built de Anthropic, donde `claude.ai Google Drive` no expone update/delete por ID. Ver `reference_anthropic_routines_no_custom_mcp.md`.
+
+**Queue:** implementación B+A hybrid pendiente para próxima sesión Raul-desktop. Estimado 2-3h (edits SSOT v5.3 + AGENT.md + raul.md §6.0 + redeploy prompt routine).
+
+
 
 # Propuesta — fix estructural a la acumulación de duplicados de InboxBot en Drive
 
