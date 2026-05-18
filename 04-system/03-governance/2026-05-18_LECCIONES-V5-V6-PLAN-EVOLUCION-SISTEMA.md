@@ -276,6 +276,35 @@ Decisión pendiente: ¿desactivar o convertir a permanente? Si Cora va a seguir 
 |---|---|---|
 | **DesktopBridge** | OwnerBridge entrega .md de tarea preparada; un agent local en sesión Raul lo lee y completa el render desktop | MEDIA |
 | **ClientBridge genérico** | Reemplazo de CoraBridge ad-hoc — cualquier colaborador externo puede tener su propio bridge con expiry configurable | BAJA — solo si tenemos >2 colaboradores externos activos |
+| **GmailBridge** | Cloud Routine periódica que monitorea Gmail por respuestas relevantes (Cora, Liliam, Kike, abogados Antequera, etc.) y deja markers en cola Drive cuando detecta algo nuevo. Yo lo leo al inicio de cada sesión. | **ALTA** — caso de uso identificado 2026-05-18: durante PAUSAS esperando respuesta de Cora, hoy no tengo forma de detectar la respuesta sin que Owner me pida buscar. Esto crea fricción y demora ciclos. |
+
+### 7.5 GmailBridge — diseño tentativo (para próxima sesión)
+
+**Status:** propuesto el 2026-05-18 después de pregunta explícita del Owner sobre triggers automáticos para Gmail durante PAUSE V7. Hoy aplicamos polling manual (Owner avisa cuando Cora responde) — funciona pero crea fricción.
+
+**Arquitectura propuesta:**
+
+| Componente | Responsabilidad |
+|---|---|
+| Cloud Routine Anthropic | Cron cada 15-30 min ventana 7am-11pm Caracas |
+| Lógica capture | Buscar threads recientes de remitentes whitelisted (Cora, Liliam, Kike, Antequera, etc.) con filter `from:X newer_than:30m -is:read` |
+| Output | Por cada thread nuevo, escribir ticket markdown a `01-inbox/00-cola/CAPTURADO_YYYY-MM-DD-HHMM_<remitente>_<tema>.md` con metadata thread ID + snippet + remitente |
+| Convención naming | Misma que InboxBot v5 (`CAPTURADO_`, `DONE_BRIDGE_`, etc.) |
+| Whitelist remitentes | Configurable por dominio (ej. `gmail.com` solo Cora, Antequera por dominio `@antequera.legal`, etc.) |
+
+**Reusar de existente:**
+- InboxBot v5 capture-only pattern (memoria `feedback_inboxbot_no_processing_only_notify`)
+- Estructura de cola `01-inbox/00-cola/` ya validada
+- Patrón transición cola (memoria `feedback_inboxbot_queue_transition_pattern`)
+
+**Diferencia vs InboxBot:**
+- InboxBot monitorea Drive (archivos depositados)
+- GmailBridge monitorea Gmail (threads entrantes)
+- Misma lógica capture-only, mismo destino cola, misma convención de naming
+
+**Effort estimado:** 1-2 horas de diseño + implementación. Bucket 4 nuevo del plan ejecutable (§10).
+
+**Decisión Owner:** ya decidió 2026-05-18 — documentar para evolución, seguir con polling manual ahora. Implementar cuando próxima sesión tenga aire para infraestructura.
 
 ---
 
@@ -366,6 +395,7 @@ Lista de decisiones/cambios documentados en memoria que NO se han implementado:
 | # | Acción | Effort | Prioridad |
 |---|---|---|---|
 | 4.1 | Codificar workaround Vivienne en `vivienne/AGENT.md` (instrucción permanente para decks grandes) | 15 min | ALTA |
+| **4.1b** | **Implementar GmailBridge — Cloud Routine que monitorea Gmail por respuestas de Cora/Liliam/Kike/Antequera y deja markers en cola Drive (ver §7.5 para diseño)** | **1-2 hr** | **ALTA — caso confirmado 2026-05-18 (PAUSAS V7 esperando Cora sin trigger automático)** |
 | 4.2 | Probar Cuanti en Opus 4.7 con caso real (CU-9 si surge) — comparar calidad output vs costo | 1 sesión | MEDIA |
 | 4.3 | Probar Sira/Ivo en Haiku 4.5 — medir si la indexación rutinaria mantiene calidad | 1 sesión | BAJA |
 | 4.4 | Smoke test mensual de specialists Genteca subutilizados (atlas, vael, solenne, etc.) | 30 min/mes | BAJA |
