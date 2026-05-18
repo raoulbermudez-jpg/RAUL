@@ -1,0 +1,1780 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "output": "CU-8 Extension V2 — 5 Analisis Adicionales",
+    "fecha": "2026-05-18",
+    "extiende": "CU8_preguntas_faltantes_20260518_v1.json",
+    "n_total": 402,
+    "alpha": 0.05,
+    "base_baja_threshold": 30,
+    "metodo_ic": "Newcombe-Wilson",
+    "multiple_tests": "BH-FDR donde aplica"
+  },
+  "extension_v2": {
+    "NEW1_subset_economico": {
+      "descripcion": "Subset de respondentes que perciben Gama como Igual o Menos Caro en P33",
+      "n_total_valido_p33": 402,
+      "n_subset_economico": 185,
+      "pct_subset": 46.0,
+      "n_subset_caro": 217,
+      "pct_caro": 54.0,
+      "p33_distribucion_tabla": [
+        {
+          "categoria_p33": "Un POCO mas CAROS que en otros lugares",
+          "n_total": 152,
+          "pct_total": 37.8,
+          "n_subset": 0,
+          "pct_subset": 0.0,
+          "en_subset": false
+        },
+        {
+          "categoria_p33": "IGUAL que en otros lugares",
+          "n_total": 123,
+          "pct_total": 30.6,
+          "n_subset": 123,
+          "pct_subset": 66.5,
+          "en_subset": true
+        },
+        {
+          "categoria_p33": "MUCHO mas CAROS que en otros lugares",
+          "n_total": 65,
+          "pct_total": 16.2,
+          "n_subset": 0,
+          "pct_subset": 0.0,
+          "en_subset": false
+        },
+        {
+          "categoria_p33": "Un POCO mÃ¡s ECONÃ“MICOS que en otros lugares",
+          "n_total": 56,
+          "pct_total": 13.9,
+          "n_subset": 56,
+          "pct_subset": 30.3,
+          "en_subset": true
+        },
+        {
+          "categoria_p33": "MUCHO mÃ¡s ECONÃ“MICOS que en otros lugares",
+          "n_total": 6,
+          "pct_total": 1.5,
+          "n_subset": 6,
+          "pct_subset": 3.2,
+          "en_subset": true
+        }
+      ],
+      "a_mix_categorias_p30_subset_vs_total": {
+        "nota": "% de respondentes que compran habitualmente en Gama por categoria (P30). Subset vs Total.",
+        "tabla": [
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "gama_pct_total": 7.2,
+            "gama_n_total": 29,
+            "gama_pct_subset_economico": 11.9,
+            "gama_n_subset": 22,
+            "diferencia_pp": 4.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "gama_pct_total": 5.5,
+            "gama_n_total": 22,
+            "gama_pct_subset_economico": 8.6,
+            "gama_n_subset": 16,
+            "diferencia_pp": 3.1,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "gama_pct_total": 7.5,
+            "gama_n_total": 30,
+            "gama_pct_subset_economico": 10.3,
+            "gama_n_subset": 19,
+            "diferencia_pp": 2.8,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "gama_pct_total": 7.0,
+            "gama_n_total": 28,
+            "gama_pct_subset_economico": 9.7,
+            "gama_n_subset": 18,
+            "diferencia_pp": 2.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "gama_pct_total": 4.0,
+            "gama_n_total": 16,
+            "gama_pct_subset_economico": 6.5,
+            "gama_n_subset": 12,
+            "diferencia_pp": 2.5,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "gama_pct_total": 4.0,
+            "gama_n_total": 16,
+            "gama_pct_subset_economico": 5.9,
+            "gama_n_subset": 11,
+            "diferencia_pp": 1.9,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Carne de res",
+            "gama_pct_total": 3.7,
+            "gama_n_total": 15,
+            "gama_pct_subset_economico": 5.4,
+            "gama_n_subset": 10,
+            "diferencia_pp": 1.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "gama_pct_total": 3.2,
+            "gama_n_total": 13,
+            "gama_pct_subset_economico": 4.9,
+            "gama_n_subset": 9,
+            "diferencia_pp": 1.7,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Congelados",
+            "gama_pct_total": 8.0,
+            "gama_n_total": 32,
+            "gama_pct_subset_economico": 9.7,
+            "gama_n_subset": 18,
+            "diferencia_pp": 1.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "gama_pct_total": 5.0,
+            "gama_n_total": 20,
+            "gama_pct_subset_economico": 6.5,
+            "gama_n_subset": 12,
+            "diferencia_pp": 1.5,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pollo",
+            "gama_pct_total": 3.5,
+            "gama_n_total": 14,
+            "gama_pct_subset_economico": 4.9,
+            "gama_n_subset": 9,
+            "diferencia_pp": 1.4,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "gama_pct_total": 2.7,
+            "gama_n_total": 11,
+            "gama_pct_subset_economico": 3.8,
+            "gama_n_subset": 7,
+            "diferencia_pp": 1.1,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "gama_pct_total": 1.2,
+            "gama_n_total": 5,
+            "gama_pct_subset_economico": 2.2,
+            "gama_n_subset": 4,
+            "diferencia_pp": 1.0,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Licores",
+            "gama_pct_total": 3.7,
+            "gama_n_total": 15,
+            "gama_pct_subset_economico": 4.3,
+            "gama_n_subset": 8,
+            "diferencia_pp": 0.6,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Farmacia",
+            "gama_pct_total": 4.2,
+            "gama_n_total": 17,
+            "gama_pct_subset_economico": 4.3,
+            "gama_n_subset": 8,
+            "diferencia_pp": 0.1,
+            "flag": "EXCLUIR_INFERENCIA"
+          }
+        ]
+      },
+      "b_percepcion_precio_p32_subset_vs_total": {
+        "nota": "% que percibe a Gama como mejor precio en cada categoria (P32). Subset vs Total.",
+        "tabla": [
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "gama_precio_pct_total": 5.7,
+            "gama_precio_n_total": 23,
+            "gama_precio_pct_subset_economico": 9.7,
+            "gama_precio_n_subset": 18,
+            "diferencia_pp": 4.0,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "gama_precio_pct_total": 4.5,
+            "gama_precio_n_total": 18,
+            "gama_precio_pct_subset_economico": 8.6,
+            "gama_precio_n_subset": 16,
+            "diferencia_pp": 4.1,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "gama_precio_pct_total": 4.5,
+            "gama_precio_n_total": 18,
+            "gama_precio_pct_subset_economico": 8.1,
+            "gama_precio_n_subset": 15,
+            "diferencia_pp": 3.6,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Congelados",
+            "gama_precio_pct_total": 4.7,
+            "gama_precio_n_total": 19,
+            "gama_precio_pct_subset_economico": 7.6,
+            "gama_precio_n_subset": 14,
+            "diferencia_pp": 2.9,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "gama_precio_pct_total": 3.7,
+            "gama_precio_n_total": 15,
+            "gama_precio_pct_subset_economico": 7.0,
+            "gama_precio_n_subset": 13,
+            "diferencia_pp": 3.3,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "gama_precio_pct_total": 3.2,
+            "gama_precio_n_total": 13,
+            "gama_precio_pct_subset_economico": 5.4,
+            "gama_precio_n_subset": 10,
+            "diferencia_pp": 2.2,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "gama_precio_pct_total": 3.0,
+            "gama_precio_n_total": 12,
+            "gama_precio_pct_subset_economico": 5.4,
+            "gama_precio_n_subset": 10,
+            "diferencia_pp": 2.4,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Carne de res",
+            "gama_precio_pct_total": 3.0,
+            "gama_precio_n_total": 12,
+            "gama_precio_pct_subset_economico": 4.3,
+            "gama_precio_n_subset": 8,
+            "diferencia_pp": 1.3,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Pollo",
+            "gama_precio_pct_total": 2.5,
+            "gama_precio_n_total": 10,
+            "gama_precio_pct_subset_economico": 4.3,
+            "gama_precio_n_subset": 8,
+            "diferencia_pp": 1.8,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "gama_precio_pct_total": 2.2,
+            "gama_precio_n_total": 9,
+            "gama_precio_pct_subset_economico": 3.8,
+            "gama_precio_n_subset": 7,
+            "diferencia_pp": 1.6,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Farmacia",
+            "gama_precio_pct_total": 3.0,
+            "gama_precio_n_total": 12,
+            "gama_precio_pct_subset_economico": 3.2,
+            "gama_precio_n_subset": 6,
+            "diferencia_pp": 0.2,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "gama_precio_pct_total": 1.7,
+            "gama_precio_n_total": 7,
+            "gama_precio_pct_subset_economico": 2.7,
+            "gama_precio_n_subset": 5,
+            "diferencia_pp": 1.0,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Licores",
+            "gama_precio_pct_total": 3.5,
+            "gama_precio_n_total": 14,
+            "gama_precio_pct_subset_economico": 2.2,
+            "gama_precio_n_subset": 4,
+            "diferencia_pp": -1.3,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "gama_precio_pct_total": 1.0,
+            "gama_precio_n_total": 4,
+            "gama_precio_pct_subset_economico": 2.2,
+            "gama_precio_n_subset": 4,
+            "diferencia_pp": 1.2,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "gama_precio_pct_total": 1.2,
+            "gama_precio_n_total": 5,
+            "gama_precio_pct_subset_economico": 1.6,
+            "gama_precio_n_subset": 3,
+            "diferencia_pp": 0.4,
+            "flag": "EXCLUIR_INFERENCIA"
+          }
+        ]
+      },
+      "c_cruce_preferencia_p21": {
+        "pct_preferentes_gama_total": 8.0,
+        "n_preferentes_gama_total": 32,
+        "pct_preferentes_gama_en_subset": 11.4,
+        "n_preferentes_gama_en_subset": 21,
+        "diferencia_pp": 3.4,
+        "OR_preferencia_en_subset": {
+          "OR": 2.4,
+          "IC95_lo": 1.12,
+          "IC95_hi": 5.12,
+          "interpretacion": "OR>1 = mayor probabilidad de preferir Gama si percibe precio favorable"
+        },
+        "flag": "REFERENCIAL"
+      },
+      "d_cruce_misiones_p25": {
+        "nota": "Distribución de misiones de ultima compra (P25) en subset vs Total",
+        "tabla": [
+          {
+            "mision": "Abastecimiento general",
+            "pct_subset_economico": 29.2,
+            "n_subset": 54,
+            "pct_total": 23.4,
+            "n_total": 94,
+            "diferencia_pp": 5.8,
+            "flag": ""
+          },
+          {
+            "mision": "Reabastecimiento parcial",
+            "pct_subset_economico": 60.5,
+            "n_subset": 112,
+            "pct_total": 67.2,
+            "n_total": 270,
+            "diferencia_pp": -6.7,
+            "flag": ""
+          },
+          {
+            "mision": "Urgencia",
+            "pct_subset_economico": 8.6,
+            "n_subset": 16,
+            "pct_total": 7.7,
+            "n_total": 31,
+            "diferencia_pp": 0.9,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "mision": "Evento",
+            "pct_subset_economico": 1.6,
+            "n_subset": 3,
+            "pct_total": 1.5,
+            "n_total": 6,
+            "diferencia_pp": 0.1,
+            "flag": "EXCLUIR_INFERENCIA"
+          }
+        ]
+      },
+      "e_perfil_demografico": {
+        "nse": [
+          {
+            "nse": "C+/C",
+            "n_total": 104,
+            "pct_en_total": 25.9,
+            "n_en_subset": 41,
+            "pct_en_subset": 22.2,
+            "pct_nse_que_es_economico": 39.4,
+            "flag": ""
+          },
+          {
+            "nse": "D",
+            "n_total": 127,
+            "pct_en_total": 31.6,
+            "n_en_subset": 64,
+            "pct_en_subset": 34.6,
+            "pct_nse_que_es_economico": 50.4,
+            "flag": ""
+          },
+          {
+            "nse": "E",
+            "n_total": 171,
+            "pct_en_total": 42.5,
+            "n_en_subset": 80,
+            "pct_en_subset": 43.2,
+            "pct_nse_que_es_economico": 46.8,
+            "flag": ""
+          }
+        ],
+        "genero": [
+          {
+            "genero": "Femenino",
+            "pct_total": 52.5,
+            "n_total": 211,
+            "pct_subset": 53.5,
+            "n_subset": 99
+          },
+          {
+            "genero": "Masculino",
+            "pct_total": 47.5,
+            "n_total": 191,
+            "pct_subset": 46.5,
+            "n_subset": 86
+          }
+        ],
+        "edad": [
+          {
+            "rango": "18-24",
+            "n_total": 0,
+            "pct_total": 0.0,
+            "n_subset": 0,
+            "pct_subset": 0.0,
+            "pct_rango_que_es_economico": 0,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "rango": "25-34",
+            "n_total": 0,
+            "pct_total": 0.0,
+            "n_subset": 0,
+            "pct_subset": 0.0,
+            "pct_rango_que_es_economico": 0,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "rango": "35-44",
+            "n_total": 0,
+            "pct_total": 0.0,
+            "n_subset": 0,
+            "pct_subset": 0.0,
+            "pct_rango_que_es_economico": 0,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "rango": "45-54",
+            "n_total": 0,
+            "pct_total": 0.0,
+            "n_subset": 0,
+            "pct_subset": 0.0,
+            "pct_rango_que_es_economico": 0,
+            "flag": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "rango": "55+",
+            "n_total": 0,
+            "pct_total": 0.0,
+            "n_subset": 0,
+            "pct_subset": 0.0,
+            "pct_rango_que_es_economico": 0,
+            "flag": "EXCLUIR_INFERENCIA"
+          }
+        ]
+      }
+    },
+    "NEW2_p33_x_p21": {
+      "descripcion": "Tabla cruzada P33 (percepcion precio Gama) × P21 (preferencia Gama)",
+      "n_validos_cruce": 402,
+      "tabla_cruzada_p33_x_p21_gama": [
+        {
+          "categoria_p33": "Mucho mas caros",
+          "n_en_categoria": 65,
+          "n_prefiere_gama": 0,
+          "pct_prefiere_gama": 0.0,
+          "ic95_pref_gama": [
+            0.0,
+            5.6
+          ],
+          "n_no_prefiere_gama": 65,
+          "pct_no_prefiere_gama": 100.0,
+          "flag": ""
+        },
+        {
+          "categoria_p33": "Poco mas caros",
+          "n_en_categoria": 152,
+          "n_prefiere_gama": 11,
+          "pct_prefiere_gama": 7.2,
+          "ic95_pref_gama": [
+            4.1,
+            12.5
+          ],
+          "n_no_prefiere_gama": 141,
+          "pct_no_prefiere_gama": 92.8,
+          "flag": ""
+        },
+        {
+          "categoria_p33": "Igual precio",
+          "n_en_categoria": 123,
+          "n_prefiere_gama": 11,
+          "pct_prefiere_gama": 8.9,
+          "ic95_pref_gama": [
+            5.1,
+            15.3
+          ],
+          "n_no_prefiere_gama": 112,
+          "pct_no_prefiere_gama": 91.1,
+          "flag": ""
+        },
+        {
+          "categoria_p33": "Poco mas economico",
+          "n_en_categoria": 56,
+          "n_prefiere_gama": 7,
+          "pct_prefiere_gama": 12.5,
+          "ic95_pref_gama": [
+            6.2,
+            23.6
+          ],
+          "n_no_prefiere_gama": 49,
+          "pct_no_prefiere_gama": 87.5,
+          "flag": ""
+        },
+        {
+          "categoria_p33": "Mucho mas economico",
+          "n_en_categoria": 6,
+          "n_prefiere_gama": 3,
+          "pct_prefiere_gama": 50.0,
+          "ic95_pref_gama": [
+            null,
+            null
+          ],
+          "n_no_prefiere_gama": 3,
+          "pct_no_prefiere_gama": 50.0,
+          "flag": "EXCLUIR_INFERENCIA"
+        }
+      ],
+      "test_asociacion": {
+        "chi2": 21.941,
+        "p_value": 0.00021,
+        "dof": 4,
+        "cramers_v": 0.234,
+        "significativo": true,
+        "interpretacion_cramers": "V<0.1 trivial | 0.1-0.3 pequeno | 0.3-0.5 moderado | >0.5 fuerte"
+      },
+      "OR_percepcion_favorable_vs_desfavorable": {
+        "OR_atencion_CU5": 5.73,
+        "OR_precio_driver_CU5": "ver CU-5 (driver precio en P31 y P33)",
+        "OR_percepcion_favorable_P33": 2.4,
+        "OR_favorable_IC95": [
+          1.12,
+          5.12
+        ],
+        "OR_extremos_mucho_eco_vs_mucho_caro": null,
+        "OR_extremos_IC95": [
+          null,
+          null
+        ],
+        "nota": "OR_atencion y OR_precio de CU-5 son drivers de PREFERENCIA (P21). OR_percepcion_favorable es el efecto independiente de percibir precio favorable en P33 sobre preferir Gama."
+      },
+      "nota_metodologica": "Chi2 sobre tabla completa P33(5 cats) × P21(gama binario). OR calculado agrupando categorias favorables (Igual+Poco+Mucho eco) vs desfavorables (Poco+Mucho caro). Bases por categoria individual pueden ser referenciales (n<30)."
+    },
+    "NEW3_capitulo_lugar_precio": {
+      "descripcion": "Capítulo: Lugar de compra × Precio percibido × Preferencia × Misiones",
+      "n_categorias_analizadas": 15,
+      "congruencia_summary": {
+        "n_categorias_congruentes": 11,
+        "n_categorias_desconexion": 4,
+        "interpretacion": "En 11/15 categorias el lider de habito (P30) = lider de precio (P32). En 4 hay desconexion — otro atributo guia la eleccion."
+      },
+      "3a_matriz_p30_x_p32": {
+        "nota": "Por categoria: lider habitual (P30), lider precio (P32), posicion Gama en ambos, congruencia.",
+        "tabla": [
+          {
+            "categoria": "Congelados",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 11.4,
+            "gama_habito_pct": 8.0,
+            "gama_habito_n": 32,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 11.4,
+            "gama_precio_pct": 4.7,
+            "gama_precio_n": 19,
+            "pct_ninguno_precio": 42.3,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 6.7,
+            "gap_gama_habito_pp": 3.4,
+            "flag_gama_habito": "",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 20.4,
+            "gama_habito_pct": 7.5,
+            "gama_habito_n": 30,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 20.9,
+            "gama_precio_pct": 4.5,
+            "gama_precio_n": 18,
+            "pct_ninguno_precio": 17.2,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 16.4,
+            "gap_gama_habito_pp": 12.9,
+            "flag_gama_habito": "",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 10.7,
+            "gama_habito_pct": 7.2,
+            "gama_habito_n": 29,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 10.2,
+            "gama_precio_pct": 3.2,
+            "gama_precio_n": 13,
+            "pct_ninguno_precio": 43.5,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 7.0,
+            "gap_gama_habito_pp": 3.5,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "lider_habito_p30": "Central Madeirense",
+            "lider_habito_pct": 13.9,
+            "gama_habito_pct": 7.0,
+            "gama_habito_n": 28,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 11.4,
+            "gama_precio_pct": 5.7,
+            "gama_precio_n": 23,
+            "pct_ninguno_precio": 26.4,
+            "congruencia_lider": false,
+            "gap_gama_precio_pp": 5.7,
+            "gap_gama_habito_pp": 6.9,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 19.7,
+            "gama_habito_pct": 5.5,
+            "gama_habito_n": 22,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 18.4,
+            "gama_precio_pct": 4.5,
+            "gama_precio_n": 18,
+            "pct_ninguno_precio": 12.2,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 13.9,
+            "gap_gama_habito_pp": 14.2,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 11.2,
+            "gama_habito_pct": 5.0,
+            "gama_habito_n": 20,
+            "lider_precio_p32": "Forum",
+            "lider_precio_pct": 9.7,
+            "gama_precio_pct": 3.7,
+            "gama_precio_n": 15,
+            "pct_ninguno_precio": 42.0,
+            "congruencia_lider": false,
+            "gap_gama_precio_pp": 6.0,
+            "gap_gama_habito_pp": 6.2,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Farmacia",
+            "lider_habito_p30": "Gama",
+            "lider_habito_pct": 4.2,
+            "gama_habito_pct": 4.2,
+            "gama_habito_n": 17,
+            "lider_precio_p32": "Plan Suarez",
+            "lider_precio_pct": 3.7,
+            "gama_precio_pct": 3.0,
+            "gama_precio_n": 12,
+            "pct_ninguno_precio": 84.6,
+            "congruencia_lider": false,
+            "gap_gama_precio_pp": 0.7,
+            "gap_gama_habito_pp": 0.0,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "lider_habito_p30": "Central Madeirense",
+            "lider_habito_pct": 9.2,
+            "gama_habito_pct": 4.0,
+            "gama_habito_n": 16,
+            "lider_precio_p32": "Central Madeirense",
+            "lider_precio_pct": 13.2,
+            "gama_precio_pct": 2.2,
+            "gama_precio_n": 9,
+            "pct_ninguno_precio": 37.6,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 11.0,
+            "gap_gama_habito_pp": 5.2,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 10.0,
+            "gama_habito_pct": 4.0,
+            "gama_habito_n": 16,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 10.0,
+            "gama_precio_pct": 3.0,
+            "gama_precio_n": 12,
+            "pct_ninguno_precio": 51.5,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 7.0,
+            "gap_gama_habito_pp": 6.0,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Carne de res",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 34.1,
+            "gama_habito_pct": 3.7,
+            "gama_habito_n": 15,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 36.3,
+            "gama_precio_pct": 3.0,
+            "gama_precio_n": 12,
+            "pct_ninguno_precio": 16.9,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 33.3,
+            "gap_gama_habito_pp": 30.4,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Licores",
+            "lider_habito_p30": "Luz",
+            "lider_habito_pct": 4.2,
+            "gama_habito_pct": 3.7,
+            "gama_habito_n": 15,
+            "lider_precio_p32": "Forum",
+            "lider_precio_pct": 4.7,
+            "gama_precio_pct": 3.5,
+            "gama_precio_n": 14,
+            "pct_ninguno_precio": 66.4,
+            "congruencia_lider": false,
+            "gap_gama_precio_pp": 1.2,
+            "gap_gama_habito_pp": 0.5,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pollo",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 33.3,
+            "gama_habito_pct": 3.5,
+            "gama_habito_n": 14,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 35.3,
+            "gama_precio_pct": 2.5,
+            "gama_precio_n": 10,
+            "pct_ninguno_precio": 18.7,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 32.8,
+            "gap_gama_habito_pp": 29.8,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "REFERENCIAL"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 30.6,
+            "gama_habito_pct": 3.2,
+            "gama_habito_n": 13,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 34.8,
+            "gama_precio_pct": 1.7,
+            "gama_precio_n": 7,
+            "pct_ninguno_precio": 24.1,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 33.1,
+            "gap_gama_habito_pp": 27.4,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 6.7,
+            "gama_habito_pct": 2.7,
+            "gama_habito_n": 11,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 6.0,
+            "gama_precio_pct": 1.0,
+            "gama_precio_n": 4,
+            "pct_ninguno_precio": 68.7,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 5.0,
+            "gap_gama_habito_pp": 4.0,
+            "flag_gama_habito": "REFERENCIAL",
+            "flag_gama_precio": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 4.5,
+            "gama_habito_pct": 1.2,
+            "gama_habito_n": 5,
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 4.0,
+            "gama_precio_pct": 1.2,
+            "gama_precio_n": 5,
+            "pct_ninguno_precio": 77.4,
+            "congruencia_lider": true,
+            "gap_gama_precio_pp": 2.8,
+            "gap_gama_habito_pp": 3.3,
+            "flag_gama_habito": "EXCLUIR_INFERENCIA",
+            "flag_gama_precio": "EXCLUIR_INFERENCIA"
+          }
+        ]
+      },
+      "3b_desconexion_gama": {
+        "nota": "Categorias donde Gama tiene shoppers habituales (P30≥5) pero NO figura en top-3 de mejor precio (P32). El shopper elige Gama por conveniencia, servicio u otro atributo.",
+        "categorias": [
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "gama_habito_pct": 7.2,
+            "gama_habito_n": 29,
+            "gama_precio_pct": 3.2,
+            "gama_precio_n": 13,
+            "brecha_habito_vs_precio_pp": 4.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 10.2,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Congelados",
+            "gama_habito_pct": 8.0,
+            "gama_habito_n": 32,
+            "gama_precio_pct": 4.7,
+            "gama_precio_n": 19,
+            "brecha_habito_vs_precio_pp": 3.3,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 11.4,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": ""
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "gama_habito_pct": 7.5,
+            "gama_habito_n": 30,
+            "gama_precio_pct": 4.5,
+            "gama_precio_n": 18,
+            "brecha_habito_vs_precio_pp": 3.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 20.9,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": ""
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "gama_habito_pct": 4.0,
+            "gama_habito_n": 16,
+            "gama_precio_pct": 2.2,
+            "gama_precio_n": 9,
+            "brecha_habito_vs_precio_pp": 1.8,
+            "lider_precio": "Central Madeirense",
+            "lider_precio_pct": 13.2,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "gama_habito_pct": 2.7,
+            "gama_habito_n": 11,
+            "gama_precio_pct": 1.0,
+            "gama_precio_n": 4,
+            "brecha_habito_vs_precio_pp": 1.7,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 6.0,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "gama_habito_pct": 3.2,
+            "gama_habito_n": 13,
+            "gama_precio_pct": 1.7,
+            "gama_precio_n": 7,
+            "brecha_habito_vs_precio_pp": 1.5,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 34.8,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "gama_habito_pct": 7.0,
+            "gama_habito_n": 28,
+            "gama_precio_pct": 5.7,
+            "gama_precio_n": 23,
+            "brecha_habito_vs_precio_pp": 1.3,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 11.4,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "gama_habito_pct": 5.0,
+            "gama_habito_n": 20,
+            "gama_precio_pct": 3.7,
+            "gama_precio_n": 15,
+            "brecha_habito_vs_precio_pp": 1.3,
+            "lider_precio": "Forum",
+            "lider_precio_pct": 9.7,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pollo",
+            "gama_habito_pct": 3.5,
+            "gama_habito_n": 14,
+            "gama_precio_pct": 2.5,
+            "gama_precio_n": 10,
+            "brecha_habito_vs_precio_pp": 1.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 35.3,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "gama_habito_pct": 5.5,
+            "gama_habito_n": 22,
+            "gama_precio_pct": 4.5,
+            "gama_precio_n": 18,
+            "brecha_habito_vs_precio_pp": 1.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 18.4,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "gama_habito_pct": 4.0,
+            "gama_habito_n": 16,
+            "gama_precio_pct": 3.0,
+            "gama_precio_n": 12,
+            "brecha_habito_vs_precio_pp": 1.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 10.0,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Carne de res",
+            "gama_habito_pct": 3.7,
+            "gama_habito_n": 15,
+            "gama_precio_pct": 3.0,
+            "gama_precio_n": 12,
+            "brecha_habito_vs_precio_pp": 0.7,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 36.3,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Licores",
+            "gama_habito_pct": 3.7,
+            "gama_habito_n": 15,
+            "gama_precio_pct": 3.5,
+            "gama_precio_n": 14,
+            "brecha_habito_vs_precio_pp": 0.2,
+            "lider_precio": "Forum",
+            "lider_precio_pct": 4.7,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "gama_habito_pct": 1.2,
+            "gama_habito_n": 5,
+            "gama_precio_pct": 1.2,
+            "gama_precio_n": 5,
+            "brecha_habito_vs_precio_pp": 0.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 4.0,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "EXCLUIR_INFERENCIA"
+          }
+        ]
+      },
+      "3c_desconexion_x_preferencia_x_mision": {
+        "nota": "Para las categorias de desconexion: % de preferentes Gama que compran ahi y mision principal de quienes compran habitualmente en Gama en esa categoria.",
+        "tabla": [
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "gama_habito_pct": 7.2,
+            "gama_habito_n": 29,
+            "gama_precio_pct": 3.2,
+            "gama_precio_n": 13,
+            "brecha_habito_vs_precio_pp": 4.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 10.2,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL",
+            "pct_preferentes_gama_habituales_aca": 59.4,
+            "n_pref_gama_habituales": 19,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 82.8,
+            "flag_cruce": "REFERENCIAL"
+          },
+          {
+            "categoria": "Congelados",
+            "gama_habito_pct": 8.0,
+            "gama_habito_n": 32,
+            "gama_precio_pct": 4.7,
+            "gama_precio_n": 19,
+            "brecha_habito_vs_precio_pp": 3.3,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 11.4,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "",
+            "pct_preferentes_gama_habituales_aca": 37.5,
+            "n_pref_gama_habituales": 12,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 78.1,
+            "flag_cruce": "REFERENCIAL"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "gama_habito_pct": 7.5,
+            "gama_habito_n": 30,
+            "gama_precio_pct": 4.5,
+            "gama_precio_n": 18,
+            "brecha_habito_vs_precio_pp": 3.0,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 20.9,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "",
+            "pct_preferentes_gama_habituales_aca": 56.2,
+            "n_pref_gama_habituales": 18,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 73.3,
+            "flag_cruce": "REFERENCIAL"
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "gama_habito_pct": 4.0,
+            "gama_habito_n": 16,
+            "gama_precio_pct": 2.2,
+            "gama_precio_n": 9,
+            "brecha_habito_vs_precio_pp": 1.8,
+            "lider_precio": "Central Madeirense",
+            "lider_precio_pct": 13.2,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL",
+            "pct_preferentes_gama_habituales_aca": 34.4,
+            "n_pref_gama_habituales": 11,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 62.5,
+            "flag_cruce": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "gama_habito_pct": 2.7,
+            "gama_habito_n": 11,
+            "gama_precio_pct": 1.0,
+            "gama_precio_n": 4,
+            "brecha_habito_vs_precio_pp": 1.7,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 6.0,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL",
+            "pct_preferentes_gama_habituales_aca": 15.6,
+            "n_pref_gama_habituales": 5,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 45.5,
+            "flag_cruce": "EXCLUIR_INFERENCIA"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "gama_habito_pct": 3.2,
+            "gama_habito_n": 13,
+            "gama_precio_pct": 1.7,
+            "gama_precio_n": 7,
+            "brecha_habito_vs_precio_pp": 1.5,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 34.8,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Base baja, interpretacion indicativa",
+            "flag": "REFERENCIAL",
+            "pct_preferentes_gama_habituales_aca": 31.2,
+            "n_pref_gama_habituales": 10,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 84.6,
+            "flag_cruce": "REFERENCIAL"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "gama_habito_pct": 7.0,
+            "gama_habito_n": 28,
+            "gama_precio_pct": 5.7,
+            "gama_precio_n": 23,
+            "brecha_habito_vs_precio_pp": 1.3,
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 11.4,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL",
+            "pct_preferentes_gama_habituales_aca": 59.4,
+            "n_pref_gama_habituales": 19,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 75.0,
+            "flag_cruce": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "gama_habito_pct": 5.0,
+            "gama_habito_n": 20,
+            "gama_precio_pct": 3.7,
+            "gama_precio_n": 15,
+            "brecha_habito_vs_precio_pp": 1.3,
+            "lider_precio": "Forum",
+            "lider_precio_pct": 9.7,
+            "interpretacion": "Shopper usa Gama habitualmente en esta categoria AUNQUE otro supermercado tiene mejor precio percibido",
+            "driver_probable": "Conveniencia/cercania o servicio (Atencion/Limpieza/24h)",
+            "flag": "REFERENCIAL",
+            "pct_preferentes_gama_habituales_aca": 34.4,
+            "n_pref_gama_habituales": 11,
+            "mision_principal_entre_habituales_gama": "Reabastecimiento parcial",
+            "mision_principal_pct": 75.0,
+            "flag_cruce": "REFERENCIAL"
+          }
+        ]
+      },
+      "3d_hallazgos_condensados": {
+        "nota": "Ver hallazgos clave en §6 del reporte. Aqui summary cuantitativo.",
+        "categorias_donde_gama_condiciona_preferencia": [
+          "Gaseosas, jugos y aguas",
+          "Congelados",
+          "Salsas y Enlatados",
+          "Frutas, legumbres y verduras",
+          "Charcuteria (quesos, jamones)",
+          "Galletas, pasapalos y confiteria",
+          "Cuidado y limpieza del hogar"
+        ],
+        "categorias_donde_gama_condiciona_urgencia": []
+      }
+    },
+    "NEW4_balance_optimo": {
+      "descripcion": "Balance óptimo de categorias a igualar precio para maximizar share sin perder diferencial",
+      "grupo_1_criticas": {
+        "definicion": "Categorias donde Paramo lidera precio con gap >20pp sobre Gama. Alta presión para igualar — igualar precio en estas categorias tiene mayor impacto visible en el segmento precio.",
+        "n_categorias": 3,
+        "categorias": [
+          {
+            "categoria": "Carne de res",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 36.3,
+            "gama_precio_pct": 3.0,
+            "gap_gama_lider_pp": 33.3,
+            "gama_habito_pct": 3.7,
+            "pct_sin_percepcion_precio": 16.9,
+            "flag": "REFERENCIAL",
+            "recomendacion": "IGUALAR PRECIO — alta visibilidad, mayor impacto en share"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 34.8,
+            "gama_precio_pct": 1.7,
+            "gap_gama_lider_pp": 33.1,
+            "gama_habito_pct": 3.2,
+            "pct_sin_percepcion_precio": 24.1,
+            "flag": "EXCLUIR_INFERENCIA",
+            "recomendacion": "IGUALAR PRECIO — alta visibilidad, mayor impacto en share"
+          },
+          {
+            "categoria": "Pollo",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 35.3,
+            "gama_precio_pct": 2.5,
+            "gap_gama_lider_pp": 32.8,
+            "gama_habito_pct": 3.5,
+            "pct_sin_percepcion_precio": 18.7,
+            "flag": "REFERENCIAL",
+            "recomendacion": "IGUALAR PRECIO — alta visibilidad, mayor impacto en share"
+          }
+        ]
+      },
+      "grupo_2_easy_wins": {
+        "definicion": "Categorias donde Gama ya está cerca del lider (gap <5pp) y el mercado de percepcion es activo (Ninguno <50%). Ajuste marginal de precio puede convertirse en liderazgo percibido.",
+        "n_categorias": 0,
+        "categorias": []
+      },
+      "grupo_3_diferencial_experiencia": {
+        "definicion": "Categorias donde Gama tiene shoppers habituales (por conveniencia/servicio) aunque no sea percibida como la más económica. Estrategia: mantener precio o subir ligeramente + comunicar diferencial de experiencia.",
+        "n_categorias": 4,
+        "categorias": [
+          {
+            "categoria": "Congelados",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 11.4,
+            "gama_precio_pct": 4.7,
+            "gap_gama_lider_pp": 6.7,
+            "gama_habito_pct": 8.0,
+            "pct_sin_percepcion_precio": 42.3,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 20.9,
+            "gama_precio_pct": 4.5,
+            "gap_gama_lider_pp": 16.4,
+            "gama_habito_pct": 7.5,
+            "pct_sin_percepcion_precio": 17.2,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)"
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 10.2,
+            "gama_precio_pct": 3.2,
+            "gap_gama_lider_pp": 7.0,
+            "gama_habito_pct": 7.2,
+            "pct_sin_percepcion_precio": 43.5,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 11.4,
+            "gama_precio_pct": 5.7,
+            "gap_gama_lider_pp": 5.7,
+            "gama_habito_pct": 7.0,
+            "pct_sin_percepcion_precio": 26.4,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)"
+          }
+        ]
+      },
+      "grupo_4_monitorear": {
+        "n_categorias": 8,
+        "categorias": [
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "lider_precio": "Central Madeirense",
+            "lider_precio_pct": 13.2,
+            "gama_precio_pct": 2.2,
+            "gap_gama_lider_pp": 11.0,
+            "gama_habito_pct": 4.0,
+            "pct_sin_percepcion_precio": 37.6,
+            "flag": "EXCLUIR_INFERENCIA",
+            "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI"
+          },
+          {
+            "categoria": "Licores",
+            "lider_precio": "Forum",
+            "lider_precio_pct": 4.7,
+            "gama_precio_pct": 3.5,
+            "gap_gama_lider_pp": 1.2,
+            "gama_habito_pct": 3.7,
+            "pct_sin_percepcion_precio": 66.4,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MONITOREAR — base habitual baja, prioridad menor"
+          },
+          {
+            "categoria": "Farmacia",
+            "lider_precio": "Plan Suarez",
+            "lider_precio_pct": 3.7,
+            "gama_precio_pct": 3.0,
+            "gap_gama_lider_pp": 0.7,
+            "gama_habito_pct": 4.2,
+            "pct_sin_percepcion_precio": 84.6,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MONITOREAR — base habitual baja, prioridad menor"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 4.0,
+            "gama_precio_pct": 1.2,
+            "gap_gama_lider_pp": 2.8,
+            "gama_habito_pct": 1.2,
+            "pct_sin_percepcion_precio": 77.4,
+            "flag": "EXCLUIR_INFERENCIA",
+            "recomendacion": "MONITOREAR — base habitual baja, prioridad menor"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 6.0,
+            "gama_precio_pct": 1.0,
+            "gap_gama_lider_pp": 5.0,
+            "gama_habito_pct": 2.7,
+            "pct_sin_percepcion_precio": 68.7,
+            "flag": "EXCLUIR_INFERENCIA",
+            "recomendacion": "MONITOREAR — base habitual baja, prioridad menor"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 18.4,
+            "gama_precio_pct": 4.5,
+            "gap_gama_lider_pp": 13.9,
+            "gama_habito_pct": 5.5,
+            "pct_sin_percepcion_precio": 12.2,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "lider_precio": "Paramo",
+            "lider_precio_pct": 10.0,
+            "gama_precio_pct": 3.0,
+            "gap_gama_lider_pp": 7.0,
+            "gama_habito_pct": 4.0,
+            "pct_sin_percepcion_precio": 51.5,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "lider_precio": "Forum",
+            "lider_precio_pct": 9.7,
+            "gama_precio_pct": 3.7,
+            "gap_gama_lider_pp": 6.0,
+            "gama_habito_pct": 5.0,
+            "pct_sin_percepcion_precio": 42.0,
+            "flag": "REFERENCIAL",
+            "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI"
+          }
+        ]
+      },
+      "tabla_completa_3_grupos": [
+        {
+          "categoria": "Carne de res",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 36.3,
+          "gama_precio_pct": 3.0,
+          "gap_gama_lider_pp": 33.3,
+          "gama_habito_pct": 3.7,
+          "pct_sin_percepcion_precio": 16.9,
+          "flag": "REFERENCIAL",
+          "recomendacion": "IGUALAR PRECIO — alta visibilidad, mayor impacto en share",
+          "grupo": "CRITICO"
+        },
+        {
+          "categoria": "Charcuteria (quesos, jamones)",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 34.8,
+          "gama_precio_pct": 1.7,
+          "gap_gama_lider_pp": 33.1,
+          "gama_habito_pct": 3.2,
+          "pct_sin_percepcion_precio": 24.1,
+          "flag": "EXCLUIR_INFERENCIA",
+          "recomendacion": "IGUALAR PRECIO — alta visibilidad, mayor impacto en share",
+          "grupo": "CRITICO"
+        },
+        {
+          "categoria": "Pollo",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 35.3,
+          "gama_precio_pct": 2.5,
+          "gap_gama_lider_pp": 32.8,
+          "gama_habito_pct": 3.5,
+          "pct_sin_percepcion_precio": 18.7,
+          "flag": "REFERENCIAL",
+          "recomendacion": "IGUALAR PRECIO — alta visibilidad, mayor impacto en share",
+          "grupo": "CRITICO"
+        },
+        {
+          "categoria": "Congelados",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 11.4,
+          "gama_precio_pct": 4.7,
+          "gap_gama_lider_pp": 6.7,
+          "gama_habito_pct": 8.0,
+          "pct_sin_percepcion_precio": 42.3,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)",
+          "grupo": "DIFERENCIAL_EXPERIENCIA"
+        },
+        {
+          "categoria": "Salsas y Enlatados",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 20.9,
+          "gama_precio_pct": 4.5,
+          "gap_gama_lider_pp": 16.4,
+          "gama_habito_pct": 7.5,
+          "pct_sin_percepcion_precio": 17.2,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)",
+          "grupo": "DIFERENCIAL_EXPERIENCIA"
+        },
+        {
+          "categoria": "Gaseosas, jugos y aguas",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 10.2,
+          "gama_precio_pct": 3.2,
+          "gap_gama_lider_pp": 7.0,
+          "gama_habito_pct": 7.2,
+          "pct_sin_percepcion_precio": 43.5,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)",
+          "grupo": "DIFERENCIAL_EXPERIENCIA"
+        },
+        {
+          "categoria": "Galletas, pasapalos y confiteria",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 11.4,
+          "gama_precio_pct": 5.7,
+          "gap_gama_lider_pp": 5.7,
+          "gama_habito_pct": 7.0,
+          "pct_sin_percepcion_precio": 26.4,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MANTENER PRECIO + COMUNICAR DIFERENCIAL (atencion/limpieza/24h)",
+          "grupo": "DIFERENCIAL_EXPERIENCIA"
+        },
+        {
+          "categoria": "Frutas, legumbres y verduras",
+          "lider_precio": "Central Madeirense",
+          "lider_precio_pct": 13.2,
+          "gama_precio_pct": 2.2,
+          "gap_gama_lider_pp": 11.0,
+          "gama_habito_pct": 4.0,
+          "pct_sin_percepcion_precio": 37.6,
+          "flag": "EXCLUIR_INFERENCIA",
+          "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Licores",
+          "lider_precio": "Forum",
+          "lider_precio_pct": 4.7,
+          "gama_precio_pct": 3.5,
+          "gap_gama_lider_pp": 1.2,
+          "gama_habito_pct": 3.7,
+          "pct_sin_percepcion_precio": 66.4,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MONITOREAR — base habitual baja, prioridad menor",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Farmacia",
+          "lider_precio": "Plan Suarez",
+          "lider_precio_pct": 3.7,
+          "gama_precio_pct": 3.0,
+          "gap_gama_lider_pp": 0.7,
+          "gama_habito_pct": 4.2,
+          "pct_sin_percepcion_precio": 84.6,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MONITOREAR — base habitual baja, prioridad menor",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Alimento mascotas",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 4.0,
+          "gama_precio_pct": 1.2,
+          "gap_gama_lider_pp": 2.8,
+          "gama_habito_pct": 1.2,
+          "pct_sin_percepcion_precio": 77.4,
+          "flag": "EXCLUIR_INFERENCIA",
+          "recomendacion": "MONITOREAR — base habitual baja, prioridad menor",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Pescados y mariscos",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 6.0,
+          "gama_precio_pct": 1.0,
+          "gap_gama_lider_pp": 5.0,
+          "gama_habito_pct": 2.7,
+          "pct_sin_percepcion_precio": 68.7,
+          "flag": "EXCLUIR_INFERENCIA",
+          "recomendacion": "MONITOREAR — base habitual baja, prioridad menor",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Productos basicos (harinas, arroz, leches)",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 18.4,
+          "gama_precio_pct": 4.5,
+          "gap_gama_lider_pp": 13.9,
+          "gama_habito_pct": 5.5,
+          "pct_sin_percepcion_precio": 12.2,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Cuidado Personal",
+          "lider_precio": "Paramo",
+          "lider_precio_pct": 10.0,
+          "gama_precio_pct": 3.0,
+          "gap_gama_lider_pp": 7.0,
+          "gama_habito_pct": 4.0,
+          "pct_sin_percepcion_precio": 51.5,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI",
+          "grupo": "MONITOREAR"
+        },
+        {
+          "categoria": "Cuidado y limpieza del hogar",
+          "lider_precio": "Forum",
+          "lider_precio_pct": 9.7,
+          "gama_precio_pct": 3.7,
+          "gap_gama_lider_pp": 6.0,
+          "gama_habito_pct": 5.0,
+          "pct_sin_percepcion_precio": 42.0,
+          "flag": "REFERENCIAL",
+          "recomendacion": "MONITOREAR — evaluar si ajuste de precio tiene ROI",
+          "grupo": "MONITOREAR"
+        }
+      ],
+      "recomendacion_balance": {
+        "prioridad_1": "Igualar precio en proteinas (carne/pollo/charcuteria) — impacto directo en NSE C+/C y segmento precio-sensible. Riesgo: sacrificio de margen significativo.",
+        "prioridad_2": "Easy wins en Farmacia y Licores — pequeño ajuste de precio o comunicacion de precio activa percepcion sin sacrificio de margen relevante.",
+        "prioridad_3": "Mantener diferencial en categorias de habito sin liderazgo de precio (Congelados, Gaseosas, Enlatados) — comunicar atencion/limpieza/24h como razon de compra explicita.",
+        "advertencia": "Este análisis es perceptual — las cifras de P32 son REFERENCIALES (n<30 Gama en la mayoria de categorias). Las decisiones de precio deben validarse con datos reales de pricing interno antes de ejecutar."
+      }
+    },
+    "EXPRESS_hipotesis_formato": {
+      "descripcion": "Hipotesis Express: mision urgencia Gama × NSE × Geo",
+      "variable_formato_en_bbdd": {
+        "disponible": true,
+        "columnas_encontradas": [
+          " {P45} [V1899] Ahora piense en su dinámica de hacer mercado e imagínese que GAMA abre una sucursal en la zona. ¿Que tan dispuesto estaría UD a realizar sus compras regularmente en GAMA?"
+        ],
+        "decision": "VARIABLE NO DISPONIBLE. La hipotesis 'formato Express explica urgencia' no puede probarse directamente con BBDD 2026. Se presentan evidencias compatibles con la hipotesis."
+      },
+      "p26_urgencia_ranking_general": {
+        "n_base": 402,
+        "gama_n": 49,
+        "gama_pct": 12.2,
+        "ranking_top8": [
+          {
+            "cadena": "Gama",
+            "n": 49,
+            "pct": 12.2
+          },
+          {
+            "cadena": "Paramo",
+            "n": 38,
+            "pct": 9.5
+          },
+          {
+            "cadena": "Central Madeirense",
+            "n": 35,
+            "pct": 8.7
+          },
+          {
+            "cadena": "Rio",
+            "n": 33,
+            "pct": 8.2
+          },
+          {
+            "cadena": "Plazas",
+            "n": 33,
+            "pct": 8.2
+          },
+          {
+            "cadena": "Luz",
+            "n": 31,
+            "pct": 7.7
+          },
+          {
+            "cadena": "Forum",
+            "n": 30,
+            "pct": 7.5
+          },
+          {
+            "cadena": "Plan Suarez",
+            "n": 30,
+            "pct": 7.5
+          }
+        ],
+        "nota": "Gama ya confirmado como lider urgencia en CU-8 v1 — este análisis extiende el cruce por NSE y geo"
+      },
+      "cruce_urgencia_x_nse": [
+        {
+          "nse": "C+/C",
+          "n_nse": 104,
+          "n_base_p26_urgencia": 104,
+          "n_gama_urgencia": 17,
+          "pct_gama_urgencia": 16.3,
+          "lider_urgencia_en_nse": "Gama",
+          "lider_pct": 16.3,
+          "gama_es_lider": true,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "nse": "D",
+          "n_nse": 127,
+          "n_base_p26_urgencia": 127,
+          "n_gama_urgencia": 19,
+          "pct_gama_urgencia": 15.0,
+          "lider_urgencia_en_nse": "Gama",
+          "lider_pct": 15.0,
+          "gama_es_lider": true,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "nse": "E",
+          "n_nse": 171,
+          "n_base_p26_urgencia": 171,
+          "n_gama_urgencia": 13,
+          "pct_gama_urgencia": 7.6,
+          "lider_urgencia_en_nse": "Paramo",
+          "lider_pct": 13.5,
+          "gama_es_lider": false,
+          "flag": "REFERENCIAL"
+        }
+      ],
+      "cruce_urgencia_x_municipio": [
+        {
+          "municipio": "Chacao",
+          "n_municipio": 70,
+          "n_base_p26_urgencia": 70,
+          "n_gama_urgencia": 12,
+          "pct_gama_urgencia": 17.1,
+          "lider_urgencia": "Luz",
+          "lider_pct": 28.6,
+          "gama_es_lider": false,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "municipio": "Libertador",
+          "n_municipio": 80,
+          "n_base_p26_urgencia": 80,
+          "n_gama_urgencia": 12,
+          "pct_gama_urgencia": 15.0,
+          "lider_urgencia": "Gama",
+          "lider_pct": 15.0,
+          "gama_es_lider": true,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "municipio": "Baruta",
+          "n_municipio": 122,
+          "n_base_p26_urgencia": 122,
+          "n_gama_urgencia": 14,
+          "pct_gama_urgencia": 11.5,
+          "lider_urgencia": "Plazas",
+          "lider_pct": 15.6,
+          "gama_es_lider": false,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "municipio": "El Hatillo",
+          "n_municipio": 31,
+          "n_base_p26_urgencia": 31,
+          "n_gama_urgencia": 3,
+          "pct_gama_urgencia": 9.7,
+          "lider_urgencia": "Central Madeirense",
+          "lider_pct": 16.1,
+          "gama_es_lider": false,
+          "flag": "EXCLUIR_INFERENCIA"
+        },
+        {
+          "municipio": "Sucre",
+          "n_municipio": 79,
+          "n_base_p26_urgencia": 79,
+          "n_gama_urgencia": 7,
+          "pct_gama_urgencia": 8.9,
+          "lider_urgencia": "Rio",
+          "lider_pct": 12.7,
+          "gama_es_lider": false,
+          "flag": "EXCLUIR_INFERENCIA"
+        },
+        {
+          "municipio": "FORANEOS",
+          "n_municipio": 20,
+          "n_base_p26_urgencia": 20,
+          "n_gama_urgencia": 1,
+          "pct_gama_urgencia": 5.0,
+          "lider_urgencia": "Plazas",
+          "lider_pct": 20.0,
+          "gama_es_lider": false,
+          "flag": "EXCLUIR_INFERENCIA"
+        }
+      ],
+      "cruce_mision_p25_x_gama_p24": {
+        "base_gama_p24": 30,
+        "distribucion_mision": [
+          {
+            "mision": "Reabastecimiento",
+            "n": 23,
+            "pct": 76.7
+          },
+          {
+            "mision": "Urgencia",
+            "n": 6,
+            "pct": 20.0
+          },
+          {
+            "mision": "Abastecimiento general",
+            "n": 1,
+            "pct": 3.3
+          }
+        ],
+        "nota": "Distribucion de misiones entre quienes hicieron su ultima compra en Gama (P24=Gama)"
+      },
+      "interpretacion_hipotesis": "Gama lidera urgencia en P26 general (12.2%). Patron NSE heterogeneo — Gama no lidera urgencia en todos los NSE. A nivel geografico, Gama es lider de urgencia en 17% de los municipios analizados. VARIABLE FORMATO NO DISPONIBLE EN BBDD 2026 — la hipotesis Express no puede probarse directamente. Los datos son COMPATIBLES con la hipotesis (patron transversal de urgencia) pero NO la comprueban. Para validar formalmente se requeriria cruzar con datos de formato operacional de Gama (Express vs convencional).",
+      "compatibilidad_con_hipotesis_express": {
+        "evidencia_a_favor": [
+          "Gama lidera urgencia a nivel total (12.2%)",
+          "Si el patron es transversal a NSE/geo donde Gama opera, es consistente con formato de conveniencia/proximidad",
+          "Mision urgencia + farmacia (habito) es un patron coherente de tienda de proximity"
+        ],
+        "evidencia_pendiente_para_confirmar": [
+          "Variable formato operacional (Express vs convencional) NO en BBDD 2026",
+          "Datos de radio de cobertura de cada sucursal Gama no disponibles en encuesta",
+          "Para validar formalmente: cruzar P26 urgencia con base de datos de sucursales Gama por tamano/formato"
+        ]
+      }
+    }
+  }
+}

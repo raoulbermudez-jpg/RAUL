@@ -1,0 +1,4686 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "output": "CU-8 Preguntas Faltantes",
+    "fecha": "2026-05-18",
+    "n_total": 402,
+    "n_cols": 298,
+    "alpha": 0.05,
+    "base_baja_threshold": 30,
+    "metodo_ic": "Newcombe-Wilson",
+    "multiple_tests": "BH-FDR aplicado en cruces",
+    "nse_distribucion": {
+      "E": 171,
+      "D": 127,
+      "C+/C": 104
+    }
+  },
+  "preguntas": {
+    "PF8": {
+      "pregunta": "PF8",
+      "enunciado": "Frases describe mejor relacion con zona",
+      "base": 402,
+      "distribucion": {
+        "label": "PF8 Relacion zona",
+        "n_base": 402,
+        "n_validos": 402,
+        "rows": [
+          {
+            "categoria": "Vivo en la zona",
+            "n": 251,
+            "pct": 62.4,
+            "ic95_lo": 57.6,
+            "ic95_hi": 67.0,
+            "flag": ""
+          },
+          {
+            "categoria": "Trabajo en la zona",
+            "n": 104,
+            "pct": 25.9,
+            "ic95_lo": 21.8,
+            "ic95_hi": 30.4,
+            "flag": ""
+          },
+          {
+            "categoria": "No vivo ni trabajo en la zona, pero la visito con frecuencia",
+            "n": 39,
+            "pct": 9.7,
+            "ic95_lo": 7.2,
+            "ic95_hi": 13.0,
+            "flag": ""
+          },
+          {
+            "categoria": "Pasaba por aqui por casualidad",
+            "n": 8,
+            "pct": 2.0,
+            "ic95_lo": 1.0,
+            "ic95_hi": 3.9,
+            "flag": "REFERENCIAL"
+          }
+        ]
+      }
+    },
+    "PF9": {
+      "pregunta": "PF9",
+      "enunciado": "Rol en toma de decisiones compras mercado en hogar",
+      "base": 402,
+      "distribucion": {
+        "label": "PF9 Rol decision",
+        "n_base": 402,
+        "n_validos": 402,
+        "rows": [
+          {
+            "categoria": "Yo soy responsable del 50% o mÃ¡s de las decisiones",
+            "n": 251,
+            "pct": 62.4,
+            "ic95_lo": 57.6,
+            "ic95_hi": 67.0,
+            "flag": ""
+          },
+          {
+            "categoria": "Yo soy la Ãºnica persona que toma las decisiones",
+            "n": 151,
+            "pct": 37.6,
+            "ic95_lo": 33.0,
+            "ic95_hi": 42.4,
+            "flag": ""
+          }
+        ]
+      }
+    },
+    "PF8_x_PF9": {
+      "crosstab": {
+        "Yo soy la Ãºnica persona que toma las decisiones": {
+          "No vivo ni trabajo en la zona, pero la visito con frecuencia": 16,
+          "Pasaba por aqui por casualidad": 1,
+          "Trabajo en la zona": 38,
+          "Vivo en la zona": 96
+        },
+        "Yo soy responsable del 50% o mÃ¡s de las decisiones": {
+          "No vivo ni trabajo en la zona, pero la visito con frecuencia": 23,
+          "Pasaba por aqui por casualidad": 7,
+          "Trabajo en la zona": 66,
+          "Vivo en la zona": 155
+        }
+      },
+      "chi2": 2.439,
+      "p_value": 0.4865,
+      "dof": 3,
+      "significativo": false
+    },
+    "PF10": {
+      "pregunta": "PF10",
+      "enunciado": "Donde suele hacer sus compras de mercado",
+      "base_total": 402,
+      "tipos_establecimiento": {
+        "Supermercados de cadena": {
+          "n": 367,
+          "pct": 91.3
+        },
+        "Supermercados independientes grandes (mas de 2 cajas)": {
+          "n": 93,
+          "pct": 23.1
+        },
+        "Supermercados independientes pequenos (2 cajas o menos)": {
+          "n": 20,
+          "pct": 5.0
+        },
+        "Mercados populares": {
+          "n": 64,
+          "pct": 15.9
+        },
+        "Abastos / Bodegas": {
+          "n": 82,
+          "pct": 20.4
+        },
+        "Tiendas independientes / chinos": {
+          "n": 76,
+          "pct": 18.9
+        },
+        "Tiendas especializadas, tipo carniceria, fruteria, etc": {
+          "n": 46,
+          "pct": 11.4
+        },
+        "Mercados callejeros / Gochos": {
+          "n": 54,
+          "pct": 13.4
+        },
+        "Delivery / Aplicaciones": {
+          "n": 2,
+          "pct": 0.5
+        }
+      },
+      "cadenas_especificadas": {
+        "base": 367,
+        "nota": "Mencionadas entre quienes van a supermercados de cadena. Multi-mention posible.",
+        "ranking": [
+          {
+            "cadena": "Paramo",
+            "menciones": 119
+          },
+          {
+            "cadena": "Fórum",
+            "menciones": 87
+          },
+          {
+            "cadena": "Rio",
+            "menciones": 75
+          },
+          {
+            "cadena": "Central Madeirense",
+            "menciones": 71
+          },
+          {
+            "cadena": "Plaza",
+            "menciones": 59
+          },
+          {
+            "cadena": "Luz",
+            "menciones": 52
+          },
+          {
+            "cadena": "Gama",
+            "menciones": 50
+          },
+          {
+            "cadena": "Los chinos",
+            "menciones": 41
+          },
+          {
+            "cadena": "Plan  Suarez",
+            "menciones": 35
+          },
+          {
+            "cadena": "Hummy",
+            "menciones": 18
+          },
+          {
+            "cadena": "La granja",
+            "menciones": 17
+          },
+          {
+            "cadena": "Unicasa",
+            "menciones": 15
+          },
+          {
+            "cadena": "Híper Líder",
+            "menciones": 14
+          },
+          {
+            "cadena": "Bull King",
+            "menciones": 7
+          },
+          {
+            "cadena": "San jose",
+            "menciones": 6
+          },
+          {
+            "cadena": "Makro",
+            "menciones": 6
+          },
+          {
+            "cadena": "Ser",
+            "menciones": 4
+          },
+          {
+            "cadena": "Tapia",
+            "menciones": 4
+          },
+          {
+            "cadena": "Kalea",
+            "menciones": 4
+          },
+          {
+            "cadena": "Baratico",
+            "menciones": 4
+          },
+          {
+            "cadena": "Fresco Market",
+            "menciones": 4
+          },
+          {
+            "cadena": "Hippo",
+            "menciones": 3
+          },
+          {
+            "cadena": "Aliados 2",
+            "menciones": 3
+          },
+          {
+            "cadena": "Luvebras",
+            "menciones": 3
+          },
+          {
+            "cadena": "market",
+            "menciones": 3
+          },
+          {
+            "cadena": "Emporium",
+            "menciones": 2
+          },
+          {
+            "cadena": "Automercado Avila",
+            "menciones": 2
+          },
+          {
+            "cadena": "La muralla",
+            "menciones": 2
+          },
+          {
+            "cadena": "Rio vida",
+            "menciones": 2
+          },
+          {
+            "cadena": "Mas X MENOS",
+            "menciones": 2
+          },
+          {
+            "cadena": "Vale",
+            "menciones": 2
+          },
+          {
+            "cadena": "Vivas",
+            "menciones": 2
+          },
+          {
+            "cadena": "El gran albastro",
+            "menciones": 1
+          },
+          {
+            "cadena": "Maraplus",
+            "menciones": 1
+          },
+          {
+            "cadena": "Rezz",
+            "menciones": 1
+          },
+          {
+            "cadena": "224",
+            "menciones": 1
+          },
+          {
+            "cadena": "Licache",
+            "menciones": 1
+          },
+          {
+            "cadena": "Visa feliz",
+            "menciones": 1
+          },
+          {
+            "cadena": "Mi casa",
+            "menciones": 1
+          },
+          {
+            "cadena": "Cerca del ortopédico",
+            "menciones": 1
+          },
+          {
+            "cadena": "Cerkel",
+            "menciones": 1
+          },
+          {
+            "cadena": "Las minas",
+            "menciones": 1
+          },
+          {
+            "cadena": "Santa Elena",
+            "menciones": 1
+          },
+          {
+            "cadena": "Campos",
+            "menciones": 1
+          },
+          {
+            "cadena": "Comercio 77",
+            "menciones": 1
+          },
+          {
+            "cadena": "Centro comercial Maracaibo",
+            "menciones": 1
+          },
+          {
+            "cadena": "Donchacho",
+            "menciones": 1
+          },
+          {
+            "cadena": "Catia la silsa",
+            "menciones": 1
+          },
+          {
+            "cadena": "El panda",
+            "menciones": 1
+          },
+          {
+            "cadena": "Euros",
+            "menciones": 1
+          },
+          {
+            "cadena": "El diamante",
+            "menciones": 1
+          },
+          {
+            "cadena": "Yormano",
+            "menciones": 1
+          },
+          {
+            "cadena": "Punto al Mayor",
+            "menciones": 1
+          },
+          {
+            "cadena": "Punto mayor",
+            "menciones": 1
+          }
+        ]
+      }
+    },
+    "P25": {
+      "pregunta": "P25",
+      "enunciado": "Razon de la ultima compra en ese supermercado (P24)",
+      "base": 402,
+      "n_validos": 402,
+      "nota": "P25 se aplica a TODOS los respondentes como mision ultima compra",
+      "distribucion": [
+        {
+          "categoria": "Reabastecimiento parcial",
+          "n": 270,
+          "pct": 67.2,
+          "ic95": [
+            62.4,
+            71.6
+          ]
+        },
+        {
+          "categoria": "Abastecimiento general",
+          "n": 94,
+          "pct": 23.4,
+          "ic95": [
+            19.5,
+            27.8
+          ]
+        },
+        {
+          "categoria": "Urgencia / pocos productos",
+          "n": 31,
+          "pct": 7.7,
+          "ic95": [
+            5.5,
+            10.7
+          ]
+        },
+        {
+          "categoria": "Necesitaba comprar vÃ­veres para un evento, una fiesta, una ",
+          "n": 6,
+          "pct": 1.5,
+          "ic95": [
+            0.7,
+            3.2
+          ]
+        },
+        {
+          "categoria": "Necesitaba comprar electrodomÃ©sticos, ropa, muebles, ferret",
+          "n": 1,
+          "pct": 0.2,
+          "ic95": [
+            0.0,
+            1.4
+          ]
+        }
+      ]
+    },
+    "P26": {
+      "pregunta": "P26",
+      "enunciado": "Mejor supermercado por tipo de mision de compra",
+      "nota_metodologica": "P26 en BBDD son 5 MISIONES (abastecimiento general, reabastecimiento parcial, no alimentos, evento, urgencia). Cada col indica que cadena el respondente elige como MEJOR LUGAR para esa mision. Base es n de respondentes que respondieron cada mision (puede ser menor a 402 si hay NaN).",
+      "por_mision": {
+        "Abastecimiento general completo": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 87,
+              "pct": 21.6
+            },
+            {
+              "cadena": "Forum",
+              "n": 58,
+              "pct": 14.4
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 50,
+              "pct": 12.4
+            },
+            {
+              "cadena": "Rio",
+              "n": 48,
+              "pct": 11.9
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 32,
+              "pct": 8.0
+            },
+            {
+              "cadena": "Plazas",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Gama",
+              "n": 29,
+              "pct": 7.2
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 25,
+              "pct": 6.2
+            }
+          ],
+          "gama_pct": 7.2,
+          "lider": "Paramo",
+          "lider_pct": 21.6,
+          "gap_gama_lider_pp": 14.4
+        },
+        "Reabastecimiento parcial": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 66,
+              "pct": 16.4
+            },
+            {
+              "cadena": "Forum",
+              "n": 53,
+              "pct": 13.2
+            },
+            {
+              "cadena": "Rio",
+              "n": 45,
+              "pct": 11.2
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 43,
+              "pct": 10.7
+            },
+            {
+              "cadena": "Plazas",
+              "n": 42,
+              "pct": 10.4
+            },
+            {
+              "cadena": "Gama",
+              "n": 35,
+              "pct": 8.7
+            },
+            {
+              "cadena": "Luz",
+              "n": 33,
+              "pct": 8.2
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 25,
+              "pct": 6.2
+            }
+          ],
+          "gama_pct": 8.7,
+          "lider": "Paramo",
+          "lider_pct": 16.4,
+          "gap_gama_lider_pp": 7.7
+        },
+        "No alimentos (electrodomesticos, ropa, etc)": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Hiper Lider",
+              "n": 24,
+              "pct": 6.0
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 22,
+              "pct": 5.5
+            },
+            {
+              "cadena": "Forum",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Rio",
+              "n": 7,
+              "pct": 1.7
+            },
+            {
+              "cadena": "Paramo",
+              "n": 6,
+              "pct": 1.5
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 6,
+              "pct": 1.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 3,
+              "pct": 0.7
+            },
+            {
+              "cadena": "Gama",
+              "n": 2,
+              "pct": 0.5
+            }
+          ],
+          "gama_pct": 0.5,
+          "lider": "Hiper Lider",
+          "lider_pct": 6.0,
+          "gap_gama_lider_pp": 5.5
+        },
+        "Evento / celebracion": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 55,
+              "pct": 13.7
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 40,
+              "pct": 10.0
+            },
+            {
+              "cadena": "Plazas",
+              "n": 39,
+              "pct": 9.7
+            },
+            {
+              "cadena": "Gama",
+              "n": 37,
+              "pct": 9.2
+            },
+            {
+              "cadena": "Rio",
+              "n": 35,
+              "pct": 8.7
+            },
+            {
+              "cadena": "Forum",
+              "n": 35,
+              "pct": 8.7
+            },
+            {
+              "cadena": "Luz",
+              "n": 30,
+              "pct": 7.5
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 19,
+              "pct": 4.7
+            }
+          ],
+          "gama_pct": 9.2,
+          "lider": "Paramo",
+          "lider_pct": 13.7,
+          "gap_gama_lider_pp": 4.5
+        },
+        "Urgencia (pocos productos)": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Gama",
+              "n": 49,
+              "pct": 12.2
+            },
+            {
+              "cadena": "Paramo",
+              "n": 38,
+              "pct": 9.5
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 35,
+              "pct": 8.7
+            },
+            {
+              "cadena": "Rio",
+              "n": 33,
+              "pct": 8.2
+            },
+            {
+              "cadena": "Plazas",
+              "n": 33,
+              "pct": 8.2
+            },
+            {
+              "cadena": "Luz",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Forum",
+              "n": 30,
+              "pct": 7.5
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 30,
+              "pct": 7.5
+            }
+          ],
+          "gama_pct": 12.2,
+          "lider": "Gama",
+          "lider_pct": 12.2,
+          "gap_gama_lider_pp": 0.0
+        }
+      },
+      "gama_por_mision": [
+        {
+          "mision": "Abastecimiento general completo",
+          "gama_pct": 7.2,
+          "lider": "Paramo",
+          "lider_pct": 21.6
+        },
+        {
+          "mision": "Reabastecimiento parcial",
+          "gama_pct": 8.7,
+          "lider": "Paramo",
+          "lider_pct": 16.4
+        },
+        {
+          "mision": "No alimentos (electrodomesticos, ropa, etc)",
+          "gama_pct": 0.5,
+          "lider": "Hiper Lider",
+          "lider_pct": 6.0
+        },
+        {
+          "mision": "Evento / celebracion",
+          "gama_pct": 9.2,
+          "lider": "Paramo",
+          "lider_pct": 13.7
+        },
+        {
+          "mision": "Urgencia (pocos productos)",
+          "gama_pct": 12.2,
+          "lider": "Gama",
+          "lider_pct": 12.2
+        }
+      ]
+    },
+    "P30": {
+      "pregunta": "P30",
+      "enunciado": "Supermercado donde acostumbra comprar productos de las siguientes categorias",
+      "nota": "Base = todos respondentes que contestaron (402). Excluyendo 'Ninguno en particular'.",
+      "por_categoria": {
+        "Frutas, legumbres y verduras": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Central Madeirense",
+              "n": 37,
+              "pct": 9.2
+            },
+            {
+              "cadena": "Paramo",
+              "n": 34,
+              "pct": 8.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 29,
+              "pct": 7.2
+            },
+            {
+              "cadena": "Rio",
+              "n": 24,
+              "pct": 6.0
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 18,
+              "pct": 4.5
+            },
+            {
+              "cadena": "Gama",
+              "n": 16,
+              "pct": 4.0
+            },
+            {
+              "cadena": "Luz",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Forum",
+              "n": 14,
+              "pct": 3.5
+            }
+          ],
+          "gama_n": 16,
+          "gama_pct": 4.0,
+          "ninguno_pct": 49.8,
+          "lider": "Central Madeirense",
+          "lider_pct": 9.2,
+          "gap_gama_lider_pp": 5.2
+        },
+        "Galletas, pasapalos y confiteria": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Central Madeirense",
+              "n": 56,
+              "pct": 13.9
+            },
+            {
+              "cadena": "Paramo",
+              "n": 53,
+              "pct": 13.2
+            },
+            {
+              "cadena": "Rio",
+              "n": 38,
+              "pct": 9.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 33,
+              "pct": 8.2
+            },
+            {
+              "cadena": "Gama",
+              "n": 28,
+              "pct": 7.0
+            },
+            {
+              "cadena": "Forum",
+              "n": 28,
+              "pct": 7.0
+            },
+            {
+              "cadena": "Luz",
+              "n": 27,
+              "pct": 6.7
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 25,
+              "pct": 6.2
+            }
+          ],
+          "gama_n": 28,
+          "gama_pct": 7.0,
+          "ninguno_pct": 24.6,
+          "lider": "Central Madeirense",
+          "lider_pct": 13.9,
+          "gap_gama_lider_pp": 6.9
+        },
+        "Salsas y Enlatados": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 82,
+              "pct": 20.4
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 48,
+              "pct": 11.9
+            },
+            {
+              "cadena": "Forum",
+              "n": 44,
+              "pct": 10.9
+            },
+            {
+              "cadena": "Luz",
+              "n": 36,
+              "pct": 9.0
+            },
+            {
+              "cadena": "Rio",
+              "n": 32,
+              "pct": 8.0
+            },
+            {
+              "cadena": "Gama",
+              "n": 30,
+              "pct": 7.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 30,
+              "pct": 7.5
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 26,
+              "pct": 6.5
+            }
+          ],
+          "gama_n": 30,
+          "gama_pct": 7.5,
+          "ninguno_pct": 14.7,
+          "lider": "Paramo",
+          "lider_pct": 20.4,
+          "gap_gama_lider_pp": 12.9
+        },
+        "Carne de res": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 137,
+              "pct": 34.1
+            },
+            {
+              "cadena": "Rio",
+              "n": 35,
+              "pct": 8.7
+            },
+            {
+              "cadena": "Forum",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 26,
+              "pct": 6.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 25,
+              "pct": 6.2
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 20,
+              "pct": 5.0
+            },
+            {
+              "cadena": "Gama",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Luz",
+              "n": 11,
+              "pct": 2.7
+            }
+          ],
+          "gama_n": 15,
+          "gama_pct": 3.7,
+          "ninguno_pct": 21.1,
+          "lider": "Paramo",
+          "lider_pct": 34.1,
+          "gap_gama_lider_pp": 30.4
+        },
+        "Pollo": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 134,
+              "pct": 33.3
+            },
+            {
+              "cadena": "Rio",
+              "n": 36,
+              "pct": 9.0
+            },
+            {
+              "cadena": "Forum",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Plazas",
+              "n": 25,
+              "pct": 6.2
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 21,
+              "pct": 5.2
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 21,
+              "pct": 5.2
+            },
+            {
+              "cadena": "Gama",
+              "n": 14,
+              "pct": 3.5
+            },
+            {
+              "cadena": "Luz",
+              "n": 13,
+              "pct": 3.2
+            }
+          ],
+          "gama_n": 14,
+          "gama_pct": 3.5,
+          "ninguno_pct": 22.6,
+          "lider": "Paramo",
+          "lider_pct": 33.3,
+          "gap_gama_lider_pp": 29.8
+        },
+        "Charcuteria (quesos, jamones)": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 123,
+              "pct": 30.6
+            },
+            {
+              "cadena": "Rio",
+              "n": 34,
+              "pct": 8.5
+            },
+            {
+              "cadena": "Forum",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 16,
+              "pct": 4.0
+            },
+            {
+              "cadena": "Luz",
+              "n": 14,
+              "pct": 3.5
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 14,
+              "pct": 3.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 13,
+              "pct": 3.2
+            }
+          ],
+          "gama_n": 13,
+          "gama_pct": 3.2,
+          "ninguno_pct": 26.1,
+          "lider": "Paramo",
+          "lider_pct": 30.6,
+          "gap_gama_lider_pp": 27.4
+        },
+        "Gaseosas, jugos y aguas": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 43,
+              "pct": 10.7
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 33,
+              "pct": 8.2
+            },
+            {
+              "cadena": "Luz",
+              "n": 30,
+              "pct": 7.5
+            },
+            {
+              "cadena": "Gama",
+              "n": 29,
+              "pct": 7.2
+            },
+            {
+              "cadena": "Forum",
+              "n": 28,
+              "pct": 7.0
+            },
+            {
+              "cadena": "Rio",
+              "n": 25,
+              "pct": 6.2
+            },
+            {
+              "cadena": "Plazas",
+              "n": 22,
+              "pct": 5.5
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 17,
+              "pct": 4.2
+            }
+          ],
+          "gama_n": 29,
+          "gama_pct": 7.2,
+          "ninguno_pct": 40.0,
+          "lider": "Paramo",
+          "lider_pct": 10.7,
+          "gap_gama_lider_pp": 3.5
+        },
+        "Licores": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Luz",
+              "n": 17,
+              "pct": 4.2
+            },
+            {
+              "cadena": "Paramo",
+              "n": 17,
+              "pct": 4.2
+            },
+            {
+              "cadena": "Plazas",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Gama",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 14,
+              "pct": 3.5
+            },
+            {
+              "cadena": "Forum",
+              "n": 13,
+              "pct": 3.2
+            },
+            {
+              "cadena": "Rio",
+              "n": 12,
+              "pct": 3.0
+            }
+          ],
+          "gama_n": 15,
+          "gama_pct": 3.7,
+          "ninguno_pct": 66.9,
+          "lider": "Luz",
+          "lider_pct": 4.2,
+          "gap_gama_lider_pp": 0.5
+        },
+        "Farmacia": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Gama",
+              "n": 17,
+              "pct": 4.2
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 14,
+              "pct": 3.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 9,
+              "pct": 2.2
+            },
+            {
+              "cadena": "Forum",
+              "n": 8,
+              "pct": 2.0
+            },
+            {
+              "cadena": "Paramo",
+              "n": 8,
+              "pct": 2.0
+            },
+            {
+              "cadena": "Rio",
+              "n": 6,
+              "pct": 1.5
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 6,
+              "pct": 1.5
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 2,
+              "pct": 0.5
+            }
+          ],
+          "gama_n": 17,
+          "gama_pct": 4.2,
+          "ninguno_pct": 82.3,
+          "lider": "Gama",
+          "lider_pct": 4.2,
+          "gap_gama_lider_pp": 0.0
+        },
+        "Congelados": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 46,
+              "pct": 11.4
+            },
+            {
+              "cadena": "Gama",
+              "n": 32,
+              "pct": 8.0
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 32,
+              "pct": 8.0
+            },
+            {
+              "cadena": "Rio",
+              "n": 27,
+              "pct": 6.7
+            },
+            {
+              "cadena": "Plazas",
+              "n": 27,
+              "pct": 6.7
+            },
+            {
+              "cadena": "Forum",
+              "n": 24,
+              "pct": 6.0
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 18,
+              "pct": 4.5
+            },
+            {
+              "cadena": "Luz",
+              "n": 16,
+              "pct": 4.0
+            }
+          ],
+          "gama_n": 32,
+          "gama_pct": 8.0,
+          "ninguno_pct": 42.0,
+          "lider": "Paramo",
+          "lider_pct": 11.4,
+          "gap_gama_lider_pp": 3.4
+        },
+        "Alimento mascotas": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 18,
+              "pct": 4.5
+            },
+            {
+              "cadena": "Forum",
+              "n": 12,
+              "pct": 3.0
+            },
+            {
+              "cadena": "Rio",
+              "n": 11,
+              "pct": 2.7
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 10,
+              "pct": 2.5
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 10,
+              "pct": 2.5
+            },
+            {
+              "cadena": "Plazas",
+              "n": 9,
+              "pct": 2.2
+            },
+            {
+              "cadena": "Gama",
+              "n": 5,
+              "pct": 1.2
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 5,
+              "pct": 1.2
+            }
+          ],
+          "gama_n": 5,
+          "gama_pct": 1.2,
+          "ninguno_pct": 78.9,
+          "lider": "Paramo",
+          "lider_pct": 4.5,
+          "gap_gama_lider_pp": 3.3
+        },
+        "Pescados y mariscos": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 27,
+              "pct": 6.7
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 21,
+              "pct": 5.2
+            },
+            {
+              "cadena": "Forum",
+              "n": 16,
+              "pct": 4.0
+            },
+            {
+              "cadena": "Plazas",
+              "n": 15,
+              "pct": 3.7
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 12,
+              "pct": 3.0
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 11,
+              "pct": 2.7
+            },
+            {
+              "cadena": "Gama",
+              "n": 11,
+              "pct": 2.7
+            },
+            {
+              "cadena": "Luz",
+              "n": 9,
+              "pct": 2.2
+            }
+          ],
+          "gama_n": 11,
+          "gama_pct": 2.7,
+          "ninguno_pct": 66.7,
+          "lider": "Paramo",
+          "lider_pct": 6.7,
+          "gap_gama_lider_pp": 4.0
+        },
+        "Productos basicos (harinas, arroz, leches)": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 79,
+              "pct": 19.7
+            },
+            {
+              "cadena": "Forum",
+              "n": 52,
+              "pct": 12.9
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 48,
+              "pct": 11.9
+            },
+            {
+              "cadena": "Rio",
+              "n": 41,
+              "pct": 10.2
+            },
+            {
+              "cadena": "Luz",
+              "n": 40,
+              "pct": 10.0
+            },
+            {
+              "cadena": "Plazas",
+              "n": 25,
+              "pct": 6.2
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 23,
+              "pct": 5.7
+            },
+            {
+              "cadena": "Gama",
+              "n": 22,
+              "pct": 5.5
+            }
+          ],
+          "gama_n": 22,
+          "gama_pct": 5.5,
+          "ninguno_pct": 12.9,
+          "lider": "Paramo",
+          "lider_pct": 19.7,
+          "gap_gama_lider_pp": 14.2
+        },
+        "Cuidado Personal": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 40,
+              "pct": 10.0
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 28,
+              "pct": 7.0
+            },
+            {
+              "cadena": "Rio",
+              "n": 22,
+              "pct": 5.5
+            },
+            {
+              "cadena": "Forum",
+              "n": 22,
+              "pct": 5.5
+            },
+            {
+              "cadena": "Luz",
+              "n": 22,
+              "pct": 5.5
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 20,
+              "pct": 5.0
+            },
+            {
+              "cadena": "Plazas",
+              "n": 18,
+              "pct": 4.5
+            },
+            {
+              "cadena": "Gama",
+              "n": 16,
+              "pct": 4.0
+            }
+          ],
+          "gama_n": 16,
+          "gama_pct": 4.0,
+          "ninguno_pct": 50.5,
+          "lider": "Paramo",
+          "lider_pct": 10.0,
+          "gap_gama_lider_pp": 6.0
+        },
+        "Cuidado y limpieza del hogar": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 45,
+              "pct": 11.2
+            },
+            {
+              "cadena": "Forum",
+              "n": 37,
+              "pct": 9.2
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 33,
+              "pct": 8.2
+            },
+            {
+              "cadena": "Luz",
+              "n": 31,
+              "pct": 7.7
+            },
+            {
+              "cadena": "Rio",
+              "n": 27,
+              "pct": 6.7
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 21,
+              "pct": 5.2
+            },
+            {
+              "cadena": "Gama",
+              "n": 20,
+              "pct": 5.0
+            },
+            {
+              "cadena": "Plazas",
+              "n": 20,
+              "pct": 5.0
+            }
+          ],
+          "gama_n": 20,
+          "gama_pct": 5.0,
+          "ninguno_pct": 39.1,
+          "lider": "Paramo",
+          "lider_pct": 11.2,
+          "gap_gama_lider_pp": 6.2
+        }
+      },
+      "gama_ranking_por_categoria": [
+        {
+          "categoria": "Congelados",
+          "gama_pct": 8.0,
+          "gama_n": 32,
+          "lider": "Paramo",
+          "lider_pct": 11.4,
+          "flag": ""
+        },
+        {
+          "categoria": "Salsas y Enlatados",
+          "gama_pct": 7.5,
+          "gama_n": 30,
+          "lider": "Paramo",
+          "lider_pct": 20.4,
+          "flag": ""
+        },
+        {
+          "categoria": "Gaseosas, jugos y aguas",
+          "gama_pct": 7.2,
+          "gama_n": 29,
+          "lider": "Paramo",
+          "lider_pct": 10.7,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Galletas, pasapalos y confiteria",
+          "gama_pct": 7.0,
+          "gama_n": 28,
+          "lider": "Central Madeirense",
+          "lider_pct": 13.9,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Productos basicos (harinas, arroz, leches)",
+          "gama_pct": 5.5,
+          "gama_n": 22,
+          "lider": "Paramo",
+          "lider_pct": 19.7,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Cuidado y limpieza del hogar",
+          "gama_pct": 5.0,
+          "gama_n": 20,
+          "lider": "Paramo",
+          "lider_pct": 11.2,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Farmacia",
+          "gama_pct": 4.2,
+          "gama_n": 17,
+          "lider": "Gama",
+          "lider_pct": 4.2,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Frutas, legumbres y verduras",
+          "gama_pct": 4.0,
+          "gama_n": 16,
+          "lider": "Central Madeirense",
+          "lider_pct": 9.2,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Cuidado Personal",
+          "gama_pct": 4.0,
+          "gama_n": 16,
+          "lider": "Paramo",
+          "lider_pct": 10.0,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Carne de res",
+          "gama_pct": 3.7,
+          "gama_n": 15,
+          "lider": "Paramo",
+          "lider_pct": 34.1,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Licores",
+          "gama_pct": 3.7,
+          "gama_n": 15,
+          "lider": "Luz",
+          "lider_pct": 4.2,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Pollo",
+          "gama_pct": 3.5,
+          "gama_n": 14,
+          "lider": "Paramo",
+          "lider_pct": 33.3,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Charcuteria (quesos, jamones)",
+          "gama_pct": 3.2,
+          "gama_n": 13,
+          "lider": "Paramo",
+          "lider_pct": 30.6,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Pescados y mariscos",
+          "gama_pct": 2.7,
+          "gama_n": 11,
+          "lider": "Paramo",
+          "lider_pct": 6.7,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Alimento mascotas",
+          "gama_pct": 1.2,
+          "gama_n": 5,
+          "lider": "Paramo",
+          "lider_pct": 4.5,
+          "flag": "REFERENCIAL"
+        }
+      ]
+    },
+    "P32": {
+      "pregunta": "P32",
+      "enunciado": "En cual supermercado encuentra mejores precios por categoria",
+      "nota": "Base=402 todos. Excluidos 'Ninguno en particular'. IC95 Newcombe-Wilson. Gama flag si n<30.",
+      "por_categoria": {
+        "Frutas, legumbres y verduras": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Central Madeirense",
+              "n": 53,
+              "pct": 13.2,
+              "ic95": [
+                10.2,
+                16.8
+              ]
+            },
+            {
+              "cadena": "Paramo",
+              "n": 44,
+              "pct": 10.9,
+              "ic95": [
+                8.3,
+                14.4
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 30,
+              "pct": 7.5,
+              "ic95": [
+                5.3,
+                10.5
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 28,
+              "pct": 7.0,
+              "ic95": [
+                4.9,
+                9.9
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 23,
+              "pct": 5.7,
+              "ic95": [
+                3.8,
+                8.4
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 23,
+              "pct": 5.7,
+              "ic95": [
+                3.8,
+                8.4
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 22,
+              "pct": 5.5,
+              "ic95": [
+                3.6,
+                8.1
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            }
+          ],
+          "gama_n": 9,
+          "gama_pct": 2.2,
+          "gama_posicion": 9,
+          "ninguno_pct": 37.6,
+          "lider": "Central Madeirense",
+          "lider_pct": 13.2,
+          "gap_gama_lider_pp": 11.0,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 4,
+              "pct": 3.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 4,
+              "pct": 3.1,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 1,
+              "pct": 0.6,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Galletas, pasapalos y confiteria": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 46,
+              "pct": 11.4,
+              "ic95": [
+                8.7,
+                14.9
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 43,
+              "pct": 10.7,
+              "ic95": [
+                8.0,
+                14.1
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 41,
+              "pct": 10.2,
+              "ic95": [
+                7.6,
+                13.5
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 33,
+              "pct": 8.2,
+              "ic95": [
+                5.9,
+                11.3
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 31,
+              "pct": 7.7,
+              "ic95": [
+                5.5,
+                10.7
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 30,
+              "pct": 7.5,
+              "ic95": [
+                5.3,
+                10.5
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 27,
+              "pct": 6.7,
+              "ic95": [
+                4.7,
+                9.6
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 23,
+              "pct": 5.7,
+              "ic95": [
+                3.8,
+                8.4
+              ]
+            }
+          ],
+          "gama_n": 23,
+          "gama_pct": 5.7,
+          "gama_posicion": 8,
+          "ninguno_pct": 26.4,
+          "lider": "Paramo",
+          "lider_pct": 11.4,
+          "gap_gama_lider_pp": 5.7,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 11,
+              "pct": 10.6,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 7,
+              "pct": 5.5,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 5,
+              "pct": 2.9,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Salsas y Enlatados": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 84,
+              "pct": 20.9,
+              "ic95": [
+                17.2,
+                25.1
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 46,
+              "pct": 11.4,
+              "ic95": [
+                8.7,
+                14.9
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 41,
+              "pct": 10.2,
+              "ic95": [
+                7.6,
+                13.5
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 38,
+              "pct": 9.5,
+              "ic95": [
+                7.0,
+                12.7
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 30,
+              "pct": 7.5,
+              "ic95": [
+                5.3,
+                10.5
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 29,
+              "pct": 7.2,
+              "ic95": [
+                5.1,
+                10.2
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 28,
+              "pct": 7.0,
+              "ic95": [
+                4.9,
+                9.9
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            }
+          ],
+          "gama_n": 18,
+          "gama_pct": 4.5,
+          "gama_posicion": 9,
+          "ninguno_pct": 17.2,
+          "lider": "Paramo",
+          "lider_pct": 20.9,
+          "gap_gama_lider_pp": 16.4,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 11,
+              "pct": 10.6,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 5,
+              "pct": 3.9,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 2,
+              "pct": 1.2,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Carne de res": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 146,
+              "pct": 36.3,
+              "ic95": [
+                31.8,
+                41.1
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 36,
+              "pct": 9.0,
+              "ic95": [
+                6.5,
+                12.1
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 35,
+              "pct": 8.7,
+              "ic95": [
+                6.3,
+                11.9
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 31,
+              "pct": 7.7,
+              "ic95": [
+                5.5,
+                10.7
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 29,
+              "pct": 7.2,
+              "ic95": [
+                5.1,
+                10.2
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 12,
+              "pct": 3.0,
+              "ic95": [
+                1.7,
+                5.1
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 11,
+              "pct": 2.7,
+              "ic95": [
+                1.5,
+                4.8
+              ]
+            }
+          ],
+          "gama_n": 12,
+          "gama_pct": 3.0,
+          "gama_posicion": 7,
+          "ninguno_pct": 16.9,
+          "lider": "Paramo",
+          "lider_pct": 36.3,
+          "gap_gama_lider_pp": 33.3,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 7,
+              "pct": 6.7,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 2,
+              "pct": 1.6,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 3,
+              "pct": 1.8,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Pollo": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 142,
+              "pct": 35.3,
+              "ic95": [
+                30.8,
+                40.1
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 40,
+              "pct": 10.0,
+              "ic95": [
+                7.4,
+                13.3
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 33,
+              "pct": 8.2,
+              "ic95": [
+                5.9,
+                11.3
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 31,
+              "pct": 7.7,
+              "ic95": [
+                5.5,
+                10.7
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 20,
+              "pct": 5.0,
+              "ic95": [
+                3.2,
+                7.6
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 13,
+              "pct": 3.2,
+              "ic95": [
+                1.9,
+                5.5
+              ]
+            }
+          ],
+          "gama_n": 10,
+          "gama_pct": 2.5,
+          "gama_posicion": 9,
+          "ninguno_pct": 18.7,
+          "lider": "Paramo",
+          "lider_pct": 35.3,
+          "gap_gama_lider_pp": 32.8,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 6,
+              "pct": 5.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 2,
+              "pct": 1.6,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 2,
+              "pct": 1.2,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Charcuteria (quesos, jamones)": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 140,
+              "pct": 34.8,
+              "ic95": [
+                30.3,
+                39.6
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 33,
+              "pct": 8.2,
+              "ic95": [
+                5.9,
+                11.3
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 31,
+              "pct": 7.7,
+              "ic95": [
+                5.5,
+                10.7
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 27,
+              "pct": 6.7,
+              "ic95": [
+                4.7,
+                9.6
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 17,
+              "pct": 4.2,
+              "ic95": [
+                2.7,
+                6.7
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 15,
+              "pct": 3.7,
+              "ic95": [
+                2.3,
+                6.1
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 15,
+              "pct": 3.7,
+              "ic95": [
+                2.3,
+                6.1
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 15,
+              "pct": 3.7,
+              "ic95": [
+                2.3,
+                6.1
+              ]
+            }
+          ],
+          "gama_n": 7,
+          "gama_pct": 1.7,
+          "gama_posicion": 9,
+          "ninguno_pct": 24.1,
+          "lider": "Paramo",
+          "lider_pct": 34.8,
+          "gap_gama_lider_pp": 33.1,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 6,
+              "pct": 5.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 0,
+              "pct": 0.0,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 1,
+              "pct": 0.6,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Gaseosas, jugos y aguas": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 41,
+              "pct": 10.2,
+              "ic95": [
+                7.6,
+                13.5
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 33,
+              "pct": 8.2,
+              "ic95": [
+                5.9,
+                11.3
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 29,
+              "pct": 7.2,
+              "ic95": [
+                5.1,
+                10.2
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 27,
+              "pct": 6.7,
+              "ic95": [
+                4.7,
+                9.6
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 27,
+              "pct": 6.7,
+              "ic95": [
+                4.7,
+                9.6
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 26,
+              "pct": 6.5,
+              "ic95": [
+                4.5,
+                9.3
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 13,
+              "pct": 3.2,
+              "ic95": [
+                1.9,
+                5.5
+              ]
+            }
+          ],
+          "gama_n": 13,
+          "gama_pct": 3.2,
+          "gama_posicion": 8,
+          "ninguno_pct": 43.5,
+          "lider": "Paramo",
+          "lider_pct": 10.2,
+          "gap_gama_lider_pp": 7.0,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 7,
+              "pct": 6.7,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 1,
+              "pct": 0.8,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 5,
+              "pct": 2.9,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Licores": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Forum",
+              "n": 19,
+              "pct": 4.7,
+              "ic95": [
+                3.0,
+                7.3
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 17,
+              "pct": 4.2,
+              "ic95": [
+                2.7,
+                6.7
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 14,
+              "pct": 3.5,
+              "ic95": [
+                2.1,
+                5.8
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 14,
+              "pct": 3.5,
+              "ic95": [
+                2.1,
+                5.8
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 13,
+              "pct": 3.2,
+              "ic95": [
+                1.9,
+                5.5
+              ]
+            },
+            {
+              "cadena": "Paramo",
+              "n": 13,
+              "pct": 3.2,
+              "ic95": [
+                1.9,
+                5.5
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 12,
+              "pct": 3.0,
+              "ic95": [
+                1.7,
+                5.1
+              ]
+            }
+          ],
+          "gama_n": 14,
+          "gama_pct": 3.5,
+          "gama_posicion": 4,
+          "ninguno_pct": 66.4,
+          "lider": "Forum",
+          "lider_pct": 4.7,
+          "gap_gama_lider_pp": 1.2,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 6,
+              "pct": 5.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 2,
+              "pct": 1.6,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 6,
+              "pct": 3.5,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Farmacia": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Plan Suarez",
+              "n": 15,
+              "pct": 3.7,
+              "ic95": [
+                2.3,
+                6.1
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 12,
+              "pct": 3.0,
+              "ic95": [
+                1.7,
+                5.1
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 8,
+              "pct": 2.0,
+              "ic95": [
+                1.0,
+                3.9
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 7,
+              "pct": 1.7,
+              "ic95": [
+                0.8,
+                3.6
+              ]
+            },
+            {
+              "cadena": "Paramo",
+              "n": 6,
+              "pct": 1.5,
+              "ic95": [
+                0.7,
+                3.2
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 6,
+              "pct": 1.5,
+              "ic95": [
+                0.7,
+                3.2
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 5,
+              "pct": 1.2,
+              "ic95": [
+                0.5,
+                2.9
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 3,
+              "pct": 0.7,
+              "ic95": [
+                0.3,
+                2.2
+              ]
+            }
+          ],
+          "gama_n": 12,
+          "gama_pct": 3.0,
+          "gama_posicion": 2,
+          "ninguno_pct": 84.6,
+          "lider": "Plan Suarez",
+          "lider_pct": 3.7,
+          "gap_gama_lider_pp": 0.7,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 5,
+              "pct": 4.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 3,
+              "pct": 2.4,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 4,
+              "pct": 2.3,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Congelados": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 46,
+              "pct": 11.4,
+              "ic95": [
+                8.7,
+                14.9
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 36,
+              "pct": 9.0,
+              "ic95": [
+                6.5,
+                12.1
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 33,
+              "pct": 8.2,
+              "ic95": [
+                5.9,
+                11.3
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 24,
+              "pct": 6.0,
+              "ic95": [
+                4.0,
+                8.7
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 23,
+              "pct": 5.7,
+              "ic95": [
+                3.8,
+                8.4
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 19,
+              "pct": 4.7,
+              "ic95": [
+                3.0,
+                7.3
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 19,
+              "pct": 4.7,
+              "ic95": [
+                3.0,
+                7.3
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            }
+          ],
+          "gama_n": 19,
+          "gama_pct": 4.7,
+          "gama_posicion": 6,
+          "ninguno_pct": 42.3,
+          "lider": "Paramo",
+          "lider_pct": 11.4,
+          "gap_gama_lider_pp": 6.7,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 6,
+              "pct": 5.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 6,
+              "pct": 4.7,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 7,
+              "pct": 4.1,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Alimento mascotas": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 14,
+              "pct": 3.5,
+              "ic95": [
+                2.1,
+                5.8
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 12,
+              "pct": 3.0,
+              "ic95": [
+                1.7,
+                5.1
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 10,
+              "pct": 2.5,
+              "ic95": [
+                1.4,
+                4.5
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 9,
+              "pct": 2.2,
+              "ic95": [
+                1.2,
+                4.2
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 8,
+              "pct": 2.0,
+              "ic95": [
+                1.0,
+                3.9
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 8,
+              "pct": 2.0,
+              "ic95": [
+                1.0,
+                3.9
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 5,
+              "pct": 1.2,
+              "ic95": [
+                0.5,
+                2.9
+              ]
+            }
+          ],
+          "gama_n": 5,
+          "gama_pct": 1.2,
+          "gama_posicion": 9,
+          "ninguno_pct": 77.4,
+          "lider": "Paramo",
+          "lider_pct": 4.0,
+          "gap_gama_lider_pp": 2.8,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 2,
+              "pct": 1.9,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 1,
+              "pct": 0.8,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 2,
+              "pct": 1.2,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Pescados y mariscos": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 24,
+              "pct": 6.0,
+              "ic95": [
+                4.0,
+                8.7
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 14,
+              "pct": 3.5,
+              "ic95": [
+                2.1,
+                5.8
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 12,
+              "pct": 3.0,
+              "ic95": [
+                1.7,
+                5.1
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 11,
+              "pct": 2.7,
+              "ic95": [
+                1.5,
+                4.8
+              ]
+            },
+            {
+              "cadena": "Hiper Lider",
+              "n": 8,
+              "pct": 2.0,
+              "ic95": [
+                1.0,
+                3.9
+              ]
+            }
+          ],
+          "gama_n": 4,
+          "gama_pct": 1.0,
+          "gama_posicion": 9,
+          "ninguno_pct": 68.7,
+          "lider": "Paramo",
+          "lider_pct": 6.0,
+          "gap_gama_lider_pp": 5.0,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 2,
+              "pct": 1.9,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 1,
+              "pct": 0.8,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 1,
+              "pct": 0.6,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Productos basicos (harinas, arroz, leches)": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 74,
+              "pct": 18.4,
+              "ic95": [
+                14.9,
+                22.5
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 59,
+              "pct": 14.7,
+              "ic95": [
+                11.6,
+                18.5
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 50,
+              "pct": 12.4,
+              "ic95": [
+                9.6,
+                16.0
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 46,
+              "pct": 11.4,
+              "ic95": [
+                8.7,
+                14.9
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 35,
+              "pct": 8.7,
+              "ic95": [
+                6.3,
+                11.9
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 26,
+              "pct": 6.5,
+              "ic95": [
+                4.5,
+                9.3
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 25,
+              "pct": 6.2,
+              "ic95": [
+                4.2,
+                9.0
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            }
+          ],
+          "gama_n": 18,
+          "gama_pct": 4.5,
+          "gama_posicion": 8,
+          "ninguno_pct": 12.2,
+          "lider": "Paramo",
+          "lider_pct": 18.4,
+          "gap_gama_lider_pp": 13.9,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 10,
+              "pct": 9.6,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 5,
+              "pct": 3.9,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 3,
+              "pct": 1.8,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Cuidado Personal": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "n": 40,
+              "pct": 10.0,
+              "ic95": [
+                7.4,
+                13.3
+              ]
+            },
+            {
+              "cadena": "Forum",
+              "n": 31,
+              "pct": 7.7,
+              "ic95": [
+                5.5,
+                10.7
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 24,
+              "pct": 6.0,
+              "ic95": [
+                4.0,
+                8.7
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 24,
+              "pct": 6.0,
+              "ic95": [
+                4.0,
+                8.7
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 18,
+              "pct": 4.5,
+              "ic95": [
+                2.9,
+                7.0
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 16,
+              "pct": 4.0,
+              "ic95": [
+                2.5,
+                6.4
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 12,
+              "pct": 3.0,
+              "ic95": [
+                1.7,
+                5.1
+              ]
+            }
+          ],
+          "gama_n": 12,
+          "gama_pct": 3.0,
+          "gama_posicion": 8,
+          "ninguno_pct": 51.5,
+          "lider": "Paramo",
+          "lider_pct": 10.0,
+          "gap_gama_lider_pp": 7.0,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 5,
+              "pct": 4.8,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 3,
+              "pct": 2.4,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 4,
+              "pct": 2.3,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        },
+        "Cuidado y limpieza del hogar": {
+          "n_base": 402,
+          "ranking": [
+            {
+              "cadena": "Forum",
+              "n": 39,
+              "pct": 9.7,
+              "ic95": [
+                7.2,
+                13.0
+              ]
+            },
+            {
+              "cadena": "Paramo",
+              "n": 36,
+              "pct": 9.0,
+              "ic95": [
+                6.5,
+                12.1
+              ]
+            },
+            {
+              "cadena": "Central Madeirense",
+              "n": 30,
+              "pct": 7.5,
+              "ic95": [
+                5.3,
+                10.5
+              ]
+            },
+            {
+              "cadena": "Rio",
+              "n": 27,
+              "pct": 6.7,
+              "ic95": [
+                4.7,
+                9.6
+              ]
+            },
+            {
+              "cadena": "Luz",
+              "n": 26,
+              "pct": 6.5,
+              "ic95": [
+                4.5,
+                9.3
+              ]
+            },
+            {
+              "cadena": "Plan Suarez",
+              "n": 26,
+              "pct": 6.5,
+              "ic95": [
+                4.5,
+                9.3
+              ]
+            },
+            {
+              "cadena": "Plazas",
+              "n": 20,
+              "pct": 5.0,
+              "ic95": [
+                3.2,
+                7.6
+              ]
+            },
+            {
+              "cadena": "Gama",
+              "n": 15,
+              "pct": 3.7,
+              "ic95": [
+                2.3,
+                6.1
+              ]
+            }
+          ],
+          "gama_n": 15,
+          "gama_pct": 3.7,
+          "gama_posicion": 8,
+          "ninguno_pct": 42.0,
+          "lider": "Forum",
+          "lider_pct": 9.7,
+          "gap_gama_lider_pp": 6.0,
+          "gama_por_nse": {
+            "C+/C": {
+              "n_base": 104,
+              "n_gama": 7,
+              "pct": 6.7,
+              "flag": "REFERENCIAL"
+            },
+            "D": {
+              "n_base": 127,
+              "n_gama": 4,
+              "pct": 3.1,
+              "flag": "REFERENCIAL"
+            },
+            "E": {
+              "n_base": 171,
+              "n_gama": 4,
+              "pct": 2.3,
+              "flag": "REFERENCIAL"
+            }
+          },
+          "flag": "REFERENCIAL"
+        }
+      },
+      "gama_ranking_precio": [
+        {
+          "categoria": "Galletas, pasapalos y confiteria",
+          "gama_pct": 5.7,
+          "gama_n": 23,
+          "gama_posicion": 8,
+          "lider": "Paramo",
+          "lider_pct": 11.4,
+          "gap_pp": 5.7,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Congelados",
+          "gama_pct": 4.7,
+          "gama_n": 19,
+          "gama_posicion": 6,
+          "lider": "Paramo",
+          "lider_pct": 11.4,
+          "gap_pp": 6.7,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Salsas y Enlatados",
+          "gama_pct": 4.5,
+          "gama_n": 18,
+          "gama_posicion": 9,
+          "lider": "Paramo",
+          "lider_pct": 20.9,
+          "gap_pp": 16.4,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Productos basicos (harinas, arroz, leches)",
+          "gama_pct": 4.5,
+          "gama_n": 18,
+          "gama_posicion": 8,
+          "lider": "Paramo",
+          "lider_pct": 18.4,
+          "gap_pp": 13.9,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Cuidado y limpieza del hogar",
+          "gama_pct": 3.7,
+          "gama_n": 15,
+          "gama_posicion": 8,
+          "lider": "Forum",
+          "lider_pct": 9.7,
+          "gap_pp": 6.0,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Licores",
+          "gama_pct": 3.5,
+          "gama_n": 14,
+          "gama_posicion": 4,
+          "lider": "Forum",
+          "lider_pct": 4.7,
+          "gap_pp": 1.2,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Gaseosas, jugos y aguas",
+          "gama_pct": 3.2,
+          "gama_n": 13,
+          "gama_posicion": 8,
+          "lider": "Paramo",
+          "lider_pct": 10.2,
+          "gap_pp": 7.0,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Carne de res",
+          "gama_pct": 3.0,
+          "gama_n": 12,
+          "gama_posicion": 7,
+          "lider": "Paramo",
+          "lider_pct": 36.3,
+          "gap_pp": 33.3,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Farmacia",
+          "gama_pct": 3.0,
+          "gama_n": 12,
+          "gama_posicion": 2,
+          "lider": "Plan Suarez",
+          "lider_pct": 3.7,
+          "gap_pp": 0.7,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Cuidado Personal",
+          "gama_pct": 3.0,
+          "gama_n": 12,
+          "gama_posicion": 8,
+          "lider": "Paramo",
+          "lider_pct": 10.0,
+          "gap_pp": 7.0,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Pollo",
+          "gama_pct": 2.5,
+          "gama_n": 10,
+          "gama_posicion": 9,
+          "lider": "Paramo",
+          "lider_pct": 35.3,
+          "gap_pp": 32.8,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Frutas, legumbres y verduras",
+          "gama_pct": 2.2,
+          "gama_n": 9,
+          "gama_posicion": 9,
+          "lider": "Central Madeirense",
+          "lider_pct": 13.2,
+          "gap_pp": 11.0,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Charcuteria (quesos, jamones)",
+          "gama_pct": 1.7,
+          "gama_n": 7,
+          "gama_posicion": 9,
+          "lider": "Paramo",
+          "lider_pct": 34.8,
+          "gap_pp": 33.1,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Alimento mascotas",
+          "gama_pct": 1.2,
+          "gama_n": 5,
+          "gama_posicion": 9,
+          "lider": "Paramo",
+          "lider_pct": 4.0,
+          "gap_pp": 2.8,
+          "flag": "REFERENCIAL"
+        },
+        {
+          "categoria": "Pescados y mariscos",
+          "gama_pct": 1.0,
+          "gama_n": 4,
+          "gama_posicion": 9,
+          "lider": "Paramo",
+          "lider_pct": 6.0,
+          "gap_pp": 5.0,
+          "flag": "REFERENCIAL"
+        }
+      ]
+    },
+    "P40_P41_P42_DTLS": {
+      "pregunta": "P40_P41_P42",
+      "frase": "DE TU LADO SIEMPRE (DTLS)",
+      "P40_recall": {
+        "enunciado": "Recuerda haber visto/escuchado DTLS en publicidad de Gama",
+        "n_total": 402,
+        "n_si": 50,
+        "n_no": 352,
+        "pct_si": 12.4,
+        "ic95_si": [
+          9.6,
+          16.0
+        ],
+        "flag": ""
+      },
+      "P41_agrado": {
+        "enunciado": "Que tanto agrada DTLS para describir experiencia en Gama",
+        "base": 50,
+        "nota": "Base = respondentes que recordaron DTLS (P40=Si). n=50.",
+        "flag_base": "",
+        "distribucion": [
+          {
+            "categoria": "Mucho",
+            "n": 11,
+            "pct": 22.0,
+            "ic95": [
+              12.8,
+              35.2
+            ]
+          },
+          {
+            "categoria": "Bastante",
+            "n": 10,
+            "pct": 20.0,
+            "ic95": [
+              11.2,
+              33.0
+            ]
+          },
+          {
+            "categoria": "Algo",
+            "n": 18,
+            "pct": 36.0,
+            "ic95": [
+              24.1,
+              49.9
+            ]
+          },
+          {
+            "categoria": "Poco",
+            "n": 6,
+            "pct": 12.0,
+            "ic95": [
+              5.6,
+              23.8
+            ]
+          },
+          {
+            "categoria": "Nada",
+            "n": 5,
+            "pct": 10.0,
+            "ic95": [
+              4.3,
+              21.4
+            ]
+          }
+        ],
+        "top2_agrado_pct": 42.0,
+        "top2_n": 21
+      },
+      "P42_interpretacion": {
+        "enunciado": "Que cree que quiso decir Gama con DTLS",
+        "n_base": 50,
+        "nota": "Open end categorizado por temas. n=50.",
+        "flag_base": "",
+        "temas": [
+          {
+            "tema": "precio",
+            "n": 21,
+            "pct": 42.0,
+            "ejemplos": [
+              "Que los precio que esta mas bajo que en otro lugar",
+              "Se ajusta al bolsillo",
+              "Que ellos piensan en el bienestar de uno y también a la vez que uno puede compra"
+            ]
+          },
+          {
+            "tema": "acompanamiento_apoyo",
+            "n": 13,
+            "pct": 26.0,
+            "ejemplos": [
+              "Que siempre estan alli para ti",
+              "Que tendrán disponibilidad en todo que siempre estara cerca de nosotros",
+              "Que estan para servir y syudar al publico"
+            ]
+          },
+          {
+            "tema": "otros",
+            "n": 12,
+            "pct": 24.0,
+            "ejemplos": [
+              "Buscan la economia",
+              "Que están a favor de nosotros y trabajando para nosotros, buscando la economía p",
+              "Buscando el beneficio del consumidor"
+            ]
+          },
+          {
+            "tema": "fidelidad_confianza",
+            "n": 2,
+            "pct": 4.0,
+            "ejemplos": [
+              "La fidelidad del cliente",
+              "Que son alguien en quien se puede confiar, para todo el público"
+            ]
+          },
+          {
+            "tema": "bienestar_cliente",
+            "n": 1,
+            "pct": 2.0,
+            "ejemplos": [
+              "Que piensa en sus clientes"
+            ]
+          },
+          {
+            "tema": "motivacion",
+            "n": 1,
+            "pct": 2.0,
+            "ejemplos": [
+              "Motivación al cliente"
+            ]
+          }
+        ]
+      }
+    },
+    "PTL_P35_P37_P38_P39": {
+      "P35_recall_publicidad_general": {
+        "n_si": 17,
+        "pct_si": 4.2,
+        "base": 402
+      },
+      "P37_recall_PTL": {
+        "n_si": 43,
+        "pct_si": 10.7,
+        "ic95": [
+          8.0,
+          14.1
+        ],
+        "base": 402,
+        "flag": ""
+      },
+      "P38_agrado_PTL": {
+        "base": 43,
+        "distribucion": [
+          {
+            "categoria": "Mucho",
+            "n": 16,
+            "pct": 37.2
+          },
+          {
+            "categoria": "Bastante",
+            "n": 7,
+            "pct": 16.3
+          },
+          {
+            "categoria": "Algo",
+            "n": 7,
+            "pct": 16.3
+          },
+          {
+            "categoria": "Poco",
+            "n": 11,
+            "pct": 25.6
+          },
+          {
+            "categoria": "Nada",
+            "n": 2,
+            "pct": 4.7
+          }
+        ],
+        "top2_agrado_pct": 53.5,
+        "top2_n": 23,
+        "flag_base": ""
+      },
+      "P39_interpretacion_PTL": {
+        "n_base": 43,
+        "temas": [
+          {
+            "tema": "precio_economia",
+            "n": 31,
+            "pct": 72.1
+          },
+          {
+            "tema": "solidaridad_apoyo",
+            "n": 1,
+            "pct": 2.3
+          },
+          {
+            "tema": "confianza",
+            "n": 0,
+            "pct": 0.0
+          },
+          {
+            "tema": "otros",
+            "n": 11,
+            "pct": 25.6
+          }
+        ],
+        "flag_base": ""
+      }
+    },
+    "P44_P45": {
+      "pregunta": "P44_P45",
+      "zona": "El Recreo (parroquia con sucursal Gama)",
+      "n_recreo_total": 21,
+      "BLOCKER_FLAG": "BASE MUY BAJA: n=21 respondentes de El Recreo. TODOS los resultados son REFERENCIALES e indicativos. No proyectables. No reportar como cifras de mercado.",
+      "P44_gama_vs_zona": {
+        "enunciado": "Gama vs supermercados de la zona en terminos generales",
+        "n_respondentes_validos": 21,
+        "distribucion": [
+          {
+            "categoria": "Igual",
+            "n": 16,
+            "pct": 76.2
+          },
+          {
+            "categoria": "Mucho mejor",
+            "n": 2,
+            "pct": 9.5
+          },
+          {
+            "categoria": "Mucho peor",
+            "n": 2,
+            "pct": 9.5
+          },
+          {
+            "categoria": "Mejor",
+            "n": 1,
+            "pct": 4.8
+          }
+        ],
+        "flag": "REFERENCIAL n<30 — SOLO INDICATIVO"
+      },
+      "P45_disposicion_compra": {
+        "enunciado": "Disposicion a comprar regularmente en Gama si abre sucursal en la zona",
+        "n_respondentes_validos": 21,
+        "distribucion": [
+          {
+            "categoria": "Dispuesto",
+            "n": 10,
+            "pct": 47.6
+          },
+          {
+            "categoria": "Algo dispuesto",
+            "n": 5,
+            "pct": 23.8
+          },
+          {
+            "categoria": "Muy Dispuesto",
+            "n": 3,
+            "pct": 14.3
+          },
+          {
+            "categoria": "Poco dispuesto",
+            "n": 2,
+            "pct": 9.5
+          },
+          {
+            "categoria": "Nada dispuesto",
+            "n": 1,
+            "pct": 4.8
+          }
+        ],
+        "por_nse": {
+          "C+/C": {
+            "n_base": 4,
+            "n_respondentes": 4,
+            "alta_disposicion_pct": 100.0
+          },
+          "D": {
+            "n_base": 3,
+            "n_respondentes": 3,
+            "alta_disposicion_pct": 33.3
+          },
+          "E": {
+            "n_base": 14,
+            "n_respondentes": 14,
+            "alta_disposicion_pct": 57.1
+          }
+        },
+        "flag": "REFERENCIAL n<30 — SOLO INDICATIVO"
+      }
+    }
+  },
+  "cruces_analiticos": {
+    "A_precio": {
+      "A1_gama_top_categorias_precio": {
+        "descripcion": "Top 5 categorias donde Gama obtiene mayor % de menciones como mejor precio",
+        "top5": [
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "gama_pct": 5.7,
+            "gama_n": 23,
+            "gama_posicion": 8,
+            "lider": "Paramo",
+            "lider_pct": 11.4,
+            "gap_pp": 5.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Congelados",
+            "gama_pct": 4.7,
+            "gama_n": 19,
+            "gama_posicion": 6,
+            "lider": "Paramo",
+            "lider_pct": 11.4,
+            "gap_pp": 6.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "gama_pct": 4.5,
+            "gama_n": 18,
+            "gama_posicion": 9,
+            "lider": "Paramo",
+            "lider_pct": 20.9,
+            "gap_pp": 16.4,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "gama_pct": 4.5,
+            "gama_n": 18,
+            "gama_posicion": 8,
+            "lider": "Paramo",
+            "lider_pct": 18.4,
+            "gap_pp": 13.9,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "gama_pct": 3.7,
+            "gama_n": 15,
+            "gama_posicion": 8,
+            "lider": "Forum",
+            "lider_pct": 9.7,
+            "gap_pp": 6.0,
+            "flag": "REFERENCIAL"
+          }
+        ]
+      },
+      "A2_p32_x_p21": {
+        "descripcion": "Percepcion de mejor precio por categoria (P32) segun si el respondente prefiere Gama (P21)",
+        "nota": "Muestra si los preferentes de Gama creen que Gama tiene el mejor precio en cada categoria",
+        "datos": [
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 2.2,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 5.7,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 4.5,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Carne de res",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 3.0,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Pollo",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 2.5,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 3.2,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Licores",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 3.5,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          },
+          {
+            "categoria": "Farmacia",
+            "pct_gama_precio_entre_preferentes_gama": null,
+            "pct_gama_precio_entre_no_preferentes": 3.0,
+            "n_preferentes_gama": 0,
+            "flag": "REFERENCIAL n_pref<30"
+          }
+        ]
+      },
+      "A3_vigilar_precio_nse_cc": {
+        "descripcion": "Categorias donde Gama no lidera percepcion de precio en NSE C+/C y la competencia si (Paramo/Rio/CM/Forum)",
+        "categorias": [
+          {
+            "categoria": "Carne de res",
+            "lider_precio": "Paramo",
+            "lider_pct": 36.3,
+            "gama_nse_cc_pct": 6.7,
+            "gap_cc": 29.6
+          },
+          {
+            "categoria": "Pollo",
+            "lider_precio": "Paramo",
+            "lider_pct": 35.3,
+            "gama_nse_cc_pct": 5.8,
+            "gap_cc": 29.5
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "lider_precio": "Paramo",
+            "lider_pct": 34.8,
+            "gama_nse_cc_pct": 5.8,
+            "gap_cc": 29.0
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "lider_precio": "Central Madeirense",
+            "lider_pct": 13.2,
+            "gama_nse_cc_pct": 3.8,
+            "gap_cc": 9.4
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "lider_precio": "Paramo",
+            "lider_pct": 18.4,
+            "gama_nse_cc_pct": 9.6,
+            "gap_cc": 8.8
+          },
+          {
+            "categoria": "Congelados",
+            "lider_precio": "Paramo",
+            "lider_pct": 11.4,
+            "gama_nse_cc_pct": 5.8,
+            "gap_cc": 5.6
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "lider_precio": "Paramo",
+            "lider_pct": 10.0,
+            "gama_nse_cc_pct": 4.8,
+            "gap_cc": 5.2
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "lider_precio": "Paramo",
+            "lider_pct": 6.0,
+            "gama_nse_cc_pct": 1.9,
+            "gap_cc": 4.1
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "lider_precio": "Paramo",
+            "lider_pct": 10.2,
+            "gama_nse_cc_pct": 6.7,
+            "gap_cc": 3.5
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "lider_precio": "Forum",
+            "lider_pct": 9.7,
+            "gama_nse_cc_pct": 6.7,
+            "gap_cc": 3.0
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "lider_precio": "Paramo",
+            "lider_pct": 4.0,
+            "gama_nse_cc_pct": 1.9,
+            "gap_cc": 2.1
+          },
+          {
+            "categoria": "Licores",
+            "lider_precio": "Forum",
+            "lider_pct": 4.7,
+            "gama_nse_cc_pct": 5.8,
+            "gap_cc": -1.1
+          }
+        ]
+      },
+      "A4_tabla_maestra_precio": {
+        "descripcion": "Por cada categoria: lider P32 + posicion Gama + gap en pp",
+        "tabla": [
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "lider_precio": "Paramo",
+            "lider_pct": 11.4,
+            "gama_pct": 5.7,
+            "gama_posicion": 8,
+            "gap_pp": 5.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Congelados",
+            "lider_precio": "Paramo",
+            "lider_pct": 11.4,
+            "gama_pct": 4.7,
+            "gama_posicion": 6,
+            "gap_pp": 6.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "lider_precio": "Paramo",
+            "lider_pct": 20.9,
+            "gama_pct": 4.5,
+            "gama_posicion": 9,
+            "gap_pp": 16.4,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "lider_precio": "Paramo",
+            "lider_pct": 18.4,
+            "gama_pct": 4.5,
+            "gama_posicion": 8,
+            "gap_pp": 13.9,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "lider_precio": "Forum",
+            "lider_pct": 9.7,
+            "gama_pct": 3.7,
+            "gama_posicion": 8,
+            "gap_pp": 6.0,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Licores",
+            "lider_precio": "Forum",
+            "lider_pct": 4.7,
+            "gama_pct": 3.5,
+            "gama_posicion": 4,
+            "gap_pp": 1.2,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "lider_precio": "Paramo",
+            "lider_pct": 10.2,
+            "gama_pct": 3.2,
+            "gama_posicion": 8,
+            "gap_pp": 7.0,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Carne de res",
+            "lider_precio": "Paramo",
+            "lider_pct": 36.3,
+            "gama_pct": 3.0,
+            "gama_posicion": 7,
+            "gap_pp": 33.3,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Farmacia",
+            "lider_precio": "Plan Suarez",
+            "lider_pct": 3.7,
+            "gama_pct": 3.0,
+            "gama_posicion": 2,
+            "gap_pp": 0.7,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "lider_precio": "Paramo",
+            "lider_pct": 10.0,
+            "gama_pct": 3.0,
+            "gama_posicion": 8,
+            "gap_pp": 7.0,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pollo",
+            "lider_precio": "Paramo",
+            "lider_pct": 35.3,
+            "gama_pct": 2.5,
+            "gama_posicion": 9,
+            "gap_pp": 32.8,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "lider_precio": "Central Madeirense",
+            "lider_pct": 13.2,
+            "gama_pct": 2.2,
+            "gama_posicion": 9,
+            "gap_pp": 11.0,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "lider_precio": "Paramo",
+            "lider_pct": 34.8,
+            "gama_pct": 1.7,
+            "gama_posicion": 9,
+            "gap_pp": 33.1,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "lider_precio": "Paramo",
+            "lider_pct": 4.0,
+            "gama_pct": 1.2,
+            "gama_posicion": 9,
+            "gap_pp": 2.8,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "lider_precio": "Paramo",
+            "lider_pct": 6.0,
+            "gama_pct": 1.0,
+            "gama_posicion": 9,
+            "gap_pp": 5.0,
+            "flag": "REFERENCIAL"
+          }
+        ]
+      }
+    },
+    "B_lugar_precio_mision": {
+      "B1_lugar_vs_precio": {
+        "descripcion": "Coincidencia entre lider de habito de compra (P30) y lider de mejor precio (P32) por categoria",
+        "nota": "Cuando NO coinciden: hay atributos distintos al precio que guian la eleccion de cadena",
+        "comparativo": [
+          {
+            "categoria": "Frutas, legumbres y verduras",
+            "lider_precio_p32": "Central Madeirense",
+            "lider_precio_pct": 13.2,
+            "lider_habito_p30": "Central Madeirense",
+            "lider_habito_pct": 9.2,
+            "coincide_lider": true,
+            "gama_precio_pct": 2.2,
+            "gama_habito_pct": 4.0,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Galletas, pasapalos y confiteria",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 11.4,
+            "lider_habito_p30": "Central Madeirense",
+            "lider_habito_pct": 13.9,
+            "coincide_lider": false,
+            "gama_precio_pct": 5.7,
+            "gama_habito_pct": 7.0,
+            "interpretacion": "Otro driver (cercania, surtido, atencion) pesa sobre precio"
+          },
+          {
+            "categoria": "Salsas y Enlatados",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 20.9,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 20.4,
+            "coincide_lider": true,
+            "gama_precio_pct": 4.5,
+            "gama_habito_pct": 7.5,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Carne de res",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 36.3,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 34.1,
+            "coincide_lider": true,
+            "gama_precio_pct": 3.0,
+            "gama_habito_pct": 3.7,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Pollo",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 35.3,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 33.3,
+            "coincide_lider": true,
+            "gama_precio_pct": 2.5,
+            "gama_habito_pct": 3.5,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Charcuteria (quesos, jamones)",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 34.8,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 30.6,
+            "coincide_lider": true,
+            "gama_precio_pct": 1.7,
+            "gama_habito_pct": 3.2,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Gaseosas, jugos y aguas",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 10.2,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 10.7,
+            "coincide_lider": true,
+            "gama_precio_pct": 3.2,
+            "gama_habito_pct": 7.2,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Licores",
+            "lider_precio_p32": "Forum",
+            "lider_precio_pct": 4.7,
+            "lider_habito_p30": "Luz",
+            "lider_habito_pct": 4.2,
+            "coincide_lider": false,
+            "gama_precio_pct": 3.5,
+            "gama_habito_pct": 3.7,
+            "interpretacion": "Otro driver (cercania, surtido, atencion) pesa sobre precio"
+          },
+          {
+            "categoria": "Farmacia",
+            "lider_precio_p32": "Plan Suarez",
+            "lider_precio_pct": 3.7,
+            "lider_habito_p30": "Gama",
+            "lider_habito_pct": 4.2,
+            "coincide_lider": false,
+            "gama_precio_pct": 3.0,
+            "gama_habito_pct": 4.2,
+            "interpretacion": "Otro driver (cercania, surtido, atencion) pesa sobre precio"
+          },
+          {
+            "categoria": "Congelados",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 11.4,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 11.4,
+            "coincide_lider": true,
+            "gama_precio_pct": 4.7,
+            "gama_habito_pct": 8.0,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Alimento mascotas",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 4.0,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 4.5,
+            "coincide_lider": true,
+            "gama_precio_pct": 1.2,
+            "gama_habito_pct": 1.2,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Pescados y mariscos",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 6.0,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 6.7,
+            "coincide_lider": true,
+            "gama_precio_pct": 1.0,
+            "gama_habito_pct": 2.7,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Productos basicos (harinas, arroz, leches)",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 18.4,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 19.7,
+            "coincide_lider": true,
+            "gama_precio_pct": 4.5,
+            "gama_habito_pct": 5.5,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Cuidado Personal",
+            "lider_precio_p32": "Paramo",
+            "lider_precio_pct": 10.0,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 10.0,
+            "coincide_lider": true,
+            "gama_precio_pct": 3.0,
+            "gama_habito_pct": 4.0,
+            "interpretacion": "Precio = driver principal"
+          },
+          {
+            "categoria": "Cuidado y limpieza del hogar",
+            "lider_precio_p32": "Forum",
+            "lider_precio_pct": 9.7,
+            "lider_habito_p30": "Paramo",
+            "lider_habito_pct": 11.2,
+            "coincide_lider": false,
+            "gama_precio_pct": 3.7,
+            "gama_habito_pct": 5.0,
+            "interpretacion": "Otro driver (cercania, surtido, atencion) pesa sobre precio"
+          }
+        ]
+      },
+      "B2a_p32_x_p25_basicos": {
+        "descripcion": "Percepcion precio Gama en Productos Basicos (P32) segun mision ultima compra (P25)",
+        "cross": [
+          {
+            "mision": "Abastecimiento general",
+            "n": 94,
+            "gama_precio_pct": 1.1,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "mision": "Reabastecimiento parcial",
+            "n": 270,
+            "gama_precio_pct": 5.9,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "mision": "Urgencia",
+            "n": 31,
+            "gama_precio_pct": 3.2,
+            "flag": "REFERENCIAL"
+          }
+        ]
+      },
+      "B2a_p32_x_p25_frutas": {
+        "descripcion": "Percepcion precio Gama en Frutas/Verduras (P32) segun mision ultima compra (P25)",
+        "cross": [
+          {
+            "mision": "Abastecimiento general",
+            "n": 94,
+            "gama_precio_pct": 0.0,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "mision": "Reabastecimiento parcial",
+            "n": 270,
+            "gama_precio_pct": 3.3,
+            "flag": "REFERENCIAL"
+          },
+          {
+            "mision": "Urgencia",
+            "n": 31,
+            "gama_precio_pct": 0.0,
+            "flag": "REFERENCIAL"
+          }
+        ]
+      },
+      "B2b_habito_p30_x_preferencia_p21": {
+        "descripcion": "Congruencia entre habito de compra (P30 Productos Basicos) y preferencia de marca (P21)",
+        "n_preferentes_gama": 0,
+        "pct_preferentes_gama_habituales_en_basicos": null,
+        "pct_total_habituales_gama_basicos": 5.5,
+        "flag": "REFERENCIAL n_pref<30"
+      }
+    },
+    "C_ptl_vs_dtls": {
+      "C1_comparativo_recall": {
+        "PTL_pct": 10.7,
+        "DTLS_pct": 12.4,
+        "PTL_n": 43,
+        "DTLS_n": 50,
+        "z_test": -0.754,
+        "p_value": 0.4508,
+        "significativo": false,
+        "nota": "z-test sobre misma base n_total para ambas frases"
+      },
+      "C2_comparativo_agrado": {
+        "PTL_top2_pct": 53.5,
+        "DTLS_top2_pct": 42.0,
+        "PTL_base": 43,
+        "DTLS_base": 50,
+        "z_test": 1.107,
+        "p_value": 0.2681,
+        "significativo": false,
+        "nota": "Bases pequenas (n<50). Resultados referenciales.",
+        "flag": "REFERENCIAL bases bajas"
+      },
+      "C3_interpretacion_temas": {
+        "DTLS_relacional_pct": 26.0,
+        "DTLS_precio_pct": 42.0,
+        "PTL_precio_pct": 72.1,
+        "PTL_solidaridad_pct": 2.3,
+        "base_DTLS": 50,
+        "base_PTL": 43,
+        "flag": "REFERENCIAL n<30 — no proyectable",
+        "nota": "Interpretacion categorizada de open-ends. Temas no son excluyentes."
+      }
+    },
+    "D_zona_recreo": {
+      "D1_p44_gama_vs_zona": {
+        "descripcion": "Como se percibe Gama vs cadenas de la zona (solo El Recreo n=21)",
+        "n_validos": 21,
+        "distribucion": [
+          {
+            "categoria": "Igual",
+            "n": 16,
+            "pct": 76.2
+          },
+          {
+            "categoria": "Mucho mejor",
+            "n": 2,
+            "pct": 9.5
+          },
+          {
+            "categoria": "Mucho peor",
+            "n": 2,
+            "pct": 9.5
+          },
+          {
+            "categoria": "Mejor",
+            "n": 1,
+            "pct": 4.8
+          }
+        ],
+        "flag": "REFERENCIAL n<30 — SOLO INDICATIVO"
+      },
+      "D2_p45_disposicion": {
+        "descripcion": "Disposicion a comprar si Gama abre sucursal (solo El Recreo n=21)",
+        "n_validos": 21,
+        "distribucion": [
+          {
+            "categoria": "Dispuesto",
+            "n": 10,
+            "pct": 47.6
+          },
+          {
+            "categoria": "Algo dispuesto",
+            "n": 5,
+            "pct": 23.8
+          },
+          {
+            "categoria": "Muy Dispuesto",
+            "n": 3,
+            "pct": 14.3
+          },
+          {
+            "categoria": "Poco dispuesto",
+            "n": 2,
+            "pct": 9.5
+          },
+          {
+            "categoria": "Nada dispuesto",
+            "n": 1,
+            "pct": 4.8
+          }
+        ],
+        "por_nse": {
+          "C+/C": {
+            "n_base": 4,
+            "n_respondentes": 4,
+            "alta_disposicion_pct": 100.0
+          },
+          "D": {
+            "n_base": 3,
+            "n_respondentes": 3,
+            "alta_disposicion_pct": 33.3
+          },
+          "E": {
+            "n_base": 14,
+            "n_respondentes": 14,
+            "alta_disposicion_pct": 57.1
+          }
+        },
+        "flag": "REFERENCIAL n<30 — SOLO INDICATIVO"
+      }
+    },
+    "E_perfil_demografico": {
+      "E1_pf10_donde_hace_mercado": {
+        "descripcion": "Distribucion de tipos de establecimiento donde hace compras (multi-select)",
+        "tipos": {
+          "Supermercados de cadena": {
+            "n": 367,
+            "pct": 91.3
+          },
+          "Supermercados independientes grandes (mas de 2 cajas)": {
+            "n": 93,
+            "pct": 23.1
+          },
+          "Supermercados independientes pequenos (2 cajas o menos)": {
+            "n": 20,
+            "pct": 5.0
+          },
+          "Mercados populares": {
+            "n": 64,
+            "pct": 15.9
+          },
+          "Abastos / Bodegas": {
+            "n": 82,
+            "pct": 20.4
+          },
+          "Tiendas independientes / chinos": {
+            "n": 76,
+            "pct": 18.9
+          },
+          "Tiendas especializadas, tipo carniceria, fruteria, etc": {
+            "n": 46,
+            "pct": 11.4
+          },
+          "Mercados callejeros / Gochos": {
+            "n": 54,
+            "pct": 13.4
+          },
+          "Delivery / Aplicaciones": {
+            "n": 2,
+            "pct": 0.5
+          }
+        },
+        "cadenas_especificadas": {
+          "base": 367,
+          "nota": "Mencionadas entre quienes van a supermercados de cadena. Multi-mention posible.",
+          "ranking": [
+            {
+              "cadena": "Paramo",
+              "menciones": 119
+            },
+            {
+              "cadena": "Fórum",
+              "menciones": 87
+            },
+            {
+              "cadena": "Rio",
+              "menciones": 75
+            },
+            {
+              "cadena": "Central Madeirense",
+              "menciones": 71
+            },
+            {
+              "cadena": "Plaza",
+              "menciones": 59
+            },
+            {
+              "cadena": "Luz",
+              "menciones": 52
+            },
+            {
+              "cadena": "Gama",
+              "menciones": 50
+            },
+            {
+              "cadena": "Los chinos",
+              "menciones": 41
+            },
+            {
+              "cadena": "Plan  Suarez",
+              "menciones": 35
+            },
+            {
+              "cadena": "Hummy",
+              "menciones": 18
+            },
+            {
+              "cadena": "La granja",
+              "menciones": 17
+            },
+            {
+              "cadena": "Unicasa",
+              "menciones": 15
+            },
+            {
+              "cadena": "Híper Líder",
+              "menciones": 14
+            },
+            {
+              "cadena": "Bull King",
+              "menciones": 7
+            },
+            {
+              "cadena": "San jose",
+              "menciones": 6
+            },
+            {
+              "cadena": "Makro",
+              "menciones": 6
+            },
+            {
+              "cadena": "Ser",
+              "menciones": 4
+            },
+            {
+              "cadena": "Tapia",
+              "menciones": 4
+            },
+            {
+              "cadena": "Kalea",
+              "menciones": 4
+            },
+            {
+              "cadena": "Baratico",
+              "menciones": 4
+            },
+            {
+              "cadena": "Fresco Market",
+              "menciones": 4
+            },
+            {
+              "cadena": "Hippo",
+              "menciones": 3
+            },
+            {
+              "cadena": "Aliados 2",
+              "menciones": 3
+            },
+            {
+              "cadena": "Luvebras",
+              "menciones": 3
+            },
+            {
+              "cadena": "market",
+              "menciones": 3
+            },
+            {
+              "cadena": "Emporium",
+              "menciones": 2
+            },
+            {
+              "cadena": "Automercado Avila",
+              "menciones": 2
+            },
+            {
+              "cadena": "La muralla",
+              "menciones": 2
+            },
+            {
+              "cadena": "Rio vida",
+              "menciones": 2
+            },
+            {
+              "cadena": "Mas X MENOS",
+              "menciones": 2
+            },
+            {
+              "cadena": "Vale",
+              "menciones": 2
+            },
+            {
+              "cadena": "Vivas",
+              "menciones": 2
+            },
+            {
+              "cadena": "El gran albastro",
+              "menciones": 1
+            },
+            {
+              "cadena": "Maraplus",
+              "menciones": 1
+            },
+            {
+              "cadena": "Rezz",
+              "menciones": 1
+            },
+            {
+              "cadena": "224",
+              "menciones": 1
+            },
+            {
+              "cadena": "Licache",
+              "menciones": 1
+            },
+            {
+              "cadena": "Visa feliz",
+              "menciones": 1
+            },
+            {
+              "cadena": "Mi casa",
+              "menciones": 1
+            },
+            {
+              "cadena": "Cerca del ortopédico",
+              "menciones": 1
+            },
+            {
+              "cadena": "Cerkel",
+              "menciones": 1
+            },
+            {
+              "cadena": "Las minas",
+              "menciones": 1
+            },
+            {
+              "cadena": "Santa Elena",
+              "menciones": 1
+            },
+            {
+              "cadena": "Campos",
+              "menciones": 1
+            },
+            {
+              "cadena": "Comercio 77",
+              "menciones": 1
+            },
+            {
+              "cadena": "Centro comercial Maracaibo",
+              "menciones": 1
+            },
+            {
+              "cadena": "Donchacho",
+              "menciones": 1
+            },
+            {
+              "cadena": "Catia la silsa",
+              "menciones": 1
+            },
+            {
+              "cadena": "El panda",
+              "menciones": 1
+            },
+            {
+              "cadena": "Euros",
+              "menciones": 1
+            },
+            {
+              "cadena": "El diamante",
+              "menciones": 1
+            },
+            {
+              "cadena": "Yormano",
+              "menciones": 1
+            },
+            {
+              "cadena": "Punto al Mayor",
+              "menciones": 1
+            },
+            {
+              "cadena": "Punto mayor",
+              "menciones": 1
+            }
+          ]
+        }
+      },
+      "E2_pf8_x_pf9_perfil_respondente": {
+        "descripcion": "Cruce relacion con zona (PF8) x rol decision compras (PF9)",
+        "pf8": {
+          "label": "PF8 Relacion zona",
+          "n_base": 402,
+          "n_validos": 402,
+          "rows": [
+            {
+              "categoria": "Vivo en la zona",
+              "n": 251,
+              "pct": 62.4,
+              "ic95_lo": 57.6,
+              "ic95_hi": 67.0,
+              "flag": ""
+            },
+            {
+              "categoria": "Trabajo en la zona",
+              "n": 104,
+              "pct": 25.9,
+              "ic95_lo": 21.8,
+              "ic95_hi": 30.4,
+              "flag": ""
+            },
+            {
+              "categoria": "No vivo ni trabajo en la zona, pero la visito con frecuencia",
+              "n": 39,
+              "pct": 9.7,
+              "ic95_lo": 7.2,
+              "ic95_hi": 13.0,
+              "flag": ""
+            },
+            {
+              "categoria": "Pasaba por aqui por casualidad",
+              "n": 8,
+              "pct": 2.0,
+              "ic95_lo": 1.0,
+              "ic95_hi": 3.9,
+              "flag": "REFERENCIAL"
+            }
+          ]
+        },
+        "pf9": {
+          "label": "PF9 Rol decision",
+          "n_base": 402,
+          "n_validos": 402,
+          "rows": [
+            {
+              "categoria": "Yo soy responsable del 50% o mÃ¡s de las decisiones",
+              "n": 251,
+              "pct": 62.4,
+              "ic95_lo": 57.6,
+              "ic95_hi": 67.0,
+              "flag": ""
+            },
+            {
+              "categoria": "Yo soy la Ãºnica persona que toma las decisiones",
+              "n": 151,
+              "pct": 37.6,
+              "ic95_lo": 33.0,
+              "ic95_hi": 42.4,
+              "flag": ""
+            }
+          ]
+        }
+      }
+    }
+  },
+  "extension_v2_referencia": {
+    "fecha": "2026-05-18",
+    "archivo": "CU8_v2_extension_20260518.json",
+    "descripcion": "Extension v2 con 5 analisis adicionales: NEW-1 subset economico, NEW-2 P33xP21, NEW-3 capitulo lugar-precio, NEW-4 balance optimo, EXPRESS hipotesis formato",
+    "hallazgos_clave": {
+      "OR_percepcion_favorable_P33": 2.4,
+      "OR_IC95": [
+        1.12,
+        5.12
+      ],
+      "chi2_P33_x_P21": 21.941,
+      "p_value_P33_x_P21": 0.00021,
+      "cramers_v": 0.234,
+      "n_subset_economico": 185,
+      "pct_subset_economico": 46.0,
+      "categorias_desconexion_gama_top3": [
+        "Gaseosas (+4.0pp habito vs precio)",
+        "Congelados (+3.3pp)",
+        "Salsas y Enlatados (+3.0pp)"
+      ],
+      "categorias_criticas_precio_balance": [
+        "Carne de res",
+        "Charcuteria",
+        "Pollo"
+      ],
+      "urgencia_nse_liderazgo_gama": {
+        "C+/C": "16.3% (lider)",
+        "D": "15.0% (lider)",
+        "E": "7.6% (no lider)"
+      },
+      "variable_formato_disponible": false,
+      "hipotesis_express": "COMPATIBLE_NO_PROBADA"
+    }
+  }
+}
