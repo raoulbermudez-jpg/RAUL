@@ -1,0 +1,6800 @@
+{
+  "metadata": {
+    "proyecto": "Gama Notoriedad 2026",
+    "cu": "CU-10",
+    "version": "v8",
+    "fecha": "2026-05-18",
+    "n_total": 402,
+    "n_cc": 104,
+    "n_pg": 32,
+    "alpha": 0.05,
+    "base_baja": 30,
+    "vif_threshold": 10,
+    "ic_method": "Newcombe-Wilson",
+    "script": "cu10_v8_analisis.py",
+    "e3_corregido": true,
+    "e3_fix_fecha": "2026-05-18"
+  },
+  "E1_topbox_puro": {
+    "analisis": "E1",
+    "descripcion": "P22 Top Box puro (Muy Importante) por segmento y marca preferida",
+    "metodo": "TB = solo valor 5 (Muy Importante). T2B = valores 4+5. IC95 Newcombe-Wilson.",
+    "grupos": {
+      "Total": {
+        "n": 402,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 257,
+            "pct_tb": 63.9,
+            "n_t2b": 392,
+            "pct_t2b": 97.5,
+            "diff_tb_vs_t2b_pp": 33.6,
+            "ic95_tb_lo": 59.1,
+            "ic95_tb_hi": 68.5,
+            "mean_score": 4.61,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 1,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 230,
+            "pct_tb": 57.2,
+            "n_t2b": 384,
+            "pct_t2b": 95.5,
+            "diff_tb_vs_t2b_pp": 38.3,
+            "ic95_tb_lo": 52.3,
+            "ic95_tb_hi": 62.0,
+            "mean_score": 4.52,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 6,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 232,
+            "pct_tb": 57.7,
+            "n_t2b": 386,
+            "pct_t2b": 96.0,
+            "diff_tb_vs_t2b_pp": 38.3,
+            "ic95_tb_lo": 52.8,
+            "ic95_tb_hi": 62.4,
+            "mean_score": 4.53,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 4,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 236,
+            "pct_tb": 58.7,
+            "n_t2b": 378,
+            "pct_t2b": 94.0,
+            "diff_tb_vs_t2b_pp": 35.3,
+            "ic95_tb_lo": 53.8,
+            "ic95_tb_hi": 63.4,
+            "mean_score": 4.51,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 7,
+            "rank_delta": 4
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 251,
+            "pct_tb": 62.4,
+            "n_t2b": 378,
+            "pct_t2b": 94.0,
+            "diff_tb_vs_t2b_pp": 31.6,
+            "ic95_tb_lo": 57.6,
+            "ic95_tb_hi": 67.0,
+            "mean_score": 4.55,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 8,
+            "rank_delta": 6
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 171,
+            "pct_tb": 42.5,
+            "n_t2b": 339,
+            "pct_t2b": 84.3,
+            "diff_tb_vs_t2b_pp": 41.8,
+            "ic95_tb_lo": 37.8,
+            "ic95_tb_hi": 47.4,
+            "mean_score": 4.21,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 203,
+            "pct_tb": 50.5,
+            "n_t2b": 360,
+            "pct_t2b": 89.6,
+            "diff_tb_vs_t2b_pp": 39.1,
+            "ic95_tb_lo": 45.6,
+            "ic95_tb_hi": 55.4,
+            "mean_score": 4.38,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 9,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 236,
+            "pct_tb": 58.7,
+            "n_t2b": 392,
+            "pct_t2b": 97.5,
+            "diff_tb_vs_t2b_pp": 38.8,
+            "ic95_tb_lo": 53.8,
+            "ic95_tb_hi": 63.4,
+            "mean_score": 4.55,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 2,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 229,
+            "pct_tb": 57.0,
+            "n_t2b": 386,
+            "pct_t2b": 96.0,
+            "diff_tb_vs_t2b_pp": 39.0,
+            "ic95_tb_lo": 52.1,
+            "ic95_tb_hi": 61.7,
+            "mean_score": 4.52,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 5,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 402,
+            "n_valid": 402,
+            "n_tb": 232,
+            "pct_tb": 57.7,
+            "n_t2b": 388,
+            "pct_t2b": 96.5,
+            "diff_tb_vs_t2b_pp": 38.8,
+            "ic95_tb_lo": 52.8,
+            "ic95_tb_hi": 62.4,
+            "mean_score": 4.54,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 3,
+            "rank_delta": -3
+          }
+        ],
+        "top5_tb": [
+          "limpieza",
+          "menor_precio",
+          "rapidez",
+          "calidad",
+          "seguro"
+        ],
+        "top5_t2b": [
+          "limpieza",
+          "calidad",
+          "valer_dinero",
+          "seguro",
+          "atencion"
+        ],
+        "top5_cambia": true
+      },
+      "C+/C": {
+        "n": 104,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 66,
+            "pct_tb": 63.5,
+            "n_t2b": 100,
+            "pct_t2b": 96.2,
+            "diff_tb_vs_t2b_pp": 32.7,
+            "ic95_tb_lo": 53.9,
+            "ic95_tb_hi": 72.1,
+            "mean_score": 4.6,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 2,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 52,
+            "pct_tb": 50.0,
+            "n_t2b": 95,
+            "pct_t2b": 91.3,
+            "diff_tb_vs_t2b_pp": 41.3,
+            "ic95_tb_lo": 40.6,
+            "ic95_tb_hi": 59.4,
+            "mean_score": 4.4,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 8,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 63,
+            "pct_tb": 60.6,
+            "n_t2b": 99,
+            "pct_t2b": 95.2,
+            "diff_tb_vs_t2b_pp": 34.6,
+            "ic95_tb_lo": 51.0,
+            "ic95_tb_hi": 69.4,
+            "mean_score": 4.55,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 3,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 64,
+            "pct_tb": 61.5,
+            "n_t2b": 101,
+            "pct_t2b": 97.1,
+            "diff_tb_vs_t2b_pp": 35.6,
+            "ic95_tb_lo": 51.9,
+            "ic95_tb_hi": 70.3,
+            "mean_score": 4.58,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 1,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 63,
+            "pct_tb": 60.6,
+            "n_t2b": 97,
+            "pct_t2b": 93.3,
+            "diff_tb_vs_t2b_pp": 32.7,
+            "ic95_tb_lo": 51.0,
+            "ic95_tb_hi": 69.4,
+            "mean_score": 4.53,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 7,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 49,
+            "pct_tb": 47.1,
+            "n_t2b": 83,
+            "pct_t2b": 79.8,
+            "diff_tb_vs_t2b_pp": 32.7,
+            "ic95_tb_lo": 37.8,
+            "ic95_tb_hi": 56.6,
+            "mean_score": 4.18,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 10,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 48,
+            "pct_tb": 46.2,
+            "n_t2b": 88,
+            "pct_t2b": 84.6,
+            "diff_tb_vs_t2b_pp": 38.4,
+            "ic95_tb_lo": 36.9,
+            "ic95_tb_hi": 55.7,
+            "mean_score": 4.28,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 9,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 57,
+            "pct_tb": 54.8,
+            "n_t2b": 98,
+            "pct_t2b": 94.2,
+            "diff_tb_vs_t2b_pp": 39.4,
+            "ic95_tb_lo": 45.2,
+            "ic95_tb_hi": 64.0,
+            "mean_score": 4.47,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 6,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 67,
+            "pct_tb": 64.4,
+            "n_t2b": 99,
+            "pct_t2b": 95.2,
+            "diff_tb_vs_t2b_pp": 30.8,
+            "ic95_tb_lo": 54.9,
+            "ic95_tb_hi": 73.0,
+            "mean_score": 4.6,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 4,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 104,
+            "n_valid": 104,
+            "n_tb": 65,
+            "pct_tb": 62.5,
+            "n_t2b": 99,
+            "pct_t2b": 95.2,
+            "diff_tb_vs_t2b_pp": 32.7,
+            "ic95_tb_lo": 52.9,
+            "ic95_tb_hi": 71.2,
+            "mean_score": 4.57,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 5,
+            "rank_delta": 2
+          }
+        ],
+        "top5_tb": [
+          "atencion",
+          "limpieza",
+          "valer_dinero",
+          "rapidez",
+          "seguro"
+        ],
+        "top5_t2b": [
+          "rapidez",
+          "limpieza",
+          "seguro",
+          "atencion",
+          "valer_dinero"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Gama": {
+        "n": 32,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 21,
+            "pct_tb": 65.6,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 34.4,
+            "ic95_tb_lo": 48.3,
+            "ic95_tb_hi": 79.6,
+            "mean_score": 4.66,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 1,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 20,
+            "pct_tb": 62.5,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 37.5,
+            "ic95_tb_lo": 45.3,
+            "ic95_tb_hi": 77.1,
+            "mean_score": 4.62,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 2,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 18,
+            "pct_tb": 56.2,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 43.8,
+            "ic95_tb_lo": 39.3,
+            "ic95_tb_hi": 71.8,
+            "mean_score": 4.56,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 3,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 27,
+            "pct_tb": 84.4,
+            "n_t2b": 31,
+            "pct_t2b": 96.9,
+            "diff_tb_vs_t2b_pp": 12.5,
+            "ic95_tb_lo": 68.2,
+            "ic95_tb_hi": 93.1,
+            "mean_score": 4.81,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 7,
+            "rank_delta": 6
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 16,
+            "pct_tb": 50.0,
+            "n_t2b": 30,
+            "pct_t2b": 93.8,
+            "diff_tb_vs_t2b_pp": 43.8,
+            "ic95_tb_lo": 33.6,
+            "ic95_tb_hi": 66.4,
+            "mean_score": 4.44,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 9,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 17,
+            "pct_tb": 53.1,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 46.9,
+            "ic95_tb_lo": 36.4,
+            "ic95_tb_hi": 69.1,
+            "mean_score": 4.53,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 4,
+            "rank_delta": -4
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 16,
+            "pct_tb": 50.0,
+            "n_t2b": 28,
+            "pct_t2b": 87.5,
+            "diff_tb_vs_t2b_pp": 37.5,
+            "ic95_tb_lo": 33.6,
+            "ic95_tb_hi": 66.4,
+            "mean_score": 4.34,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 18,
+            "pct_tb": 56.2,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 43.8,
+            "ic95_tb_lo": 39.3,
+            "ic95_tb_hi": 71.8,
+            "mean_score": 4.56,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 5,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 23,
+            "pct_tb": 71.9,
+            "n_t2b": 31,
+            "pct_t2b": 96.9,
+            "diff_tb_vs_t2b_pp": 25.0,
+            "ic95_tb_lo": 54.6,
+            "ic95_tb_hi": 84.4,
+            "mean_score": 4.69,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 8,
+            "rank_delta": 6
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 23,
+            "pct_tb": 71.9,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 28.1,
+            "ic95_tb_lo": 54.6,
+            "ic95_tb_hi": 84.4,
+            "mean_score": 4.72,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 6,
+            "rank_delta": 3
+          }
+        ],
+        "top5_tb": [
+          "rapidez",
+          "atencion",
+          "valer_dinero",
+          "limpieza",
+          "surtido"
+        ],
+        "top5_t2b": [
+          "limpieza",
+          "surtido",
+          "seguro",
+          "atractiva",
+          "calidad"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Paramo": {
+        "n": 85,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 54,
+            "pct_tb": 63.5,
+            "n_t2b": 82,
+            "pct_t2b": 96.5,
+            "diff_tb_vs_t2b_pp": 33.0,
+            "ic95_tb_lo": 52.9,
+            "ic95_tb_hi": 73.0,
+            "mean_score": 4.59,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 2,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 48,
+            "pct_tb": 56.5,
+            "n_t2b": 81,
+            "pct_t2b": 95.3,
+            "diff_tb_vs_t2b_pp": 38.8,
+            "ic95_tb_lo": 45.9,
+            "ic95_tb_hi": 66.5,
+            "mean_score": 4.52,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 4,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 53,
+            "pct_tb": 62.4,
+            "n_t2b": 83,
+            "pct_t2b": 97.6,
+            "diff_tb_vs_t2b_pp": 35.2,
+            "ic95_tb_lo": 51.7,
+            "ic95_tb_hi": 71.9,
+            "mean_score": 4.6,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 1,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 50,
+            "pct_tb": 58.8,
+            "n_t2b": 82,
+            "pct_t2b": 96.5,
+            "diff_tb_vs_t2b_pp": 37.7,
+            "ic95_tb_lo": 48.2,
+            "ic95_tb_hi": 68.7,
+            "mean_score": 4.54,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 3,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 57,
+            "pct_tb": 67.1,
+            "n_t2b": 81,
+            "pct_t2b": 95.3,
+            "diff_tb_vs_t2b_pp": 28.2,
+            "ic95_tb_lo": 56.5,
+            "ic95_tb_hi": 76.1,
+            "mean_score": 4.61,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 5,
+            "rank_delta": 4
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 34,
+            "pct_tb": 40.0,
+            "n_t2b": 71,
+            "pct_t2b": 83.5,
+            "diff_tb_vs_t2b_pp": 43.5,
+            "ic95_tb_lo": 30.2,
+            "ic95_tb_hi": 50.6,
+            "mean_score": 4.19,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 46,
+            "pct_tb": 54.1,
+            "n_t2b": 78,
+            "pct_t2b": 91.8,
+            "diff_tb_vs_t2b_pp": 37.7,
+            "ic95_tb_lo": 43.6,
+            "ic95_tb_hi": 64.3,
+            "mean_score": 4.44,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 9,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 46,
+            "pct_tb": 54.1,
+            "n_t2b": 81,
+            "pct_t2b": 95.3,
+            "diff_tb_vs_t2b_pp": 41.2,
+            "ic95_tb_lo": 43.6,
+            "ic95_tb_hi": 64.3,
+            "mean_score": 4.45,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 6,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 47,
+            "pct_tb": 55.3,
+            "n_t2b": 81,
+            "pct_t2b": 95.3,
+            "diff_tb_vs_t2b_pp": 40.0,
+            "ic95_tb_lo": 44.7,
+            "ic95_tb_hi": 65.4,
+            "mean_score": 4.49,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 7,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 85,
+            "n_valid": 85,
+            "n_tb": 48,
+            "pct_tb": 56.5,
+            "n_t2b": 81,
+            "pct_t2b": 95.3,
+            "diff_tb_vs_t2b_pp": 38.8,
+            "ic95_tb_lo": 45.9,
+            "ic95_tb_hi": 66.5,
+            "mean_score": 4.52,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 8,
+            "rank_delta": 2
+          }
+        ],
+        "top5_tb": [
+          "menor_precio",
+          "limpieza",
+          "seguro",
+          "rapidez",
+          "surtido"
+        ],
+        "top5_t2b": [
+          "seguro",
+          "limpieza",
+          "rapidez",
+          "surtido",
+          "menor_precio"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Rio": {
+        "n": 41,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 25,
+            "pct_tb": 61.0,
+            "n_t2b": 40,
+            "pct_t2b": 97.6,
+            "diff_tb_vs_t2b_pp": 36.6,
+            "ic95_tb_lo": 45.7,
+            "ic95_tb_hi": 74.3,
+            "mean_score": 4.59,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 2,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 26,
+            "pct_tb": 63.4,
+            "n_t2b": 39,
+            "pct_t2b": 95.1,
+            "diff_tb_vs_t2b_pp": 31.7,
+            "ic95_tb_lo": 48.1,
+            "ic95_tb_hi": 76.4,
+            "mean_score": 4.56,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 5,
+            "rank_delta": 4
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 24,
+            "pct_tb": 58.5,
+            "n_t2b": 41,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 41.5,
+            "ic95_tb_lo": 43.4,
+            "ic95_tb_hi": 72.2,
+            "mean_score": 4.59,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 1,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 25,
+            "pct_tb": 61.0,
+            "n_t2b": 38,
+            "pct_t2b": 92.7,
+            "diff_tb_vs_t2b_pp": 31.7,
+            "ic95_tb_lo": 45.7,
+            "ic95_tb_hi": 74.3,
+            "mean_score": 4.51,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 7,
+            "rank_delta": 4
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 24,
+            "pct_tb": 58.5,
+            "n_t2b": 38,
+            "pct_t2b": 92.7,
+            "diff_tb_vs_t2b_pp": 34.2,
+            "ic95_tb_lo": 43.4,
+            "ic95_tb_hi": 72.2,
+            "mean_score": 4.51,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 8,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 15,
+            "pct_tb": 36.6,
+            "n_t2b": 31,
+            "pct_t2b": 75.6,
+            "diff_tb_vs_t2b_pp": 39.0,
+            "ic95_tb_lo": 23.6,
+            "ic95_tb_hi": 51.9,
+            "mean_score": 4.05,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 21,
+            "pct_tb": 51.2,
+            "n_t2b": 34,
+            "pct_t2b": 82.9,
+            "diff_tb_vs_t2b_pp": 31.7,
+            "ic95_tb_lo": 36.5,
+            "ic95_tb_hi": 65.7,
+            "mean_score": 4.29,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 9,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 23,
+            "pct_tb": 56.1,
+            "n_t2b": 40,
+            "pct_t2b": 97.6,
+            "diff_tb_vs_t2b_pp": 41.5,
+            "ic95_tb_lo": 41.0,
+            "ic95_tb_hi": 70.1,
+            "mean_score": 4.54,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 3,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 19,
+            "pct_tb": 46.3,
+            "n_t2b": 39,
+            "pct_t2b": 95.1,
+            "diff_tb_vs_t2b_pp": 48.8,
+            "ic95_tb_lo": 32.1,
+            "ic95_tb_hi": 61.3,
+            "mean_score": 4.41,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 6,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 41,
+            "n_valid": 41,
+            "n_tb": 23,
+            "pct_tb": 56.1,
+            "n_t2b": 40,
+            "pct_t2b": 97.6,
+            "diff_tb_vs_t2b_pp": 41.5,
+            "ic95_tb_lo": 41.0,
+            "ic95_tb_hi": 70.1,
+            "mean_score": 4.54,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 4,
+            "rank_delta": -3
+          }
+        ],
+        "top5_tb": [
+          "surtido",
+          "limpieza",
+          "rapidez",
+          "seguro",
+          "menor_precio"
+        ],
+        "top5_t2b": [
+          "seguro",
+          "limpieza",
+          "calidad",
+          "valer_dinero",
+          "surtido"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Plan Suarez": {
+        "n": 28,
+        "flag": "REFERENCIAL",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 22,
+            "pct_tb": 78.6,
+            "n_t2b": 26,
+            "pct_t2b": 92.9,
+            "diff_tb_vs_t2b_pp": 14.3,
+            "ic95_tb_lo": 60.5,
+            "ic95_tb_hi": 89.8,
+            "mean_score": 4.71,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 1,
+            "ranking_t2b": 5,
+            "rank_delta": 4
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 13,
+            "pct_tb": 46.4,
+            "n_t2b": 26,
+            "pct_t2b": 92.9,
+            "diff_tb_vs_t2b_pp": 46.5,
+            "ic95_tb_lo": 29.5,
+            "ic95_tb_hi": 64.2,
+            "mean_score": 4.39,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 10,
+            "ranking_t2b": 6,
+            "rank_delta": -4
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 15,
+            "pct_tb": 53.6,
+            "n_t2b": 27,
+            "pct_t2b": 96.4,
+            "diff_tb_vs_t2b_pp": 42.8,
+            "ic95_tb_lo": 35.8,
+            "ic95_tb_hi": 70.5,
+            "mean_score": 4.5,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 8,
+            "ranking_t2b": 4,
+            "rank_delta": -4
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 17,
+            "pct_tb": 60.7,
+            "n_t2b": 25,
+            "pct_t2b": 89.3,
+            "diff_tb_vs_t2b_pp": 28.6,
+            "ic95_tb_lo": 42.4,
+            "ic95_tb_hi": 76.4,
+            "mean_score": 4.5,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 6,
+            "ranking_t2b": 9,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 18,
+            "pct_tb": 64.3,
+            "n_t2b": 26,
+            "pct_t2b": 92.9,
+            "diff_tb_vs_t2b_pp": 28.6,
+            "ic95_tb_lo": 45.8,
+            "ic95_tb_hi": 79.3,
+            "mean_score": 4.57,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 4,
+            "ranking_t2b": 7,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 15,
+            "pct_tb": 53.6,
+            "n_t2b": 22,
+            "pct_t2b": 78.6,
+            "diff_tb_vs_t2b_pp": 25.0,
+            "ic95_tb_lo": 35.8,
+            "ic95_tb_hi": 70.5,
+            "mean_score": 4.14,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 9,
+            "ranking_t2b": 10,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 21,
+            "pct_tb": 75.0,
+            "n_t2b": 28,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 25.0,
+            "ic95_tb_lo": 56.6,
+            "ic95_tb_hi": 87.3,
+            "mean_score": 4.75,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 2,
+            "ranking_t2b": 1,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 19,
+            "pct_tb": 67.9,
+            "n_t2b": 28,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 32.1,
+            "ic95_tb_lo": 49.3,
+            "ic95_tb_hi": 82.1,
+            "mean_score": 4.68,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 3,
+            "ranking_t2b": 2,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 18,
+            "pct_tb": 64.3,
+            "n_t2b": 26,
+            "pct_t2b": 92.9,
+            "diff_tb_vs_t2b_pp": 28.6,
+            "ic95_tb_lo": 45.8,
+            "ic95_tb_hi": 79.3,
+            "mean_score": 4.57,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 5,
+            "ranking_t2b": 8,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 28,
+            "n_valid": 28,
+            "n_tb": 16,
+            "pct_tb": 57.1,
+            "n_t2b": 28,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 42.9,
+            "ic95_tb_lo": 39.1,
+            "ic95_tb_hi": 73.5,
+            "mean_score": 4.57,
+            "flag": "REFERENCIAL",
+            "ranking_tb": 7,
+            "ranking_t2b": 3,
+            "rank_delta": -4
+          }
+        ],
+        "top5_tb": [
+          "limpieza",
+          "promociones",
+          "calidad",
+          "menor_precio",
+          "atencion"
+        ],
+        "top5_t2b": [
+          "promociones",
+          "calidad",
+          "valer_dinero",
+          "seguro",
+          "limpieza"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Central Madeirense": {
+        "n": 45,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 25,
+            "pct_tb": 55.6,
+            "n_t2b": 45,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 44.4,
+            "ic95_tb_lo": 41.2,
+            "ic95_tb_hi": 69.1,
+            "mean_score": 4.56,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 1,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 27,
+            "pct_tb": 60.0,
+            "n_t2b": 44,
+            "pct_t2b": 97.8,
+            "diff_tb_vs_t2b_pp": 37.8,
+            "ic95_tb_lo": 45.5,
+            "ic95_tb_hi": 73.0,
+            "mean_score": 4.58,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 2,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 22,
+            "pct_tb": 48.9,
+            "n_t2b": 40,
+            "pct_t2b": 88.9,
+            "diff_tb_vs_t2b_pp": 40.0,
+            "ic95_tb_lo": 35.0,
+            "ic95_tb_hi": 63.0,
+            "mean_score": 4.33,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 6,
+            "rank_delta": 2
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 19,
+            "pct_tb": 42.2,
+            "n_t2b": 40,
+            "pct_t2b": 88.9,
+            "diff_tb_vs_t2b_pp": 46.7,
+            "ic95_tb_lo": 29.0,
+            "ic95_tb_hi": 56.7,
+            "mean_score": 4.24,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 7,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 25,
+            "pct_tb": 55.6,
+            "n_t2b": 40,
+            "pct_t2b": 88.9,
+            "diff_tb_vs_t2b_pp": 33.3,
+            "ic95_tb_lo": 41.2,
+            "ic95_tb_hi": 69.1,
+            "mean_score": 4.4,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 8,
+            "rank_delta": 5
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 17,
+            "pct_tb": 37.8,
+            "n_t2b": 35,
+            "pct_t2b": 77.8,
+            "diff_tb_vs_t2b_pp": 40.0,
+            "ic95_tb_lo": 25.1,
+            "ic95_tb_hi": 52.4,
+            "mean_score": 4.04,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 18,
+            "pct_tb": 40.0,
+            "n_t2b": 39,
+            "pct_t2b": 86.7,
+            "diff_tb_vs_t2b_pp": 46.7,
+            "ic95_tb_lo": 27.0,
+            "ic95_tb_hi": 54.5,
+            "mean_score": 4.27,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 9,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 22,
+            "pct_tb": 48.9,
+            "n_t2b": 44,
+            "pct_t2b": 97.8,
+            "diff_tb_vs_t2b_pp": 48.9,
+            "ic95_tb_lo": 35.0,
+            "ic95_tb_hi": 63.0,
+            "mean_score": 4.44,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 3,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 21,
+            "pct_tb": 46.7,
+            "n_t2b": 42,
+            "pct_t2b": 93.3,
+            "diff_tb_vs_t2b_pp": 46.6,
+            "ic95_tb_lo": 32.9,
+            "ic95_tb_hi": 60.9,
+            "mean_score": 4.33,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 5,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 45,
+            "n_valid": 45,
+            "n_tb": 21,
+            "pct_tb": 46.7,
+            "n_t2b": 43,
+            "pct_t2b": 95.6,
+            "diff_tb_vs_t2b_pp": 48.9,
+            "ic95_tb_lo": 32.9,
+            "ic95_tb_hi": 60.9,
+            "mean_score": 4.42,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 4,
+            "rank_delta": -3
+          }
+        ],
+        "top5_tb": [
+          "surtido",
+          "limpieza",
+          "menor_precio",
+          "seguro",
+          "calidad"
+        ],
+        "top5_t2b": [
+          "limpieza",
+          "surtido",
+          "calidad",
+          "valer_dinero",
+          "atencion"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Forum": {
+        "n": 44,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 25,
+            "pct_tb": 56.8,
+            "n_t2b": 43,
+            "pct_t2b": 97.7,
+            "diff_tb_vs_t2b_pp": 40.9,
+            "ic95_tb_lo": 42.2,
+            "ic95_tb_hi": 70.3,
+            "mean_score": 4.55,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 2,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 27,
+            "pct_tb": 61.4,
+            "n_t2b": 39,
+            "pct_t2b": 88.6,
+            "diff_tb_vs_t2b_pp": 27.2,
+            "ic95_tb_lo": 46.6,
+            "ic95_tb_hi": 74.3,
+            "mean_score": 4.5,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 9,
+            "rank_delta": 7
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 24,
+            "pct_tb": 54.5,
+            "n_t2b": 41,
+            "pct_t2b": 93.2,
+            "diff_tb_vs_t2b_pp": 38.7,
+            "ic95_tb_lo": 40.1,
+            "ic95_tb_hi": 68.3,
+            "mean_score": 4.45,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 5,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 27,
+            "pct_tb": 61.4,
+            "n_t2b": 42,
+            "pct_t2b": 95.5,
+            "diff_tb_vs_t2b_pp": 34.1,
+            "ic95_tb_lo": 46.6,
+            "ic95_tb_hi": 74.3,
+            "mean_score": 4.57,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 4,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 27,
+            "pct_tb": 61.4,
+            "n_t2b": 40,
+            "pct_t2b": 90.9,
+            "diff_tb_vs_t2b_pp": 29.5,
+            "ic95_tb_lo": 46.6,
+            "ic95_tb_hi": 74.3,
+            "mean_score": 4.52,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 7,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 19,
+            "pct_tb": 43.2,
+            "n_t2b": 36,
+            "pct_t2b": 81.8,
+            "diff_tb_vs_t2b_pp": 38.6,
+            "ic95_tb_lo": 29.7,
+            "ic95_tb_hi": 57.8,
+            "mean_score": 4.2,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 20,
+            "pct_tb": 45.5,
+            "n_t2b": 40,
+            "pct_t2b": 90.9,
+            "diff_tb_vs_t2b_pp": 45.4,
+            "ic95_tb_lo": 31.7,
+            "ic95_tb_hi": 59.9,
+            "mean_score": 4.34,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 8,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 29,
+            "pct_tb": 65.9,
+            "n_t2b": 44,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 34.1,
+            "ic95_tb_lo": 51.1,
+            "ic95_tb_hi": 78.1,
+            "mean_score": 4.66,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 1,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 23,
+            "pct_tb": 52.3,
+            "n_t2b": 41,
+            "pct_t2b": 93.2,
+            "diff_tb_vs_t2b_pp": 40.9,
+            "ic95_tb_lo": 37.9,
+            "ic95_tb_hi": 66.2,
+            "mean_score": 4.45,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 6,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 44,
+            "n_valid": 44,
+            "n_tb": 25,
+            "pct_tb": 56.8,
+            "n_t2b": 43,
+            "pct_t2b": 97.7,
+            "diff_tb_vs_t2b_pp": 40.9,
+            "ic95_tb_lo": 42.2,
+            "ic95_tb_hi": 70.3,
+            "mean_score": 4.55,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 3,
+            "rank_delta": -3
+          }
+        ],
+        "top5_tb": [
+          "calidad",
+          "surtido",
+          "rapidez",
+          "menor_precio",
+          "limpieza"
+        ],
+        "top5_t2b": [
+          "calidad",
+          "limpieza",
+          "valer_dinero",
+          "rapidez",
+          "seguro"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Plazas": {
+        "n": 37,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 28,
+            "pct_tb": 75.7,
+            "n_t2b": 37,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 24.3,
+            "ic95_tb_lo": 59.9,
+            "ic95_tb_hi": 86.6,
+            "mean_score": 4.76,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 1,
+            "rank_delta": 0
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 17,
+            "pct_tb": 45.9,
+            "n_t2b": 35,
+            "pct_t2b": 94.6,
+            "diff_tb_vs_t2b_pp": 48.7,
+            "ic95_tb_lo": 31.0,
+            "ic95_tb_hi": 61.6,
+            "mean_score": 4.41,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 5,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 22,
+            "pct_tb": 59.5,
+            "n_t2b": 36,
+            "pct_t2b": 97.3,
+            "diff_tb_vs_t2b_pp": 37.8,
+            "ic95_tb_lo": 43.5,
+            "ic95_tb_hi": 73.7,
+            "mean_score": 4.57,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 3,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 18,
+            "pct_tb": 48.6,
+            "n_t2b": 34,
+            "pct_t2b": 91.9,
+            "diff_tb_vs_t2b_pp": 43.3,
+            "ic95_tb_lo": 33.4,
+            "ic95_tb_hi": 64.1,
+            "mean_score": 4.41,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 7,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 20,
+            "pct_tb": 54.1,
+            "n_t2b": 35,
+            "pct_t2b": 94.6,
+            "diff_tb_vs_t2b_pp": 40.5,
+            "ic95_tb_lo": 38.4,
+            "ic95_tb_hi": 69.0,
+            "mean_score": 4.49,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 6,
+            "rank_delta": 2
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 13,
+            "pct_tb": 35.1,
+            "n_t2b": 33,
+            "pct_t2b": 89.2,
+            "diff_tb_vs_t2b_pp": 54.1,
+            "ic95_tb_lo": 21.8,
+            "ic95_tb_hi": 51.2,
+            "mean_score": 4.16,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 8,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 18,
+            "pct_tb": 48.6,
+            "n_t2b": 33,
+            "pct_t2b": 89.2,
+            "diff_tb_vs_t2b_pp": 40.6,
+            "ic95_tb_lo": 33.4,
+            "ic95_tb_hi": 64.1,
+            "mean_score": 4.35,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 9,
+            "rank_delta": 2
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 22,
+            "pct_tb": 59.5,
+            "n_t2b": 36,
+            "pct_t2b": 97.3,
+            "diff_tb_vs_t2b_pp": 37.8,
+            "ic95_tb_lo": 43.5,
+            "ic95_tb_hi": 73.7,
+            "mean_score": 4.57,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 4,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 20,
+            "pct_tb": 54.1,
+            "n_t2b": 37,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 45.9,
+            "ic95_tb_lo": 38.4,
+            "ic95_tb_hi": 69.0,
+            "mean_score": 4.54,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 2,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 37,
+            "n_valid": 37,
+            "n_tb": 13,
+            "pct_tb": 35.1,
+            "n_t2b": 31,
+            "pct_t2b": 83.8,
+            "diff_tb_vs_t2b_pp": 48.7,
+            "ic95_tb_lo": 21.8,
+            "ic95_tb_hi": 51.2,
+            "mean_score": 4.14,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 10,
+            "rank_delta": 0
+          }
+        ],
+        "top5_tb": [
+          "limpieza",
+          "seguro",
+          "calidad",
+          "menor_precio",
+          "atencion"
+        ],
+        "top5_t2b": [
+          "limpieza",
+          "atencion",
+          "seguro",
+          "calidad",
+          "surtido"
+        ],
+        "top5_cambia": true
+      },
+      "Pref-Luz": {
+        "n": 32,
+        "flag": "OK",
+        "items": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 19,
+            "pct_tb": 59.4,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 40.6,
+            "ic95_tb_lo": 42.3,
+            "ic95_tb_hi": 74.5,
+            "mean_score": 4.59,
+            "flag": "OK",
+            "ranking_tb": 3,
+            "ranking_t2b": 1,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 15,
+            "pct_tb": 46.9,
+            "n_t2b": 31,
+            "pct_t2b": 96.9,
+            "diff_tb_vs_t2b_pp": 50.0,
+            "ic95_tb_lo": 30.9,
+            "ic95_tb_hi": 63.6,
+            "mean_score": 4.41,
+            "flag": "OK",
+            "ranking_tb": 7,
+            "ranking_t2b": 6,
+            "rank_delta": -1
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 17,
+            "pct_tb": 53.1,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 46.9,
+            "ic95_tb_lo": 36.4,
+            "ic95_tb_hi": 69.1,
+            "mean_score": 4.53,
+            "flag": "OK",
+            "ranking_tb": 5,
+            "ranking_t2b": 2,
+            "rank_delta": -3
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 12,
+            "pct_tb": 37.5,
+            "n_t2b": 30,
+            "pct_t2b": 93.8,
+            "diff_tb_vs_t2b_pp": 56.3,
+            "ic95_tb_lo": 22.9,
+            "ic95_tb_hi": 54.7,
+            "mean_score": 4.28,
+            "flag": "OK",
+            "ranking_tb": 10,
+            "ranking_t2b": 8,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 24,
+            "pct_tb": 75.0,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 25.0,
+            "ic95_tb_lo": 57.9,
+            "ic95_tb_hi": 86.7,
+            "mean_score": 4.75,
+            "flag": "OK",
+            "ranking_tb": 1,
+            "ranking_t2b": 3,
+            "rank_delta": 2
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 15,
+            "pct_tb": 46.9,
+            "n_t2b": 30,
+            "pct_t2b": 93.8,
+            "diff_tb_vs_t2b_pp": 46.9,
+            "ic95_tb_lo": 30.9,
+            "ic95_tb_hi": 63.6,
+            "mean_score": 4.41,
+            "flag": "OK",
+            "ranking_tb": 8,
+            "ranking_t2b": 9,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 14,
+            "pct_tb": 43.8,
+            "n_t2b": 28,
+            "pct_t2b": 87.5,
+            "diff_tb_vs_t2b_pp": 43.7,
+            "ic95_tb_lo": 28.2,
+            "ic95_tb_hi": 60.7,
+            "mean_score": 4.31,
+            "flag": "OK",
+            "ranking_tb": 9,
+            "ranking_t2b": 10,
+            "rank_delta": 1
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 19,
+            "pct_tb": 59.4,
+            "n_t2b": 31,
+            "pct_t2b": 96.9,
+            "diff_tb_vs_t2b_pp": 37.5,
+            "ic95_tb_lo": 42.3,
+            "ic95_tb_hi": 74.5,
+            "mean_score": 4.56,
+            "flag": "OK",
+            "ranking_tb": 4,
+            "ranking_t2b": 7,
+            "rank_delta": 3
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 16,
+            "pct_tb": 50.0,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 50.0,
+            "ic95_tb_lo": 33.6,
+            "ic95_tb_hi": 66.4,
+            "mean_score": 4.5,
+            "flag": "OK",
+            "ranking_tb": 6,
+            "ranking_t2b": 4,
+            "rank_delta": -2
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "n_base": 32,
+            "n_valid": 32,
+            "n_tb": 20,
+            "pct_tb": 62.5,
+            "n_t2b": 32,
+            "pct_t2b": 100.0,
+            "diff_tb_vs_t2b_pp": 37.5,
+            "ic95_tb_lo": 45.3,
+            "ic95_tb_hi": 77.1,
+            "mean_score": 4.62,
+            "flag": "OK",
+            "ranking_tb": 2,
+            "ranking_t2b": 5,
+            "rank_delta": 3
+          }
+        ],
+        "top5_tb": [
+          "menor_precio",
+          "valer_dinero",
+          "limpieza",
+          "calidad",
+          "seguro"
+        ],
+        "top5_t2b": [
+          "limpieza",
+          "seguro",
+          "menor_precio",
+          "atencion",
+          "valer_dinero"
+        ],
+        "top5_cambia": true
+      }
+    },
+    "reranking_summary": {
+      "total_atributos_que_cambian_rank": 7,
+      "mayor_subida_tb": [
+        [
+          "atencion",
+          -3
+        ],
+        [
+          "valer_dinero",
+          -3
+        ],
+        [
+          "calidad",
+          -2
+        ]
+      ],
+      "mayor_bajada_tb": [
+        [
+          "menor_precio",
+          6
+        ],
+        [
+          "rapidez",
+          4
+        ]
+      ],
+      "top5_mismo_en_tb_y_t2b": false
+    }
+  },
+  "E2_regresion_logistica": {
+    "analisis": "E2",
+    "descripcion": "Evaluacion viabilidad VIF + Regresion logistica drivers de preferencia",
+    "metodo_aplicado": "Regresion logistica (DV binaria correcta para preferencia 0/1)",
+    "decision_viabilidad": {
+      "regresion_viable": true,
+      "vif_max": 1.35,
+      "vif_alto_count": 0,
+      "vif_problematico": false,
+      "cadenas_viables": [
+        "Paramo"
+      ],
+      "cadenas_inviables": [
+        "Gama",
+        "Rio",
+        "Plan Suarez",
+        "Central Madeirense",
+        "Forum",
+        "Plazas",
+        "Luz"
+      ],
+      "razon": "Regresion logistica viable para 1 cadenas (Paramo). VIF maximo=1.35 — multicolinealidad manejable. Para cadenas con n<50 (Gama, Rio, Plan Suarez, Central Madeirense, Forum, Plazas, Luz): resultados EXCLUIDOS (bases insuficientes).",
+      "metodo_recomendado": "Regresion logistica (DV binaria correcta para preferencia 0/1)",
+      "nota_cora": "La solicitud de Cora fue \"regresion lineal\" — se usa logistica porque la DV (preferencia si/no) es binaria. La regresion lineal con DV binaria produce probabilidades fuera de [0,1] y residuos no-normales. El metodo logistico es el correcto; los coeficientes se interpretan como odds ratios."
+    },
+    "vif_por_atributo": {
+      "limpieza": {
+        "nombre": "Limpieza/orden",
+        "vif": 1.18,
+        "flag": "OK (<5)"
+      },
+      "surtido": {
+        "nombre": "Mayor surtido",
+        "vif": 1.22,
+        "flag": "OK (<5)"
+      },
+      "seguro": {
+        "nombre": "Seguro",
+        "vif": 1.23,
+        "flag": "OK (<5)"
+      },
+      "rapidez": {
+        "nombre": "Rapidez caja",
+        "vif": 1.33,
+        "flag": "OK (<5)"
+      },
+      "menor_precio": {
+        "nombre": "Menor precio",
+        "vif": 1.27,
+        "flag": "OK (<5)"
+      },
+      "atractiva": {
+        "nombre": "Tienda atractiva",
+        "vif": 1.12,
+        "flag": "OK (<5)"
+      },
+      "promociones": {
+        "nombre": "Promociones",
+        "vif": 1.29,
+        "flag": "OK (<5)"
+      },
+      "calidad": {
+        "nombre": "Mayor calidad",
+        "vif": 1.19,
+        "flag": "OK (<5)"
+      },
+      "atencion": {
+        "nombre": "Mejor atencion",
+        "vif": 1.35,
+        "flag": "OK (<5)"
+      },
+      "valer_dinero": {
+        "nombre": "Valer dinero",
+        "vif": 1.08,
+        "flag": "OK (<5)"
+      }
+    },
+    "n_por_cadena": {
+      "Gama": {
+        "n_pref": 32,
+        "n_no_pref": 370,
+        "flag": "OK",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=32 < 50 minimo"
+      },
+      "Paramo": {
+        "n_pref": 85,
+        "n_no_pref": 317,
+        "flag": "OK",
+        "viable_regresion": true,
+        "nota": "VIABLE — n=85 >= 50"
+      },
+      "Rio": {
+        "n_pref": 41,
+        "n_no_pref": 361,
+        "flag": "OK",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=41 < 50 minimo"
+      },
+      "Plan Suarez": {
+        "n_pref": 28,
+        "n_no_pref": 374,
+        "flag": "REFERENCIAL",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=28 < 50 minimo"
+      },
+      "Central Madeirense": {
+        "n_pref": 45,
+        "n_no_pref": 357,
+        "flag": "OK",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=45 < 50 minimo"
+      },
+      "Forum": {
+        "n_pref": 44,
+        "n_no_pref": 358,
+        "flag": "OK",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=44 < 50 minimo"
+      },
+      "Plazas": {
+        "n_pref": 37,
+        "n_no_pref": 365,
+        "flag": "OK",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=37 < 50 minimo"
+      },
+      "Luz": {
+        "n_pref": 32,
+        "n_no_pref": 370,
+        "flag": "OK",
+        "viable_regresion": false,
+        "nota": "INVIABLE — n=32 < 50 minimo"
+      }
+    },
+    "regresiones": {
+      "Paramo": {
+        "n_total": 402,
+        "n_pref": 85,
+        "n_no_pref": 317,
+        "pseudo_r2_mcfadden": 0.0207,
+        "llr_pval": 0.5736,
+        "modelo_significativo": false,
+        "coeficientes": [
+          {
+            "atributo": "limpieza",
+            "nombre": "Limpieza/orden",
+            "coef": -0.0994,
+            "se": 0.2364,
+            "pval": 0.674,
+            "odds_ratio": 0.9054,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=0.91: un punto mas en importancia de Limpieza/orden reduce odds de preferir Paramo en 9.5%"
+          },
+          {
+            "atributo": "surtido",
+            "nombre": "Mayor surtido",
+            "coef": -0.0731,
+            "se": 0.2341,
+            "pval": 0.7547,
+            "odds_ratio": 0.9295,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=0.93: un punto mas en importancia de Mayor surtido reduce odds de preferir Paramo en 7.1%"
+          },
+          {
+            "atributo": "seguro",
+            "nombre": "Seguro",
+            "coef": 0.3896,
+            "se": 0.2476,
+            "pval": 0.1156,
+            "odds_ratio": 1.4763,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=1.48: un punto mas en importancia de Seguro aumenta odds de preferir Paramo en 47.6%"
+          },
+          {
+            "atributo": "rapidez",
+            "nombre": "Rapidez caja",
+            "coef": 0.1736,
+            "se": 0.2225,
+            "pval": 0.4352,
+            "odds_ratio": 1.1896,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=1.19: un punto mas en importancia de Rapidez caja aumenta odds de preferir Paramo en 19.0%"
+          },
+          {
+            "atributo": "menor_precio",
+            "nombre": "Menor precio",
+            "coef": 0.1523,
+            "se": 0.231,
+            "pval": 0.5097,
+            "odds_ratio": 1.1645,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=1.16: un punto mas en importancia de Menor precio aumenta odds de preferir Paramo en 16.5%"
+          },
+          {
+            "atributo": "atractiva",
+            "nombre": "Tienda atractiva",
+            "coef": -0.0469,
+            "se": 0.1531,
+            "pval": 0.7596,
+            "odds_ratio": 0.9542,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=0.95: un punto mas en importancia de Tienda atractiva reduce odds de preferir Paramo en 4.6%"
+          },
+          {
+            "atributo": "promociones",
+            "nombre": "Promociones",
+            "coef": 0.1677,
+            "se": 0.202,
+            "pval": 0.4064,
+            "odds_ratio": 1.1826,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=1.18: un punto mas en importancia de Promociones aumenta odds de preferir Paramo en 18.3%"
+          },
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "coef": -0.4345,
+            "se": 0.214,
+            "pval": 0.0423,
+            "odds_ratio": 0.6476,
+            "significativo_alpha05": true,
+            "interpretacion": "OR=0.65: un punto mas en importancia de Mayor calidad reduce odds de preferir Paramo en 35.2%"
+          },
+          {
+            "atributo": "atencion",
+            "nombre": "Mejor atencion",
+            "coef": -0.1181,
+            "se": 0.2259,
+            "pval": 0.6011,
+            "odds_ratio": 0.8886,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=0.89: un punto mas en importancia de Mejor atencion reduce odds de preferir Paramo en 11.1%"
+          },
+          {
+            "atributo": "valer_dinero",
+            "nombre": "Valer dinero",
+            "coef": -0.0862,
+            "se": 0.2207,
+            "pval": 0.6959,
+            "odds_ratio": 0.9174,
+            "significativo_alpha05": false,
+            "interpretacion": "OR=0.92: un punto mas en importancia de Valer dinero reduce odds de preferir Paramo en 8.3%"
+          }
+        ],
+        "coefs_significativos": [
+          {
+            "atributo": "calidad",
+            "nombre": "Mayor calidad",
+            "coef": -0.4345,
+            "se": 0.214,
+            "pval": 0.0423,
+            "odds_ratio": 0.6476,
+            "significativo_alpha05": true,
+            "interpretacion": "OR=0.65: un punto mas en importancia de Mayor calidad reduce odds de preferir Paramo en 35.2%"
+          }
+        ],
+        "n_coefs_sig": 1,
+        "flag": "OK",
+        "convergencia": true
+      }
+    },
+    "n_obs_completo": 402,
+    "caveat": "Regresion cross-sectional — causalidad no inferible. Cadenas con n_pref < 50 EXCLUIDAS. Pseudo-R2 McFadden: <0.1 pobre, 0.1-0.2 aceptable, 0.2-0.4 bueno para datos de survey."
+  },
+  "E3_mundo_marca": {
+    "analisis": "E3",
+    "descripcion": "Mundo de marca por cadena: P21 x P23 x Experiencia (P24 ultima compra + P26 mision habitual)",
+    "nota_p24_p25": "P24 = ultima cadena de compra (experiencia reciente). P25 = razon de la ultima compra (no cadena). P26 = cadena habitual por tipo de mision (experiencia habitual). No existe col \"alguna vez ha comprado\" separada en esta BBDD. Exp_reciente = P24 == cadena. Exp_habitual = alguna P26 == cadena.",
+    "atributos_diferenciadores": [
+      "menor_precio",
+      "atractiva",
+      "limpieza",
+      "seguro",
+      "valer_dinero",
+      "rapidez",
+      "promociones"
+    ],
+    "varianza_por_atributo": {
+      "menor_precio": 8.02,
+      "atractiva": 7.62,
+      "limpieza": 7.37,
+      "seguro": 6.49,
+      "valer_dinero": 6.43,
+      "rapidez": 6.2,
+      "promociones": 6.03
+    },
+    "resultados_cadenas": {
+      "Gama": {
+        "n_pref": 32,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 30,
+        "n_exp_habitual": 95,
+        "n_exp_alguna": 98,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 17.9,
+              "n_ment": 72,
+              "n_base": 402,
+              "ic95_lo": 14.5,
+              "ic95_hi": 22.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 71.9,
+              "n_ment": 23,
+              "n_base": 32,
+              "ic95_lo": 54.6,
+              "ic95_hi": 84.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.0,
+              "n_ment": 24,
+              "n_base": 30,
+              "ic95_lo": 62.7,
+              "ic95_hi": 90.5,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 50.5,
+              "n_ment": 48,
+              "n_base": 95,
+              "ic95_lo": 40.6,
+              "ic95_hi": 60.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 51.0,
+              "n_ment": 50,
+              "n_base": 98,
+              "ic95_lo": 41.3,
+              "ic95_hi": 60.7,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 26.6,
+              "n_ment": 107,
+              "n_base": 402,
+              "ic95_lo": 22.5,
+              "ic95_hi": 31.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.1,
+              "n_ment": 25,
+              "n_base": 32,
+              "ic95_lo": 61.2,
+              "ic95_hi": 89.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 76.7,
+              "n_ment": 23,
+              "n_base": 30,
+              "ic95_lo": 59.1,
+              "ic95_hi": 88.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 64.2,
+              "n_ment": 61,
+              "n_base": 95,
+              "ic95_lo": 54.2,
+              "ic95_hi": 73.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 63.3,
+              "n_ment": 62,
+              "n_base": 98,
+              "ic95_lo": 53.4,
+              "ic95_hi": 72.1,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 7.2,
+              "n_ment": 29,
+              "n_base": 402,
+              "ic95_lo": 5.1,
+              "ic95_hi": 10.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 31.2,
+              "n_ment": 10,
+              "n_base": 32,
+              "ic95_lo": 18.0,
+              "ic95_hi": 48.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 43.3,
+              "n_ment": 13,
+              "n_base": 30,
+              "ic95_lo": 27.4,
+              "ic95_hi": 60.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 18.9,
+              "n_ment": 18,
+              "n_base": 95,
+              "ic95_lo": 12.3,
+              "ic95_hi": 28.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 20.4,
+              "n_ment": 20,
+              "n_base": 98,
+              "ic95_lo": 13.6,
+              "ic95_hi": 29.4,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 21.9,
+              "n_ment": 88,
+              "n_base": 402,
+              "ic95_lo": 18.1,
+              "ic95_hi": 26.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 84.4,
+              "n_ment": 27,
+              "n_base": 32,
+              "ic95_lo": 68.2,
+              "ic95_hi": 93.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 83.3,
+              "n_ment": 25,
+              "n_base": 30,
+              "ic95_lo": 66.4,
+              "ic95_hi": 92.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 57.9,
+              "n_ment": 55,
+              "n_base": 95,
+              "ic95_lo": 47.8,
+              "ic95_hi": 67.3,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 56.1,
+              "n_ment": 55,
+              "n_base": 98,
+              "ic95_lo": 46.3,
+              "ic95_hi": 65.5,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 9.0,
+              "n_ment": 36,
+              "n_base": 402,
+              "ic95_lo": 6.5,
+              "ic95_hi": 12.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 50.0,
+              "n_ment": 16,
+              "n_base": 32,
+              "ic95_lo": 33.6,
+              "ic95_hi": 66.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 50.0,
+              "n_ment": 15,
+              "n_base": 30,
+              "ic95_lo": 33.2,
+              "ic95_hi": 66.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 26.3,
+              "n_ment": 25,
+              "n_base": 95,
+              "ic95_lo": 18.5,
+              "ic95_hi": 36.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 27.6,
+              "n_ment": 27,
+              "n_base": 98,
+              "ic95_lo": 19.7,
+              "ic95_hi": 37.1,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 28.9,
+              "n_ment": 116,
+              "n_base": 402,
+              "ic95_lo": 24.6,
+              "ic95_hi": 33.5,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 81.2,
+              "n_ment": 26,
+              "n_base": 32,
+              "ic95_lo": 64.7,
+              "ic95_hi": 91.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 73.3,
+              "n_ment": 22,
+              "n_base": 30,
+              "ic95_lo": 55.6,
+              "ic95_hi": 85.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 65.3,
+              "n_ment": 62,
+              "n_base": 95,
+              "ic95_lo": 55.3,
+              "ic95_hi": 74.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 64.3,
+              "n_ment": 63,
+              "n_base": 98,
+              "ic95_lo": 54.4,
+              "ic95_hi": 73.1,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 31.1,
+              "n_ment": 125,
+              "n_base": 402,
+              "ic95_lo": 26.8,
+              "ic95_hi": 35.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 90.6,
+              "n_ment": 29,
+              "n_base": 32,
+              "ic95_lo": 75.8,
+              "ic95_hi": 96.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 76.7,
+              "n_ment": 23,
+              "n_base": 30,
+              "ic95_lo": 59.1,
+              "ic95_hi": 88.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 69.5,
+              "n_ment": 66,
+              "n_base": 95,
+              "ic95_lo": 59.6,
+              "ic95_hi": 77.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 68.4,
+              "n_ment": 67,
+              "n_base": 98,
+              "ic95_lo": 58.6,
+              "ic95_hi": 76.7,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 29.6,
+              "n_ment": 119,
+              "n_base": 402,
+              "ic95_lo": 25.3,
+              "ic95_hi": 34.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 84.4,
+              "n_ment": 27,
+              "n_base": 32,
+              "ic95_lo": 68.2,
+              "ic95_hi": 93.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 86.7,
+              "n_ment": 26,
+              "n_base": 30,
+              "ic95_lo": 70.3,
+              "ic95_hi": 94.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 64.2,
+              "n_ment": 61,
+              "n_base": 95,
+              "ic95_lo": 54.2,
+              "ic95_hi": 73.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 64.3,
+              "n_ment": 63,
+              "n_base": 98,
+              "ic95_lo": 54.4,
+              "ic95_hi": 73.1,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 21.1,
+              "n_ment": 85,
+              "n_base": 402,
+              "ic95_lo": 17.4,
+              "ic95_hi": 25.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.0,
+              "n_ment": 24,
+              "n_base": 32,
+              "ic95_lo": 57.9,
+              "ic95_hi": 86.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 73.3,
+              "n_ment": 22,
+              "n_base": 30,
+              "ic95_lo": 55.6,
+              "ic95_hi": 85.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 61.1,
+              "n_ment": 58,
+              "n_base": 95,
+              "ic95_lo": 51.0,
+              "ic95_hi": 70.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 60.2,
+              "n_ment": 59,
+              "n_base": 98,
+              "ic95_lo": 50.3,
+              "ic95_hi": 69.3,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 11.4,
+              "n_ment": 46,
+              "n_base": 402,
+              "ic95_lo": 8.7,
+              "ic95_hi": 14.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 46.9,
+              "n_ment": 15,
+              "n_base": 32,
+              "ic95_lo": 30.9,
+              "ic95_hi": 63.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 46.7,
+              "n_ment": 14,
+              "n_base": 30,
+              "ic95_lo": 30.2,
+              "ic95_hi": 63.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 32.6,
+              "n_ment": 31,
+              "n_base": 95,
+              "ic95_lo": 24.0,
+              "ic95_hi": 42.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 32.7,
+              "n_ment": 32,
+              "n_base": 98,
+              "ic95_lo": 24.2,
+              "ic95_hi": 42.4,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "limpieza",
+            31.1
+          ],
+          [
+            "seguro",
+            29.6
+          ],
+          [
+            "atractiva",
+            28.9
+          ],
+          [
+            "calidad",
+            26.6
+          ],
+          [
+            "atencion",
+            21.9
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 54.0,
+          "calidad": 51.5,
+          "menor_precio": 24.0,
+          "atencion": 62.5,
+          "promociones": 41.0,
+          "atractiva": 52.3,
+          "limpieza": 59.5,
+          "seguro": 54.8,
+          "rapidez": 53.9,
+          "valer_dinero": 35.5
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 33.1,
+          "calidad": 36.7,
+          "menor_precio": 13.2,
+          "atencion": 34.2,
+          "promociones": 18.6,
+          "atractiva": 35.4,
+          "limpieza": 37.3,
+          "seguro": 34.7,
+          "rapidez": 39.1,
+          "valer_dinero": 21.3
+        }
+      },
+      "Paramo": {
+        "n_pref": 85,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 83,
+        "n_exp_habitual": 146,
+        "n_exp_alguna": 152,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 29.4,
+              "n_ment": 118,
+              "n_base": 402,
+              "ic95_lo": 25.1,
+              "ic95_hi": 34.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 77.6,
+              "n_ment": 66,
+              "n_base": 85,
+              "ic95_lo": 67.7,
+              "ic95_hi": 85.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 74.7,
+              "n_ment": 62,
+              "n_base": 83,
+              "ic95_lo": 64.4,
+              "ic95_hi": 82.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 63.7,
+              "n_ment": 93,
+              "n_base": 146,
+              "ic95_lo": 55.6,
+              "ic95_hi": 71.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 61.8,
+              "n_ment": 94,
+              "n_base": 152,
+              "ic95_lo": 53.9,
+              "ic95_hi": 69.2,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 26.6,
+              "n_ment": 107,
+              "n_base": 402,
+              "ic95_lo": 22.5,
+              "ic95_hi": 31.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 72.9,
+              "n_ment": 62,
+              "n_base": 85,
+              "ic95_lo": 62.7,
+              "ic95_hi": 81.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 62.7,
+              "n_ment": 52,
+              "n_base": 83,
+              "ic95_lo": 51.9,
+              "ic95_hi": 72.3,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 56.2,
+              "n_ment": 82,
+              "n_base": 146,
+              "ic95_lo": 48.1,
+              "ic95_hi": 64.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 55.3,
+              "n_ment": 84,
+              "n_base": 152,
+              "ic95_lo": 47.3,
+              "ic95_hi": 62.9,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 35.1,
+              "n_ment": 141,
+              "n_base": 402,
+              "ic95_lo": 30.6,
+              "ic95_hi": 39.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 90.6,
+              "n_ment": 77,
+              "n_base": 85,
+              "ic95_lo": 82.5,
+              "ic95_hi": 95.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.7,
+              "n_ment": 67,
+              "n_base": 83,
+              "ic95_lo": 71.0,
+              "ic95_hi": 87.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 72.6,
+              "n_ment": 106,
+              "n_base": 146,
+              "ic95_lo": 64.9,
+              "ic95_hi": 79.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 72.4,
+              "n_ment": 110,
+              "n_base": 152,
+              "ic95_lo": 64.8,
+              "ic95_hi": 78.9,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 32.3,
+              "n_ment": 130,
+              "n_base": 402,
+              "ic95_lo": 28.0,
+              "ic95_hi": 37.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 83.5,
+              "n_ment": 71,
+              "n_base": 85,
+              "ic95_lo": 74.2,
+              "ic95_hi": 89.9,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.7,
+              "n_ment": 67,
+              "n_base": 83,
+              "ic95_lo": 71.0,
+              "ic95_hi": 87.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 70.5,
+              "n_ment": 103,
+              "n_base": 146,
+              "ic95_lo": 62.7,
+              "ic95_hi": 77.3,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 70.4,
+              "n_ment": 107,
+              "n_base": 152,
+              "ic95_lo": 62.7,
+              "ic95_hi": 77.1,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 30.6,
+              "n_ment": 123,
+              "n_base": 402,
+              "ic95_lo": 26.3,
+              "ic95_hi": 35.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 69.4,
+              "n_ment": 59,
+              "n_base": 85,
+              "ic95_lo": 59.0,
+              "ic95_hi": 78.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 68.7,
+              "n_ment": 57,
+              "n_base": 83,
+              "ic95_lo": 58.1,
+              "ic95_hi": 77.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 58.9,
+              "n_ment": 86,
+              "n_base": 146,
+              "ic95_lo": 50.8,
+              "ic95_hi": 66.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 59.2,
+              "n_ment": 90,
+              "n_base": 152,
+              "ic95_lo": 51.3,
+              "ic95_hi": 66.7,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 31.3,
+              "n_ment": 126,
+              "n_base": 402,
+              "ic95_lo": 27.0,
+              "ic95_hi": 36.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 76.5,
+              "n_ment": 65,
+              "n_base": 85,
+              "ic95_lo": 66.4,
+              "ic95_hi": 84.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 66.3,
+              "n_ment": 55,
+              "n_base": 83,
+              "ic95_lo": 55.6,
+              "ic95_hi": 75.5,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 61.6,
+              "n_ment": 90,
+              "n_base": 146,
+              "ic95_lo": 53.6,
+              "ic95_hi": 69.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 59.9,
+              "n_ment": 91,
+              "n_base": 152,
+              "ic95_lo": 51.9,
+              "ic95_hi": 67.3,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 34.6,
+              "n_ment": 139,
+              "n_base": 402,
+              "ic95_lo": 30.1,
+              "ic95_hi": 39.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 87.1,
+              "n_ment": 74,
+              "n_base": 85,
+              "ic95_lo": 78.3,
+              "ic95_hi": 92.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 83.1,
+              "n_ment": 69,
+              "n_base": 83,
+              "ic95_lo": 73.7,
+              "ic95_hi": 89.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 75.3,
+              "n_ment": 110,
+              "n_base": 146,
+              "ic95_lo": 67.8,
+              "ic95_hi": 81.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 73.7,
+              "n_ment": 112,
+              "n_base": 152,
+              "ic95_lo": 66.2,
+              "ic95_hi": 80.0,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 36.1,
+              "n_ment": 145,
+              "n_base": 402,
+              "ic95_lo": 31.5,
+              "ic95_hi": 40.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 81.2,
+              "n_ment": 69,
+              "n_base": 85,
+              "ic95_lo": 71.6,
+              "ic95_hi": 88.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 78.3,
+              "n_ment": 65,
+              "n_base": 83,
+              "ic95_lo": 68.3,
+              "ic95_hi": 85.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 71.9,
+              "n_ment": 105,
+              "n_base": 146,
+              "ic95_lo": 64.1,
+              "ic95_hi": 78.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 71.1,
+              "n_ment": 108,
+              "n_base": 152,
+              "ic95_lo": 63.4,
+              "ic95_hi": 77.7,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 30.3,
+              "n_ment": 122,
+              "n_base": 402,
+              "ic95_lo": 26.1,
+              "ic95_hi": 35.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 82.4,
+              "n_ment": 70,
+              "n_base": 85,
+              "ic95_lo": 72.9,
+              "ic95_hi": 89.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 75.9,
+              "n_ment": 63,
+              "n_base": 83,
+              "ic95_lo": 65.7,
+              "ic95_hi": 83.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 65.8,
+              "n_ment": 96,
+              "n_base": 146,
+              "ic95_lo": 57.7,
+              "ic95_hi": 73.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 65.1,
+              "n_ment": 99,
+              "n_base": 152,
+              "ic95_lo": 57.3,
+              "ic95_hi": 72.2,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 32.1,
+              "n_ment": 129,
+              "n_base": 402,
+              "ic95_lo": 27.7,
+              "ic95_hi": 36.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 91.8,
+              "n_ment": 78,
+              "n_base": 85,
+              "ic95_lo": 84.0,
+              "ic95_hi": 96.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 84.3,
+              "n_ment": 70,
+              "n_base": 83,
+              "ic95_lo": 75.0,
+              "ic95_hi": 90.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 72.6,
+              "n_ment": 106,
+              "n_base": 146,
+              "ic95_lo": 64.9,
+              "ic95_hi": 79.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 71.7,
+              "n_ment": 109,
+              "n_base": 152,
+              "ic95_lo": 64.1,
+              "ic95_hi": 78.3,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "seguro",
+            36.1
+          ],
+          [
+            "menor_precio",
+            35.1
+          ],
+          [
+            "limpieza",
+            34.6
+          ],
+          [
+            "atencion",
+            32.3
+          ],
+          [
+            "valer_dinero",
+            32.1
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 48.2,
+          "calidad": 46.3,
+          "menor_precio": 55.5,
+          "atencion": 51.2,
+          "promociones": 38.8,
+          "atractiva": 45.2,
+          "limpieza": 52.5,
+          "seguro": 45.1,
+          "rapidez": 52.1,
+          "valer_dinero": 59.7
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 32.4,
+          "calidad": 28.7,
+          "menor_precio": 37.3,
+          "atencion": 38.1,
+          "promociones": 28.6,
+          "atractiva": 28.6,
+          "limpieza": 39.1,
+          "seguro": 35.0,
+          "rapidez": 34.8,
+          "valer_dinero": 39.6
+        }
+      },
+      "Rio": {
+        "n_pref": 41,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 47,
+        "n_exp_habitual": 94,
+        "n_exp_alguna": 104,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 21.9,
+              "n_ment": 88,
+              "n_base": 402,
+              "ic95_lo": 18.1,
+              "ic95_hi": 26.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 80.5,
+              "n_ment": 33,
+              "n_base": 41,
+              "ic95_lo": 66.0,
+              "ic95_hi": 89.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 72.3,
+              "n_ment": 34,
+              "n_base": 47,
+              "ic95_lo": 58.2,
+              "ic95_hi": 83.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 68.1,
+              "n_ment": 64,
+              "n_base": 94,
+              "ic95_lo": 58.1,
+              "ic95_hi": 76.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 65.4,
+              "n_ment": 68,
+              "n_base": 104,
+              "ic95_lo": 55.8,
+              "ic95_hi": 73.8,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 26.1,
+              "n_ment": 105,
+              "n_base": 402,
+              "ic95_lo": 22.1,
+              "ic95_hi": 30.6,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 95.1,
+              "n_ment": 39,
+              "n_base": 41,
+              "ic95_lo": 83.9,
+              "ic95_hi": 98.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 85.1,
+              "n_ment": 40,
+              "n_base": 47,
+              "ic95_lo": 72.3,
+              "ic95_hi": 92.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 69.1,
+              "n_ment": 65,
+              "n_base": 94,
+              "ic95_lo": 59.2,
+              "ic95_hi": 77.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 68.3,
+              "n_ment": 71,
+              "n_base": 104,
+              "ic95_lo": 58.8,
+              "ic95_hi": 76.4,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 13.9,
+              "n_ment": 56,
+              "n_base": 402,
+              "ic95_lo": 10.9,
+              "ic95_hi": 17.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 51.2,
+              "n_ment": 21,
+              "n_base": 41,
+              "ic95_lo": 36.5,
+              "ic95_hi": 65.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 44.7,
+              "n_ment": 21,
+              "n_base": 47,
+              "ic95_lo": 31.4,
+              "ic95_hi": 58.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 41.5,
+              "n_ment": 39,
+              "n_base": 94,
+              "ic95_lo": 32.1,
+              "ic95_hi": 51.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 38.5,
+              "n_ment": 40,
+              "n_base": 104,
+              "ic95_lo": 29.7,
+              "ic95_hi": 48.1,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 23.9,
+              "n_ment": 96,
+              "n_base": 402,
+              "ic95_lo": 20.0,
+              "ic95_hi": 28.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 85.4,
+              "n_ment": 35,
+              "n_base": 41,
+              "ic95_lo": 71.6,
+              "ic95_hi": 93.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 72.3,
+              "n_ment": 34,
+              "n_base": 47,
+              "ic95_lo": 58.2,
+              "ic95_hi": 83.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 64.9,
+              "n_ment": 61,
+              "n_base": 94,
+              "ic95_lo": 54.8,
+              "ic95_hi": 73.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 62.5,
+              "n_ment": 65,
+              "n_base": 104,
+              "ic95_lo": 52.9,
+              "ic95_hi": 71.2,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 17.4,
+              "n_ment": 70,
+              "n_base": 402,
+              "ic95_lo": 14.0,
+              "ic95_hi": 21.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 63.4,
+              "n_ment": 26,
+              "n_base": 41,
+              "ic95_lo": 48.1,
+              "ic95_hi": 76.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 53.2,
+              "n_ment": 25,
+              "n_base": 47,
+              "ic95_lo": 39.2,
+              "ic95_hi": 66.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 48.9,
+              "n_ment": 46,
+              "n_base": 94,
+              "ic95_lo": 39.1,
+              "ic95_hi": 58.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 45.2,
+              "n_ment": 47,
+              "n_base": 104,
+              "ic95_lo": 36.0,
+              "ic95_hi": 54.8,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 28.1,
+              "n_ment": 113,
+              "n_base": 402,
+              "ic95_lo": 23.9,
+              "ic95_hi": 32.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 82.9,
+              "n_ment": 34,
+              "n_base": 41,
+              "ic95_lo": 68.7,
+              "ic95_hi": 91.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 76.6,
+              "n_ment": 36,
+              "n_base": 47,
+              "ic95_lo": 62.8,
+              "ic95_hi": 86.4,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 72.3,
+              "n_ment": 68,
+              "n_base": 94,
+              "ic95_lo": 62.6,
+              "ic95_hi": 80.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 71.2,
+              "n_ment": 74,
+              "n_base": 104,
+              "ic95_lo": 61.8,
+              "ic95_hi": 79.0,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 33.6,
+              "n_ment": 135,
+              "n_base": 402,
+              "ic95_lo": 29.1,
+              "ic95_hi": 38.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 82.9,
+              "n_ment": 34,
+              "n_base": 41,
+              "ic95_lo": 68.7,
+              "ic95_hi": 91.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.9,
+              "n_ment": 38,
+              "n_base": 47,
+              "ic95_lo": 67.5,
+              "ic95_hi": 89.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 74.5,
+              "n_ment": 70,
+              "n_base": 94,
+              "ic95_lo": 64.8,
+              "ic95_hi": 82.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 73.1,
+              "n_ment": 76,
+              "n_base": 104,
+              "ic95_lo": 63.8,
+              "ic95_hi": 80.7,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 27.1,
+              "n_ment": 109,
+              "n_base": 402,
+              "ic95_lo": 23.0,
+              "ic95_hi": 31.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 82.9,
+              "n_ment": 34,
+              "n_base": 41,
+              "ic95_lo": 68.7,
+              "ic95_hi": 91.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 76.6,
+              "n_ment": 36,
+              "n_base": 47,
+              "ic95_lo": 62.8,
+              "ic95_hi": 86.4,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 75.5,
+              "n_ment": 71,
+              "n_base": 94,
+              "ic95_lo": 66.0,
+              "ic95_hi": 83.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 72.1,
+              "n_ment": 75,
+              "n_base": 104,
+              "ic95_lo": 62.8,
+              "ic95_hi": 79.8,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 21.6,
+              "n_ment": 87,
+              "n_base": 402,
+              "ic95_lo": 17.9,
+              "ic95_hi": 25.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 85.4,
+              "n_ment": 35,
+              "n_base": 41,
+              "ic95_lo": 71.6,
+              "ic95_hi": 93.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 83.0,
+              "n_ment": 39,
+              "n_base": 47,
+              "ic95_lo": 69.9,
+              "ic95_hi": 91.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 60.6,
+              "n_ment": 57,
+              "n_base": 94,
+              "ic95_lo": 50.5,
+              "ic95_hi": 69.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 61.5,
+              "n_ment": 64,
+              "n_base": 104,
+              "ic95_lo": 51.9,
+              "ic95_hi": 70.3,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 17.4,
+              "n_ment": 70,
+              "n_base": 402,
+              "ic95_lo": 14.0,
+              "ic95_hi": 21.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 80.5,
+              "n_ment": 33,
+              "n_base": 41,
+              "ic95_lo": 66.0,
+              "ic95_hi": 89.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 63.8,
+              "n_ment": 30,
+              "n_base": 47,
+              "ic95_lo": 49.5,
+              "ic95_hi": 76.0,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 52.1,
+              "n_ment": 49,
+              "n_base": 94,
+              "ic95_lo": 42.1,
+              "ic95_hi": 61.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 49.0,
+              "n_ment": 51,
+              "n_base": 104,
+              "ic95_lo": 39.6,
+              "ic95_hi": 58.5,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "limpieza",
+            33.6
+          ],
+          [
+            "atractiva",
+            28.1
+          ],
+          [
+            "seguro",
+            27.1
+          ],
+          [
+            "calidad",
+            26.1
+          ],
+          [
+            "atencion",
+            23.9
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 58.6,
+          "calidad": 69.0,
+          "menor_precio": 37.3,
+          "atencion": 61.5,
+          "promociones": 46.0,
+          "atractiva": 54.8,
+          "limpieza": 49.3,
+          "seguro": 55.8,
+          "rapidez": 63.8,
+          "valer_dinero": 63.1
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 43.5,
+          "calidad": 42.2,
+          "menor_precio": 24.6,
+          "atencion": 38.6,
+          "promociones": 27.8,
+          "atractiva": 43.1,
+          "limpieza": 39.5,
+          "seguro": 45.0,
+          "rapidez": 39.9,
+          "valer_dinero": 31.6
+        }
+      },
+      "Plan Suarez": {
+        "n_pref": 28,
+        "n_pref_flag": "REFERENCIAL",
+        "n_exp_reciente": 23,
+        "n_exp_habitual": 66,
+        "n_exp_alguna": 66,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 14.2,
+              "n_ment": 57,
+              "n_base": 402,
+              "ic95_lo": 11.1,
+              "ic95_hi": 17.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.6,
+              "n_ment": 22,
+              "n_base": 28,
+              "ic95_lo": 60.5,
+              "ic95_hi": 89.8,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 78.3,
+              "n_ment": 18,
+              "n_base": 23,
+              "ic95_lo": 58.1,
+              "ic95_hi": 90.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 62.1,
+              "n_ment": 41,
+              "n_base": 66,
+              "ic95_lo": 50.1,
+              "ic95_hi": 72.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 62.1,
+              "n_ment": 41,
+              "n_base": 66,
+              "ic95_lo": 50.1,
+              "ic95_hi": 72.9,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 13.4,
+              "n_ment": 54,
+              "n_base": 402,
+              "ic95_lo": 10.4,
+              "ic95_hi": 17.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.0,
+              "n_ment": 21,
+              "n_base": 28,
+              "ic95_lo": 56.6,
+              "ic95_hi": 87.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 73.9,
+              "n_ment": 17,
+              "n_base": 23,
+              "ic95_lo": 53.5,
+              "ic95_hi": 87.5,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 56.1,
+              "n_ment": 37,
+              "n_base": 66,
+              "ic95_lo": 44.1,
+              "ic95_hi": 67.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 56.1,
+              "n_ment": 37,
+              "n_base": 66,
+              "ic95_lo": 44.1,
+              "ic95_hi": 67.4,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 11.9,
+              "n_ment": 48,
+              "n_base": 402,
+              "ic95_lo": 9.1,
+              "ic95_hi": 15.5,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 64.3,
+              "n_ment": 18,
+              "n_base": 28,
+              "ic95_lo": 45.8,
+              "ic95_hi": 79.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 73.9,
+              "n_ment": 17,
+              "n_base": 23,
+              "ic95_lo": 53.5,
+              "ic95_hi": 87.5,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 42.4,
+              "n_ment": 28,
+              "n_base": 66,
+              "ic95_lo": 31.2,
+              "ic95_hi": 54.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 42.4,
+              "n_ment": 28,
+              "n_base": 66,
+              "ic95_lo": 31.2,
+              "ic95_hi": 54.4,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 11.4,
+              "n_ment": 46,
+              "n_base": 402,
+              "ic95_lo": 8.7,
+              "ic95_hi": 14.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.6,
+              "n_ment": 22,
+              "n_base": 28,
+              "ic95_lo": 60.5,
+              "ic95_hi": 89.8,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 87.0,
+              "n_ment": 20,
+              "n_base": 23,
+              "ic95_lo": 67.9,
+              "ic95_hi": 95.5,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 50.0,
+              "n_ment": 33,
+              "n_base": 66,
+              "ic95_lo": 38.3,
+              "ic95_hi": 61.7,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 50.0,
+              "n_ment": 33,
+              "n_base": 66,
+              "ic95_lo": 38.3,
+              "ic95_hi": 61.7,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 11.2,
+              "n_ment": 45,
+              "n_base": 402,
+              "ic95_lo": 8.5,
+              "ic95_hi": 14.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 64.3,
+              "n_ment": 18,
+              "n_base": 28,
+              "ic95_lo": 45.8,
+              "ic95_hi": 79.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 69.6,
+              "n_ment": 16,
+              "n_base": 23,
+              "ic95_lo": 49.1,
+              "ic95_hi": 84.4,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 45.5,
+              "n_ment": 30,
+              "n_base": 66,
+              "ic95_lo": 34.0,
+              "ic95_hi": 57.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 45.5,
+              "n_ment": 30,
+              "n_base": 66,
+              "ic95_lo": 34.0,
+              "ic95_hi": 57.4,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 11.2,
+              "n_ment": 45,
+              "n_base": 402,
+              "ic95_lo": 8.5,
+              "ic95_hi": 14.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 46.4,
+              "n_ment": 13,
+              "n_base": 28,
+              "ic95_lo": 29.5,
+              "ic95_hi": 64.2,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 43.5,
+              "n_ment": 10,
+              "n_base": 23,
+              "ic95_lo": 25.6,
+              "ic95_hi": 63.2,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 42.4,
+              "n_ment": 28,
+              "n_base": 66,
+              "ic95_lo": 31.2,
+              "ic95_hi": 54.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 42.4,
+              "n_ment": 28,
+              "n_base": 66,
+              "ic95_lo": 31.2,
+              "ic95_hi": 54.4,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 14.9,
+              "n_ment": 60,
+              "n_base": 402,
+              "ic95_lo": 11.8,
+              "ic95_hi": 18.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.6,
+              "n_ment": 22,
+              "n_base": 28,
+              "ic95_lo": 60.5,
+              "ic95_hi": 89.8,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 87.0,
+              "n_ment": 20,
+              "n_base": 23,
+              "ic95_lo": 67.9,
+              "ic95_hi": 95.5,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 62.1,
+              "n_ment": 41,
+              "n_base": 66,
+              "ic95_lo": 50.1,
+              "ic95_hi": 72.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 62.1,
+              "n_ment": 41,
+              "n_base": 66,
+              "ic95_lo": 50.1,
+              "ic95_hi": 72.9,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 16.2,
+              "n_ment": 65,
+              "n_base": 402,
+              "ic95_lo": 12.9,
+              "ic95_hi": 20.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 85.7,
+              "n_ment": 24,
+              "n_base": 28,
+              "ic95_lo": 68.5,
+              "ic95_hi": 94.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 91.3,
+              "n_ment": 21,
+              "n_base": 23,
+              "ic95_lo": 73.2,
+              "ic95_hi": 97.6,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 57.6,
+              "n_ment": 38,
+              "n_base": 66,
+              "ic95_lo": 45.6,
+              "ic95_hi": 68.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 57.6,
+              "n_ment": 38,
+              "n_base": 66,
+              "ic95_lo": 45.6,
+              "ic95_hi": 68.8,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 10.4,
+              "n_ment": 42,
+              "n_base": 402,
+              "ic95_lo": 7.8,
+              "ic95_hi": 13.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.0,
+              "n_ment": 21,
+              "n_base": 28,
+              "ic95_lo": 56.6,
+              "ic95_hi": 87.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 73.9,
+              "n_ment": 17,
+              "n_base": 23,
+              "ic95_lo": 53.5,
+              "ic95_hi": 87.5,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 53.0,
+              "n_ment": 35,
+              "n_base": 66,
+              "ic95_lo": 41.2,
+              "ic95_hi": 64.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 53.0,
+              "n_ment": 35,
+              "n_base": 66,
+              "ic95_lo": 41.2,
+              "ic95_hi": 64.6,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 11.4,
+              "n_ment": 46,
+              "n_base": 402,
+              "ic95_lo": 8.7,
+              "ic95_hi": 14.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 82.1,
+              "n_ment": 23,
+              "n_base": 28,
+              "ic95_lo": 64.4,
+              "ic95_hi": 92.1,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_reciente": {
+              "pct": 78.3,
+              "n_ment": 18,
+              "n_base": 23,
+              "ic95_lo": 58.1,
+              "ic95_hi": 90.3,
+              "flag": "REFERENCIAL"
+            },
+            "Exp_habitual": {
+              "pct": 50.0,
+              "n_ment": 33,
+              "n_base": 66,
+              "ic95_lo": 38.3,
+              "ic95_hi": 61.7,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 50.0,
+              "n_ment": 33,
+              "n_base": 66,
+              "ic95_lo": 38.3,
+              "ic95_hi": 61.7,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "seguro",
+            16.2
+          ],
+          [
+            "limpieza",
+            14.9
+          ],
+          [
+            "surtido",
+            14.2
+          ],
+          [
+            "calidad",
+            13.4
+          ],
+          [
+            "menor_precio",
+            11.9
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 64.4,
+          "calidad": 61.6,
+          "menor_precio": 52.4,
+          "atencion": 67.2,
+          "promociones": 53.1,
+          "atractiva": 35.2,
+          "limpieza": 63.7,
+          "seguro": 69.5,
+          "rapidez": 64.6,
+          "valer_dinero": 70.7
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 47.9,
+          "calidad": 42.7,
+          "menor_precio": 30.5,
+          "atencion": 38.6,
+          "promociones": 34.3,
+          "atractiva": 31.2,
+          "limpieza": 47.2,
+          "seguro": 41.4,
+          "rapidez": 42.6,
+          "valer_dinero": 38.6
+        }
+      },
+      "Central Madeirense": {
+        "n_pref": 45,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 48,
+        "n_exp_habitual": 92,
+        "n_exp_alguna": 99,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 20.6,
+              "n_ment": 83,
+              "n_base": 402,
+              "ic95_lo": 17.0,
+              "ic95_hi": 24.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 80.0,
+              "n_ment": 36,
+              "n_base": 45,
+              "ic95_lo": 66.2,
+              "ic95_hi": 89.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 75.0,
+              "n_ment": 36,
+              "n_base": 48,
+              "ic95_lo": 61.2,
+              "ic95_hi": 85.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 64.1,
+              "n_ment": 59,
+              "n_base": 92,
+              "ic95_lo": 53.9,
+              "ic95_hi": 73.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 62.6,
+              "n_ment": 62,
+              "n_base": 99,
+              "ic95_lo": 52.8,
+              "ic95_hi": 71.5,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 22.6,
+              "n_ment": 91,
+              "n_base": 402,
+              "ic95_lo": 18.8,
+              "ic95_hi": 27.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.6,
+              "n_ment": 34,
+              "n_base": 45,
+              "ic95_lo": 61.3,
+              "ic95_hi": 85.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 70.8,
+              "n_ment": 34,
+              "n_base": 48,
+              "ic95_lo": 56.8,
+              "ic95_hi": 81.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 63.0,
+              "n_ment": 58,
+              "n_base": 92,
+              "ic95_lo": 52.8,
+              "ic95_hi": 72.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 61.6,
+              "n_ment": 61,
+              "n_base": 99,
+              "ic95_lo": 51.8,
+              "ic95_hi": 70.6,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 17.7,
+              "n_ment": 71,
+              "n_base": 402,
+              "ic95_lo": 14.2,
+              "ic95_hi": 21.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 77.8,
+              "n_ment": 35,
+              "n_base": 45,
+              "ic95_lo": 63.7,
+              "ic95_hi": 87.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 64.6,
+              "n_ment": 31,
+              "n_base": 48,
+              "ic95_lo": 50.4,
+              "ic95_hi": 76.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 55.4,
+              "n_ment": 51,
+              "n_base": 92,
+              "ic95_lo": 45.3,
+              "ic95_hi": 65.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 53.5,
+              "n_ment": 53,
+              "n_base": 99,
+              "ic95_lo": 43.8,
+              "ic95_hi": 63.0,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 21.1,
+              "n_ment": 85,
+              "n_base": 402,
+              "ic95_lo": 17.4,
+              "ic95_hi": 25.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 84.4,
+              "n_ment": 38,
+              "n_base": 45,
+              "ic95_lo": 71.2,
+              "ic95_hi": 92.3,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 77.1,
+              "n_ment": 37,
+              "n_base": 48,
+              "ic95_lo": 63.5,
+              "ic95_hi": 86.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 60.9,
+              "n_ment": 56,
+              "n_base": 92,
+              "ic95_lo": 50.7,
+              "ic95_hi": 70.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 61.6,
+              "n_ment": 61,
+              "n_base": 99,
+              "ic95_lo": 51.8,
+              "ic95_hi": 70.6,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 17.2,
+              "n_ment": 69,
+              "n_base": 402,
+              "ic95_lo": 13.8,
+              "ic95_hi": 21.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.6,
+              "n_ment": 34,
+              "n_base": 45,
+              "ic95_lo": 61.3,
+              "ic95_hi": 85.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 66.7,
+              "n_ment": 32,
+              "n_base": 48,
+              "ic95_lo": 52.5,
+              "ic95_hi": 78.3,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 52.2,
+              "n_ment": 48,
+              "n_base": 92,
+              "ic95_lo": 42.1,
+              "ic95_hi": 62.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 50.5,
+              "n_ment": 50,
+              "n_base": 99,
+              "ic95_lo": 40.8,
+              "ic95_hi": 60.1,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 18.9,
+              "n_ment": 76,
+              "n_base": 402,
+              "ic95_lo": 15.4,
+              "ic95_hi": 23.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 68.9,
+              "n_ment": 31,
+              "n_base": 45,
+              "ic95_lo": 54.3,
+              "ic95_hi": 80.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 56.2,
+              "n_ment": 27,
+              "n_base": 48,
+              "ic95_lo": 42.3,
+              "ic95_hi": 69.3,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 48.9,
+              "n_ment": 45,
+              "n_base": 92,
+              "ic95_lo": 38.9,
+              "ic95_hi": 59.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 47.5,
+              "n_ment": 47,
+              "n_base": 99,
+              "ic95_lo": 37.9,
+              "ic95_hi": 57.2,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 29.1,
+              "n_ment": 117,
+              "n_base": 402,
+              "ic95_lo": 24.9,
+              "ic95_hi": 33.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 77.8,
+              "n_ment": 35,
+              "n_base": 45,
+              "ic95_lo": 63.7,
+              "ic95_hi": 87.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 81.2,
+              "n_ment": 39,
+              "n_base": 48,
+              "ic95_lo": 68.1,
+              "ic95_hi": 89.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 66.3,
+              "n_ment": 61,
+              "n_base": 92,
+              "ic95_lo": 56.2,
+              "ic95_hi": 75.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 66.7,
+              "n_ment": 66,
+              "n_base": 99,
+              "ic95_lo": 56.9,
+              "ic95_hi": 75.2,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 27.6,
+              "n_ment": 111,
+              "n_base": 402,
+              "ic95_lo": 23.5,
+              "ic95_hi": 32.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 82.2,
+              "n_ment": 37,
+              "n_base": 45,
+              "ic95_lo": 68.7,
+              "ic95_hi": 90.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 72.9,
+              "n_ment": 35,
+              "n_base": 48,
+              "ic95_lo": 59.0,
+              "ic95_hi": 83.4,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 69.6,
+              "n_ment": 64,
+              "n_base": 92,
+              "ic95_lo": 59.5,
+              "ic95_hi": 78.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 66.7,
+              "n_ment": 66,
+              "n_base": 99,
+              "ic95_lo": 56.9,
+              "ic95_hi": 75.2,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 20.4,
+              "n_ment": 82,
+              "n_base": 402,
+              "ic95_lo": 16.7,
+              "ic95_hi": 24.6,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 80.0,
+              "n_ment": 36,
+              "n_base": 45,
+              "ic95_lo": 66.2,
+              "ic95_hi": 89.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 68.8,
+              "n_ment": 33,
+              "n_base": 48,
+              "ic95_lo": 54.7,
+              "ic95_hi": 80.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 67.4,
+              "n_ment": 62,
+              "n_base": 92,
+              "ic95_lo": 57.3,
+              "ic95_hi": 76.1,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 63.6,
+              "n_ment": 63,
+              "n_base": 99,
+              "ic95_lo": 53.8,
+              "ic95_hi": 72.4,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 18.9,
+              "n_ment": 76,
+              "n_base": 402,
+              "ic95_lo": 15.4,
+              "ic95_hi": 23.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.6,
+              "n_ment": 34,
+              "n_base": 45,
+              "ic95_lo": 61.3,
+              "ic95_hi": 85.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 68.8,
+              "n_ment": 33,
+              "n_base": 48,
+              "ic95_lo": 54.7,
+              "ic95_hi": 80.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 59.8,
+              "n_ment": 55,
+              "n_base": 92,
+              "ic95_lo": 49.6,
+              "ic95_hi": 69.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 56.6,
+              "n_ment": 56,
+              "n_base": 99,
+              "ic95_lo": 46.7,
+              "ic95_hi": 65.9,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "limpieza",
+            29.1
+          ],
+          [
+            "seguro",
+            27.6
+          ],
+          [
+            "calidad",
+            22.6
+          ],
+          [
+            "atencion",
+            21.1
+          ],
+          [
+            "surtido",
+            20.6
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 59.4,
+          "calidad": 53.0,
+          "menor_precio": 60.1,
+          "atencion": 63.3,
+          "promociones": 58.4,
+          "atractiva": 50.0,
+          "limpieza": 48.7,
+          "seguro": 54.6,
+          "rapidez": 59.6,
+          "valer_dinero": 56.7
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 42.0,
+          "calidad": 39.0,
+          "menor_precio": 35.8,
+          "atencion": 40.5,
+          "promociones": 33.3,
+          "atractiva": 28.6,
+          "limpieza": 37.6,
+          "seguro": 39.1,
+          "rapidez": 43.2,
+          "valer_dinero": 37.7
+        }
+      },
+      "Forum": {
+        "n_pref": 44,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 56,
+        "n_exp_habitual": 113,
+        "n_exp_alguna": 120,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 24.1,
+              "n_ment": 97,
+              "n_base": 402,
+              "ic95_lo": 20.2,
+              "ic95_hi": 28.5,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 77.3,
+              "n_ment": 34,
+              "n_base": 44,
+              "ic95_lo": 63.0,
+              "ic95_hi": 87.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 71.4,
+              "n_ment": 40,
+              "n_base": 56,
+              "ic95_lo": 58.5,
+              "ic95_hi": 81.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 62.8,
+              "n_ment": 71,
+              "n_base": 113,
+              "ic95_lo": 53.6,
+              "ic95_hi": 71.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 62.5,
+              "n_ment": 75,
+              "n_base": 120,
+              "ic95_lo": 53.6,
+              "ic95_hi": 70.6,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 24.9,
+              "n_ment": 100,
+              "n_base": 402,
+              "ic95_lo": 20.9,
+              "ic95_hi": 29.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 77.3,
+              "n_ment": 34,
+              "n_base": 44,
+              "ic95_lo": 63.0,
+              "ic95_hi": 87.2,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 71.4,
+              "n_ment": 40,
+              "n_base": 56,
+              "ic95_lo": 58.5,
+              "ic95_hi": 81.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 61.9,
+              "n_ment": 70,
+              "n_base": 113,
+              "ic95_lo": 52.7,
+              "ic95_hi": 70.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 60.8,
+              "n_ment": 73,
+              "n_base": 120,
+              "ic95_lo": 51.9,
+              "ic95_hi": 69.1,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 18.7,
+              "n_ment": 75,
+              "n_base": 402,
+              "ic95_lo": 15.2,
+              "ic95_hi": 22.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 70.5,
+              "n_ment": 31,
+              "n_base": 44,
+              "ic95_lo": 55.8,
+              "ic95_hi": 81.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 62.5,
+              "n_ment": 35,
+              "n_base": 56,
+              "ic95_lo": 49.4,
+              "ic95_hi": 74.0,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 50.4,
+              "n_ment": 57,
+              "n_base": 113,
+              "ic95_lo": 41.4,
+              "ic95_hi": 59.5,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 50.0,
+              "n_ment": 60,
+              "n_base": 120,
+              "ic95_lo": 41.2,
+              "ic95_hi": 58.8,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 21.1,
+              "n_ment": 85,
+              "n_base": 402,
+              "ic95_lo": 17.4,
+              "ic95_hi": 25.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 72.7,
+              "n_ment": 32,
+              "n_base": 44,
+              "ic95_lo": 58.2,
+              "ic95_hi": 83.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 66.1,
+              "n_ment": 37,
+              "n_base": 56,
+              "ic95_lo": 53.0,
+              "ic95_hi": 77.1,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 53.1,
+              "n_ment": 60,
+              "n_base": 113,
+              "ic95_lo": 43.9,
+              "ic95_hi": 62.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 51.7,
+              "n_ment": 62,
+              "n_base": 120,
+              "ic95_lo": 42.8,
+              "ic95_hi": 60.4,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 18.7,
+              "n_ment": 75,
+              "n_base": 402,
+              "ic95_lo": 15.2,
+              "ic95_hi": 22.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 68.2,
+              "n_ment": 30,
+              "n_base": 44,
+              "ic95_lo": 53.4,
+              "ic95_hi": 80.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 60.7,
+              "n_ment": 34,
+              "n_base": 56,
+              "ic95_lo": 47.6,
+              "ic95_hi": 72.4,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 52.2,
+              "n_ment": 59,
+              "n_base": 113,
+              "ic95_lo": 43.1,
+              "ic95_hi": 61.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 51.7,
+              "n_ment": 62,
+              "n_base": 120,
+              "ic95_lo": 42.8,
+              "ic95_hi": 60.4,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 25.4,
+              "n_ment": 102,
+              "n_base": 402,
+              "ic95_lo": 21.4,
+              "ic95_hi": 29.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 84.1,
+              "n_ment": 37,
+              "n_base": 44,
+              "ic95_lo": 70.6,
+              "ic95_hi": 92.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 75.0,
+              "n_ment": 42,
+              "n_base": 56,
+              "ic95_lo": 62.3,
+              "ic95_hi": 84.5,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 64.6,
+              "n_ment": 73,
+              "n_base": 113,
+              "ic95_lo": 55.4,
+              "ic95_hi": 72.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 64.2,
+              "n_ment": 77,
+              "n_base": 120,
+              "ic95_lo": 55.3,
+              "ic95_hi": 72.2,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 29.6,
+              "n_ment": 119,
+              "n_base": 402,
+              "ic95_lo": 25.3,
+              "ic95_hi": 34.2,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 86.4,
+              "n_ment": 38,
+              "n_base": 44,
+              "ic95_lo": 73.3,
+              "ic95_hi": 93.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.4,
+              "n_ment": 45,
+              "n_base": 56,
+              "ic95_lo": 68.2,
+              "ic95_hi": 88.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 67.3,
+              "n_ment": 76,
+              "n_base": 113,
+              "ic95_lo": 58.2,
+              "ic95_hi": 75.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 66.7,
+              "n_ment": 80,
+              "n_base": 120,
+              "ic95_lo": 57.8,
+              "ic95_hi": 74.5,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 26.9,
+              "n_ment": 108,
+              "n_base": 402,
+              "ic95_lo": 22.8,
+              "ic95_hi": 31.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 90.9,
+              "n_ment": 40,
+              "n_base": 44,
+              "ic95_lo": 78.8,
+              "ic95_hi": 96.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.4,
+              "n_ment": 45,
+              "n_base": 56,
+              "ic95_lo": 68.2,
+              "ic95_hi": 88.7,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 68.1,
+              "n_ment": 77,
+              "n_base": 113,
+              "ic95_lo": 59.1,
+              "ic95_hi": 76.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 65.8,
+              "n_ment": 79,
+              "n_base": 120,
+              "ic95_lo": 57.0,
+              "ic95_hi": 73.7,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 20.1,
+              "n_ment": 81,
+              "n_base": 402,
+              "ic95_lo": 16.5,
+              "ic95_hi": 24.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 72.7,
+              "n_ment": 32,
+              "n_base": 44,
+              "ic95_lo": 58.2,
+              "ic95_hi": 83.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 67.9,
+              "n_ment": 38,
+              "n_base": 56,
+              "ic95_lo": 54.8,
+              "ic95_hi": 78.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 56.6,
+              "n_ment": 64,
+              "n_base": 113,
+              "ic95_lo": 47.4,
+              "ic95_hi": 65.4,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 54.2,
+              "n_ment": 65,
+              "n_base": 120,
+              "ic95_lo": 45.3,
+              "ic95_hi": 62.8,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 19.9,
+              "n_ment": 80,
+              "n_base": 402,
+              "ic95_lo": 16.3,
+              "ic95_hi": 24.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 79.5,
+              "n_ment": 35,
+              "n_base": 44,
+              "ic95_lo": 65.5,
+              "ic95_hi": 88.8,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 73.2,
+              "n_ment": 41,
+              "n_base": 56,
+              "ic95_lo": 60.4,
+              "ic95_hi": 83.0,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 53.1,
+              "n_ment": 60,
+              "n_base": 113,
+              "ic95_lo": 43.9,
+              "ic95_hi": 62.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 52.5,
+              "n_ment": 63,
+              "n_base": 120,
+              "ic95_lo": 43.6,
+              "ic95_hi": 61.2,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "limpieza",
+            29.6
+          ],
+          [
+            "seguro",
+            26.9
+          ],
+          [
+            "atractiva",
+            25.4
+          ],
+          [
+            "calidad",
+            24.9
+          ],
+          [
+            "surtido",
+            24.1
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 53.2,
+          "calidad": 52.4,
+          "menor_precio": 51.8,
+          "atencion": 51.6,
+          "promociones": 49.5,
+          "atractiva": 58.7,
+          "limpieza": 56.8,
+          "seguro": 64.0,
+          "rapidez": 52.6,
+          "valer_dinero": 59.6
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 38.4,
+          "calidad": 35.9,
+          "menor_precio": 31.3,
+          "atencion": 30.6,
+          "promociones": 33.0,
+          "atractiva": 38.8,
+          "limpieza": 37.1,
+          "seguro": 38.9,
+          "rapidez": 34.1,
+          "valer_dinero": 32.6
+        }
+      },
+      "Plazas": {
+        "n_pref": 37,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 36,
+        "n_exp_habitual": 88,
+        "n_exp_alguna": 91,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 17.4,
+              "n_ment": 70,
+              "n_base": 402,
+              "ic95_lo": 14.0,
+              "ic95_hi": 21.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.4,
+              "n_ment": 29,
+              "n_base": 37,
+              "ic95_lo": 62.8,
+              "ic95_hi": 88.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 72.2,
+              "n_ment": 26,
+              "n_base": 36,
+              "ic95_lo": 56.0,
+              "ic95_hi": 84.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 53.4,
+              "n_ment": 47,
+              "n_base": 88,
+              "ic95_lo": 43.1,
+              "ic95_hi": 63.5,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 52.7,
+              "n_ment": 48,
+              "n_base": 91,
+              "ic95_lo": 42.6,
+              "ic95_hi": 62.7,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 21.4,
+              "n_ment": 86,
+              "n_base": 402,
+              "ic95_lo": 17.7,
+              "ic95_hi": 25.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 83.8,
+              "n_ment": 31,
+              "n_base": 37,
+              "ic95_lo": 68.9,
+              "ic95_hi": 92.3,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.6,
+              "n_ment": 29,
+              "n_base": 36,
+              "ic95_lo": 65.0,
+              "ic95_hi": 90.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 60.2,
+              "n_ment": 53,
+              "n_base": 88,
+              "ic95_lo": 49.8,
+              "ic95_hi": 69.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 60.4,
+              "n_ment": 55,
+              "n_base": 91,
+              "ic95_lo": 50.2,
+              "ic95_hi": 69.9,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 10.9,
+              "n_ment": 44,
+              "n_base": 402,
+              "ic95_lo": 8.3,
+              "ic95_hi": 14.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 56.8,
+              "n_ment": 21,
+              "n_base": 37,
+              "ic95_lo": 40.9,
+              "ic95_hi": 71.3,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 50.0,
+              "n_ment": 18,
+              "n_base": 36,
+              "ic95_lo": 34.5,
+              "ic95_hi": 65.5,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 33.0,
+              "n_ment": 29,
+              "n_base": 88,
+              "ic95_lo": 24.0,
+              "ic95_hi": 43.3,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 33.0,
+              "n_ment": 30,
+              "n_base": 91,
+              "ic95_lo": 24.2,
+              "ic95_hi": 43.1,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 21.1,
+              "n_ment": 85,
+              "n_base": 402,
+              "ic95_lo": 17.4,
+              "ic95_hi": 25.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 89.2,
+              "n_ment": 33,
+              "n_base": 37,
+              "ic95_lo": 75.3,
+              "ic95_hi": 95.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 77.8,
+              "n_ment": 28,
+              "n_base": 36,
+              "ic95_lo": 61.9,
+              "ic95_hi": 88.3,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 60.2,
+              "n_ment": 53,
+              "n_base": 88,
+              "ic95_lo": 49.8,
+              "ic95_hi": 69.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 59.3,
+              "n_ment": 54,
+              "n_base": 91,
+              "ic95_lo": 49.1,
+              "ic95_hi": 68.9,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 15.9,
+              "n_ment": 64,
+              "n_base": 402,
+              "ic95_lo": 12.7,
+              "ic95_hi": 19.8,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 62.2,
+              "n_ment": 23,
+              "n_base": 37,
+              "ic95_lo": 46.1,
+              "ic95_hi": 75.9,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 61.1,
+              "n_ment": 22,
+              "n_base": 36,
+              "ic95_lo": 44.9,
+              "ic95_hi": 75.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 45.5,
+              "n_ment": 40,
+              "n_base": 88,
+              "ic95_lo": 35.5,
+              "ic95_hi": 55.8,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 45.1,
+              "n_ment": 41,
+              "n_base": 91,
+              "ic95_lo": 35.2,
+              "ic95_hi": 55.3,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 19.9,
+              "n_ment": 80,
+              "n_base": 402,
+              "ic95_lo": 16.3,
+              "ic95_hi": 24.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.4,
+              "n_ment": 29,
+              "n_base": 37,
+              "ic95_lo": 62.8,
+              "ic95_hi": 88.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 69.4,
+              "n_ment": 25,
+              "n_base": 36,
+              "ic95_lo": 53.1,
+              "ic95_hi": 82.0,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 58.0,
+              "n_ment": 51,
+              "n_base": 88,
+              "ic95_lo": 47.5,
+              "ic95_hi": 67.7,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 57.1,
+              "n_ment": 52,
+              "n_base": 91,
+              "ic95_lo": 46.9,
+              "ic95_hi": 66.8,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 30.6,
+              "n_ment": 123,
+              "n_base": 402,
+              "ic95_lo": 26.3,
+              "ic95_hi": 35.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 83.8,
+              "n_ment": 31,
+              "n_base": 37,
+              "ic95_lo": 68.9,
+              "ic95_hi": 92.3,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 75.0,
+              "n_ment": 27,
+              "n_base": 36,
+              "ic95_lo": 58.9,
+              "ic95_hi": 86.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 62.5,
+              "n_ment": 55,
+              "n_base": 88,
+              "ic95_lo": 52.1,
+              "ic95_hi": 71.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 62.6,
+              "n_ment": 57,
+              "n_base": 91,
+              "ic95_lo": 52.4,
+              "ic95_hi": 71.9,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 28.1,
+              "n_ment": 113,
+              "n_base": 402,
+              "ic95_lo": 23.9,
+              "ic95_hi": 32.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 83.8,
+              "n_ment": 31,
+              "n_base": 37,
+              "ic95_lo": 68.9,
+              "ic95_hi": 92.3,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 80.6,
+              "n_ment": 29,
+              "n_base": 36,
+              "ic95_lo": 65.0,
+              "ic95_hi": 90.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 61.4,
+              "n_ment": 54,
+              "n_base": 88,
+              "ic95_lo": 50.9,
+              "ic95_hi": 70.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 61.5,
+              "n_ment": 56,
+              "n_base": 91,
+              "ic95_lo": 51.3,
+              "ic95_hi": 70.9,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 15.7,
+              "n_ment": 63,
+              "n_base": 402,
+              "ic95_lo": 12.4,
+              "ic95_hi": 19.5,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 73.0,
+              "n_ment": 27,
+              "n_base": 37,
+              "ic95_lo": 57.0,
+              "ic95_hi": 84.6,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 66.7,
+              "n_ment": 24,
+              "n_base": 36,
+              "ic95_lo": 50.3,
+              "ic95_hi": 79.8,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 47.7,
+              "n_ment": 42,
+              "n_base": 88,
+              "ic95_lo": 37.6,
+              "ic95_hi": 58.0,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 47.3,
+              "n_ment": 43,
+              "n_base": 91,
+              "ic95_lo": 37.3,
+              "ic95_hi": 57.4,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 12.9,
+              "n_ment": 52,
+              "n_base": 402,
+              "ic95_lo": 10.0,
+              "ic95_hi": 16.6,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 70.3,
+              "n_ment": 26,
+              "n_base": 37,
+              "ic95_lo": 54.2,
+              "ic95_hi": 82.5,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 61.1,
+              "n_ment": 22,
+              "n_base": 36,
+              "ic95_lo": 44.9,
+              "ic95_hi": 75.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 44.3,
+              "n_ment": 39,
+              "n_base": 88,
+              "ic95_lo": 34.4,
+              "ic95_hi": 54.7,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 42.9,
+              "n_ment": 39,
+              "n_base": 91,
+              "ic95_lo": 33.2,
+              "ic95_hi": 53.1,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "limpieza",
+            30.6
+          ],
+          [
+            "seguro",
+            28.1
+          ],
+          [
+            "calidad",
+            21.4
+          ],
+          [
+            "atencion",
+            21.1
+          ],
+          [
+            "atractiva",
+            19.9
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 61.0,
+          "calidad": 62.4,
+          "menor_precio": 45.9,
+          "atencion": 68.1,
+          "promociones": 46.3,
+          "atractiva": 58.5,
+          "limpieza": 53.2,
+          "seguro": 55.7,
+          "rapidez": 57.3,
+          "valer_dinero": 57.4
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 35.3,
+          "calidad": 39.0,
+          "menor_precio": 22.1,
+          "atencion": 38.2,
+          "promociones": 29.2,
+          "atractiva": 37.2,
+          "limpieza": 32.0,
+          "seguro": 33.4,
+          "rapidez": 31.6,
+          "valer_dinero": 30.0
+        }
+      },
+      "Luz": {
+        "n_pref": 32,
+        "n_pref_flag": "OK",
+        "n_exp_reciente": 31,
+        "n_exp_habitual": 55,
+        "n_exp_alguna": 57,
+        "atributos": {
+          "surtido": {
+            "Total": {
+              "pct": 11.4,
+              "n_ment": 46,
+              "n_base": 402,
+              "ic95_lo": 8.7,
+              "ic95_hi": 14.9,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.1,
+              "n_ment": 25,
+              "n_base": 32,
+              "ic95_lo": 61.2,
+              "ic95_hi": 89.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 74.2,
+              "n_ment": 23,
+              "n_base": 31,
+              "ic95_lo": 56.8,
+              "ic95_hi": 86.3,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 67.3,
+              "n_ment": 37,
+              "n_base": 55,
+              "ic95_lo": 54.1,
+              "ic95_hi": 78.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 66.7,
+              "n_ment": 38,
+              "n_base": 57,
+              "ic95_lo": 53.7,
+              "ic95_hi": 77.5,
+              "flag": "OK"
+            }
+          },
+          "calidad": {
+            "Total": {
+              "pct": 10.9,
+              "n_ment": 44,
+              "n_base": 402,
+              "ic95_lo": 8.3,
+              "ic95_hi": 14.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 71.9,
+              "n_ment": 23,
+              "n_base": 32,
+              "ic95_lo": 54.6,
+              "ic95_hi": 84.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 71.0,
+              "n_ment": 22,
+              "n_base": 31,
+              "ic95_lo": 53.4,
+              "ic95_hi": 83.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 60.0,
+              "n_ment": 33,
+              "n_base": 55,
+              "ic95_lo": 46.8,
+              "ic95_hi": 71.9,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 59.6,
+              "n_ment": 34,
+              "n_base": 57,
+              "ic95_lo": 46.7,
+              "ic95_hi": 71.4,
+              "flag": "OK"
+            }
+          },
+          "menor_precio": {
+            "Total": {
+              "pct": 12.2,
+              "n_ment": 49,
+              "n_base": 402,
+              "ic95_lo": 9.3,
+              "ic95_hi": 15.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 71.9,
+              "n_ment": 23,
+              "n_base": 32,
+              "ic95_lo": 54.6,
+              "ic95_hi": 84.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 77.4,
+              "n_ment": 24,
+              "n_base": 31,
+              "ic95_lo": 60.2,
+              "ic95_hi": 88.6,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 72.7,
+              "n_ment": 40,
+              "n_base": 55,
+              "ic95_lo": 59.8,
+              "ic95_hi": 82.7,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 71.9,
+              "n_ment": 41,
+              "n_base": 57,
+              "ic95_lo": 59.2,
+              "ic95_hi": 81.9,
+              "flag": "OK"
+            }
+          },
+          "atencion": {
+            "Total": {
+              "pct": 13.4,
+              "n_ment": 54,
+              "n_base": 402,
+              "ic95_lo": 10.4,
+              "ic95_hi": 17.1,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.0,
+              "n_ment": 24,
+              "n_base": 32,
+              "ic95_lo": 57.9,
+              "ic95_hi": 86.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 71.0,
+              "n_ment": 22,
+              "n_base": 31,
+              "ic95_lo": 53.4,
+              "ic95_hi": 83.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 69.1,
+              "n_ment": 38,
+              "n_base": 55,
+              "ic95_lo": 56.0,
+              "ic95_hi": 79.7,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 68.4,
+              "n_ment": 39,
+              "n_base": 57,
+              "ic95_lo": 55.5,
+              "ic95_hi": 79.0,
+              "flag": "OK"
+            }
+          },
+          "promociones": {
+            "Total": {
+              "pct": 14.9,
+              "n_ment": 60,
+              "n_base": 402,
+              "ic95_lo": 11.8,
+              "ic95_hi": 18.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.1,
+              "n_ment": 25,
+              "n_base": 32,
+              "ic95_lo": 61.2,
+              "ic95_hi": 89.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 83.9,
+              "n_ment": 26,
+              "n_base": 31,
+              "ic95_lo": 67.4,
+              "ic95_hi": 92.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 76.4,
+              "n_ment": 42,
+              "n_base": 55,
+              "ic95_lo": 63.7,
+              "ic95_hi": 85.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 75.4,
+              "n_ment": 43,
+              "n_base": 57,
+              "ic95_lo": 62.9,
+              "ic95_hi": 84.8,
+              "flag": "OK"
+            }
+          },
+          "atractiva": {
+            "Total": {
+              "pct": 9.7,
+              "n_ment": 39,
+              "n_base": 402,
+              "ic95_lo": 7.2,
+              "ic95_hi": 13.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 53.1,
+              "n_ment": 17,
+              "n_base": 32,
+              "ic95_lo": 36.4,
+              "ic95_hi": 69.1,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 48.4,
+              "n_ment": 15,
+              "n_base": 31,
+              "ic95_lo": 32.0,
+              "ic95_hi": 65.2,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 45.5,
+              "n_ment": 25,
+              "n_base": 55,
+              "ic95_lo": 33.0,
+              "ic95_hi": 58.5,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 43.9,
+              "n_ment": 25,
+              "n_base": 57,
+              "ic95_lo": 31.8,
+              "ic95_hi": 56.7,
+              "flag": "OK"
+            }
+          },
+          "limpieza": {
+            "Total": {
+              "pct": 14.9,
+              "n_ment": 60,
+              "n_base": 402,
+              "ic95_lo": 11.8,
+              "ic95_hi": 18.7,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 71.9,
+              "n_ment": 23,
+              "n_base": 32,
+              "ic95_lo": 54.6,
+              "ic95_hi": 84.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 71.0,
+              "n_ment": 22,
+              "n_base": 31,
+              "ic95_lo": 53.4,
+              "ic95_hi": 83.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 67.3,
+              "n_ment": 37,
+              "n_base": 55,
+              "ic95_lo": 54.1,
+              "ic95_hi": 78.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 66.7,
+              "n_ment": 38,
+              "n_base": 57,
+              "ic95_lo": 53.7,
+              "ic95_hi": 77.5,
+              "flag": "OK"
+            }
+          },
+          "seguro": {
+            "Total": {
+              "pct": 15.2,
+              "n_ment": 61,
+              "n_base": 402,
+              "ic95_lo": 12.0,
+              "ic95_hi": 19.0,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 78.1,
+              "n_ment": 25,
+              "n_base": 32,
+              "ic95_lo": 61.2,
+              "ic95_hi": 89.0,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 83.9,
+              "n_ment": 26,
+              "n_base": 31,
+              "ic95_lo": 67.4,
+              "ic95_hi": 92.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 70.9,
+              "n_ment": 39,
+              "n_base": 55,
+              "ic95_lo": 57.9,
+              "ic95_hi": 81.2,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 70.2,
+              "n_ment": 40,
+              "n_base": 57,
+              "ic95_lo": 57.3,
+              "ic95_hi": 80.5,
+              "flag": "OK"
+            }
+          },
+          "rapidez": {
+            "Total": {
+              "pct": 10.0,
+              "n_ment": 40,
+              "n_base": 402,
+              "ic95_lo": 7.4,
+              "ic95_hi": 13.3,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 71.9,
+              "n_ment": 23,
+              "n_base": 32,
+              "ic95_lo": 54.6,
+              "ic95_hi": 84.4,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 64.5,
+              "n_ment": 20,
+              "n_base": 31,
+              "ic95_lo": 46.9,
+              "ic95_hi": 78.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 56.4,
+              "n_ment": 31,
+              "n_base": 55,
+              "ic95_lo": 43.3,
+              "ic95_hi": 68.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 54.4,
+              "n_ment": 31,
+              "n_base": 57,
+              "ic95_lo": 41.6,
+              "ic95_hi": 66.6,
+              "flag": "OK"
+            }
+          },
+          "valer_dinero": {
+            "Total": {
+              "pct": 13.7,
+              "n_ment": 55,
+              "n_base": 402,
+              "ic95_lo": 10.7,
+              "ic95_hi": 17.4,
+              "flag": "OK"
+            },
+            "Pref": {
+              "pct": 75.0,
+              "n_ment": 24,
+              "n_base": 32,
+              "ic95_lo": 57.9,
+              "ic95_hi": 86.7,
+              "flag": "OK"
+            },
+            "Exp_reciente": {
+              "pct": 71.0,
+              "n_ment": 22,
+              "n_base": 31,
+              "ic95_lo": 53.4,
+              "ic95_hi": 83.9,
+              "flag": "OK"
+            },
+            "Exp_habitual": {
+              "pct": 76.4,
+              "n_ment": 42,
+              "n_base": 55,
+              "ic95_lo": 63.7,
+              "ic95_hi": 85.6,
+              "flag": "OK"
+            },
+            "Exp_alguna": {
+              "pct": 73.7,
+              "n_ment": 42,
+              "n_base": 57,
+              "ic95_lo": 61.0,
+              "ic95_hi": 83.4,
+              "flag": "OK"
+            }
+          }
+        },
+        "top5_por_asociacion_total": [
+          [
+            "seguro",
+            15.2
+          ],
+          [
+            "promociones",
+            14.9
+          ],
+          [
+            "limpieza",
+            14.9
+          ],
+          [
+            "valer_dinero",
+            13.7
+          ],
+          [
+            "atencion",
+            13.4
+          ]
+        ],
+        "brechas_pref_vs_total": {
+          "surtido": 66.7,
+          "calidad": 61.0,
+          "menor_precio": 59.7,
+          "atencion": 61.6,
+          "promociones": 63.2,
+          "atractiva": 43.4,
+          "limpieza": 57.0,
+          "seguro": 62.9,
+          "rapidez": 61.9,
+          "valer_dinero": 61.3
+        },
+        "brechas_exp_vs_total": {
+          "surtido": 55.3,
+          "calidad": 48.7,
+          "menor_precio": 59.7,
+          "atencion": 55.0,
+          "promociones": 60.5,
+          "atractiva": 34.2,
+          "limpieza": 51.8,
+          "seguro": 55.0,
+          "rapidez": 44.4,
+          "valer_dinero": 60.0
+        }
+      }
+    },
+    "tabla_total": {
+      "Gama": {
+        "menor_precio": {
+          "pct": 7.2,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 28.9,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 31.1,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 29.6,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 11.4,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 21.1,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 9.0,
+          "flag": "OK"
+        }
+      },
+      "Paramo": {
+        "menor_precio": {
+          "pct": 35.1,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 31.3,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 34.6,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 36.1,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 32.1,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 30.3,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 30.6,
+          "flag": "OK"
+        }
+      },
+      "Rio": {
+        "menor_precio": {
+          "pct": 13.9,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 28.1,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 33.6,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 27.1,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 17.4,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 21.6,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 17.4,
+          "flag": "OK"
+        }
+      },
+      "Plan Suarez": {
+        "menor_precio": {
+          "pct": 11.9,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 11.2,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 14.9,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 16.2,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 11.4,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 10.4,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 11.2,
+          "flag": "OK"
+        }
+      },
+      "Central Madeirense": {
+        "menor_precio": {
+          "pct": 17.7,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 18.9,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 29.1,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 27.6,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 18.9,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 20.4,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 17.2,
+          "flag": "OK"
+        }
+      },
+      "Forum": {
+        "menor_precio": {
+          "pct": 18.7,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 25.4,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 29.6,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 26.9,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 19.9,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 20.1,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 18.7,
+          "flag": "OK"
+        }
+      },
+      "Plazas": {
+        "menor_precio": {
+          "pct": 10.9,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 19.9,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 30.6,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 28.1,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 12.9,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 15.7,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 15.9,
+          "flag": "OK"
+        }
+      },
+      "Luz": {
+        "menor_precio": {
+          "pct": 12.2,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 9.7,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 14.9,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 15.2,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 13.7,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 10.0,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 14.9,
+          "flag": "OK"
+        }
+      }
+    },
+    "tabla_exp_alguna": {
+      "Gama": {
+        "menor_precio": {
+          "pct": 20.4,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 64.3,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 68.4,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 64.3,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 32.7,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 60.2,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 27.6,
+          "flag": "OK"
+        }
+      },
+      "Paramo": {
+        "menor_precio": {
+          "pct": 72.4,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 59.9,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 73.7,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 71.1,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 71.7,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 65.1,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 59.2,
+          "flag": "OK"
+        }
+      },
+      "Rio": {
+        "menor_precio": {
+          "pct": 38.5,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 71.2,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 73.1,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 72.1,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 49.0,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 61.5,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 45.2,
+          "flag": "OK"
+        }
+      },
+      "Plan Suarez": {
+        "menor_precio": {
+          "pct": 42.4,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 42.4,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 62.1,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 57.6,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 50.0,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 53.0,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 45.5,
+          "flag": "OK"
+        }
+      },
+      "Central Madeirense": {
+        "menor_precio": {
+          "pct": 53.5,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 47.5,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 66.7,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 66.7,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 56.6,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 63.6,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 50.5,
+          "flag": "OK"
+        }
+      },
+      "Forum": {
+        "menor_precio": {
+          "pct": 50.0,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 64.2,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 66.7,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 65.8,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 52.5,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 54.2,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 51.7,
+          "flag": "OK"
+        }
+      },
+      "Plazas": {
+        "menor_precio": {
+          "pct": 33.0,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 57.1,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 62.6,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 61.5,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 42.9,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 47.3,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 45.1,
+          "flag": "OK"
+        }
+      },
+      "Luz": {
+        "menor_precio": {
+          "pct": 71.9,
+          "flag": "OK"
+        },
+        "atractiva": {
+          "pct": 43.9,
+          "flag": "OK"
+        },
+        "limpieza": {
+          "pct": 66.7,
+          "flag": "OK"
+        },
+        "seguro": {
+          "pct": 70.2,
+          "flag": "OK"
+        },
+        "valer_dinero": {
+          "pct": 73.7,
+          "flag": "OK"
+        },
+        "rapidez": {
+          "pct": 54.4,
+          "flag": "OK"
+        },
+        "promociones": {
+          "pct": 75.4,
+          "flag": "OK"
+        }
+      }
+    },
+    "zscores_intercadena": {
+      "menor_precio": {
+        "Gama": -1.09,
+        "Paramo": 2.39,
+        "Rio": -0.26,
+        "Plan Suarez": -0.51,
+        "Central Madeirense": 0.22,
+        "Forum": 0.34,
+        "Plazas": -0.63,
+        "Luz": -0.47
+      },
+      "atractiva": {
+        "Gama": 0.95,
+        "Paramo": 1.26,
+        "Rio": 0.84,
+        "Plan Suarez": -1.38,
+        "Central Madeirense": -0.36,
+        "Forum": 0.49,
+        "Plazas": -0.23,
+        "Luz": -1.57
+      },
+      "limpieza": {
+        "Gama": 0.52,
+        "Paramo": 0.99,
+        "Rio": 0.85,
+        "Plan Suarez": -1.68,
+        "Central Madeirense": 0.24,
+        "Forum": 0.31,
+        "Plazas": 0.45,
+        "Luz": -1.68
+      },
+      "seguro": {
+        "Gama": 0.58,
+        "Paramo": 1.58,
+        "Rio": 0.19,
+        "Plan Suarez": -1.49,
+        "Central Madeirense": 0.27,
+        "Forum": 0.16,
+        "Plazas": 0.35,
+        "Luz": -1.64
+      },
+      "valer_dinero": {
+        "Gama": -0.9,
+        "Paramo": 2.32,
+        "Rio": 0.03,
+        "Plan Suarez": -0.9,
+        "Central Madeirense": 0.26,
+        "Forum": 0.42,
+        "Plazas": -0.67,
+        "Luz": -0.55
+      },
+      "rapidez": {
+        "Gama": 0.39,
+        "Paramo": 1.87,
+        "Rio": 0.47,
+        "Plan Suarez": -1.34,
+        "Central Madeirense": 0.27,
+        "Forum": 0.23,
+        "Plazas": -0.48,
+        "Luz": -1.4
+      },
+      "promociones": {
+        "Gama": -1.3,
+        "Paramo": 2.28,
+        "Rio": 0.09,
+        "Plan Suarez": -0.94,
+        "Central Madeirense": 0.06,
+        "Forum": 0.3,
+        "Plazas": -0.16,
+        "Luz": -0.33
+      }
+    },
+    "mundos_de_marca": {
+      "Gama": {
+        "top3_atributos": [
+          "Limpieza/orden",
+          "Seguro",
+          "Tienda atractiva"
+        ],
+        "cuarto_atributo": "Mayor calidad",
+        "atributo_sombra": "Mejor atencion (+62pp en preferentes)",
+        "n_pref": 32,
+        "flag": "OK"
+      },
+      "Paramo": {
+        "top3_atributos": [
+          "Seguro",
+          "Menor precio",
+          "Limpieza/orden"
+        ],
+        "cuarto_atributo": "Mejor atencion",
+        "atributo_sombra": "Valer dinero (+60pp en preferentes)",
+        "n_pref": 85,
+        "flag": "OK"
+      },
+      "Rio": {
+        "top3_atributos": [
+          "Limpieza/orden",
+          "Tienda atractiva",
+          "Seguro"
+        ],
+        "cuarto_atributo": "Mayor calidad",
+        "atributo_sombra": "Mayor calidad (+69pp en preferentes)",
+        "n_pref": 41,
+        "flag": "OK"
+      },
+      "Plan Suarez": {
+        "top3_atributos": [
+          "Seguro",
+          "Limpieza/orden",
+          "Mayor surtido"
+        ],
+        "cuarto_atributo": "Mayor calidad",
+        "atributo_sombra": "Valer dinero (+71pp en preferentes)",
+        "n_pref": 28,
+        "flag": "REFERENCIAL"
+      },
+      "Central Madeirense": {
+        "top3_atributos": [
+          "Limpieza/orden",
+          "Seguro",
+          "Mayor calidad"
+        ],
+        "cuarto_atributo": "Mejor atencion",
+        "atributo_sombra": "Mejor atencion (+63pp en preferentes)",
+        "n_pref": 45,
+        "flag": "OK"
+      },
+      "Forum": {
+        "top3_atributos": [
+          "Limpieza/orden",
+          "Seguro",
+          "Tienda atractiva"
+        ],
+        "cuarto_atributo": "Mayor calidad",
+        "atributo_sombra": "Valer dinero (+60pp en preferentes)",
+        "n_pref": 44,
+        "flag": "OK"
+      },
+      "Plazas": {
+        "top3_atributos": [
+          "Limpieza/orden",
+          "Seguro",
+          "Mayor calidad"
+        ],
+        "cuarto_atributo": "Mejor atencion",
+        "atributo_sombra": "Mejor atencion (+68pp en preferentes)",
+        "n_pref": 37,
+        "flag": "OK"
+      },
+      "Luz": {
+        "top3_atributos": [
+          "Seguro",
+          "Promociones",
+          "Limpieza/orden"
+        ],
+        "cuarto_atributo": "Valer dinero",
+        "atributo_sombra": "Mayor surtido (+67pp en preferentes)",
+        "n_pref": 32,
+        "flag": "OK"
+      }
+    },
+    "caveat": "La mayoria de cadenas tienen n_pref < 30 — todas las cifras por preferentes son REFERENCIALES. Gama n_pref=32 REFERENCIAL. Paramo n_pref=85 OK. Experiencia reciente (P24) n variable por cadena. Tablas son descriptivas — no usar para inferencia sin validacion Bruna."
+  }
+}
