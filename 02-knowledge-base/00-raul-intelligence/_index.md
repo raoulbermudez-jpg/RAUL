@@ -19,6 +19,7 @@
 | `preferencias-del-owner.md` | Decisiones que Raoul ha tomado, correcciones que ha hecho, lo que aprueba sin pedir cambios | Tarea de alto riesgo, decisión con alternativas, o output de alto impacto |
 | `aprendizajes-genteca.md` | Especificidades del dominio Genteca aprendidas en producción (más allá de lo que dice el KB) | Cualquier tarea del dominio Genteca |
 | `PKA_LEGACY_MAP.md` | Índice maestro de contenido /RAUL/ disperso en C:/G:/D:/OneDrive/Google Drive: ubicaciones canónicas vivas, legacy archivado, contenido por dominio, zonas a depurar y zonas pendientes de explorar | Hay duda sobre dónde vive un archivo legacy, se va a rescatar/depurar contenido fuera del repo activo, o se reactiva F6 y hace falta localizar el research Paxs |
+| `feedback_raul_subagent_no_nested_delegation.md` | Hallazgo arquitectónico crítico: Raul-subagent NO puede delegar a sub-subagents en Claude Code (Agent/Task tool no expuesto al subagent), aunque el frontmatter `tools:` lo declare. Caso base: ola Notoriedad V2.0 Gama 2026-05-17. 4 opciones de remediación documentadas | Antes de invocar Raul como subagent vía Agent tool para trabajo que requiera specialists; al diseñar el patrón de orquestación; al editar SSOT raul.md / runtime raul/AGENT.md |
 
 ## Subcarpetas
 
@@ -34,5 +35,5 @@ Si creas un archivo o subcarpeta nueva en esta carpeta, añade una fila a la tab
 
 ---
 
-**Última actualización:** 2026-05-07
-**Entradas totales:** 5 archivos activos + 1 subcarpeta (`methodology/`)
+**Última actualización:** 2026-05-17
+**Entradas totales:** 6 archivos activos + 1 subcarpeta (`methodology/`)
