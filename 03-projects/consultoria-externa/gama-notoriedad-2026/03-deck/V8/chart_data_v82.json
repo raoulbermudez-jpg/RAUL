@@ -1,0 +1,318 @@
+{
+  "_meta": {
+    "version": "V8.2",
+    "fecha": "2026-05-18",
+    "fuentes": [
+      "CU-9 report — secciones 2/3/6/7/8/9/10",
+      "CU-10 report — secciones 2/3/4",
+      "Word V8 build_word_v8.py — tablas Cap 1/3/4 (datos verificados aprobados por Cora)"
+    ],
+    "validacion": "Todos los valores extraidos LITERALMENTE de reportes Cuanti o tablas del Word V8 aprobado. PROHIBIDO inventar.",
+    "convencion_caveats": "Cifras Pref-Gama (n=32) y otras cadenas con n<30 marcadas REFERENCIAL en cada visualizacion.",
+    "ordenes_marcas": ["Gama", "Páramo", "Rio", "Central Madeirense", "Forum", "Plazas", "Plan Suárez", "Luz"],
+    "ordenes_atributos": ["Limpieza", "Seguro", "Atractiva", "Calidad", "Atención", "Surtido", "Rapidez", "Precio", "Promociones", "ValerDinero"]
+  },
+
+  "C01_embudo_gama": {
+    "title": "Embudo de marca Gama 2026 — Total + C+/C",
+    "type": "bar_horizontal",
+    "fuente": "Word V8 Cap 1.1",
+    "etapas": ["TOM", "Asistida", "Consideración", "Compra 3m", "Preferida", "Habitual"],
+    "gama_total_pct": [44.3, 60.2, 31.8, 17.7, 8.0, 20.2],
+    "gama_cpc_pct": [60.6, null, null, null, 13.5, null],
+    "nota": "Solo Gama tiene datos completos en las 6 etapas (cuestionario branded). Otras cadenas solo TOM + Preferida.",
+    "highlights": [
+      "Gap TOM->Preferida en Total: 44.3% conoce, solo 8.0% prefiere",
+      "En C+/C, TOM sube a 60.6% y Preferida a 13.5% (+5.5pp vs Total)"
+    ]
+  },
+
+  "C02_preferencia_p21_total_vs_cpc": {
+    "title": "Preferencia espontánea P21 — Total vs C+/C",
+    "type": "bar_horizontal_grouped",
+    "fuente": "Word V8 Cap 1.2 + CU-9",
+    "cadenas": ["Páramo", "Rio", "Central Madeirense", "Forum", "Plazas", "Gama", "Luz", "Plan Suárez"],
+    "n_pref_total": [85, 41, 45, 44, 37, 32, 32, 28],
+    "pct_total": [21.1, 10.2, 11.2, 10.9, 9.2, 8.0, 7.9, 7.0],
+    "cadenas_cpc": ["Páramo", "Plan Suárez", "Gama", "Luz", "Central Madeirense", "Plazas", "Forum"],
+    "n_pref_cpc": [18, 16, 14, 11, 9, 9, 7],
+    "pct_cpc": [17.3, 15.4, 13.5, 10.6, 8.7, 8.7, 6.7],
+    "highlights": [
+      "Gama lidera C+/C con 13.5% (#3 si ordenamos por absoluto)",
+      "Plan Suárez es #2 en C+/C con 15.4% (hallazgo Cora)",
+      "Páramo lidera ambos con 21.1% Total y 17.3% C+/C"
+    ],
+    "marcas_referencial": ["Gama", "Luz", "Plan Suárez"]
+  },
+
+  "C03_modelo_mental_precio_dominante": {
+    "title": "Modelo mental por cadena — % preferentes que cita PRECIO como razón espontánea",
+    "type": "bar_vertical",
+    "fuente": "Word V8 Cap 1.3 + CU-9 §7",
+    "cadenas_ordenadas_asc": ["Gama", "Central Madeirense", "Forum", "Plazas", "Rio", "Plan Suárez", "Luz", "Páramo"],
+    "n_preferentes": [32, 45, 44, 37, 41, 28, 32, 85],
+    "pct_precio": [40.6, 51.1, 63.6, 64.9, 68.3, 71.4, 75.0, 84.0],
+    "highlights": [
+      "Gama es la ÚNICA cadena <50% en precio-razón (40.6%)",
+      "Las otras 7 cadenas están entre 51-84%",
+      "Línea horizontal threshold en 50% para visualizar el outlier"
+    ],
+    "color_gama": "#E30613",
+    "color_otros": "#7C8B9B",
+    "marcas_referencial": ["Gama", "Plan Suárez", "Luz"]
+  },
+
+  "C04_tb_vs_t2b_reranking": {
+    "title": "Top Box puro vs Top2Box — reranking V8 vs V7",
+    "type": "bar_horizontal_grouped",
+    "fuente": "CU-10 §2.1",
+    "atributos": ["Limpieza/orden", "Menor precio", "Rapidez caja", "Mayor calidad", "Seguro", "Valer dinero", "Mayor surtido", "Mejor atención", "Promociones", "Tienda atractiva"],
+    "tb_pct": [63.9, 62.4, 58.7, 58.7, 57.7, 57.7, 57.2, 57.0, 50.5, 42.5],
+    "t2b_pct": [97.5, 94.0, 94.0, 97.5, 96.0, 96.5, 95.5, 96.0, 89.6, 84.3],
+    "rank_tb": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "rank_t2b": [1, 8, 7, 2, 4, 3, 6, 5, 9, 10],
+    "delta_rank": [0, 6, 4, -2, -1, -3, -1, -3, 0, 0],
+    "highlights": [
+      "Menor precio sube +6 posiciones (rank 8 T2B -> rank 2 TB)",
+      "Rapidez caja sube +4 posiciones (rank 7 -> rank 3)",
+      "Mejor atención baja -3 (rank 5 -> rank 8)",
+      "Valer dinero baja -3 (rank 3 -> rank 6)"
+    ]
+  },
+
+  "C05_heatmap_tb_puro_por_marca": {
+    "title": "Top Box puro por marca preferida — heatmap 10 atributos x 9 segmentos",
+    "type": "heatmap_table",
+    "fuente": "CU-10 §2.4",
+    "atributos": ["Limpieza/orden", "Menor precio", "Rapidez caja", "Mayor calidad", "Seguro", "Valer dinero", "Mayor surtido", "Mejor atención", "Promociones", "Tienda atractiva"],
+    "segmentos": ["Total", "Pref-Gama*", "Pref-Páramo", "Pref-Rio", "Pref-CM", "Pref-Forum", "Pref-Plazas", "Pref-Luz*", "Pref-PlanS*"],
+    "matrix_pct": [
+      [63.9, 65.6, 60.0, 68.3, 60.0, 68.2, 67.6, 50.0, 57.1],
+      [62.4, 43.8, 68.2, 63.4, 55.6, 50.0, 59.5, 78.1, 50.0],
+      [58.7, 84.4, 50.6, 65.9, 62.2, 75.0, 62.2, 56.2, 57.1],
+      [58.7, 56.2, 56.5, 51.2, 60.0, 70.5, 62.2, 37.5, 67.9],
+      [57.7, 56.2, 56.5, 58.5, 57.8, 56.8, 67.6, 56.2, 53.6],
+      [57.7, 71.9, 63.5, 51.2, 57.8, 50.0, 54.1, 75.0, 53.6],
+      [57.2, 62.5, 50.6, 73.2, 60.0, 65.9, 48.6, 50.0, 67.9],
+      [57.0, 71.9, 55.3, 56.1, 57.8, 54.5, 56.8, 53.1, 42.9],
+      [50.5, 25.0, 55.3, 36.6, 46.7, 43.2, 43.2, 59.4, 57.1],
+      [42.5, 50.0, 34.1, 34.1, 37.8, 47.7, 51.4, 28.1, 28.6]
+    ],
+    "rows_son_atributos": true,
+    "cols_son_segmentos": true,
+    "highlights": [
+      "Pref-Gama Rapidez=84.4% (celda destacada, valor más alto del heatmap)",
+      "Pref-Gama Precio=43.8% (valor más bajo en columna Gama)",
+      "Pref-Luz Precio=78.1% (cluster precio-dominante)"
+    ],
+    "color_scale": {
+      "min": "#F4F4F4",
+      "max": "#E30613"
+    },
+    "segmentos_referencial_asterisco": ["Pref-Gama*", "Pref-Luz*", "Pref-PlanS*"]
+  },
+
+  "C06_dna_zscores_total_vs_cpc": {
+    "title": "DNA Gama — z-scores de asociación P23 vs media del mercado",
+    "type": "bar_horizontal",
+    "fuente": "CU-9 §6",
+    "atributos": ["Tienda atractiva", "Mayor calidad", "Seguro", "Limpieza/orden", "Rapidez caja", "Mejor atención", "Mayor surtido", "Valer dinero", "Promociones", "Menor precio"],
+    "zscore_total": [1.10, 1.01, 0.84, 0.81, 0.62, 0.52, 0.13, -0.45, -0.64, -0.76],
+    "zscore_v3_2025": [1.09, 0.97, 0.76, 0.72, null, null, null, -0.67, -0.67, -0.72],
+    "nota_cpc": "CU-9 reporta aproximados: Seguro ~+1.0, Atencion ~+0.9, Rapidez ~+0.8, Precio ~-0.5. Para visualizacion usar solo Total (datos exactos).",
+    "highlights": [
+      "6 atributos en sobreíndice (vs 4 en V3)",
+      "Rapidez y Atención son NUEVOS sobreíndices V8",
+      "Precio -0.76 sostiene el subíndice (estructural)"
+    ]
+  },
+
+  "C07_heatmap_p23_mundo_marca": {
+    "title": "Mundo de marca P23 — imagen total 8 cadenas x 10 atributos",
+    "type": "heatmap_table",
+    "fuente": "CU-10 §4.1",
+    "cadenas": ["Gama", "Páramo", "Rio", "Central Madeirense", "Forum", "Plazas", "Plan Suárez", "Luz"],
+    "atributos": ["Limpieza", "Seguro", "Atractiva", "Calidad", "Atención", "Surtido", "Rapidez", "Precio", "Promociones", "ValerDinero"],
+    "matrix_pct": [
+      [31.1, 29.6, 28.9, 26.6, 21.9, 17.9, 21.1, 7.2, 9.0, 11.4],
+      [34.6, 36.1, 31.3, 26.6, 32.3, 29.4, 30.3, 35.1, 30.6, 32.1],
+      [33.6, 27.1, 28.1, 26.1, 23.9, 21.9, 21.6, 13.9, 17.4, 17.4],
+      [29.1, 27.6, 18.9, 22.6, 21.1, 20.6, 20.4, 17.7, 17.2, 18.9],
+      [29.6, 26.9, 25.4, 24.9, 21.1, 24.1, 20.1, 18.7, 18.7, 19.9],
+      [30.6, 28.1, 19.9, 21.4, 21.1, 17.4, 15.7, 10.9, 15.9, 12.9],
+      [14.9, 16.2, 11.2, 13.4, 11.4, 14.2, 10.4, 11.9, 11.2, 11.4],
+      [14.9, 15.2, 9.7, 10.9, 13.4, 11.4, 10.0, 12.2, 14.9, 13.7]
+    ],
+    "rows_son_cadenas": true,
+    "cols_son_atributos": true,
+    "fila_destacar": "Gama",
+    "highlights": [
+      "Gama Precio=7.2% es la asociación más baja del mercado",
+      "Páramo única con imagen rica en todos los atributos (Precio 35.1%, Seguro 36.1%)",
+      "Luz Promociones=14.9% es su punto más alto (perfil promocional)"
+    ],
+    "color_scale": {
+      "min": "#F4F4F4",
+      "max": "#E30613"
+    }
+  },
+
+  "C08_tornado_brechas_p23_gama": {
+    "title": "Brechas P23 Gama — Pref-Gama y Exp.reciente vs Total",
+    "type": "tornado_bar_horizontal",
+    "fuente": "CU-10 §4.3",
+    "atributos": ["Mejor atención", "Limpieza/orden", "Seguro", "Mayor surtido", "Rapidez caja", "Tienda atractiva", "Mayor calidad", "Promociones", "Valer dinero", "Menor precio"],
+    "total_pct": [21.9, 31.1, 29.6, 17.9, 21.1, 28.9, 26.6, 9.0, 11.4, 7.2],
+    "pref_gama_pct": [84.4, 90.6, 84.4, 71.9, 75.0, 81.2, 78.1, 50.0, 46.9, 31.2],
+    "exp_reciente_pct": [83.3, 76.7, 86.7, 80.0, 73.3, 73.3, 76.7, 50.0, 46.7, 43.3],
+    "delta_pref_total": [62.5, 59.5, 54.8, 54.0, 53.9, 52.3, 51.5, 41.0, 35.5, 24.0],
+    "delta_exp_total": [61.4, 45.6, 57.1, 62.1, 52.2, 44.4, 50.1, 41.0, 35.3, 36.1],
+    "highlights": [
+      "Atención +62.5 pp (Pref vs Total) — atributo SOMBRA de Gama, brecha más grande del estudio",
+      "Compradores recientes asocian Gama con Atención en 83.3% (vs 21.9% Total)",
+      "Validación por experiencia: quien va, valida el DNA experiencial"
+    ],
+    "referencial_pref_n": 32,
+    "referencial_exp_n": 30
+  },
+
+  "C09_scatter_vecindad_perceptual": {
+    "title": "Vecindad perceptual — 8 cadenas posicionadas por imagen P23",
+    "type": "scatter_xy_labeled",
+    "fuente": "Calculado desde CU-10 §4.1 (matriz P23)",
+    "calculo_x": "Promedio % asociación atributos experienciales (Limpieza+Seguro+Atractiva+Calidad)/4",
+    "calculo_y": "% asociación Menor precio",
+    "puntos": [
+      {"cadena": "Gama", "x": 29.05, "y": 7.2, "color": "#E30613", "destacar": true},
+      {"cadena": "Páramo", "x": 32.15, "y": 35.1, "color": "#4A6FA5"},
+      {"cadena": "Rio", "x": 28.73, "y": 13.9, "color": "#7C8B9B"},
+      {"cadena": "Central Madeirense", "x": 24.55, "y": 17.7, "color": "#5B7090"},
+      {"cadena": "Forum", "x": 26.70, "y": 18.7, "color": "#8FA3B8"},
+      {"cadena": "Plazas", "x": 25.00, "y": 10.9, "color": "#6D8499"},
+      {"cadena": "Plan Suárez", "x": 13.93, "y": 11.9, "color": "#9CAEC0"},
+      {"cadena": "Luz", "x": 12.68, "y": 12.2, "color": "#A8B9C7"}
+    ],
+    "highlights": [
+      "Cluster experiencial baja-precio: Gama (29.05, 7.2), Plazas (25.0, 10.9), Rio (28.73, 13.9)",
+      "Páramo outlier: alta experiencial + alto precio (32.15, 35.1)",
+      "Plan Suárez y Luz: baja imagen general (~13, ~12)"
+    ],
+    "ejes": {
+      "x_label": "% asociación atributos experienciales (promedio)",
+      "y_label": "% asociación Menor Precio"
+    }
+  },
+
+  "C10_forest_plot_logit_paramo": {
+    "title": "Modelo logístico drivers preferencia Páramo — único caso viable (n=85)",
+    "type": "bar_horizontal_with_caveat",
+    "fuente": "CU-10 §3.3",
+    "modelo_global": {
+      "pseudo_r2": 0.021,
+      "llr_p_value": 0.574,
+      "significativo": false,
+      "n_total": 402,
+      "n_paramo": 85
+    },
+    "atributos": ["Mejor atención", "Rapidez caja", "Promociones", "Menor precio", "Seguro", "Mayor surtido", "Mayor calidad", "Limpieza/orden", "Tienda atractiva", "Valer dinero"],
+    "coef_b": [null, null, null, null, null, null, -0.435, null, null, null],
+    "p_value": [null, null, null, null, null, null, 0.042, null, null, null],
+    "odds_ratio": [null, null, null, null, null, null, 0.648, null, null, null],
+    "significativos": ["Mayor calidad"],
+    "interpretacion_unico": "Un punto más en importancia de Mayor calidad REDUCE 35.2% las odds de preferir Páramo (OR=0.648, p=0.042). Coherente: Páramo se elige por precio, no calidad.",
+    "caveat_principal": "Modelo NO significativo globalmente. Pseudo-R²=0.021 (POBRE). LLR p=0.574. Solo 1 atributo significativo de 10.",
+    "implicacion": "Las importancias declaradas P22 NO predicen preferencia. Modelo correcto: PERCEPCIÓN P23 -> PREFERENCIA, no IMPORTANCIA P22 -> PREFERENCIA.",
+    "highlights": [
+      "Single coefficient significant: Mayor calidad OR=0.648, p=0.042",
+      "Global model not significant: LLR p=0.574, pseudo-R²=0.021",
+      "Implicacion estrategica: campaña debe demostrar que Gama TIENE atención, no que atención es importante"
+    ]
+  },
+
+  "C11_percepcion_precio_p33_por_nse": {
+    "title": "Percepción precio Gama (P33) — NETO caro vs NETO económico por NSE",
+    "type": "bar_vertical_grouped",
+    "fuente": "Word V8 Cap 3.1 + CU-8 v2",
+    "nse": ["Total", "C+/C", "D", "E", "Pref-Gama*"],
+    "n_base": [402, 104, 127, 171, 32],
+    "neto_caro_pct": [54.0, 60.6, 49.6, 53.2, 34.4],
+    "neto_economico_pct": [15.4, 11.5, 18.1, 15.8, null],
+    "brecha_pp": [38.6, 49.1, 31.5, 37.4, null],
+    "highlights": [
+      "C+/C es donde Gama MÁS se percibe cara (60.6% NETO caro, +6.6 pp vs Total)",
+      "Pref-Gama solo 34.4% la percibe cara (-19.6 pp vs Total) — quien la prefiere no la ve cara",
+      "Brecha C+/C es la mayor: +49.1 pp entre caro y económico"
+    ],
+    "referencial": ["Pref-Gama*"]
+  },
+
+  "C12_scatter_categorias_estrategia": {
+    "title": "15 categorías Gama — hábito vs precio percibido (estrategia)",
+    "type": "scatter_xy_labeled_cuadrantes",
+    "fuente": "CU-9 §10",
+    "ejes": {
+      "x_label": "% mejor precio percibido Gama (P32)",
+      "y_label": "% hábito Gama (P30)"
+    },
+    "cuadrantes": {
+      "alto_habito_bajo_precio_OFRECER_VALOR": "color verde #2D8F47",
+      "alto_habito_alto_precio_CUIDAR_PRECIO": "color azul #4A6FA5",
+      "bajo_habito_terreno_PARAMO": "color ámbar #F2A900"
+    },
+    "puntos": [
+      {"categoria": "Congelados", "habito": 8.0, "precio": 4.7, "gap": 3.3, "clasificacion": "OFRECER VALOR"},
+      {"categoria": "Salsas/Enlatados", "habito": 7.5, "precio": 4.5, "gap": 3.0, "clasificacion": "OFRECER VALOR"},
+      {"categoria": "Gaseosas/Jugos", "habito": 7.2, "precio": 3.2, "gap": 4.0, "clasificacion": "OFRECER VALOR"},
+      {"categoria": "Galletas", "habito": 7.0, "precio": 5.7, "gap": 1.3, "clasificacion": "CUIDAR PRECIO"},
+      {"categoria": "Productos básicos", "habito": 5.5, "precio": 4.5, "gap": 1.0, "clasificacion": "NEUTRO"},
+      {"categoria": "Cuidado hogar", "habito": 5.0, "precio": 3.7, "gap": 1.3, "clasificacion": "NEUTRO"},
+      {"categoria": "Farmacia", "habito": 4.2, "precio": 3.0, "gap": 1.2, "clasificacion": "CONVENIENCIA"},
+      {"categoria": "Frutas/verduras", "habito": 4.0, "precio": 2.2, "gap": 1.8, "clasificacion": "NEUTRO"},
+      {"categoria": "Cuidado personal", "habito": 4.0, "precio": 3.0, "gap": 1.0, "clasificacion": "NEUTRO"},
+      {"categoria": "Carne", "habito": 3.7, "precio": 3.0, "gap": 0.7, "clasificacion": "TERRENO PÁRAMO"},
+      {"categoria": "Licores", "habito": 3.7, "precio": 3.5, "gap": 0.2, "clasificacion": "NEUTRO"},
+      {"categoria": "Pollo", "habito": 3.5, "precio": 2.5, "gap": 1.0, "clasificacion": "TERRENO PÁRAMO"},
+      {"categoria": "Charcutería", "habito": 3.2, "precio": 1.7, "gap": 1.5, "clasificacion": "TERRENO PÁRAMO"},
+      {"categoria": "Pescados", "habito": 2.7, "precio": 1.0, "gap": 1.7, "clasificacion": "NEUTRO"},
+      {"categoria": "Alimento mascotas", "habito": 1.2, "precio": 1.2, "gap": 0.0, "clasificacion": "AUSENTE"}
+    ],
+    "highlights": [
+      "OFRECER VALOR: Congelados, Salsas, Gaseosas (gap >+3 pp habito sobre precio)",
+      "CUIDAR PRECIO: Galletas (gap pequeño +1.3 pp, hábito alto)",
+      "TERRENO PÁRAMO: Carne/Pollo/Charcutería (Páramo domina)"
+    ],
+    "caveat": "Todos n Gama por categoría REFERENCIAL (n<30). Patrones indicativos."
+  },
+
+  "C13_recall_ptl_dtls_por_nse": {
+    "title": "Recall PTL y DTLS por NSE",
+    "type": "bar_vertical_grouped",
+    "fuente": "CU-9 §8",
+    "nse": ["E", "D", "C+/C"],
+    "pct_muestra_total": [42.5, 31.6, 25.9],
+    "pct_recordadores_ptl": [58.1, 23.3, 18.6],
+    "pct_recordadores_dtls": [54.0, 26.0, 20.0],
+    "n_recordadores": {"ptl": 43, "dtls": 50},
+    "highlights": [
+      "NSE E sobre-representado (58% PTL, 54% DTLS vs 42.5% muestra)",
+      "NSE C+/C sub-representado (19% PTL, 20% DTLS vs 25.9% muestra)",
+      "Distribución casi idéntica PTL vs DTLS — mismo perfil demográfico"
+    ]
+  },
+
+  "C14_perfil_recordadores_vs_muestra": {
+    "title": "Perfil del recordador vs distribución de la muestra — gap NSE",
+    "type": "bar_vertical_grouped",
+    "fuente": "CU-9 §8",
+    "nse": ["E", "D", "C+/C"],
+    "muestra_total_pct": [42.5, 31.6, 25.9],
+    "recordadores_combinados_pct": [56.0, 24.5, 19.3],
+    "gap_pp": [13.5, -7.1, -6.6],
+    "n_recordadores_combinados": 93,
+    "highlights": [
+      "Gap NSE E: +13.5 pp (sobre-representación)",
+      "Gap NSE D: -7.1 pp (sub-representación)",
+      "Gap NSE C+/C: -6.6 pp (sub-representación) — campaña no alcanza al segmento natural de Gama"
+    ]
+  }
+}
