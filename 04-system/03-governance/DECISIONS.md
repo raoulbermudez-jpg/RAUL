@@ -1177,4 +1177,41 @@ El sufijo se quita cuando Cora valide los 5 items y el Owner confirme upgrade a 
 
 ---
 
+## 2026-05-18 — Adopción del híbrido Canva-layout + python-pptx-charts como pattern DEFAULT para Vivienne (no contingente)
+
+**Decisión.** Adoptar el enfoque **híbrido Canva layout + python-pptx charts** como **pattern DEFAULT permanente** para Vivienne en el render de PPTX consultoría externa, no como contingencia / fallback al riesgo 8.1.6 del proposal (`04-system/03-governance/2026-05-18_proposal_vivienne-canva-mcp_v1.md`).
+
+Esto es una **refinación arquitectónica** del proposal V1 (commit `c4147e5`): donde el híbrido aparecía como mitigación al riesgo de que Canva aplane charts a imagen en el export PPTX, ahora pasa a ser la arquitectura operativa firme, independiente del comportamiento del export.
+
+**Contexto y motivación.**
+
+1. **Brand template Gama subido a Canva deriva de un sample previo Gamma de Cora**, no del V8.3 PPTX del repo (commits `ca910fe`, `4c8571b`, `e715496`, `d13cd26`). El sample Gamma alinea Vivienne al aesthetic aspiracional Cora desde día uno, pero **Gamma no produce charts nativos editables** — exporta a PPTX aplanando charts como imágenes. Si Vivienne usara el template Gamma como base sin más, los charts del export Canva podrían quedar aplanados.
+
+2. **Export Canva → PPTX puede aplanar charts a imagen** (riesgo 8.1.6 del proposal — MEDIA, verificar en pilot). El comportamiento exacto del export Canva sobre charts complejos no está validado empíricamente, y depende de tipo de chart, complejidad, y versión del export engine de Canva.
+
+3. **Cora pidió explícitamente charts nativos editables** (commit `4c8571b` — V8.1 reconstrucción de charts pasando de matplotlib PNG a `XL_CHART_TYPE.*` python-pptx). Cumplir este pedido en futuras entregas no es opcional.
+
+Adoptar el híbrido como default permanente **elimina la incertidumbre del comportamiento del export Canva** (no dependemos de él para charts) y **mantiene editabilidad de charts garantizada** independiente del path que tome el render del layout.
+
+**Alternativas consideradas.**
+
+- **(a) Canva 100%.** Layout + charts + todo en Canva, single engine. Rechazado: riesgo de charts aplanados en export, incumple pedido explícito Cora del commit `4c8571b`. Pierde editabilidad nativa que se ganó en V8.1.
+- **(b) python-pptx 100%.** Mantener `build_deck_v*.py` como engine exclusivo, no usar Canva para nada. Rechazado: no aprovecha la inversión en Canva Pro (gobernance doc `2026-05-18_tools-split-policy_canva-pro-adoption.md`) ni el aesthetic aspiracional de Cora que el template Gamma encarna. Conserva el dolor del path actual (fidelidad visual limitada vs lo que cliente espera — §1.2 proposal).
+- **(c) Híbrido condicional (solo si Canva aplana).** Decidir por slide si usar Canva o python-pptx según comportamiento observado del export. Rechazado: agrega complejidad de decisión por slide, requiere pilot empírico para cada tipo de chart, y deja la arquitectura dependiente de un comportamiento de tool externo que puede cambiar entre versiones de Canva.
+- **(d) Híbrido permanente (ELEGIDA).** Canva siempre para layout + brand styling; python-pptx siempre para slides de charts; merge final via script Python o manual. Arquitectura **simple** (regla única, no condicional), **garantiza fidelidad** (editabilidad de charts asegurada por construcción), **separación clara de responsabilidades** (Canva = aesthetic + layout; python-pptx = data + editability).
+
+**Implicaciones.**
+
+- **Vivienne mantiene `build_deck_v*.py` con python-pptx como engine permanente** para los slides de charts. **NO es fallback CORE** en el sentido del split policy (`2026-05-18_tools-split-policy_canva-pro-adoption.md` §3) — es **engine de primera clase complementario** al Canva path. El fallback CORE (Canva entero cae → python-pptx entero) sigue existiendo aparte, sin cambios.
+- **Workflow operativo.** (1) Canva genera el layout (slides narrativos, portadas, secciones, slides de copy) heredando aesthetic del brand template Gamma + brand styling del brand kit `kAHKE4GYHQQ`. (2) python-pptx genera los slides de charts (heredando editabilidad y data binding exacto del V8.3 + helpers `brand-kit.md` §4). (3) Merge final via script Python (`build_merge_canva_pptx_v*.py` — a desarrollar en pilot) o manual (copy-paste de slides chart al PPTX exportado de Canva en PowerPoint local).
+- **El proposal §2 (Arquitectura propuesta) debe actualizarse**: el híbrido pasa de "mitigación al riesgo 8.1.6 — §2.1 principio 4 + §2.5 manejo de charts híbridos" a **decisión arquitectónica firme de primer orden** (§2.1 elevado a principio core, §2.5 reescrita como workflow default no contingente).
+- **El proposal §6 Plan de pilot debe ajustarse**: ya no medimos si charts aplanan (asumimos que sí — por eso híbrido permanente). En su lugar las métricas del pilot pasan a ser: (a) **fidelidad layout Canva vs aspiracional Cora** — diff visual del template Gamma renderado vs sample original Cora; (b) **tiempo de merge híbrido** — overhead operativo de combinar Canva PPTX export + python-pptx slides de charts; (c) **cantidad de slides que requieren python-pptx** — idealmente solo las de charts; cualquier slide narrativo que requiera python-pptx por imposibilidad de Canva = lección a documentar.
+- **El proposal §8.1 Riesgo 8.1.6 queda RESUELTO por esta decisión** — el híbrido es default permanente, no hay riesgo de "charts aplanados por Canva" porque no dependemos de Canva para charts en ningún caso. Marcar resuelto con link cruzado a esta entry.
+- **Vivienne `AGENT.md` update queda diferido a post-pilot** (política §7.3 del proposal sigue vigente). Cuando se aplique post-pilot, el bloque §7.1 del proposal debe reflejar el híbrido como pattern default — específicamente la subsección "Charts críticos híbridos" pasa de mitigación condicional a workflow obligatorio del path Canva.
+- **`canva-assets.md` documenta esta decisión** (`02-knowledge-base/02-domains/06-consultoria-externa/clientes/gama/canva-assets.md` §2.2) como mitigación operativa al hecho de que el brand template subido es Gamma-derivado, no V8.3-derivado.
+
+**Estado.** **APROBADA 2026-05-18.** Activa a partir de esta fecha para todo render PPTX de Vivienne en consultoría externa que use Canva. Refleja en próximo update Vivienne `AGENT.md` post-pilot (commit separado, política §7.3 del proposal). El proposal V1 y `canva-assets.md` quedan actualizados en commit asociado a esta decisión.
+
+---
+
 (próximas entradas debajo, en orden cronológico)

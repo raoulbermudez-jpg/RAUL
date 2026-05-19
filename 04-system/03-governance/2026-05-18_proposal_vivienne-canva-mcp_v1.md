@@ -68,7 +68,7 @@ Por la política de split (`tools-split-policy_canva-pro-adoption.md` §3 — fa
 1. **VI-1 outline sigue siendo SSOT** — sin cambios. El outline Markdown sigue siendo lo que vive en repo, lo que se audita, lo que es portable.
 2. **Output engine PPTX cambia a Canva MCP** como **default cuando aplique** (ver condiciones §2.3).
 3. **`build_deck_v*.py` con python-pptx se mantiene como fallback CORE obligatorio** — política split aplica literal. No se borra, no se deprecia, se mantiene testeado.
-4. **Híbrido para charts** — Canva renderea layout + narrativa visual + brand consistency; charts críticos editables con data binding exacto se generan con python-pptx en slides puntuales y se mergean o re-linkean.
+4. **Híbrido permanente Canva-layout + python-pptx-charts es DEFAULT, no contingencia** — *DECISIÓN ARQUITECTÓNICA FIRME 2026-05-18 (ver DECISIONS.md entry de la misma fecha).* Canva siempre renderea layout + narrativa visual + brand consistency; python-pptx siempre genera los slides de charts con editabilidad nativa garantizada por construcción. No depende del comportamiento del export Canva sobre charts (el riesgo §8.1.6 queda resuelto por esta decisión). Workflow detallado en §2.5.
 5. **Brand kit en KB sigue siendo SSOT** — Canva ingiere el brand kit desde KB markdown; Canva nunca actúa como SSOT del brand kit.
 
 ### 2.2 Diagrama de flujo propuesto (híbrido)
@@ -131,18 +131,29 @@ Vivienne smoke-test Canva MCP (list-brand-kits)
 
 Los otros ~22 tools del MCP (search assets, AI generative, etc.) **no se autorizan en V1** — quedan fuera de scope hasta validación de pilot. Específicamente: cualquier tool que reformule contenido (Magic Switch, Magic Write, etc.) está **prohibido por política de fidelidad de copy** (ver §7 sub-política).
 
-### 2.5 Manejo de charts híbridos (paso a paso técnico)
+### 2.5 Workflow híbrido permanente — Canva layout + python-pptx charts (DEFAULT)
 
-Cuando un slide requiere chart crítico editable con data binding exacto:
+> **Status arquitectónico:** workflow DEFAULT permanente desde decisión 2026-05-18 (DECISIONS.md). NO es contingencia condicional al riesgo 8.1.6 (que queda resuelto por esta decisión). Todo deck que pase por engine Canva sigue este workflow por construcción.
 
-1. Pausar transacción Canva tras `start-editing-transaction` (sin commit).
-2. Generar el slide específico con `python-pptx` (charts nativos editables tipo `XL_CHART_TYPE.BAR_CLUSTERED`, etc.).
-3. Dos rutas de merge:
-   - **Ruta A — merge externo:** exportar parcial Canva → merge con python-pptx local del slide → output PPTX final compuesto. Más complejo, mayor fidelidad.
-   - **Ruta B — re-link en Canva:** upload del PNG del chart python-pptx a Canva via `mcp__claude_ai_Canva__upload-asset` (si tool existe) o paste manual, con nota explícita en cover note de que ese chart NO es editable nativo en Canva.
-4. Decisión Ruta A vs B se toma por slide según criticidad de edición cliente.
+**Principio operativo.** Canva renderea **todo lo narrativo** (portadas, secciones, slides de copy, slides descriptivos, tablas no-data). python-pptx renderea **todo lo que sea chart con data binding exacto** (barras, líneas, heatmaps, scatter, dispersión, área). El merge final compone los dos outputs en un único PPTX entregable.
 
-**Default V1:** Ruta B (re-link) — más simple, valida workflow. Ruta A se evalúa si Cora pide editar charts del PPTX entregado.
+**Pasos técnicos.**
+
+1. **Identificación de slides chart-críticos en el VI-1.** Durante producción del outline Vivienne marca cada slide con su engine: `engine: canva` (narrativo / copy / portada / sección / tabla descriptiva) o `engine: python-pptx` (chart con data binding). El VI-1 lleva esta clasificación como metadata por slide.
+2. **Render Canva del subset narrativo.** `start-editing-transaction` → `perform-editing-operations` para todos los slides marcados `engine: canva` → `commit-editing-transaction` → `export-design` (.pptx). Los slides chart-críticos quedan como **placeholders** en el design Canva (slide vacío o con título solamente).
+3. **Render python-pptx del subset chart-crítico.** En paralelo (o tras export Canva), `build_deck_v*.py` extendido genera **solo los slides chart-críticos** como PPTX standalone, heredando paleta + tipografía del brand kit `brand-kit.md` §4 (helpers ya codificados).
+4. **Merge final.** Dos rutas operativas:
+   - **Ruta A — script Python (`build_merge_canva_pptx_v*.py`, a desarrollar en pilot):** abre el PPTX exportado de Canva con `python-pptx`, reemplaza los slides placeholder por los slides chart standalone preservando orden + numeración. Output: PPTX único compuesto. **Default V1 cuando el script esté disponible.**
+   - **Ruta B — merge manual en PowerPoint local:** Owner abre PPTX Canva en PowerPoint, copia los slides chart desde el PPTX standalone python-pptx y los inserta en posición. **Default V1 mientras el script A no exista.**
+5. **Validación post-merge.** Diff visual rápido — verificar que (a) charts mantienen editabilidad nativa (click en chart en PowerPoint debe abrir editor de datos), (b) numeración correlativa de slides es consistente, (c) brand kit (paleta + tipografía) es consistente entre slides Canva y python-pptx.
+6. **Cover note declara split por slide.** Mini-cover note §5 lista qué slides son `engine: canva` y cuáles `engine: python-pptx`, para trazabilidad y para guiar futuras iteraciones.
+
+**Garantías por construcción.**
+
+- **Editabilidad de charts asegurada** — los charts son python-pptx nativos siempre, no dependen del comportamiento del export Canva.
+- **Aesthetic Canva aplicado al layout** — slides narrativos heredan brand template Gamma + brand kit Canva consistentemente.
+- **Sin decisión condicional por slide en runtime** — la regla es estática (chart → python-pptx, no-chart → Canva), no requiere lógica de "¿se aplanó el chart?" en cada deck.
+- **Fallback CORE intacto** — si Canva entero cae, `build_deck_v*.py` puede renderear el deck completo en python-pptx (incluyendo lo narrativo), según política split (`2026-05-18_tools-split-policy_canva-pro-adoption.md` §3).
 
 ---
 
@@ -333,16 +344,21 @@ Producir la misma entrega por **dos rutas paralelas**, comparar lado a lado:
 
 ### 6.3 Métricas de éxito
 
+> **Update 2026-05-18 (post-decisión híbrido permanente):** la métrica original 6.3.4 ("editabilidad de charts en export Canva") fue removida porque ya **no medimos si Canva aplana charts** — la decisión arquitectónica del híbrido permanente (DECISIONS.md 2026-05-18) asume que los charts siempre van por python-pptx, así que la editabilidad está garantizada por construcción. Las nuevas métricas focalizan en la **viabilidad operativa del workflow híbrido** (fidelidad layout Canva + overhead merge + balance entre engines).
+
 | # | Métrica | Cómo medir | Threshold |
 |---|---|---|---|
 | 6.3.1 | **Fidelidad de copy y caveats Bruna 100% preservada** | Diff manual de cada slide del Canva vs VI-1 outline. Cualquier rephrasing = violación. | 0 violaciones |
 | 6.3.2 | **Calidad visual percibida por Cora ≥ V8.3** | Cora evalúa side-by-side y opina cuál se ve mejor (binario o escala 1-5) | Canva ≥ V8.3 |
 | 6.3.3 | **Tiempo end-to-end Owner→Cora-ready ≤ V8.3** | Cronómetro desde brief Vivienne hasta PPTX listo en Drive Cora | Canva ≤ tiempo V8.3 (~2-3 horas reportado) |
-| 6.3.4 | **Tasa de retoques manuales Cora ↓** | Cora reporta cuántos ajustes manuales hace pre-presentación. Si entregamos PPTX editable Canva, Cora puede editar directo. | Canva ≤ retoques V8.3 |
+| 6.3.4 | **Fidelidad layout Canva vs aspiracional Cora** | Diff visual subjetivo del template Gamma renderado por Vivienne vs el sample original que Cora produjo en Gamma. Owner (y opcional Cora) opinan si el aesthetic se mantiene. | Match ≥ 80% percibido (sin escala formal — juicio Owner / Cora) |
+| 6.3.5 | **Tiempo de merge híbrido aceptable** | Cronómetro del paso 4 §2.5 (merge Canva PPTX + python-pptx chart slides) — manual o vía script Ruta A si está disponible | ≤30 min manual; ≤5 min con script Ruta A |
+| 6.3.6 | **Balance engine por slide razonable** | Conteo de slides con `engine: python-pptx` vs `engine: canva`. Idealmente python-pptx solo en slides chart-críticos. | python-pptx ≤ 30% del deck (los chart-críticos); el resto en Canva |
 
 **Si todas las métricas pasan → pilot OK → autorizar updates AGENT.md §7.**
 **Si 6.3.1 falla → pilot ABORTADO independiente de las otras** (fidelidad de copy es no-negociable).
-**Si 6.3.2 falla pero 6.3.3 y 6.3.4 pasan → re-evaluar — quizá brand template necesita iteración antes de migrar.**
+**Si 6.3.2 o 6.3.4 fallan pero 6.3.3 + 6.3.5 + 6.3.6 pasan → re-evaluar — quizá brand template necesita iteración antes de migrar.**
+**Si 6.3.6 falla (>50% slides en python-pptx) → revisar VI-1 — el deck puede ser sobre-cargado de charts y necesita reformulación narrativa, no decisión de engine.**
 
 ### 6.4 Métricas de fracaso (abort triggers)
 
@@ -460,7 +476,7 @@ Para plataformas de ejecución que tengan acceso a un MCP de diseño visual exte
 | 8.1.3 | **Reescritura accidental por Canva AI features** (Magic Write, Magic Switch, Magic Resize, etc.). | MEDIA si no se controla, BAJA con política | Política explícita §7.1 sub-política "Fidelidad de copy en Canva" — prohibición literal de features que reformulan. Solo `perform-editing-operations` (manual / scripted), no AI generative. |
 | 8.1.4 | **Canva cae o cierra cuenta.** Servicio externo, dependencia commercial. | BAJA pero posible | Fallback CORE python-pptx nunca se borra. Scripts `build_deck_v*.py` se mantienen testeados. Brand kit en markdown KB. PPTX V8.3 (template oficial) committeado en repo. Regeneración 100% posible desde repo. |
 | 8.1.5 | **Brand kit drift entre Canva y KB markdown.** Owner edita en Canva UI, no actualiza KB. O viceversa. | ALTA si no hay disciplina | Política firme §7.1: **SSOT = markdown KB**. Cualquier cambio importante en KB debe sincronizarse a Canva manualmente o vía MCP. Periodic check (mensual) de paleta hex KB vs Canva. |
-| 8.1.6 | **Charts editables nativos no se preservan en export PPTX** (Canva los puede aplanar como imágenes). | MEDIA — verificar en pilot | Híbrido para charts críticos (Ruta B re-link con python-pptx). Si export Canva aplana, pivotear a Ruta A (merge externo) o mantener híbrido permanente. Medir en §6.3.4. |
+| 8.1.6 | ~~**Charts editables nativos no se preservan en export PPTX** (Canva los puede aplanar como imágenes).~~ **RESUELTO 2026-05-18.** | ~~MEDIA~~ N/A | **RESUELTO por decisión arquitectónica 2026-05-18** (DECISIONS.md — "Híbrido Canva-layout + python-pptx-charts como DEFAULT permanente"). El híbrido §2.5 ahora es default por construcción: charts siempre se renderean en python-pptx, independiente del comportamiento del export Canva. No dependemos de Canva para charts → no hay riesgo de aplanamiento. La métrica original 6.3.4 fue reformulada (ver §6.3 update). |
 
 ### 8.2 Riesgos de gobernanza / proceso
 
