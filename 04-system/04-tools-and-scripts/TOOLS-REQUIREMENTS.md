@@ -1,9 +1,11 @@
 # TOOLS-REQUIREMENTS.md
-## Herramientas externas requeridas por el sistema /RAUL/
+## Herramientas CORE requeridas por el sistema /RAUL/
 
-**Versión:** 1.0
-**Última actualización:** 2026-05-01
+**Versión:** 1.1
+**Última actualización:** 2026-05-18
 **Propósito:** inventario de herramientas CLI y librerías Python necesarias para operar los scripts del sistema. Consultar antes de instalar algo nuevo — puede que ya esté disponible.
+
+> **Nota de scope (desde 2026-05-18):** este archivo lista **solo tools CORE** — open-source, requeridas para que el sistema funcione en cualquier clon del repo. Las tools **Owner-selected** (paid / account-based, sustituibles: Claude Code CLI, Anthropic API, claude.ai MCPs, Canva Pro, Google Drive personal, OneDrive backup, etc.) viven en `TOOLS-OWNER-SELECTED.md` como información para clonadores. El split formaliza el principio vendor-neutral del norte arquitectónico §0. Ver `04-system/03-governance/2026-05-18_tools-split-policy_canva-pro-adoption.md`.
 
 ---
 

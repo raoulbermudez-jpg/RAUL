@@ -1097,4 +1097,43 @@ El sistema /RAUL/ captura bien un solo canal de interacción humana — el inter
 
 ---
 
+## 2026-05-18 — Split CORE vs Owner-selected en inventario de tools + adopción Canva Pro (scope Vivienne)
+
+**Decisión.** Dos decisiones interrelacionadas tomadas en la misma sesión:
+
+1. **Adopción Canva Pro** (suscripción anual ~$120 USD) con scope inicial **limitado a Vivienne** vía el MCP Canva de claude.ai (`mcp__claude_ai_Canva__*`). Caso base: próxima entrega Cora del proyecto `consultoria-externa/gama-notoriedad-2026`. Ampliación a Atlas / Luma / Orfeo / Oz light queda como **candidatos** pero NO autorizada hasta validar pilot Vivienne.
+2. **Política de split de inventario de tools** — la documentación de herramientas externas vive en dos archivos separados: `TOOLS-REQUIREMENTS.md` (CORE / open-source / obligatorias) y `TOOLS-OWNER-SELECTED.md` (paid / account-based / sustituibles). El split formaliza el principio vendor-neutral del norte arquitectónico §0.
+
+**Contexto y motivación.**
+
+- El sistema /RAUL/ es vendor-neutral por diseño (norte arquitectónico §0 y principio transversal `portable_text_as_ssot_principle`). Mezclar tools comerciales del Owner con dependencias técnicas core confunde al clonador del repo sobre qué es obligatorio para que el sistema funcione vs qué es elección comercial sustituible.
+- El ciclo V5+V6 del proyecto Notoriedad Gama 2026 evidenció dos cosas: (a) Vivienne tiene fallas predecibles en decks grandes con charts python-pptx (token explosion >32K, memoria `feedback_vivienne_token_explosion_pattern_v1`), y (b) main Claude está absorbiendo carga de output engine para entregas a clientes externos (memoria `feedback_main_claude_executor_fallback_antipattern`). Un output engine externo como Canva descarga ese trabajo del modelo y mejora la calidad visual para entregas premium.
+
+**Alternativas consideradas.**
+
+- *Una sola lista con tags `core` / `owner-selected`.* Rechazado: confunde menos pero no impone la disciplina de separación.
+- *No documentar Owner-selected en absoluto* (asumir obvias desde `.claude/settings.local.json`). Rechazado: settings es permisos, no documenta scope ni fallback. El clonador no debería reverse-engineer las decisiones del Owner.
+- *Para Canva: adoptar Figma + Figma MCP en lugar de Canva.* Diferido — Owner ya tiene tracción visual con Canva, ecosistema de plantillas mayor para outputs de consultoría.
+- *Para Canva: mantener solo python-pptx + matplotlib (status quo).* Funciona pero arrastra los problemas validados en V5+V6.
+
+**Implicaciones.**
+
+- Creado `04-system/04-tools-and-scripts/TOOLS-OWNER-SELECTED.md` v0.1 (seed inicial, va a crecer).
+- Actualizado `TOOLS-REQUIREMENTS.md` a v1.1 con nota de scope al inicio referenciando el split.
+- Creado governance doc detallado en `04-system/03-governance/2026-05-18_tools-split-policy_canva-pro-adoption.md` con rationale, alternativas, próximos pasos y escalaciones pendientes.
+- **Regla operativa para todos los agentes** (codificada en el governance doc §3): cuando un agente planifique outputs considerando una tool Owner-selected, debe mantener fallback CORE. Los scripts existentes (python-pptx, python-docx, matplotlib, PyMuPDF, reportlab, etc.) NO se deprecan. Tools Owner-selected son "mejor opción si está disponible", no reemplazo. Si la tool externa falla, el agente cae al path CORE sin pedir input al Owner.
+- **NO se actualiza `vivienne/AGENT.md` en esta sesión** — eso queda diferido al proposal formal de upgrade Vivienne+Canva, que se redacta cuando el Owner complete la suscripción + auth del MCP Canva en claude.ai.
+
+**Próximos pasos.**
+
+1. Acción Owner (fuera de sesión Raul): suscripción anual Canva Pro + auth del MCP.
+2. Próxima sesión Raul (post-suscripción): proposal formal upgrade Vivienne+Canva — editar `vivienne/AGENT.md` + conceptual SSOT con sección "Canva como output engine opcional" + protocolo de fallback CORE.
+3. Pilot Vivienne con caso base V7 PPTX Cora (Notoriedad Gama) producido vía Canva.
+4. Review post-pilot: comparar V7 Canva vs línea base python-pptx (tiempo, ciclos, calidad). Documentar en task-log.
+5. Decisión Owner diferida: extender Canva a Atlas / Luma / Orfeo / Oz light (caso por caso, no batch) o mantener limitado a Vivienne.
+
+**Estado.** Activa desde 2026-05-18. Implementación documental completa en esta sesión (4 archivos: split docs + governance doc + esta entrada). Pilot y validación pendientes acción Owner.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
