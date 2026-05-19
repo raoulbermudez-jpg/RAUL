@@ -20,18 +20,46 @@ with open(ALL_TABLES_JSON, encoding='utf-8') as f:
 questions = {k: v for k, v in data.items() if not k.startswith('_')}
 meta = data.get('_meta', {})
 
-# ===== Agrupación por sección =====
-SECTIONS = {
+# ===== Agrupación por sección (DINAMICA — matchea prefijos) =====
+SECTION_PREFIXES = {
     'Perfil del entrevistado': ['PF2', 'PF5', 'PF7', 'PF8', 'PF9', 'PF10', 'PD4'],
     'Embudo de marca': ['P16', 'P17', 'P19', 'P20', 'P21', 'P21.1', 'P24'],
-    'Atributos: importancia y asociación': ['P22', 'P23:1', 'P23:2', 'P23:3', 'P23:4', 'P23:5',
-                                              'P23:6', 'P23:8', 'P23:12', 'P23:13', 'P23:21'],
-    'Misiones de compra': ['P25', 'P26'],
-    'Hábitos por categoría': ['P30'],
-    'Precio': ['P31', 'P32', 'P33', 'P34'],
+    'Atributos: importancia y asociación': ['P22', 'P23'],
+    'Misiones de compra (P26 desglosado por misión)': ['P25', 'P26'],
+    'Hábitos por categoría (P30 desglosado por categoría)': ['P30'],
+    'Precio (P32 desglosado por categoría)': ['P31', 'P32', 'P33', 'P34'],
     'Recall publicitario': ['P35', 'P36', 'P37', 'P38', 'P39', 'P40', 'P41', 'P42'],
     'Post-ola': ['P44', 'P45'],
 }
+
+def matches_prefix(q_code, prefix):
+    """Matchea exacta o como prefijo de sub-pregunta (P30 matchea P30:1, P30:2...)."""
+    return q_code == prefix or q_code.startswith(prefix + ':') or q_code.startswith(prefix + '.')
+
+# Construir SECTIONS dinámicamente
+import re as _re
+def sort_key(q):
+    """Ordena por prefijo alfa + número."""
+    m = _re.match(r'^(P[FD]?\d+)([.:]?\d*)$', q)
+    if m:
+        base = m.group(1)
+        sub = m.group(2)
+        sub_num = int(_re.sub(r'[^\d]', '', sub) or 0) if sub else 0
+        base_num = int(_re.findall(r'\d+', base)[0])
+        return (base[0:2], base_num, sub_num)
+    return ('Z', 0, 0)
+
+SECTIONS = {}
+for section_name, prefixes in SECTION_PREFIXES.items():
+    matching_qs = []
+    for q_code in questions.keys():
+        for p in prefixes:
+            if matches_prefix(q_code, p):
+                matching_qs.append(q_code)
+                break
+    matching_qs.sort(key=sort_key)
+    if matching_qs:
+        SECTIONS[section_name] = matching_qs
 
 # Labels más legibles para preguntas
 P23_LABELS = {
@@ -50,7 +78,10 @@ P23_LABELS = {
 def get_label(q_code, q_data):
     if q_code in P23_LABELS:
         return P23_LABELS[q_code]
-    desc = q_data.get('base_description', '')[:80]
+    desc = q_data.get('base_description', '')[:90]
+    # Si es sub-pregunta (P30:1, P26:1, etc.) usar la desc que ya incluye el item
+    if ':' in q_code and q_data.get('parent_question'):
+        return f"{q_code} — {desc}"
     return f"{q_code} — {desc}" if desc else q_code
 
 # ===== Generar HTML =====
@@ -444,8 +475,12 @@ with open(OUT_HTML, 'w', encoding='utf-8') as f:
     f.write(html)
 
 size_mb = os.path.getsize(OUT_HTML) / 1024 / 1024
+total_tables = sum(len(q.get('tables_by_bk', {})) for q in questions.values())
 print(f"HTML generado: {OUT_HTML}")
 print(f"Tamaño: {size_mb:.2f} MB")
-print(f"Preguntas: {len(questions)}")
+print(f"Preguntas (incluye sub-preguntas pivot): {len(questions)}")
 print(f"BKs: 6")
-print(f"Tablas embebidas: 252")
+print(f"Tablas embebidas totales: {total_tables}")
+print(f"Secciones en sidebar: {len(SECTIONS)}")
+for sec, qs in SECTIONS.items():
+    print(f"  {sec}: {len(qs)} preguntas")

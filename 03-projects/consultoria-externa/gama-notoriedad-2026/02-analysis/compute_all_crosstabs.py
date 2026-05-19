@@ -244,42 +244,62 @@ def crosstab_single_select(q_meta, bk_name, df_input):
         'rows': table_rows,
     }
 
-def crosstab_multi_select(q_meta, bk_name, df_input):
-    """Multi-select: una fila por item/columna.
+NEGATIVE_VALUES = {'no', 'ninguno', 'ninguno (no leer)', 'ningun', '0', 'none', 'no recuerda',
+                   'ninguno(*)', 'ninguno en particular'}
 
-    Caso 1 - items son cadenas (P16, P17, P19, P20): valor = "Sí" o cadena
-    Caso 2 - items son atributos/categorias (P23, P26, P30, P32): valor = cadena elegida
+def detect_multi_subtype(cols, df_input):
+    """Detecta sub-tipo de multi_select:
+    - 'flags': cada col es un item, valor = name del item o nulo (P16, P17, P19, P20)
+              → métrica: % que menciona cada item
+    - 'pivot': cada col es un item, valor = cadena elegida (P23, P26, P30, P32)
+              → desglosar en sub-preguntas single_select
     """
+    sample_col = df_input[cols[0]['col_name']].apply(clean_str)
+    unique_vals = [v for v in sample_col.dropna().unique() if v]
+    if not unique_vals:
+        return 'flags'
+    # Heurística: si todos los valores no-vacios contienen el item_label en su texto
+    # → flags (la celda tiene el nombre del propio item cuando está marcada)
+    item_label = cols[0].get('item_label', '') or ''
+    if item_label:
+        item_words = [w for w in item_label.lower().split() if len(w) > 3]
+        if item_words:
+            matches = sum(1 for v in unique_vals[:10]
+                          if any(w in str(v).lower() for w in item_words))
+            if matches >= max(1, len(unique_vals[:10]) // 2):
+                return 'flags'
+    # Si la mayoría de valores únicos son nombres de cadenas conocidas
+    BRANDS = {'paramo', 'forum', 'gama', 'rio', 'plazas', 'luz', 'plan suarez',
+              'central madeirense', 'hiper lider', 'la muralla', 'la granja'}
+    brand_matches = sum(1 for v in unique_vals[:15]
+                        if any(b in str(v).lower() for b in BRANDS))
+    if brand_matches >= len(unique_vals[:15]) * 0.6:
+        return 'pivot'
+    return 'flags'
+
+
+def crosstab_multi_select_flags(q_meta, bk_name, df_input):
+    """Multi-select 'flags' subtype: items son cadenas, valor = nombre cadena o nulo.
+    Métrica: % personas que mencionan cada item (cadena). P16, P17, P19, P20."""
     cols = q_meta['cols']
     bk_masks = build_bk_filter(df_input, bk_name)
     if not bk_masks:
         return None
     bk_levels = list(bk_masks.keys())
 
-    # Detectar subtipo: valores de primera col
-    sample_col = df_input[cols[0]['col_name']].apply(clean_str)
-    unique_vals = sample_col.dropna().unique()
-    is_binary_or_brand_in_col = all(
-        v in ('Sí', 'Si', 'No', None) or any(brand in str(v) for brand in ['Paramo', 'Forum', 'Gama', 'Rio', 'Plazas', 'Luz', 'Plan', 'Central'])
-        for v in unique_vals[:20]
-    )
-
     table_rows = []
     for col_meta in cols:
         col_name = col_meta['col_name']
         item_label = col_meta['item_label'] or col_meta['base_desc'][:60]
         series = df_input[col_name].apply(clean_str)
-
-        # Definir "respuesta positiva" = no nulo y no "No" / no "Ninguno"
         is_positive = series.apply(
-            lambda x: x is not None and str(x).lower() not in ('no', 'ninguno', 'ninguno (no leer)', 'ningun', '0', 'none')
+            lambda x: pd.notna(x) and str(x).strip().lower() not in NEGATIVE_VALUES
         )
 
         n_total = len(df_input)
         v_total = is_positive.sum() / n_total if n_total > 0 else 0
 
-        col_ns = []
-        col_values = []
+        col_ns, col_values = [], []
         for lvl in bk_levels:
             m = bk_masks[lvl] & is_positive
             n_lvl = bk_masks[lvl].sum()
@@ -301,13 +321,79 @@ def crosstab_multi_select(q_meta, bk_name, df_input):
         })
 
     return {
-        'type': 'multi_select',
+        'type': 'multi_select_flags',
         'base_total': len(df_input),
         'base_bk_levels': {lvl: int(bk_masks[lvl].sum()) for lvl in bk_levels},
         'bk_levels': bk_levels,
         'rows': table_rows,
-        'note': 'Multi-select: % personas que mencionan cada item. Filas no suman 100%.',
+        'note': 'Multi-select: % personas que mencionan cada cadena. Filas no suman 100%.',
     }
+
+
+def crosstab_multi_select_pivot_single_col(col_meta, bk_name, df_input, item_label):
+    """Para UNA col individual de un multi-select 'pivot' (P23, P26, P30, P32):
+    trata la col como single_select estándar (distribución de cadenas elegidas).
+    """
+    col_name = col_meta['col_name']
+    series = df_input[col_name].apply(clean_str)
+    base_mask = series.notna() & (series.str.strip().str.lower() != '')
+    if base_mask.sum() == 0:
+        return None
+    df_filtered = df_input[base_mask]
+    series = series[base_mask]
+
+    bk_masks = build_bk_filter(df_filtered, bk_name)
+    if not bk_masks:
+        return None
+    bk_levels = list(bk_masks.keys())
+
+    categories = series.value_counts().head(15).index.tolist()
+    n_total = base_mask.sum()
+
+    table_rows = []
+    for cat in categories:
+        cat_mask = (series == cat)
+        v_total = cat_mask.sum() / n_total if n_total > 0 else 0
+
+        col_ns, col_values = [], []
+        for lvl in bk_levels:
+            m = bk_masks[lvl] & cat_mask
+            n_lvl = bk_masks[lvl].sum()
+            v_lvl = m.sum() / n_lvl if n_lvl > 0 else 0
+            col_ns.append(n_lvl)
+            col_values.append(v_lvl)
+
+        sig_letters = assign_sig_letters(col_values, col_ns)
+        colors = assign_color_vs_total(col_values, col_ns, v_total, n_total)
+
+        table_rows.append({
+            'category': str(cat)[:80],
+            'total': {'n': int(cat_mask.sum()), 'pct': round(v_total*100, 1)},
+            'bk_cells': [
+                {'level': lvl, 'n': int((bk_masks[lvl] & cat_mask).sum()),
+                 'pct': round(v*100, 1), 'sig_letters': letters, 'color': color}
+                for lvl, v, letters, color in zip(bk_levels, col_values, sig_letters, colors)
+            ],
+        })
+
+    return {
+        'type': 'single_select',
+        'base_total': int(base_mask.sum()),
+        'base_bk_levels': {lvl: int(bk_masks[lvl].sum()) for lvl in bk_levels},
+        'bk_levels': bk_levels,
+        'rows': table_rows,
+        'note': f'Sub-pregunta de pregunta pivot: {item_label}',
+    }
+
+
+def crosstab_multi_select(q_meta, bk_name, df_input):
+    """Dispatcher según subtipo (flags vs pivot)."""
+    cols = q_meta['cols']
+    subtype = detect_multi_subtype(cols, df_input)
+    if subtype == 'flags':
+        return crosstab_multi_select_flags(q_meta, bk_name, df_input)
+    # 'pivot' se maneja diferente: desglosa en sub-preguntas fuera de esta función
+    return None  # Marca para desglose externo
 
 def crosstab_escala_1_5(q_meta, bk_name, df_input):
     """Escala 1-5 (P22 importancia): para cada atributo muestra TB% y T2B%."""
@@ -494,6 +580,41 @@ for q_code, q_meta in q_map.items():
         errors.append(f"{q_code}: tipo desconocido {tipo}")
         continue
 
+    # Caso especial: multi_select 'pivot' (P26, P30, P32) → desglosar en sub-preguntas
+    is_pivot = False
+    if tipo == 'multi_select':
+        subtype = detect_multi_subtype(q_meta['cols'], df)
+        if subtype == 'pivot':
+            is_pivot = True
+
+    if is_pivot:
+        # Desglosar cada col en sub-pregunta P30:1, P30:2, ...
+        for idx, col_meta in enumerate(q_meta['cols'], start=1):
+            item_label = col_meta['item_label'] or col_meta['base_desc'][:50]
+            sub_code = f"{q_code}:{idx}"
+            sub_tables = {}
+            for bk_name in BK_CONFIG.keys():
+                try:
+                    result = crosstab_multi_select_pivot_single_col(
+                        col_meta, bk_name, df, item_label
+                    )
+                    if result:
+                        sub_tables[bk_name] = result
+                        tables_generated += 1
+                except Exception as e:
+                    errors.append(f"{sub_code} x {bk_name}: {type(e).__name__}: {str(e)[:80]}")
+            if sub_tables:
+                all_tables[sub_code] = {
+                    'tipo': 'single_select',
+                    'base_description': f"{q_meta['base_description'][:80]} — {item_label}",
+                    'n_items': 1,
+                    'parent_question': q_code,
+                    'tables_by_bk': sub_tables,
+                }
+                questions_processed += 1
+        continue
+
+    # Caso normal
     q_tables = {}
     for bk_name in BK_CONFIG.keys():
         try:
@@ -505,7 +626,6 @@ for q_code, q_meta in q_map.items():
             errors.append(f"{q_code} x {bk_name}: {type(e).__name__}: {str(e)[:80]}")
 
     if q_tables:
-        # Metadata de pregunta
         all_tables[q_code] = {
             'tipo': tipo,
             'base_description': q_meta['base_description'][:120],
