@@ -1,0 +1,3335 @@
+{
+  "P16": {
+    "question_code": "P16",
+    "tipo": "multi_select",
+    "n_cols": 15,
+    "base_description": "Supermercados conoce o ha oido nombrar en ciudad",
+    "cols": [
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Plazas",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 189,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Central Madeirense",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 223,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Forum",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 194,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Rio",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 177,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Gama (Excelsior)",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Gama (Excelsior)",
+        "dtype": "str",
+        "n_valid": 178,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Plan Suarez",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 92,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Paramo",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 156,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Luz",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 97,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - La Muralla",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 27,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Hiper Lider",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 55,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Otros 1 Especificar",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Otros 1 Especificar",
+        "dtype": "str",
+        "n_valid": 132,
+        "n_unique": 29
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Otros 1 Especificar.1",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Otros 1 Especificar.1",
+        "dtype": "str",
+        "n_valid": 36,
+        "n_unique": 19
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Otros 1 Especificar.2",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Otros 1 Especificar.2",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 4
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Otros 1 Especificar.3",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Otros 1 Especificar.3",
+        "dtype": "str",
+        "n_valid": 1,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P16} [V416] Supermercados conoce o ha oido nombrar en ciudad - Otros 1 Especificar.4",
+        "base_desc": "Supermercados conoce o ha oido nombrar en ciudad",
+        "item_label": "Otros 1 Especificar.4",
+        "dtype": "str",
+        "n_valid": 1,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas ": 189
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama (Excelsior)",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Otros 1 Especificar",
+        "Otros 1 Especificar.1",
+        "Otros 1 Especificar.2",
+        "Otros 1 Especificar.3",
+        "Otros 1 Especificar.4"
+      ]
+    }
+  },
+  "P17": {
+    "question_code": "P17",
+    "tipo": "multi_select",
+    "n_cols": 14,
+    "base_description": "Conoce o ha oido nombrar",
+    "cols": [
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Plazas",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 190,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Luz",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 184,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Gama (Excelsior)",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Gama (Excelsior)",
+        "dtype": "str",
+        "n_valid": 202,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Ninguno(*)",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Ninguno(*)",
+        "dtype": "str",
+        "n_valid": 7,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Rio",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 177,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Central Madeirense",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 162,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - La Muralla",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 182,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Forum",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 179,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - No Recuerda",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "No Recuerda",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Plan Suarez",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 242,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Hiper Lider",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 250,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Paramo",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 205,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P17} [V916] Conoce o ha oido nombrar - Otros 1 Especificar",
+        "base_desc": "Conoce o ha oido nombrar",
+        "item_label": "Otros 1 Especificar",
+        "dtype": "str",
+        "n_valid": 16,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P17} [V917] Otros 1 Especificar para Conoce o ha oido nombrar",
+        "base_desc": "Otros 1 Especificar para Conoce o ha oido nombrar",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 368,
+        "n_unique": 14
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas ": 190
+      },
+      "items": [
+        "Plazas",
+        "Luz",
+        "Gama (Excelsior)",
+        "Ninguno(*)",
+        "Rio",
+        "Central Madeirense",
+        "La Muralla",
+        "Forum",
+        "No Recuerda",
+        "Plan Suarez",
+        "Hiper Lider",
+        "Paramo",
+        "Otros 1 Especificar"
+      ]
+    }
+  },
+  "P19": {
+    "question_code": "P19",
+    "tipo": "multi_select",
+    "n_cols": 19,
+    "base_description": "Supermercados consideraria hacer compras",
+    "cols": [
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Plazas",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 135,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Central Madeirense",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 156,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Forum",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 147,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Rio",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 155,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Gama (Excelsior)",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Gama (Excelsior)",
+        "dtype": "str",
+        "n_valid": 128,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Plan Suarez",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 110,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Paramo",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 196,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Luz",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 101,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - La Muralla",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 28,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Hiper Lider",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 69,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Otros 1 Especificar",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Otros 1 Especificar",
+        "dtype": "float64",
+        "n_valid": 0,
+        "n_unique": 0
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Otros 1 Especificar.1",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Otros 1 Especificar.1",
+        "dtype": "str",
+        "n_valid": 36,
+        "n_unique": 15
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Otros 1 Especificar.2",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Otros 1 Especificar.2",
+        "dtype": "str",
+        "n_valid": 5,
+        "n_unique": 4
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Otros 1 Especificar.3",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Otros 1 Especificar.3",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P19} [V173] Supermercados consideraria hacer compras - Otros 1 Especificar.4",
+        "base_desc": "Supermercados consideraria hacer compras",
+        "item_label": "Otros 1 Especificar.4",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 2
+      },
+      {
+        "col_name": " {P19} [V174] Otros 1 Especificar para Supermercados consideraria hacer compras",
+        "base_desc": "Otros 1 Especificar para Supermercados consideraria hacer compras",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 370,
+        "n_unique": 23
+      },
+      {
+        "col_name": " {P19} [V175] Otros 2 Especificar para Supermercados consideraria hacer compras",
+        "base_desc": "Otros 2 Especificar para Supermercados consideraria hacer compras",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 368,
+        "n_unique": 6
+      },
+      {
+        "col_name": " {P19} [V176] Otros 3 Especificar para Supermercados consideraria hacer compras",
+        "base_desc": "Otros 3 Especificar para Supermercados consideraria hacer compras",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 367,
+        "n_unique": 2
+      },
+      {
+        "col_name": " {P19} [V177] Otros 4 Especificar para Supermercados consideraria hacer compras",
+        "base_desc": "Otros 4 Especificar para Supermercados consideraria hacer compras",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 367,
+        "n_unique": 3
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas ": 135
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama (Excelsior)",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Otros 1 Especificar",
+        "Otros 1 Especificar.1",
+        "Otros 1 Especificar.2",
+        "Otros 1 Especificar.3",
+        "Otros 1 Especificar.4"
+      ]
+    }
+  },
+  "P20": {
+    "question_code": "P20",
+    "tipo": "multi_select",
+    "n_cols": 19,
+    "base_description": "Supermercados realizado compras durante los Ultimos 3 meses",
+    "cols": [
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Plazas",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 76,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Central Madeirense",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 91,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Forum",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 98,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Rio",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 106,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Gama (Excelsior)",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Gama (Excelsior)",
+        "dtype": "str",
+        "n_valid": 71,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Plan Suarez",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 47,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Paramo",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 145,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Luz",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 74,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - La Muralla",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 10,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Hiper Lider",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 30,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Otros 1 Especificar",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Otros 1 Especificar",
+        "dtype": "float64",
+        "n_valid": 61,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Otros 2 Especificar",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Otros 2 Especificar",
+        "dtype": "float64",
+        "n_valid": 4,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ultimos 3 meses - Ninguno",
+        "base_desc": "Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": "Ninguno",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ãºltimos 3 meses - Otros 1 Especificar",
+        "base_desc": "Supermercados realizado compras durante los Ãºltimos 3 meses",
+        "item_label": "Otros 1 Especificar",
+        "dtype": "str",
+        "n_valid": 61,
+        "n_unique": 23
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ãºltimos 3 meses - Otros 2 Especificar",
+        "base_desc": "Supermercados realizado compras durante los Ãºltimos 3 meses",
+        "item_label": "Otros 2 Especificar",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 4
+      },
+      {
+        "col_name": " {P20} [V187] Supermercados realizado compras durante los Ãºltimos 3 meses - Ninguno",
+        "base_desc": "Supermercados realizado compras durante los Ãºltimos 3 meses",
+        "item_label": "Ninguno",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 3
+      },
+      {
+        "col_name": " {P20} [V188] Otros 1 Especificar para Supermercados realizado compras durante los Ultimos 3 meses",
+        "base_desc": "Otros 1 Especificar para Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 376,
+        "n_unique": 35
+      },
+      {
+        "col_name": " {P20} [V189] Otros 2 Especificar para Supermercados realizado compras durante los Ultimos 3 meses",
+        "base_desc": "Otros 2 Especificar para Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 368,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P20} [V193] ::Ninguno:: para Supermercados realizado compras durante los Ultimos 3 meses",
+        "base_desc": "::Ninguno:: para Supermercados realizado compras durante los Ultimos 3 meses",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 371,
+        "n_unique": 5
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas ": 76
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama (Excelsior)",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Otros 1 Especificar",
+        "Otros 2 Especificar",
+        "Ninguno",
+        "Otros 1 Especificar",
+        "Otros 2 Especificar",
+        "Ninguno"
+      ]
+    }
+  },
+  "P21": {
+    "question_code": "P21",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Preferido",
+    "cols": [
+      {
+        "col_name": " {P21} [V194] Preferido",
+        "base_desc": "Preferido",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 30
+      }
+    ],
+    "distribution_preview": {
+      "Paramo": 85,
+      "Central Madeirense ": 45,
+      "  Forum": 44,
+      "  Rio": 40,
+      "Plazas ": 37,
+      "Gama Excelsior": 32,
+      "  Luz": 32,
+      "Plan Suarez": 28,
+      "Hiper Lider": 15,
+      "La granja": 11,
+      "Unicasa": 3,
+      "Ser": 3,
+      "Makro": 3,
+      "Hummy": 2,
+      "La Muralla": 2
+    }
+  },
+  "P21.1": {
+    "question_code": "P21.1",
+    "tipo": "multi_select",
+    "n_cols": 16,
+    "base_description": "¿Por qué razón [V194] es su supermercado preferido?",
+    "cols": [
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 1",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "1",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 22
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 2",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "2",
+        "dtype": "str",
+        "n_valid": 375,
+        "n_unique": 26
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 3",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "3",
+        "dtype": "str",
+        "n_valid": 300,
+        "n_unique": 36
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 4",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "4",
+        "dtype": "str",
+        "n_valid": 205,
+        "n_unique": 29
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 5",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "5",
+        "dtype": "str",
+        "n_valid": 131,
+        "n_unique": 28
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 6",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "6",
+        "dtype": "str",
+        "n_valid": 82,
+        "n_unique": 17
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 7",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "7",
+        "dtype": "str",
+        "n_valid": 39,
+        "n_unique": 14
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 8",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "8",
+        "dtype": "str",
+        "n_valid": 19,
+        "n_unique": 11
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 9",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "9",
+        "dtype": "str",
+        "n_valid": 12,
+        "n_unique": 9
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 10",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "10",
+        "dtype": "str",
+        "n_valid": 8,
+        "n_unique": 5
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 11",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "11",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 4
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 12",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "12",
+        "dtype": "str",
+        "n_valid": 4,
+        "n_unique": 4
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 13",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "13",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 2
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 14",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "14",
+        "dtype": "str",
+        "n_valid": 1,
+        "n_unique": 1
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 15",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "15",
+        "dtype": "str",
+        "n_valid": 1,
+        "n_unique": 1
+      },
+      {
+        "col_name": "{P21.1} [V1854] ¿Por qué razón [V194] es su supermercado preferido? - 16",
+        "base_desc": "¿Por qué razón [V194] es su supermercado preferido?",
+        "item_label": "16",
+        "dtype": "str",
+        "n_valid": 1,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Tiene mejores precios": 256,
+        "Es la que le queda mas cerca /Le queda de camino": 50,
+        "Hay ofertas y promociones": 27,
+        "Tiene buena atencion": 15,
+        "Tienen Cashea": 14,
+        "Los productos son frescos / No vencidos": 7,
+        "Es facil llegar / acceder": 6,
+        "Tienen productos de mejor calidad": 5,
+        "Por costumbre": 4,
+        "El personal ofrece un buen asesoramiento": 4
+      },
+      "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ]
+    }
+  },
+  "P22": {
+    "question_code": "P22",
+    "tipo": "escala_1_5",
+    "n_cols": 10,
+    "base_description": "IMPORTANCIA  Es un espacio limpio y ordenado",
+    "cols": [
+      {
+        "col_name": " {P22} [V209] IMPORTANCIA  Es un espacio limpio y ordenado",
+        "base_desc": "IMPORTANCIA  Es un espacio limpio y ordenado",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P22} [V202] IMPORTANCIA Donde encuentro la mayor cantidad de categorias/productos que acostumbro a comprar",
+        "base_desc": "IMPORTANCIA Donde encuentro la mayor cantidad de categorias/productos que acostumbro a comprar",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 4
+      },
+      {
+        "col_name": " {P22} [V213]  IMPORTANCIA Es seguro",
+        "base_desc": "IMPORTANCIA Es seguro",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 4
+      },
+      {
+        "col_name": " {P22} [V214]  IMPORTANCIA Rapidez en la caja",
+        "base_desc": "IMPORTANCIA Rapidez en la caja",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P22} [V204]  IMPORTANCIA Donde encuentro los productos a menor precio",
+        "base_desc": "IMPORTANCIA Donde encuentro los productos a menor precio",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P22} [V207]  IMPORTANCIA La tienda es atractiva",
+        "base_desc": "IMPORTANCIA La tienda es atractiva",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P22} [V206]  IMPORTANCIA Tienen promociones atractivas",
+        "base_desc": "IMPORTANCIA Tienen promociones atractivas",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 4
+      },
+      {
+        "col_name": " {P22} [V203]  IMPORTANCIA Donde encuentro los productos de mayor calidad",
+        "base_desc": "IMPORTANCIA Donde encuentro los productos de mayor calidad",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P22} [V205] IMPORTANCIA  Donde mejor me atienden",
+        "base_desc": "IMPORTANCIA  Donde mejor me atienden",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      },
+      {
+        "col_name": " {P22} [V1856]  IMPORTANCIA Donde puedo hacer valer mi dinero",
+        "base_desc": "IMPORTANCIA Donde puedo hacer valer mi dinero",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 4
+      }
+    ],
+    "distribution_preview": {
+      "escala_unique_values": [
+        "Algo importante",
+        "Importante",
+        "Muy Importante",
+        "Nada Importante",
+        "Poco importante"
+      ]
+    }
+  },
+  "P23:1": {
+    "question_code": "P23:1",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+    "cols": [
+      {
+        "col_name": " {P23:1} [V570]Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Plazas",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 70,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Central Madeirense",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 83,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Forum",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 97,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Rio",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 88,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Gama",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 72,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Plan Suarez",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 57,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Paramo",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 118,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Luz",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 46,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - La Muralla",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 14,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Hiper Lider",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 38,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:1} [V570] Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar - Ninguno en particular",
+        "base_desc": "Donde encuentro la mayor cantidad de categorías/productos que acostumbro a comprar",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 15,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 70
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:2": {
+    "question_code": "P23:2",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Productos mayor calidad",
+    "cols": [
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Plazas",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 86,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Central Madeirense",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 91,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Forum",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 100,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Rio",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 105,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Gama",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 107,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Plan Suarez",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 54,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Paramo",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 107,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Luz",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 44,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - La Muralla",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 24,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Hiper Lider",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 32,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:2} [V923] Productos mayor calidad - Ninguno en particular",
+        "base_desc": "Productos mayor calidad",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 8,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 86
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:3": {
+    "question_code": "P23:3",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Donde encuentro los productos a menor precio",
+    "cols": [
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Plazas",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 44,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Central Madeirense",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 71,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Forum",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 75,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Rio",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 56,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Gama",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 29,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Plan Suarez",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 48,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Paramo",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 141,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Luz",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 49,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - La Muralla",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Hiper Lider",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 39,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:3} [V552] Donde encuentro los productos a menor precio - Ninguno en particular",
+        "base_desc": "Donde encuentro los productos a menor precio",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 30,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 44
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:4": {
+    "question_code": "P23:4",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Donde mejor me atienden",
+    "cols": [
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Plazas",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 85,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Central Madeirense",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 85,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Forum",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 85,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Rio",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 96,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Gama",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 88,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Plan Suarez",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 46,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Paramo",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 130,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Luz",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 54,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - La Muralla",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 17,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Hiper Lider",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 39,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:4} [V553] Donde mejor me atienden - Ninguno en particular",
+        "base_desc": "Donde mejor me atienden",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 10,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 85
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:5": {
+    "question_code": "P23:5",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Tienen promociones atractivas",
+    "cols": [
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Plazas",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 64,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Central Madeirense",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 69,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Forum",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 75,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Rio",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 70,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Gama",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 36,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Plan Suarez",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 45,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Paramo",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 123,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Luz",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 60,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - La Muralla",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 3,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Hiper Lider",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 30,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:5} [V554] Tienen promociones atractivas - Ninguno en particular",
+        "base_desc": "Tienen promociones atractivas",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 37,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 64
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:6": {
+    "question_code": "P23:6",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "La tienda es atractiva- Plazas",
+    "cols": [
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Plazas",
+        "base_desc": "La tienda es atractiva- Plazas",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 80,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Central Madeirense",
+        "base_desc": "La tienda es atractiva- Central Madeirense",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 76,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Forum",
+        "base_desc": "La tienda es atractiva- Forum",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 102,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Rio",
+        "base_desc": "La tienda es atractiva- Rio",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 113,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Gama",
+        "base_desc": "La tienda es atractiva- Gama",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 116,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Plan Suarez",
+        "base_desc": "La tienda es atractiva- Plan Suarez",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 45,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Paramo",
+        "base_desc": "La tienda es atractiva- Paramo",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 126,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Luz",
+        "base_desc": "La tienda es atractiva- Luz",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 39,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- La Muralla",
+        "base_desc": "La tienda es atractiva- La Muralla",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 33,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Hiper Lider",
+        "base_desc": "La tienda es atractiva- Hiper Lider",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 48,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:6} [V555] La tienda es atractiva- Ninguno en particular",
+        "base_desc": "La tienda es atractiva- Ninguno en particular",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 3,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 80
+      },
+      "items": []
+    }
+  },
+  "P23:8": {
+    "question_code": "P23:8",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Es un espacio limpio y ordenado",
+    "cols": [
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Plazas",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 123,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Central Madeirense",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 117,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Forum",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 119,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Rio",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 135,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Gama",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 125,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Plan Suarez",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 60,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Paramo",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 139,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Luz",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 60,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - La Muralla",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 35,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Hiper Lider",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 53,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:8} [V557] Es un espacio limpio y ordenado - Ninguno en particular",
+        "base_desc": "Es un espacio limpio y ordenado",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 123
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:12": {
+    "question_code": "P23:12",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Es seguro",
+    "cols": [
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Plazas",
+        "base_desc": "Es seguro",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 113,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Central Madeirense",
+        "base_desc": "Es seguro",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 111,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Forum",
+        "base_desc": "Es seguro",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 108,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Rio",
+        "base_desc": "Es seguro",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 109,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Gama",
+        "base_desc": "Es seguro",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 119,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Plan Suarez",
+        "base_desc": "Es seguro",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 65,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Paramo",
+        "base_desc": "Es seguro",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 145,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Luz",
+        "base_desc": "Es seguro",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 61,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - La Muralla",
+        "base_desc": "Es seguro",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 32,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Hiper Lider",
+        "base_desc": "Es seguro",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 51,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:12} [V561] Es seguro  - Ninguno en particular",
+        "base_desc": "Es seguro",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 6,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 113
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:13": {
+    "question_code": "P23:13",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Rapidez en caja",
+    "cols": [
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Plazas",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 63,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Central Madeirense",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 82,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Forum",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 81,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Rio",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 87,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Gama",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 85,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Plan Suarez",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 42,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Paramo",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 122,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Luz",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 40,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - La Muralla",
+        "base_desc": "Rapidez en caja",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 13,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Hiper Lider",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 31,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:13} [V562] Rapidez en caja - Ninguno en particular",
+        "base_desc": "Rapidez en caja",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 12,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 63
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P23:21": {
+    "question_code": "P23:21",
+    "tipo": "multi_select",
+    "n_cols": 11,
+    "base_description": "Donde puedo hacer valer mi dinero",
+    "cols": [
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Plazas",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Plazas",
+        "dtype": "str",
+        "n_valid": 52,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Central Madeirense",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Central Madeirense",
+        "dtype": "str",
+        "n_valid": 76,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Forum",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Forum",
+        "dtype": "str",
+        "n_valid": 80,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Rio",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Rio",
+        "dtype": "str",
+        "n_valid": 70,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Gama",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Gama",
+        "dtype": "str",
+        "n_valid": 46,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Plan Suarez",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Plan Suarez",
+        "dtype": "str",
+        "n_valid": 46,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Paramo",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Paramo",
+        "dtype": "str",
+        "n_valid": 129,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Luz",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Luz",
+        "dtype": "str",
+        "n_valid": 55,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - La Muralla",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "La Muralla",
+        "dtype": "str",
+        "n_valid": 7,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Hiper Lider",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Hiper Lider",
+        "dtype": "str",
+        "n_valid": 35,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {P23:21} [V1857] Donde puedo hacer valer mi dinero - Ninguno en particular",
+        "base_desc": "Donde puedo hacer valer mi dinero",
+        "item_label": "Ninguno en particular",
+        "dtype": "str",
+        "n_valid": 26,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Plazas": 52
+      },
+      "items": [
+        "Plazas",
+        "Central Madeirense",
+        "Forum",
+        "Rio",
+        "Gama",
+        "Plan Suarez",
+        "Paramo",
+        "Luz",
+        "La Muralla",
+        "Hiper Lider",
+        "Ninguno en particular"
+      ]
+    }
+  },
+  "P24": {
+    "question_code": "P24",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Donde realizo su ultima compra",
+    "cols": [
+      {
+        "col_name": " {P24} [V242] Donde realizo su ultima compra",
+        "base_desc": "Donde realizo su ultima compra",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      }
+    ],
+    "distribution_preview": {
+      "Paramo": 83,
+      "Forum": 56,
+      "Central Madeirense": 48,
+      "Rio": 47,
+      "Plazas": 36,
+      "Ninguno": 33,
+      "Luz": 31,
+      "Gama (Excelsior)": 30,
+      "Plan Suarez": 23,
+      "Hiper Lider": 13,
+      "La Muralla": 2
+    }
+  },
+  "P25": {
+    "question_code": "P25",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Razón última compra en ese supermercado",
+    "cols": [
+      {
+        "col_name": " {P25} [V249] Razón última compra en ese supermercado",
+        "base_desc": "Razón última compra en ese supermercado",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      }
+    ],
+    "distribution_preview": {
+      "Necesitaba realizar algunas compras para reabastecer mi hoga": 270,
+      "Necesitaba hacer abastecimiento general y completo de mi hog": 94,
+      "Necesitaba unos pocos productos con urgencia (comidas prepar": 31,
+      "Necesitaba comprar vÃ­veres para un evento, una fiesta, una ": 6,
+      "Necesitaba comprar electrodomÃ©sticos, ropa, muebles, ferret": 1
+    }
+  },
+  "P26": {
+    "question_code": "P26",
+    "tipo": "multi_select",
+    "n_cols": 5,
+    "base_description": "MISION DE COMPRA Hacer abastecimiento general y completo de mi hogar (todo tipo de vÃ­veres y productos de aseo)",
+    "cols": [
+      {
+        "col_name": " {P26} [V819] MISION DE COMPRA Hacer abastecimiento general y completo de mi hogar (todo tipo de vÃ­veres y productos de aseo)",
+        "base_desc": "MISION DE COMPRA Hacer abastecimiento general y completo de mi hogar (todo tipo de vÃ­veres y productos de aseo)",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P26} [V820] MISION DE COMPRA Realizar algunas compras para reabastecer mi hogar antes de volver a hacer un mercado grande (frutas, verduras, leche u otro tipo de productos perecederos)",
+        "base_desc": "MISION DE COMPRA Realizar algunas compras para reabastecer mi hogar antes de volver a hacer un mercado grande (frutas, verduras, leche u otro tipo de productos perecederos)",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P26} [V821] MISION DE COMPRA Comprar electrodomesticos, ropa, muebles, ferreterÃ­a, jardinerÃ­a o productos de tecnologÃ­a",
+        "base_desc": "MISION DE COMPRA Comprar electrodomesticos, ropa, muebles, ferreterÃ­a, jardinerÃ­a o productos de tecnologÃ­a",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P26} [V822] MISION DE COMPRA Comprar viveres para un evento, una fiesta, una celebraciÃ³n o una ocasiÃ³n especial:",
+        "base_desc": "MISION DE COMPRA Comprar viveres para un evento, una fiesta, una celebraciÃ³n o una ocasiÃ³n especial:",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P26} [V823] MISION DE COMPRA Comprar unos pocos productos con urgencia (comidas preparadas o para llevar, ingrediente faltante en una receta, medicamento para el dolor de cabeza, etc:)",
+        "base_desc": "MISION DE COMPRA Comprar unos pocos productos con urgencia (comidas preparadas o para llevar, ingrediente faltante en una receta, medicamento para el dolor de cabeza, etc:)",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Paramo": 87,
+        "Forum": 58,
+        "Central Madeirense": 50,
+        "Rio": 48,
+        "Plan Suarez": 32,
+        "Plaza´s": 31,
+        "Gama": 29,
+        "Hiper Lider": 25,
+        "Ninguno (NO LEER)": 20,
+        "Luz": 18
+      },
+      "items": []
+    }
+  },
+  "P30": {
+    "question_code": "P30",
+    "tipo": "multi_select",
+    "n_cols": 15,
+    "base_description": "Ahora dígame, ¿Cuál es el supermercado en donde usted acostumbra a comprar productos de las siguientes categorías?.- Frutas, legumbres y verduras",
+    "cols": [
+      {
+        "col_name": " {P30} [V799] Ahora dígame, ¿Cuál es el supermercado en donde usted acostumbra a comprar productos de las siguientes categorías?.- Frutas, legumbres y verduras",
+        "base_desc": "Ahora dígame, ¿Cuál es el supermercado en donde usted acostumbra a comprar productos de las siguientes categorías?.- Frutas, legumbres y verduras",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V800] Lugar de compra habitual - Galletas, pasapalos y confiteria",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Galletas, pasapalos y confiteria",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V801] Lugar de compra habitual - Salsas y Enlatados (atÃºn, cÃ¡rnicos, vegetales)",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Salsas y Enlatados (atÃºn, cÃ¡rnicos, vegetales)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V805] Lugar de compra habitual - Carne de res",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Carne de res",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V806] Lugar de compra habitual - Pollo",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Pollo",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V807] Lugar de compra habitual - Charcuteria (quesos, jamones y pechugas)",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Charcuteria (quesos, jamones y pechugas)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V810] Lugar de compra habitual - Gaseosas, jugos y aguas",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Gaseosas, jugos y aguas",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V811] Lugar de compra habitual - Licores",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Licores",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V812] Lugar de compra habitual - Farmacia",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Farmacia",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P30} [V815] Lugar de compra habitual - Congelados (helados, pasapalos, postres etc: )",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Congelados (helados, pasapalos, postres etc: )",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V817] Lugar de compra habitual - Alimento de mascotas (perros, gatos, otros)",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Alimento de mascotas (perros, gatos, otros)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V818] Lugar de compra habitual - Pescados y mariscos",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Pescados y mariscos",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V1858] Lugar de compra habitual - Productos basicos (harinas, arroz, leches, pastas, etc)",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Productos basicos (harinas, arroz, leches, pastas, etc)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V1859] Lugar de compra habitual - Cuidado Personal",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Cuidado Personal",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P30} [V1860] Lugar de compra habitual - Cuidado y limpieza del hogar",
+        "base_desc": "Lugar de compra habitual",
+        "item_label": "Cuidado y limpieza del hogar",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Ninguno en particular": 200,
+        "Central Madeirense": 37,
+        "Paramo": 34,
+        "Plazas": 29,
+        "Rio": 24,
+        "Plan Suarez": 18,
+        "Gama": 16,
+        "Luz": 15,
+        "Forum": 14,
+        "Hiper Lider": 13
+      },
+      "items": [
+        "Galletas, pasapalos y confiteria",
+        "Salsas y Enlatados (atÃºn, cÃ¡rnicos, vegetales)",
+        "Carne de res",
+        "Pollo",
+        "Charcuteria (quesos, jamones y pechugas)",
+        "Gaseosas, jugos y aguas",
+        "Licores",
+        "Farmacia",
+        "Congelados (helados, pasapalos, postres etc: )",
+        "Alimento de mascotas (perros, gatos, otros)",
+        "Pescados y mariscos",
+        "Productos basicos (harinas, arroz, leches, pastas, etc)",
+        "Cuidado Personal",
+        "Cuidado y limpieza del hogar"
+      ]
+    }
+  },
+  "P31": {
+    "question_code": "P31",
+    "tipo": "numerica",
+    "n_cols": 10,
+    "base_description": "Ordene del 1 al 10 los supermercados que aparecen en esta tarjeta según su experiencia, desde el que tiene los mejores precios / es más económico",
+    "cols": [
+      {
+        "col_name": " {P31} [V1862] Ordene del 1 al 10 los supermercados que aparecen en esta tarjeta según su experiencia, desde el que tiene los mejores precios / es más económico  - Plaza´s",
+        "base_desc": "Ordene del 1 al 10 los supermercados que aparecen en esta tarjeta según su experiencia, desde el que tiene los mejores precios / es más económico",
+        "item_label": "Plaza´s",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1863] Ordene - Central Madeirense",
+        "base_desc": "Ordene",
+        "item_label": "Central Madeirense",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1864] Ordene - Forum",
+        "base_desc": "Ordene",
+        "item_label": "Forum",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1865] Ordene - Rio",
+        "base_desc": "Ordene",
+        "item_label": "Rio",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1866] Ordene - Gama",
+        "base_desc": "Ordene",
+        "item_label": "Gama",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1867] Ordene - Plan Suarez",
+        "base_desc": "Ordene",
+        "item_label": "Plan Suarez",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1868] Ordene - Paramo",
+        "base_desc": "Ordene",
+        "item_label": "Paramo",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1869] Ordene - Luz",
+        "base_desc": "Ordene",
+        "item_label": "Luz",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1870] Ordene - La Muralla",
+        "base_desc": "Ordene",
+        "item_label": "La Muralla",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      },
+      {
+        "col_name": " {P31} [V1871] Ordene - Hiper Lider",
+        "base_desc": "Ordene",
+        "item_label": "Hiper Lider",
+        "dtype": "int64",
+        "n_valid": 402,
+        "n_unique": 10
+      }
+    ],
+    "distribution_preview": {
+      "min": 1.0,
+      "max": 10.0,
+      "mean": 4.898009950248756
+    }
+  },
+  "P32": {
+    "question_code": "P32",
+    "tipo": "multi_select",
+    "n_cols": 15,
+    "base_description": "¿En cuál de estos supermercados encuentra los mejores precios en (mencionar cada categoria y mostrar tarjeta redonda)?",
+    "cols": [
+      {
+        "col_name": " {P32} [V1872] ¿En cuál de estos supermercados encuentra los mejores precios en (mencionar cada categoria y mostrar tarjeta redonda)? - Frutas, legumbres y verduras",
+        "base_desc": "¿En cuál de estos supermercados encuentra los mejores precios en (mencionar cada categoria y mostrar tarjeta redonda)?",
+        "item_label": "Frutas, legumbres y verduras",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1873] Mejor precio - Galletas, pasapalos y confiterÃ­a",
+        "base_desc": "Mejor precio",
+        "item_label": "Galletas, pasapalos y confiterÃ­a",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1874] Mejor precio - Salsas y Enlatados (atÃºn, cÃ¡rnicos, vegetales)",
+        "base_desc": "Mejor precio",
+        "item_label": "Salsas y Enlatados (atÃºn, cÃ¡rnicos, vegetales)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1875] Mejor precio - Carne de res",
+        "base_desc": "Mejor precio",
+        "item_label": "Carne de res",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1876] Mejor precio - Pollo",
+        "base_desc": "Mejor precio",
+        "item_label": "Pollo",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1877] Mejor precio - CharcuterÃ­a (quesos, jamones y pechugas)",
+        "base_desc": "Mejor precio",
+        "item_label": "CharcuterÃ­a (quesos, jamones y pechugas)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1878] Mejor precio - Gaseosas, jugos y aguas",
+        "base_desc": "Mejor precio",
+        "item_label": "Gaseosas, jugos y aguas",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1879] Mejor precio - Licores",
+        "base_desc": "Mejor precio",
+        "item_label": "Licores",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1880] Mejor precio - Farmacia",
+        "base_desc": "Mejor precio",
+        "item_label": "Farmacia",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 9
+      },
+      {
+        "col_name": " {P32} [V1881] Mejor precio - Congelados (helados, pasapalos, postres etc: )",
+        "base_desc": "Mejor precio",
+        "item_label": "Congelados (helados, pasapalos, postres etc: )",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1882] Mejor precio - Alimento de mascotas (perros, gatos, otros)",
+        "base_desc": "Mejor precio",
+        "item_label": "Alimento de mascotas (perros, gatos, otros)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1883] Mejor precio - Pescados y mariscos",
+        "base_desc": "Mejor precio",
+        "item_label": "Pescados y mariscos",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1884] Mejor precio - Productos bÃ¡sicos (harinas, arroz, leches, pastas, etc)",
+        "base_desc": "Mejor precio",
+        "item_label": "Productos bÃ¡sicos (harinas, arroz, leches, pastas, etc)",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1885] Mejor precio - Cuidado Personal",
+        "base_desc": "Mejor precio",
+        "item_label": "Cuidado Personal",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {P32} [V1886] Mejor precio - Cuidado y limpieza del hogar",
+        "base_desc": "Mejor precio",
+        "item_label": "Cuidado y limpieza del hogar",
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 11
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Ninguno en particular": 151,
+        "Central Madeirense": 53,
+        "Paramo": 44,
+        "Rio": 30,
+        "Hiper Lider": 28,
+        "Luz": 23,
+        "Plan Suarez": 23,
+        "Forum": 22,
+        "Plazas": 18,
+        "Gama": 9
+      },
+      "items": [
+        "Frutas, legumbres y verduras",
+        "Galletas, pasapalos y confiterÃ­a",
+        "Salsas y Enlatados (atÃºn, cÃ¡rnicos, vegetales)",
+        "Carne de res",
+        "Pollo",
+        "CharcuterÃ­a (quesos, jamones y pechugas)",
+        "Gaseosas, jugos y aguas",
+        "Licores",
+        "Farmacia",
+        "Congelados (helados, pasapalos, postres etc: )",
+        "Alimento de mascotas (perros, gatos, otros)",
+        "Pescados y mariscos",
+        "Productos bÃ¡sicos (harinas, arroz, leches, pastas, etc)",
+        "Cuidado Personal",
+        "Cuidado y limpieza del hogar"
+      ]
+    }
+  },
+  "P33": {
+    "question_code": "P33",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "¿Los precios en Gama son... (LEER FRASES)?",
+    "cols": [
+      {
+        "col_name": " {P33} [V1887] ¿Los precios en Gama son... (LEER FRASES)?",
+        "base_desc": "¿Los precios en Gama son... (LEER FRASES)?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      }
+    ],
+    "distribution_preview": {
+      "Un POCO mas CAROS que en otros lugares": 152,
+      "IGUAL que en otros lugares": 123,
+      "MUCHO mas CAROS que en otros lugares": 65,
+      "Un POCO mÃ¡s ECONÃ“MICOS que en otros lugares": 56,
+      "MUCHO mÃ¡s ECONÃ“MICOS que en otros lugares": 6
+    }
+  },
+  "P34": {
+    "question_code": "P34",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Pensando en Gama y comparandolo desde hace 6 meses hasta el dia de hoy, ¿Ud. diría que los precios de Gama hoy son... (LEER FRASES)?",
+    "cols": [
+      {
+        "col_name": " {P34} [V1888] Pensando en Gama y comparandolo desde hace 6 meses hasta el dia de hoy, ¿Ud. diría que los precios de Gama hoy son... (LEER FRASES)?",
+        "base_desc": "Pensando en Gama y comparandolo desde hace 6 meses hasta el dia de hoy, ¿Ud. diría que los precios de Gama hoy son... (LEER FRASES)?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 5
+      }
+    ],
+    "distribution_preview": {
+      "IGUAL que hace 6 meses": 179,
+      "Un POCO mas CAROS que hace 6 meses": 138,
+      "MUCHO mas CAROS que hace 6 meses": 43,
+      "Un POCO mÃ¡s ECONÃ“MICOS que hace 6 meses": 32,
+      "MUCHO mÃ¡s ECONÃ“MICOS que hace 6 meses": 10
+    }
+  },
+  "P35": {
+    "question_code": "P35",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Recuerda haber visto, leido o escuchado frases que acompañan la publicidad de Gama en general o con las promociones de descuentos?",
+    "cols": [
+      {
+        "col_name": " {P35} [V1889] Recuerda haber visto, leido o escuchado frases que acompañan la publicidad de Gama en general o con las promociones de descuentos?",
+        "base_desc": "Recuerda haber visto, leido o escuchado frases que acompañan la publicidad de Gama en general o con las promociones de descuentos?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "No": 385,
+      "Si": 17
+    }
+  },
+  "P36": {
+    "question_code": "P36",
+    "tipo": "multi_select",
+    "n_cols": 2,
+    "base_description": "¿Cuál es esa frase que recuerda?",
+    "cols": [
+      {
+        "col_name": " {P36} [V1890] ¿Cuál es esa frase que recuerda? - 1",
+        "base_desc": "¿Cuál es esa frase que recuerda?",
+        "item_label": "1",
+        "dtype": "str",
+        "n_valid": 17,
+        "n_unique": 9
+      },
+      {
+        "col_name": " {P36} [V1890] ¿Cuál es esa frase que recuerda? - 2",
+        "base_desc": "¿Cuál es esa frase que recuerda?",
+        "item_label": "2",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "No recuerdo": 6,
+        "Todo mejor por menos": 2,
+        "Productos en promociones": 2,
+        "Sin ti no hay nosotros": 2,
+        "Hay ofertas en gama": 1,
+        "Bueno, bonito y barato": 1,
+        "Siempre hay descuentos": 1,
+        "Afíliate al club y gana": 1,
+        "Las ayudas de gama para recaudar fondos": 1
+      },
+      "items": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  "P37": {
+    "question_code": "P37",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "¿Recuerda haber visto o escuchado en la publicidad de GAMA la frase que dice «PRECIOS DE TU LADO» ?",
+    "cols": [
+      {
+        "col_name": " {P37} [V1891] ¿Recuerda haber visto o escuchado en la publicidad de GAMA la frase que dice «PRECIOS DE TU LADO» ?",
+        "base_desc": "¿Recuerda haber visto o escuchado en la publicidad de GAMA la frase que dice «PRECIOS DE TU LADO» ?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "No": 359,
+      "Si": 43
+    }
+  },
+  "P38": {
+    "question_code": "P38",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Pensando en esa frase, digame ¿Qué tanto le agrada PRECIOS DE TU LADO para describir su experiencia en GAMA?",
+    "cols": [
+      {
+        "col_name": " {P38} [V1892] Pensando en esa frase, digame ¿Qué tanto le agrada PRECIOS DE TU LADO para describir su experiencia en GAMA?",
+        "base_desc": "Pensando en esa frase, digame ¿Qué tanto le agrada PRECIOS DE TU LADO para describir su experiencia en GAMA?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 368,
+        "n_unique": 6
+      }
+    ],
+    "distribution_preview": {
+      " ": 325,
+      "Mucho": 16,
+      "Poco": 11,
+      "Algo": 7,
+      "Bastante": 7,
+      "Nada": 2
+    }
+  },
+  "P39": {
+    "question_code": "P39",
+    "tipo": "abierta",
+    "n_cols": 1,
+    "base_description": "¿Qué cree UD que le quiso decir GAMA con ese mensaje / frase PRECIOS DE TU LADO?",
+    "cols": [
+      {
+        "col_name": "{P39} [V1893] ¿Qué cree UD que le quiso decir GAMA con ese mensaje / frase PRECIOS DE TU LADO?",
+        "base_desc": "¿Qué cree UD que le quiso decir GAMA con ese mensaje / frase PRECIOS DE TU LADO?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 43,
+        "n_unique": 43
+      }
+    ],
+    "distribution_preview": {
+      "top_responses_textuales": {
+        "Que son solidarios con las personas que van a hacer mercado": 1,
+        "Las cosas mas economica que en otro lugar": 1,
+        "Se ajusta al bolsillo": 1,
+        "Que es algo que se acomoda a tu presupuesto quiere decir algo accesible": 1,
+        "Esta pensando en mi bolsillo": 1,
+        "Que tienen precios accesibles": 1,
+        "Considero que la frase, no está acorde con lo que dice": 1,
+        "Que tiene precio más barato": 1,
+        "Que el costo está del lado de nosotros y trabajan para nosotros": 1,
+        "Que son precio que se ajustan a mi bolsillo": 1
+      }
+    }
+  },
+  "P40": {
+    "question_code": "P40",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "¿Recuerda haber visto o escuchado en la publicidad de GAMA la frase que dice «DE TU LADO SIEMPRE» ?",
+    "cols": [
+      {
+        "col_name": " {P40} [V1894] ¿Recuerda haber visto o escuchado en la publicidad de GAMA la frase que dice «DE TU LADO SIEMPRE» ?",
+        "base_desc": "¿Recuerda haber visto o escuchado en la publicidad de GAMA la frase que dice «DE TU LADO SIEMPRE» ?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "No": 352,
+      "Si": 50
+    }
+  },
+  "P41": {
+    "question_code": "P41",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "¿Qué tanto le agrada DE TU LADO SIEMPRE para describir su experiencia en GAMA?",
+    "cols": [
+      {
+        "col_name": " {P41} [V1895] ¿Qué tanto le agrada DE TU LADO SIEMPRE para describir su experiencia en GAMA?",
+        "base_desc": "¿Qué tanto le agrada DE TU LADO SIEMPRE para describir su experiencia en GAMA?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 369,
+        "n_unique": 6
+      }
+    ],
+    "distribution_preview": {
+      " ": 319,
+      "Algo": 18,
+      "Mucho": 11,
+      "Bastante": 10,
+      "Poco": 6,
+      "Nada": 5
+    }
+  },
+  "P42": {
+    "question_code": "P42",
+    "tipo": "abierta",
+    "n_cols": 1,
+    "base_description": "¿Qué cree UD que le quiso decir GAMA con ese mensaje / frase DE TU LADO SIEMPRE?",
+    "cols": [
+      {
+        "col_name": "{P42} [V1896] ¿Qué cree UD que le quiso decir GAMA con ese mensaje / frase DE TU LADO SIEMPRE?",
+        "base_desc": "¿Qué cree UD que le quiso decir GAMA con ese mensaje / frase DE TU LADO SIEMPRE?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 50,
+        "n_unique": 50
+      }
+    ],
+    "distribution_preview": {
+      "top_responses_textuales": {
+        "La fidelidad del cliente": 1,
+        "Que siempre estan alli para ti": 1,
+        "Que tendrán disponibilidad en todo que siempre estara cerca de nosotros": 1,
+        "Que son alguien en quien se puede confiar, para todo el público": 1,
+        "Que estan para servir y syudar al publico": 1,
+        "Buscan la economia": 1,
+        "Que están intentando decir que el cliente siempre tiene la razón": 1,
+        "Que siempre estará pensando en la comodidad de sus clientes": 1,
+        "Que los precio que esta mas bajo que en otro lugar": 1,
+        "Se ajusta al bolsillo": 1
+      }
+    }
+  },
+  "P43": {
+    "question_code": "P43",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Encuestador",
+    "cols": [
+      {
+        "col_name": " {P43} [V1897] Encuestador - estas zona parroquia recreo ELIMINAR DATOS SI NO ESTA EN LA URB EL RECREO OJOOOOOOOO",
+        "base_desc": "Encuestador",
+        "item_label": "estas zona parroquia recreo ELIMINAR DATOS SI NO ESTA EN LA URB EL RECREO OJOOOOOOOO",
+        "dtype": "str",
+        "n_valid": 368,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      " ": 347,
+      "Si": 21
+    }
+  },
+  "P44": {
+    "question_code": "P44",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Antes de terminar, me gustaría que pensara en los supermercados que se encuentran en la zona y, en términos generales, Dígame si Gama es..",
+    "cols": [
+      {
+        "col_name": " {P44} [V1898] Antes de terminar, me gustaría que pensara en los supermercados que se encuentran en la zona y, en términos generales, Dígame si Gama es..",
+        "base_desc": "Antes de terminar, me gustaría que pensara en los supermercados que se encuentran en la zona y, en términos generales, Dígame si Gama es..",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 338,
+        "n_unique": 5
+      }
+    ],
+    "distribution_preview": {
+      " ": 317,
+      "Igual": 16,
+      "Mucho mejor": 2,
+      "Mucho peor": 2,
+      "Mejor": 1
+    }
+  },
+  "P45": {
+    "question_code": "P45",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Ahora piense en su dinámica de hacer mercado e imagínese que GAMA abre una sucursal en la zona. ¿Que tan dispuesto estaría UD a realizar sus compras regularmente en GAMA?",
+    "cols": [
+      {
+        "col_name": " {P45} [V1899] Ahora piense en su dinámica de hacer mercado e imagínese que GAMA abre una sucursal en la zona. ¿Que tan dispuesto estaría UD a realizar sus compras regularmente en GAMA?",
+        "base_desc": "Ahora piense en su dinámica de hacer mercado e imagínese que GAMA abre una sucursal en la zona. ¿Que tan dispuesto estaría UD a realizar sus compras regularmente en GAMA?",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 338,
+        "n_unique": 6
+      }
+    ],
+    "distribution_preview": {
+      " ": 317,
+      "Dispuesto": 10,
+      "Algo dispuesto": 5,
+      "Muy Dispuesto": 3,
+      "Poco dispuesto": 2,
+      "Nada dispuesto": 1
+    }
+  },
+  "PD4": {
+    "question_code": "PD4",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Marcar nse zona",
+    "cols": [
+      {
+        "col_name": " {PD4} [V153] Marcar nse zona",
+        "base_desc": "Marcar nse zona",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 3
+      }
+    ],
+    "distribution_preview": {
+      "E": 171,
+      "D": 127,
+      "C+/C": 104
+    }
+  },
+  "PD5": {
+    "question_code": "PD5",
+    "tipo": "multi_select",
+    "n_cols": 2,
+    "base_description": "Nombre encuestador",
+    "cols": [
+      {
+        "col_name": " {PD5} [V539] Nombre encuestador",
+        "base_desc": "Nombre encuestador",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 24
+      },
+      {
+        "col_name": " {PD5} [C2C539C1] Clasificacion de Nombre encuestador",
+        "base_desc": "{PD5} [C2C539C1] Clasificacion de Nombre encuestador",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 1
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Dania Scott": 59,
+        "Andreina Guevara": 53,
+        "Fanny DÃ­az": 49,
+        "Yolje rodriguez": 46,
+        "Aurora Perruolo": 40,
+        "Slaine muro": 39,
+        "Yitzabel Mogollon": 32,
+        "Yermiskay coronel": 20,
+        "Yuraima Soto": 18,
+        "Yitzabel": 10
+      },
+      "items": []
+    }
+  },
+  "PD6": {
+    "question_code": "PD6",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Nombre supervisor",
+    "cols": [
+      {
+        "col_name": " {PD6} [V534] Nombre supervisor",
+        "base_desc": "Nombre supervisor",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 3
+      }
+    ],
+    "distribution_preview": {
+      "Kari": 144,
+      "Nore": 136,
+      "JosÃ©": 122
+    }
+  },
+  "PD7": {
+    "question_code": "PD7",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Tipo supervisiÃ³n",
+    "cols": [
+      {
+        "col_name": " {PD7} [V537] Tipo supervisiÃ³n",
+        "base_desc": "Tipo supervisiÃ³n",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "Directa": 390,
+      "Indirecta": 12
+    }
+  },
+  "PD8": {
+    "question_code": "PD8",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Tipo campo",
+    "cols": [
+      {
+        "col_name": " {PD8} [V1266] Tipo campo",
+        "base_desc": "Tipo campo",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "IntersecciÃ³n": 261,
+      "Hogares": 141
+    }
+  },
+  "PD9": {
+    "question_code": "PD9",
+    "tipo": "abierta",
+    "n_cols": 1,
+    "base_description": "Comentarios",
+    "cols": [
+      {
+        "col_name": " {PD9} [V538] Comentarios",
+        "base_desc": "Comentarios",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 401,
+        "n_unique": 112
+      }
+    ],
+    "distribution_preview": {
+      "top_responses_textuales": {
+        ".": 130,
+        "Ninguno": 53,
+        "Sin observaciones": 45,
+        "Ninguna": 30,
+        "Sin comentarios": 12,
+        "Sin comentario": 8,
+        "Sin observaciÃ³n": 5,
+        "Sin nada que agregar": 5,
+        "Chevere": 4,
+        "Sin comentarios que agregar": 3
+      }
+    }
+  },
+  "PF2": {
+    "question_code": "PF2",
+    "tipo": "multi_select",
+    "n_cols": 2,
+    "base_description": "Municipio",
+    "cols": [
+      {
+        "col_name": " {PF2} [V535] Municipio",
+        "base_desc": "Municipio",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 6
+      },
+      {
+        "col_name": " {PF2} [V536] Parroquia",
+        "base_desc": "Parroquia",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 17
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Baruta": 122,
+        "Libertador": 80,
+        "Sucre": 79,
+        "Chacao": 70,
+        "El Hatillo": 31,
+        "FORANEOS": 20
+      },
+      "items": []
+    }
+  },
+  "PF5": {
+    "question_code": "PF5",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Genero",
+    "cols": [
+      {
+        "col_name": " {PF5} [V150] Genero",
+        "base_desc": "Genero",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "Femenino": 211,
+      "Masculino": 191
+    }
+  },
+  "PF7": {
+    "question_code": "PF7",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Grupo edad",
+    "cols": [
+      {
+        "col_name": " {PF7} [V152] Grupo edad",
+        "base_desc": "Grupo edad",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 4
+      }
+    ],
+    "distribution_preview": {
+      "25 a 34 años": 117,
+      "35 a 44 años": 106,
+      "45 a 54 años": 100,
+      "55 a 64 años": 79
+    }
+  },
+  "PF8": {
+    "question_code": "PF8",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Frases describe mejor relacion con zona",
+    "cols": [
+      {
+        "col_name": " {PF8} [V154] Frases describe mejor relacion con zona",
+        "base_desc": "Frases describe mejor relacion con zona",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 4
+      }
+    ],
+    "distribution_preview": {
+      "Vivo en la zona": 251,
+      "Trabajo en la zona": 104,
+      "No vivo ni trabajo en la zona, pero la visito con frecuencia": 39,
+      "Pasaba por aqui por casualidad": 8
+    }
+  },
+  "PF9": {
+    "question_code": "PF9",
+    "tipo": "single_select",
+    "n_cols": 1,
+    "base_description": "Bebidas y no alimentos) en hogar",
+    "cols": [
+      {
+        "col_name": " {PF9} [V180] Bebidas y no alimentos) en hogar",
+        "base_desc": "Bebidas y no alimentos) en hogar",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 402,
+        "n_unique": 2
+      }
+    ],
+    "distribution_preview": {
+      "Yo soy responsable del 50% o mÃ¡s de las decisiones": 251,
+      "Yo soy la Ãºnica persona que toma las decisiones": 151
+    }
+  },
+  "PF10": {
+    "question_code": "PF10",
+    "tipo": "multi_select",
+    "n_cols": 14,
+    "base_description": "Dónde suele hacer compras mercado",
+    "cols": [
+      {
+        "col_name": " {PF10} [V156]Dónde suele hacer compras mercado - Supermercados independientes grandes (mas de 2 cajas)",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Supermercados independientes grandes (mas de 2 cajas)",
+        "dtype": "str",
+        "n_valid": 93,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Supermercados independientes pequenos (2 cajas o menos)",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Supermercados independientes pequenos (2 cajas o menos)",
+        "dtype": "str",
+        "n_valid": 20,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Mercados populares",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Mercados populares",
+        "dtype": "str",
+        "n_valid": 64,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Abastos / Bodegas",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Abastos / Bodegas",
+        "dtype": "str",
+        "n_valid": 82,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Tiendas independientes / chinos",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Tiendas independientes / chinos",
+        "dtype": "str",
+        "n_valid": 76,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Tiendas especializadas, tipo carniceria, fruteria, etc",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Tiendas especializadas, tipo carniceria, fruteria, etc",
+        "dtype": "str",
+        "n_valid": 46,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Mercados callejeros / Gochos",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Mercados callejeros / Gochos",
+        "dtype": "str",
+        "n_valid": 54,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V156] Dónde suele hacer compras mercado - Delivery / Aplicaciones",
+        "base_desc": "Dónde suele hacer compras mercado",
+        "item_label": "Delivery / Aplicaciones",
+        "dtype": "str",
+        "n_valid": 2,
+        "n_unique": 1
+      },
+      {
+        "col_name": " {PF10} [V157] Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado",
+        "base_desc": "Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 367,
+        "n_unique": 23
+      },
+      {
+        "col_name": " {PF10} [V157] Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.1",
+        "base_desc": "Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.1",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 197,
+        "n_unique": 25
+      },
+      {
+        "col_name": " {PF10} [V157] Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.2",
+        "base_desc": "Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.2",
+        "item_label": null,
+        "dtype": "object",
+        "n_valid": 64,
+        "n_unique": 22
+      },
+      {
+        "col_name": " {PF10} [V157] Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.3",
+        "base_desc": "Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.3",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 16,
+        "n_unique": 11
+      },
+      {
+        "col_name": " {PF10} [V157] Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.4",
+        "base_desc": "Supermercados de cadena (especificar marca) para Donde suele hacer compras mercado.4",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 3,
+        "n_unique": 3
+      },
+      {
+        "col_name": " {PF10} [V158] Supermercados independientes grandes (mas de 2 cajas) para Donde suele hacer compras mercado",
+        "base_desc": "Supermercados independientes grandes (mas de 2 cajas) para Donde suele hacer compras mercado",
+        "item_label": null,
+        "dtype": "str",
+        "n_valid": 93,
+        "n_unique": 29
+      }
+    ],
+    "distribution_preview": {
+      "sample_col_values": {
+        "Supermercados independientes grandes": 93
+      },
+      "items": [
+        "Supermercados independientes grandes (mas de 2 cajas)",
+        "Supermercados independientes pequenos (2 cajas o menos)",
+        "Mercados populares",
+        "Abastos / Bodegas",
+        "Tiendas independientes / chinos",
+        "Tiendas especializadas, tipo carniceria, fruteria, etc",
+        "Mercados callejeros / Gochos",
+        "Delivery / Aplicaciones"
+      ]
+    }
+  }
+}
