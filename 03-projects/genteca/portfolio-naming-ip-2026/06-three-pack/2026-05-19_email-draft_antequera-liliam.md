@@ -3,6 +3,13 @@ doc_type: email-draft
 project_id: portfolio-naming-ip-2026
 domain: genteca
 fecha: 2026-05-19
+estado: ENVIADO
+envio_timestamp_utc: 2026-05-19T18:44:22Z
+envio_timestamp_caracas: 2026-05-19 14:44 (Caracas, UTC-4)
+gmail_thread_id: 19e4169d59df233c
+gmail_message_id: 19e418da98f869c5
+adjuntos_enviados_confirmados: 3 (PPTX deck v4 + GSM-RF_GLA_T_V13_C.pdf + GSM-RF_GLA_R_V13_C.pdf)
+ediciones_owner_pre_envio: "20+ ediciones de calibración para audiencia profesional externa — ver sección 'Ediciones Owner pre-envío' al final del documento. Generaron memoria nueva feedback_owner_email_style_external_professional."
 remitente: raoul.bermudez@gmail.com (Owner)
 destinatarios_to:
   - "ebergel@antequera.legal (Eugenio Bergel — lead de la cuenta Genteca, organizó la reunión 18-05)"
@@ -62,8 +69,8 @@ que había estimado. Va naif el lunes, pero al menos va completo.
 Quiero compartirles un dato operativo que entra en juego en la urgencia del
 filing: la nueva versión del empaque de los protectores monofásicos
 GSM-MB / GSM-RB / GSM-RF está **aprobada para producción**. La salida al
-mercado de la línea GSM-R está prevista para **[FECHA-LANZAMIENTO-GSM-R —
-Owner verifica antes de enviar]**. Lleva en el front la mención
+mercado de la línea GSM-R está prevista para **julio 2026**. Lleva en el
+front la mención
 **"Tecnología Thermo-Safe™ NTC*"** con asterisco a explicación al reverso.
 La mención literal **"PROTECCIÓN TÉRMICA"** fue eliminada de la pieza —
 en su lugar el back-of-pack explica funcionalmente: *"Detecta calentamiento
@@ -173,7 +180,7 @@ raoul.bermudez@gmail.com
 
 > *Nota Owner antes de enviar:*
 > *(1) confirmar correos de Antequera y Liliam.*
-> *(2) sustituir el placeholder `[FECHA-LANZAMIENTO-GSM-R — Owner verifica antes de enviar]` por la fecha real (la transcripción de la reunión operativa del 18-05 está ruidosa en ASR — el dato existe en mi cabeza, no quedó extraíble del archivo de transcripción).*
+> *(2) fecha lanzamiento GSM-R confirmada por Owner 2026-05-19: julio 2026 (incorporada directo al cuerpo del correo, sin placeholder).*
 > *(3) adjuntar 3 archivos: el PPTX `2026-05-19_Deck-lawyer-presentation_v4_owner-edition.pptx` + tiro y retiro de un modelo GSM-R (recomendado: `GSM-RF_GLA_T_V13_C.pdf` + `GSM-RF_GLA_R_V13_C.pdf`, o el equivalente GSM-RB V09 si se prefiere). Ambos PDFs viven en `01-inbox/01-owner-to-raul/`.*
 > *(4) revisar que la mención "GSM-R" sin sufijo en el cuerpo refleje la intención (línea GSM-R completa vs un modelo específico).*
 
@@ -208,3 +215,86 @@ raoul.bermudez@gmail.com
    FlickerGuard aplicados al PPTX. **C1 footer "Confidencial Junta
    Directiva" se preserva por decisión Owner** (deck dual-uso Junta +
    abogada).
+
+---
+
+## Ediciones Owner pre-envío (capturadas del cuerpo enviado 2026-05-19 14:44 Caracas)
+
+El cuerpo enviado vive en Gmail (thread `19e4169d59df233c`). Las ediciones
+del Owner sobre el v4 del draft revelan **el patrón de calibración de
+estilo para audiencia profesional externa** (abogados/consultores) vs el
+estilo para colaboradoras internas Genteca. Las 20+ ediciones se sintetizan
+en **9 reglas** capturadas en memoria nueva `feedback_owner_email_style_external_professional.md`.
+
+### Las 9 reglas que cambiaron el v4 → enviado
+
+1. **Strip idiolectos del Owner para audiencia externa profesional.**
+   Removidos: "Jejeje", "naif", "Se vale". Estos marcadores son apropiados
+   para colaboradoras internas Genteca (Valeria, Liliam) pero se calibran
+   fuera para abogados / consultores externos.
+
+2. **Em-dashes → comas / dos puntos / punto seguido** en español
+   profesional escrito. Mi v4 abusaba del em-dash al estilo inglés
+   editorial; el envío usa puntuación tradicional.
+
+3. **Anglicismos del cuerpo → equivalentes en español** ("pivot" → "cambio",
+   "anchors" → "anclas"). Excepción explícita: las marcas registrables
+   propuestas (Thermo-Safe, FlickerGuard) y los términos técnicos
+   intencionales (filing, batch, work-in-progress) sí permanecen en
+   inglés porque son terminología del campo IP.
+
+4. **Anti-reduccionismo tech explícito** cuando el riesgo es que el
+   examinador / abogado vea la tecnología como descriptiva trivial.
+   Caso base: Owner añadió "No es solo un sensor, es tecnología,
+   desarrollo de software, algoritmos de detección y decisión de
+   desconexión. Realmente más que solo 'un sensor'." Esto fortalece
+   el argumento de registrabilidad de Thermo-Safe contra el riesgo
+   descriptivo de NTC.
+
+5. **Frame labels internos (C1 / C2 / C3) → "1 / 2 / 3"** cuando salen
+   a audiencia externa. Las etiquetas C-prefix son organizacionales
+   internas, ruido para terceros.
+
+6. **"Antequera" (nombre del equipo / firma) → "ustedes"** cuando el
+   destinatario es un equipo profesional. Menos jerárquico, más cálido.
+
+7. **Deferencia explícita al final de asks** cuando el Owner reconoce
+   que la contraparte tiene mejor criterio operativo: "si ese será el
+   camino. Lo que ustedes sugieran" + "nos dejamos asesorar según
+   ustedes sugieran por supuesto". Abre puerta a recomendación del
+   experto sin perder posición.
+
+8. **Reemplazo idiolecto del cierre por valor sustantivo:**
+   "me lo dicen sin filtro. Se vale." → "me lo dicen y con gusto ajusto
+   para mantener trazabilidad." Mismo intent (apertura) pero
+   formulación profesional + valor concreto agregado (trazabilidad).
+
+9. **Removido saludo nominal de apertura** ("Antequera, Liliam,") cuando
+   ya están en TO/CC. Va directo a "Buenos días."
+
+### Refinamientos sustantivos adicionales (no de estilo)
+
+- **Eliminada la frase "Internamente seguimos afinando con Junta
+  Directiva el presupuesto disponible para esta primera ronda."** — el
+  envío arranca directo con "Es posible que arranquemos..." Razón
+  inferida: revela proceso interno innecesario para el abogado.
+
+- **Tras "ancla GSM-MB/RB/RE" agregado "entre otros que lo tendrán"** —
+  señala aplicabilidad broader del NTC más allá del producto inicial,
+  fortaleciendo el caso de tecnología propia vs feature de un solo SKU.
+
+- **Idem para FlickerGuard:** "GSM-L entre otros que también lo tendrán."
+
+- **"(Ojalá lo logremos)"** añadido al final de la nota sobre TM → ®.
+  Es un marcador de humildad coloquial que reemplaza el "Jejeje"
+  eliminado del intro — el Owner conserva su voz pero más calibrada.
+
+- **"Propuesta de honorarios y cronograma de trabajo"** → "**Presupuesto**
+  y cronograma de trabajo". Más directo, palabra local frecuente.
+
+### Validación cruzada
+
+Estos ajustes confirman y refinan la memoria existente
+`feedback_owner_email_style_genteca_colaboradores.md` (que aplica para
+audiencia interna). La memoria nueva `feedback_owner_email_style_external_professional.md`
+captura el delta hacia profesionales externos.

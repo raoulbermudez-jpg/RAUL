@@ -2,11 +2,13 @@
 doc_type: ivo-publication-summary
 project_id: portfolio-naming-ip-2026
 domain: genteca
-version: v2.0
+version: v2.1
 parent: IV-5_publication-summary_v1.md
 fecha: 2026-05-19
 scope_iteration: "Batch SAPI VE inicial — Thermo-Safe + FlickerGuard"
-estado_publicacion: "Material listo internamente — envío pendiente (acción manual Owner)"
+estado_publicacion: "ENVIADO 2026-05-19 14:44 Caracas (18:44 UTC) — 3 adjuntos confirmados en thread Gmail"
+gmail_thread_id: 19e4169d59df233c
+gmail_message_id: 19e418da98f869c5
 ---
 
 # IV-5 v2.0 — Publication Summary — iteración v3 focused
@@ -19,10 +21,18 @@ estado_publicacion: "Material listo internamente — envío pendiente (acción m
 
 ## Estado de publicación
 
-**No publicado externamente todavía.** El paquete completo está listo
-internamente. El envío del correo a Antequera + Liliam es **acción
-manual del Owner** (memoria `feedback_gmail_mcp_limitations` — Gmail
-MCP no permite envío automatizado de correos con adjuntos).
+**PUBLICADO 2026-05-19 14:44 Caracas (18:44 UTC).** Correo enviado por
+Owner desde Gmail personal a Antequera + Liliam con 3 adjuntos
+confirmados (PPTX deck v4 + GSM-RF_GLA_T_V13_C.pdf + GSM-RF_GLA_R_V13_C.pdf).
+Gmail thread `19e4169d59df233c`, message `19e418da98f869c5`.
+
+**Adicional capturado:** Owner editó 20+ items del cuerpo v4 antes de
+enviar — calibración de estilo para audiencia profesional externa
+(abogados) vs estilo para colaboradoras internas Genteca. Las
+9 reglas resultantes están en memoria nueva
+`feedback_owner_email_style_external_professional.md` y replicadas en
+el SSOT del email draft (`06-three-pack/2026-05-19_email-draft_
+antequera-liliam.md` — sección "Ediciones Owner pre-envío").
 
 ## Paquete listo para envío
 
@@ -54,12 +64,10 @@ uso de facto).
 1. **Confirmar correos electrónicos** de Antequera (Eugenio Bergel,
    Vanessa Navarro, Ricardo Enrique) y Liliam Ramirez. Direcciones ya
    en el frontmatter del email draft.
-2. **Sustituir el placeholder `[FECHA-LANZAMIENTO-GSM-R — Owner verifica
-   antes de enviar]`** por la fecha real de salida al mercado de la
-   línea GSM-R. Razón del placeholder: la transcripción de la reunión
-   operativa del 18-05 (`2026_05_18_Reunion_operativa_desarrollo_
-   comercial_parte{1,2}.txt`) llegó con ASR demasiado ruidoso para
-   extraer la fecha con confianza — el dato lo tiene el Owner.
+2. ~~**Sustituir el placeholder de fecha GSM-R**~~ **RESUELTO 2026-05-19**
+   — Owner confirma fecha de salida al mercado: **julio 2026**. Texto ya
+   incorporado al cuerpo del correo SSOT (línea: "La salida al mercado
+   de la línea GSM-R está prevista para julio 2026").
 3. **Elegir cuál modelo GSM-R adjuntar** (GSM-RB V09 o GSM-RF V13 —
    ambos PDFs viven en `01-inbox/01-owner-to-raul/`). Default
    recomendado: GSM-RF V13 (mayor versión + segmento refrigeración
