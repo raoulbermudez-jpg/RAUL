@@ -34,48 +34,48 @@ del 18-05".
 
 **Cuerpo del correo:** ver draft completo en `06-three-pack/2026-05-19_email-draft_antequera-liliam.md`.
 
-**Adjuntos** (4 archivos):
-1. `03-Deck-lawyer-presentation_v3_focus-thermo-safe-flickerguard.docx`
-   (Word — entregable principal)
-2. `03-Deck-lawyer-presentation_v3_focus-thermo-safe-flickerguard.pptx`
-   (PPTX — apoyo visual)
-3. `01-Anexo-Tecnico_v2_focus-thermo-safe-flickerguard.md`
-4. `02-Naming-Bible_v2_focus-thermo-safe-flickerguard.md`
+**Adjuntos** (3 archivos — v4 narrowing por directrices Owner 2026-05-19):
+1. `2026-05-19_Deck-lawyer-presentation_v4_owner-edition.pptx` (deck
+   principal — pitch + nombres + alternos)
+2. `GSM-R{B|F}_GLA_T_V##_C.pdf` (tiro empaque GSM-R — Owner elige modelo,
+   recomendado GSM-RF V13)
+3. `GSM-R{B|F}_GLA_R_V##_C.pdf` (retiro empaque GSM-R — mismo modelo que
+   tiro)
 
-**Opción 1 — Adjuntos directos en Gmail:** subir los 4 archivos al
-compositor de correo desde el local. El draft del email tiene una sección
-anexa con el cuerpo ajustado para esta modalidad.
-
-**Opción 2 — Path Drive (preferido por la longitud combinada de los
-adjuntos):** subir los 4 archivos a la carpeta `<Drive>/RAUL-Exchange/
-Genteca/IP-2026/` y embeber los paths Drive en el cuerpo del correo
-(memoria `feedback_drive_path_explicit_in_email_body`).
+Naming Bible y Anexo Técnico quedan como **referencia interna del
+proyecto** y no se adjuntan al correo a Antequera (decisión Owner v3 —
+single-attachment philosophy + PDFs empaque como evidencia visual del
+uso de facto).
 
 ---
 
 ## Acciones manuales del Owner pre-envío
 
-1. **Confirmar correos electrónicos** de Antequera y Liliam (no están en
-   el directorio de contactos Genteca actualizado — verificar con
-   archivos personales del Owner).
-2. **Subir los 4 archivos a Drive** (si Opción 2) o tenerlos listos
-   localmente (si Opción 1).
-3. **Completar paths Drive en el cuerpo del correo** o eliminar la sección
-   de paths si Opción 1.
-4. **Enviar desde Gmail personal** (raoul.bermudez@gmail.com).
+1. **Confirmar correos electrónicos** de Antequera (Eugenio Bergel,
+   Vanessa Navarro, Ricardo Enrique) y Liliam Ramirez. Direcciones ya
+   en el frontmatter del email draft.
+2. **Sustituir el placeholder `[FECHA-LANZAMIENTO-GSM-R — Owner verifica
+   antes de enviar]`** por la fecha real de salida al mercado de la
+   línea GSM-R. Razón del placeholder: la transcripción de la reunión
+   operativa del 18-05 (`2026_05_18_Reunion_operativa_desarrollo_
+   comercial_parte{1,2}.txt`) llegó con ASR demasiado ruidoso para
+   extraer la fecha con confianza — el dato lo tiene el Owner.
+3. **Elegir cuál modelo GSM-R adjuntar** (GSM-RB V09 o GSM-RF V13 —
+   ambos PDFs viven en `01-inbox/01-owner-to-raul/`). Default
+   recomendado: GSM-RF V13 (mayor versión + segmento refrigeración
+   donde la marca Thermo-Safe™ aplica más directamente).
+4. **Enviar desde Gmail personal** (raoul.bermudez@gmail.com) con los
+   3 adjuntos (PPTX + tiro PDF + retiro PDF).
 
 ## Acciones manuales del Owner post-envío
 
 1. **Confirmar en task-log de Raul el envío ejecutado** + fecha + hora.
-2. **Registrar las 3 escalaciones nuevas en PENDING-DECISIONS-REGISTRY**
-   (E-Caso-B, E-Titular, E-Empaque-Coordinación) — ver bloque anexo del
-   email draft.
-3. **Coordinar con Oz / Producción** la evaluación de Caso B (modificar
-   empaque GSM-MB/RB/RE para eliminar "PROTECCIÓN TÉRMICA" del front) —
-   semana del 2026-05-19.
-4. **Pedir a Liliam** la confirmación del titular registrado del umbrella
-   Exceline / Exceline Profesional / Genius en SAPI Venezuela — semana
-   del 2026-05-19.
+2. **PENDING-DECISIONS-REGISTRY actualización:** E-Caso-B, E-Titular,
+   E-Empaque-Coordinación quedan CERRADOS (ver bloque anexo del email
+   draft v4). Único item nuevo a registrar: decisión Junta sobre
+   presupuesto IP (1 o 2 nombres en el batch inicial).
+3. **Esperar respuesta de Antequera** — propuesta honorarios + cronograma
+   búsqueda fonética. Sin acción hasta llegada.
 
 ---
 
@@ -95,30 +95,40 @@ Genteca/IP-2026/` y embeber los paths Drive en el cuerpo del correo
 
 ---
 
-## Escalaciones Owner generadas (entran a PENDING-DECISIONS-REGISTRY)
+## Escalaciones — estado consolidado al 2026-05-19 v4
 
-1. **E-Caso-B (NODO-C Thermo-Safe):** Activar Caso B — modificar empaque
-   GSM-MB/RB/RE para eliminar "PROTECCIÓN TÉRMICA" del front antes de
-   FM-02 SAPI. Decisión comercial-operativa con coordinación Oz +
-   Producción. Bruna v2.0 lo eleva de "opción que mejora" (v1.0) a
-   "escalación activa" tras doctrina corregida.
-   - **Owner action:** evaluar viabilidad operativa + costo + impacto en
-     ventana de lanzamiento. Confirmar a Bruna y a Antequera dentro de 2
-     semanas si Caso B se activa.
+1. ~~**E-Caso-B (NODO-C Thermo-Safe):**~~ **CERRADO 2026-05-19** —
+   empaque GSM-MB/RB/RF en producción con copy actualizado:
+   "PROTECCIÓN TÉRMICA" eliminada del front, "Tecnología Thermo-Safe™
+   NTC*" en su lugar, back explica funcionalmente. Triggers downstream:
+   Bruna re-gate aplicado, Naming Bible v2 perfil actualizado.
 
-2. **E-Titular (transversal — corrección C3):** Confirmar quién es el
-   titular registrado actual de Exceline / Exceline Profesional / Genius
-   en SAPI Venezuela. Dato necesario para alinear el campo titular del
-   FM-02 de las nuevas marcas con la recomendación de familia.
-   - **Owner action:** pedirle a Liliam que confirme razón social
-     específica + vigencia + clase. Dato esperado en la semana del
-     2026-05-26.
+2. ~~**E-Titular (transversal — corrección C3):**~~ **CERRADO
+   2026-05-19** — Liliam confirma del lado interno que las tres marcas
+   Exceline / Exceline Profesional / Genius están vigentes y
+   registradas en SAPI. El dato del titular específico para el FM-02 se
+   alinea directamente con Antequera durante la búsqueda fonética
+   (no requiere coordinación previa adicional con Liliam). Como
+   consecuencia: notación Exceline® / Exceline Profesional® / Genius®
+   aplicada en el correo a Antequera con nota explicativa.
 
-3. **E-Empaque-Coordinación (derivada de E-Caso-B):** Comunicación
-   interna a Oz sobre la recomendación de Caso B. Sin Oz alineado, el
-   ciclo de producción del empaque no se coordina.
-   - **Owner action:** mensaje a Oz con contexto Antequera + impacto en
-     descriptividad + propuesta operativa. Mismo timing que E-Caso-B.
+3. ~~**E-Empaque-Coordinación (derivada de E-Caso-B):**~~ **CERRADO
+   2026-05-19** — cambio ejecutado del lado del Owner antes de necesitar
+   coordinación adicional con Oz / Producción. Versiones definitivas del
+   arte de empaque (6 PDFs en `01-inbox/01-owner-to-raul/`) listas para
+   archivar como referencia del expediente y para adjuntar al correo
+   a Antequera como evidencia visual.
+
+## Escalación nueva v4 (única abierta tras directrices Owner)
+
+4. **E-Presupuesto-IP-Junta (nueva 2026-05-19):** Decisión Junta sobre
+   alcance del batch inicial — 2 nombres (Thermo-Safe + FlickerGuard) o
+   solo prioridad #1 (Thermo-Safe). Owner directrices indican que la
+   propuesta honorarios de Antequera ya pidió cotización **separable por
+   nombre** para no bloquear arranque de Thermo-Safe si FlickerGuard
+   pasa a segunda ronda.
+   - **Owner action:** llevar a Junta cuando llegue propuesta de
+     Antequera con cifras concretas. Sin acción mientras tanto.
 
 ---
 
