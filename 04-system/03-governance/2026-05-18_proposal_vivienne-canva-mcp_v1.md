@@ -83,8 +83,9 @@ Vivienne produce VI-1 outline (igual que hoy, Markdown SSOT)
 Vivienne smoke-test Canva MCP (list-brand-kits)
   ├─ MCP healthy → path Canva
   │     ↓
-  │   create-design-from-brand-template (si template existe)
-  │   o generate-design-structured (si no)
+  │   create-design-from-brand-template (si brand template oficial Pro)
+  │   o copy-design desde regular design base (ej. DAHKE-vJnnU Gama)
+  │   o generate-design-structured (si no hay asset base)
   │     ↓
   │   start-editing-transaction
   │     ↓
@@ -121,8 +122,9 @@ Vivienne smoke-test Canva MCP (list-brand-kits)
 | Tool MCP | Acción Vivienne | Cuándo se invoca |
 |---|---|---|
 | `mcp__claude_ai_Canva__list-brand-kits` | Smoke test MCP healthy + selección de brand kit del dominio | Inicio de cada sesión Canva — primer tool call |
-| `mcp__claude_ai_Canva__create-design-from-brand-template` | Crear design nuevo a partir de brand template oficial del dominio | Si existe brand template para el tipo de deck (ej. "Gama / Estudio Notoriedad / Cora") |
-| `mcp__claude_ai_Canva__generate-design-structured` | Generar design nuevo desde scratch usando outline VI-1 + brand kit | Si no existe brand template — primer deck del dominio o tipo nuevo |
+| `mcp__claude_ai_Canva__create-design-from-brand-template` | Crear design nuevo a partir de brand template oficial Pro del dominio | Si existe brand template **oficial Pro** para el tipo de deck. **NO aplica al caso Gama Notoriedad 2026** (asset `DAHKE-vJnnU` es regular design, no brand template oficial — ver §3.2 update). |
+| `mcp__claude_ai_Canva__copy-design` | Copiar un regular design base + renombrar la copia con identificador entrega | **Path operativo default Gama Notoriedad 2026** — copy-design desde `DAHKE-vJnnU`. Aplica cuando el asset base del dominio/cliente es regular design (no brand template Pro). |
+| `mcp__claude_ai_Canva__generate-design-structured` | Generar design nuevo desde scratch usando outline VI-1 + brand kit | Si no existe asset base (brand template Pro ni regular design) — primer deck del dominio o tipo nuevo |
 | `mcp__claude_ai_Canva__start-editing-transaction` | Abrir transacción atómica de edición (rollback-safe) | Antes de poblar/modificar slides |
 | `mcp__claude_ai_Canva__perform-editing-operations` | Vaciar contenido literal del VI-1 slide a slide (textos, imágenes, tablas) | Iterativo, slide por slide |
 | `mcp__claude_ai_Canva__commit-editing-transaction` | Confirmar edición y persistir cambios | Al cerrar transacción exitosa |
@@ -171,21 +173,37 @@ Los otros ~22 tools del MCP (search assets, AI generative, etc.) **no se autoriz
 2. Brand kit en Canva = derivado del SSOT markdown KB. Si KB cambia, Canva se actualiza (manualmente o vía MCP).
 3. Política firme: **el SSOT del brand kit es markdown en KB**. Canva nunca actúa como SSOT — solo como derivado consumido por Vivienne en render.
 
-### 3.2 Brand template Gama — registrar V8.3 como oficial
+### 3.2 Template Gama — regular design `DAHKE-vJnnU` como base operativa (path `copy-design`)
 
-**Candidato:** PPTX V8.3 (commit `d13cd26`, 2026-05-18) — última versión validada en producción con 16:9 restaurado.
+**Update 2026-05-18 (post-setup Owner):** la estrategia original (registrar V8.3 PPTX como **brand template oficial Pro** vía `create-design-from-brand-template`) **no se materializó** — Owner subió a Canva un subconjunto de slides adaptadas desde V8/V8.3 vía software **Gamma** como **regular design** (`type=design`, `category=design`), no como brand template oficial. Detalles canónicos del asset: `02-knowledge-base/02-domains/06-consultoria-externa/clientes/gama/canva-assets.md` §2.
 
-**Por qué V8.3:**
-- Aspect ratio 16:9 correcto
-- Datos correctos + heatmaps con contraste (V8.2 fix)
-- Charts nativos editables (V8.1 fix solicitado por Cora)
-- Estructura narrativa Pirámide Minto visual aplicada
-- Brand kit Gama (rojo `#E30613`, Montserrat + Open Sans) aplicado consistente
+**Asset operativo confirmado:**
+- ID Canva: `DAHKE-vJnnU`
+- Título Canva: `NOTORIEDAD-GAMA-2026.pptx` (literal — divergencia naming respecto al canónico `Gama V0.1 CANDIDATO / ...`, ver §9 directriz)
+- Tipo: **regular design** (no brand template oficial Pro)
+- Páginas: 20
+- Edit URL: https://www.canva.com/d/pbO8CIP7BCZmIFX
+- View URL: https://www.canva.com/d/0UiP-9mKlZk7yIA
+- Origen: subset slides V8/V8.3 → Gamma → upload Canva (lo importante NO es el contenido sino el **formato** — layouts, typography, brand styling que Cora aprobó visualmente)
 
-**Acción propuesta:**
-1. Owner sube V8.3 PPTX como brand template Gama en Canva (UI Canva o vía MCP si hay tool — verificar).
-2. **Naming obligatorio (directriz Owner 2026-05-18 — ver §9):** `Gama V0.1 CANDIDATO / Estudio Notoriedad / Template Maestro V1`. El sufijo "V0.1 CANDIDATO" se mantiene hasta que Cora valide los 5 items pendientes brand-kit.md §5. Cuando se valide, se renombra removiendo el sufijo y se formaliza upgrade a V1 en DECISIONS.md.
-3. Cuando próxima entrega Cora requiera deck, Vivienne invoca `create-design-from-brand-template` con ese template como base — heredando aspect ratio, paleta, tipografía, estructura de slides maestros.
+**Path operativo Vivienne — `copy-design` desde regular design:**
+
+`mcp__claude_ai_Canva__create-design-from-brand-template` **NO aplica** sobre `DAHKE-vJnnU` (ese tool requiere brand template oficial Pro; `DAHKE-vJnnU` es regular design). El path operativo default es:
+
+1. **`mcp__claude_ai_Canva__copy-design`** con `design_id = DAHKE-vJnnU` → retorna nuevo `design_id` para copia editable.
+2. Renombrar copia con identificador de la entrega (ej. `2026-05-XX_gama-notoriedad-2026_v8.4`) — vía tool de update title si existe, o rename manual en UI por Owner como fallback.
+3. Resto del workflow §4 sigue idéntico (start-editing-transaction → perform-editing-operations slide a slide → commit → export).
+
+**Implicaciones del path regular design + copy-design:**
+
+- **Favorable.** Aesthetic aspiracional Cora se hereda **desde día uno** — el regular design refleja el lenguaje visual que Cora encuentra deseable (subset slides V8/V8.3 que Cora ya vio, paso por Gamma alinea al aesthetic Cora-aprobado).
+- **Adversa.** Atributos del V8.3 original (charts editables nativos, aspect ratio 16:9, brand kit aplicado consistente) **no están garantizados** en el regular design — Gamma puede haber alterado en el paso intermedio. Particularmente crítico: si Gamma aplanó los charts del V8.3 como imágenes en el export, los charts del regular design no son editables. **Esto NO bloquea operación** — el híbrido permanente §2.5 garantiza editabilidad de charts por construcción (python-pptx siempre para charts, independiente del comportamiento Canva).
+
+**Naming.** El título del asset en Canva quedó como `NOTORIEDAD-GAMA-2026.pptx` (el nombre del archivo upload), divergente del naming canónico propuesto en §9 directriz operativa adicional (`Gama V0.1 CANDIDATO / Estudio Notoriedad / Template Maestro V1`). **No se renombra ahora** — referencia operativa por ID (`DAHKE-vJnnU`), consistente con política referencia-por-ID-no-por-nombre. El rename + sufijo V0.1 CANDIDATO aplicaría cuando Owner haga rename manual en Canva UI.
+
+**Roadmap a brand template oficial Pro — mejora futura.** Cuando Owner promueva manualmente este diseño (o uno derivado) a brand template oficial vía Canva UI Pro features, Vivienne podría migrar a `create-design-from-brand-template`. Mientras tanto, `copy-design` desde `DAHKE-vJnnU` es el path operativo default y se documenta como tal en §4 workflow paso 3 + §7.1 draft AGENT.md.
+
+**Brand kit V0.1 CANDIDATO `kAHKE4GYHQQ`** sigue aplicando como reference de paleta + tipografía + assets — la copy-design hereda el brand kit Canva referenced en el design original; verificar smoke test paso 2 antes de invocar copy-design.
 
 ### 3.3 Brand kits de otros dominios (cuándo lleguen)
 
@@ -230,12 +248,22 @@ Vivienne llama mcp__claude_ai_Canva__list-brand-kits
 ### Paso 3 — Crear design base
 
 ```
-¿Existe brand template para el tipo de deck + dominio?
-  ├─ Sí → mcp__claude_ai_Canva__create-design-from-brand-template
+¿Hay asset Canva base para el tipo de deck + dominio?
+  ├─ Sí — brand template oficial Pro → mcp__claude_ai_Canva__create-design-from-brand-template
   │       (heredando aspect ratio, paleta, tipo, slides maestros)
+  │
+  ├─ Sí — regular design base (caso default para Gama Notoriedad 2026) →
+  │       mcp__claude_ai_Canva__copy-design (design_id = DAHKE-vJnnU)
+  │       → renombrar copia con identificador entrega
+  │       (heredando layout + brand styling + brand kit referenced)
+  │
   └─ No → mcp__claude_ai_Canva__generate-design-structured
           (con outline VI-1 como input estructurado + brand kit referenced)
 ```
+
+**Caso Gama Notoriedad 2026 (default operativo V1):** `copy-design` desde `DAHKE-vJnnU` (regular design Gamma-derived) — ver §3.2 update post-setup Owner para el rationale completo. El path `create-design-from-brand-template` NO aplica sobre `DAHKE-vJnnU` (no es brand template oficial Pro). Roadmap futuro: promoción manual a brand template oficial → migración a `create-design-from-brand-template`.
+
+**IDs canónicos a consultar antes de invocar el tool:** ver `02-knowledge-base/02-domains/06-consultoria-externa/clientes/gama/canva-assets.md` §1 (brand kit `kAHKE4GYHQQ`) y §2 (regular design base `DAHKE-vJnnU`).
 
 ### Paso 4 — Edición atómica slide por slide
 
@@ -408,7 +436,7 @@ Vivienne tiene un **output engine externo opcional** vía Canva MCP (`mcp__claud
 
 1. **Smoke test obligatorio.** Antes de cualquier render, ejecutar `mcp__claude_ai_Canva__list-brand-kits` para confirmar auth y conectividad. Si falla → fallback CORE silencioso.
 2. **Brand kit pre-flight extendido.** Verificar que el brand kit del dominio existe en Canva Y que está sincronizado con el SSOT markdown del KB. Si Canva tiene versión más vieja que el KB, advertir Owner antes de render.
-3. **Design base.** Si existe brand template para el tipo de deck + dominio: `create-design-from-brand-template`. Si no: `generate-design-structured` desde VI-1 outline.
+3. **Design base.** Tres rutas según el asset Canva del dominio: (a) si existe brand template oficial Pro → `create-design-from-brand-template`; (b) si existe regular design base (ej. Gama Notoriedad 2026 → `DAHKE-vJnnU`) → `copy-design` desde ese `design_id` + renombrar copia con identificador entrega; (c) si no hay asset base → `generate-design-structured` desde VI-1 outline. Consultar `02-knowledge-base/02-domains/<dominio>/clientes/<cliente>/canva-assets.md` antes de invocar — los IDs canónicos viven ahí.
 4. **Edición atómica.** `start-editing-transaction` → `perform-editing-operations` slide por slide vaciando contenido **literal** del VI-1 (respetando 4-bullets-max, infografía-vs-bullets, Pirámide Minto visual, white space).
 5. **Charts críticos híbridos.** Si slide tiene chart crítico editable con data binding exacto: pause Canva, generar slide python-pptx standalone, merge (Ruta B re-link default).
 6. **Commit + export.** `commit-editing-transaction` → `export-design` (.pptx + .pdf opcional) → descarga local + thumbnail.
@@ -653,3 +681,5 @@ Este proposal sigue el patrón estructural del governance doc base (`2026-05-18_
 ---
 
 *Proposal V1 producido por Raul (Opus 4.7) el 2026-05-18 tras autorización Owner para arrancar proposal formal Vivienne + Canva MCP. Scope acotado a Vivienne — ampliación multi-agente diferida. NO toca runtime de Vivienne ni conceptual SSOT en esta sesión — los drafts §7 se aplican post-pilot con autorización Owner explícita. Pilot pendiente de feedback Cora sobre Word V6 (PAUSA actual session handoff 2026-05-19).*
+
+*Update 2026-05-18 (post-setup Owner): §3.2 actualizado reflejando que el asset Canva subido es **regular design `DAHKE-vJnnU`** (NO brand template oficial Pro), por lo que el path operativo default es **`copy-design`** desde ese ID — no `create-design-from-brand-template`. §4 paso 3 + §2.2 diagrama + §2.4 mapping reflejan las 3 rutas (brand template Pro / regular design vía copy-design / generate-design-structured). Brand template oficial Pro queda como mejora futura cuando Owner promueva manualmente el diseño. Detalles canónicos del asset en `02-knowledge-base/02-domains/06-consultoria-externa/clientes/gama/canva-assets.md` §2.*
