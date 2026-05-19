@@ -39,6 +39,7 @@ referencias_arquitectonicas: norte arquitectónico §0 (vendor-neutral) / princi
 
 - Pendiente acción Owner: completar suscripción anual + auth del MCP Canva en claude.ai.
 - Pendiente edición runtime: actualizar `.claude/agents/vivienne/AGENT.md` con instrucciones de invocación Canva — **NO en esta sesión**. Va en proposal formal de upgrade Vivienne+Canva que se redacta cuando el MCP esté auth y el caso base esté listo.
+- **Update 2026-05-18:** proposal formal `2026-05-18_proposal_vivienne-canva-mcp_v1.md` redactado y entregado en commit `c4147e5`. Las **4 decisiones Owner E1-E4** del proposal (brand kit scope / sharing permissions / retention / template approval) quedaron **RESUELTAS** por el Owner el 2026-05-18 con los defaults recomendados por Raul + directriz operativa adicional "Gama V0.1 CANDIDATO" para el período pre-validación con Cora. Ver proposal §9 para detalle.
 - Inventario actualizado: entrada de Canva agregada a `TOOLS-OWNER-SELECTED.md` v0.1 con estado "PENDIENTE" (suscripción + auth).
 - python-pptx + matplotlib **siguen siendo path default mantenido** en Vivienne. Canva es upgrade opcional, no reemplazo. Si el MCP falla o el Owner pausa la suscripción, Vivienne cae a path CORE sin pedir nada.
 
@@ -143,7 +144,7 @@ Detectadas durante captura de estas decisiones — no bloquean la implementació
 |---|---|---|---|
 | 5.1 | ¿Migrar también `LLM-GUIDELINES.md` (`04-system/01-config/`) al split CORE vs Owner-selected? Actualmente lista modelos Anthropic específicos (Opus 4.7, Sonnet 4.6, Haiku 4.5) que son Owner-selected, no CORE. | MEDIA | Diferir — no es urgente, pero próxima revisión de ese doc debería incluir nota tipo "los modelos listados son los del proveedor Anthropic; sustituibles por otros LLM providers" |
 | 5.2 | ¿Settings de permisos en `.claude/settings.local.json` deberían referenciar este governance doc o el TOOLS-OWNER-SELECTED.md? | BAJA | Diferir — el settings es runtime de Claude Code (Owner-selected por definición); no necesita cross-reference si los docs nuevos están bien indexados |
-| 5.3 | Pilot Vivienne + Canva, ¿requiere validación adicional con Bruna (gate de gobernanza) sobre claims visuales/marca? | MEDIA | Cuando el proposal formal Vivienne+Canva se redacte, incluir explícitamente cómo se mantienen los gates Bruna sobre claims (que viven en el contenido, no en el render engine) |
+| 5.3 | ~~Pilot Vivienne + Canva, ¿requiere validación adicional con Bruna (gate de gobernanza) sobre claims visuales/marca?~~ **RESUELTA 2026-05-18** vía decisión E4 del proposal (`2026-05-18_proposal_vivienne-canva-mcp_v1.md` §9 E4 — híbrido escalonado): Owner siempre + Bruna si hay claims visuales (badges, frases, iconos con significado regulatorio) + cliente si va a deck que se le presenta. | — | DONE — ver proposal §9 |
 
 ---
 

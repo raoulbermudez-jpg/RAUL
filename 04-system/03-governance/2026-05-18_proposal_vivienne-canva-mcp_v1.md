@@ -2,7 +2,7 @@
 documento: Proposal formal — Vivienne + Canva MCP como output engine PPTX (scope acotado a Vivienne, V1)
 fecha: 2026-05-18
 autor: Raul (Opus 4.7) — proposal post governance doc + post auth Canva MCP
-status: PROPUESTA — pendiente validación Owner + pilot caso base (V7 PPTX Cora Gama Notoriedad 2026)
+status: PROPUESTA — 4 decisiones E1-E4 RESUELTAS por Owner 2026-05-18 (ver §9); pilot caso base pendiente (V7/V8.4 PPTX Cora Gama Notoriedad 2026, post-feedback Cora sobre Word V6)
 proyecto_pilot: gama-notoriedad-2026 (consultoria-externa) — próxima entrega Cora tras feedback V6
 scope: Vivienne únicamente. Ampliación multi-agente (Atlas / Luma / Orfeo / Oz light) explícitamente diferida.
 governance_base: [[2026-05-18_tools-split-policy_canva-pro-adoption]] (decisiones canónicas Canva Pro + split CORE)
@@ -172,8 +172,8 @@ Cuando un slide requiere chart crítico editable con data binding exacto:
 - Brand kit Gama (rojo `#E30613`, Montserrat + Open Sans) aplicado consistente
 
 **Acción propuesta:**
-1. Owner sube V8.3 PPTX como brand template oficial Gama en Canva (UI Canva o vía MCP si hay tool — verificar).
-2. Naming sugerido: `Gama / Estudio Notoriedad / Cliente Cora / Template Maestro V1` (basado en `create_design_from_brand_template` semantics).
+1. Owner sube V8.3 PPTX como brand template Gama en Canva (UI Canva o vía MCP si hay tool — verificar).
+2. **Naming obligatorio (directriz Owner 2026-05-18 — ver §9):** `Gama V0.1 CANDIDATO / Estudio Notoriedad / Template Maestro V1`. El sufijo "V0.1 CANDIDATO" se mantiene hasta que Cora valide los 5 items pendientes brand-kit.md §5. Cuando se valide, se renombra removiendo el sufijo y se formaliza upgrade a V1 en DECISIONS.md.
 3. Cuando próxima entrega Cora requiera deck, Vivienne invoca `create-design-from-brand-template` con ese template como base — heredando aspect ratio, paleta, tipografía, estructura de slides maestros.
 
 ### 3.3 Brand kits de otros dominios (cuándo lleguen)
@@ -481,55 +481,67 @@ Para plataformas de ejecución que tengan acceso a un MCP de diseño visual exte
 
 ---
 
-## 9. Decisiones Owner pendientes (E1-E4)
+## 9. Decisiones Owner resueltas 2026-05-18
 
-Capturadas, NO resueltas en este proposal — requieren input Owner antes o durante pilot.
+> **Update 2026-05-18 (post-proposal):** Owner confirmó las 4 decisiones con los defaults recomendados por Raul + agregó una directriz operativa adicional ("Gama V0.1 CANDIDATO" — ver final de §9). Las 4 quedan RESUELTAS y activas a partir de esta fecha.
 
-### E1 — ¿Brand kit por cliente o por dominio?
+### E1 — Brand kit por cliente vs por dominio — RESUELTA
 
-**Contexto.** Un cliente puede vivir dentro de un dominio (Gama es un cliente dentro de `consultoria-externa`, y `consultoria-externa` puede tener múltiples clientes futuros — cada uno con su marca distinta).
+**Resolución Owner (2026-05-18):** **E1.c — Híbrido escalonado.**
 
-**Opciones:**
-- **E1.a — Por cliente.** Cada cliente externo = un brand kit Canva. `consultoria-externa` tendría N brand kits (Gama, FuturaCliente1, FuturaCliente2, etc.). Dominios propios (Genteca, Plenus) también = un brand kit cada uno.
-- **E1.b — Por dominio + override por cliente.** Un brand kit base por dominio (`consultoria-externa` tendría uno genérico) + overrides para clientes con marca propia. Más complejo, menos claro.
-- **E1.c — Híbrido.** Por dominio para dominios propios + por cliente para `consultoria-externa`. Reconoce que dominios propios tienen marca única (Genteca) mientras consultoría externa siempre es por cliente.
+- **Por dominio** para dominios propios: Genteca, Plenus, Finca, Teca (un brand kit por dominio).
+- **Por cliente** para `consultoria-externa`: cada cliente externo = un brand kit Canva propio (Gama es el primero; futuros clientes serán independientes).
 
-**Recomendación Raul:** **E1.c (híbrido).** Refleja la realidad operativa — Genteca tiene una sola marca, mientras consultoría externa es servicio multi-cliente con marcas distintas por cliente. Coherente con estructura de KB (`02-knowledge-base/02-domains/<dominio>/clientes/<cliente>/brand-kit.md` para consultoría externa, `02-knowledge-base/02-domains/<dominio>/wiki/brand/` para dominios propios).
+Refleja la realidad operativa — dominios propios tienen marca única, consultoría externa es servicio multi-cliente con marcas distintas. Coherente con estructura de KB (`02-knowledge-base/02-domains/<dominio>/clientes/<cliente>/brand-kit.md` para consultoría externa, `02-knowledge-base/02-domains/<dominio>/wiki/brand/` para dominios propios).
 
-### E2 — ¿Compartir designs Canva con clientes en view, comment o edit?
+**Contexto histórico de la decisión.** Un cliente puede vivir dentro de un dominio (Gama es un cliente dentro de `consultoria-externa`, que puede tener múltiples clientes futuros — cada uno con marca distinta). Las opciones consideradas fueron: E1.a (todo por cliente), E1.b (por dominio + override), E1.c (híbrido escalonado).
 
-**Contexto.** Canva permite compartir designs con 3 niveles de permiso. Cada nivel tiene trade-offs.
+### E2 — Sharing de designs Canva con clientes — RESUELTA
 
-**Opciones:**
-- **E2.a — Solo view.** Cliente ve, no edita. Si quiere cambios, los pide a nosotros. Más control, menos colaboración.
-- **E2.b — Comment.** Cliente puede agregar comentarios sin modificar. Buen balance para review.
-- **E2.c — Edit.** Cliente puede editar directo. Máxima colaboración, pero riesgo de IP / accidental damage / propagación a equipos del cliente.
+**Resolución Owner (2026-05-18):** **Comment para review / View para final / Edit caso por caso si cliente lo pide.**
 
-**Recomendación Raul:** **Default = E2.b (comment) para revisión / E2.a (view) para final.** Edit (E2.c) solo si cliente lo pide explícito y se evalúa caso por caso. Esto preserva trazabilidad de quién cambió qué y evita que el cliente modifique caveats Bruna sin que nos enteremos.
+- **Default review** = Comment (E2.b). Cliente comenta sin modificar; preserva trazabilidad de quién cambió qué.
+- **Default final entregable** = View (E2.a). Cliente lee, no edita. Si quiere cambios, los pide.
+- **Edit (E2.c)** solo si cliente lo solicita explícito; se evalúa caso por caso. Evita que el cliente modifique caveats Bruna sin que nos enteremos.
 
-### E3 — ¿Política de retención de designs Canva al cerrar engagement con cliente?
+**Contexto histórico de la decisión.** Canva permite compartir con 3 niveles de permiso (view / comment / edit), cada uno con trade-offs entre control e IP vs colaboración.
 
-**Contexto.** Cuando se cierra un proyecto con un cliente externo (ej. Gama Notoriedad termina), ¿qué pasa con los designs Canva del proyecto?
+### E3 — Retención de designs Canva post-cierre engagement — RESUELTA
 
-**Opciones:**
-- **E3.a — Archivar en Canva.** Mantener cuenta Canva con el design archived. Recuperable si cliente vuelve.
-- **E3.b — Exportar + borrar.** Exportar PPTX/PDF a Drive cliente y a repo, luego borrar design Canva. Reduce overhead Canva.
-- **E3.c — Mantener vivo por X tiempo.** Mantener N meses (ej. 12) post-cierre por si cliente pide ajuste, luego archive.
-- **E3.d — Decisión por cliente.** Preguntar a cada cliente al cierre si quieren acceso continuado al design Canva o no.
+**Resolución Owner (2026-05-18):** **E3.c — 12 meses post-cierre + export PPTX local committeado siempre como SSOT binario.**
 
-**Recomendación Raul:** **E3.c (12 meses) + export local committeado.** Balance entre disponibilidad para cliente y limpieza de cuenta Canva. PPTX/PDF exportados quedan en repo siempre (SSOT permanente).
+- Designs Canva se mantienen vivos en cuenta 12 meses post-cierre del proyecto. Pasados los 12 meses → archive.
+- **PPTX + PDF exportados al repo siempre.** El export local committeado es **SSOT binario permanente** independiente del estado en Canva. Si Canva cae o cierra cuenta, el repo conserva el deck final.
+- Política consistente con principio transversal `portable_text_as_ssot_principle` — Canva es runtime-dependiente; el SSOT vive en repo.
 
-### E4 — ¿Quién aprueba un nuevo brand template oficial?
+**Contexto histórico de la decisión.** Cuando un proyecto con cliente externo cierra, ¿qué pasa con los designs Canva? Opciones: archivar inmediato, exportar+borrar, mantener N meses, decisión por cliente.
 
-**Contexto.** Un brand template Canva (estructura de slides maestros con paleta, tipo, layouts) es una pieza estratégica — cuando Vivienne lo usa de base, hereda todo. Si el template tiene errores, propaga errores. ¿Quién autoriza un nuevo template?
+### E4 — Quién aprueba un nuevo brand template oficial — RESUELTA
 
-**Opciones:**
-- **E4.a — Solo Owner.** Owner valida visualmente y autoriza.
-- **E4.b — Owner + Bruna.** Si el template incluye claims visuales (badges, frases, iconos con significado regulatorio), Bruna también gatea.
-- **E4.c — Owner + cliente** (para clientes externos). Cliente valida que su marca está bien representada.
-- **E4.d — Híbrido escalonado.** Owner siempre. Bruna si hay claims visuales. Cliente si es template para deck que se le presenta.
+**Resolución Owner (2026-05-18):** **E4.d — Híbrido escalonado.**
 
-**Recomendación Raul:** **E4.d (híbrido escalonado).** Para template Gama V1 (basado en V8.3): Owner + Cora (representa Gama). Si en el futuro hay template Genteca con badges/superlatives: Owner + Bruna.
+- **Owner siempre** valida visualmente y autoriza.
+- **Bruna además** si el template incluye claims visuales (badges, frases, iconos con significado regulatorio / de superlative / de claim de marca).
+- **Cliente además** si el template va a ser base de un deck que se le presenta (ej. Cora para Gama).
+
+Para template Gama V1 (basado en V8.3): Owner + Cora. Si en el futuro hay template Genteca con badges/superlatives: Owner + Bruna. Si hay template Genteca para deck cliente externo (raro): Owner + Bruna + cliente.
+
+**Contexto histórico de la decisión.** Un brand template es pieza estratégica — cuando Vivienne lo usa de base, hereda todo. Si el template tiene errores, propaga errores. Opciones: solo Owner, Owner+Bruna, Owner+cliente, híbrido escalonado.
+
+---
+
+### Directriz operativa adicional (Owner 2026-05-18) — "Gama V0.1 CANDIDATO"
+
+**Mientras el brand kit Gama esté pre-validación con Cora** (5 items pendientes según brand-kit.md §5 — hex exacto rojo, tipografía oficial, logo, color secundario, restricciones logo), todo lo subido a Canva debe llevar etiqueta explícita **"Gama V0.1 CANDIDATO"** en el naming.
+
+**Aplica a:**
+- **Brand kit en Canva UI** — naming: `Gama V0.1 CANDIDATO` (no `Gama` ni `Gama Brand Kit`).
+- **Brand template basado en V8.3 PPTX** — naming: `Gama V0.1 CANDIDATO / Estudio Notoriedad / Template Maestro V1` (no `Gama / Estudio Notoriedad / Template Maestro V1` como estaba propuesto en §3.2).
+- **Cualquier referencia a Gama brand assets en Canva** mientras esté pre-validación: assets, designs derivados, comentarios internos en la UI.
+
+**Cuándo se quita el sufijo "V0.1 CANDIDATO":** cuando Cora valide los 5 items pendientes del brand-kit.md §5 y el Owner confirme el upgrade a V1. En ese momento se renombran brand kit + brand template + assets, y se documenta el upgrade en `DECISIONS.md`.
+
+**Razón.** Evita que el brand kit candidato se propague accidentalmente como oficial (a otros decks, a futuros clientes, a referencias internas) antes de que Cora lo valide. Pattern consistente con caveats de fidelidad de §3.3 (versionado de brand kits) y §8.3.3 (riesgo de brand kit V0.1 candidato no validado).
 
 ---
 
@@ -537,12 +549,14 @@ Capturadas, NO resueltas en este proposal — requieren input Owner antes o dura
 
 ### 10.1 Antes del pilot (Owner + setup)
 
+> **Update 2026-05-18:** E1-E4 RESUELTAS (ver §9). Naming Canva ajustado a "Gama V0.1 CANDIDATO" hasta validación Cora — ver §9 directriz operativa adicional.
+
 | # | Acción | Responsable | Bloqueador para |
 |---|---|---|---|
-| 10.1.1 | Decidir E1-E4 (brand kit scope / sharing permissions / retention / template approval) | Owner | 10.1.2, 10.1.3 |
-| 10.1.2 | Subir brand kit Gama a Canva — decidir camino: (a) manual via Canva UI, (b) vía MCP si hay tool `create-brand-kit` o equivalente | Owner (o Raul autorizado) | 10.1.4, pilot |
-| 10.1.3 | Registrar V8.3 PPTX como brand template oficial Gama en Canva (naming: `Gama / Estudio Notoriedad / Template Maestro V1`) | Owner (o Raul autorizado) | pilot |
-| 10.1.4 | Validar con Cora 5 items pendientes brand-kit.md §5 (hex exacto, tipografía, logo, color secundario, restricciones logo) — opcional pero recomendable antes de uso público | Owner via Cora | release público; no bloquea pilot interno |
+| 10.1.1 | ~~Decidir E1-E4~~ **RESUELTA 2026-05-18** (ver §9): E1.c híbrido / E2 comment+view / E3.c 12 meses + export local / E4.d híbrido escalonado | Owner — DONE | — |
+| 10.1.2 | Subir brand kit Gama a Canva con naming **"Gama V0.1 CANDIDATO"** — decidir camino: (a) manual via Canva UI, (b) vía MCP si hay tool `create-brand-kit` o equivalente | Owner (o Raul autorizado) | 10.1.4, pilot |
+| 10.1.3 | Registrar V8.3 PPTX como brand template Gama en Canva con naming **"Gama V0.1 CANDIDATO / Estudio Notoriedad / Template Maestro V1"** (sufijo V0.1 CANDIDATO obligatorio hasta validación Cora) | Owner (o Raul autorizado) | pilot |
+| 10.1.4 | Validar con Cora 5 items pendientes brand-kit.md §5 (hex exacto, tipografía, logo, color secundario, restricciones logo). Cuando Cora valide → renombrar brand kit + brand template removiendo sufijo "V0.1 CANDIDATO" + entry en DECISIONS.md formalizando upgrade a V1 | Owner via Cora | upgrade a V1; no bloquea pilot interno |
 
 ### 10.2 Pilot (cuando llegue feedback Cora V6)
 

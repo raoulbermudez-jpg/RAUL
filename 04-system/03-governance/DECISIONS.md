@@ -1136,4 +1136,45 @@ El sistema /RAUL/ captura bien un solo canal de interacción humana — el inter
 
 ---
 
+## 2026-05-18 — Resolución decisiones E1-E4 del proposal Vivienne+Canva MCP + directriz "Gama V0.1 CANDIDATO"
+
+**Decisión.** Owner confirma las 4 decisiones pendientes (E1-E4) del proposal formal `04-system/03-governance/2026-05-18_proposal_vivienne-canva-mcp_v1.md` (commit `c4147e5`) con los defaults recomendados por Raul + agrega una directriz operativa adicional sobre naming del brand kit Gama en período pre-validación con Cora.
+
+**Resoluciones por decisión.**
+
+1. **E1 — Brand kit por cliente vs por dominio:** **Híbrido escalonado (E1.c).** Por dominio para dominios propios (Genteca, Plenus, Finca, Teca = un brand kit por dominio). Por cliente para `consultoria-externa` (Gama es el primero; futuros clientes externos serán independientes).
+2. **E2 — Sharing de designs Canva con clientes:** **Comment para review, View para final, Edit caso por caso si cliente lo pide explícito.** Preserva trazabilidad de cambios y evita que clientes modifiquen caveats Bruna sin que nos enteremos.
+3. **E3 — Retención de designs Canva post-cierre engagement:** **12 meses post-cierre (E3.c) + export PPTX local committeado siempre como SSOT binario.** Designs Canva archive a los 12 meses; el repo conserva PPTX + PDF como SSOT permanente independiente del estado en Canva. Consistente con principio transversal `portable_text_as_ssot_principle`.
+4. **E4 — Aprobación brand template oficial:** **Híbrido escalonado (E4.d).** Owner siempre. Bruna además si template incluye claims visuales (badges, frases, iconos con significado regulatorio). Cliente además si el template va a ser base de deck que se le presenta.
+
+**Directriz operativa adicional — "Gama V0.1 CANDIDATO".** Mientras el brand kit Gama esté pre-validación con Cora (5 items pendientes según `02-knowledge-base/02-domains/06-consultoria-externa/clientes/gama/brand-kit.md` §5 — hex exacto rojo, tipografía oficial, logo, color secundario, restricciones logo), todo lo subido a Canva debe llevar etiqueta explícita **"Gama V0.1 CANDIDATO"** en el naming:
+
+- **Brand kit en Canva UI** → naming `Gama V0.1 CANDIDATO`.
+- **Brand template basado en V8.3 PPTX** → naming `Gama V0.1 CANDIDATO / Estudio Notoriedad / Template Maestro V1`.
+- **Cualquier referencia a Gama brand assets en Canva** mientras esté pre-validación.
+
+El sufijo se quita cuando Cora valide los 5 items y el Owner confirme upgrade a V1 — momento en el cual se renombran brand kit + brand template + assets, y se registra el upgrade en una entry futura de este DECISIONS.md.
+
+**Contexto y motivación.**
+
+- Las 4 decisiones quedaron capturadas como pendientes en §9 del proposal (commit `c4147e5`) bajo el patrón "captura primero, decide después" del workflow de governance. El Owner las confirmó el mismo día con los defaults recomendados por Raul, validando la metodología de proposal con recomendaciones explícitas (no preguntas abiertas).
+- La directriz "Gama V0.1 CANDIDATO" surge del riesgo §8.3.3 del proposal (brand kit V0.1 candidato no validado por Cora se propaga como oficial → propaga error). Owner endurece el control sobre ese riesgo exigiendo etiquetado explícito en el naming de Canva, no solo en KB markdown.
+
+**Alternativas consideradas.**
+
+- *No formalizar la directriz V0.1 CANDIDATO en DECISIONS.md* (mantenerla solo en el proposal). Rechazado: la directriz tiene scope cross-doc (aplica al brand kit en Canva UI + al brand template + a futuros assets), no solo al proposal. DECISIONS.md es el lugar canónico para reglas operativas transversales.
+- *Esperar a tener feedback Cora antes de resolver E1-E4* (mantener pendientes hasta validar brand kit). Rechazado por el Owner: las 4 decisiones son estructurales y aplican a cualquier brand kit / cliente, no solo a Gama. Resolverlas ahora desbloquea el setup del pilot.
+
+**Implicaciones.**
+
+- §9 del proposal reescrita: header cambia de "Decisiones Owner pendientes (E1-E4)" → "Decisiones Owner resueltas 2026-05-18" + cada decisión queda con timestamp + directriz V0.1 CANDIDATO agregada al final.
+- §3.2 + §10.1 del proposal ajustadas: naming brand template incluye sufijo "Gama V0.1 CANDIDATO"; paso 10.1.1 marcado DONE; paso 10.1.4 ajustado para incluir el renombrado post-validación Cora.
+- §5.3 del governance doc base (`2026-05-18_tools-split-policy_canva-pro-adoption.md`) marcada RESUELTA vía E4 con link cruzado al proposal §9.
+- **Bloqueadores del pilot reducidos a 2:** (1) suscripción Canva Pro + auth MCP (Owner, fuera de sesión Raul), (2) feedback Cora sobre Word V6 (proyecto Notoriedad Gama 2026 en PAUSA — session handoff 2026-05-19).
+- **NO se toca runtime Vivienne** en esta resolución — sigue diferido al post-pilot según política §7.3 del proposal.
+
+**Estado.** Activa desde 2026-05-18. Las 4 decisiones quedan vigentes para todos los brand kits y brand templates futuros del sistema (no solo Gama). La directriz V0.1 CANDIDATO queda vigente para Gama hasta que Cora valide los 5 items pendientes — en ese momento, entry de upgrade a V1 en este DECISIONS.md.
+
+---
+
 (próximas entradas debajo, en orden cronológico)
